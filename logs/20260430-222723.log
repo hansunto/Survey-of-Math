@@ -1,0 +1,8 @@
+INFO    : Staging deployment according to strategy pelican_default
+INFO    : Staging `course` at `/workspaces/Survey-of-Math/output/stage/course`.
+ERROR   : Pelican is not installed. Please install Pelican to use this feature.
+INFO    : Preparing to deploy from active `main` git branch.
+
+INFO    : Changes to project source since last commit detected.
+INFO    : Committing these changes to local Git repository.
+

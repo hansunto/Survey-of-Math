@@ -1,0 +1,53 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "PreTeXt: Build Course",
+            "type": "shell",
+            "command": "pretext",
+            "args": ["build", "course"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "PreTeXt: Build PDF",
+            "type": "shell",
+            "command": "pretext",
+            "args": ["build", "print"],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "PreTeXt: View Course",
+            "type": "shell",
+            "command": "pretext",
+            "args": ["view", "course"],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "PreTeXt: Deploy",
+            "type": "shell",
+            "command": "pretext",
+            "args": ["build", "--deploys"],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+}

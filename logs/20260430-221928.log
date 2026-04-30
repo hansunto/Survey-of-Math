@@ -1,0 +1,13 @@
+INFO    : Now preparing local server to preview your project directory `/workspaces/Survey-of-Math`.
+INFO    :   (Reminder: use `pretext deploy` to deploy your built project to a public
+INFO    :   GitHub Pages site that can be shared with readers who cannot access your
+INFO    :   personal computer.)
+INFO    : 
+INFO    : starting server ...
+INFO    : Running in a codespace, so using a subprocess server.
+INFO    : Starting PreTeXt web server
+INFO    : Added pretext web server entry d165b4da66 18250 8128 localhost
+
+INFO    : Server will soon be available at https://sturdy-broccoli-r4j59qr4xwwghrg9-8128.app.github.dev
+INFO    : Opening browser for target `course` at https://sturdy-broccoli-r4j59qr4xwwghrg9-8128.app.github.dev/output/course
+INFO    : 

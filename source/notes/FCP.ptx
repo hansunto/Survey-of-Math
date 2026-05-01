@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-fcp">
+  <title>The Fundamental Counting Principle</title>
+
+  <p>
+    The probability of winning the top prize in the lottery is about the same as the probability of being struck by lightning. There are a million possible number combinations in the lottery games, and only one way of winning the grand prize.
+  </p>
+
+  <p>
+    We can generalize the idea to any two groups of items with the <alert>Fundamental Counting Principle</alert>.
+  </p>
+
+  <definition xml:id="definition-fundamental-counting-two-groups" latex-style="myshadowbox">
+    <title>The Fundamental Counting Principle</title>
+    <statement>
+      <p>
+        If you can select one item from a group of <m>M</m> items and another item from a group of <m>N</m> items, then the total number of possible two-item combinations is <m>M \cdot N</m>.
+      </p>
+    </statement>
+  </definition>
+
+  <exercise xml:id="exercise-two-course-meal-1">
+    <title>Restaurant two-course meal</title>
+    <statement>
+      <p>
+        The Greasy Spoon Restaurant offers 6 appetizers and 14 main courses. In how many ways can a person order a two-course meal?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Use the Fundamental Counting Principle: choose 1 appetizer and 1 main course.
+      </p>
+      <m>
+        6 \cdot 14 = 84
+      </m>
+      <p>
+        There are 84 different two-course meals.
+      </p>
+    </solution>
+  </exercise>
+
+  <example xml:id="example-two-course-meal">
+    <title>Two-course meal</title>
+    <statement>
+      <p>
+        A restaurant offers 10 appetizers and 15 main courses. In how many ways can a person order a two-course meal?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Use the Fundamental Counting Principle and multiply the number of appetizers by the number of main courses.
+      </p>
+      <m>
+        10 \cdot 15 = 150
+      </m>
+      <p>
+        There are 150 possible two-course meals.
+      </p>
+    </solution>
+  </example>
+
+  <example xml:id="example-course-schedule">
+    <title>Psychology and social science scheduling</title>
+    <statement>
+      <p>
+        This is a semester that you will take your required psychology and social sciences courses. Because you decide to register early, there are 15 sections of psychology from which you can choose. Moreover, there are 9 sections of social science that are available at times that do not conflict with those of psychology. In how many ways can you create two-course schedules that satisfy the psychology-social science requirement?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Multiply the number of psychology section options by the number of social science section options.
+      </p>
+      <m>
+        15 \cdot 9 = 135
+      </m>
+      <p>
+        There are 135 possible two-course schedules.
+      </p>
+    </solution>
+  </example>
+
+  <definition xml:id="definition-fundamental-counting-multiple-events" latex-style="myshadowbox">
+    <title>The Fundamental Counting Principle</title>
+    <statement>
+      <p>
+        The number of ways in which a series of successive events can occur is determined <alert>by multiplying</alert> the number of ways each individual event can happen.
+      </p>
+    </statement>
+  </definition>
+
+  <exercise xml:id="exercise-one-topping-pizza">
+    <title>One-topping pizza choices</title>
+    <statement>
+      <p>
+        A pizza can be ordered with two choices of size (medium or large), three choices of crust (thin, thick or regular), and five choices of toppings (ground beef, sausage, pepperoni, bacon and mushrooms). How many different one-topping pizzas can be ordered?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Multiply the number of size choices by the number of crust choices and the number of topping choices.
+      </p>
+      <m>
+        2 \cdot 3 \cdot 5 = 30
+      </m>
+      <p>
+        There are 30 different one-topping pizzas.
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="exercise-three-wheel-car-options">
+    <title>Three-wheel car options</title>
+    <statement>
+      <p>
+        Car manufacturers are now experimenting with lightweight three-wheel cars, designed for one person and considered ideal for city driving. Suppose you could order such a car with a choice of 9 possible colors, with or without air conditioning, electric or gas powered, and with or without an on-board computer. In how many ways can this car be ordered with regard to these options?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Multiply the number of choices for each independent feature.
+      </p>
+      <m>
+        9 \cdot 2 \cdot 2 \cdot 2 = 72
+      </m>
+      <p>
+        There are 72 possible car orders.
+      </p>
+    </solution>
+  </exercise>
+
+  <example xml:id="example-car-ordering-with-gps">
+    <title>Ordering a customizable car</title>
+    <statement>
+      <p>
+        The car in Example <xref ref="exercise-three-wheel-car-options"/> is now available in 10 possible colors. The options involving air conditioning, power, and on-board computer still apply. Furthermore, the car is available with or without a global positioning system. In how many ways can this car be ordered in terms of these options?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Multiply the number of choices for each independent option.
+      </p>
+      <m>
+        10 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 160
+      </m>
+      <p>
+        There are 160 possible car orders.
+      </p>
+    </solution>
+  </example>
+
+  <exercise xml:id="exercise-ten-question-test">
+    <title>Ten-question multiple-choice test</title>
+    <statement>
+      <p>
+        You are taking a multiple-choice test that has ten questions. Each of the questions has four answer choices, with one correct answer per question. If you select one of these four choices for each question and leave nothing blank, in how many ways can you answer the questions?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        This situation involves making choices with ten questions.
+      </p>
+      <md>
+        \text{Question 1 (4 choices) \\ Question 2 \\ Question 3 \\ \cdots \\ Question 10}
+      </md>
+      <p>
+        We use the Fundamental Counting Principle to find the number of ways that you can answer the questions on the test. Multiply the number of choices, 4, for each of the ten questions.
+      </p>
+      <m>
+        4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 = 4^{10} = 1,048,576
+      </m>
+    </solution>
+  </exercise>
+
+  <example xml:id="example-six-question-test">
+    <title>Six-question multiple-choice test</title>
+    <statement>
+      <p>
+        You are taking a multiple-choice test that has six questions. Each of the questions has three answer choices, with one correct answer per question. If you select one of these three choices for each question and leave nothing blank, in how many ways can you answer the questions?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Multiply the number of choices for each question.
+      </p>
+      <m>
+        3^6 = 729
+      </m>
+      <p>
+        There are 729 possible answer sheets.
+      </p>
+    </solution>
+  </example>
+
+  <example xml:id="example-telephone-numbers">
+    <title>Telephone number possibilities</title>
+    <statement>
+      <p>
+        Telephone numbers in the United States begin with three-digit area codes followed by seven-digit local telephone numbers. Area codes and local telephone numbers cannot begin with 0 or 1. How many different telephone numbers are possible?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        There are 8 choices for the first digit of the area code and 10 choices for each remaining area code digit. For the local number, the first digit also has 8 choices and each remaining digit has 10 choices.
+      </p>
+      <m>
+        8 \cdot 10 \cdot 10 \cdot 8 \cdot 10^6 = 6,400,000,000
+      </m>
+      <p>
+        There are 6,400,000,000 possible telephone numbers.
+      </p>
+    </solution>
+  </example>
+
+  <example xml:id="example-pen-choices">
+    <title>Pen choices</title>
+    <statement>
+      <p>
+        A popular type of pen comes in red, blue, or black ink. The writing tip varies from extra bold, bold, regular, fine, or micro. How many different choices of pens do you have with this type of pen?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Multiply the ink color choices by the tip style choices.
+      </p>
+      <m>
+        3 \cdot 5 = 15
+      </m>
+      <p>
+        There are 15 different pen choices.
+      </p>
+    </solution>
+  </example>
+
+  <example xml:id="example-catered-meal-combinations">
+    <title>Catered meal combinations</title>
+    <statement>
+      <p>
+        A wedding caterer gives you three choices for the main course, six starter choices and five options for dessert. How many different meals (made up of starter, dinner and dessert) are there?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Multiply the number of starter choices, main course choices, and dessert choices.
+      </p>
+      <m>
+        3 \cdot 6 \cdot 5 = 90
+      </m>
+      <p>
+        There are 90 different meals.
+      </p>
+    </solution>
+  </example>
+
+  <exercise xml:id="exercise-yes-no-survey">
+    <title>Yes/no survey</title>
+    <statement>
+      <p>
+        You take a survey with five "yes" or "no" answers. How many different ways could you complete the survey?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Each question has 2 choices, and the choices are independent.
+      </p>
+      <m>
+        2^5 = 32
+      </m>
+      <p>
+        There are 32 different ways to complete the survey.
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="exercise-product-code-possibilities">
+    <title>Product code possibilities</title>
+    <statement>
+      <p>
+        A company puts a code on each different product they sell. The code is made up of 3 numbers and 2 letters. How many different codes are possible?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Each number can be one of 10 digits, and each letter can be one of 26 letters.
+      </p>
+      <m>
+        10^3 \cdot 26^2 = 676,000
+      </m>
+      <p>
+        There are 676,000 different product codes possible.
+      </p>
+    </solution>
+  </exercise>
+
+  <definition xml:id="definition-factorials" latex-style="myshadowbox">
+    <title>Factorials</title>
+    <statement>
+      <p>
+        If <m>n</m> is a positive integer, then <m>n!</m> (<alert><m>n</m> factorial</alert>) is the product of all positive integers from <m>n</m> down through 1.
+      </p>
+      <md>
+        \begin{array}{ccl}
+          1! &amp; = &amp; 1 \\
+          2! &amp; = &amp; 2 \cdot 1 = 2 \\
+          3! &amp; = &amp; 3 \cdot 2 \cdot 1 = 6 \\
+          4! &amp; = &amp; 4 \cdot 3 \cdot 2 \cdot 1 = 24 \\
+          5! &amp; = &amp; 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120
+        \end{array}
+      </md>
+      <p>
+        By definition, <m>0!</m> is 1.
+      </p>
+    </statement>
+  </definition>
+
+  <definition xml:id="definition-factorial-expression" latex-style="myshadowbox">
+    <title>Factorial formula</title>
+    <statement>
+      <p>
+        The factorial of <m>n</m> is
+      </p>
+      <md>
+        n! = n(n-1)(n-2)(n-3)\cdots(3)(2)(1)
+      </md>
+      <p>
+        And by definition, <m>0! = 1</m>.
+      </p>
+    </statement>
+  </definition>
+
+  <exercise xml:id="exercise-evaluate-factorial-expressions">
+    <title>Evaluate factorial expressions</title>
+    <statement>
+      <p>
+        Evaluate the following factorial expressions without using the factorial key on your calculator.
+      </p>
+      <ol>
+        <li><m>\frac{8!}{5!}</m></li>
+        <li><m>\frac{21!}{24!}</m></li>
+        <li><m>\frac{500!}{499!}</m></li>
+        <li><m>\frac{11!}{7!}</m></li>
+        <li><m>\frac{13!}{16!}</m></li>
+        <li><m>\frac{99!}{100!}</m></li>
+        <li><m>\frac{7!}{(5-1)!}</m></li>
+        <li><m>\frac{7!}{3!(4-4)!}</m></li>
+      </ol>
+    </statement>
+    <solution>
+      <ol>
+        <li><m>\frac{8!}{5!} = 8 \cdot 7 \cdot 6 = 336</m></li>
+        <li><m>\frac{21!}{24!} = \frac{1}{24 \cdot 23 \cdot 22} = \frac{1}{12,144}</m></li>
+        <li><m>\frac{500!}{499!} = 500</m></li>
+        <li><m>\frac{11!}{7!} = 11 \cdot 10 \cdot 9 \cdot 8 = 7,920</m></li>
+        <li><m>\frac{13!}{16!} = \frac{1}{16 \cdot 15 \cdot 14} = \frac{1}{3,360}</m></li>
+        <li><m>\frac{99!}{100!} = \frac{1}{100}</m></li>
+        <li><m>\frac{7!}{(5-1)!} = \frac{7!}{4!} = 7 \cdot 6 \cdot 5 = 210</m></li>
+        <li><m>\frac{7!}{3!(4-4)!} = \frac{7!}{3! \cdot 0!} = \frac{5040}{6} = 840</m></li>
+      </ol>
+    </solution>
+  </exercise>
+
+  <definition xml:id="definition-permutations-duplicate" latex-style="myshadowbox">
+    <title>Permutations of duplicate items</title>
+    <statement>
+      <p>
+        The number of permutations of <m>n</m> items, where <m>p</m> items are identical, <m>q</m> items are identical, <m>r</m> items are identical, <m>s</m> items are identical, and so on, is given by
+      </p>
+      <md>
+        \displaystyle \frac{n!}{p!\ q!\ r!\ s!\cdots}
+      </md>
+    </statement>
+  </definition>
+
+  <exercise xml:id="exercise-arrange-mississippi">
+    <title>Arrange MISSISSIPPI</title>
+    <statement>
+      <p>
+        In how many distinct ways can the letters of the word "MISSISSIPPI" be arranged?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The word has 11 letters with 4 identical I's, 4 identical S's, and 2 identical P's.
+      </p>
+      <m>
+        \frac{11!}{4! 4! 2!} = 34,650
+      </m>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="exercise-arrange-banana">
+    <title>Arrange BANANA</title>
+    <statement>
+      <p>
+        In how many distinct ways can the letters of the word "BANANA" be arranged?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The word has 6 letters with 3 identical A's and 2 identical N's.
+      </p>
+      <m>
+        \frac{6!}{3! 2!} = 60
+      </m>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="exercise-arrange-massachusetts">
+    <title>Arrange MASSACHUSETTS</title>
+    <statement>
+      <p>
+        In how many distinct ways can the letters of the word "MASSACHUSETTS" be arranged?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The word has 13 letters with 4 identical S's, 2 identical A's, and 2 identical T's.
+      </p>
+      <m>
+        \frac{13!}{4! 2! 2!} = 64,864,800
+      </m>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="exercise-arrange-balloons">
+    <title>Arrange balloons</title>
+    <statement>
+      <p>
+        There are seventeen balloons: 3 blue, 5 red, 2 green, 3 yellow, and 4 orange. In how many distinct ways can the balloons be arranged?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        There are 17 total balloons with duplicates in several colors.
+      </p>
+      <m>
+        \frac{17!}{3! 5! 2! 3! 4!} = 1,715,313,600
+      </m>
+    </solution>
+  </exercise>
+</section>

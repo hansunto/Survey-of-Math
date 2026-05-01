@@ -66,17 +66,7 @@
     <!-- numbering should appear.                                     -->
     <!-- For use with a book organized by part, you can set the -->
     <!--  @part-structure to "decorative" or "structural" -->
-    <divisions level="0"/>
-
-    <!-- The next elements say how the levels deep to break up the    -->
-    <!-- numbering of the respective elements. Can't be more than the -->
-    <!-- @level on divisions above.                                   -->
-    <blocks level="0" />
-    <projects level="0" />
-    <equations level="0" />
-    <footnotes level="0" />
-  </numbering>
-
+    <divisions level="1"/>
   <!-- LaTeX specific options: set @print="yes" to get pdf set up   -->
   <!-- for printing; set @sides="two" if the printing would be two- -->
   <!-- sided.  @pageref="yes/no" controls whether page number are   -->

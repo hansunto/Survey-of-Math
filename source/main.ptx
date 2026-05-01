@@ -60,7 +60,8 @@
   </introduction>
   <xi:include href="./notes/fundamentalP.ptx" />
   <xi:include href="./notes/OrNotEvent.ptx" />
-  <!--<xi:include href="./notes/FCP.ptx" />-->
+  <xi:include href="./notes/FCP.ptx" />
+  <xi:include href="./notes/Permutations.ptx" />
   
   
 

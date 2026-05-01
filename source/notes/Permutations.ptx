@@ -1,0 +1,157 @@
+<section xml:id="sec-permutations">
+  <title>Permutations</title>
+
+  <definition xml:id="def-permutation">
+    <title>Permutation</title>
+    <statement>
+      <p>
+        A <term>permutation</term> is an ordered arrangement of items that occurs when:
+        <ul>
+          <li><p>No item is used more than once.</p></li>
+          <li><p>The order of arrangement makes a difference.</p></li>
+        </ul>
+      </p>
+    </statement>
+  </definition>
+
+  <!-- Example 1: Books -->
+  <exercise>
+    <statement>
+      <p>You need to arrange five books along a small shelf. How many different ways can you arrange the books, assuming that the order of the books makes a difference to you?</p>
+    </statement>
+    <solution>
+      <p>
+        There are 5 choices for the first position, 4 for the second, 3 for the third, 2 for the fourth, and 1 for the last.
+        Using the Fundamental Counting Principle:
+        <me>5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 5! = 120</me>
+        There are 120 different ways to arrange the books.
+      </p>
+    </solution>
+  </exercise>
+
+  <!-- Example 2: Police Lineup -->
+  <exercise>
+    <statement>
+      <p>In how many different ways can a police department arrange eight suspects in a police lineup if each lineup contains all eight people?</p>
+    </statement>
+    <solution>
+      <p>
+        Since all 8 people are used and order matters, this is a permutation of 8 items taken 8 at a time:
+        <me>{}_8 P_8 = 8! = 40,320</me>
+        There are 40,320 different ways to arrange the lineup.
+      </p>
+    </solution>
+  </exercise>
+
+  <!-- Example 3: Repetition Allowed (Not a permutation) -->
+  <exercise>
+    <statement>
+      <p>If five digits 1, 2, 3, 4, 5 are being given and a three-digit code has to be made from it if the repetition of digits is allowed then how many such codes can be formed?</p>
+    </statement>
+    <solution>
+      <p>
+        Because repetition is allowed, there are 5 choices for each of the three positions in the code:
+        <me>5 \cdot 5 \cdot 5 = 5^3 = 125</me>
+        There are 125 possible codes.
+      </p>
+    </solution>
+  </exercise>
+
+  <definition xml:id="def-permutation-formula">
+    <title>Permutation Formula</title>
+    <statement>
+      <p>
+        The notation <m>{}_n P_r</m> means the <term>number of permutations of <m>n</m> things taken <m>r</m> at a time</term>:
+        <me>{}_n P_r = \frac{n!}{(n-r)!}</me>
+      </p>
+    </statement>
+  </definition>
+
+  <!-- Example 4: Sitcoms -->
+  <exercise>
+    <statement>
+      <p>How many different programming schedules can be arranged by choosing 5 situation comedies from a collection of 9 classic sitcoms?</p>
+    </statement>
+    <solution>
+      <p>
+        We are choosing <m>r=5</m> items from a set of <m>n=9</m> where order matters:
+        <me>{}_9 P_5 = \frac{9!}{(9-5)!} = \frac{9!}{4!} = 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5 = 15,120</me>
+        There are 15,120 possible programming schedules.
+      </p>
+    </solution>
+  </exercise>
+
+  <!-- Example 5: Race -->
+  <exercise>
+    <statement>
+      <p>In a race in which six automobiles are entered and there are no ties, in how many ways can the first three finishers come in?</p>
+    </statement>
+    <solution>
+      <p>
+        We are looking for the number of permutations of 6 cars taken 3 at a time:
+        <me>{}_6 P_3 = \frac{6!}{(6-3)!} = \frac{6!}{3!} = 6 \cdot 5 \cdot 4 = 120</me>
+        There are 120 ways the first three finishers can come in.
+      </p>
+    </solution>
+  </exercise>
+
+  <!-- Example 6: Singers -->
+  <exercise>
+    <statement>
+      <p>Five singers are to perform on a weekend evening at a night club. How many different ways are there to schedule their appearances?</p>
+    </statement>
+    <solution>
+      <p>
+        This is a permutation of all 5 singers:
+        <me>5! = 120</me>
+        There are 120 different scheduling arrangements.
+      </p>
+    </solution>
+  </exercise>
+
+  <!-- Example 7: Stocks -->
+  <exercise>
+    <statement>
+      <p>A stock can go up, go down, or stay unchanged. How many possibilities are there if you own seven stocks?</p>
+    </statement>
+    <solution>
+      <p>
+        Each of the 7 stocks has 3 possible outcomes. Since the outcome of one stock is independent of the others and order (which stock does what) matters:
+        <me>3^7 = 2,187</me>
+        There are 2,187 different possibilities for the seven stocks.
+      </p>
+    </solution>
+  </exercise>
+
+  <!-- Example 8: Movie Theater Seating -->
+  <exercise>
+    <statement>
+      <p>Seven seats are positioned in a row at a movie theater. Alice, Betty, Craig, Dan, Evelyn, Frank, and Gavin want to sit together.</p>
+      <ol>
+        <li><p>How many different ways can they be arranged?</p></li>
+        <li><p>How many different ways can they be arranged if Betty sits in the second seat?</p></li>
+        <li><p>How many different ways can they be arranged if Craig and Gavin want to sit in the two aisle seats?</p></li>
+      </ol>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>Total arrangements of 7 people: <m>7! = 5,040</m>.</p>
+          </li>
+          <li>
+            <p>If Betty is fixed in the second seat, we only need to arrange the remaining 6 people in the remaining 6 seats: <m>6! = 720</m>.</p>
+          </li>
+          <li>
+            <p>
+              There are two aisle seats (the first and the last). 
+              First, arrange Craig and Gavin in those 2 seats: <m>2! = 2</m> ways (Craig-Gavin or Gavin-Craig).
+              Then, arrange the remaining 5 people in the middle 5 seats: <m>5! = 120</m>.
+              Total: <m>2 \cdot 120 = 240</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </exercise>
+</section>

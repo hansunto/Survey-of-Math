@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-compound-interest">
+
+  <title>Saving Money: Compound Interest</title>  
+<p>
+In 1626, Peter Minuit convinced the wrappinger Indians to sell him Manhattan Island for $24. If the native American had <alert>put the $24 into a bank account at a 5% interest rate</alert> compound annually, by the year 2021 there would be well over $5.6 billion in the account!
+</p>
+<p>
+So, how did the present value of Manhattan in 1626 attain a future value of over $5.6 billion in 2021, 395 years at 5% simple interest is
+      <md>
+        A=P(1+rt)=24(1+(0.05)(395))=498.00
+      </md>
+      or $498.00 compared to over $5.6 billion.
+</p>
+  <assemblage xml:id="aside-compound-interest">
+        <title>Compound Interest vs. Simple Interest</title>
+        <p>
+          The difference between simple interest and compound interest is that simple interest is calculated only on the original principal, while compound interest is calculated on the original principal and any accumulated interest. 
+        </p>
+    <p>
+    <alert>Compound interest</alert> is interest computed on the original principal as well as on any accumulated interest.
+    </p>    
+  </assemblage>
+    <p>
+      For example, suppose you deposit $1,000 in a savings account at a rate of 5%. Following table shows how the investment grows.
+    </p>
+    <p> Calculating Compound interest for a year.</p>
+    <table>
+      <title>Compound Interest Growth of $1000 in a savings account at a rate of 5% </title>
+          <tabular halign="center">
+            <row header ="yes" bottom="minor" >
+                <cell>Year</cell>
+                <cell>Beginning Balance ($)</cell>
+                <cell>Interest Earned: <m>I=Prt</m></cell>
+                <cell>New Balance($)</cell>
+              </row>
+              <row>
+                <cell>1</cell>
+                <cell>$1,000.00</cell>
+                <cell><m>I=\$ 1,000.00 \times 0.05\times 1=50</m></cell>
+                <cell>$1,050.00</cell>
+              </row>
+              <row>
+                <cell>2</cell>
+                <cell>$1,050.00</cell>
+                <cell><m>I=\$ 1,050.00 \times 0.05\times 1=52.50</m></cell>
+                <cell>$1,102.50</cell>
+              </row>
+              <row>
+                <cell>3</cell>
+                <cell>$1,102.50</cell>
+                <cell><m>I=\$ 1,102.50 \times 0.05\times 1=55.13</m></cell>
+                <cell>$1,157.63</cell>
+              </row>
+              <row>
+                <cell>4</cell>
+                <cell>$1,157.63</cell>
+                <cell><m>I=\$ 1,157.63 \times 0.05\times 1=57.88</m></cell>
+                <cell>$1,215.51</cell>
+              </row>
+              <row>
+                <cell>5</cell>
+                <cell>$1,215.51</cell>
+                <cell />
+                <cell />
+              </row>
+              <row>
+                <cell>6</cell>
+                <cell />
+                <cell />
+                <cell />
+              </row>
+            </tabular>
+    </table>
+
+      <p>
+        The fast way to determine the amount, <m>A,</m> in the account subject to compound interest is the following formula. If <m>P</m> dollars are deposited at rate <m>r</m>, in decimal form, subject to compound interest, then the amount, <m>A</m>, of money in the account after t years is given by
+      </p>
+ 
+      <definition xml:id="def-compound-interest-one-year">
+        <title> Compound Interest Paid Once a Year</title>
+        <statement>
+          <p>
+            Calculating the amount in an account <alert>for compound interest paid once year:</alert>
+      <md>   A=P(1+r)^{t} </md>
+      where the amount <m>A</m> is the account's <alert>future value</alert> and the principal <m>P</m> is its <alert>present value</alert>.    
+          </p>
+        </statement>
+      </definition>
+<example xml:id="example-CI1">
+        <title>Calculating Compound interest for a year</title>
+       <p> You deposit $2,000 in a savings account, which has a rate 6%. Find the amount, A, of money in the account after 3 years subject to compound interest and find the interest.
+       </p>
+<solution>
+        <p>
+  To find the amount <m>A</m> after 3 years, we use the compound interest formula </p>
+  <me>A = P(1 + r)^t</me>
+  <p> where <m> P = 2000 </m>, <m> r = 0.06 </m>, and <m> t = 3 </m>.</p>
+<p>
+  Substituting the values:
+  <me>A=2000(1+0.06)^3=2000(1.06)^3=\$2382.03</me>
+</p>
+<p>
+  The interest earned is calculated as:
+  <me>I = A - P = 2382.03 - 2000 = \$382.03</me>
+</p>
+</solution>
+       
+</example>
+
+      <p>
+        Calculating the amount in an account <alert>for compound interest paid more than once a year.</alert> The period of time between two interest payments is called the <alert>compounding period</alert>.
+      </p>
+
+      <p>
+        If compound interest is paid once a year, the compounding period is one year. We say the interest is <alert>compounded annually</alert>.
+      </p>
+      <p>
+        If compound interest is paid twice a year, the compounding period is six months. We say the interest is <alert>compounded semiannually</alert>.
+      </p>
+
+      <p>
+        If compound interest is paid four times a year, the compounding period is three months. We say the interest is <alert>compounded quarterly</alert>.
+      </p>
+
+      <p>
+        If compound interest is paid every month of a year, the compounding period is twelve months. We say the interest is <alert>compounded monthly</alert>.
+      </p>
+
+      <p>
+        In general, if compound interest is paid <alert>n</alert> times per year, we say the interest is <alert>n compounding periods per year</alert>.
+      </p>
+
+      <definition xml:id="def-Compound-interest-Future-Value">
+        <title>Compound interest: Future Value</title>
+        <statement>
+        <p>
+        If <m>P</m> dollars are deposited at rate <m>r</m>, in decimal form, subject to compound interest paid n times per year, then the amount, <m>A</m>, of money in the account after t years is given by
+        </p>
+        <men xml:id="eqn-compound-interest-formula">
+        A = P\left(1+\dfrac{r}{n}\right)^{nt}
+      </men>
+        <p> where the amount <m>A</m> is the account's <alert>future value</alert> and the principal <m>P</m> is its <alert>present value</alert>. 
+      </p>
+        </statement>
+      </definition>
+
+<example xml:id="example-C2">
+  <title>Calculating Compound Interest for More Than a Year</title>
+  <statement>
+    <p>
+      You deposit $7,500 in a savings account that has a rate of 6%. 
+      The interest is compounded monthly. How much money will you have 
+      after five years? Find the interest after five years.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      To find the future value of the account, we use the compound interest formula:
+    </p>
+    <me>A = P \left(1 + \frac{r}{n}\right)^{nt}</me>
+    <p>
+      Given <m>P = 7500</m>, <m>r = 0.06</m>, <m>n = 12</m>, and <m>t = 5</m>:
+    </p>
+    <md>
+      <mrow>A \amp = 7500 \left(1 + \frac{0.06}{12}\right)^{12 \times 5}</mrow>
+      <mrow>\amp = 7500(1.005)^{60}</mrow>
+      <mrow>\amp \approx 10116.38</mrow>
+    </md>
+    <p>
+      The account balance after five years is approximately $10,116.38. 
+      The interest earned over five years is:
+    </p>
+    <me>I = 10116.38 - 7500 = 2616.38</me>
+    <p>
+      The interest earned is $2,616.38.
+    </p>
+  </solution>
+</example>
+
+<definition xml:id="def-Compound-Interest-Present-Value">
+   <title>Compound Interest: Present Value</title>
+   <statement>
+     <p>
+  If <m>A</m> dollars are to be accumulated in <m>t</m> years in an account that pays rate <m>r</m> compounded <m>n</m> times per year, then the present value, <m>P</m>, that needs to be invested now is given by
+ <md>
+   P=\dfrac{A}{ \bigl( 1+ \frac{r}{n}\bigr)^{nt}}
+ </md>
+     </p>
+   </statement>
+ </definition>
+
+<example xml:id="example-C3"> 
+ <title>Calculating present value</title>
+ <p> 
+   How much money should be deposited in an account today that earns 8% compounded monthly so that it will accumulate to $20,000 in five years?
+ </p>
+ <solution>
+   <p>
+     To find the required deposit (Present Value), we use the formula:
+  <me>P= \frac{A}{(1 + \frac{r}{n})^{nt}}</me>
+  where:
+  <ul>
+      <li><p><m>A = 20,000</m> (Future Value)</p></li>
+      <li><p><m>r = 0.08</m> (Annual interest rate)</p></li>
+      <li><p><m>n = 12</m> (Compounding periods per year)</p></li>
+      <li><p><m>t = 5</m> (Time in years)</p></li>
+  </ul>
+   </p>
+   <p>
+  Substituting these values into the formula gives:
+  <md>
+    <mrow>P \amp = \frac{20,000}{(1 + \frac{0.08}{12})^{12 \times 5}}</mrow>
+    <mrow>P \amp = \frac{20,000}{(1.0066667)^{60}}</mrow>
+    <mrow>P \amp \approx 13,424.21</mrow>
+  </md>
+   </p>
+   <p>
+  Therefore, a deposit of <m>\$13,424.21</m> is required today.
+   </p>
+ </solution>
+ </example>
+
+ <p>
+   The <alert>annual percentage yield (APY),</alert> or the <alert>effective interest rate</alert>, is the simple interest rate that produces the same amount of money in an account at the end of one year as when the account is subject to compound interest at a stated rate.
+ </p>
+ <definition xml:id="def-APY">
+   <title>Annual percentage yield (APY)</title>
+   <statement>
+     <p>
+  Suppose that an investment has a nominal interest rate, <m>r</m>, in decimal form, and pays compound interest <m>n</m> times per year. The investment's <alert>effective annual yields</alert>, APY, is given by
+ <men xml:id="eqn-APY-formula">
+   Y=\bigl( 1+\frac{r}{n}\bigr)^{n}-1
+ </men>
+     </p>
+   </statement>
+ </definition>
+
+<example xml:id="example-C4">
+   <title>Understanding effective annual yield</title>
+   <p>  
+   You deposit $4000 in an account that pays 8% interest compounded monthly. Use the future value formula for simple interest to determine the effective annual yield.
+   </p>
+  <solution>
+   <p>
+     By the formula for future value
+     <md>
+  A = P(1+ \dfrac{r}{n})^{nt}=4000(1+\dfrac{0.08}{12})^{12 \cdot 1}\approx \$4,332.00
+     </md>
+     Rounded to nearest cent, the amount in the savings account after one year in $4332.00.
+   </p>
+   <p>
+     The effective annual yield is a simple interest rate. We use the future value formula for simple interest to determine the simple interest rate that produces a future value of $4332 for $4000 deposit after one year.
+   </p>
+   <md> 
+     <mrow> A \amp = P(1+rt) </mrow>
+     <mrow> 4332 \amp = 4000(1+r(1)) </mrow>
+     <mrow> 4332 \amp = 4000+4000r </mrow>
+     <mrow> 332 \amp = 4000r </mrow>
+     <mrow>   r \amp = 0.083=8.3 \% </mrow>
+   </md>
+   <p>
+     You will pay a simple interest rate of 8.3%. This means that money invested at 8.3% simple interest earns the same amount in one year as money invested at 8%interest compounded monthly.
+   </p>
+ </solution>
+</example>
+
+<example xml:id="example-C5">
+    <title>Calculating Effective Annual Yield</title>
+    <statement>
+   <p>
+  A passbook savings account has a nominal rate of <m>5\%</m>. The interest is compounded daily. Find the account's effective annual yield, assuming a <m>365</m>-day year.
+   </p>
+    </statement>
+    <solution>
+   <p>
+  The Effective Yield (APY) represents the actual interest 
+  earned in one year. It is calculated using the formula:
+  <me>Y = \left(1 + \frac{r}{n}\right)^n - 1</me>
+  where:
+  <ul>
+      <li><p><m>r = 0.05</m> (Nominal annual interest rate)</p></li>
+      <li><p><m>n = 365</m> (Compounding periods per year)</p></li>
+  </ul>
+   </p>
+   <p>
+  Substituting the given values:
+  <md>
+      <mrow>Y \amp = \left(1 + \frac{0.05}{365}\right)^{365} - 1</mrow>
+      <mrow>Y \amp \approx (1.000136986)^{365} - 1</mrow>
+      <mrow>Y \amp \approx 1.051267 - 1</mrow>
+      <mrow>Y \amp \approx 0.051267</mrow>
+  </md>
+   </p>
+   <p>
+  Converted to a percentage, the effective annual yield is approximately <m>5.13\%</m>.
+   </p>
+    </solution>
+</example>
+
+<example xml:id="example-C6">
+    <title>Quarterly Compounding and Interest Calculation</title>
+    <statement>
+   <p>
+  You deposit <m>\$1,000</m> in a savings account at a bank that has a rate 
+  of <m>2.95\%</m>. The interest is compounded quarterly.
+  <ol marker="a">
+      <li>
+     <p>
+    How much money will you have after ten years? 
+    Round up to the nearest cent.
+     </p>
+      </li>
+      <li>
+     <p>
+    Find the interest.
+     </p>
+      </li>
+  </ol>
+   </p>
+    </statement>
+    <solution>
+   <p>
+  First, we identify the variables for the compound interest formula:
+  <ul>
+      <li><p><m>P = 1,000</m> (Principal)</p></li>
+      <li><p><m>r = 0.0295</m> (Annual rate)</p></li>
+      <li><p><m>n = 4</m> (Quarterly compounding)</p></li>
+      <li><p><m>t = 10</m> (Years)</p></li>
+  </ul>
+   </p>
+   <p>
+  For part (a), we calculate the future value (<m>A</m>):
+  <md>
+      <mrow>A \amp = P\left(1 + \frac{r}{n}\right)^{nt}</mrow>
+      <mrow>A \amp = 1,000\left(1 + \frac{0.0295}{4}\right)^{4 \times 10}</mrow>
+      <mrow>A \amp = 1,000(1.007375)^{40}</mrow>
+      <mrow>A \amp \approx 1,341.517</mrow>
+  </md>
+  Rounding up, the account balance will be <m>\$1,341.52</m>.
+   </p>
+   <p>
+  For part (b), we find the interest earned (<m>I</m>) by subtracting 
+  the principal from the future value:
+  <md>
+      <mrow>I \amp = A - P</mrow>
+      <mrow>I \amp = 1,341.52 - 1,000</mrow>
+      <mrow>I \amp = 341.52</mrow>
+  </md>
+  The interest earned is <m>\$341.52</m>.
+   </p>
+    </solution>
+</example>
+
+<exercise xml:id="exercise-C1">
+    <title>Comparing Investment Options</title>
+    <statement>
+   <p>
+  Suppose that you have <m>\$10,000</m> to invest. 
+  Which investment yields the greater return over 5 years: 
+  <m>7.55\%</m> compounded quarterly or <m>7.6\%</m> compounded semiannually?
+   </p>
+    </statement>
+    <solution>
+   <p>
+  To determine which investment is superior, we calculate the future value 
+  (<m>A</m>) for both options using the formula <m>A = P(1 + \frac{r}{n})^{nt}</m>, 
+  where <m>P = 10,000</m> and <m>t = 5</m>.
+   </p>
+   <p>
+  <dl>
+      <li>
+     <title>Option 1: <m>7.55\%</m> compounded quarterly</title>
+     <p>
+    Here, <m>r = 0.0755</m> and <m>n = 4</m>.
+    <md>
+        <mrow>A \amp = 10,000\left(1 + \frac{0.0755}{4}\right)^{4 \times 5}</mrow>
+        <mrow>A \amp = 10,000(1.018875)^{20}</mrow>
+        <mrow>A \amp \approx 14,530.01</mrow>
+    </md>
+     </p>
+      </li>
+      <li>
+     <title>Option 2: <m>7.6\%</m> compounded semiannually</title>
+     <p>
+    Here, <m>r = 0.076</m> and <m>n = 2</m>.
+    <md>
+        <mrow>A \amp = 10,000\left(1 + \frac{0.076}{2}\right)^{2 \times 5}</mrow>
+        <mrow>A \amp = 10,000(1.038)^{10}</mrow>
+        <mrow>A \amp \approx 14,520.23</mrow>
+    </md>
+     </p>
+      </li>
+  </dl>
+   </p>
+   <p>
+  Comparing the two totals, Option 1 results in <m>\$14,530.01</m> while 
+  Option 2 results in <m>\$14,520.23</m>.
+   </p>
+   <p>
+  Therefore, the <m>7.55\%</m> investment compounded quarterly yields the 
+  greater return by <m>\$9.78</m>.
+   </p>
+    </solution>
+</exercise>
+
+<exercise xml:id="exercise-C2">
+    <title>Present Value with Quarterly Compounding</title>
+    <statement>
+   <p>
+  How much money should be deposited today in an account that earns 
+  <m>5\%</m> compounded quarterly so that it will accumulate to 
+  <m>\$15,000</m> in ten years?
+   </p>
+    </statement>
+    <solution>
+   <p>
+  To find the required initial deposit, we use the Present Value formula:
+  <me>P = \frac{A}{(1 + \frac{r}{n})^{nt}}</me>
+  where:
+  <ul>
+      <li><p><m>A = 15,000</m> (The target future value)</p></li>
+      <li><p><m>r = 0.05</m> (The annual interest rate)</p></li>
+      <li><p><m>n = 4</m> (Compounded quarterly)</p></li>
+      <li><p><m>t = 10</m> (The time in years)</p></li>
+  </ul>
+   </p>
+   <p>
+  Substituting these values into the formula:
+  <md>
+      <mrow>P \amp = \frac{15,000}{(1 + \frac{0.05}{4})^{4 \times 10}}</mrow>
+      <mrow>P \amp = \frac{15,000}{(1.0125)^{40}}</mrow>
+      <mrow>P \amp \approx \frac{15,000}{1.643619}</mrow>
+      <mrow>P \amp \approx 9,126.20</mrow>
+  </md>
+   </p>
+   <p>
+  Therefore, a deposit of <m>\$9,126.20</m> is required today to 
+  reach the goal of <m>\$15,000</m> in ten years.
+   </p>
+    </solution>
+</exercise>
+
+<!-- exercises for practice-->
+
+
+<exercises xml:id="practice-compound-interest">
+  <title>Exercises for Practice</title>
+<exercise xml:id="exercise-C3">
+    <title>Calculating Effective Annual Yield</title>
+    <statement>
+   <p>
+  You deposit <m>\$7,500</m> in an account that pays <m>4.75\%</m> 
+  interest compounded monthly. Determine the effective annual yield.
+   </p>
+    </statement>
+    <solution>
+   <p>
+  The Effective Annual Yield (APY) is the actual annual rate of return 
+  and is independent of the principal amount deposited. We use the formula:
+  <me>Y = \left(1 + \frac{r}{n}\right)^n - 1</me>
+  where:
+  <ul>
+      <li><p><m>r = 0.0475</m> (Nominal annual interest rate)</p></li>
+      <li><p><m>n = 12</m> (Compounding periods per year)</p></li>
+  </ul>
+   </p>
+   <p>
+  Substituting these values:
+  <md>
+      <mrow>Y \amp = \left(1 + \frac{0.0475}{12}\right)^{12} - 1</mrow>
+      <mrow>Y \amp \approx (1.0039583)^{12} - 1</mrow>
+      <mrow>Y \amp \approx 1.048545 - 1</mrow>
+      <mrow>Y \amp \approx 0.048545</mrow>
+  </md>
+   </p>
+   <p>
+  Converted to a percentage and rounded to two decimal places, the 
+  effective annual yield is <m>4.85\%</m>.
+   </p>
+    </solution>
+</exercise>
+
+<exercise xml:id="exercise-C4">
+    <title>Future Value for a Long-Term Investment</title>
+    <statement>
+   <p>
+  At the time of her grandson's birth, a grandmother deposits <m>\$5,000</m> 
+  in an account that pays <m>6\%</m> compounded monthly. What will be the 
+  value of the account at the child's twenty-first birthday, assuming 
+  that no other deposits or withdrawals are made during this period?
+   </p>
+    </statement>
+    <solution>
+   <p>
+  To find the future value of the account, we use the compound interest formula:
+  <me>A = P\left(1 + \frac{r}{n}\right)^{nt}</me>
+  where:
+  <ul>
+      <li><p><m>P = 5,000</m> (Initial deposit)</p></li>
+      <li><p><m>r = 0.06</m> (Annual interest rate)</p></li>
+      <li><p><m>n = 12</m> (Compounding periods per year)</p></li>
+      <li><p><m>t = 21</m> (Time in years until the 21st birthday)</p></li>
+  </ul>
+   </p>
+   <p>
+  Substituting these values into the formula:
+  <md>
+      <mrow>A \amp = 5,000\left(1 + \frac{0.06}{12}\right)^{12 \times 21}</mrow>
+      <mrow>A \amp = 5,000(1.005)^{252}</mrow>
+      <mrow>A \amp \approx 5,000(3.514418)</mrow>
+      <mrow>A \amp \approx \$17,572.09</mrow>
+  </md>
+   </p>
+   <p>
+  On the child's twenty-first birthday, the account will be worth <m>\$17,572.09</m>.
+   </p>
+    </solution>
+</exercise>
+
+<exercise xml:id="exercise-C5">
+    <title>Interest Rate Concepts: True or False</title>
+    <statement>
+   <p>
+  Determine whether each statement is True or False and explain your reasoning.
+  <ol marker="1">
+      <li>
+     <p>
+    My bank provides simple interest at <m>3.25\%</m> per year, 
+    but I cannot determine if this is a better deal than a 
+    competing bank offering <m>3.25\%</m> compound interest 
+    without knowing the compounding period.
+     </p>
+      </li>
+      <li>
+     <p>
+    My bank advertises a compound interest rate of <m>2.4\%</m>, 
+    although, without making deposits or withdrawals, the 
+    balance in my account increased by <m>2.43\%</m> in one year.
+     </p>
+      </li>
+  </ol>
+   </p>
+    </statement>
+    <solution>
+   <p>
+  <ol marker="1">
+      <li>
+     <p>
+    <strong>False.</strong> Any amount of compounding is better than 
+    simple interest when the nominal rates are identical (and 
+    greater than zero). While the compounding period determines 
+    <em>how much</em> better the deal is, we already know 
+    compound interest will yield more than simple interest 
+    regardless of whether it is compounded annually, 
+    monthly, or daily.
+     </p>
+      </li>
+      <li>
+     <p>
+    <strong>True.</strong> The advertised rate is the nominal rate 
+    (<m>2.4\%</m>), but the <m>2.43\%</m> increase represents 
+    the <em>Effective Annual Yield</em>. Because interest 
+    is added to the balance throughout the year, the 
+    actual growth is slightly higher than the nominal rate. 
+    For example, <m>2.4\%</m> compounded monthly results 
+    in an effective yield of approximately <m>2.427\%</m>.
+     </p>
+      </li>
+  </ol>
+   </p>
+    </solution>
+</exercise>
+
+<exercise xml:id="exercise-C6">
+    <title>Quarterly Compounding vs. Simple Interest</title>
+    <statement>
+   <p>
+  A sum of <m>\$10,000</m> is invested at an annual rate of <m>3\%</m>. 
+  Find the balance in the account after 5 years subject to:
+  <ol marker="1">
+      <li>
+     <p>
+    quarterly compounding
+     </p>
+      </li>
+      <li>
+     <p>
+    simple interest
+     </p>
+      </li>
+  </ol>
+   </p>
+    </statement>
+    <solution>
+   <p>
+  We are given <m>P = 10,000</m>, <m>r = 0.03</m>, and <m>t = 5</m>.
+   </p>
+   <p>
+  <ol marker="1">
+      <li>
+     <title>Quarterly Compounding</title>
+     <p>
+    Using the formula <m>A = P(1 + \frac{r}{n})^{nt}</m> with <m>n = 4</m>:
+    <md>
+        <mrow>A \amp = 10,000\left(1 + \frac{0.03}{4}\right)^{4 \times 5}</mrow>
+        <mrow>A \amp = 10,000(1.0075)^{20}</mrow>
+        <mrow>A \amp \approx 10,000(1.161184)</mrow>
+        <mrow>A \amp \approx 11,611.84</mrow>
+    </md>
+    The balance with quarterly compounding is <m>\$11,611.84</m>.
+     </p>
+      </li>
+      <li>
+     <title>Simple Interest</title>
+     <p>
+    Using the formula <m>A = P(1 + rt)</m>:
+    <md>
+        <mrow>A \amp = 10,000(1 + 0.03 \times 5)</mrow>
+        <mrow>A \amp = 10,000(1 + 0.15)</mrow>
+        <mrow>A \amp = 10,000(1.15)</mrow>
+        <mrow>A \amp = 11,500.00</mrow>
+    </md>
+    The balance with simple interest is <m>\$11,500.00</m>.
+     </p>
+      </li>
+  </ol>
+   </p>
+   <p>
+  Quarterly compounding results in an additional <m>\$111.84</m> compared to simple interest.
+   </p>
+    </solution>
+</exercise>
+
+<exercise xml:id="exercise-C7">
+    <title>Future Value and Effective Yield</title>
+    <statement>
+   <p>
+  You deposit <m>\$3,000</m> in an account that pays <m>4.5\%</m> 
+  interest compounded monthly.
+  <ol marker="1">
+      <li>
+     <p>
+    Find the future value after one year.
+     </p>
+      </li>
+      <li>
+     <p>
+    Determine the effective annual yield.
+     </p>
+      </li>
+  </ol>
+   </p>
+    </statement>
+    <solution>
+   <p>
+  Given: <m>P = 3,000</m>, <m>r = 0.045</m>, <m>n = 12</m>, and <m>t = 1</m>.
+   </p>
+   <p>
+  <ol marker="1">
+      <li>
+     <p>
+    To find the future value (<m>A</m>) after one year:
+    <md>
+        <mrow>A \amp = P\left(1 + \frac{r}{n}\right)^{nt}</mrow>
+        <mrow>A \amp = 3,000\left(1 + \frac{0.045}{12}\right)^{12 \times 1}</mrow>
+        <mrow>A \amp = 3,000(1.00375)^{12}</mrow>
+        <mrow>A \amp \approx 3,000(1.0459398)</mrow>
+        <mrow>A \amp \approx 3,137.82</mrow>
+    </md>
+    The future value after one year is <m>\$3,137.82</m>.
+     </p>
+      </li>
+      <li>
+     <p>
+    To find the effective annual yield (<m>EAY</m>):
+    <md>
+        <mrow>Y \amp = \left(1 + \frac{r}{n}\right)^n - 1</mrow>
+        <mrow>Y \amp = \left(1 + \frac{0.045}{12}\right)^{12} - 1</mrow>
+        <mrow>Y \amp \approx 1.0459398 - 1</mrow>
+        <mrow>Y \amp \approx 0.04594</mrow>
+    </md>
+    The effective annual yield is approximately <m>4.59\%</m>.
+     </p>
+      </li>
+  </ol>
+   </p>
+    </solution>
+</exercise>
+
+<exercise xml:id="exercise-C8">
+    <title>Planning for Education: Present Value</title>
+    <statement>
+   <p>
+  Parents wish to have <m>\$120,000</m> available for a child's education. 
+  If the child is now 1 year old, how much money must be set aside at 
+  <m>8\%</m> compounded monthly to meet their financial goal when the 
+  child is 18?
+   </p>
+    </statement>
+    <solution>
+   <p>
+  To find the required initial investment, we use the Present Value formula:
+  <me>P = \frac{A}{(1 + \frac{r}{n})^{nt}}</me>
+  where:
+  <ul>
+      <li><p><m>A = 120,000</m> (The target goal)</p></li>
+      <li><p><m>r = 0.08</m> (Annual interest rate)</p></li>
+      <li><p><m>n = 12</m> (Monthly compounding)</p></li>
+      <li><p><m>t = 17</m> (Years remaining until the child is 18: <m>18 - 1 = 17</m>)</p></li>
+  </ul>
+   </p>
+   <p>
+  Substituting these values into the formula:
+  <md>
+      <mrow>P \amp = \frac{120,000}{(1 + \frac{0.08}{12})^{12 \times 17}}</mrow>
+      <mrow>P \amp = \frac{120,000}{(1.0066667)^{204}}</mrow>
+      <mrow>P \amp \approx \frac{120,000}{3.876778}</mrow>
+      <mrow>P \amp \approx 30,953.54</mrow>
+  </md>
+   </p>
+   <p>
+  The parents must set aside <m>\$30,953.54</m> today to meet the 
+  <m>\$120,000</m> goal in 17 years.
+   </p>
+    </solution>
+</exercise>
+
+<exercise xml:id="exercise-C9">
+    <title>The Historical DeHaven Debt Calculation</title>
+    <statement>
+   <p>
+  In 1777, Jacob DeHaven loaned George Washington's army <m>\$450,000</m> 
+  in gold and supplies. Due to a disagreement over repayment, he was 
+  never repaid. In 1989, his descendants sued the U.S. government over 
+  the 212-year-old debt. If the DeHavens used an interest rate of 
+  <m>6\%</m> and daily compounding, how much money did the DeHaven 
+  family demand in their lawsuit?
+   </p>
+    </statement>
+    <solution>
+   <p>
+  To find the total value of the debt after 212 years, we use the 
+  compound interest formula:
+  <me>A = P\left(1 + \frac{r}{n}\right)^{nt}</me>
+  where:
+  <ul>
+      <li><p><m>P = 450,000</m> (Initial loan)</p></li>
+      <li><p><m>r = 0.06</m> (Annual interest rate)</p></li>
+      <li><p><m>n = 365</m> (Daily compounding)</p></li>
+      <li><p><m>t = 212</m> (Years from 1777 to 1989)</p></li>
+  </ul>
+   </p>
+   <p>
+  Substituting these values:
+  <md>
+      <mrow>A \amp = 450,000\left(1 + \frac{0.06}{365}\right)^{365 \times 212}</mrow>
+      <mrow>A \amp = 450,000(1.00016438)^{77,380}</mrow>
+      <mrow>A \amp \approx 450,000(336,543.15)</mrow>
+      <mrow>A \amp \approx 151,444,417,500</mrow>
+  </md>
+   </p>
+   <p>
+  The DeHaven family's demand in the lawsuit was approximately 
+  <m>\$151.4</m> billion. (Depending on rounding, specific historical 
+  claims often cited amounts ranging from <m>\$141</m> to <m>\$151</m> billion).
+   </p>
+    </solution>
+</exercise>
+</exercises>
+
+</section>

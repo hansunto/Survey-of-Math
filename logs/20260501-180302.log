@@ -1,0 +1,38 @@
+INFO    : Building target course
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /workspaces/Survey-of-Math/output/course.
+INFO    : discovering source file's directory name: /workspaces/Survey-of-Math/source
+INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/assets
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 7.13.5
+INFO    : Downloading Runestone Services, version 7.13.5
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-denver
+INFO    : converting /workspaces/Survey-of-Math/source/main.ptx to HTML in /tmp/ptx-a4fk9s7b
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking all deprecated elements.
+WARNING : * PTX:DEPRECATE: (2022-04-25) a "@label" attribute (on a "ul" or "ol" element) has been deprecated and should be replaced by the functionally equivalent "@marker".  We will attempt to honor your request (6 times)
+INFO    : *              located within: "math-club-election" (xml:id), "Math Club Presidential Election" (title)
+INFO    : *              located within: "ex-hmo" (xml:id), "Apportioning 40 HMO Doctors" (title)
+INFO    : *              located within: "ex-math-courses" (xml:id), "Apportioning Math Course Sections" (title)
+INFO    : * --------------
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /tmp/ptx-a4fk9s7b
+INFO    : Removing temporary directory /tmp/ptx-qwe5ottv
+INFO    : 
+Finished build for target course. Run `pretext view course` to see the results.
+
+INFO    : 
+Success!  Built requested target(s) without errors.
+
+INFO    : 

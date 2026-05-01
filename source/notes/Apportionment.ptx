@@ -1,0 +1,1222 @@
+<section xml:id="section-apportionment">
+  <title>Apportionment</title>
+  <p>
+    <term>Apportionment</term> is the method of distributing power in political systems based on population density. Apportionment may reflect the availability of buses for city routes or doctors for patients.
+  </p>
+
+  <definition xml:id="def-standard-divisor">
+    <title>The Standard Divisor</title>
+    <statement>
+      <p>
+        The standard divisor is found by dividing the total population under consideration by the number of items to be allocated.
+      </p>
+      <me>\text{Standard divisor} = \frac{\text{total population in a group}}{\text{total number of items to be apportioned}}</me>
+    </statement>
+  </definition>
+
+  <definition xml:id="def-standard-quota">
+    <title>The Standard Quota</title>
+    <statement>
+      <p>
+        The standard quota for a particular group is found by dividing that group's population by the standard divisor.
+      </p>
+      <me>\text{Standard quota} = \frac{\text{population of a particular group}}{\text{standard divisor}}</me>
+    </statement>
+  </definition>
+
+  <example xml:id="ex-palm-springs">>
+    <statement>
+      <p>
+        Palm Springs is composed of four states: A, B, C, and D. According to the country's constitution, the congress will have 30 seats, divided among the four states according to their respective populations. Find the standard quotas for states A, B, C, and D and complete the table below.
+      </p>
+      <table xml:id="table-standard-quotas">
+        <title>Population of Palm Springs by State</title>
+        <tabular top="minor" left="minor" right="minor" bottom="minor">
+          <row header="yes">
+            <cell>State</cell>
+            <cell>A</cell>
+            <cell>B</cell>
+            <cell>C</cell>
+            <cell>D</cell>
+            <cell>Total</cell>
+          </row>
+          <row>
+            <cell>Population (in thousands)</cell>
+            <cell>275</cell>
+            <cell>383</cell>
+            <cell>465</cell>
+            <cell>767</cell>
+            <cell>1890</cell>
+          </row>
+          <row>
+            <cell>Standard Quota</cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </table>
+    </statement>
+    <solution>
+        <p>
+        First, we find the <term>Standard Divisor</term> (<m>SD</m>):
+        <me>SD = \frac{1890}{30} = 63</me>
+      </p>
+      <p>
+        Now, divide each state's population by the divisor to find the <term>Standard Quota</term> (<m>SQ</m>):
+        <ul>
+          <li><p>State A: <m>275 / 63 \approx 4.3651</m></p></li>
+          <li><p>State B: <m>383 / 63 \approx 6.0794</m></p></li>
+          <li><p>State C: <m>465 / 63 \approx 7.3810</m></p></li>
+          <li><p>State D: <m>767 / 63 \approx 12.1746</m></p></li>
+        </ul>
+      </p>
+      <table xml:id="table-sq">
+        <title></title>
+        <tabular top="minor" left="minor" right="minor" bottom="minor">
+          <row header="yes">
+            <cell>State</cell>
+            <cell>A</cell>
+            <cell>B</cell>
+            <cell>C</cell>
+            <cell>D</cell>
+            <cell>Total</cell>
+          </row>
+          <row>
+            <cell>Population (in thousands)</cell>
+            <cell>275</cell>
+            <cell>383</cell>
+            <cell>465</cell>
+            <cell>767</cell>
+            <cell>1890</cell>
+          </row>
+          <row>
+            <cell>Standard Quota</cell>
+            <cell>4.365</cell>
+            <cell>6.079</cell>
+            <cell>7.381</cell>
+            <cell>12.175</cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </table>
+
+    </solution>
+  </example>
+
+  <assemblage>
+      <p> The <term>lower quota</term> is the standard quota rounded down to the nearest whole number. 
+        The <term>upper quota</term> is the standard quota rounded up to the nearest whole number. </p>
+      <p> A group's apportionment should be either its upper quota or its lower quota. 
+        An apportionment method that guarantees that this will always occurs is said to <term>satisfy the quota rule</term>. </p>
+  </assemblage>
+
+  <algorithm xml:id="method-hamilton">
+    <title>Hamilton's Method</title>
+    <statement>
+      <p>
+        <ol>
+          <li><p>Calculate each group's standard quota.</p></li>
+          <li><p>Find the lower quota for each group.</p></li>
+          <li><p>Give surplus items, one at a time, to groups with the largest decimal parts until no surplus remains.</p></li>
+        </ol>
+      </p>
+    </statement>
+  </algorithm>
+
+  <example xml:id="ex-palm-springs-hamilton">>
+    <statement>
+      <p>From <xref ref="table-standard-quotas"/>, use Hamilton's method to apportion the 30 congressmen for Palm Springs.</p>
+      <table xml:id="table-hamilton-apportionment">
+        <title>Hamilton's Method Table</title>
+        <tabular top="minor" left="minor" right="minor" bottom="minor">
+          <row header="yes">
+            <cell>State</cell><cell>A</cell><cell>B</cell><cell>C</cell><cell>D</cell><cell>Total</cell>
+          </row>
+          <row><cell>Population</cell><cell>275</cell><cell>383</cell><cell>465</cell><cell>767</cell><cell>1890</cell></row>
+          <row><cell>Standard Quota</cell><cell>4.365</cell><cell>6.079</cell><cell>7.381</cell><cell>12.175</cell><cell>30.00</cell></row>
+          <row><cell>Lower Quota</cell><cell>4</cell><cell>6</cell><cell>7</cell><cell>12</cell><cell>29</cell></row>
+          <row><cell>Surplus</cell><cell>+0</cell><cell>+0</cell><cell>+1</cell><cell>+0</cell><cell>1</cell></row>
+          <row><cell>Apportionment</cell><cell>4</cell><cell>6</cell><cell>8</cell><cell>12</cell><cell>30</cell></row>
+        </tabular>
+      </table>
+      <p> 1. The Standard Divisor is <m>63</m>. </p>
+      <p> 2. Lower quotas sum to 29, leaving 1 surplus seat. </p>
+      <p> 3. State C has the largest decimal part (.381), so it receives the surplus seat. </p>
+    </statement>
+    <solution>
+      <p>
+        Following the steps of <term>Hamilton's Method</term>:
+        <ol>
+          <li>
+            <p>
+              The sum of the <term>Lower Quotas</term> is <m>4 + 6 + 7 + 12 = 29</m>. 
+              Since we must allocate 30 seats, there is <m>30 - 29 = 1</m> surplus seat.
+            </p>
+          </li>
+          <li>
+            <p>
+              We look at the decimal parts of the Standard Quotas:
+              <ul>
+                <li><p>A: <m>0.365</m></p></li>
+                <li><p>B: <m>0.079</m></p></li>
+                <li><p>C: <m>0.381</m></p></li>
+                <li><p>D: <m>0.175</m></p></li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>
+              State C has the largest decimal part (<m>0.381</m>), so it receives the 1 surplus seat.
+            </p>
+          </li>
+          <li>
+            <p>
+              Final counts: A=4, B=6, C=8, D=12.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+<assemblage>
+  <title>Modified Divisor (MD)</title>
+      <p>
+        A <term>Modified divisor</term> is a divisor, chosen by guess-and-check, that is used to make the sum of the modified quotas exactly equal to the number of items to be apportioned.
+      </p>
+  </assemblage>
+
+  <algorithm xml:id="method-jefferson">
+    <title>Jefferson's Method</title>
+    <statement>
+      <p> Find a <term>modified divisor</term> such that when each group's modified quota is rounded down (<term>modified lower quota</term>), 
+        the sum equals the number of items to be apportioned. 
+        Apportion to each group its modified lower quota.</p>
+      <ol>
+        <li><p>Calculate the <term>Standard Divisor</term> (<m>SD = \text{Total Pop} / \text{Seats}</m>).</p></li>
+        <li><p>Calculate <term>Standard Quotas</term> and round down to find <term>Lower Quotas</term>.</p></li>
+        <li><p>If the sum of Lower Quotas is less than the total seats, choose a <term>Modified Divisor</term> (<m>MD</m>) that is <em>smaller</em> than the <m>SD</m>.</p></li>
+        <li><p>Recalculate quotas using <m>MD</m> and round down until the sum exactly matches the total seats.</p></li>
+      </ol>
+    </statement>
+  </algorithm>
+
+  <!-- Example 1: Palm Springs with Jefferson -->
+  <example xml:id="ex-palm-springs-jefferson">
+    <statement>
+      <p>
+        From <xref ref="table-standard-quotas"/>, apportion 30 seats to Palm Springs using Jefferson's Method.
+      </p>
+    </statement>
+    <solution>
+      <p>
+
+        The standard divisor (<m>63</m>) produced a sum of 29. For Jefferson's method, we must <em>decrease</em> the divisor to increase the quotas. Using a <term>Modified Divisor</term> of <m>61</m>:
+        <ul>
+          <li><p>A: <m>275/61 \approx 4.50 \to 4</m></p></li>
+          <li><p>B: <m>383/61 \approx 6.27 \to 6</m></p></li>
+          <li><p>C: <m>465/61 \approx 7.62 \to 7</m></p></li>
+          <li><p>D: <m>767/61 \approx 12.57 \to 13</m></p></li>
+        </ul>
+        Sum: <m>4+6+7+13 = 30</m>. <strong>State D</strong> receives the extra seat.
+      </p>
+      <table xml:id="table-jefferson-palm-springs">
+        <title>Jefferson's Method: Palm Springs</title>
+        <tabular top="minor" left="minor" right="minor" bottom="minor">
+          <row header="yes">
+            <cell>State</cell><cell>A</cell><cell>B</cell><cell>C</cell><cell>D</cell><cell>Total</cell>
+          </row>
+          <row><cell>Population</cell><cell>275</cell><cell>383</cell><cell>465</cell><cell>767</cell><cell>1890</cell></row>
+          <row><cell>Standard Quota (SD=63)</cell><cell>4.365</cell><cell>6.079</cell><cell>7.381</cell><cell>12.175</cell><cell>30</cell></row>
+          <row><cell>Lower Quota</cell><cell>4</cell><cell>6</cell><cell>7</cell><cell>12</cell><cell>29</cell></row>
+          <row><cell>Modified Quota (MD=61)</cell><cell>4.508</cell><cell>6.279</cell><cell>7.623</cell><cell>12.574</cell><cell>30.98</cell></row>
+          <row><cell>Modified LQ (Apportionment)</cell><cell>4</cell><cell>6</cell><cell>7</cell><cell>13</cell><cell>30</cell></row>
+        </tabular>
+      </table>
+    </solution>
+  </example>
+
+  <!-- Exercise 1: Bus Apportionment -->
+  <exercise xml:id="exe-bus-apportionment">
+    <title>Apportioning 11 buses </title>
+    <statement>
+      <p>Apportion 11 buses to the three towns using Jefferson's method.</p>
+      <table xml:id="table-bus-jefferson">
+        <title>Bus Apportionment Table</title>
+        <tabular top="minor" left="minor" right="minor" bottom="minor">
+          <row header="yes">
+            <cell>Town</cell><cell>Westboro</cell><cell>Shrewbury</cell><cell>Worcester</cell><cell>Total</cell>
+          </row>
+          <row><cell>Population</cell><cell>89</cell><cell>120</cell><cell>168</cell><cell>377</cell></row>
+          <row><cell>Final Apportionment</cell><cell> </cell><cell> </cell><cell> </cell><cell> </cell></row>
+        </tabular>
+      </table>
+    </statement>
+    <solution>
+        <!-- Step 1 & 2 -->
+      <p>
+        <title>Step 1: Standard Divisor and Initial Quotas</title>
+        First, find the Standard Divisor: <m>SD = 377 / 11 \approx 34.27</m>.
+      </p>
+      <table xml:id="table-bus-trial-1">
+        <title>Trial 1: Using Standard Divisor (34.27)</title>
+        <tabular top="minor" left="minor" right="minor" bottom="minor">
+          <row header="yes">
+            <cell>Town</cell><cell>Westboro</cell><cell>Shrewbury</cell><cell>Worcester</cell><cell>Total</cell>
+          </row>
+          <row><cell>Population</cell><cell>89</cell><cell>120</cell><cell>168</cell><cell>377</cell></row>
+          <row><cell>Standard Quota</cell><cell>2.59</cell><cell>3.50</cell><cell>4.90</cell><cell>10.99</cell></row>
+          <row><cell>Lower Quota</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>9</cell></row>
+        </tabular>
+      </table>
+      <p>The sum (9) is too low. We need 11 buses. We must <em>decrease</em> the divisor.</p>
+
+      <!-- Step 3: Modified Divisor Trial 1 -->
+      <p>
+        <title>Step 2: First Modified Divisor Trial (MD = 31)</title>
+        Let's try a smaller divisor, <m>MD = 31</m>.
+      </p>
+      <table xml:id="table-bus-trial-2">
+        <title>Trial 2: Modified Divisor (31)</title>
+        <tabular top="minor" left="minor" right="minor" bottom="minor">
+          <row header="yes">
+            <cell>Town</cell><cell>Westboro</cell><cell>Shrewbury</cell><cell>Worcester</cell><cell>Total</cell>
+          </row>
+          <row><cell>Modified Quota</cell><cell>2.87</cell><cell>3.87</cell><cell>5.41</cell><cell>12.15</cell></row>
+          <row><cell>Lower Quota</cell><cell>2</cell><cell>3</cell><cell>5</cell><cell>10</cell></row>
+        </tabular>
+      </table>
+      <p>The sum (10) is still too low. We must decrease the divisor further.</p>
+
+      <!-- Step 4: Final Trial -->
+      <p>
+        <title>Step 3: Successful Modified Divisor (MD = 30)</title>
+        Trying <m>MD = 30</m>.
+      </p>
+      <table xml:id="table-bus-final">
+        <title>Final Apportionment: Modified Divisor (30)</title>
+        <tabular top="minor" left="minor" right="minor" bottom="minor">
+          <row header="yes">
+            <cell>Town</cell><cell>Westboro</cell><cell>Shrewbury</cell><cell>Worcester</cell><cell>Total</cell>
+          </row>
+          <row><cell>Modified Quota</cell><cell>2.96</cell><cell>4.00</cell><cell>5.60</cell><cell>12.56</cell></row>
+          <row><cell>Modified LQ</cell><cell>2</cell><cell>4</cell><cell>5</cell><cell>11</cell></row>
+        </tabular>
+      </table>
+      <p>
+        The sum is exactly 11. 
+        <strong>Final Apportionment:</strong> Westboro: 2, Shrewbury: 4, Worcester: 5.
+      </p>
+      <table xml:id="table-bus-jefferson-work">
+        <title>Bus Apportionment Work Table</title>
+        <tabular top="minor" left="minor" right="minor" bottom="minor">
+          <row header="yes">
+            <cell>Town</cell><cell>Westboro</cell><cell>Shrewbury</cell><cell>Worcester</cell><cell>Total</cell>
+          </row>
+          <row><cell>Population</cell><cell>89</cell><cell>120</cell><cell>168</cell><cell>377</cell></row>
+          <row><cell>Standard Quota</cell><cell>2.59</cell><cell>3.50</cell><cell>4.90</cell><cell>10.99</cell></row>
+          <row><cell>Lower Quota</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>9</cell></row>
+          <row><cell>Modified Quota (MD=31)</cell><cell>2.87</cell><cell>3.87</cell><cell>5.41</cell><cell>12.15</cell></row>
+          <row><cell>Modified LQ</cell><cell>2</cell><cell>3</cell><cell>5</cell><cell>10</cell></row>
+          <row><cell>Modified Quota (MD=30)</cell><cell>2.96</cell><cell>4.00</cell><cell>5.60</cell><cell>12.56</cell></row>
+          <row><cell>Final Apportionment</cell><cell>2</cell><cell>4</cell><cell>5</cell><cell>11</cell></row>
+        </tabular>
+      </table>
+    </solution>
+  </exercise>
+
+  <!-- Adam's method -->
+  <algorithm xml:id="method-adams">
+    <title>Adam's Method</title>
+      <p>
+        <ol>
+        <li>
+        <p>
+        Find a <term>modified divisor</term>, <m>d</m>, so that when each group's <term>modified quota</term> is the upper quota, the sum of the whole numbers for all the groups is the number of items to be apportioned. The modified quotients that are rounded up are called <term>modified upper quota</term>.
+        </p>
+        </li>
+        <li>
+        <p>
+       Apportion to each group its modified upper quota.
+        </p>
+        </li>
+        </ol>
+      </p>
+  </algorithm>
+<p> <em>When using Adam's method, begin with a modified divisor that is slightly greater than the standard divisor.</em>
+</p>
+<example xml:id="ex-palm-springs-adam">
+  <statement>
+     <p>
+    The Palm Springs is composed of four states: A, B, C, and D. According to the country's constitution, the congress will have 30 seats, divided among the four states according to their respective populations.
+    </p>
+    <p>
+     Find the standard quotas for states A, B, C, and D in Palm Springs and complete the table below. Use Adam's method with a modified divisor to apportion the congressmen.
+     </p>
+  <table xml:id="table-palm-springs">
+    <title>Population Data and Apportionment</title>
+    <tabular bottom="minor" top="minor" left="minor" right="minor"> 
+      <row header="yes">
+       <cell>State</cell>
+        <cell>A</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+        <cell>D</cell>
+        <cell>Total</cell>
+      </row>
+      <row>
+       <cell>Population (1000s)</cell>
+       <cell>275</cell>
+       <cell>383</cell> 
+       <cell>465</cell>
+       <cell>767</cell>
+       <cell>1890</cell>
+     </row>
+     <row>
+       <cell>Standard Quota</cell>
+       <cell></cell>
+       <cell></cell>
+       <cell></cell>
+       <cell></cell>
+       <cell></cell>
+     </row>
+     <row>
+       <cell>Upper Quota</cell>
+       <cell></cell>
+       <cell></cell>
+       <cell></cell>
+       <cell></cell>
+       <cell></cell>
+     </row>
+     <row>
+       <cell>Modified UQ</cell>
+       <cell></cell>
+       <cell></cell>
+       <cell></cell>
+       <cell></cell>
+       <cell></cell>
+     </row>
+     <row>
+     <cell>Apportionment</cell>
+       <cell></cell>
+       <cell></cell>
+       <cell></cell>
+       <cell></cell>
+       <cell>30</cell>
+     </row>
+    </tabular>
+  </table>
+  </statement>
+<solution>
+    <p>
+    1. First, find the Standard Divisor (<m>SD</m>):
+    <me>SD = \frac{1890}{30} = 63</me>
+    </p>
+    <p>
+    2. Calculate Standard Quotas (<m>Pop / 63</m>):
+    <ul>
+     <li>A: <m>4.365</m> (Upper Quota: 5)</li>
+     <li>B: <m>6.079</m> (Upper Quota: 7)</li>
+     <li>C: <m>7.381</m> (Upper Quota: 8)</li>
+     <li>D: <m>12.175</m> (Upper Quota: 13)</li>
+   </ul>
+    Sum of Upper Quotas = <m>5+7+8+13 = 33</m> (Too many seats).
+  </p>
+  <p>
+  3. Since the sum is too high, we increase the divisor. Let's try <m>md = 70.5</m>:
+  <ul>
+   <li>A: <m>275/70.5 \approx 3.90 \to 4</m></li>
+   <li>B: <m>383/70.5 \approx 5.43 \to 6</m></li>
+   <li>C: <m>465/70.5 \approx 6.60 \to 7</m></li>
+   <li>D: <m>767/70.5 \approx 10.88 \to 11</m></li>
+  </ul>
+  Sum = <m>4+6+7+11 = 28</m> (Too low).
+  </p>
+  <p>
+   4. Refined <m>md = 67.5</m>:
+   Sums will result in A:5, B:6, C:7, D:12 = 30.
+   </p>
+    <p>Using <m>md = 66.5</m>:</p>
+    <tabular bottom="minor" top="minor" left="minor" right="minor">
+     <row header="yes">
+     <cell>State</cell>
+     <cell>A</cell>
+     <cell>B</cell>
+     <cell>C</cell>
+     <cell>D</cell>
+     <cell>Total</cell>
+     </row>
+     <row>
+     <cell>Standard Quota (<m>d=63</m>)</cell>
+     <cell>4.37</cell>
+     <cell>6.08</cell>
+     <cell>7.38</cell>
+     <cell>12.18</cell>
+     <cell>30</cell>
+     </row>
+     <row>
+     <cell>Upper Quota</cell>
+     <cell>5</cell>
+     <cell>7</cell>
+     <cell>8</cell>
+     <cell>13</cell>
+     <cell>33</cell>
+    </row>
+    <row>
+     <cell>Mod. Quota (<m>d=66.5</m>)</cell>
+     <cell>4.14</cell>
+     <cell>5.76</cell>
+     <cell>6.99</cell>
+     <cell>11.53</cell>
+     <cell>—</cell>
+     </row>
+     <row>
+     <cell>Modified UQ</cell>
+     <cell>5</cell>
+     <cell>6</cell>
+     <cell>7</cell>
+     <cell>12</cell>
+     <cell>30</cell>
+     </row>
+    </tabular>   
+</solution>
+</example>
+<assemblage>
+<title>Finding the Modified Divisor for Adam's Method:</title>
+<p>
+  <ol>
+<li>Compute the standard divisor <me>D = \frac{\text{Total population}}{\text{Number of seats}}</me>.</li>
+<li>Increase <m>D</m> by an amount so that when allocations (State population / Modified D) are rounded upward, they add up to the exact number of seats.</li>
+ </ol>
+</p>
+</assemblage>
+
+<exercise xml:id="ex-doctors">
+  <title>Apportioning 7 Doctors</title>
+  <statement>
+  <p>
+  Apportion 7 doctors to 4 clinics using Adam's method.
+  </p>
+  <tabular bottom="minor" top="minor" left="minor" right="minor">
+   <row header="yes">
+   <cell>Clinic</cell>
+   <cell>West</cell>
+   <cell>North</cell>
+   <cell>South</cell>
+   <cell>East</cell>
+   <cell>Total</cell>
+   </row>
+   <row>
+   <cell>Population</cell>
+   <cell>120</cell>
+   <cell>180</cell>
+   <cell>160</cell>
+   <cell>240</cell>
+   <cell>700</cell>
+   </row>
+   <row>
+   <cell>Appointment </cell>
+   <cell></cell>
+   <cell></cell>
+   <cell></cell>
+   <cell></cell>
+   <cell></cell>
+   </row>
+  </tabular>
+  </statement>
+  <solution>
+    <p>Standard Divisor (<m>SD</m>) = <m>700/7 = 100</m>.</p>
+    <p> The final apportionment using Adam's method with a modified divisor of md=120 is: West: 1, North: 2, South: 2, and East: 2.</p>
+      <tabular bottom="minor" top="minor" left="minor" right="minor">
+   <row header="yes">
+   <cell>Clinic</cell>
+   <cell>West</cell>
+   <cell>North</cell>
+   <cell>South</cell>
+   <cell>East</cell>
+   <cell>Total</cell>
+   </row>
+   <row>
+   <cell>Population</cell>
+   <cell>120</cell>
+   <cell>180</cell>
+   <cell>160</cell>
+   <cell>240</cell>
+   <cell>700</cell>
+   </row>
+   <row>
+   <cell>Standard Quota (<m>d=100</m>)</cell>
+   <cell>1.2</cell>
+   <cell>1.8</cell>
+   <cell>1.6</cell>
+   <cell>2.4</cell>
+   <cell>7</cell>
+   </row>
+   <row>
+    <cell>Upper Quota (Initial)</cell>
+    <cell>2</cell>
+    <cell>2</cell>
+    <cell>2</cell>
+    <cell>3</cell>
+    <cell>9 (Too High)</cell>
+   </row>
+   <row>
+    <cell>Mod. Quota (<m>d=120</m>)</cell>
+    <cell>1.0</cell>
+    <cell>1.5</cell>
+    <cell>1.33</cell>
+    <cell>2.0</cell>
+    <cell>—</cell>
+   </row>
+  <row>
+   <cell>Modified UQ (Final)</cell>
+   <cell>1</cell>
+   <cell>2</cell>
+   <cell>2</cell>
+   <cell>2</cell>
+   <cell>7</cell>
+  </row>
+  </tabular>
+ </solution>
+</exercise>
+
+<exercise xml:id="ex-hmo">
+  <title>Apportioning 40 HMO Doctors</title>
+  <statement>
+   <p>
+   An HMO has 40 doctors to be apportioned among four clinics: A, B, C, and D.
+   </p>
+    <tabular bottom="minor" top="minor" left="minor" right="minor">
+      <row header="yes">
+        <cell>Clinic</cell>
+        <cell>A</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+        <cell>D</cell>
+      </row>
+      <row>
+        <cell>Patient Load</cell>
+        <cell>275</cell>
+        <cell>392</cell>
+        <cell>611</cell>
+        <cell>724</cell>
+      </row>
+      <row>
+        <cell>Apportionment </cell>
+        <cell> </cell>
+        <cell> </cell>
+        <cell> </cell>
+        <cell> </cell>
+      </row>
+    </tabular>
+  <p>
+    <ol label="1">
+     <li>Use Hamilton's method.</li>
+     <li>Use Jefferson's method with <m>d=48</m>.</li>
+     <li>Use Adam's method.</li>
+    </ol>
+  </p>
+  </statement>
+  <solution xml:id="sol-hmo-hamilton">
+    <title>Hamilton's Method Solution</title>
+    <statement>
+      <p>
+        Calculate Standard Divisor (SD) and Quotas 
+        <ul>
+          <li> Total Patient Load: <m>275+392+611+724=2002</m> </li>
+          <li><m>SD=2002/40=50.05 </m></li>
+        </ul>
+      </p>
+        <tabular bottom="minor" top="minor" left="minor" right="minor">
+            <row header="yes">
+                <cell>Clinic</cell>
+                <cell>A</cell>
+                <cell>B</cell>
+                <cell>C</cell>
+                <cell>D</cell>
+                <cell>Total</cell>
+            </row>
+            <row>
+                <cell>Load</cell>
+                <cell>275</cell>
+                <cell>392</cell>
+                <cell>611</cell>
+                <cell>724</cell>
+                <cell>2002</cell>
+            </row>
+            <row>
+                <cell>Standard Quota</cell>
+                <cell>5.4945</cell>
+                <cell>7.8322</cell>
+                <cell>12.2078</cell>
+                <cell>14.4655</cell>
+                <cell>40</cell>
+            </row>
+            <row>
+                <cell>Lower Quota</cell>
+                <cell>5</cell>
+                <cell>7</cell>
+                <cell>12</cell>
+                <cell>14</cell>
+                <cell>38</cell>
+            </row>
+            <row>
+                <cell>Fractional Part</cell>
+                <cell>0.4945</cell>
+                <cell>0.8322</cell>
+                <cell>0.2078</cell>
+                <cell>0.4655</cell>
+                <cell>—</cell>
+            </row>
+            <row>
+                <cell>Surplus Seat</cell>
+                <cell>+1</cell>
+                <cell>+1</cell>
+                <cell>0</cell>
+                <cell>0</cell>
+                <cell>+2</cell>
+            </row>
+            <row>
+                <cell>Apportionment</cell>
+                <cell>6</cell>
+                <cell>8</cell>
+                <cell>12</cell>
+                <cell>14</cell>
+                <cell>40</cell>
+            </row>
+        </tabular>
+    </statement>
+  </solution>
+
+  <solution xml:id="sol-hmo-jefferson">
+    <title>Jefferson's Method Solution (d=48)</title>
+    <statement>
+        <tabular bottom="minor" top="minor" left="minor" right="minor">
+            <row header="yes">
+                <cell>Clinic</cell>
+                <cell>A</cell>
+                <cell>B</cell>
+                <cell>C</cell>
+                <cell>D</cell>
+                <cell>Total</cell>
+            </row>
+            <row>
+                <cell>Modified Quota</cell>
+                <cell>5.73</cell>
+                <cell>8.17</cell>
+                <cell>12.73</cell>
+                <cell>15.08</cell>
+                <cell>—</cell>
+            </row>
+            <row>
+                <cell>Apportionment</cell>
+                <cell>5</cell>
+                <cell>8</cell>
+                <cell>12</cell>
+                <cell>15</cell>
+                <cell>40</cell>
+            </row>
+        </tabular>
+    </statement>
+  </solution>
+
+  <solution xml:id="sol-hmo-adams">
+    <title>Adam's Method Solution (md=52)</title>
+    <statement>
+        <tabular bottom="minor" top="minor" left="minor" right="minor">
+            <row header="yes">
+                <cell>Clinic</cell>
+                <cell>A</cell>
+                <cell>B</cell>
+                <cell>C</cell>
+                <cell>D</cell>
+                <cell>Total</cell>
+            </row>
+            <row>
+                <cell>Modified Quota</cell>
+                <cell>5.29</cell>
+                <cell>7.54</cell>
+                <cell>11.75</cell>
+                <cell>13.92</cell>
+                <cell>—</cell>
+            </row>
+            <row>
+                <cell>Apportionment</cell>
+                <cell>6</cell>
+                <cell>8</cell>
+                <cell>12</cell>
+                <cell>14</cell>
+                <cell>40</cell>
+            </row>
+        </tabular>
+    </statement>
+  </solution>
+
+</exercise>
+
+<exercise xml:id="ex-math-courses">
+  <title>Apportioning Math Course Sections</title>
+  <statement>
+    <p>
+      Thirty sections of math courses are to be offered in introductory algebra, intermediate algebra, college algebra, and liberal arts math. The preregistration figures for the number of students planning to enroll in each section are given in the following table.
+    </p>
+    <tabular bottom="minor" top="minor" left="minor" right="minor">
+              <row header="yes">
+                <cell>Course</cell>
+                <cell>Intro</cell>
+                <cell>Intermed</cell>
+                <cell>College</cell>
+                <cell>Lib Arts</cell>
+                <cell>Total</cell>
+                </row>
+                <row>
+                <cell>Enrollment</cell>
+                <cell>388</cell>
+                <cell>405</cell>
+                <cell>213</cell>
+                <cell>345</cell>
+                <cell>1351</cell>
+                </row>
+  </tabular>
+  <ol label="1">
+    <li> <p> Use Hamilton's method to determine how many sections of each course should be offered. </p> </li>
+    <li> <p> Use Jefferson's method with Modified divisor md = <fillin characters="5" /> to determine how many sections of each course should be offered. </p> </li>
+    <li> <p> Use Adam's method with Modified divisor md = <fillin characters="5" /> to determine how many sections of each course should be offered. </p> </li>
+  </ol>
+  </statement>
+  <solution>
+   <p>
+   Thirty sections of math courses are to be offered based on preregistration figures.
+  </p>
+
+  <!-- Part a: Hamilton's Method -->
+    <p>
+    <ol label="1">
+        <li> <p> <strong>Hamilton's Method</strong> (SD = 45.0333): </p>
+            <tabular bottom="minor" top="minor" left="minor" right="minor">
+              <row header="yes">
+                <cell>Course</cell>
+                <cell>Intro</cell>
+                <cell>Intermed</cell>
+                <cell>College</cell>
+                <cell>Lib Arts</cell>
+                <cell>Total</cell>
+                </row>
+                <row>
+                <cell>Enrollment</cell>
+                <cell>388</cell>
+                <cell>405</cell>
+                <cell>213</cell>
+                <cell>345</cell>
+                <cell>1351</cell>
+                </row>
+                <row>
+                <cell>Standard Quota</cell>
+                <cell>8.6158</cell>
+                <cell>8.9933</cell>
+                <cell>4.7298</cell>
+                <cell>7.6610</cell>
+                <cell>30</cell>
+                </row>
+                <row>
+                <cell>Lower Quota</cell>
+                <cell>8</cell>
+                <cell>8</cell>
+                <cell>4</cell>
+                <cell>7</cell>
+                <cell>27</cell>
+                </row>
+                <row>
+                <cell>Fractional Part</cell>
+                <cell>0.6158</cell>
+                <cell>0.9933</cell>
+                <cell>0.7298</cell>
+                <cell>0.6610</cell>
+                <cell>—</cell>
+                </row>
+                <row>
+                <cell>Surplus Row</cell>
+                <cell>0</cell>
+                <cell>+1</cell>
+                <cell>+1</cell>
+                <cell>+1</cell>
+                <cell>+3</cell>
+                </row>
+                <row>
+               <cell>Apportionment</cell>
+               <cell>8</cell>
+               <cell>9</cell>
+               <cell>5</cell>
+               <cell>8</cell>
+               <cell>30</cell>
+               </row>
+             </tabular>
+           </li>
+
+            <li>
+               <p>
+                  <strong>Jefferson's Method</strong> (using <m>d = 42.5</m>):
+               </p>
+                    <tabular bottom="minor" top="minor" left="minor" right="minor">
+                        <row header="yes">
+                            <cell>Course</cell>
+                            <cell>Intro</cell>
+                            <cell>Intermed</cell>
+                            <cell>College</cell>
+                            <cell>Lib Arts</cell>
+                            <cell>Total</cell>
+                        </row>
+                        <row>
+                            <cell>Mod. Quota</cell>
+                            <cell>9.129</cell>
+                            <cell>9.529</cell>
+                            <cell>5.011</cell>
+                            <cell>8.117</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>Apportionment</cell>
+                            <cell>9</cell>
+                            <cell>9</cell>
+                            <cell>5</cell>
+                            <cell>8</cell>
+                            <cell>31 (Try Again)</cell>
+                        </row>
+                        <row>
+                            <cell>Mod. Quota (<m>d=43</m>)</cell>
+                            <cell>9.023</cell>
+                            <cell>9.418</cell>
+                            <cell>4.953</cell>
+                            <cell>8.023</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>Apportionment</cell>
+                            <cell>9</cell>
+                            <cell>9</cell>
+                            <cell>4</cell>
+                            <cell>8</cell>
+                            <cell>30</cell>
+                        </row>
+                    </tabular>
+           </li>
+
+            <li>
+                    <p>
+                        <strong>Adam's Method</strong> (using <m>d = 48</m>):
+                    </p>
+                    <tabular bottom="minor" top="minor" left="minor" right="minor">
+                        <row header="yes">
+                            <cell>Course</cell>
+                            <cell>Intro</cell>
+                            <cell>Intermed</cell>
+                            <cell>College</cell>
+                            <cell>Lib Arts</cell>
+                            <cell>Total</cell>
+                        </row>
+                        <row>
+                            <cell>Mod. Quota</cell>
+                            <cell>8.083</cell>
+                            <cell>8.437</cell>
+                            <cell>4.437</cell>
+                            <cell>7.187</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>Apportionment</cell>
+                            <cell>9</cell>
+                            <cell>9</cell>
+                            <cell>5</cell>
+                            <cell>8</cell>
+                            <cell>31 (Try Again)</cell>
+                        </row>
+                        <row>
+                            <cell>Mod. Quota (<m>d=49</m>)</cell>
+                            <cell>7.918</cell>
+                            <cell>8.265</cell>
+                            <cell>4.346</cell>
+                            <cell>7.040</cell>
+                            <cell>—</cell>
+                        </row>
+                        <row>
+                            <cell>Apportionment</cell>
+                            <cell>8</cell>
+                            <cell>9</cell>
+                            <cell>5</cell>
+                            <cell>8</cell>
+                            <cell>30</cell>
+                        </row>
+                    </tabular>
+            </li>
+            </ol>
+        </p>
+      </solution>
+</exercise>
+
+<example xml:id="ex-100-seats">
+  <title>Hamilton's Method Apportionment of 100 seats </title>
+<p> Suppose there were four states, A, B, C ,and D with populations as shown in the table below. Suppose these four states decide to create a legislature with 100 seats. Apply Hamilton's method to determine the apportionment. </p>
+  <table>
+  <tabular bottom="minor" top="minor" left="minor" right="minor">
+    <row header="yes">
+      <cell>Category</cell>
+      <cell>State A</cell>
+      <cell>State B</cell>
+      <cell>State C</cell>
+      <cell>State D</cell>
+      <cell>Total</cell>
+    </row>
+    <row>
+      <cell>Population</cell>
+      <cell>936</cell>
+      <cell>2,726</cell>
+      <cell>2,603</cell>
+      <cell>3,735</cell>
+      <cell>10,000</cell>
+    </row>
+    <row>
+      <cell>Standard Quota</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>Lower Quota</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>Surplus</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>Apportioned Seats</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>100</cell>
+    </row>
+  </tabular>
+</table>
+<solution>
+  <p>
+  The following table demonstrates the apportionment using Hamilton's Method with a standard divisor of <m>SD=10,000/100=100</m>.
+</p>
+<table xml:id="table-hamilton-alabama1">
+  <title>Hamilton's Method Apportionment</title>
+  <tabular bottom="minor" top="minor" left="minor" right="minor">
+    <row header="yes">
+      <cell>Category</cell>
+      <cell>State A</cell>
+      <cell>State B</cell>
+      <cell>State C</cell>
+      <cell>State D</cell>
+      <cell>Total</cell>
+    </row>
+    <row>
+      <cell>Population</cell>
+      <cell>936</cell>
+      <cell>2,726</cell>
+      <cell>2,603</cell>
+      <cell>3,735</cell>
+      <cell>10,000</cell>
+    </row>
+    <row>
+      <cell>Standard Quota</cell>
+      <cell>9.36</cell>
+      <cell>27.26</cell>
+      <cell>26.03</cell>
+      <cell>37.35</cell>
+      <cell>100.00</cell>
+    </row>
+    <row>
+      <cell>Lower Quota</cell>
+      <cell>9</cell>
+      <cell>27</cell>
+      <cell>26</cell>
+      <cell>37</cell>
+      <cell>99</cell>
+    </row>
+    <row>
+      <cell>Fractional Part</cell>
+      <cell>0.36</cell>
+      <cell>0.26</cell>
+      <cell>0.03</cell>
+      <cell>0.35</cell>
+      <cell>-</cell>
+    </row>
+    <row>
+      <cell>Surplus</cell>
+      <cell>+1</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>Final Seats</cell>
+      <cell>10</cell>
+      <cell>27</cell>
+      <cell>26</cell>
+      <cell>37</cell>
+      <cell>100</cell>
+    </row>
+  </tabular>
+</table>
+</solution>
+</example>
+
+<theorem xml:id="theorem-alabama-paradox">
+  <title>The Alabama Paradox</title>
+  <statement>
+    <p>
+      In a fair apportionment system, adding extra seats must not result in fewer seats for any state. 
+      The <term>Alabama Paradox</term> occurs when the total number of available seats increases, 
+      yet one state (or more) loses seats as a result. This paradox can occur when using 
+      <init>Hamilton's method</init>.
+    </p>
+  </statement>
+</theorem>
+
+<example xml:id="ex-101-seats">
+<title>Hamilton's Method Apportionment of 101 seats </title>
+<p> Using Hamilton's method, recompute the apportionment from <xref ref="ex-100-seats"/>, if there are 101 seats instead of 100. Does the Alabama paradox occur? </p>
+  <table>
+  <tabular bottom="minor" top="minor" left="minor" right="minor">
+    <row header="yes">
+      <cell>States</cell>
+      <cell>State A</cell>
+      <cell>State B</cell>
+      <cell>State C</cell>
+      <cell>State D</cell>
+      <cell>Total</cell>
+    </row>
+    <row>
+      <cell>Population</cell>
+      <cell>936</cell>
+      <cell>2,726</cell>
+      <cell>2,603</cell>
+      <cell>3,735</cell>
+      <cell>10,000</cell>
+    </row>
+    <row>
+      <cell>Standard Quota</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>Lower Quota</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>Surplus</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>Apportioned Seats</cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell></cell>
+      <cell>101</cell>
+    </row>
+  </tabular>
+</table>
+<solution>
+  <p>
+  The table below shows the Hamilton's Method apportionment with <m>101</m> seats. </p>
+  <p> Note that State A loses a seat compared to the 100-seat scenario, demonstrating the Alabama Paradox.
+</p>
+
+<table xml:id="table-hamilton-101">
+  <title>Hamilton's Method (101 Seats)</title>
+  <tabular bottom="minor" top="minor" left="minor" right="minor">
+    <row header="yes">
+      <cell>States</cell>
+      <cell>State A</cell>
+      <cell>State B</cell>
+      <cell>State C</cell>
+      <cell>State D</cell>
+      <cell>Total</cell>
+    </row>
+    <row>
+      <cell>Population</cell>
+      <cell>936</cell>
+      <cell>2,726</cell>
+      <cell>2,603</cell>
+      <cell>3,735</cell>
+      <cell>10,000</cell>
+    </row>
+    <row>
+      <cell>Standard Quota</cell>
+      <cell>9.4536</cell>
+      <cell>27.5326</cell>
+      <cell>26.2903</cell>
+      <cell>37.7235</cell>
+      <cell>101.0000</cell>
+    </row>
+    <row>
+      <cell>Lower Quota</cell>
+      <cell>9</cell>
+      <cell>27</cell>
+      <cell>26</cell>
+      <cell>37</cell>
+      <cell>99</cell>
+    </row>
+    <row>
+      <cell>Fractional Part</cell>
+      <cell>0.4536</cell>
+      <cell>0.5326</cell>
+      <cell>0.2903</cell>
+      <cell>0.7235</cell>
+      <cell>-</cell>
+    </row>
+    <row>
+      <cell>Surplus</cell>
+      <cell></cell>
+      <cell>+1</cell>
+      <cell></cell>
+      <cell>+1</cell>
+      <cell></cell>
+    </row>
+    <row>
+      <cell>Final Seats</cell>
+      <cell>9</cell>
+      <cell>28</cell>
+      <cell>26</cell>
+      <cell>38</cell>
+      <cell>101</cell>
+    </row>
+  </tabular>
+</table>
+
+  </solution>
+</example>
+
+
+
+</section>

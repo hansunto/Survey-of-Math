@@ -1,0 +1,15 @@
+INFO    : Since no target was supplied, we will use "course".
+
+INFO    : Building target course
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+ERROR   : Error loading /workspaces/Survey-of-Math/source/notes/unit01.ptx: Error reading file '/workspaces/Survey-of-Math/source/notes/unit01.ptx': failed to load "/workspaces/Survey-of-Math/source/notes/unit01.ptx": No such file or directory
+ERROR   : Error assembling source file: Error reading file '/workspaces/Survey-of-Math/source/notes/unit01.ptx': failed to load "/workspaces/Survey-of-Math/source/notes/unit01.ptx": No such file or directory
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

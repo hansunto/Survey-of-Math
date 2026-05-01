@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section>
+    <title>Fundamentals of Probability</title>
+
+    <assemblage xml:id="assemblage-theoretical-probability">
+        <title></title>
+        <p>
+    If an event E has <m>n(E)</m> equally likely outcomes and its sample space S has <m>n(S)</m> equally likely outcomes, the <alert>theoretical probability</alert> of event, <m>P(E)</m>, is
+    <md>
+    <mrow>P(E) = \frac{\text{number of outcomes in event } E}{\text{total number of outcomes in sample space}} = \frac{n(E)}{n(S)}</mrow>
+  </md>
+        </p>
+    </assemblage>
+<example>
+  <title>Probability of a Single Die Roll</title>
+  <statement>
+    <p>
+      A die is rolled. The set of equally likely outcomes is <m>\{1, 2, 3, 4, 5, 6\}</m>. 
+      Find the probability of rolling:
+    </p>
+    <p>
+      <ol>
+        <li><p>a 2</p></li>
+        <li><p>a number less than 4</p></li>
+        <li><p>a number greater than 7</p></li>
+        <li><p>a number less than 7</p></li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <ol>
+        <li><p><m>P(2) = \frac{1}{6}</m></p></li>
+        <li><p>The outcomes are <m>\{1, 2, 3\}</m>, so <m>P(\text{less than 4}) = \frac{3}{6} = \frac{1}{2}</m></p></li>
+        <li><p>There are no such outcomes, so <m>P(\text{greater than 7}) = \frac{0}{6} = 0</m></p></li>
+        <li><p>All outcomes are less than 7, so <m>P(\text{less than 7}) = \frac{6}{6} = 1</m></p></li>
+      </ol>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <title>Probability of a Pair of Dice</title>
+  <statement>
+    <p>
+      A single die is rolled twice. Find the probability of rolling:
+    </p>
+    <ol>
+      <li><p>two even numbers</p></li>
+      <li><p>two numbers whose sum is 6</p></li>
+      <li><p>two numbers whose sum exceeds 12</p></li>
+      <li><p>two prime numbers</p></li>
+      <li><p>two numbers whose sum is less than 7</p></li>
+    </ol>
+  </statement>
+  <solution>
+  
+<table xml:id="table-dice-sample-space">
+  <title>Sample Space for Two Six-Sided Dice</title>
+  <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+    <row header="yes">
+      <cell>Die 1 \ 2</cell>
+      <cell>1</cell><cell>2</cell><cell>3</cell>
+      <cell>4</cell><cell>5</cell><cell>6</cell>
+    </row>
+    <row>
+      <cell header="yes">1</cell>
+      <cell>(1,1)</cell><cell>(1,2)</cell><cell>(1,3)</cell>
+      <cell>(1,4)</cell><cell>(1,5)</cell><cell>(1,6)</cell>
+    </row>
+    <row>
+      <cell header="yes">2</cell>
+      <cell>(2,1)</cell><cell>(2,2)</cell><cell>(2,3)</cell>
+      <cell>(2,4)</cell><cell>(2,5)</cell><cell>(2,6)</cell>
+    </row>
+    <row>
+      <cell header="yes">3</cell>
+      <cell>(3,1)</cell><cell>(3,2)</cell><cell>(3,3)</cell>
+      <cell>(3,4)</cell><cell>(3,5)</cell><cell>(3,6)</cell>
+    </row>
+    <row>
+      <cell header="yes">4</cell>
+      <cell>(4,1)</cell><cell>(4,2)</cell><cell>(4,3)</cell>
+      <cell>(4,4)</cell><cell>(4,5)</cell><cell>(4,6)</cell>
+    </row>
+    <row>
+      <cell header="yes">5</cell>
+      <cell>(5,1)</cell><cell>(5,2)</cell><cell>(5,3)</cell>
+      <cell>(5,4)</cell><cell>(5,5)</cell><cell>(5,6)</cell>
+    </row>
+    <row>
+      <cell header="yes">6</cell>
+      <cell>(6,1)</cell><cell>(6,2)</cell><cell>(6,3)</cell>
+      <cell>(6,4)</cell><cell>(6,5)</cell><cell>(6,6)</cell>
+    </row>
+  </tabular>
+</table>
+    <ol>
+      <li>
+        <p>
+          The even numbers on a die are <m>\{2, 4, 6\}</m>. There are <m>3 \times 3 = 9</m> outcomes where both numbers are even.
+          The probability is <m>\frac{9}{36} = \frac{1}{4},</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          The outcomes with a sum of 6 are <m>\{(1,5), (2,4), (3,3), (4,2), (5,1)\}</m>.
+          There are 5 such outcomes, so the probability is <m>\frac{5}{36}</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          The maximum possible sum is <m>6 + 6 = 12</m>. It is impossible for the sum to exceed 12.
+          The probability is <m>\frac{0}{36} = 0</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          The prime numbers on a die are <m>\{2, 3, 5\}</m>. There are <m>3 \times 3 = 9</m> outcomes where both numbers are prime.
+          The probability is <m>\frac{9}{36} = \frac{1}{4}</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          The outcomes with a sum less than 7 are:
+          <ul>
+            <li>Sum 2: (1,1) [1 outcome]</li>
+            <li>Sum 3: (1,2), (2,1) [2 outcomes]</li>
+            <li>Sum 4: (1,3), (2,2), (3,1) [3 outcomes]</li>
+            <li>Sum 5: (1,4), (2,3), (3,2), (4,1) [4 outcomes]</li>
+            <li>Sum 6: (1,5), (2,4), (3,3), (4,2), (5,1) [5 outcomes]</li>
+          </ul>
+          Total outcomes = <m>1 + 2 + 3 + 4 + 5 = 15</m>.
+          The probability is <m>\frac{15}{36} = \frac{5}{12}</m>.
+        </p>
+      </li>
+    </ol>
+  </solution>
+</example>
+
+<example>
+  <title>Probability of Drawing a Single deck of Cards</title>
+  <statement>
+    <p>
+      You are dealt one card from a standard 52-card deck. Find the probability of being dealt:
+    </p>
+    <ol>
+      <li><p>an ace</p></li>
+      <li><p>a red card</p></li>
+      <li><p>a red king</p></li>
+      <li><p>a spade</p></li>
+      <li><p>an even number heart</p></li>
+      <li><p>an odd number diamond</p></li>
+      <li><p>a face card</p></li>
+    </ol>
+       <figure xml:id="fig-deck-of-cards">
+    <caption>A standard deck of 52 playing cards.</caption>
+    <image source="cards.png" width="100%">
+        <shortdescription>
+            A grid showing all 52 playing cards organized by suit: 
+            Clubs and Spades in black, Hearts and Diamonds in red.
+        </shortdescription>
+    </image>
+</figure>
+  </statement>
+<solution>
+ <table xml:id="table-deck-color">
+  <title>Standard Deck of 52 Playing Cards</title>
+  <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
+    <row header="yes">
+      <cell>Suit</cell>
+      <cell>A</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>5</cell><cell>6</cell>
+      <cell>7</cell><cell>8</cell><cell>9</cell><cell>10</cell><cell>J</cell><cell>Q</cell><cell>K</cell>
+    </row>
+    <!-- Red Suits -->
+    <row>
+      <cell header="yes">Hearts (Red)</cell>
+      <cell><m>\color{red}{A\heartsuit}</m></cell>
+      <cell><m>\color{red}{2\heartsuit}</m></cell>
+      <cell><m>\color{red}{3\heartsuit}</m></cell>
+      <cell><m>\color{red}{4\heartsuit}</m></cell>
+      <cell><m>\color{red}{5\heartsuit}</m></cell>
+      <cell><m>\color{red}{6\heartsuit}</m></cell>
+      <cell><m>\color{red}{7\heartsuit}</m></cell>
+      <cell><m>\color{red}{8\heartsuit}</m></cell>
+      <cell><m>\color{red}{9\heartsuit}</m></cell>
+      <cell><m>\color{red}{10\heartsuit}</m></cell>
+      <cell><m>\color{red}{J\heartsuit}</m></cell>
+      <cell><m>\color{red}{Q\heartsuit}</m></cell>
+      <cell><m>\color{red}{K\heartsuit}</m></cell>
+    </row>
+    <row>
+      <cell header="yes">Diamonds (Red)</cell>
+      <cell><m>\color{red}{A\diamondsuit}</m></cell>
+      <cell><m>\color{red}{2\diamondsuit}</m></cell>
+      <cell><m>\color{red}{3\diamondsuit}</m></cell>
+      <cell><m>\color{red}{4\diamondsuit}</m></cell>
+      <cell><m>\color{red}{5\diamondsuit}</m></cell>
+      <cell><m>\color{red}{6\diamondsuit}</m></cell>
+      <cell><m>\color{red}{7\diamondsuit}</m></cell>
+      <cell><m>\color{red}{8\diamondsuit}</m></cell>
+      <cell><m>\color{red}{9\diamondsuit}</m></cell>
+      <cell><m>\color{red}{10\diamondsuit}</m></cell>
+      <cell><m>\color{red}{J\diamondsuit}</m></cell>
+      <cell><m>\color{red}{Q\diamondsuit}</m></cell>
+      <cell><m>\color{red}{K\diamondsuit}</m></cell>
+    </row>
+    <!-- Black Suits -->
+    <row>
+      <cell header="yes">Spades (Black)</cell>
+      <cell>A♠</cell><cell>2♠</cell><cell>3♠</cell><cell>4♠</cell><cell>5♠</cell><cell>6♠</cell>
+      <cell>7♠</cell><cell>8♠</cell><cell>9♠</cell><cell>10♠</cell><cell>J♠</cell><cell>Q♠</cell><cell>K♠</cell>
+    </row>
+    <row>
+      <cell header="yes">Clubs (Black)</cell>
+      <cell>A♣</cell><cell>2♣</cell><cell>3♣</cell><cell>4♣</cell><cell>5♣</cell><cell>6♣</cell>
+      <cell>7♣</cell><cell>8♣</cell><cell>9♣</cell><cell>10♣</cell><cell>J♣</cell><cell>Q♣</cell><cell>K♣</cell>
+    </row>
+  </tabular>
+</table>
+
+
+    <p>There are 52 total outcomes in a standard deck.</p>
+    <ol>
+      <li>
+        <p>There are 4 aces in a deck. <m>P(\text{ace}) = \frac{4}{52} = \frac{1}{13}</m></p>
+      </li>
+      <li>
+        <p>There are 26 red cards (hearts and diamonds). <m>P(\text{red}) = \frac{26}{52} = \frac{1}{2}</m></p>
+      </li>
+      <li>
+        <p>There are 2 red kings (king of hearts and king of diamonds). <m>P(\text{red king}) = \frac{2}{52} = \frac{1}{26}</m></p>
+      </li>
+      <li>
+        <p>There are 13 spades in a deck. <m>P(\text{spade}) = \frac{13}{52} = \frac{1}{4}</m></p>
+      </li>
+      <li>
+        <p>The even numbered hearts are <m>\{2, 4, 6, 8, 10\}</m>. There are 5 such cards. <m>P(\text{even heart}) = \frac{5}{52}</m></p>
+      </li>
+      <li>
+        <p>The odd numbered diamonds (excluding face cards) are <m>\{3, 5, 7, 9\}</m>. (Note: Ace is usually not considered an odd number in this context, but if included, the count would be 5). Using <m>\{3, 5, 7, 9\}</m>, there are 4 such cards. <m>P(\text{odd diamond}) = \frac{4}{52} = \frac{1}{13}</m></p>
+      </li>
+      <li>
+        <p>There are 12 face cards (Jack, Queen, King of each suit). <m>P(\text{face card}) = \frac{12}{52} = \frac{3}{13}</m></p>
+      </li>
+    </ol>
+  </solution>
+</example>
+
+<example>
+  <title>Probability of Three Coin Tosses</title>
+  <statement>
+    <p>
+      A fair coin is tossed three times in succession. The set of equally likely outcomes is <m>\{HHH, HHT, HTH, HTT, THH, THT, TTH, TTT\}</m>. Find the probability of getting:
+    </p>
+    <ol>
+      <li><p>Exactly one tail.</p></li>
+      <li><p>Exactly 2 heads.</p></li>
+      <li><p>At least one head.</p></li>
+      <li><p>Five tails.</p></li>
+    </ol>
+  </statement>
+  <solution>
+
+<figure xml:id="fig-coin-toss-tree-clean">
+  <caption>Tree diagram for three coin tosses</caption>
+  <image width="90%">
+    <latex-image>
+      \begin{tikzpicture}[
+        grow=right,
+        level 1/.style={sibling distance=8em, level distance=6em},
+        level 2/.style={sibling distance=4em, level distance=6em},
+        level 3/.style={sibling distance=2em, level distance=6em},
+        edge from parent/.style={draw, -latex},
+        every node/.style={circle, draw, minimum size=1.5em, inner sep=1pt}
+      ]
+      \node {Start}
+        child { node {T}
+          child { node {T}
+            child { node {T} }
+            child { node {H} }
+          }
+          child { node {H}
+            child { node {T} }
+            child { node {H} }
+          }
+        }
+        child { node {H}
+          child { node {T}
+            child { node {T} }
+            child { node {H} }
+          }
+          child { node {H}
+            child { node {T} }
+            child { node {H} }
+          }
+        };
+      \end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+    <p>The total number of outcomes is 8.</p>
+    <ol>
+      <li>
+        <p>The outcomes with exactly one tail are <m>\{HHT, HTH, THH\}</m>. There are 3 such outcomes, so <m>P(\text{exactly one tail}) = \frac{3}{8}</m>.</p>
+      </li>
+      <li>
+        <p>The outcomes with exactly two heads are <m>\{HHT, HTH, THH\}</m>. There are 3 such outcomes, so <m>P(\text{exactly 2 heads}) = \frac{3}{8}</m>.</p>
+      </li>
+      <li>
+        <p>The only outcome with no heads is <m>\{TTT\}</m>. Therefore, there are <m>8 - 1 = 7</m> outcomes with at least one head. <m>P(\text{at least one head}) = \frac{7}{8}</m>.</p>
+      </li>
+      <li>
+        <p>It is impossible to get five tails in only three tosses. <m>P(\text{five tails}) = \frac{0}{8} = 0</m>.</p>
+      </li>
+    </ol>
+  </solution>
+</example>
+
+<exercise>
+  <title>Probability of a Coin Toss and Die Roll</title>
+  <statement>
+    <p>
+      A coin is tossed and a die is rolled. The tree diagram below illustrates the sample space of 12 equally likely outcomes.
+    </p>
+    <figure xml:id="fig-tree-coin-die">
+      <caption>Tree diagram for tossing a coin and rolling a die.</caption>
+      <image xml:id="img-tree-coin-die" width="80%">
+        <description>A tree diagram starting from a point, splitting into Head and Tail. Each of those branches then splits into six branches numbered 1 through 6, ending in outcomes like (H, 1), (H, 2), etc.</description>
+        <latex-image>
+          \begin{tikzpicture}[
+            grow=right,
+            level 1/.style={sibling distance=6cm, level distance=3cm},
+            level 2/.style={sibling distance=1cm, level distance=3cm},
+            edge from parent/.style={draw, -latex}]
+            \node {}
+              child {node {Tail}
+                child {node {6} node[right=0.5cm] {(T, 6)}}
+                child {node {5} node[right=0.5cm] {(T, 5)}}
+                child {node {4} node[right=0.5cm] {(T, 4)}}
+                child {node {3} node[right=0.5cm] {(T, 3)}}
+                child {node {2} node[right=0.5cm] {(T, 2)}}
+                child {node {1} node[right=0.5cm] {(T, 1)}}
+              }
+              child {node {Head}
+                child {node {6} node[right=0.5cm] {(H, 6)}}
+                child {node {5} node[right=0.5cm] {(H, 5)}}
+                child {node {4} node[right=0.5cm] {(H, 4)}}
+                child {node {3} node[right=0.5cm] {(H, 3)}}
+                child {node {2} node[right=0.5cm] {(H, 2)}}
+                child {node {1} node[right=0.5cm] {(H, 1)}}
+              };
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+    <p>
+      Find the probability of getting:
+    </p>
+    <ol>
+      <li><p>a head and an even number.</p></li>
+      <li><p>a tail and a number less than 3.</p></li>
+      <li><p>a head and a number greater than 6.</p></li>
+    </ol>
+  </statement>
+  <solution>
+    <p>
+      The total number of equally likely outcomes is <m>2 \times 6 = 12</m>.
+    </p>
+    <ol>
+      <li>
+        <p>
+          The outcomes for a head and an even number are <m>\{(H, 2), (H, 4), (H, 6)\}</m>.
+          There are 3 such outcomes, so <m>P(\text{head and even}) = \frac{3}{12} = \frac{1}{4}</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          The outcomes for a tail and a number less than 3 are <m>\{(T, 1), (T, 2)\}</m>.
+          There are 2 such outcomes, so <m>P(\text{tail and less than 3}) = \frac{2}{12} = \frac{1}{6}</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Since a standard die only goes up to 6, it is impossible to roll a number greater than 6.
+          The probability is <m>\frac{0}{12} = 0</m>.
+        </p>
+      </li>
+    </ol>
+  </solution>
+</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

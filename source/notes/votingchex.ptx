@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-voting-ch-ex">
+ <title>Chapter Exercise</title>
+ 
+<exercises>
+
+<exercise>
+  <statement>
+    <p>
+      The city council gave a questionnaire to its citizens, asking them their priorities for next year's budget: (P)olice, (R)oads, (S)chools, and (T)rash removal.
+    </p>
+    <tabular bottom="minor" top="minor">
+      <row header="yes">
+        <cell>Preference</cell>
+        <cell>15</cell>
+        <cell>30</cell>
+        <cell>18</cell>
+        <cell>17</cell>
+        <cell>2</cell>
+      </row>
+      <row>
+        <cell>1st</cell>
+        <cell>P</cell>
+        <cell>T</cell>
+        <cell>P</cell>
+        <cell>R</cell>
+        <cell>R</cell>
+      </row>
+      <row>
+        <cell>2nd</cell>
+        <cell>R</cell>
+        <cell>R</cell>
+        <cell>S</cell>
+        <cell>T</cell>
+        <cell>S</cell>
+      </row>
+      <row>
+        <cell>3rd</cell>
+        <cell>S</cell>
+        <cell>S</cell>
+        <cell>T</cell>
+        <cell>S</cell>
+        <cell>P</cell>
+      </row>
+      <row>
+        <cell>4th</cell>
+        <cell>T</cell>
+        <cell>P</cell>
+        <cell>R</cell>
+        <cell>P</cell>
+        <cell>T</cell>
+      </row>
+    </tabular>
+    <ol>
+    <li> Which option is selected using the plurality method? </li>
+    <li> Which option is selected using the plurality-with-elimination method? </li>
+    <li> Which option is selected using the Borda count method?</li>
+    <li> Which option is selected using the pairwise comparison method? </li>
+    </ol>
+  </statement>
+  <solution>
+    <p>
+      <ol>
+        <li>
+          <p><strong>Plurality Method:</strong> Count only first-place votes.</p>
+          <ul>
+            <li>P: <m>15 + 18 = 33</m></li>
+            <li>T: <m>30</m></li>
+            <li>R: <m>17 + 2 = 19</m></li>
+            <li>S: <m>0</m></li>
+          </ul>
+          <p>Winner: <strong>Police (P)</strong> with 33 votes.</p>
+        </li>
+        <li>
+          <p>
+            <strong>Plurality-with-Elimination:</strong>
+            <ul>
+              <li>Round 1: S has 0 votes. Eliminate S.
+    
+    <tabular bottom="minor" top="minor">
+      <row header="yes">
+        <cell>Preference</cell>
+        <cell>15</cell>
+        <cell>30</cell>
+        <cell>18</cell>
+        <cell>17</cell>
+        <cell>2</cell>
+      </row>
+      <row>
+        <cell>1st</cell>
+        <cell>P</cell>
+        <cell>T</cell>
+        <cell>P</cell>
+        <cell>R</cell>
+        <cell>R</cell>
+      </row>
+      <row>
+        <cell>2nd</cell>
+        <cell>R</cell>
+        <cell>R</cell>
+        <cell>T</cell>
+        <cell>T</cell>
+        <cell>P</cell>
+      </row>
+      <row>
+        <cell>3rd</cell>
+        <cell>T</cell>
+        <cell>P</cell>
+        <cell>R</cell>
+        <cell>P</cell>
+        <cell>T</cell>
+      </row>
+    </tabular>
+</li>
+            <li>Round 2: R has the fewest 1st place votes (19). Eliminate R. 
+            The 17 votes from (R, T, S, P) move to T. The 2 votes from (R, S, P, T) move to P.
+    <tabular bottom="minor" top="minor">
+      <row header="yes">
+        <cell>Preference</cell>
+        <cell>15</cell>
+        <cell>30</cell>
+        <cell>18</cell>
+        <cell>17</cell>
+        <cell>2</cell>
+      </row>
+      <row>
+        <cell>1st</cell>
+        <cell>P</cell>
+        <cell>T</cell>
+        <cell>P</cell>
+        <cell>T</cell>
+        <cell>P</cell>
+      </row>
+      <row>
+        <cell>2nd</cell>
+        <cell>T</cell>
+        <cell>P</cell>
+        <cell>T</cell>
+        <cell>P</cell>
+        <cell>T</cell>
+      </row>
+    </tabular>
+            New totals: P: <m>15 + 18 + 2 = 35</m>; T: <m>30 + 17 = 47</m>.</li>
+            </ul>
+            Winner: <strong>Trash Removal (T)</strong>.
+          </p>
+        </li>
+        <li>
+          <p><strong>Borda Count:</strong> 1st = 4pts, 2nd = 3pts, 3rd = 2pts, 4th = 1pt.</p>
+          <ul>
+            <li>P: <m>15(4) + 30(1) + 18(4) + 17(1) + 2(2) = 183</m></li>
+            <li>R: <m>15(3) + 30(3) + 18(1) + 17(4) + 2(4) = 229</m></li>
+            <li>S: <m>15(2) + 30(2) + 18(3) + 17(2) + 2(3) = 184</m></li>
+            <li>T: <m>15(1) + 30(4) + 18(2) + 17(3) + 2(1) = 224</m></li>
+          </ul>
+          <p>Winner: <strong>Roads (R)</strong> with 229 points.</p>
+        </li>
+        <li>
+          <p>
+            <strong>Pairwise Comparison:</strong>
+            <ul>
+              <li>P vs R: P=33, R=49. (R wins)</li>
+              <li>P vs S: P=63, S=19. (P wins)</li>
+              <li>P vs T: P=35, T=47. (T wins)</li>
+              <li>R vs S: R=64, S=18. (R wins)</li>
+              <li>R vs T: R=52, T=30. (R wins)</li>
+              <li>S vs T: S=35, T=47. (T wins)</li>
+            </ul>
+            R has 3 wins, T has 2 wins, P has 1 win. Winner: <strong>Roads (R)</strong>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      The preference table shows the results of an election among three candidates, A, B, and C.
+    </p>
+    <tabular bottom="minor" top="minor">
+      <row header="yes">
+        <cell>Number of votes</cell>
+        <cell>7</cell>
+        <cell>6</cell>
+        <cell>3</cell>
+      </row>
+      <row>
+        <cell>1st choice</cell>
+        <cell>A</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+      </row>
+      <row>
+        <cell>2nd choice</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+        <cell>B</cell>
+      </row>
+      <row>
+        <cell>3rd choice</cell>
+        <cell>C</cell>
+        <cell>A</cell>
+        <cell>A</cell>
+      </row>
+    </tabular>
+    <p>
+      <ol>
+        <li><p>Using the plurality method, who is the winner?</p></li>
+        <li><p>Is the Majority satisfied?</p></li>
+        <li><p>Is the Condorcet satisfied?</p></li>
+      </ol>
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      Total votes: <m>7 + 6 + 3 = 16</m>. 
+      Votes needed for a majority: <m>16/2 = 8</m>, so <m>9</m> votes are required.
+    </p>
+    <p>
+      <ol>
+        <li>
+          <p>
+            <strong>Plurality Method:</strong>
+            Count only 1st choice votes:
+            <ul>
+              <li>A: 7 votes</li>
+              <li>B: 6 votes</li>
+              <li>C: 3 votes</li>
+            </ul>
+            The winner is <strong>Candidate A</strong>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Majority Criterion:</strong>
+            A candidate must have more than 50% of the first-place votes to be a majority winner.
+            Since the leader (A) has only 7 votes and 9 were needed for a majority, there is no majority winner.
+            The criterion is <strong>satisfied</strong> (vacuously) because the criterion only says "if a majority winner exists, they must win." Since none exists, the rule isn't broken.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Condorcet Criterion:</strong>
+            We check if the plurality winner (A) is also the Condorcet winner by doing pairwise comparisons:
+            <ul>
+              <li>A vs B: A is preferred by 7 voters; B is preferred by <m>6+3=9</m> voters. <strong>B wins.</strong></li>
+              <li>B vs C: B is preferred by <m>7+3=10</m> voters; C is preferred by 6 voters. <strong>B wins.</strong></li>
+              <li>A vs C: A is preferred by 7 voters; C is preferred by <m>6+3=9</m> voters. <strong>C wins.</strong></li>
+            </ul>
+            Candidate B wins all head-to-head matches and is the <strong>Condorcet Winner</strong>. 
+            Since the plurality method chose A instead of B, the Condorcet Criterion is <strong>not satisfied</strong> in this election.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      The preference table shows the results of an election among three candidates, A, B, and C.
+    </p>
+    <tabular bottom="minor" top="minor">
+      <row header="yes">
+        <cell>Number of votes</cell>
+        <cell>10</cell>
+        <cell>4</cell>
+        <cell>2</cell>
+      </row>
+      <row>
+        <cell>1st choice</cell>
+        <cell>A</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+      </row>
+      <row>
+        <cell>2nd choice</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+        <cell>B</cell>
+      </row>
+      <row>
+        <cell>3rd choice</cell>
+        <cell>C</cell>
+        <cell>A</cell>
+        <cell>A</cell>
+      </row>
+    </tabular>
+    <p>
+      <ol>
+        <li><p>Using the plurality-with-elimination method, who is the winner?</p></li>
+        <li><p>Is the Majority satisfied?</p></li>
+        <li>
+          <p>
+            In the actual election, the 2 voters in the last column who voted C, B, and A, change their vote to A, B, C. 
+            Using the plurality-with-elimination method, which candidate wins the actual election?
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      Total votes: <m>10 + 4 + 2 = 16</m>. Majority needed: <m>9</m> votes.
+    </p>
+    <p>
+      <ol>
+        <li>
+          <p>
+            <strong>Plurality-with-Elimination:</strong>
+            <ul>
+              <li>Round 1: A has 10 votes, B has 4, and C has 2. Since A has 10 votes (more than the majority of 9), A is the winner immediately.</li>
+            </ul>
+            Winner: <strong>Candidate A</strong>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Majority:</strong>
+            Yes. Candidate A has a majority of first-place votes (10 out of 16) and won the election. Therefore, the Majority is <strong>satisfied</strong>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Changed Election:</strong>
+            If the 2 voters for C change to A, the new totals are:
+            <ul>
+              <li>A: <m>10 + 2 = 12</m> votes</li>
+              <li>B: 4 votes</li>
+              <li>C: 0 votes</li>
+            </ul>
+            Winner: <strong>Candidate A</strong>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      If a candidate wins all pairwise comparisons with other candidates, that candidate is called the <alert>Condorcet winner</alert>.
+    </p>
+    <p>
+      The mathematics department is hiring a new faculty member and the five-person hiring committee has interviewed four candidates: Adam(A), Beth(B), Carol(C), and Dan(D). They have decided to use Condorcet's method on their five ballots. Who gets the offer?
+    </p>
+    <tabular bottom="minor" top="minor">
+      <row header="yes">
+        <cell>Choice</cell>
+        <cell>Voter 1</cell>
+        <cell>Voter 2</cell>
+        <cell>Voter 3</cell>
+        <cell>Voter 4</cell>
+        <cell>Voter 5</cell>
+      </row>
+      <row>
+        <cell>First</cell>
+        <cell>B</cell>
+        <cell>D</cell>
+        <cell>C</cell>
+        <cell>D</cell>
+        <cell>B</cell>
+      </row>
+      <row>
+        <cell>Second</cell>
+        <cell>A</cell>
+        <cell>B</cell>
+        <cell>A</cell>
+        <cell>A</cell>
+        <cell>A</cell>
+      </row>
+      <row>
+        <cell>Third</cell>
+        <cell>C</cell>
+        <cell>C</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+        <cell>D</cell>
+      </row>
+      <row>
+        <cell>Fourth</cell>
+        <cell>D</cell>
+        <cell>A</cell>
+        <cell>D</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+      </row>
+    </tabular>
+  </statement>
+
+  <solution>
+    <p>
+      To find the Condorcet winner, we must compare each candidate head-to-head. There are 5 voters, so 3 votes are needed to win a comparison.
+    </p>
+    <p>
+      <ul>
+        <li>
+          <p><strong>A vs. B:</strong></p>
+          <p>Voter 1: B, Voter 2: B, Voter 3: A, Voter 4: A, Voter 5: B.</p>
+          <p>Result: B wins 3 to 2.</p>
+        </li>
+        <li>
+          <p><strong>A vs. C:</strong></p>
+          <p>Voter 1: A, Voter 2: C, Voter 3: C, Voter 4: A, Voter 5: A.</p>
+          <p>Result: A wins 3 to 2.</p>
+        </li>
+        <li>
+          <p><strong>A vs. D:</strong></p>
+          <p>Voter 1: A, Voter 2: D, Voter 3: A, Voter 4: D, Voter 5: A.</p>
+          <p>Result: A wins 3 to 2.</p>
+        </li>
+        <li>
+          <p><strong>B vs. C:</strong></p>
+          <p>Voter 1: B, Voter 2: B, Voter 3: C, Voter 4: C, Voter 5: B.</p>
+          <p>Result: B wins 3 to 2.</p>
+        </li>
+        <li>
+          <p><strong>B vs. D:</strong></p>
+          <p>Voter 1: B, Voter 2: D, Voter 3: B, Voter 4: D, Voter 5: B.</p>
+          <p>Result: B wins 3 to 2.</p>
+        </li>
+        <li>
+          <p><strong>C vs. D:</strong></p>
+          <p>Voter 1: C, Voter 2: D, Voter 3: C, Voter 4: D, Voter 5: D.</p>
+          <p>Result: D wins 3 to 2.</p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      <strong>Summary of Wins:</strong>
+      <ul>
+        <li>Beth (B) won 3 comparisons (vs. A, C, and D).</li>
+        <li>Adam (A) won 2 comparisons (vs. C and D).</li>
+        <li>Dan (D) won 1 comparison (vs. C).</li>
+        <li>Carol (C) won 0 comparisons.</li>
+      </ul>
+    </p>
+    <p>
+      Since <strong>Beth (B)</strong> won every head-to-head match, she is the Condorcet winner and gets the offer.
+    </p>
+  </solution>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      A small city has 30 police officers to be apportioned among 4 precincts based on the population of each precinct. The populations are given in the following table.
+    </p>
+    <tabular bottom="minor" top="minor">
+      <row header="yes">
+        <cell><alert>Precinct</alert></cell>
+        <cell>1</cell>
+        <cell>2</cell>
+        <cell>3</cell>
+        <cell>4</cell>
+        <cell>Total</cell>
+      </row>
+      <row>
+        <cell>Population</cell>
+        <cell>3117</cell>
+        <cell>1883</cell>
+        <cell>2776</cell>
+        <cell>3174</cell>
+        <cell>10,950</cell>
+      </row>
+    </tabular>
+    <p>
+      <ol>
+        <li><p>Find the standard divisor.</p></li>
+        <li><p>Find the standard quota for each precinct.</p></li>
+        <li><p>Find the modified quota for the fourth precinct using Jefferson's method with a modified divisor of 350.</p></li>
+        <li><p>Find the apportionment for the second precinct using Adams's method with a modified divisor of 380.</p></li>
+      </ol>
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      <strong>Part (a) &amp; (b): Standard Divisor and Standard Quotas</strong>
+    </p>
+    <p>
+      The Standard Divisor (<m>SD</m>) is <m>10,950 / 30 = 365</m>.
+    </p>
+    <table xml:id="table-police-hamilton">
+      <title>Hamilton's Method (Standard Quotas)</title>
+      <tabular bottom="minor" top="minor">
+        <row header="yes">
+          <cell>Category</cell>
+          <cell>Precinct 1</cell>
+          <cell>Precinct 2</cell>
+          <cell>Precinct 3</cell>
+          <cell>Precinct 4</cell>
+          <cell>Total</cell>
+        </row>
+        <row>
+          <cell>Population</cell>
+          <cell>3117</cell>
+          <cell>1883</cell>
+          <cell>2776</cell>
+          <cell>3174</cell>
+          <cell>10,950</cell>
+        </row>
+        <row>
+          <cell>Std. Quota</cell>
+          <cell>8.54</cell>
+          <cell>5.16</cell>
+          <cell>7.61</cell>
+          <cell>8.70</cell>
+          <cell>30.00</cell>
+        </row>
+        <row>
+          <cell>Lower Quota</cell>
+          <cell>8</cell>
+          <cell>5</cell>
+          <cell>7</cell>
+          <cell>8</cell>
+          <cell>28</cell>
+        </row>
+        <row>
+          <cell>Fraction</cell>
+          <cell>0.54</cell>
+          <cell>0.16</cell>
+          <cell>0.61</cell>
+          <cell>0.70</cell>
+          <cell>-</cell>
+        </row>
+        <row>
+          <cell>Surplus</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell>+1</cell>
+          <cell>+1</cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Hamilton Final</cell>
+          <cell>8</cell>
+          <cell>5</cell>
+          <cell>8</cell>
+          <cell>9</cell>
+          <cell>30</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      <strong>Part (c): Jefferson's Method (Modified Divisor <m>d = 350</m>)</strong>
+    </p>
+    <table xml:id="table-police-jefferson">
+      <title>Jefferson's Method Calculation</title>
+      <tabular bottom="minor" top="minor">
+        <row header="yes">
+          <cell>Category</cell>
+          <cell>Precinct 1</cell>
+          <cell>Precinct 2</cell>
+          <cell>Precinct 3</cell>
+          <cell>Precinct 4</cell>
+          <cell>Total</cell>
+        </row>
+        <row>
+          <cell>Mod. Quota</cell>
+          <cell>8.91</cell>
+          <cell>5.38</cell>
+          <cell>7.93</cell>
+          <cell>9.07</cell>
+          <cell>-</cell>
+        </row>
+        <row>
+          <cell>Jefferson Apport.</cell>
+          <cell>8</cell>
+          <cell>5</cell>
+          <cell>7</cell>
+          <cell>9</cell>
+          <cell>29</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>The modified quota for the fourth precinct is <strong>9.07</strong>.</p>
+
+    <p>
+      <strong>Part (d): Adams's Method (Modified Divisor <m>d = 380</m>)</strong>
+    </p>
+    <table xml:id="table-police-adams">
+      <title>Adams's Method Calculation</title>
+      <tabular bottom="minor" top="minor">
+        <row header="yes">
+          <cell>Category</cell>
+          <cell>Precinct 1</cell>
+          <cell>Precinct 2</cell>
+          <cell>Precinct 3</cell>
+          <cell>Precinct 4</cell>
+          <cell>Total</cell>
+        </row>
+        <row>
+          <cell>Mod. Quota</cell>
+          <cell>8.20</cell>
+          <cell>4.96</cell>
+          <cell>7.31</cell>
+          <cell>8.35</cell>
+          <cell>-</cell>
+        </row>
+        <row>
+          <cell>Adams Apport.</cell>
+          <cell>9</cell>
+          <cell>5</cell>
+          <cell>8</cell>
+          <cell>9</cell>
+          <cell>31</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>The apportionment for the second precinct using Adams's method is <strong>5</strong> officers.</p>
+  </solution>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      A mother has an incentive program to get her five children to read more. She has 30 pieces of candy to divide among her children at the end of the week based on the number of minutes each of them spends reading.
+    </p>
+    <tabular bottom="minor" top="minor">
+      <row header="yes">
+        <cell>Child</cell>
+        <cell>Abby</cell>
+        <cell>Bobby</cell>
+        <cell>Charli</cell>
+        <cell>Dave</cell>
+        <cell>Eddie</cell>
+        <cell>Total</cell>
+      </row>
+      <row>
+        <cell>Reading Times</cell>
+        <cell>138</cell>
+        <cell>142</cell>
+        <cell>188</cell>
+        <cell>218</cell>
+        <cell>64</cell>
+        <cell>750</cell>
+      </row>
+    </tabular>
+    <p>
+      <ol>
+        <li><p>Use Hamilton's method to apportion 30 pieces of candy.</p></li>
+        <li><p> At the last minute, the mother finds another piece of candy and does the apportionment again. Now, she has 31 pieces of candy to divide among her children at the end of the week based on the number of minutes each of them spends reading. Use Hamilton's method to apportion the candy among the children.</p></li>
+        <li><p>Look at your answers for parts (a) and (b). What changed and why? Why is the change interesting?This is an example of which paradox?</p></li>
+      </ol>
+    </p>
+  </statement>
+
+  <solution>
+    <p><strong>Part (a): 30 Pieces (Standard Divisor = 25)</strong></p>
+    <table xml:id="table-candy-30">
+      <title>Apportionment for 30 Pieces </title>
+      <tabular bottom="minor" top="minor">
+        <row header="yes">
+          <cell>Category</cell>
+          <cell>Abby</cell>
+          <cell>Bobby</cell>
+          <cell>Charli</cell>
+          <cell>Dave</cell>
+          <cell>Eddie</cell>
+          <cell>Total</cell>
+        </row>
+        <row>
+          <cell>Reading Min</cell>
+          <cell>138</cell>
+          <cell>142</cell>
+          <cell>188</cell>
+          <cell>218</cell>
+          <cell>64</cell>
+          <cell>750</cell>
+        </row>
+        <row>
+          <cell>Std. Quota</cell>
+          <cell>5.52</cell>
+          <cell>5.68</cell>
+          <cell>7.52</cell>
+          <cell>8.72</cell>
+          <cell>2.56</cell>
+          <cell>30.00</cell>
+        </row>
+        <row>
+          <cell>Lower Quota</cell>
+          <cell>5</cell>
+          <cell>5</cell>
+          <cell>7</cell>
+          <cell>8</cell>
+          <cell>2</cell>
+          <cell>27</cell>
+        </row>
+        <row>
+          <cell>Fraction</cell>
+          <cell>0.52</cell>
+          <cell>0.68</cell>
+          <cell>0.52</cell>
+          <cell>0.72</cell>
+          <cell>0.56</cell>
+          <cell>-</cell>
+        </row>
+        <row>
+          <cell>Surplus</cell>
+          <cell></cell>
+          <cell>+1</cell>
+          <cell></cell>
+          <cell>+1</cell>
+          <cell>+1</cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Final Seats</cell>
+          <cell>5</cell>
+          <cell>6</cell>
+          <cell>7</cell>
+          <cell>9</cell>
+          <cell>3</cell>
+          <cell>30</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p><strong>Part (b): 31 Pieces (Standard Divisor ≈ 24.1935)</strong></p>
+    <table xml:id="table-candy-31">
+      <title>Apportionment for 31 Pieces</title>
+      <tabular bottom="minor" top="minor">
+        <row header="yes">
+          <cell>Category</cell>
+          <cell>Abby</cell>
+          <cell>Bobby</cell>
+          <cell>Charli</cell>
+          <cell>Dave</cell>
+          <cell>Eddie</cell>
+          <cell>Total</cell>
+        </row>
+        <row>
+          <cell>Reading Min</cell>
+          <cell>138</cell>
+          <cell>142</cell>
+          <cell>188</cell>
+          <cell>218</cell>
+          <cell>64</cell>
+          <cell>750</cell>
+        </row>
+        <row>
+          <cell>Std. Quota</cell>
+          <cell>5.704</cell>
+          <cell>5.870</cell>
+          <cell>7.771</cell>
+          <cell>9.011</cell>
+          <cell>2.645</cell>
+          <cell>31.00</cell>
+        </row>
+        <row>
+          <cell>Lower Quota</cell>
+          <cell>5</cell>
+          <cell>5</cell>
+          <cell>7</cell>
+          <cell>9</cell>
+          <cell>2</cell>
+          <cell>28</cell>
+        </row>
+        <row>
+          <cell>Fraction</cell>
+          <cell>0.704</cell>
+          <cell>0.870</cell>
+          <cell>0.771</cell>
+          <cell>0.011</cell>
+          <cell>0.645</cell>
+          <cell>-</cell>
+        </row>
+        <row>
+          <cell>Surplus</cell>
+          <cell>+1</cell>
+          <cell>+1</cell>
+          <cell>+1</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Final Seats</cell>
+          <cell>6</cell>
+          <cell>6</cell>
+          <cell>8</cell>
+          <cell>9</cell>
+          <cell>2</cell>
+          <cell>31</cell>
+        </row>
+      </tabular>
+    </table>
+    <p><strong>Part (c): Increasing the total number of items from 30 to 31 creates the <term>Alabama Paradox</term>. In this specific case, Eddie loses a candy even though the total amount of candy increased. </strong></p>
+  </solution>
+</exercise>
+
+</exercises>
+</section>

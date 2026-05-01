@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-Mortgages">
+<title>Borrowing Money: Mortgage </title>  
+
+<assemblage xml:id="assemblage-mortgage">
+  <title></title>
+<p> 
+A <alert>mortgage</alert> is a long-term loan (perhaps up to 15 or 30 years) for the purpose of buying a home, and for which the property is pledged as security for payment. </p>
+<p>The <alert>down payment</alert> is the portion of the sale price of the home that the buyer initially pays to the seller. </p>
+<p>The minimum required down payment is computes as a percentage of the sale price. </p>
+<p>The <alert>amount of the mortgage</alert> is the difference between the sale price and the down payment. </p>
+<p>The <alert>points</alert> are charged for your mortgage. 
+One point equals one percent of the loan amount.
+</p>
+</assemblage>
+
+<p>
+For example, you make a 10% down payment of $120,000 home, the amount of the mortgage is <m>\$120,000-\$12,000 =\$108,000</m>. 
+So, if your mortgage is $108,000, one point is $1,080. 
+You pay these points up front when you begin the mortgage.
+</p>
+
+<p>
+Many financial institutions or mortgage companies provide mortgage loans. 
+Some companies, called <alert>mortgage broker</alert> offer to find you a mortgage lender willing to make you a loan. 
+Mortgages can have a fixed interest rate or a variable interest rate. 
+<alert>Fixed-rate mortgages</alert> have same monthly payment during the entire time of the loan.
+</p>
+
+<definition xml:id="def-loan-payment">
+  <title>Loan Payment Formula for Fixed Installment Loans</title>
+  <statement>
+    <p>
+      The regular payment amount, <m>PMT</m>, required to repay a loan of <m>P</m> dollars paid <m>n</m> times per year over <m>t</m> years at an annual rate <m>r</m> is given by:
+      <men xml:id="eqn-loan-formula">
+        PMT = \frac{P\left(\frac{r}{n}\right)}{\left[1-\left(1+\frac{r}{n}\right)^{-nt}\right]}
+      </men>
+    </p>
+  </statement>
+  <p>
+  where:
+  <dl>
+    <li>
+      <title><m>P</m></title>
+      <p>is the principal amount (loan balance)</p>
+    </li>
+    <li>
+      <title><m>r</m></title>
+      <p>is the annual interest rate (as a decimal)</p>
+    </li>
+    <li>
+      <title><m>n</m></title>
+      <p>is the number of payments per year</p>
+    </li>
+    <li>
+      <title><m>t</m></title>
+      <p>is the total number of years</p>
+    </li>
+  </dl>
+</p>
+</definition>
+
+<example xml:id="example-m1">
+  <title></title>
+  <statement>
+<p> The price of a home is $195,000. The bank requires a 10% down payment and two points at the time of closing. The cost of the home is financed with 30-year fixed rate mortgage at 7.5%.</p>
+<ol>
+    <li>
+    <p> Find the required down payment. </p>
+    </li>
+
+    <li>
+    <p> Find the amount of the mortgage. </p>
+    </li>
+
+    <li>
+    <p> How much must be paid for the two points at closing? </p>
+    </li>
+
+    <li>
+    <p> Find the monthly payment </p>
+    </li>
+
+    <li>
+    <p> Find the total interest paid over 30 years. </p>
+    </li>
+</ol>
+</statement>
+  
+<solution>
+  <ol>
+    <li>
+      <p>
+        The required down payment is 10% of $195,000 or
+        <me>0.10 \times \$195,000 = \$19,500.</me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The amount of the mortgage is the difference between the price of the home and the down payment:
+        <me>\text{Amount of mortgage} = \$195,000 - \$19,500 = \$175,500.</me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        To find the cost of two points on a mortgage of $175,500:
+        <me>\text{2 points} = 2\% \text{ of mortgage} = 0.02 \times \$175,500 = \$3,510.</me>
+        The down payment ($19,500) is paid to the seller and the cost of two points ($3,510) is paid to the lending institution.
+      </p>
+
+      <aside>
+        <title>Computing Monthly Mortgage Payments</title>
+        <p>
+          The monthly mortgage payment, <m>PMT</m>, required to repay a loan of <m>P</m> dollars paid <m>n</m> times per year over <m>t</m> years at an annual rate <m>r</m> is:
+          <me>PMT = \frac{P\left(\frac{r}{n}\right)}{\left[1-\left(1+\frac{r}{n}\right)^{-nt}\right]}</me>
+        </p>
+      </aside>
+    </li>
+
+    <li>
+      <p>
+        The monthly payments are:
+        <me>PMT = \frac{175500\left(\frac{0.075}{12}\right)}{\left[1-\left(1+\frac{0.075}{12}\right)^{-12 \cdot 30}\right]} \approx \$1,227.12</me>
+      </p>
+    </li>
+
+    <li>
+      <p>
+        The total payments are calculated by multiplying the monthly payment by the total number of periods (360 months):
+        <md>
+            <mrow>\text{Total Payments} \amp = \text{monthly payments} \times \text{month} \times \text{years}</mrow>
+            <mrow>\amp =\$1,227.12 \times 360 = \$441,763.20.</mrow>
+        </md>
+        The interest paid over 30 years is the total payments minus the original principal:
+        <md>
+            <mrow> \text{Interest} \amp = \text{total payments} - \text{amount of mortgage} </mrow>
+            <mrow> \amp = \$441,763.20 - \$175,500 = \$266,263.20.</mrow>
+        </md>
+      </p>
+    </li>
+  </ol>
+</solution>
+</example>
+
+<example xml:id="example-mortgage-M01">
+  <title>Comparing 30-Year and 15-Year Mortgages</title>
+  <statement>
+    <p>
+      In <xref ref="example-m1"/>,a mortgage of $175,500 was financed with a 30-year fixed rate at 7.5%.
+    </p>
+    <ol>
+      <li><p>Find the monthly payment for the 30-year mortgage.</p></li>
+      <li><p>Find the total interest paid over 30 years.</p></li>
+      <li><p>Find the total interest paid if the loan was instead for 15 years at the same rate.</p></li>
+      <li><p>How much interest is saved by reducing the mortgage from 30 to 15 years?</p></li>
+    </ol>
+  </statement>
+  <solution>
+    <ol>
+      <li>
+        <p>
+          We use the formula <me>PMT = \frac{P(r/n)}{1-(1+r/n)^{-nt}}</me> with <m>P = 175500</m>, <m>r = 0.075</m>, <m>n = 12</m>, and <m>t = 30</m>:
+          <me>PMT = \frac{175500(0.075/12)}{1-(1+0.075/12)^{-12 \cdot 30}} \approx \$1,227.12</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          The total interest for 30 years is the total payments minus the principal:
+          <me>\text{Total Payments} = \$1,227.12 \times 360 = \$441,763.20</me>
+          <me>\text{Interest}_{30} = \$441,763.20 - \$175,500 = \$266,263.20</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          First, find the 15-year monthly payment (<m>t=15</m>):
+          <me>PMT = \frac{175500(0.075/12)}{1-(1+0.075/12)^{-12 \cdot 15}} \approx \$1,626.91</me>
+          Now calculate the total 15-year interest:
+          <me>\text{Total Payments} = \$1,626.91 \times 180 = \$292,843.80</me>
+          <me>\text{Interest}_{15} = \$292,843.80 - \$175,500 = \$117,343.80</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          The interest saved is the difference between the two interest totals:
+          <me>\text{Savings} = \$266,263.20 - \$117,343.80 = \$148,919.40</me>
+        </p>
+      </li>
+    </ol>
+  </solution>
+</example>
+
+<example xml:id="ex-condo-mortgage-M02">
+  <title>Condominium Mortgage Analysis</title>
+  <statement>
+    <p>
+      The price of a condominium is $280,000. The bank requires a 5% down payment and one point at the time of closing. The cost of the condominium is financed with a 30-year fixed-rate mortgage at 8%.
+    </p>
+    <ol>
+      <li><p>Find the required down payment.</p></li>
+      <li><p>Find the amount of the mortgage.</p></li>
+      <li><p>How much must be paid for the one point at closing?</p></li>
+      <li><p>Find the monthly payment by using the monthly payment formula.</p></li>
+      <li><p>Find the total cost of interest over 30 years.</p></li>
+    </ol>
+  </statement>
+
+  <solution>
+    <ol>
+      <li>
+        <p>
+          The down payment is 5% of the purchase price:
+          <me>0.05 \times \$280,000 = \$14,000</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          The mortgage amount is the price minus the down payment:
+          <me>\$280,000 - \$14,000 = \$266,000</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          One point is 1% of the mortgage amount:
+          <me>0.01 \times \$266,000 = \$2,660</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          Using the formula <me>PMT = \frac{P(r/n)}{1-(1+r/n)^{-nt}}</me> with <m>P = 266,000</m>, <m>r = 0.08</m>, <m>n = 12</m>, and <m>t = 30</m>:
+          <me>PMT = \frac{266000(0.08/12)}{1-(1+0.08/12)^{-360}} \approx \$1,951.81</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          Total payments over 30 years are <me>\$1,951.81 \times 360 = \$702,651.60</me>. </p>
+          <p>The total interest is:
+          <me>\text{Total Interest} = \$702,651.60 - \$266,000 = \$436,651.60</me>
+        </p>
+      </li>
+    </ol>
+  </solution>
+</example>
+
+<exercise xml:id="ex-student-loan-comparison-M03">
+  <title>Student Loan Term Comparison</title>
+  <statement>
+    <p>
+      A student graduates from college with a loan of $36,000 at an 8% annual interest rate.
+    </p>
+    <ol>
+      <li>
+        <p>
+          Find the monthly payments and the total interest for a 10-year loan term.
+        </p>
+      </li>
+      <li>
+        <p>
+          If the interest rate remains at 8% and the loan term is reduced to 5 years, how much more must the student pay each month and how much less will be paid in total interest?
+        </p>
+      </li>
+    </ol>
+  </statement>
+
+  <answer>
+    <p>
+      <ol>
+        <li>
+          <p>
+            Monthly payment: $436.78; Total interest: $16,413.60
+          </p>
+        </li>
+        <li>
+          <p>
+            Monthly increase: $293.07; Interest saved: $8,414.40
+          </p>
+        </li>
+      </ol>
+    </p>
+  </answer>
+
+  <solution>
+    <ol>
+      <li>
+        <p>
+          For <m>t = 10</m>:
+          <me>PMT = \frac{36000(0.08/12)}{1-(1+0.08/12)^{-120}} \approx \$436.78</me>
+          <me>\text{Total Interest} = (\$436.78 \times 120) - \$36,000 = \$16,413.60</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          For <m>t = 5</m>:
+          <me>PMT = \frac{36000(0.08/12)}{1-(1+0.08/12)^{-60}} \approx \$729.85</me>
+          <me>\text{Total Interest} = (\$729.85 \times 60) - \$36,000 = \$7,791.00</me>
+        </p>
+        <p>
+          The monthly increase is <m>\$729.85 - \$436.78 = \$293.07</m>. 
+          The interest saved is <m>\$16,413.60 - \$7,791.00 = \$8,422.60</m>.
+          (Note: Small differences may occur due to rounding).
+        </p>
+      </li>
+    </ol>
+  </solution>
+</exercise>
+
+<exercise xml:id="ex-mortgage-comparison-points-M04">
+  <title>Mortgage Comparison with Points and Closing Costs</title>
+  <statement>
+    <p>
+      Which mortgage loan has the greater total cost and by how much? Consider a $210,000 mortgage with these two options:
+    </p>
+    <ul>
+      <li>
+        <p>
+          <term>Mortgage A</term>: 20-year fixed at 7% with closing costs of $3,000 and 2 points.
+        </p>
+      </li>
+      <li>
+        <p>
+          <term>Mortgage B</term>: 20-year fixed at 6.75% with closing costs of $1,750 and 4 points.
+        </p>
+      </li>
+    </ul>
+  </statement>
+
+  <answer>
+    <p>
+      Mortgage A has the greater total cost by $4,577.20.
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      The total cost for each mortgage includes the sum of all monthly payments, the cost of points, and the fixed closing costs.
+    </p>
+    <ol>
+      <li>
+        <title>Mortgage A Calculations</title>
+        <p>
+          First, calculate the monthly payment (<m>PMT</m>):
+          <me>PMT = \frac{210000(0.07/12)}{1-(1+0.07/12)^{-240}} \approx \$1,628.13</me>
+          Next, find the total cost of payments, points, and closing:
+          <md>
+            <mrow>\text{Total Payments} \amp = \$1,628.13 \times 240 = \$390,751.20</mrow>
+            <mrow>\text{Points Cost} \amp = 0.02 \times \$210,000 = \$4,200.00</mrow>
+            <mrow>\text{Total Cost}_A \amp = \$390,751.20 + \$4,200.00 + \$3,000.00 = \$397,951.20</mrow>
+          </md>
+        </p>
+      </li>
+      <li>
+        <title>Mortgage B Calculations</title>
+        <p>
+          First, calculate the monthly payment (<m>PMT</m>):
+          <me>PMT = \frac{210000(0.0675/12)}{1-(1+0.0675/12)^{-240}} \approx \$1,596.76</me>
+          Next, find the total cost:
+          <md>
+            <mrow>\text{Total Payments} \amp = \$1,596.76 \times 240 = \$383,222.40</mrow>
+            <mrow>\text{Points Cost} \amp = 0.04 \times \$210,000 = \$8,400.00</mrow>
+            <mrow>\text{Total Cost}_B \amp = \$383,222.40 + \$8,400.00 + \$1,750.00 = \$393,372.40</mrow>
+          </md>
+        </p>
+      </li>
+      <li>
+        <title>Comparison</title>
+        <p>
+          Mortgage A is more expensive. The difference is:
+          <me>\$397,951.20 - \$393,372.40 = \$4,578.80</me>
+          (Note: Differences in final cents may vary based on rounding the monthly payment).
+        </p>
+      </li>
+    </ol>
+  </solution>
+</exercise>
+
+<definition xml:id="def-max-purchase-price">
+  <title>Maximum Purchase Price Formula</title>
+  <statement>
+    <p>
+      The <alert>maximum purchase price</alert> for a house is given by
+      <me>
+        \text{maximum purchase price} = \frac{PMT \cdot \left[1 - \left(1 + \frac{r}{n}\right)^{-nt}\right]}{\left(\frac{r}{n}\right)}
+      </me>
+      where:
+      <dl>
+        <li>
+          <title><m>PMT</m></title>
+          <p>is the monthly mortgage payment</p>
+        </li>
+        <li>
+          <title><m>n</m></title>
+          <p>is the number of payments per year</p>
+        </li>
+        <li>
+          <title><m>t</m></title>
+          <p>is the total number of years (loan term)</p>
+        </li>
+        <li>
+          <title><m>r</m></title>
+          <p>is the annual interest rate (as a decimal)</p>
+        </li>
+      </dl>
+    </p>
+  </statement>
+</definition>
+
+<example xml:id="ex-max-purchase-M05">
+  <title>Calculating Maximum Mortgage Amount</title>
+  <statement>
+    <p>
+      Amanda and Fred are buying a house on a 30-year mortgage. They can afford a monthly payment of $800. If the annual interest rate (APR) is 3.75%, what is the maximum mortgage amount they can take out?
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      We use the maximum purchase price formula with <m>PMT = 800</m>, <m>r = 0.0375</m>, <m>n = 12</m>, and <m>t = 30</m>:
+      <me>
+        \text{Max Price} = \frac{800 \cdot \left[1 - \left(1 + \frac{0.0375}{12}\right)^{-12 \cdot 30}\right]}{\left(\frac{0.0375}{12}\right)}
+      </me>
+    </p>
+    <p>
+      First, calculate the periodic interest rate: 
+      <m>\frac{0.0375}{12} = 0.003125</m>.
+    </p>
+    <p>
+      Now, substitute into the formula:
+      <md>
+        <mrow>\text{Max Price} \amp = \frac{800 \cdot \left[1 - (1.003125)^{-360}\right]}{0.003125}</mrow>
+        <mrow>\text{Max Price} \amp = \frac{800 \cdot [1 - 0.325016]}{0.003125}</mrow>
+        <mrow>\text{Max Price} \amp = \frac{800 \cdot 0.674984}{0.003125}</mrow>
+        <mrow>\text{Max Price} \amp \approx \$172,795.90</mrow>
+      </md>
+    </p>
+    <p>
+      Amanda and Fred can take out a mortgage of approximately <alert>$172,795.90</alert>.
+    </p>
+  </solution>
+</example>
+
+<exercise xml:id="ex-home-affordability-M06">
+  <title>Home Affordability and Loan Terms</title>
+  <statement>
+    <p>
+      Suppose you want to purchase a house and your take-home pay is $3,220 per month. You wish to stay within recommended guidelines by spending <m>1/4</m> of your take-home pay on a house payment. You have $15,300 saved for a down payment. With your excellent credit, you can get an APR of 3.28% compounded monthly.
+    </p>
+    <ol>
+      <li><p>What is the total cost of a house you could afford with a 15-year mortgage?</p></li>
+      <li><p>What is the most that you could afford with a traditional 30-year mortgage?</p></li>
+    </ol>
+  </statement>
+
+  <answer>
+    <p>
+      <ol>
+        <li><p>15-year mortgage: $130,175.76</p></li>
+        <li><p>30-year mortgage: $199,444.60</p></li>
+      </ol>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      First, calculate the allowed monthly payment (<m>PMT</m>):
+      <me>PMT = \frac{1}{4} \times \$3,220 = \$805</me>
+      The monthly interest rate is <m>\frac{r}{n}= \frac{0.0328}{12} \approx 0.0027333</m>.
+    </p>
+    <ol>
+      <li>
+        <title>15-Year Mortgage Affordability</title>
+        <p>
+          Using the Maximum Purchase Price formula with <m>n=12</m> and <m>t=15</m> (<m>nt = 180</m>):
+          <me>P = \frac{805 \cdot [1 - (1 + 0.0027333)^{-180}]}{0.0027333} \approx \$114,875.76</me>
+          The total house cost includes the down payment:
+          <me>\text{Total Cost} = \$114,875.76 + \$15,300 = \$130,175.76</me>
+        </p>
+      </li>
+      <li>
+        <title>30-Year Mortgage Affordability</title>
+        <p>
+          Using the formula with <m>t=30</m> (<m>nt = 360</m>):
+          <me>P = \frac{805 \cdot [1 - (1 + 0.0027333)^{-360}]}{0.0027333} \approx \$184,144.60</me>
+          The total house cost includes the down payment:
+          <me>\text{Total Cost} = \$184,144.60 + \$15,300 = \$199,444.60</me>
+        </p>
+      </li>
+    </ol>
+  </solution>
+</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>

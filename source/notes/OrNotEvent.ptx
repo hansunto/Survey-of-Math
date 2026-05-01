@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-events-not-or">
+  <title>Events Involving NOT and OR</title>
+
+  <p>
+    A survey asked 500 Americans to rate their health. Of the surveyed, 270 rated their health as good/excellent. This means that <m>500 - 270 = 230</m> people surveyed did not rate their health as good/excellent.
+    <md>
+      <mrow>P(\text{good/excellent}) + P(\text{not good/excellent}) \amp = \frac{270}{500} + \frac{230}{500}</mrow>
+      <mrow>\amp = \frac{500}{500} = 1</mrow>
+    </md>
+    In general, since the sum of probabilities of all possible outcomes in any situation is 1:
+    <me>P(E) + P(\text{not } E) = 1</me>
+  </p>
+
+  <assemblage>
+    <title>The Probability of an Event Not Occurring</title>
+    <p>
+      The probability that an event <m>E</m> will not occur is equal to 1 minus the probability that it will occur:
+      <me>P(\text{not } E) = 1 - P(E)</me>
+    </p>
+  </assemblage>
+
+  <exercise>
+    <statement>
+      <p>If you are dealt one card from a standard 52-card deck, find the probability that you are not dealt a queen.</p>
+    </statement>
+    <solution>
+      <p><m>P(\text{not a queen}) = 1 - P(\text{queen}) = 1 - \frac{4}{52} = \frac{48}{52} = \frac{12}{13}</m>.</p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>If you are dealt one card from a standard 52-card deck, find the probability that you are not dealt a diamond.</p>
+    </statement>
+    <solution>
+      <p><m>P(\text{not a diamond}) = 1 - P(\text{diamond}) = 1 - \frac{13}{52} = \frac{39}{52} = \frac{3}{4}</m>.</p>
+    </solution>
+  </exercise>
+
+  <assemblage>
+    <title>Mutually Exclusive Events</title>
+    <p>
+      If it is impossible for events <m>A</m> and <m>B</m> to occur simultaneously, the events are said to be <term>mutually exclusive</term>. 
+    </p>
+    <p>
+      <strong>Or Probabilities with Mutually Exclusive Events:</strong> If <m>A</m> and <m>B</m> are mutually exclusive events, then:
+      <me>P(A \text{ or } B) = P(A) + P(B)</me>
+    </p>
+  </assemblage>
+
+  <exercise>
+    <statement>
+      <p>If one card is randomly selected from a deck of cards, what is the probability of selecting a king or a queen?</p>
+    </statement>
+    <solution>
+      <p>These are mutually exclusive. <m>P(\text{king or queen}) = \frac{4}{52} + \frac{4}{52} = \frac{8}{52} = \frac{2}{13}</m>.</p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>If you roll a single, six-sided die, what is the probability of getting either a 4 or a 5?</p>
+    </statement>
+    <solution>
+      <p><m>P(4 \text{ or } 5) = \frac{1}{6} + \frac{1}{6} = \frac{2}{6} = \frac{1}{3}</m>.</p>
+    </solution>
+  </exercise>
+
+  <p>
+    If one card is randomly selected from a deck of cards, what is the probability of selecting a diamond or a picture card?
+    <me>P(\text{diamond or picture card}) = P(\text{diamond}) + P(\text{picture card}) = \frac{13}{52} + \frac{12}{52}</me>
+    However, there are three cards that are <alert>simultaneously diamonds and picture cards</alert>. The events are not mutually exclusive.
+  </p>
+
+  <p>
+    To correct for the double-counting:
+    <md>
+      <mrow>P(\text{diamond or picture card}) \amp = P(\text{diamond}) + P(\text{picture card}) - P(\text{diamond and picture card})</mrow>
+      <mrow>\amp = \frac{13}{52} + \frac{12}{52} - \frac{3}{52} = \frac{22}{52} = \frac{11}{26}</mrow>
+    </md>
+  </p>
+
+  <assemblage>
+    <title>Or Probabilities with Events that are NOT Mutually Exclusive</title>
+    <p>
+      If <m>A</m> and <m>B</m> are not mutually exclusive events, then:
+      <me>P(A \text{ or } B) = P(A) + P(B) - P(A \text{ and } B)</me>
+    </p>
+  </assemblage>
+
+  <exercise>
+    <statement>
+      <p>
+        In a group of 50 students, 23 take math, 11 take psychology, and 7 take both. Find the probability that a randomly selected student takes math or psychology.
+      </p>
+    </statement>
+    <solution>
+      <p><m>P(M \text{ or } Ps) = \frac{23}{50} + \frac{11}{50} - \frac{7}{50} = \frac{27}{50}</m>.</p>
+    </solution>
+  </exercise>
+
+  <p>
+    The following table shows the distribution of active duty personnel in the U.S. military (in thousands).
+  </p>
+
+  <table xml:id="table-military-personnel">
+    <title>U.S. Military Personnel by Branch and Gender</title>
+    <tabular bottom="minor" top="minor" left="minor" right="minor">
+      <row header="yes">
+        <cell></cell>
+        <cell>Air Force</cell>
+        <cell>Army</cell>
+        <cell>Marine Corps</cell>
+        <cell>Navy</cell>
+        <cell>Total</cell>
+      </row>
+      <row>
+        <cell>Male</cell>
+        <cell>290</cell>
+        <cell>400</cell>
+        <cell>160</cell>
+        <cell>320</cell>
+        <cell>1170</cell>
+      </row>
+      <row>
+        <cell>Female</cell>
+        <cell>70</cell>
+        <cell>70</cell>
+        <cell>10</cell>
+        <cell>50</cell>
+        <cell>200</cell>
+      </row>
+      <row>
+        <cell>Total</cell>
+        <cell>360</cell>
+        <cell>470</cell>
+        <cell>170</cell>
+        <cell>370</cell>
+        <cell>1370</cell>
+      </row>
+    </tabular>
+  </table>
+
+  <exercise>
+    <statement>
+      <p>Using the table above, find the probability that a person selected at random is in the Army or is a woman.</p>
+    </statement>
+    <solution>
+      <p>
+        <m>P(\text{Army or Woman}) = P(\text{Army}) + P(\text{Woman}) - P(\text{Army and Woman})</m>
+        <m>= \frac{470}{1370} + \frac{200}{1370} - \frac{70}{1370} = \frac{600}{1370} \approx 0.438</m>.
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>Find the probability that a person selected at random is in the Navy or is a man.</p>
+    </statement>
+    <solution>
+      <p>
+        <m>P(\text{Navy or Man}) = P(\text{Navy}) + P(\text{Man}) - P(\text{Navy and Man})</m>
+        <m>= \frac{370}{1370} + \frac{1170}{1370} - \frac{320}{1370} = \frac{1220}{1370} \approx 0.891</m>.
+      </p>
+    </solution>
+  </exercise>
+
+</section>

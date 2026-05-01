@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-fin-ch-ex">
+    <title>Chapter Exercise</title>
+    <exercises>
+      <exercise>
+        <statement>
+          <p>
+            Suppose a local sales tax rate is <m>4.5\%</m> and you purchase a car for <m>\$28,500</m>.
+            <ol marker="a">
+              <li><p>How much sales tax is paid?</p></li>
+              <li><p>How much is the total cost of the car?</p></li>
+            </ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <ol marker="a">
+              <li><p><m>\$1,282.50</m></p></li>
+              <li><p><m>\$29,782.50</m></p></li>
+            </ol>
+          </p>
+        </answer>
+        <solution>
+          <p>
+            <ol marker="a">
+              <li><p>Tax = <m>28500 \times 0.045 = 1282.50</m>.</p></li>
+              <li><p>Total = <m>28500 + 1282.50 = 29782.50</m>.</p></li>
+            </ol>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            A bank offers a CD that pays a simple interest rate of <m>5.25\%</m>. How much must you put in this CD now in order to have <m>\$5,000</m> for college tuition in five years?
+          </p>
+        </statement>
+        <answer>
+          <p><m>\$3,960.40</m></p>
+        </answer>
+        <solution>
+          <p>
+            Use <m>A = P(1 + rt)</m>. 
+            <m>5000 = P(1 + 0.0525 \times 5)</m>
+            <m>5000 = P(1.2625)</m>
+            <m>P = 5000 / 1.2625 \approx 3960.40</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            How much money should be deposited today in an account that earns <m>5\%</m> compounded quarterly so that it will accumulate to <m>\$15,000</m> in ten years?
+          </p>
+        </statement>
+        <answer>
+          <p><m>\$9,126.10</m></p>
+        </answer>
+        <solution>
+          <p>
+            Use <m>P = A(1 + r/n)^{-nt}</m>.
+            <m>P = 15000(1 + 0.05/4)^{-40}</m>
+            <m>P = 15000(1.0125)^{-40} \approx 9126.10</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            The cost of washer-dryer is <m>\$1,100</m>. We can finance this by paying <m>\$100</m> down and <m>\$110</m> per month for 12 months. Determine the finance charge.
+          </p>
+        </statement>
+        <answer>
+          <p><m>\$320</m></p>
+        </answer>
+        <solution>
+          <p>
+            Total paid = Down payment + (Monthly payment <m>\times</m> months)
+            Total = <m>100 + (110 \times 12) = 100 + 1320 = 1420</m>.
+            Finance Charge = <m>1420 - 1100 = 320</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            At the time of her grandson's birth, a grandmother deposits <m>\$5,000</m> in an account that pays <m>6\%</m> compounded monthly. What will be the value of the account at the child's twenty-first birthday?
+          </p>
+        </statement>
+        <answer>
+          <p><m>\$17,560.10</m></p>
+        </answer>
+        <solution>
+          <p>
+            <m>A = 5000(1 + 0.06/12)^{(12 \times 21)}</m>
+            <m>A = 5000(1.005)^{252} \approx 17560.10</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            You deposit <m>\$7,500</m> in an account that pays <m>4.75\%</m> interest compounded monthly. Find the future value after one year and the effective annual yield.
+          </p>
+        </statement>
+        <answer>
+          <p>FV: <m>\$7,864.08</m>; Yield: <m>4.85\%</m></p>
+        </answer>
+        <solution>
+          <p>
+            FV = <m>7500(1 + 0.0475/12)^{12} \approx 7864.08</m>.
+            Yield = <m>(1 + 0.0475/12)^{12} - 1 \approx 0.0485</m> or <m>4.85\%</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Find the value of an annuity of <m>\$1,000</m> at the end of every 6 months at <m>4.5\%</m> compounded semiannually for 10 years.
+          </p>
+        </statement>
+        <answer>
+          <p>Value: <m>\$24,911.52</m>; Interest: <m>\$4,911.52</m></p>
+        </answer>
+        <solution>
+          <p>
+            Use <m>A = P \frac{(1+r/n)^{nt}-1}{r/n}</m>.
+            <m>A = 1000 \frac{(1+0.045/2)^{20}-1}{0.045/2} \approx 24911.52</m>.
+            Total deposits = <m>1000 \times 20 = 20000</m>.
+            Interest = <m>24911.52 - 20000 = 4911.52</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Financial goal of <m>\$150,000</m> at <m>4.75\%</m> compounded quarterly for 35 years. Find the periodic deposit.
+          </p>
+        </statement>
+        <answer>
+          <p>Deposit: <m>\$168.32</m></p>
+        </answer>
+        <solution>
+          <p>
+            <m>P = \frac{A(r/n)}{(1+r/n)^{nt}-1}</m>
+            <m>P = \frac{150000(0.0475/4)}{(1+0.0475/4)^{140}-1} \approx 168.32</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise>
+        <statement>
+          <p>
+            Loan of <m>\$36,000</m> at <m>8\%</m> for 10 years.
+            <ol marker="a">
+              <li><p>Find monthly payments and total interest.</p></li>
+              <li><p>Compare to a 5-year term.</p></li>
+            </ol>
+          </p>
+        </statement>
+        <answer>
+          <p>
+            <ol marker="a">
+              <li><p>Payment: <m>\$436.78</m>; Interest: <m>\$16,413.60</m></p></li>
+              <li><p>Pay <m>\$293.10</m> more per month; Save <m>\$8,620.80</m> interest.</p></li>
+            </ol>
+          </p>
+        </answer>
+        <solution>
+          <p>
+            Use <m>PMT = \frac{Pr/n}{1-(1+r/n)^{-nt}}</m>.</p>
+            <p> 10-yr: <m>PMT \approx 436.78</m>. Total paid = <m>52413.60</m>. Interest = <m>16413.60</m>. </p>
+            <p> 5-yr: <m>PMT \approx 729.88</m>. Total paid = <m>43792.80</m>. Interest = <m>7792.80</m>.
+          </p>
+        </solution>
+      </exercise>
+
+
+    </exercises>
+</section>

@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Apportionment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "textmacros",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[tex]/textmacros",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Survey of Math">
+<meta property="book:author" content="Instructor Lastname">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.13.5';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Survey of Math</span> <span class="subtitle">MA-105-BL Summer 2026</span></a></h1>
+<p class="byline">Instructor Lastname</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="notes-Voting.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Voting-Apportionment.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-voting-ch-ex.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Personal-Finance.html" class="internal"><span class="title">Personal Finance</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-simple-interest.html" class="internal"><span class="title">Understanding Interest: Simple Interest</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-simple-interest.html#practice-simple-interest" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-compound-interest.html" class="internal"><span class="title">Saving Money: Compound Interest</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-compound-interest.html#practice-compound-interest" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-Annuities.html" class="internal"><span class="title">Saving Money: Annuities</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-Annuities.html#practice-annuity" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-Mortgages.html" class="internal"><span class="title">Borrowing Money: Mortgage</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Identify-Formulas.html" class="internal"><span class="title">Identify Formulas to use: Simple, Compound, Annuity, Loan</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Identify-Formulas.html#exercises-finance-answers" class="internal"><span class="title">Identify the Formula to Use</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-fin-ch-ex.html" class="internal"><span class="title">Chapter Exercise</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-fin-ch-ex.html#sec-fin-ch-ex-2" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-Voting-Apportionment.html" class="internal"><span class="title">Voting and Apportionment</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-Voting.html" class="internal"><span class="title">Voting methods</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-Voting.html#notes-Voting-2" class="internal"><span class="title">How to determine a Winner?</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="section-apportionment.html" class="internal"><span class="title">Apportionment</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-voting-ch-ex.html" class="internal"><span class="title">Chapter Exercise</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-voting-ch-ex.html#sec-voting-ch-ex-2" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Probability.html" class="internal"><span class="title">Probability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Probability-3.html" class="internal"><span class="title">Fundamentals of Probability</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-events-not-or.html" class="internal"><span class="title">Events Involving NOT and OR</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="Hands-On-Sessions.html" class="internal"><span class="title">Hands-On Sessions</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">Introduction Activity</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="section-apportionment">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Apportionment</span>
+</h2>
+<div class="para" id="section-apportionment-2">
+<dfn class="terminology">Apportionment</dfn> is the method of distributing power in political systems based on population density. Apportionment may reflect the availability of buses for city routes or doctors for patients.<div class="autopermalink" data-description="Paragraph"><a href="#section-apportionment-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-standard-divisor"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">64</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Standard Divisor.</span>
+</h3>
+<div class="para" id="def-standard-divisor-2-1">The standard divisor is found by dividing the total population under consideration by the number of items to be allocated.<div class="autopermalink" data-description="Paragraph"><a href="#def-standard-divisor-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="def-standard-divisor-2-2">
+\begin{equation*}
+\text{Standard divisor} = \frac{\text{total population in a group}}{\text{total number of items to be apportioned}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 64: The Standard Divisor"><a href="#def-standard-divisor" title="Copy heading and permalink for Definition 64: The Standard Divisor" aria-label="Copy heading and permalink for Definition 64: The Standard Divisor">🔗</a></div>
+</article>
+<article class="definition definition-like" id="def-standard-quota"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">65</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Standard Quota.</span>
+</h3>
+<div class="para" id="def-standard-quota-2-1">The standard quota for a particular group is found by dividing that group’s population by the standard divisor.<div class="autopermalink" data-description="Paragraph"><a href="#def-standard-quota-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="def-standard-quota-2-2">
+\begin{equation*}
+\text{Standard quota} = \frac{\text{population of a particular group}}{\text{standard divisor}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Definition 65: The Standard Quota"><a href="#def-standard-quota" title="Copy heading and permalink for Definition 65: The Standard Quota" aria-label="Copy heading and permalink for Definition 65: The Standard Quota">🔗</a></div>
+</article>
+<details id="ex-palm-springs" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">66</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-palm-springs-1-1">Palm Springs is composed of four states: A, B, C, and D. According to the country’s constitution, the congress will have 30 seats, divided among the four states according to their respective populations. Find the standard quotas for states A, B, C, and D and complete the table below.<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="table table-like" id="table-standard-quotas"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">67<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Population of Palm Springs by State<div class="autopermalink" data-description="Table 67: Population of Palm Springs by State"><a href="#table-standard-quotas" title="Copy heading and permalink for Table 67: Population of Palm Springs by State" aria-label="Copy heading and permalink for Table 67: Population of Palm Springs by State">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">A</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">B</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">C</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">D</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Population (in thousands)</td>
+<td class="l m b1 r1 l0 t0 lines">275</td>
+<td class="l m b1 r1 l0 t0 lines">383</td>
+<td class="l m b1 r1 l0 t0 lines">465</td>
+<td class="l m b1 r1 l0 t0 lines">767</td>
+<td class="l m b1 r1 l0 t0 lines">1890</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Standard Quota</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div>
+</figure><div class="solutions">
+<details id="ex-palm-springs-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-palm-springs-2-1">
+<div class="para">First, we find the <dfn class="terminology">Standard Divisor</dfn> (<span class="process-math">\(SD\)</span>):</div>
+<div class="displaymath process-math" id="ex-palm-springs-2-1-3">
+\begin{equation*}
+SD = \frac{1890}{30} = 63
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-palm-springs-2-2">
+<div class="para">Now, divide each state’s population by the divisor to find the <dfn class="terminology">Standard Quota</dfn> (<span class="process-math">\(SQ\)</span>):</div>
+<ul class="disc" id="ex-palm-springs-2-2-3">
+<li id="ex-palm-springs-2-2-3-1">
+<div class="para" id="ex-palm-springs-2-2-3-1-1">State A: <span class="process-math">\(275 / 63 \approx 4.3651\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-2-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-2-2-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-palm-springs-2-2-3-2">
+<div class="para" id="ex-palm-springs-2-2-3-2-1">State B: <span class="process-math">\(383 / 63 \approx 6.0794\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-2-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-2-2-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-palm-springs-2-2-3-3">
+<div class="para" id="ex-palm-springs-2-2-3-3-1">State C: <span class="process-math">\(465 / 63 \approx 7.3810\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-2-2-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-2-2-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-palm-springs-2-2-3-4">
+<div class="para" id="ex-palm-springs-2-2-3-4-1">State D: <span class="process-math">\(767 / 63 \approx 12.1746\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-2-2-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-2-2-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="table-sq"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">68<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 68: "><a href="#table-sq" title="Copy heading and permalink for Table 68: " aria-label="Copy heading and permalink for Table 68: ">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">A</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">B</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">C</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">D</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Population (in thousands)</td>
+<td class="l m b1 r1 l0 t0 lines">275</td>
+<td class="l m b1 r1 l0 t0 lines">383</td>
+<td class="l m b1 r1 l0 t0 lines">465</td>
+<td class="l m b1 r1 l0 t0 lines">767</td>
+<td class="l m b1 r1 l0 t0 lines">1890</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Standard Quota</td>
+<td class="l m b1 r1 l0 t0 lines">4.365</td>
+<td class="l m b1 r1 l0 t0 lines">6.079</td>
+<td class="l m b1 r1 l0 t0 lines">7.381</td>
+<td class="l m b1 r1 l0 t0 lines">12.175</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div>
+</figure><div class="autopermalink" data-description="Solution 66.1"><a href="#ex-palm-springs-2" title="Copy heading and permalink for Solution 66.1" aria-label="Copy heading and permalink for Solution 66.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 66"><a href="#ex-palm-springs" title="Copy heading and permalink for Example 66" aria-label="Copy heading and permalink for Example 66">🔗</a></div>
+</article></details>
+<article class="assemblage assemblage-like" id="section-apportionment-6">
+<div class="para" id="section-apportionment-6-1">The <dfn class="terminology">lower quota</dfn> is the standard quota rounded down to the nearest whole number. The <dfn class="terminology">upper quota</dfn> is the standard quota rounded up to the nearest whole number.<div class="autopermalink" data-description="Paragraph"><a href="#section-apportionment-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-apportionment-6-2">A group’s apportionment should be either its upper quota or its lower quota. An apportionment method that guarantees that this will always occurs is said to <dfn class="terminology">satisfy the quota rule</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#section-apportionment-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Assemblage"><a href="#section-apportionment-6" title="Copy heading and permalink for Assemblage" aria-label="Copy heading and permalink for Assemblage">🔗</a></div>
+</article>
+<article class="algorithm theorem-like" id="method-hamilton"><h3 class="heading">
+<span class="type">Algorithm</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">69</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hamilton’s Method.</span>
+</h3>
+<div class="para logical" id="method-hamilton-2-1">
+<ol class="decimal" id="method-hamilton-2-1-1">
+<li id="method-hamilton-2-1-1-1">
+<div class="para" id="method-hamilton-2-1-1-1-1">Calculate each group’s standard quota.<div class="autopermalink" data-description="Paragraph"><a href="#method-hamilton-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#method-hamilton-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="method-hamilton-2-1-1-2">
+<div class="para" id="method-hamilton-2-1-1-2-1">Find the lower quota for each group.<div class="autopermalink" data-description="Paragraph"><a href="#method-hamilton-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#method-hamilton-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="method-hamilton-2-1-1-3">
+<div class="para" id="method-hamilton-2-1-1-3-1">Give surplus items, one at a time, to groups with the largest decimal parts until no surplus remains.<div class="autopermalink" data-description="Paragraph"><a href="#method-hamilton-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#method-hamilton-2-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#method-hamilton-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Algorithm 69: Hamilton’s Method"><a href="#method-hamilton" title="Copy heading and permalink for Algorithm 69: Hamilton’s Method" aria-label="Copy heading and permalink for Algorithm 69: Hamilton’s Method">🔗</a></div>
+</article>
+<details id="ex-palm-springs-hamilton" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">70</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-palm-springs-hamilton-1-1">From <a href="section-apportionment.html#table-standard-quotas" class="xref" data-knowl="./knowl/xref/table-standard-quotas.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 67: Population of Palm Springs by State">Table 67</a>, use Hamilton’s method to apportion the 30 congressmen for Palm Springs.<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-hamilton-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="table table-like" id="table-hamilton-apportionment"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">71<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Hamilton’s Method Table<div class="autopermalink" data-description="Table 71: Hamilton’s Method Table"><a href="#table-hamilton-apportionment" title="Copy heading and permalink for Table 71: Hamilton’s Method Table" aria-label="Copy heading and permalink for Table 71: Hamilton’s Method Table">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">A</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">B</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">C</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">D</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Population</td>
+<td class="l m b1 r1 l0 t0 lines">275</td>
+<td class="l m b1 r1 l0 t0 lines">383</td>
+<td class="l m b1 r1 l0 t0 lines">465</td>
+<td class="l m b1 r1 l0 t0 lines">767</td>
+<td class="l m b1 r1 l0 t0 lines">1890</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Standard Quota</td>
+<td class="l m b1 r1 l0 t0 lines">4.365</td>
+<td class="l m b1 r1 l0 t0 lines">6.079</td>
+<td class="l m b1 r1 l0 t0 lines">7.381</td>
+<td class="l m b1 r1 l0 t0 lines">12.175</td>
+<td class="l m b1 r1 l0 t0 lines">30.00</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Lower Quota</td>
+<td class="l m b1 r1 l0 t0 lines">4</td>
+<td class="l m b1 r1 l0 t0 lines">6</td>
+<td class="l m b1 r1 l0 t0 lines">7</td>
+<td class="l m b1 r1 l0 t0 lines">12</td>
+<td class="l m b1 r1 l0 t0 lines">29</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Surplus</td>
+<td class="l m b1 r1 l0 t0 lines">+0</td>
+<td class="l m b1 r1 l0 t0 lines">+0</td>
+<td class="l m b1 r1 l0 t0 lines">+1</td>
+<td class="l m b1 r1 l0 t0 lines">+0</td>
+<td class="l m b1 r1 l0 t0 lines">1</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Apportionment</td>
+<td class="l m b1 r1 l0 t0 lines">4</td>
+<td class="l m b1 r1 l0 t0 lines">6</td>
+<td class="l m b1 r1 l0 t0 lines">8</td>
+<td class="l m b1 r1 l0 t0 lines">12</td>
+<td class="l m b1 r1 l0 t0 lines">30</td>
+</tr>
+</table></div>
+</figure> 
+<div class="para" id="ex-palm-springs-hamilton-1-3">1. The Standard Divisor is <span class="process-math">\(63\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-hamilton-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="ex-palm-springs-hamilton-1-4">2. Lower quotas sum to 29, leaving 1 surplus seat.<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-hamilton-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="ex-palm-springs-hamilton-1-5">3. State C has the largest decimal part (.381), so it receives the surplus seat.<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-hamilton-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-palm-springs-hamilton-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-palm-springs-hamilton-2-1">
+<div class="para">Following the steps of <dfn class="terminology">Hamilton’s Method</dfn>:</div>
+<ol class="decimal" id="ex-palm-springs-hamilton-2-1-2">
+<li id="ex-palm-springs-hamilton-2-1-2-1">
+<div class="para" id="ex-palm-springs-hamilton-2-1-2-1-1">The sum of the <dfn class="terminology">Lower Quotas</dfn> is <span class="process-math">\(4 + 6 + 7 + 12 = 29\text{.}\)</span> Since we must allocate 30 seats, there is <span class="process-math">\(30 - 29 = 1\)</span> surplus seat.<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-hamilton-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#ex-palm-springs-hamilton-2-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="ex-palm-springs-hamilton-2-1-2-2">
+<div class="para logical" id="ex-palm-springs-hamilton-2-1-2-2-1">
+<div class="para">We look at the decimal parts of the Standard Quotas:</div>
+<ul class="disc" id="ex-palm-springs-hamilton-2-1-2-2-1-1">
+<li id="ex-palm-springs-hamilton-2-1-2-2-1-1-1">
+<div class="para" id="ex-palm-springs-hamilton-2-1-2-2-1-1-1-1">A: <span class="process-math">\(0.365\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-hamilton-2-1-2-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-hamilton-2-1-2-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-palm-springs-hamilton-2-1-2-2-1-1-2">
+<div class="para" id="ex-palm-springs-hamilton-2-1-2-2-1-1-2-1">B: <span class="process-math">\(0.079\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-hamilton-2-1-2-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-hamilton-2-1-2-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-palm-springs-hamilton-2-1-2-2-1-1-3">
+<div class="para" id="ex-palm-springs-hamilton-2-1-2-2-1-1-3-1">C: <span class="process-math">\(0.381\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-hamilton-2-1-2-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-hamilton-2-1-2-2-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-palm-springs-hamilton-2-1-2-2-1-1-4">
+<div class="para" id="ex-palm-springs-hamilton-2-1-2-2-1-1-4-1">D: <span class="process-math">\(0.175\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-hamilton-2-1-2-2-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-hamilton-2-1-2-2-1-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-hamilton-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#ex-palm-springs-hamilton-2-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="ex-palm-springs-hamilton-2-1-2-3">
+<div class="para" id="ex-palm-springs-hamilton-2-1-2-3-1">State C has the largest decimal part (<span class="process-math">\(0.381\)</span>), so it receives the 1 surplus seat.<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-hamilton-2-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#ex-palm-springs-hamilton-2-1-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="ex-palm-springs-hamilton-2-1-2-4">
+<div class="para" id="ex-palm-springs-hamilton-2-1-2-4-1">Final counts: A=4, B=6, C=8, D=12.<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-hamilton-2-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#ex-palm-springs-hamilton-2-1-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-hamilton-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 70.1"><a href="#ex-palm-springs-hamilton-2" title="Copy heading and permalink for Solution 70.1" aria-label="Copy heading and permalink for Solution 70.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 70"><a href="#ex-palm-springs-hamilton" title="Copy heading and permalink for Example 70" aria-label="Copy heading and permalink for Example 70">🔗</a></div>
+</article></details>
+<article class="assemblage assemblage-like" id="section-apportionment-9"><h3 class="heading"><span class="title">Modified Divisor (MD).</span></h3>
+<div class="para" id="section-apportionment-9-2">A <dfn class="terminology">Modified divisor</dfn> is a divisor, chosen by guess-and-check, that is used to make the sum of the modified quotas exactly equal to the number of items to be apportioned.<div class="autopermalink" data-description="Paragraph"><a href="#section-apportionment-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Assemblage: Modified Divisor (MD)"><a href="#section-apportionment-9" title="Copy heading and permalink for Assemblage: Modified Divisor (MD)" aria-label="Copy heading and permalink for Assemblage: Modified Divisor (MD)">🔗</a></div>
+</article>
+<article class="algorithm theorem-like" id="method-jefferson"><h3 class="heading">
+<span class="type">Algorithm</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">72</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Jefferson’s Method.</span>
+</h3>
+<div class="para" id="method-jefferson-2-1">Find a <dfn class="terminology">modified divisor</dfn> such that when each group’s modified quota is rounded down (<dfn class="terminology">modified lower quota</dfn>), the sum equals the number of items to be apportioned. Apportion to each group its modified lower quota.<div class="autopermalink" data-description="Paragraph"><a href="#method-jefferson-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="decimal" id="method-jefferson-2-2">
+<li id="method-jefferson-2-2-1">
+<div class="para" id="method-jefferson-2-2-1-1">Calculate the <dfn class="terminology">Standard Divisor</dfn> (<span class="process-math">\(SD = \text{Total Pop} / \text{Seats}\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#method-jefferson-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#method-jefferson-2-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="method-jefferson-2-2-2">
+<div class="para" id="method-jefferson-2-2-2-1">Calculate <dfn class="terminology">Standard Quotas</dfn> and round down to find <dfn class="terminology">Lower Quotas</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#method-jefferson-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#method-jefferson-2-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="method-jefferson-2-2-3">
+<div class="para" id="method-jefferson-2-2-3-1">If the sum of Lower Quotas is less than the total seats, choose a <dfn class="terminology">Modified Divisor</dfn> (<span class="process-math">\(MD\)</span>) that is <em class="emphasis">smaller</em> than the <span class="process-math">\(SD\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#method-jefferson-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#method-jefferson-2-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="method-jefferson-2-2-4">
+<div class="para" id="method-jefferson-2-2-4-1">Recalculate quotas using <span class="process-math">\(MD\)</span> and round down until the sum exactly matches the total seats.<div class="autopermalink" data-description="Paragraph"><a href="#method-jefferson-2-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#method-jefferson-2-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Algorithm 72: Jefferson’s Method"><a href="#method-jefferson" title="Copy heading and permalink for Algorithm 72: Jefferson’s Method" aria-label="Copy heading and permalink for Algorithm 72: Jefferson’s Method">🔗</a></div>
+</article>
+<details id="ex-palm-springs-jefferson" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">73</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-palm-springs-jefferson-1-1">From <a href="section-apportionment.html#table-standard-quotas" class="xref" data-knowl="./knowl/xref/table-standard-quotas.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 67: Population of Palm Springs by State">Table 67</a>, apportion 30 seats to Palm Springs using Jefferson’s Method.<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-jefferson-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-palm-springs-jefferson-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-palm-springs-jefferson-2-1">
+<div class="para">The standard divisor (<span class="process-math">\(63\)</span>) produced a sum of 29. For Jefferson’s method, we must <em class="emphasis">decrease</em> the divisor to increase the quotas. Using a <dfn class="terminology">Modified Divisor</dfn> of <span class="process-math">\(61\text{:}\)</span>
+</div>
+<ul class="disc" id="ex-palm-springs-jefferson-2-1-5">
+<li id="ex-palm-springs-jefferson-2-1-5-1">
+<div class="para" id="ex-palm-springs-jefferson-2-1-5-1-1">A: <span class="process-math">\(275/61 \approx 4.50 \to 4\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-jefferson-2-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-jefferson-2-1-5-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-palm-springs-jefferson-2-1-5-2">
+<div class="para" id="ex-palm-springs-jefferson-2-1-5-2-1">B: <span class="process-math">\(383/61 \approx 6.27 \to 6\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-jefferson-2-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-jefferson-2-1-5-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-palm-springs-jefferson-2-1-5-3">
+<div class="para" id="ex-palm-springs-jefferson-2-1-5-3-1">C: <span class="process-math">\(465/61 \approx 7.62 \to 7\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-jefferson-2-1-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-jefferson-2-1-5-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-palm-springs-jefferson-2-1-5-4">
+<div class="para" id="ex-palm-springs-jefferson-2-1-5-4-1">D: <span class="process-math">\(767/61 \approx 12.57 \to 13\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-jefferson-2-1-5-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-jefferson-2-1-5-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">Sum: <span class="process-math">\(4+6+7+13 = 30\text{.}\)</span> State D receives the extra seat.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-jefferson-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="table-jefferson-palm-springs"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">74<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Jefferson’s Method: Palm Springs<div class="autopermalink" data-description="Table 74: Jefferson’s Method: Palm Springs"><a href="#table-jefferson-palm-springs" title="Copy heading and permalink for Table 74: Jefferson’s Method: Palm Springs" aria-label="Copy heading and permalink for Table 74: Jefferson’s Method: Palm Springs">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">A</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">B</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">C</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">D</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Population</td>
+<td class="l m b1 r1 l0 t0 lines">275</td>
+<td class="l m b1 r1 l0 t0 lines">383</td>
+<td class="l m b1 r1 l0 t0 lines">465</td>
+<td class="l m b1 r1 l0 t0 lines">767</td>
+<td class="l m b1 r1 l0 t0 lines">1890</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Standard Quota (SD=63)</td>
+<td class="l m b1 r1 l0 t0 lines">4.365</td>
+<td class="l m b1 r1 l0 t0 lines">6.079</td>
+<td class="l m b1 r1 l0 t0 lines">7.381</td>
+<td class="l m b1 r1 l0 t0 lines">12.175</td>
+<td class="l m b1 r1 l0 t0 lines">30</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Lower Quota</td>
+<td class="l m b1 r1 l0 t0 lines">4</td>
+<td class="l m b1 r1 l0 t0 lines">6</td>
+<td class="l m b1 r1 l0 t0 lines">7</td>
+<td class="l m b1 r1 l0 t0 lines">12</td>
+<td class="l m b1 r1 l0 t0 lines">29</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Modified Quota (MD=61)</td>
+<td class="l m b1 r1 l0 t0 lines">4.508</td>
+<td class="l m b1 r1 l0 t0 lines">6.279</td>
+<td class="l m b1 r1 l0 t0 lines">7.623</td>
+<td class="l m b1 r1 l0 t0 lines">12.574</td>
+<td class="l m b1 r1 l0 t0 lines">30.98</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Modified LQ (Apportionment)</td>
+<td class="l m b1 r1 l0 t0 lines">4</td>
+<td class="l m b1 r1 l0 t0 lines">6</td>
+<td class="l m b1 r1 l0 t0 lines">7</td>
+<td class="l m b1 r1 l0 t0 lines">13</td>
+<td class="l m b1 r1 l0 t0 lines">30</td>
+</tr>
+</table></div>
+</figure><div class="autopermalink" data-description="Solution 73.1"><a href="#ex-palm-springs-jefferson-2" title="Copy heading and permalink for Solution 73.1" aria-label="Copy heading and permalink for Solution 73.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 73"><a href="#ex-palm-springs-jefferson" title="Copy heading and permalink for Example 73" aria-label="Copy heading and permalink for Example 73">🔗</a></div>
+</article></details>
+<details id="exe-bus-apportionment" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">75</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Apportioning 11 buses.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="exe-bus-apportionment-2-1">Apportion 11 buses to the three towns using Jefferson’s method.<div class="autopermalink" data-description="Paragraph"><a href="#exe-bus-apportionment-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="table table-like" id="table-bus-jefferson"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">76<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Bus Apportionment Table<div class="autopermalink" data-description="Table 76: Bus Apportionment Table"><a href="#table-bus-jefferson" title="Copy heading and permalink for Table 76: Bus Apportionment Table" aria-label="Copy heading and permalink for Table 76: Bus Apportionment Table">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Town</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Westboro</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Shrewbury</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Worcester</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Population</td>
+<td class="l m b1 r1 l0 t0 lines">89</td>
+<td class="l m b1 r1 l0 t0 lines">120</td>
+<td class="l m b1 r1 l0 t0 lines">168</td>
+<td class="l m b1 r1 l0 t0 lines">377</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Final Apportionment</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div>
+</figure><div class="solutions">
+<details id="exe-bus-apportionment-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exe-bus-apportionment-3-1"> First, find the Standard Divisor: <span class="process-math">\(SD = 377 / 11 \approx 34.27\text{.}\)</span><div class="autopermalink" data-description="Paragraph: Step 1: Standard Divisor and Initial Quotas"><a href="#exe-bus-apportionment-3-1" title="Copy heading and permalink for Paragraph: Step 1: Standard Divisor and Initial Quotas" aria-label="Copy heading and permalink for Paragraph: Step 1: Standard Divisor and Initial Quotas">🔗</a></div>
+</div>
+<figure class="table table-like" id="table-bus-trial-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">77<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Trial 1: Using Standard Divisor (34.27)<div class="autopermalink" data-description="Table 77: Trial 1: Using Standard Divisor (34.27)"><a href="#table-bus-trial-1" title="Copy heading and permalink for Table 77: Trial 1: Using Standard Divisor (34.27)" aria-label="Copy heading and permalink for Table 77: Trial 1: Using Standard Divisor (34.27)">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Town</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Westboro</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Shrewbury</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Worcester</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Population</td>
+<td class="l m b1 r1 l0 t0 lines">89</td>
+<td class="l m b1 r1 l0 t0 lines">120</td>
+<td class="l m b1 r1 l0 t0 lines">168</td>
+<td class="l m b1 r1 l0 t0 lines">377</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Standard Quota</td>
+<td class="l m b1 r1 l0 t0 lines">2.59</td>
+<td class="l m b1 r1 l0 t0 lines">3.50</td>
+<td class="l m b1 r1 l0 t0 lines">4.90</td>
+<td class="l m b1 r1 l0 t0 lines">10.99</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Lower Quota</td>
+<td class="l m b1 r1 l0 t0 lines">2</td>
+<td class="l m b1 r1 l0 t0 lines">3</td>
+<td class="l m b1 r1 l0 t0 lines">4</td>
+<td class="l m b1 r1 l0 t0 lines">9</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="exe-bus-apportionment-3-3">The sum (9) is too low. We need 11 buses. We must <em class="emphasis">decrease</em> the divisor.<div class="autopermalink" data-description="Paragraph"><a href="#exe-bus-apportionment-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exe-bus-apportionment-3-4"> Let’s try a smaller divisor, <span class="process-math">\(MD = 31\text{.}\)</span><div class="autopermalink" data-description="Paragraph: Step 2: First Modified Divisor Trial (MD = 31)"><a href="#exe-bus-apportionment-3-4" title="Copy heading and permalink for Paragraph: Step 2: First Modified Divisor Trial (MD = 31)" aria-label="Copy heading and permalink for Paragraph: Step 2: First Modified Divisor Trial (MD = 31)">🔗</a></div>
+</div>
+<figure class="table table-like" id="table-bus-trial-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">78<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Trial 2: Modified Divisor (31)<div class="autopermalink" data-description="Table 78: Trial 2: Modified Divisor (31)"><a href="#table-bus-trial-2" title="Copy heading and permalink for Table 78: Trial 2: Modified Divisor (31)" aria-label="Copy heading and permalink for Table 78: Trial 2: Modified Divisor (31)">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Town</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Westboro</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Shrewbury</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Worcester</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Modified Quota</td>
+<td class="l m b1 r1 l0 t0 lines">2.87</td>
+<td class="l m b1 r1 l0 t0 lines">3.87</td>
+<td class="l m b1 r1 l0 t0 lines">5.41</td>
+<td class="l m b1 r1 l0 t0 lines">12.15</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Lower Quota</td>
+<td class="l m b1 r1 l0 t0 lines">2</td>
+<td class="l m b1 r1 l0 t0 lines">3</td>
+<td class="l m b1 r1 l0 t0 lines">5</td>
+<td class="l m b1 r1 l0 t0 lines">10</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="exe-bus-apportionment-3-6">The sum (10) is still too low. We must decrease the divisor further.<div class="autopermalink" data-description="Paragraph"><a href="#exe-bus-apportionment-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exe-bus-apportionment-3-7"> Trying <span class="process-math">\(MD = 30\text{.}\)</span><div class="autopermalink" data-description="Paragraph: Step 3: Successful Modified Divisor (MD = 30)"><a href="#exe-bus-apportionment-3-7" title="Copy heading and permalink for Paragraph: Step 3: Successful Modified Divisor (MD = 30)" aria-label="Copy heading and permalink for Paragraph: Step 3: Successful Modified Divisor (MD = 30)">🔗</a></div>
+</div>
+<figure class="table table-like" id="table-bus-final"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">79<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Final Apportionment: Modified Divisor (30)<div class="autopermalink" data-description="Table 79: Final Apportionment: Modified Divisor (30)"><a href="#table-bus-final" title="Copy heading and permalink for Table 79: Final Apportionment: Modified Divisor (30)" aria-label="Copy heading and permalink for Table 79: Final Apportionment: Modified Divisor (30)">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Town</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Westboro</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Shrewbury</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Worcester</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Modified Quota</td>
+<td class="l m b1 r1 l0 t0 lines">2.96</td>
+<td class="l m b1 r1 l0 t0 lines">4.00</td>
+<td class="l m b1 r1 l0 t0 lines">5.60</td>
+<td class="l m b1 r1 l0 t0 lines">12.56</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Modified LQ</td>
+<td class="l m b1 r1 l0 t0 lines">2</td>
+<td class="l m b1 r1 l0 t0 lines">4</td>
+<td class="l m b1 r1 l0 t0 lines">5</td>
+<td class="l m b1 r1 l0 t0 lines">11</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="exe-bus-apportionment-3-9">The sum is exactly 11. Final Apportionment: Westboro: 2, Shrewbury: 4, Worcester: 5.<div class="autopermalink" data-description="Paragraph"><a href="#exe-bus-apportionment-3-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="table-bus-jefferson-work"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">80<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Bus Apportionment Work Table<div class="autopermalink" data-description="Table 80: Bus Apportionment Work Table"><a href="#table-bus-jefferson-work" title="Copy heading and permalink for Table 80: Bus Apportionment Work Table" aria-label="Copy heading and permalink for Table 80: Bus Apportionment Work Table">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Town</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Westboro</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Shrewbury</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Worcester</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Population</td>
+<td class="l m b1 r1 l0 t0 lines">89</td>
+<td class="l m b1 r1 l0 t0 lines">120</td>
+<td class="l m b1 r1 l0 t0 lines">168</td>
+<td class="l m b1 r1 l0 t0 lines">377</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Standard Quota</td>
+<td class="l m b1 r1 l0 t0 lines">2.59</td>
+<td class="l m b1 r1 l0 t0 lines">3.50</td>
+<td class="l m b1 r1 l0 t0 lines">4.90</td>
+<td class="l m b1 r1 l0 t0 lines">10.99</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Lower Quota</td>
+<td class="l m b1 r1 l0 t0 lines">2</td>
+<td class="l m b1 r1 l0 t0 lines">3</td>
+<td class="l m b1 r1 l0 t0 lines">4</td>
+<td class="l m b1 r1 l0 t0 lines">9</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Modified Quota (MD=31)</td>
+<td class="l m b1 r1 l0 t0 lines">2.87</td>
+<td class="l m b1 r1 l0 t0 lines">3.87</td>
+<td class="l m b1 r1 l0 t0 lines">5.41</td>
+<td class="l m b1 r1 l0 t0 lines">12.15</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Modified LQ</td>
+<td class="l m b1 r1 l0 t0 lines">2</td>
+<td class="l m b1 r1 l0 t0 lines">3</td>
+<td class="l m b1 r1 l0 t0 lines">5</td>
+<td class="l m b1 r1 l0 t0 lines">10</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Modified Quota (MD=30)</td>
+<td class="l m b1 r1 l0 t0 lines">2.96</td>
+<td class="l m b1 r1 l0 t0 lines">4.00</td>
+<td class="l m b1 r1 l0 t0 lines">5.60</td>
+<td class="l m b1 r1 l0 t0 lines">12.56</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Final Apportionment</td>
+<td class="l m b1 r1 l0 t0 lines">2</td>
+<td class="l m b1 r1 l0 t0 lines">4</td>
+<td class="l m b1 r1 l0 t0 lines">5</td>
+<td class="l m b1 r1 l0 t0 lines">11</td>
+</tr>
+</table></div>
+</figure><div class="autopermalink" data-description="Solution 75.1"><a href="#exe-bus-apportionment-3" title="Copy heading and permalink for Solution 75.1" aria-label="Copy heading and permalink for Solution 75.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 75: Apportioning 11 buses"><a href="#exe-bus-apportionment" title="Copy heading and permalink for Checkpoint 75: Apportioning 11 buses" aria-label="Copy heading and permalink for Checkpoint 75: Apportioning 11 buses">🔗</a></div>
+</article></details>
+<article class="algorithm theorem-like" id="method-adams"><h3 class="heading">
+<span class="type">Algorithm</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">81</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Adam’s Method.</span>
+</h3>
+<div class="para logical" id="method-adams-2">
+<ol class="decimal" id="method-adams-2-1">
+<li id="method-adams-2-1-1">
+<div class="para" id="method-adams-2-1-1-1">Find a <dfn class="terminology">modified divisor</dfn>, <span class="process-math">\(d\text{,}\)</span> so that when each group’s <dfn class="terminology">modified quota</dfn> is the upper quota, the sum of the whole numbers for all the groups is the number of items to be apportioned. The modified quotients that are rounded up are called <dfn class="terminology">modified upper quota</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#method-adams-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#method-adams-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="method-adams-2-1-2">
+<div class="para" id="method-adams-2-1-2-1">Apportion to each group its modified upper quota.<div class="autopermalink" data-description="Paragraph"><a href="#method-adams-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#method-adams-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#method-adams-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Algorithm 81: Adam’s Method"><a href="#method-adams" title="Copy heading and permalink for Algorithm 81: Adam’s Method" aria-label="Copy heading and permalink for Algorithm 81: Adam’s Method">🔗</a></div>
+</article>
+<div class="para" id="section-apportionment-14">
+<em class="emphasis">When using Adam’s method, begin with a modified divisor that is slightly greater than the standard divisor.</em><div class="autopermalink" data-description="Paragraph"><a href="#section-apportionment-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-palm-springs-adam" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">82</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-palm-springs-adam-1-1">The Palm Springs is composed of four states: A, B, C, and D. According to the country’s constitution, the congress will have 30 seats, divided among the four states according to their respective populations.<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-adam-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="ex-palm-springs-adam-1-2">Find the standard quotas for states A, B, C, and D in Palm Springs and complete the table below. Use Adam’s method with a modified divisor to apportion the congressmen.<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-adam-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="table table-like" id="table-palm-springs"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">83<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Population Data and Apportionment<div class="autopermalink" data-description="Table 83: Population Data and Apportionment"><a href="#table-palm-springs" title="Copy heading and permalink for Table 83: Population Data and Apportionment" aria-label="Copy heading and permalink for Table 83: Population Data and Apportionment">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">A</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">B</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">C</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">D</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Population (1000s)</td>
+<td class="l m b1 r1 l0 t0 lines">275</td>
+<td class="l m b1 r1 l0 t0 lines">383</td>
+<td class="l m b1 r1 l0 t0 lines">465</td>
+<td class="l m b1 r1 l0 t0 lines">767</td>
+<td class="l m b1 r1 l0 t0 lines">1890</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Standard Quota</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Upper Quota</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Modified UQ</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Apportionment</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines">30</td>
+</tr>
+</table></div>
+</figure><div class="solutions">
+<details id="ex-palm-springs-adam-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-palm-springs-adam-2-1">
+<div class="para">1. First, find the Standard Divisor (<span class="process-math">\(SD\)</span>):</div>
+<div class="displaymath process-math" id="ex-palm-springs-adam-2-1-2">
+\begin{equation*}
+SD = \frac{1890}{30} = 63
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-adam-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-palm-springs-adam-2-2">
+<div class="para">2. Calculate Standard Quotas (<span class="process-math">\(Pop / 63\)</span>):</div>
+<ul class="disc" id="ex-palm-springs-adam-2-2-2">
+<li id="ex-palm-springs-adam-2-2-2-1">
+<div class="para" id="p-derived-ex-palm-springs-adam-2-2-2-1">A: <span class="process-math">\(4.365\)</span> (Upper Quota: 5)</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-adam-2-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-palm-springs-adam-2-2-2-2">
+<div class="para" id="p-derived-ex-palm-springs-adam-2-2-2-2">B: <span class="process-math">\(6.079\)</span> (Upper Quota: 7)</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-adam-2-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-palm-springs-adam-2-2-2-3">
+<div class="para" id="p-derived-ex-palm-springs-adam-2-2-2-3">C: <span class="process-math">\(7.381\)</span> (Upper Quota: 8)</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-adam-2-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-palm-springs-adam-2-2-2-4">
+<div class="para" id="p-derived-ex-palm-springs-adam-2-2-2-4">D: <span class="process-math">\(12.175\)</span> (Upper Quota: 13)</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-adam-2-2-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">Sum of Upper Quotas = <span class="process-math">\(5+7+8+13 = 33\)</span> (Too many seats).</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-adam-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-palm-springs-adam-2-3">
+<div class="para">3. Since the sum is too high, we increase the divisor. Let’s try <span class="process-math">\(md = 70.5\text{:}\)</span>
+</div>
+<ul class="disc" id="ex-palm-springs-adam-2-3-2">
+<li id="ex-palm-springs-adam-2-3-2-1">
+<div class="para" id="p-derived-ex-palm-springs-adam-2-3-2-1">A: <span class="process-math">\(275/70.5 \approx 3.90 \to 4\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-adam-2-3-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-palm-springs-adam-2-3-2-2">
+<div class="para" id="p-derived-ex-palm-springs-adam-2-3-2-2">B: <span class="process-math">\(383/70.5 \approx 5.43 \to 6\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-adam-2-3-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-palm-springs-adam-2-3-2-3">
+<div class="para" id="p-derived-ex-palm-springs-adam-2-3-2-3">C: <span class="process-math">\(465/70.5 \approx 6.60 \to 7\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-adam-2-3-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-palm-springs-adam-2-3-2-4">
+<div class="para" id="p-derived-ex-palm-springs-adam-2-3-2-4">D: <span class="process-math">\(767/70.5 \approx 10.88 \to 11\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-palm-springs-adam-2-3-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">Sum = <span class="process-math">\(4+6+7+11 = 28\)</span> (Too low).</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-adam-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-palm-springs-adam-2-4">4. Refined <span class="process-math">\(md = 67.5\text{:}\)</span> Sums will result in A:5, B:6, C:7, D:12 = 30.<div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-adam-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-palm-springs-adam-2-5">Using <span class="process-math">\(md = 66.5\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-palm-springs-adam-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">A</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">B</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">C</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">D</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Standard Quota (<span class="process-math">\(d=63\)</span>)</td>
+<td class="l m b1 r1 l0 t0 lines">4.37</td>
+<td class="l m b1 r1 l0 t0 lines">6.08</td>
+<td class="l m b1 r1 l0 t0 lines">7.38</td>
+<td class="l m b1 r1 l0 t0 lines">12.18</td>
+<td class="l m b1 r1 l0 t0 lines">30</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Upper Quota</td>
+<td class="l m b1 r1 l0 t0 lines">5</td>
+<td class="l m b1 r1 l0 t0 lines">7</td>
+<td class="l m b1 r1 l0 t0 lines">8</td>
+<td class="l m b1 r1 l0 t0 lines">13</td>
+<td class="l m b1 r1 l0 t0 lines">33</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Mod. Quota (<span class="process-math">\(d=66.5\)</span>)</td>
+<td class="l m b1 r1 l0 t0 lines">4.14</td>
+<td class="l m b1 r1 l0 t0 lines">5.76</td>
+<td class="l m b1 r1 l0 t0 lines">6.99</td>
+<td class="l m b1 r1 l0 t0 lines">11.53</td>
+<td class="l m b1 r1 l0 t0 lines">—</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Modified UQ</td>
+<td class="l m b1 r1 l0 t0 lines">5</td>
+<td class="l m b1 r1 l0 t0 lines">6</td>
+<td class="l m b1 r1 l0 t0 lines">7</td>
+<td class="l m b1 r1 l0 t0 lines">12</td>
+<td class="l m b1 r1 l0 t0 lines">30</td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Solution 82.1"><a href="#ex-palm-springs-adam-2" title="Copy heading and permalink for Solution 82.1" aria-label="Copy heading and permalink for Solution 82.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 82"><a href="#ex-palm-springs-adam" title="Copy heading and permalink for Example 82" aria-label="Copy heading and permalink for Example 82">🔗</a></div>
+</article></details>
+<article class="assemblage assemblage-like" id="section-apportionment-16"><h3 class="heading"><span class="title">Finding the Modified Divisor for Adam’s Method:.</span></h3>
+<div class="para logical" id="section-apportionment-16-2">
+<ol class="decimal" id="section-apportionment-16-2-1">
+<li id="section-apportionment-16-2-1-1">
+<div class="para" id="p-derived-section-apportionment-16-2-1-1">Compute the standard divisor<div class="displaymath process-math" id="section-apportionment-16-2-1-1-1">
+\begin{equation*}
+D = \frac{\text{Total population}}{\text{Number of seats}}\text{.}
+\end{equation*}
+</div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#section-apportionment-16-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="section-apportionment-16-2-1-2">
+<div class="para" id="p-derived-section-apportionment-16-2-1-2">Increase <span class="process-math">\(D\)</span> by an amount so that when allocations (State population / Modified D) are rounded upward, they add up to the exact number of seats.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#section-apportionment-16-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-apportionment-16-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Assemblage: Finding the Modified Divisor for Adam’s Method:"><a href="#section-apportionment-16" title="Copy heading and permalink for Assemblage: Finding the Modified Divisor for Adam’s Method:" aria-label="Copy heading and permalink for Assemblage: Finding the Modified Divisor for Adam’s Method:">🔗</a></div>
+</article>
+<details id="ex-doctors" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">84</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Apportioning 7 Doctors.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="ex-doctors-2-1">Apportion 7 doctors to 4 clinics using Adam’s method.<div class="autopermalink" data-description="Paragraph"><a href="#ex-doctors-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Clinic</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">West</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">North</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">South</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">East</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Population</td>
+<td class="l m b1 r1 l0 t0 lines">120</td>
+<td class="l m b1 r1 l0 t0 lines">180</td>
+<td class="l m b1 r1 l0 t0 lines">160</td>
+<td class="l m b1 r1 l0 t0 lines">240</td>
+<td class="l m b1 r1 l0 t0 lines">700</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Appointment</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div>
+<div class="solutions">
+<details id="ex-doctors-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-doctors-3-1">Standard Divisor (<span class="process-math">\(SD\)</span>) = <span class="process-math">\(700/7 = 100\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-doctors-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-doctors-3-2">The final apportionment using Adam’s method with a modified divisor of md=120 is: West: 1, North: 2, South: 2, and East: 2.<div class="autopermalink" data-description="Paragraph"><a href="#ex-doctors-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Clinic</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">West</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">North</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">South</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">East</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Population</td>
+<td class="l m b1 r1 l0 t0 lines">120</td>
+<td class="l m b1 r1 l0 t0 lines">180</td>
+<td class="l m b1 r1 l0 t0 lines">160</td>
+<td class="l m b1 r1 l0 t0 lines">240</td>
+<td class="l m b1 r1 l0 t0 lines">700</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Standard Quota (<span class="process-math">\(d=100\)</span>)</td>
+<td class="l m b1 r1 l0 t0 lines">1.2</td>
+<td class="l m b1 r1 l0 t0 lines">1.8</td>
+<td class="l m b1 r1 l0 t0 lines">1.6</td>
+<td class="l m b1 r1 l0 t0 lines">2.4</td>
+<td class="l m b1 r1 l0 t0 lines">7</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Upper Quota (Initial)</td>
+<td class="l m b1 r1 l0 t0 lines">2</td>
+<td class="l m b1 r1 l0 t0 lines">2</td>
+<td class="l m b1 r1 l0 t0 lines">2</td>
+<td class="l m b1 r1 l0 t0 lines">3</td>
+<td class="l m b1 r1 l0 t0 lines">9 (Too High)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Mod. Quota (<span class="process-math">\(d=120\)</span>)</td>
+<td class="l m b1 r1 l0 t0 lines">1.0</td>
+<td class="l m b1 r1 l0 t0 lines">1.5</td>
+<td class="l m b1 r1 l0 t0 lines">1.33</td>
+<td class="l m b1 r1 l0 t0 lines">2.0</td>
+<td class="l m b1 r1 l0 t0 lines">—</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Modified UQ (Final)</td>
+<td class="l m b1 r1 l0 t0 lines">1</td>
+<td class="l m b1 r1 l0 t0 lines">2</td>
+<td class="l m b1 r1 l0 t0 lines">2</td>
+<td class="l m b1 r1 l0 t0 lines">2</td>
+<td class="l m b1 r1 l0 t0 lines">7</td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Solution 84.1"><a href="#ex-doctors-3" title="Copy heading and permalink for Solution 84.1" aria-label="Copy heading and permalink for Solution 84.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 84: Apportioning 7 Doctors"><a href="#ex-doctors" title="Copy heading and permalink for Checkpoint 84: Apportioning 7 Doctors" aria-label="Copy heading and permalink for Checkpoint 84: Apportioning 7 Doctors">🔗</a></div>
+</article></details>
+<details id="ex-hmo" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">85</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Apportioning 40 HMO Doctors.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="ex-hmo-2-1">An HMO has 40 doctors to be apportioned among four clinics: A, B, C, and D.<div class="autopermalink" data-description="Paragraph"><a href="#ex-hmo-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Clinic</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">A</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">B</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">C</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">D</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Patient Load</td>
+<td class="l m b1 r1 l0 t0 lines">275</td>
+<td class="l m b1 r1 l0 t0 lines">392</td>
+<td class="l m b1 r1 l0 t0 lines">611</td>
+<td class="l m b1 r1 l0 t0 lines">724</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Apportionment</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div> 
+<div class="para logical" id="ex-hmo-2-3">
+<ol class="decimal ol-marker-2" id="ex-hmo-2-3-1">
+<li id="ex-hmo-2-3-1-1">
+<div class="para" id="p-derived-ex-hmo-2-3-1-1">Use Hamilton’s method.</div>
+<div class="autopermalink" data-description="Item 85.1"><a href="#ex-hmo-2-3-1-1" title="Copy heading and permalink for Item 85.1" aria-label="Copy heading and permalink for Item 85.1">🔗</a></div>
+</li>
+<li id="ex-hmo-2-3-1-2">
+<div class="para" id="p-derived-ex-hmo-2-3-1-2">Use Jefferson’s method with <span class="process-math">\(d=48\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 85.2"><a href="#ex-hmo-2-3-1-2" title="Copy heading and permalink for Item 85.2" aria-label="Copy heading and permalink for Item 85.2">🔗</a></div>
+</li>
+<li id="ex-hmo-2-3-1-3">
+<div class="para" id="p-derived-ex-hmo-2-3-1-3">Use Adam’s method.</div>
+<div class="autopermalink" data-description="Item 85.3"><a href="#ex-hmo-2-3-1-3" title="Copy heading and permalink for Item 85.3" aria-label="Copy heading and permalink for Item 85.3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-hmo-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sol-hmo-hamilton" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hamilton’s Method Solution</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sol-hmo-hamilton-2-1">
+<div class="para">Calculate Standard Divisor (SD) and Quotas</div>
+<ul class="disc" id="sol-hmo-hamilton-2-1-1">
+<li id="sol-hmo-hamilton-2-1-1-1">
+<div class="para" id="p-derived-sol-hmo-hamilton-2-1-1-1">Total Patient Load: <span class="process-math">\(275+392+611+724=2002\)</span>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sol-hmo-hamilton-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sol-hmo-hamilton-2-1-1-2">
+<div class="para" id="p-derived-sol-hmo-hamilton-2-1-1-2"><span class="process-math">\(\displaystyle SD=2002/40=50.05 \)</span></div>
+<div class="autopermalink" data-description="Item"><a href="#sol-hmo-hamilton-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sol-hmo-hamilton-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Clinic</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">A</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">B</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">C</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">D</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Load</td>
+<td class="l m b1 r1 l0 t0 lines">275</td>
+<td class="l m b1 r1 l0 t0 lines">392</td>
+<td class="l m b1 r1 l0 t0 lines">611</td>
+<td class="l m b1 r1 l0 t0 lines">724</td>
+<td class="l m b1 r1 l0 t0 lines">2002</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Standard Quota</td>
+<td class="l m b1 r1 l0 t0 lines">5.4945</td>
+<td class="l m b1 r1 l0 t0 lines">7.8322</td>
+<td class="l m b1 r1 l0 t0 lines">12.2078</td>
+<td class="l m b1 r1 l0 t0 lines">14.4655</td>
+<td class="l m b1 r1 l0 t0 lines">40</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Lower Quota</td>
+<td class="l m b1 r1 l0 t0 lines">5</td>
+<td class="l m b1 r1 l0 t0 lines">7</td>
+<td class="l m b1 r1 l0 t0 lines">12</td>
+<td class="l m b1 r1 l0 t0 lines">14</td>
+<td class="l m b1 r1 l0 t0 lines">38</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Fractional Part</td>
+<td class="l m b1 r1 l0 t0 lines">0.4945</td>
+<td class="l m b1 r1 l0 t0 lines">0.8322</td>
+<td class="l m b1 r1 l0 t0 lines">0.2078</td>
+<td class="l m b1 r1 l0 t0 lines">0.4655</td>
+<td class="l m b1 r1 l0 t0 lines">—</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Surplus Seat</td>
+<td class="l m b1 r1 l0 t0 lines">+1</td>
+<td class="l m b1 r1 l0 t0 lines">+1</td>
+<td class="l m b1 r1 l0 t0 lines">0</td>
+<td class="l m b1 r1 l0 t0 lines">0</td>
+<td class="l m b1 r1 l0 t0 lines">+2</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Apportionment</td>
+<td class="l m b1 r1 l0 t0 lines">6</td>
+<td class="l m b1 r1 l0 t0 lines">8</td>
+<td class="l m b1 r1 l0 t0 lines">12</td>
+<td class="l m b1 r1 l0 t0 lines">14</td>
+<td class="l m b1 r1 l0 t0 lines">40</td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Solution 85.1: Hamilton’s Method Solution"><a href="#sol-hmo-hamilton" title="Copy heading and permalink for Solution 85.1: Hamilton’s Method Solution" aria-label="Copy heading and permalink for Solution 85.1: Hamilton’s Method Solution">🔗</a></div>
+</div></details>
+<details id="sol-hmo-jefferson" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Jefferson’s Method Solution (d=48)</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Clinic</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">A</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">B</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">C</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">D</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Modified Quota</td>
+<td class="l m b1 r1 l0 t0 lines">5.73</td>
+<td class="l m b1 r1 l0 t0 lines">8.17</td>
+<td class="l m b1 r1 l0 t0 lines">12.73</td>
+<td class="l m b1 r1 l0 t0 lines">15.08</td>
+<td class="l m b1 r1 l0 t0 lines">—</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Apportionment</td>
+<td class="l m b1 r1 l0 t0 lines">5</td>
+<td class="l m b1 r1 l0 t0 lines">8</td>
+<td class="l m b1 r1 l0 t0 lines">12</td>
+<td class="l m b1 r1 l0 t0 lines">15</td>
+<td class="l m b1 r1 l0 t0 lines">40</td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Solution 85.2: Jefferson’s Method Solution (d=48)"><a href="#sol-hmo-jefferson" title="Copy heading and permalink for Solution 85.2: Jefferson’s Method Solution (d=48)" aria-label="Copy heading and permalink for Solution 85.2: Jefferson’s Method Solution (d=48)">🔗</a></div>
+</div></details>
+<details id="sol-hmo-adams" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Adam’s Method Solution (md=52)</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Clinic</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">A</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">B</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">C</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">D</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Modified Quota</td>
+<td class="l m b1 r1 l0 t0 lines">5.29</td>
+<td class="l m b1 r1 l0 t0 lines">7.54</td>
+<td class="l m b1 r1 l0 t0 lines">11.75</td>
+<td class="l m b1 r1 l0 t0 lines">13.92</td>
+<td class="l m b1 r1 l0 t0 lines">—</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Apportionment</td>
+<td class="l m b1 r1 l0 t0 lines">6</td>
+<td class="l m b1 r1 l0 t0 lines">8</td>
+<td class="l m b1 r1 l0 t0 lines">12</td>
+<td class="l m b1 r1 l0 t0 lines">14</td>
+<td class="l m b1 r1 l0 t0 lines">40</td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Solution 85.3: Adam’s Method Solution (md=52)"><a href="#sol-hmo-adams" title="Copy heading and permalink for Solution 85.3: Adam’s Method Solution (md=52)" aria-label="Copy heading and permalink for Solution 85.3: Adam’s Method Solution (md=52)">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 85: Apportioning 40 HMO Doctors"><a href="#ex-hmo" title="Copy heading and permalink for Checkpoint 85: Apportioning 40 HMO Doctors" aria-label="Copy heading and permalink for Checkpoint 85: Apportioning 40 HMO Doctors">🔗</a></div>
+</article></details>
+<details id="ex-math-courses" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">86</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Apportioning Math Course Sections.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="ex-math-courses-2-1">Thirty sections of math courses are to be offered in introductory algebra, intermediate algebra, college algebra, and liberal arts math. The preregistration figures for the number of students planning to enroll in each section are given in the following table.<div class="autopermalink" data-description="Paragraph"><a href="#ex-math-courses-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Course</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Intro</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Intermed</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">College</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Lib Arts</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Enrollment</td>
+<td class="l m b1 r1 l0 t0 lines">388</td>
+<td class="l m b1 r1 l0 t0 lines">405</td>
+<td class="l m b1 r1 l0 t0 lines">213</td>
+<td class="l m b1 r1 l0 t0 lines">345</td>
+<td class="l m b1 r1 l0 t0 lines">1351</td>
+</tr>
+</table></div> 
+<ol class="decimal ol-marker-2" id="ex-math-courses-2-3">
+<li id="ex-math-courses-2-3-1">
+<div class="para" id="ex-math-courses-2-3-1-1">Use Hamilton’s method to determine how many sections of each course should be offered.<div class="autopermalink" data-description="Paragraph"><a href="#ex-math-courses-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 86.1"><a href="#ex-math-courses-2-3-1" title="Copy heading and permalink for Item 86.1" aria-label="Copy heading and permalink for Item 86.1">🔗</a></div>
+</li>
+<li id="ex-math-courses-2-3-2">
+<div class="para" id="ex-math-courses-2-3-2-1">Use Jefferson’s method with Modified divisor md = <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span> to determine how many sections of each course should be offered.<div class="autopermalink" data-description="Paragraph"><a href="#ex-math-courses-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 86.2"><a href="#ex-math-courses-2-3-2" title="Copy heading and permalink for Item 86.2" aria-label="Copy heading and permalink for Item 86.2">🔗</a></div>
+</li>
+<li id="ex-math-courses-2-3-3">
+<div class="para" id="ex-math-courses-2-3-3-1">Use Adam’s method with Modified divisor md = <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span> to determine how many sections of each course should be offered.<div class="autopermalink" data-description="Paragraph"><a href="#ex-math-courses-2-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 86.3"><a href="#ex-math-courses-2-3-3" title="Copy heading and permalink for Item 86.3" aria-label="Copy heading and permalink for Item 86.3">🔗</a></div>
+</li>
+</ol>
+<div class="solutions">
+<details id="ex-math-courses-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-math-courses-3-1">Thirty sections of math courses are to be offered based on preregistration figures.<div class="autopermalink" data-description="Paragraph"><a href="#ex-math-courses-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-math-courses-3-2">
+<ol class="decimal ol-marker-2" id="ex-math-courses-3-2-1">
+<li id="ex-math-courses-3-2-1-1">
+<div class="para" id="ex-math-courses-3-2-1-1-1">Hamilton’s Method (SD = 45.0333):<div class="autopermalink" data-description="Paragraph"><a href="#ex-math-courses-3-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Course</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Intro</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Intermed</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">College</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Lib Arts</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Enrollment</td>
+<td class="l m b1 r1 l0 t0 lines">388</td>
+<td class="l m b1 r1 l0 t0 lines">405</td>
+<td class="l m b1 r1 l0 t0 lines">213</td>
+<td class="l m b1 r1 l0 t0 lines">345</td>
+<td class="l m b1 r1 l0 t0 lines">1351</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Standard Quota</td>
+<td class="l m b1 r1 l0 t0 lines">8.6158</td>
+<td class="l m b1 r1 l0 t0 lines">8.9933</td>
+<td class="l m b1 r1 l0 t0 lines">4.7298</td>
+<td class="l m b1 r1 l0 t0 lines">7.6610</td>
+<td class="l m b1 r1 l0 t0 lines">30</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Lower Quota</td>
+<td class="l m b1 r1 l0 t0 lines">8</td>
+<td class="l m b1 r1 l0 t0 lines">8</td>
+<td class="l m b1 r1 l0 t0 lines">4</td>
+<td class="l m b1 r1 l0 t0 lines">7</td>
+<td class="l m b1 r1 l0 t0 lines">27</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Fractional Part</td>
+<td class="l m b1 r1 l0 t0 lines">0.6158</td>
+<td class="l m b1 r1 l0 t0 lines">0.9933</td>
+<td class="l m b1 r1 l0 t0 lines">0.7298</td>
+<td class="l m b1 r1 l0 t0 lines">0.6610</td>
+<td class="l m b1 r1 l0 t0 lines">—</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Surplus Row</td>
+<td class="l m b1 r1 l0 t0 lines">0</td>
+<td class="l m b1 r1 l0 t0 lines">+1</td>
+<td class="l m b1 r1 l0 t0 lines">+1</td>
+<td class="l m b1 r1 l0 t0 lines">+1</td>
+<td class="l m b1 r1 l0 t0 lines">+3</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Apportionment</td>
+<td class="l m b1 r1 l0 t0 lines">8</td>
+<td class="l m b1 r1 l0 t0 lines">9</td>
+<td class="l m b1 r1 l0 t0 lines">5</td>
+<td class="l m b1 r1 l0 t0 lines">8</td>
+<td class="l m b1 r1 l0 t0 lines">30</td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Item 86.1"><a href="#ex-math-courses-3-2-1-1" title="Copy heading and permalink for Item 86.1" aria-label="Copy heading and permalink for Item 86.1">🔗</a></div>
+</li>
+<li id="ex-math-courses-3-2-1-2">
+<div class="para" id="ex-math-courses-3-2-1-2-1">Jefferson’s Method (using <span class="process-math">\(d = 42.5\)</span>):<div class="autopermalink" data-description="Paragraph"><a href="#ex-math-courses-3-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Course</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Intro</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Intermed</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">College</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Lib Arts</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Mod. Quota</td>
+<td class="l m b1 r1 l0 t0 lines">9.129</td>
+<td class="l m b1 r1 l0 t0 lines">9.529</td>
+<td class="l m b1 r1 l0 t0 lines">5.011</td>
+<td class="l m b1 r1 l0 t0 lines">8.117</td>
+<td class="l m b1 r1 l0 t0 lines">—</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Apportionment</td>
+<td class="l m b1 r1 l0 t0 lines">9</td>
+<td class="l m b1 r1 l0 t0 lines">9</td>
+<td class="l m b1 r1 l0 t0 lines">5</td>
+<td class="l m b1 r1 l0 t0 lines">8</td>
+<td class="l m b1 r1 l0 t0 lines">31 (Try Again)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Mod. Quota (<span class="process-math">\(d=43\)</span>)</td>
+<td class="l m b1 r1 l0 t0 lines">9.023</td>
+<td class="l m b1 r1 l0 t0 lines">9.418</td>
+<td class="l m b1 r1 l0 t0 lines">4.953</td>
+<td class="l m b1 r1 l0 t0 lines">8.023</td>
+<td class="l m b1 r1 l0 t0 lines">—</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Apportionment</td>
+<td class="l m b1 r1 l0 t0 lines">9</td>
+<td class="l m b1 r1 l0 t0 lines">9</td>
+<td class="l m b1 r1 l0 t0 lines">4</td>
+<td class="l m b1 r1 l0 t0 lines">8</td>
+<td class="l m b1 r1 l0 t0 lines">30</td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Item 86.2"><a href="#ex-math-courses-3-2-1-2" title="Copy heading and permalink for Item 86.2" aria-label="Copy heading and permalink for Item 86.2">🔗</a></div>
+</li>
+<li id="ex-math-courses-3-2-1-3">
+<div class="para" id="ex-math-courses-3-2-1-3-1">Adam’s Method (using <span class="process-math">\(d = 48\)</span>):<div class="autopermalink" data-description="Paragraph"><a href="#ex-math-courses-3-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Course</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Intro</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Intermed</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">College</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Lib Arts</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Mod. Quota</td>
+<td class="l m b1 r1 l0 t0 lines">8.083</td>
+<td class="l m b1 r1 l0 t0 lines">8.437</td>
+<td class="l m b1 r1 l0 t0 lines">4.437</td>
+<td class="l m b1 r1 l0 t0 lines">7.187</td>
+<td class="l m b1 r1 l0 t0 lines">—</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Apportionment</td>
+<td class="l m b1 r1 l0 t0 lines">9</td>
+<td class="l m b1 r1 l0 t0 lines">9</td>
+<td class="l m b1 r1 l0 t0 lines">5</td>
+<td class="l m b1 r1 l0 t0 lines">8</td>
+<td class="l m b1 r1 l0 t0 lines">31 (Try Again)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Mod. Quota (<span class="process-math">\(d=49\)</span>)</td>
+<td class="l m b1 r1 l0 t0 lines">7.918</td>
+<td class="l m b1 r1 l0 t0 lines">8.265</td>
+<td class="l m b1 r1 l0 t0 lines">4.346</td>
+<td class="l m b1 r1 l0 t0 lines">7.040</td>
+<td class="l m b1 r1 l0 t0 lines">—</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Apportionment</td>
+<td class="l m b1 r1 l0 t0 lines">8</td>
+<td class="l m b1 r1 l0 t0 lines">9</td>
+<td class="l m b1 r1 l0 t0 lines">5</td>
+<td class="l m b1 r1 l0 t0 lines">8</td>
+<td class="l m b1 r1 l0 t0 lines">30</td>
+</tr>
+</table></div>
+<div class="autopermalink" data-description="Item 86.3"><a href="#ex-math-courses-3-2-1-3" title="Copy heading and permalink for Item 86.3" aria-label="Copy heading and permalink for Item 86.3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-math-courses-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 86.1"><a href="#ex-math-courses-3" title="Copy heading and permalink for Solution 86.1" aria-label="Copy heading and permalink for Solution 86.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 86: Apportioning Math Course Sections"><a href="#ex-math-courses" title="Copy heading and permalink for Checkpoint 86: Apportioning Math Course Sections" aria-label="Copy heading and permalink for Checkpoint 86: Apportioning Math Course Sections">🔗</a></div>
+</article></details>
+<details id="ex-100-seats" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">87</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hamilton’s Method Apportionment of 100 seats.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-100-seats-2">Suppose there were four states, A, B, C ,and D with populations as shown in the table below. Suppose these four states decide to create a legislature with 100 seats. Apply Hamilton’s method to determine the apportionment.<div class="autopermalink" data-description="Paragraph"><a href="#ex-100-seats-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="ex-100-seats-3"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">88<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 88"><a href="#ex-100-seats-3" title="Copy heading and permalink for Table 88" aria-label="Copy heading and permalink for Table 88">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Category</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">State A</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">State B</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">State C</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">State D</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Population</td>
+<td class="l m b1 r1 l0 t0 lines">936</td>
+<td class="l m b1 r1 l0 t0 lines">2,726</td>
+<td class="l m b1 r1 l0 t0 lines">2,603</td>
+<td class="l m b1 r1 l0 t0 lines">3,735</td>
+<td class="l m b1 r1 l0 t0 lines">10,000</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Standard Quota</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Lower Quota</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Surplus</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Apportioned Seats</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines">100</td>
+</tr>
+</table></div>
+</figure>
+<details id="ex-100-seats-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-100-seats-4-1">The following table demonstrates the apportionment using Hamilton’s Method with a standard divisor of <span class="process-math">\(SD=10,000/100=100\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-100-seats-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="table-hamilton-alabama1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">89<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Hamilton’s Method Apportionment<div class="autopermalink" data-description="Table 89: Hamilton’s Method Apportionment"><a href="#table-hamilton-alabama1" title="Copy heading and permalink for Table 89: Hamilton’s Method Apportionment" aria-label="Copy heading and permalink for Table 89: Hamilton’s Method Apportionment">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Category</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">State A</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">State B</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">State C</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">State D</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Population</td>
+<td class="l m b1 r1 l0 t0 lines">936</td>
+<td class="l m b1 r1 l0 t0 lines">2,726</td>
+<td class="l m b1 r1 l0 t0 lines">2,603</td>
+<td class="l m b1 r1 l0 t0 lines">3,735</td>
+<td class="l m b1 r1 l0 t0 lines">10,000</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Standard Quota</td>
+<td class="l m b1 r1 l0 t0 lines">9.36</td>
+<td class="l m b1 r1 l0 t0 lines">27.26</td>
+<td class="l m b1 r1 l0 t0 lines">26.03</td>
+<td class="l m b1 r1 l0 t0 lines">37.35</td>
+<td class="l m b1 r1 l0 t0 lines">100.00</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Lower Quota</td>
+<td class="l m b1 r1 l0 t0 lines">9</td>
+<td class="l m b1 r1 l0 t0 lines">27</td>
+<td class="l m b1 r1 l0 t0 lines">26</td>
+<td class="l m b1 r1 l0 t0 lines">37</td>
+<td class="l m b1 r1 l0 t0 lines">99</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Fractional Part</td>
+<td class="l m b1 r1 l0 t0 lines">0.36</td>
+<td class="l m b1 r1 l0 t0 lines">0.26</td>
+<td class="l m b1 r1 l0 t0 lines">0.03</td>
+<td class="l m b1 r1 l0 t0 lines">0.35</td>
+<td class="l m b1 r1 l0 t0 lines">-</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Surplus</td>
+<td class="l m b1 r1 l0 t0 lines">+1</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Final Seats</td>
+<td class="l m b1 r1 l0 t0 lines">10</td>
+<td class="l m b1 r1 l0 t0 lines">27</td>
+<td class="l m b1 r1 l0 t0 lines">26</td>
+<td class="l m b1 r1 l0 t0 lines">37</td>
+<td class="l m b1 r1 l0 t0 lines">100</td>
+</tr>
+</table></div>
+</figure><div class="autopermalink" data-description="Solution 87.1"><a href="#ex-100-seats-4" title="Copy heading and permalink for Solution 87.1" aria-label="Copy heading and permalink for Solution 87.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Example 87: Hamilton’s Method Apportionment of 100 seats"><a href="#ex-100-seats" title="Copy heading and permalink for Example 87: Hamilton’s Method Apportionment of 100 seats" aria-label="Copy heading and permalink for Example 87: Hamilton’s Method Apportionment of 100 seats">🔗</a></div>
+</article></details>
+<article class="theorem theorem-like" id="theorem-alabama-paradox"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">90</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Alabama Paradox.</span>
+</h3>
+<div class="para" id="theorem-alabama-paradox-2-1">In a fair apportionment system, adding extra seats must not result in fewer seats for any state. The <dfn class="terminology">Alabama Paradox</dfn> occurs when the total number of available seats increases, yet one state (or more) loses seats as a result. This paradox can occur when using <abbr class="initialism">Hamilton’s method</abbr>.<div class="autopermalink" data-description="Paragraph"><a href="#theorem-alabama-paradox-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 90: The Alabama Paradox"><a href="#theorem-alabama-paradox" title="Copy heading and permalink for Theorem 90: The Alabama Paradox" aria-label="Copy heading and permalink for Theorem 90: The Alabama Paradox">🔗</a></div>
+</article>
+<details id="ex-101-seats" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">91</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hamilton’s Method Apportionment of 101 seats.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-101-seats-2">Using Hamilton’s method, recompute the apportionment from <a href="section-apportionment.html#ex-100-seats" class="xref" data-knowl="./knowl/xref/ex-100-seats.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 87: Hamilton’s Method Apportionment of 100 seats">Example 87</a>, if there are 101 seats instead of 100. Does the Alabama paradox occur?<div class="autopermalink" data-description="Paragraph"><a href="#ex-101-seats-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="ex-101-seats-3"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">92<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 92"><a href="#ex-101-seats-3" title="Copy heading and permalink for Table 92" aria-label="Copy heading and permalink for Table 92">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">States</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">State A</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">State B</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">State C</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">State D</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Population</td>
+<td class="l m b1 r1 l0 t0 lines">936</td>
+<td class="l m b1 r1 l0 t0 lines">2,726</td>
+<td class="l m b1 r1 l0 t0 lines">2,603</td>
+<td class="l m b1 r1 l0 t0 lines">3,735</td>
+<td class="l m b1 r1 l0 t0 lines">10,000</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Standard Quota</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Lower Quota</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Surplus</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Apportioned Seats</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines">101</td>
+</tr>
+</table></div>
+</figure>
+<details id="ex-101-seats-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-101-seats-4-1">The table below shows the Hamilton’s Method apportionment with <span class="process-math">\(101\)</span> seats.<div class="autopermalink" data-description="Paragraph"><a href="#ex-101-seats-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-101-seats-4-2">Note that State A loses a seat compared to the 100-seat scenario, demonstrating the Alabama Paradox.<div class="autopermalink" data-description="Paragraph"><a href="#ex-101-seats-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="table-hamilton-101"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">93<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Hamilton’s Method (101 Seats)<div class="autopermalink" data-description="Table 93: Hamilton’s Method (101 Seats)"><a href="#table-hamilton-101" title="Copy heading and permalink for Table 93: Hamilton’s Method (101 Seats)" aria-label="Copy heading and permalink for Table 93: Hamilton’s Method (101 Seats)">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">States</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">State A</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">State B</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">State C</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">State D</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Population</td>
+<td class="l m b1 r1 l0 t0 lines">936</td>
+<td class="l m b1 r1 l0 t0 lines">2,726</td>
+<td class="l m b1 r1 l0 t0 lines">2,603</td>
+<td class="l m b1 r1 l0 t0 lines">3,735</td>
+<td class="l m b1 r1 l0 t0 lines">10,000</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Standard Quota</td>
+<td class="l m b1 r1 l0 t0 lines">9.4536</td>
+<td class="l m b1 r1 l0 t0 lines">27.5326</td>
+<td class="l m b1 r1 l0 t0 lines">26.2903</td>
+<td class="l m b1 r1 l0 t0 lines">37.7235</td>
+<td class="l m b1 r1 l0 t0 lines">101.0000</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Lower Quota</td>
+<td class="l m b1 r1 l0 t0 lines">9</td>
+<td class="l m b1 r1 l0 t0 lines">27</td>
+<td class="l m b1 r1 l0 t0 lines">26</td>
+<td class="l m b1 r1 l0 t0 lines">37</td>
+<td class="l m b1 r1 l0 t0 lines">99</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Fractional Part</td>
+<td class="l m b1 r1 l0 t0 lines">0.4536</td>
+<td class="l m b1 r1 l0 t0 lines">0.5326</td>
+<td class="l m b1 r1 l0 t0 lines">0.2903</td>
+<td class="l m b1 r1 l0 t0 lines">0.7235</td>
+<td class="l m b1 r1 l0 t0 lines">-</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Surplus</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines">+1</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+<td class="l m b1 r1 l0 t0 lines">+1</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">Final Seats</td>
+<td class="l m b1 r1 l0 t0 lines">9</td>
+<td class="l m b1 r1 l0 t0 lines">28</td>
+<td class="l m b1 r1 l0 t0 lines">26</td>
+<td class="l m b1 r1 l0 t0 lines">38</td>
+<td class="l m b1 r1 l0 t0 lines">101</td>
+</tr>
+</table></div>
+</figure><div class="autopermalink" data-description="Solution 91.1"><a href="#ex-101-seats-4" title="Copy heading and permalink for Solution 91.1" aria-label="Copy heading and permalink for Solution 91.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Example 91: Hamilton’s Method Apportionment of 101 seats"><a href="#ex-101-seats" title="Copy heading and permalink for Example 91: Hamilton’s Method Apportionment of 101 seats" aria-label="Copy heading and permalink for Example 91: Hamilton’s Method Apportionment of 101 seats">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Section: Apportionment"><a href="#section-apportionment" title="Copy heading and permalink for Section: Apportionment" aria-label="Copy heading and permalink for Section: Apportionment">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="notes-Voting.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-voting-ch-ex.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-Identify-Formulas">
+    <title>Identify Formulas to use: Simple, Compound, Annuity, Loan</title>
+    <exercises xml:id="exercises-finance-answers">
+  <title>Identify the Formula to Use</title>
+
+  <exercise>
+    <statement>
+      <p>Lonnie needs extra money to buy a truck to start up a delivery service. He
+takes out a simple interest loan for $7,000 for 6 months at a rate of 7.25%.
+How much interest must he pay, and what is the future value of the loan?</p>
+    </statement>
+    <answer>
+      <p><m>I = Prt</m>; Interest: $253.75; Future Value: $7,253.75</p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>If you placed $1 into an account that paid interest at a rate of 5% and
+compounded the interest daily, how much would that account is worth in
+300 years?</p>
+    </statement>
+    <answer>
+      <p><m>A = P(1 + r/n)^{nt}</m>; $3,268,864.51</p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>You are purchasing a house for $155,000. The bank requires a down payment of 15% and 2.25 points at closing. The bank will give you a 20 year
+mortgage at 3.8%. What is the monthly payment you will make? What is
+the total interest paid?</p>
+    </statement>
+    <answer>
+      <p><m>PMT = \frac{P(r/n)}{1-(1+r/n)^{-nt}}</m>; Monthly Payment: $783.50; Total Interest: $56,289.44</p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>You deposit $8,500 for 9 years in an account that earns 2.5% interest and
+compounds weekly. How much interest will you earn?</p>    </statement>
+    <answer>
+      <p><m>A = P(1 + r/n)^{nt}</m>; $2,143.91</p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>You lend 650 dollars to your younger brother for tuition. He agrees to pay
+you back $720 in 4 months. What is the interest rate he paid you?</p>
+    </statement>
+    <answer>
+      <p><m>r = \frac{I}{Pt}</m>; 32.31%</p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>A mother invests $ 2000 in a bank account at the time of her daughter's
+birth. The interest is compounded quarterly at a rate of 8%. What will be
+the value of the daughter's account on her twentieth birthday?</p>
+    </statement>
+    <answer>
+      <p><m>A = P(1 + r/n)^{nt}</m>; $9,750.88</p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>Your grandmother lent you $2000 for 4 years to buy a car. You agreed to
+pay her 5% interest. How much do you have to pay her in total at the end
+of 4 years?</p>
+    </statement>
+    <answer>
+      <p><m>A = P(1 + rt)</m>; $2,400.00</p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>Which is the better choice: $1000 deposited for a year at a rate of 5.5%
+compounded semiannually or at a rate of 5.4% compounded quarterly?</p>
+    </statement>
+    <answer>
+      <p> <m>APY = (1 + r/n)^n - 1</m>; 5.5% compounded semiannually ($1,055.76 vs $1,055.10)</p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>Ellen puts $100 each month into an IRA that pays 7.4% annually. How
+much money will she have in 30 years for her retirement? How much will
+come from interest?</p>
+    </statement>
+    <answer>
+      <p><m> A = \frac{PMT[(1+r/n)^{nt}-1]}{r/n}</m>; Total Value: $132,410.87; Interest: $96,410.87</p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>You want to save for your three year olds college education. You decide
+that you need $200,000 in 12 years. How much do you need to deposit
+monthly into an account that pays 8.7% interest and compounds monthly.</p>
+    </statement>
+    <answer>
+      <p><m>PMT = \frac{A(r/n)}{(1+r/n)^{nt}-1}</m>; $796.86</p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>Joe and Susan are purchasing a condo for $350,000. The bank requires a
+down payment of 30% and 4.75 points at closing. You are considering a 15
+year mortgage at 4.75% and a 30 year mortgage at 3.2%. Which mortgage
+will result in a lower monthly payment?</p>
+    </statement>
+    <answer>
+      <p><m>PMT = \frac{P(r/n)}{1-(1+r/n)^{-nt}}</m>;  Option B: 30-year at 3.2% ($1,061.27 vs Option A: $1,906.18)</p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>Pete wants to buy a boat in 4 years. The boat costs $100,000. How much
+money does he need to deposit weekly into an account that pays 3.5%
+interest compounded weekly?</p>
+    </statement>
+    <answer>
+      <p><m>PMT = \frac{A(r/n)}{(1+r/n)^{nt}-1}</m>; $447.93</p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>How much money should be deposited today in an account that earns 10%
+compounded semiannually so that it will accumulate to $ 1000 in 12 years?</p>
+    </statement>
+    <answer>
+      <p> <m>P = \frac{A}{(1+r/n)^{nt}}</m>; $310.07</p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>Juan can save $50 every week for his honeymoon. If Juan is getting married
+in two years how much money will he have spent on the trip if he puts it
+into an annuity that pays 6%?</p>
+    </statement>
+    <answer>
+      <p><m>A = \frac{PMT[(1+r/n)^{nt}-1]}{r/n}</m>; $5,516.48</p>
+    </answer>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>How much money should be deposited today in an account that earns 8%
+compounded quarterly so that it will accumulate to $ 3800 in 12 years?</p>
+    </statement>
+    <answer>
+      <p><m>P = \frac{A}{(1+r/n)^{nt}}</m>; $1,468.32</p>
+    </answer>
+  </exercise>
+</exercises>
+
+</section>

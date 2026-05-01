@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-Annuities">
+
+  <title>Saving Money: Annuities </title>  
+<p>
+     An <term>annuity</term> is a sequence of equal (regular) payments made into an account over time periods. An IRA is an example of an annuity. 
+     The value of an annuity is the sum of all deposits plus all interest paid.
+        </p>
+    <example xml:id="ex-annuity-intro">
+    <title>Annuity Basics</title>
+    <statement>
+        <p>
+            Suppose you deposit <m>\$1,000</m> into a savings plan at the end of 
+            each year for three years. The interest rate is <m>8\%</m> per year 
+            compounded annually.
+            <ol marker="1">
+                <li>
+                    <p>Find the value of the annuity after three years.</p>
+                </li>
+                <li>
+                    <p>Find the interest earned.</p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            We calculate the balance step-by-step:
+            <ul>
+                <li>
+                    <p>Value at the end of year 1: <m>\$1,000</m></p>
+                </li>
+                <li>
+                    <p>
+                        Value at the end of year 2: 
+                        <m>1,000(1+0.08) + 1,000 = \$2,080</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Value at the end of year 3: 
+                        <m>2,080(1+0.08) + 1,000 = \$3,246.40</m>
+                    </p>
+                </li>
+            </ul>
+        </p>
+        <p>
+            The value of the annuity at the end of three years is <m>\$3,246.40</m>. 
+            Since you made three payments of <m>\$1,000</m>, the total principal 
+            deposited is <m>\$3,000</m>.
+        </p>
+        <p>
+            The interest is: 
+            <me>I = 3,246.40 - 3,000 = \$246.40</me>
+        </p>
+    </solution>
+</example>
+
+<definition xml:id="Value-of-an-Annuity">
+    <title>Value of an Annuity: Interest Compounded <m>n</m> Times per Year</title>
+    <statement>
+    <p>
+        If <m>P</m> is the deposit made at the end of each compounding period 
+        for an annuity that pays an annual interest rate <m>r</m> compounded 
+        <m>n</m> times per year, the future value, <m>FV</m> or <m>A</m>, 
+        of the annuity after <m>t</m> years is:
+        <men xml:id="annuity-formula">
+            FV = A = \frac{P\left[\left(1+\frac{r}{n}\right)^{nt}-1\right]}{\left(\frac{r}{n}\right)}</men>
+    </p>
+    </statement>
+</definition>
+
+<example xml:id="example-a1">
+    <title>Retirement Savings: IRA Annuity</title>
+    <statement>
+        <p>
+            To save for retirement, you decide to deposit <m>\$1,000</m> into an IRA 
+            at the end of each year for the next 30 years. If you can count on an 
+            interest rate of <m>10\%</m> per year compounded annually:
+            <ol marker="1">
+                <li>
+                    <p>
+                        How much will you have from the IRA after 30 years?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Find the interest.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            We use the future value formula for an annuity:
+            <me>A = \frac{P\left[\left(1+\frac{r}{n}\right)^{nt}-1\right]}{\left(\frac{r}{n}\right)}</me>
+            where <m>P = 1,000</m>, <m>r = 0.10</m>, <m>n = 1</m>, and <m>t = 30</m>.
+        </p>
+        <p>
+            <ol marker="1">
+                <li>
+                    <p>
+                        Substituting the values into the formula:
+                        <md>
+                            <mrow>A \amp = \frac{1,000\left[(1 + 0.10)^{30} - 1\right]}{0.10}</mrow>
+                            <mrow>A \amp = \frac{1,000\left[(1.1)^{30} - 1\right]}{0.10}</mrow>
+                            <mrow>A \amp \approx \frac{1,000(17.4494 - 1)}{0.10}</mrow>
+                            <mrow>A \amp \approx 164,494.02</mrow>
+                        </md>
+                        After 30 years, the IRA will have <m>\$164,494.02</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        To find the interest, we subtract the total deposits from the future value. 
+                        Total deposits = <m>1,000 \times 30 = \$30,000</m>.
+                        <md>
+                            <mrow>I \amp = 164,494.02 - 30,000</mrow>
+                            <mrow>I \amp = 134,494.02</mrow>
+                        </md>
+                        The total interest earned is <m>\$134,494.02</m>.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</example>
+
+<example xml:id="example-a2">
+    <title>Retirement Savings with Monthly Compounding</title>
+    <statement>
+        <p>
+            At age 25, to save for retirement, you decide to deposit <m>\$200</m> 
+            at the end of each month into an IRA that pays <m>7.5\%</m> compounded 
+            monthly.
+            <ol marker="1">
+                <li>
+                    <p>
+                        How much will you have from the IRA when you retire at age 65?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Find the interest.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            We use the future value formula for an annuity:
+            <me>A = \frac{P\left[\left(1+\frac{r}{n}\right)^{nt}-1\right]}{\left(\frac{r}{n}\right)}</me>
+            where:
+            <ul>
+                <li><p><m>P = 200</m> (Monthly deposit)</p></li>
+                <li><p><m>r = 0.075</m> (Annual interest rate)</p></li>
+                <li><p><m>n = 12</m> (Compounding periods per year)</p></li>
+                <li><p><m>t = 40</m> (Years of investing: <m>65 - 25 = 40</m>)</p></li>
+            </ul>
+        </p>
+        <p>
+            <ol marker="1">
+                <li>
+                    <p>
+                        Substituting the values into the formula:
+                        <md>
+                            <mrow>A \amp = \frac{200\left[\left(1 + \frac{0.075}{12}\right)^{12 \times 40} - 1\right]}{\left(\frac{0.075}{12}\right)}</mrow>
+                            <mrow>A \amp = \frac{200\left[(1.00625)^{480} - 1\right]}{0.00625}</mrow>
+                            <mrow>A \amp \approx \frac{200(19.92053 - 1)}{0.00625}</mrow>
+                            <mrow>A \amp \approx 605,457.09</mrow>
+                        </md>
+                        At age 65, the IRA will be worth <m>\$605,457.09</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        To find the interest, subtract the total deposits from the future value.
+                        Total deposits = <m>200 \times 12 \times 40 = \$96,000</m>.
+                        <md>
+                            <mrow>I \amp = 605,457.09 - 96,000</mrow>
+                            <mrow>I \amp = 509,457.09</mrow>
+                        </md>
+                        The total interest earned is <m>\$509,457.09</m>.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</example>
+
+<exercise xml:id="exercise-a1">
+    <title>Calculating Future Value of an Annuity</title>
+    <statement>
+        <p>
+            To save for a down payment on a home, you deposit <m>\$500</m> 
+            at the end of each quarter into an account that pays <m>4\%</m> 
+            compounded quarterly. How much will be in the account after <m>6</m> years?
+        </p>
+    </statement>
+    <solution>
+        <p>
+            We use the future value formula for an annuity:
+            <me>A = \frac{P\left[\left(1+\frac{r}{n}\right)^{nt}-1\right]}{\left(\frac{r}{n}\right)}</me>
+            where:
+            <ul>
+                <li><p><m>P = 500</m> (Quarterly deposit)</p></li>
+                <li><p><m>r = 0.04</m> (Annual interest rate)</p></li>
+                <li><p><m>n = 4</m> (Compounded quarterly)</p></li>
+                <li><p><m>t = 6</m> (Number of years)</p></li>
+            </ul>
+        </p>
+        <p>
+            Substituting these values into the formula:
+            <md>
+                <mrow>A \amp = \frac{500\left[\left(1 + \frac{0.04}{4}\right)^{4 \times 6} - 1\right]}{\left(\frac{0.04}{4}\right)}</mrow>
+                <mrow>A \amp = \frac{500\left[(1.01)^{24} - 1\right]}{0.01}</mrow>
+                <mrow>A \amp \approx \frac{500(1.26973 - 1)}{0.01}</mrow>
+                <mrow>A \amp \approx 13,486.50</mrow>
+            </md>
+        </p>
+        <p>
+            After <m>6</m> years, the account balance will be <m>\$13,486.50</m>.
+        </p>
+    </solution>
+</exercise>
+
+<example xml:id="example-a3">
+    <title>Logic Check: Annuities vs. Lump Sums</title>
+    <statement>
+        <p>
+            Determine whether each statement is True or False and explain your reasoning.
+            <ol marker="1">
+                <li>
+                    <p>
+                        With the same interest rate, compounding period, and time period, 
+                        an annuity will generate more interest than a lump sum deposit.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        By putting <m>\$20</m> at the end of each month into an IRA that 
+                        pays <m>3.5\%</m> compounded monthly, I'll be able to retire 
+                        comfortably in just 30 years.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            <ol marker="1">
+                <li>
+                    <p>
+                        <strong>False.</strong> A lump sum deposit of the same total amount 
+                        invested earns more interest because the entire amount is present 
+                        at the beginning and earns interest for the full duration. In an 
+                        annuity, the money is deposited gradually, so later payments have 
+                        less time to grow.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>False.</strong> We can calculate the total using the 
+                        annuity formula where <m>P=20</m>, <m>r=0.035</m>, <m>n=12</m>, 
+                        and <m>t=30</m>:
+                        <md>
+                            <mrow>A \amp = \frac{20\left[(1 + \frac{0.035}{12})^{12 \times 30} - 1\right]}{\frac{0.035}{12}}</mrow>
+                            <mrow>A \amp \approx \$12,705.54</mrow>
+                        </md>
+                        A total of <m>\$12,705.54</m> is not nearly enough to sustain 
+                        a comfortable retirement.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</example>
+
+<example xml:id="example-a4">
+    <title>Sinking Fund: Monthly Savings for College</title>
+    <statement>
+        <p>
+            Parents of a baby girl are in a financial position to begin saving for 
+            her college education. They plan to have <m>\$100,000</m> in a college 
+            fund in 18 years by making regular, end-of-month deposits in an 
+            annuity that pays <m>9\%</m> compounded monthly.
+            <ol marker="1">
+                <li>
+                    <p>
+                        How much should they deposit each month?
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        How much of the goal comes from interest?
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            To find the required monthly payment (<m>P</m>), we use the sinking 
+            fund formula, which is the annuity formula solved for <m>P</m>:
+            <me>P = \frac{A \left( \frac{r}{n} \right)}{\left[ \left( 1 + \frac{r}{n} \right)^{nt} - 1 \right]}</me>
+            where <m>A = 100,000</m>, <m>r = 0.09</m>, <m>n = 12</m>, and <m>t = 18</m>.
+        </p>
+        <p>
+            <ol marker="1">
+                <li>
+                    <p>
+                        Substituting the values:
+                        <md>
+                            <mrow>P \amp = \frac{100,000 \left( \frac{0.09}{12} \right)}{\left[ \left( 1 + \frac{0.09}{12} \right)^{12 \times 18} - 1 \right]}</mrow>
+                            <mrow>P \amp = \frac{750}{(1.0075)^{216} - 1}</mrow>
+                            <mrow>P \amp \approx \frac{750}{5.022575 - 1}</mrow>
+                            <mrow>P \amp \approx 186.45</mrow>
+                        </md>
+                        The parents should deposit <m>\$186.45</m> each month.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        To find the interest, we first calculate the total principal deposited:
+                        <me>186.45 \times 12 \times 18 = \$40,273.20</me>
+                        Subtracting this from the future value:
+                        <me>I = 100,000 - 40,273.20 = \$59,726.80</me>
+                        The amount from interest is <m>\$59,726.80</m>.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</example>
+<exercise xml:id="exercise-a3">
+  <title>Calculating the Value of an Annuity</title>
+  <statement>
+    <p>
+      You deposit $2,000 into a savings plan at the end of each year for three years. 
+      The interest rate is 10% per year compounded annually.
+    </p>
+    <ol marker="1">
+      <li>
+        <p>
+          Find the value of the annuity after three years.
+        </p>
+      </li>
+      <li>
+        <p>
+          Find the interest earned.
+        </p>
+      </li>
+    </ol>
+  </statement>
+  <solution>
+    <p>
+      We use the future value formula for an annuity:
+      <me>A = \frac{P\left[\left(1+\frac{r}{n}\right)^{nt}-1\right]}{\left(\frac{r}{n}\right)}</me>
+      where <m>P = 2000</m>, <m>r = 0.10</m>, <m>n = 1</m>, and <m>t = 3</m>.
+    </p>
+    <ol marker="1">
+      <li>
+        <p>
+          Substituting the values into the formula:
+          <md>
+            <mrow>A \amp = \frac{2000\left[(1 + 0.10)^{3} - 1\right]}{0.10}</mrow>
+            <mrow>\amp = \frac{2000\left[(1.1)^{3} - 1\right]}{0.10}</mrow>
+            <mrow>\amp = \frac{2000(1.331 - 1)}{0.10}</mrow>
+            <mrow>\amp = 6620</mrow>
+          </md>
+          The value of the annuity after three years is $6,620.
+        </p>
+      </li>
+      <li>
+        <p>
+          The total amount of deposits made is <m>3 \times 2000 = 6000</m>. 
+          The interest earned is the difference between the future value and the total deposits:
+          <me>I = 6620 - 6000 = 620</me>
+          The interest earned is $620.
+        </p>
+      </li>
+    </ol>
+  </solution>
+</exercise>
+
+<exercise xml:id="exercise-a4">
+  <title>Retirement Savings: Growth After Contributions Cease</title>
+  <statement>
+    <p>
+      To save for retirement, you decide to deposit $3,000 into an IRA at the end of each year for the <alert>next 10</alert> years. If you can count on an interest rate of 9% per year compounded annually:
+    </p>
+    <ol marker="1">
+      <li> <p>  How much will you have from the IRA <alert>after 40</alert> years, assuming no additional deposits or withdrawals after the 10 years of contribution? </p>
+      </li>
+      <li> <p> Find the interest earned. </p>
+      </li>
+    </ol>
+  </statement>
+  <solution>
+    <p>
+      This problem requires two steps. First, we find the value of the annuity after the 10-year contribution period. Second, we treat that amount as a lump sum that grows for the remaining 30 years.
+    </p>
+    <p>
+      <term>Step 1: Future Value of the Annuity (Years 1-10)</term>
+      <md>
+        <mrow>A_{10} \amp = \frac{3000\left[(1 + 0.09)^{10} - 1\right]}{0.09}</mrow>
+        <mrow>\amp = \frac{3000(2.36736 - 1)}{0.09}</mrow>
+        <mrow>\amp \approx 45578.80</mrow>
+      </md>
+    </p>
+    <p>
+      <term>Step 2: Compound Interest on the Lump Sum (Years 11-40)</term> 
+      The balance grows for <m>40 - 10 = 30</m> more years using the formula <m>A = P(1 + r)^t</m>:
+      <md>
+        <mrow>A_{40} \amp = 45578.80(1 + 0.09)^{30}</mrow>
+        <mrow>\amp = 45578.80(13.26768)</mrow>
+        <mrow>\amp \approx 604725.10</mrow>
+      </md>
+    </p>
+    <ol marker="1">
+      <li>
+        <p>
+          After 40 years, the total value will be $604,725.10.
+        </p>
+      </li>
+      <li>
+        <p>
+          The total deposits were <m>3000 \times 10 = 30000</m>.
+          <me>I = 604725.10 - 30000 = 574725.10</me>
+          The interest earned is $574,725.10.
+        </p>
+      </li>
+    </ol>
+  </solution>
+</exercise>
+
+<exercises xml:id="practice-annuity">
+  <title>Exercises for Practice</title>
+
+<exercise xml:id="exercise-a5">
+    <title>Retirement Savings Analysis</title>
+    <statement>
+        <p>
+            At age 30 to save for retirement, you decide to deposit <m>\$200</m> 
+            at the end of each month into an IRA that pays <m>13.8\%</m> 
+            compounded monthly.
+            <ol marker="1">
+                <li>
+                    <p>How much will you have from the IRA when you retire at age 65?</p>
+                </li>
+                <li>
+                    <p>Find the interest earned.</p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            We use the future value formula for an ordinary annuity:
+            <me>A = \frac{P\left[\left(1+\frac{r}{n}\right)^{nt}-1\right]}{\left(\frac{r}{n}\right)}</me>
+            where:
+            <ul>
+                <li><p><m>P = 200</m> (Monthly deposit)</p></li>
+                <li><p><m>r = 0.138</m> (Annual interest rate)</p></li>
+                <li><p><m>n = 12</m> (Compounding periods per year)</p></li>
+                <li><p><m>t = 35</m> (Years of saving: <m>65 - 30 = 35</m>)</p></li>
+            </ul>
+        </p>
+        <p>
+            <ol marker="1">
+                <li>
+                    <p>
+                        Substituting the values into the formula:
+                        <md>
+                            <mrow>A \amp = \frac{200\left[\left(1 + \frac{0.138}{12}\right)^{12 \times 35} - 1\right]}{\left(\frac{0.138}{12}\right)}</mrow>
+                            <mrow>A \amp = \frac{200\left[(1.0115)^{420} - 1\right]}{0.0115}</mrow>
+                            <mrow>A \amp \approx 2,100,992.95</mrow>
+                        </md>
+                        You will have approximately <m>\$2,100,992.95</m> in the IRA at age 65.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        First, find the total amount of your deposits over 35 years:
+                        <me>200 \times 12 \times 35 = \$84,000</me>
+                        The interest earned is the future value minus these deposits:
+                        <me>2,100,992.95 - 84,000 = \$2,016,992.95</me>
+                        The total interest earned is <m>\$2,016,992.95</m>.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</exercise>
+
+<exercise xml:id="exercise-a6">
+    <title>Calculating Monthly Deposits to Reach a Goal</title>
+    <statement>
+        <p>
+            How much should you deposit at the end of each month into an IRA 
+            that pays <m>6.5\%</m> compounded monthly to have <m>\$2</m> million 
+            when you retire in 45 years? How much of the <m>\$2</m> million 
+            comes from interest?
+        </p>
+    </statement>
+    <solution>
+        <p>
+            To find the required monthly payment (<m>P</m>), we use the sinking 
+            fund formula:
+            <me>P = \frac{A \left( \frac{r}{n} \right)}{\left[ \left( 1 + \frac{r}{n} \right)^{nt} - 1 \right]}</me>
+            where:
+            <ul>
+                <li><p><m>A = 2,000,000</m> (The target goal)</p></li>
+                <li><p><m>r = 0.065</m> (Annual interest rate)</p></li>
+                <li><p><m>n = 12</m> (Monthly compounding)</p></li>
+                <li><p><m>t = 45</m> (Time in years)</p></li>
+            </ul>
+        </p>
+        <p>
+            Substituting these values into the formula:
+            <md>
+                <mrow>P \amp = \frac{2,000,000 \left( \frac{0.065}{12} \right)}{\left[ \left( 1 + \frac{0.065}{12} \right)^{12 \times 45} - 1 \right]}</mrow>
+                <mrow>P \amp = \frac{10,833.333}{(1.0054167)^{540} - 1}</mrow>
+                <mrow>P \amp \approx \frac{10,833.333}{21.21736 - 1}</mrow>
+                <mrow>P \amp \approx 510.59</mrow>
+            </md>
+            The required monthly deposit is <m>\$510.59</m>.
+        </p>
+        <p>
+            To find the interest, we first calculate the total of all deposits:
+            <me>510.59 \times 12 \times 45 = \$275,718.60</me>
+            Subtracting this from the <m>\$2,000,000</m> final value:
+            <me>I = 2,000,000 - 275,718.60 = \$1,724,281.40</me>
+            Over the 45 years, <m>\$1,724,281.40</m> of the final balance comes from interest.
+        </p>
+    </solution>
+</exercise>
+
+<exercise xml:id="exercise-a7">
+    <title>Long-Term Retirement Savings Analysis</title>
+    <statement>
+        <p>
+            At age 25, to save for retirement, you decide to deposit <m>\$100</m> 
+            at the end of each month in an IRA that pays <m>6.25\%</m> 
+            compounded monthly. How much will you have from the IRA when you 
+            retire at age 70? What is the interest you earned?
+        </p>
+    </statement>
+    <solution>
+        <p>
+            We use the future value formula for an ordinary annuity:
+            <me>A = \frac{P\left[\left(1+\frac{r}{n}\right)^{nt}-1\right]}{\left(\frac{r}{n}\right)}</me>
+            where:
+            <ul>
+                <li><p><m>P = 100</m> (Monthly deposit)</p></li>
+                <li><p><m>r = 0.0625</m> (Annual interest rate)</p></li>
+                <li><p><m>n = 12</m> (Compounding periods per year)</p></li>
+                <li><p><m>t = 45</m> (Years of saving: <m>70 - 25 = 45</m>)</p></li>
+            </ul>
+        </p>
+        <p>
+            Substituting the values into the formula:
+            <md>
+                <mrow>A \amp = \frac{100\left[\left(1 + \frac{0.0625}{12}\right)^{12 \times 45} - 1\right]}{\left(\frac{0.0625}{12}\right)}</mrow>
+                <mrow>A \amp = \frac{100\left[(1.0052083)^{540} - 1\right]}{0.0052083}</mrow>
+                <mrow>A \amp \approx \frac{100(16.28236 - 1)}{0.0052083}</mrow>
+                <mrow>A \amp \approx 293,421.36</mrow>
+            </md>
+            At age 70, you will have approximately <m>\$293,421.36</m> in the IRA.
+        </p>
+        <p>
+            To find the interest earned, first calculate the total of your deposits:
+            <me>100 \times 12 \times 45 = \$54,000</me>
+            Subtracting the deposits from the future value:
+            <me>I = 293,421.36 - 54,000 = \$239,421.36</me>
+            The total interest earned is <m>\$239,421.36</m>.
+        </p>
+    </solution>
+</exercise>
+
+<exercise xml:id="exercise-a8">
+    <title>Quarterly Deposits to Reach a Retirement Goal</title>
+    <statement>
+        <p>
+            How much should you deposit at the end of every 3 months into an IRA 
+            that pays <m>6\%</m> compounded quarterly to have <m>\$1.5</m> million 
+            when you retire in 40 years? How much of the <m>\$1.5</m> million 
+            comes from interest?
+        </p>
+    </statement>
+    <solution>
+        <p>
+            To find the required quarterly payment (<m>P</m>), we use the sinking 
+            fund formula:
+            <me>P = \frac{A \left( \frac{r}{n} \right)}{\left[ \left( 1 + \frac{r}{n} \right)^{nt} - 1 \right]}</me>
+            where:
+            <ul>
+                <li><p><m>A = 1,500,000</m> (The target goal)</p></li>
+                <li><p><m>r = 0.06</m> (Annual interest rate)</p></li>
+                <li><p><m>n = 4</m> (Quarterly compounding)</p></li>
+                <li><p><m>t = 40</m> (Time in years)</p></li>
+            </ul>
+        </p>
+        <p>
+            Substituting these values into the formula:
+            <md>
+                <mrow>P \amp = \frac{1,500,000 \left( \frac{0.06}{4} \right)}{\left[ \left( 1 + \frac{0.06}{4} \right)^{4 \times 40} - 1 \right]}</mrow>
+                <mrow>P \amp = \frac{22,500}{(1.015)^{160} - 1}</mrow>
+                <mrow>P \amp \approx \frac{22,500}{10.85055 - 1.85055}</mrow>
+                <mrow>P \amp \approx 2,284.14</mrow>
+            </md>
+            The required quarterly deposit is <m>\$2,284.14</m>.
+        </p>
+        <p>
+            To find the interest, we first calculate the total of all deposits over 40 years:
+            <me>2,284.14 \times 4 \times 40 = \$365,462.40</me>
+            Subtracting this from the <m>\$1,500,000</m> final value:
+            <me>I = 1,500,000 - 365,462.40 = \$1,134,537.60</me>
+            Over the 40 years, <m>\$1,134,537.60</m> of the final balance comes from interest.
+        </p>
+    </solution>
+</exercise>
+</exercises>
+
+
+</section>

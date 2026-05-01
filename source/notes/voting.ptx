@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-Voting">
+
+<title>Voting methods</title>
+<subsection>
+  <title>How to determine a Winner?</title>
+
+    <assemblage>
+      <p>
+      <term>Preference ballots</term> are ballots in which a voter is asked to rank all candidates in order of preference. 
+      A <term>preference table</term> shows how often each particular outcomes occurred.
+      </p>
+    </assemblage>
+
+      <example xml:id="exe-student-president">
+        <statement>
+          <p>
+            Four candidates are running for student body president: Alice (A), Bonnie (B), Carlos (C) and Daniel (D). 
+            The students were asked to rank all the candidates in order of preference.
+          </p>
+
+          <table xml:id="tab-preference-election">
+            <title>Preference Table For The Election Of Student Body President</title>
+            <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+              <row bottom="medium">
+                <cell halign="left">Number of Votes</cell>
+                <cell>130</cell>
+                <cell>120</cell>
+                <cell>100</cell>
+                <cell>150</cell>
+              </row>
+              <row>
+                <cell halign="left">First choice</cell>
+                <cell>A</cell>
+                <cell>D</cell>
+                <cell>D</cell>
+                <cell>C</cell>
+              </row>
+              <row>
+                <cell halign="left">Second choice</cell>
+                <cell>B</cell>
+                <cell>B</cell>
+                <cell>B</cell>
+                <cell>B</cell>
+              </row>
+              <row>
+                <cell halign="left">Third choice</cell>
+                <cell>C</cell>
+                <cell>C</cell>
+                <cell>A</cell>
+                <cell>A</cell>
+              </row>
+              <row>
+                <cell halign="left">Fourth choice</cell>
+                <cell>D</cell>
+                <cell>A</cell>
+                <cell>C</cell>
+                <cell>D</cell>
+              </row>
+            </tabular>
+          </table>
+
+          <p>
+            <ol>
+              <li><p>How many students voted in the election?</p></li>
+              <li><p>How many students selected the candidates in this order : D, B, A, C?</p></li>
+              <li><p>How many students selected Daniel (D) as their first choice for student body president?</p></li>
+            </ol>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  To find the total number of students, sum the votes in the top row: 
+                  <m>130 + 120 + 100 + 150 = 500</m> students.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Looking at the columns, the order <alert>D, B, A, C</alert> appears in the third column. 
+                  There were <m>100</m> students who voted in this order.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Daniel (D) is listed as the first choice in the second and third columns. 
+                  The total number of students is <m>120 + 100 = 220</m> students.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </example>
+
+<!-- Plurality Section -->
+      <definition xml:id="def-plurality-method">
+        <title>The Plurality Method</title>
+        <statement>
+          <p>The candidate (or candidates, if there is more than one) with the most first-place votes is the winner.</p>
+        </statement>
+      </definition>
+
+      <example xml:id="ex-plurality">
+        <statement>
+          <p>
+            <xref ref="tab-preference-election" /> shows the preference table for the four candidates running for student body president. 
+            Who is declared the winner using the Plurality method?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            A received 130 first-place votes, D received <m>120+100=220</m> first-place votes and C received 150 first-place votes. 
+            Thus Daniel is the winner.
+          </p>
+        </solution>
+      </example>
+
+      <!-- Plurality-with-Elimination Section -->
+      <assemblage>
+        <p>
+          <term>Majority Rule Decision</term> is when more than 50% of the voters rank a candidate in first-place. 
+          The majority rule will almost always have a winner.
+        </p>
+      </assemblage>
+
+      <definition xml:id="def-elimination">
+        <title>The Plurality-with-Elimination Method</title>
+        <statement>
+          <p>
+            The candidate with the majority (over 50% votes) of first-place votes is the winner. 
+            If no candidate receives a majority, eliminate the candidate with the fewest first-place votes. 
+            Move the candidates below them up one place and recount. Repeat until a candidate has a majority.
+          </p>
+        </statement>
+      </definition>
+
+      <example xml:id="exe-elimination-example">
+        <title>Elimination Method Example</title>
+        <statement>
+          <p>
+            Determine the winner for the student president election from <xref ref="tab-preference-election" />, using Plurality-with-Elimination.
+          </p>
+        </statement>
+        <solution>
+          <p>Total votes = 500. Majority needed = 251.</p>
+          <p>
+            <alert>Round 1:</alert> A=130, D=220, C=150, B=0. 
+            No majority. Bonnie (B) is eliminated.
+          </p>
+          <table xml:id="tab-plurality-elimination-r2">
+  <title>Preference Table: Round 2 (Bonnie Eliminated)</title>
+  <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+    <row bottom="minor">
+      <cell halign="left">Number of Votes</cell>
+      <cell>130</cell>
+      <cell>120</cell>
+      <cell>100</cell>
+      <cell>150</cell>
+    </row>
+    <row>
+      <cell halign="left">First choice</cell>
+      <cell>A</cell>
+      <cell>D</cell>
+      <cell>D</cell>
+      <cell>C</cell>
+    </row>
+    <row>
+      <cell halign="left">Second choice</cell>
+      <cell>C</cell>
+      <cell>C</cell>
+      <cell>A</cell>
+      <cell>A</cell>
+    </row>
+    <row bottom="minor">
+      <cell halign="left">Third choice</cell>
+      <cell>D</cell>
+      <cell>A</cell>
+      <cell>C</cell>
+      <cell>D</cell>
+    </row>
+  </tabular>
+</table>
+
+          <p>
+            <alert>Round 2:</alert> After shifting votes up, the first-place votes remain: A=130, D=220, C=150. 
+            Still no majority. Alice (A) has the fewest (130) and is eliminated.
+          </p>
+          <table xml:id="tab-plurality-elimination-final">
+  <title>Preference Table: Final Round (Alice and Bonnie Eliminated)</title>
+  <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+    <row bottom="minor">
+      <cell halign="left">Number of Votes</cell>
+      <cell>130</cell>
+      <cell>120</cell>
+      <cell>100</cell>
+      <cell>150</cell>
+    </row>
+    <row>
+      <cell halign="left">First choice</cell>
+      <cell>C</cell>
+      <cell>D</cell>
+      <cell>D</cell>
+      <cell>C</cell>
+    </row>
+    <row bottom="minor">
+      <cell halign="left">Second choice</cell>
+      <cell>D</cell>
+      <cell>C</cell>
+      <cell>C</cell>
+      <cell>D</cell>
+    </row>
+  </tabular>
+</table>
+
+          <p>
+            <alert>Round 3:</alert> Alice's 130 votes go to her next preferred candidate, Carlos (C).
+            New totals: Daniel = 220, Carlos = <m>150 + 130 = 280</m>.
+          </p>
+          <p>Carlos now has 280 votes (a majority). Carlos is the winner.</p>
+        </solution>
+      </example>
+     
+        <!-- Borda Count Section -->
+      <definition xml:id="def-borda-count">
+        <title>The Borda Count Method</title>
+        <statement>
+          <p>
+            Each voter ranks the candidates from the most favorable to the least favorable. 
+            Each last-place vote is given 1 point, each next-to-last-place vote is given 2 points, and so on. 
+            The points are totaled for each candidate separately. The candidate with the most points is the winner.
+          </p>
+        </statement>
+      </definition>
+
+      <example xml:id="exe-borda-example">
+        <title>Borda Count Example</title>
+        <statement>
+          <p>
+            Using the preference data from <xref ref="tab-preference-election" />, 
+            who is declared the winner using the Borda Count Method?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            With 4 candidates, 1st place gets 4 pts, 2nd gets 3 pts, 3rd gets 2 pts, and 4th gets 1 pt.
+          </p>
+          <table xml:id="tab-borda-calculation">
+  <title>Borda Count Calculation Table</title>
+  <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+    <row bottom="minor">
+      <cell halign="left">Number of Votes</cell>
+      <cell>130</cell>
+      <cell>120</cell>
+      <cell>100</cell>
+      <cell>150</cell>
+    </row>
+    <row>
+      <cell halign="left">1st choice: 4 pts</cell>
+      <cell>A: <m>130 \times 4 = 520</m></cell>
+      <cell>D: <m>120 \times 4 = 480</m></cell>
+      <cell>D: <m>100 \times 4 = 400</m></cell>
+      <cell>C: <m>150 \times 4 = 600</m></cell>
+    </row>
+    <row>
+      <cell halign="left">2nd choice: 3 pts</cell>
+      <cell>B: <m>130 \times 3 = 390</m></cell>
+      <cell>B: <m>120 \times 3 = 360</m></cell>
+      <cell>B: <m>100 \times 3 = 300</m></cell>
+      <cell>B: <m>150 \times 3 = 450</m></cell>
+    </row>
+    <row>
+      <cell halign="left">3rd choice: 2 pts</cell>
+      <cell>C: <m>130 \times 2 = 260</m></cell>
+      <cell>C: <m>120 \times 2 = 240</m></cell>
+      <cell>A: <m>100 \times 2 = 200</m></cell>
+      <cell>A: <m>150 \times 2 = 300</m></cell>
+    </row>
+    <row bottom="minor">
+      <cell halign="left">4th choice: 1 pt</cell>
+      <cell>D: <m>130 \times 1 = 130</m></cell>
+      <cell>A: <m>120 \times 1 = 120</m></cell>
+      <cell>C: <m>100 \times 1 = 100</m></cell>
+      <cell>D: <m>150 \times 1 = 150</m></cell>
+    </row>
+  </tabular>
+</table>
+
+          <ul>
+            <li><p><alert>Alice (A):</alert> <m>(130 \times 4) + (120 \times 1) + (100 \times 2) + (150 \times 2) = 520 + 120 + 200 + 300 = 1140</m> pts</p></li>
+            <li><p><alert>Bonnie (B):</alert> <m>(130 \times 3) + (120 \times 3) + (100 \times 3) + (150 \times 3) = 390 + 360 + 300 + 450 = 1500</m> pts</p></li>
+            <li><p><alert>Carlos (C):</alert> <m>(130 \times 2) + (120 \times 2) + (100 \times 1) + (150 \times 4) = 260 + 240 + 100 + 600 = 1200</m> pts</p></li>
+            <li><p><alert>Daniel (D):</alert> <m>(130 \times 1) + (120 \times 4) + (100 \times 4) + (150 \times 1) = 130 + 480 + 400 + 150 = 1160</m> pts</p></li>
+          </ul>
+          <p>Bonnie is the winner with 1500 points.</p>
+        </solution>
+      </example>
+
+ 
+      <!-- Pairwise Comparison Section -->
+      <definition xml:id="def-pairwise-comparison">
+        <title>The Pairwise Comparison Method</title>
+        <statement>
+          <p>
+            Every candidate is matched on a one-to-one basis with every other candidate. 
+            If candidate A beats candidate B in one-to-one competition, then A receives 1 point and B receives 0. 
+            If they tie, each receives 0.5 points. The candidate with the most total points is the winner.
+          </p>
+          <p>
+            In an election with <m>n</m> candidates, the number of comparisons, <m>C</m>, is calculated as:
+            <me>C = \frac{n(n-1)}{2}</me>
+          </p>
+        </statement>
+      </definition>
+
+      <example xml:id="exe-pairwise-example">
+        <title>Pairwise Comparison Example</title>
+        <statement>
+          <p>
+            Using the same preference <xref ref="tab-preference-election" />, for the four candidates (Alice, Bonnie, Carlos, and Daniel), 
+            who is the winner using the Pairwise Comparison Method?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            With <m>n=4</m> candidates, there are <m>\frac{4(3)}{2} = 6</m> total comparisons (A vs.B, A vs.C, A vs.D, B vs.C, B vs.D, C vs.D) and determine the winner using the pairwise comparison method. 
+          </p>
+          <sidebyside widths="30% 30% 30%" margins="auto" valign="top">
+  <stack>
+    <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+      <row bottom="minor"><cell>130</cell><cell>120</cell><cell>100</cell><cell>150</cell></row>
+      <row><cell>A</cell><cell>B</cell><cell>B</cell><cell>B</cell></row>
+      <row><cell>B</cell><cell>A</cell><cell>A</cell><cell>A</cell></row>
+    </tabular>
+    <p><alert>A vs B</alert></p>
+  </stack>
+
+  <stack>
+    <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+      <row bottom="minor"><cell>130</cell><cell>120</cell><cell>100</cell><cell>150</cell></row>
+      <row><cell>A</cell><cell>C</cell><cell>A</cell><cell>C</cell></row>
+      <row><cell>C</cell><cell>A</cell><cell>C</cell><cell>A</cell></row>
+    </tabular>
+    <p><alert>A vs C</alert></p>
+  </stack>
+
+  <stack>
+    <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+      <row bottom="minor"><cell>130</cell><cell>120</cell><cell>100</cell><cell>150</cell></row>
+      <row><cell>A</cell><cell>D</cell><cell>D</cell><cell>A</cell></row>
+      <row><cell>D</cell><cell>A</cell><cell>A</cell><cell>D</cell></row>
+    </tabular>
+    <p><alert>A vs D</alert></p>
+  </stack>
+</sidebyside>
+
+<sidebyside widths="30% 30% 30%" margins="auto" valign="top" gapp="medium">
+  <stack>
+    <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+      <row bottom="minor"><cell>130</cell><cell>120</cell><cell>100</cell><cell>150</cell></row>
+      <row><cell>B</cell><cell>B</cell><cell>B</cell><cell>C</cell></row>
+      <row><cell>C</cell><cell>C</cell><cell>C</cell><cell>B</cell></row>
+    </tabular>
+    <p><alert>B vs C</alert></p>
+  </stack>
+
+  <stack>
+    <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+      <row bottom="minor"><cell>130</cell><cell>120</cell><cell>100</cell><cell>150</cell></row>
+      <row><cell>B</cell><cell>D</cell><cell>D</cell><cell>B</cell></row>
+      <row><cell>D</cell><cell>B</cell><cell>B</cell><cell>D</cell></row>
+    </tabular>
+    <p><alert>B vs D</alert></p>
+  </stack>
+
+  <stack>
+    <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+      <row bottom="minor"><cell>130</cell><cell>120</cell><cell>100</cell><cell>150</cell></row>
+      <row><cell>C</cell><cell>D</cell><cell>D</cell><cell>C</cell></row>
+      <row><cell>D</cell><cell>C</cell><cell>C</cell><cell>D</cell></row>
+    </tabular>
+    <p><alert>C vs D</alert></p>
+  </stack>
+</sidebyside>
+
+          <ol>
+            <li>
+              <p>
+                <alert>A vs B:</alert> Alice is preferred over Bonnie in 130 ballots. Bonnie is preferred over Alice in <m>120+100+150=370</m> ballots. 
+                <term>Winner: Bonnie (B gets 1 pt)</term>
+              </p>
+            </li>
+            <li>
+              <p>
+                <alert>A vs C:</alert> Alice is preferred over Carlos in <m>130+120+100=350</m> ballots. Carlos is preferred over Alice in 150. 
+                <term>Winner: Alice (A gets 1 pt)</term>
+              </p>
+            </li>
+            <li>
+              <p>
+                <alert>A vs D:</alert> Alice is preferred over Daniel in 130 ballots. Daniel is preferred over Alice in <m>120+100+150=370</m> ballots. 
+                <term>Winner: Daniel (D gets 1 pt)</term>
+              </p>
+            </li>
+            <li>
+              <p>
+                <alert>B vs C:</alert> Bonnie is preferred over Carlos in <m>130+120+100=350</m> ballots. Carlos is preferred over Bonnie in 150. 
+                <term>Winner: Bonnie (B gets 1 pt)</term>
+              </p>
+            </li>
+            <li>
+              <p>
+                <alert>B vs D:</alert> Bonnie is preferred over Daniel in <m>130+150=280</m> ballots. Daniel is preferred over Bonnie in <m>120+100=220</m>. 
+                <term>Winner: Bonnie (B gets 1 pt)</term>
+              </p>
+            </li>
+            <li>
+              <p>
+                <alert>C vs D:</alert> Carlos is preferred over Daniel in <m>130+150=280</m> ballots. Daniel is preferred over Carlos in <m>120+100=220</m>. 
+                <term>Winner: Carlos (C gets 1 pt)</term>
+              </p>
+            </li>
+          </ol>
+          <p>
+            <alert>Final Point Totals:</alert>
+            <ul>
+              <li><p>Bonnie (B): 3 points</p></li>
+              <li><p>Alice (A): 1 point</p></li>
+              <li><p>Daniel (D): 1 point</p></li>
+              <li><p>Carlos (C): 1 point</p></li>
+            </ul>
+          </p>
+          <p>Bonnie is the winner using Pairwise Comparison.</p>
+        </solution>
+      </example>
+
+        <assemblage>
+        <p>
+          If a candidate wins all pair comparisons with other candidates, that candidate is called the <term>Condorcet winner</term>. 
+          A Condorcet winner automatically wins by the pairwise comparisons method.
+        </p>
+      </assemblage>
+
+      <example xml:id="ex-condorcet-winner">
+        <title>Condorcet Winner</title>
+        <statement>
+          <p>Is there a Condorcet winner in the following election?</p>
+          <table xml:id="tab-condorcet-data">
+            <title>Preference Table for Condorcet Example</title>
+            <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+              <row bottom="minor">
+                <cell halign="left">Number of Votes</cell>
+                <cell>30</cell>
+                <cell>30</cell>
+                <cell>30</cell>
+                <cell>20</cell>
+              </row>
+              <row>
+                <cell halign="left">First choice</cell>
+                <cell>B</cell>
+                <cell>B</cell>
+                <cell>A</cell>
+                <cell>A</cell>
+              </row>
+              <row>
+                <cell halign="left">Second choice</cell>
+                <cell>A</cell>
+                <cell>A</cell>
+                <cell>C</cell>
+                <cell>D</cell>
+              </row>
+              <row>
+                <cell halign="left">Third choice</cell>
+                <cell>C</cell>
+                <cell>D</cell>
+                <cell>D</cell>
+                <cell>C</cell>
+              </row>
+              <row bottom="minor">
+                <cell halign="left">Fourth choice</cell>
+                <cell>D</cell>
+                <cell>C</cell>
+                <cell>B</cell>
+                <cell>B</cell>
+              </row>
+            </tabular>
+          </table>
+        </statement>
+        <solution>
+          <p>
+            To find a Condorcet winner, we must see if one candidate wins every head-to-head matchup. 
+            Let's check candidate <alert>B</alert> and candidate <alert>A</alert>:
+          </p>
+          <ul>
+            <li>
+              <p>
+                <alert>B vs A:</alert> B is ranked higher than A in <m>30 + 30 = 60</m> ballots. 
+                A is ranked higher than B in <m>30 + 20 = 50</m> ballots. 
+                <term>Winner: B</term>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <alert>B vs C:</alert> B is ranked higher than C in <m>30 + 30 + 30 + 20 = 110</m> ballots (every ballot). 
+                <term>Winner: B</term>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <alert>B vs D:</alert> B is ranked higher than D in <m>30 + 30 + 30 + 20 = 110</m> ballots (every ballot). 
+                <term>Winner: B</term>.
+              </p>
+            </li>
+          </ul>
+          <p>
+            Since <alert>B</alert> beats every other candidate in a one-on-one comparison, <alert>B is the Condorcet winner</alert>.
+          </p>
+        </solution>
+      </example>
+<assemblage>
+  <p>
+    <term>Arrow's Impossibility Theorem</term> states that a ranked-voting electoral system cannot reach a community-wide ranked preference by converting individuals' preferences while meeting all the conditions of a fair voting system.
+  </p>
+  <p>
+    Consider the following situation with 3 candidates in one-to-one competition (pairwise comparison method):
+    <ul>
+      <li><p>Suppose candidate A beats candidate B</p></li>
+      <li><p>Suppose candidate B beats candidate C</p></li>
+      <li><p>Suppose candidate C beats candidate A</p></li>
+    </ul>
+  </p>
+  <p>
+    When this occurs, it is because the conflicting majorities are each made up of different groups of individuals. No winner can be determined.
+  </p>
+  <p>
+    This is called the <term>Condorcet Paradox</term> (also known as the voting paradox).
+  </p>
+</assemblage>
+
+<example xml:id="ex-condorcet-paradox">
+  <title>Condorcet Paradox</title>
+  <statement>
+    <p>Who would win this election through the pairwise comparison method?</p>
+    <table xml:id="tab-paradox-data">
+      <title>Preference Table: Three-Candidate Election</title>
+      <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+        <row bottom="minor">
+          <cell halign="left">Number of Votes</cell>
+          <cell>8</cell>
+          <cell>9</cell>
+          <cell>10</cell>
+        </row>
+        <row>
+          <cell halign="left">First choice</cell>
+          <cell>C</cell>
+          <cell>B</cell>
+          <cell>A</cell>
+        </row>
+        <row>
+          <cell halign="left">Second choice</cell>
+          <cell>A</cell>
+          <cell>C</cell>
+          <cell>B</cell>
+        </row>
+        <row bottom="minor">
+          <cell halign="left">Third choice</cell>
+          <cell>B</cell>
+          <cell>A</cell>
+          <cell>C</cell>
+        </row>
+      </tabular>
+    </table>
+  </statement>
+  <solution>
+    <p>We perform the three possible head-to-head comparisons:</p>
+    <ul>
+      <li>
+        <p>
+          <alert>A vs B:</alert> A is preferred on 8 (col 1) + 10 (col 3) = 18 ballots. B is preferred on 9 (col 2) ballots. 
+          <term>Winner: A</term> (A gets 1 pt).
+        </p>
+      </li>
+      <li>
+        <p>
+          <alert>B vs C:</alert> B is preferred on 9 (col 2) + 10 (col 3) = 19 ballots. C is preferred on 8 (col 1) ballots. 
+          <term>Winner: B</term> (B gets 1 pt).
+        </p>
+      </li>
+      <li>
+        <p>
+          <alert>C vs A:</alert> C is preferred on 8 (col 1) + 9 (col 2) = 17 ballots. A is preferred on 10 (col 3) ballots. 
+          <term>Winner: C</term> (C gets 1 pt).
+        </p>
+      </li>
+    </ul>
+    <p>
+      Each candidate (A, B, and C) has exactly 1 point. This is a <term>Condorcet Paradox</term> because there is a "rock-paper-scissors" loop (A beats B, B beats C, and C beats A), resulting in a three-way tie.
+    </p>
+  </solution>
+</example>
+
+<exercise xml:id="ex-mayor-election">
+  <title>Mayor of a Small Town</title>
+  <statement>
+    <p>
+      Three candidates A, B, and C are running for mayor of a small town. 
+      The results of the election are shown in the following preference table.
+    </p>
+    <table xml:id="tab-mayor-preference">
+      <title>Mayor Election Preference Table</title>
+      <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+        <row bottom="minor">
+          <cell halign="left">Number of Votes</cell>
+          <cell>1200</cell>
+          <cell>900</cell>
+          <cell>900</cell>
+          <cell>600</cell>
+        </row>
+        <row>
+          <cell halign="left">First choice</cell>
+          <cell>A</cell>
+          <cell>C</cell>
+          <cell>B</cell>
+          <cell>B</cell>
+        </row>
+        <row>
+          <cell halign="left">Second choice</cell>
+          <cell>B</cell>
+          <cell>A</cell>
+          <cell>C</cell>
+          <cell>A</cell>
+        </row>
+        <row bottom="minor">
+          <cell halign="left">Third choice</cell>
+          <cell>C</cell>
+          <cell>B</cell>
+          <cell>A</cell>
+          <cell>C</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      <ol>
+        <li><p>Determine the winner using the Plurality method.</p></li>
+        <li><p>Determine the winner using the Borda count method.</p></li>
+        <li><p>Determine the winner using the Plurality-with-elimination method.</p></li>
+        <li><p>Is there a Condorcet Winner?</p></li>
+      </ol>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <ol>
+        <li>
+          <p>
+            <alert>Plurality:</alert> A = 1200, B = <m>900 + 600 = 1500</m>, C = 900. 
+            <term>Winner: B</term>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <alert>Borda Count (3-2-1):</alert>
+            <ul>
+              <li><p>A: <m>(1200 \times 3) + (900 \times 2) + (900 \times 1) + (600 \times 2) = 3600 + 1800 + 900 + 1200 = 7500</m></p></li>
+              <li><p>B: <m>(1200 \times 2) + (900 \times 1) + (900 \times 3) + (600 \times 3) = 2400 + 900 + 2700 + 1800 = 7800</m></p></li>
+              <li><p>C: <m>(1200 \times 1) + (900 \times 3) + (900 \times 2) + (600 \times 1) = 1200 + 2700 + 1800 + 600 = 6300</m></p></li>
+            </ul>
+            <term>Winner: B</term>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <alert>Plurality-with-Elimination:</alert> Total votes = 3600; Majority = 1801.
+            Round 1: A=1200, B=1500, C=900. No majority. Eliminate C.
+            C's 900 votes go to A (second choice). 
+            Final: A = <m>1200 + 900 = 2100</m>, B = 1500. 
+            <term>Winner: A</term>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <alert>Condorcet Winner Check:</alert>
+            <ul>
+              <li><p>A vs B: A is preferred on <m>1200 + 900 = 2100</m>. B on 1500. (A wins)</p></li>
+              <li><p>A vs C: A is preferred on <m>1200 + 600 = 1800</m>. C on <m>900 + 900 = 1800</m>. (Tie)</p></li>
+            </ul>
+            Since A does not win all matches, <term>No Condorcet Winner exists</term>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      <ol>
+        <li>
+          <title>Plurality Method</title>
+          <p>We count only the first-place votes for each candidate:</p>
+          <ul>
+            <li><p><alert>A:</alert> 1200 votes</p></li>
+            <li><p><alert>B:</alert> <m>900 + 600 = 1500</m> votes</p></li>
+            <li><p><alert>C:</alert> 900 votes</p></li>
+          </ul>
+          <p><term>Winner: B</term> (1500 votes).</p>
+        </li>
+
+        <li>
+          <title>Borda Count Method (3-2-1 Points)</title>
+          <table xml:id="tab-borda-mayor-calc">
+            <title>Borda Count Point Distribution</title>
+            <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+              <row bottom="minor">
+                <cell>Candidate</cell>
+                <cell>1st (3 pts)</cell>
+                <cell>2nd (2 pts)</cell>
+                <cell>3rd (1 pt)</cell>
+                <cell>Total Points</cell>
+              </row>
+              <row>
+                <cell><alert>A</alert></cell>
+                <cell><m>1200 \times 3 = 3600</m></cell>
+                <cell><m>(900+600) \times 2 = 3000</m></cell>
+                <cell><m>900 \times 1 = 900</m></cell>
+                <cell><m>7500</m></cell>
+              </row>
+              <row>
+                <cell><alert>B</alert></cell>
+                <cell><m>(900+600) \times 3 = 4500</m></cell>
+                <cell><m>1200 \times 2 = 2400</m></cell>
+                <cell><m>900 \times 1 = 900</m></cell>
+                <cell><m>7800</m></cell>
+              </row>
+              <row>
+                <cell><alert>C</alert></cell>
+                <cell><m>900 \times 3 = 2700</m></cell>
+                <cell><m>900 \times 2 = 1800</m></cell>
+                <cell><m>(1200+600) \times 1 = 1800</m></cell>
+                <cell><m>6300</m></cell>
+              </row>
+            </tabular>
+          </table>
+          <p><term>Winner: B</term> (7800 points).</p>
+        </li>
+
+        <li>
+          <title>Plurality-with-Elimination</title>
+          <p>Total Votes: 3600. Majority needed: 1801.</p>
+          <p><alert>Round 1:</alert> A=1200, B=1500, C=900. No candidate has 1801. Eliminate C.</p>
+          <table xml:id="tab-mayor-elimination-final">
+            <title>Final Round (C Eliminated)</title>
+            <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+              <row bottom="minor"><cell>Votes</cell><cell>1200</cell><cell>900</cell><cell>900</cell><cell>600</cell></row>
+              <row><cell>1st</cell><cell>A</cell><cell>A</cell><cell>B</cell><cell>B</cell></row>
+              <row><cell>2nd</cell><cell>B</cell><cell>B</cell><cell>A</cell><cell>A</cell></row>
+            </tabular>
+          </table>
+          <p>
+            New totals: <alert>A</alert> = <m>1200 + 900 = 2100</m>. <alert>B</alert> = <m>900 + 600 = 1500</m>.
+            <term>Winner: A</term> (2100 votes).
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</exercise>
+
+<exercise xml:id="math-club-election">
+    <title>Math Club Presidential Election</title>
+    <statement>
+        <p>
+            Four candidates are running for president of the Math Club: Paula (P), Sylvia (S), Craig (C), and Brian (B). The results of the election are shown in the following preference table:
+        </p>
+        <table xml:id="table-math-club-results">
+            <title>Election Preference Schedule</title>
+            <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+                <row bottom="medium">
+                    <cell>Number of Votes</cell>
+                    <cell>15</cell>
+                    <cell>19</cell>
+                    <cell>23</cell>
+                    <cell>10</cell>
+                    <cell>18</cell>
+                    <cell>15</cell>
+                </row>
+                <row>
+                    <cell>First choice</cell>
+                    <cell>B</cell>
+                    <cell>C</cell>
+                    <cell>P</cell>
+                    <cell>P</cell>
+                    <cell>S</cell>
+                    <cell>B</cell>
+                </row>
+                <row>
+                    <cell>Second choice</cell>
+                    <cell>S</cell>
+                    <cell>P</cell>
+                    <cell>S</cell>
+                    <cell>B</cell>
+                    <cell>C</cell>
+                    <cell>S</cell>
+                </row>
+                <row>
+                    <cell>Third choice</cell>
+                    <cell>P</cell>
+                    <cell>S</cell>
+                    <cell>B</cell>
+                    <cell>C</cell>
+                    <cell>P</cell>
+                    <cell>C</cell>
+                </row>
+                <row>
+                    <cell>Fourth choice</cell>
+                    <cell>C</cell>
+                    <cell>B</cell>
+                    <cell>C</cell>
+                    <cell>S</cell>
+                    <cell>B</cell>
+                    <cell>P</cell>
+                </row>
+            </tabular>
+        </table>
+        <p>
+            <ol label="1">
+                <li><p>How many students voted in the election?</p></li>
+                <li><p>How many students voted Brian as their first choice?</p></li>
+                <li><p>Who would win the presidency using the Plurality method?</p></li>
+                <li><p>Is there a Majority Winner?</p></li>
+                <li><p>Who would win the presidency using the Plurality with Elimination method?</p></li>
+                <li><p>Who would win the presidency using the Borda count method?</p></li>
+                <li>
+                    <p>
+                        Who would win the presidency using the pairwise comparison method? 
+                        If a tie, use the Plurality method between the winners to determine the tie-breaker.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+
+    <!-- Short Answers -->
+    <answer>
+        <p>
+            <ol label="1">
+                <li><p>100 students</p></li>
+                <li><p>30 students</p></li>
+                <li><p>Paula (33 votes)</p></li>
+                <li><p>No (Majority requires 51 votes)</p></li>
+                <li><p>Craig</p></li>
+                <li><p>Sylvia (279 points)</p></li>
+                <li><p>Paula (3 points)</p></li>
+            </ol>
+        </p>
+    </answer>
+
+    <solution>
+  <p>
+    <ol label="1">
+      <!-- Parts 1-4 remain as previously provided -->
+      <li><p>Total Votes: 100.</p></li>
+      <li><p>Brian 1st choice: 30.</p></li>
+      <li><p>Plurality Winner: Paula (33).</p></li>
+      <li><p>Majority: No (Requires 51).</p></li>
+
+      <li>
+        <p><strong>Plurality with Elimination:</strong></p>
+        <p><em>Round 1:</em> Sylvia has the fewest 1st-place votes (18) and is eliminated.</p>
+        <table xml:id="table-elimination-round-2">
+
+          <title>Round 2 (Sylvia Eliminated)</title>
+          <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+            <row bottom="medium"><cell>Votes</cell><cell>15</cell><cell>19</cell><cell>23</cell><cell>10</cell><cell>18</cell><cell>15</cell></row>
+            <row><cell>1st</cell><cell>B</cell><cell>C</cell><cell>P</cell><cell>P</cell><cell>C</cell><cell>B</cell></row>
+            <row><cell>2nd</cell><cell>P</cell><cell>P</cell><cell>B</cell><cell>B</cell><cell>P</cell><cell>C</cell></row>
+            <row><cell>3rd</cell><cell>C</cell><cell>B</cell><cell>C</cell><cell>C</cell><cell>B</cell><cell>P</cell></row>
+          </tabular>
+        </table>
+
+        <p>New totals: P=33, B=30, C=37 (19 + 18). Brian is eliminated.</p>
+
+        <table xml:id="table-elimination-round-3">
+          <title>Round 3 (Brian Eliminated)</title>
+          <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+            <row bottom="medium"><cell>Votes</cell><cell>15</cell><cell>19</cell><cell>23</cell><cell>10</cell><cell>18</cell><cell>15</cell></row>
+            <row><cell>1st</cell><cell>P</cell><cell>C</cell><cell>P</cell><cell>P</cell><cell>C</cell><cell>C</cell></row>
+            <row><cell>2nd</cell><cell>C</cell><cell>P</cell><cell>C</cell><cell>C</cell><cell>P</cell><cell>P</cell></row>
+          </tabular>
+        </table>
+
+        <p><em>Round 3:</em> Paula vs. Craig. 
+          Craig wins the final matchup against Paula 52 to 48.</p>
+        <p><strong>Winner: Craig.</strong></p>
+      </li>
+
+      <li>
+        <p><strong>Borda Count Method:</strong></p>
+        <p>Using 4 pts for 1st, 3 for 2nd, 2 for 3rd, and 1 for 4th:</p>
+        <ul>
+          <li><p>Paula: <m>33(4) + 19(3) + 33(2) + 15(1) = 270</m></p></li>
+          <li><p>Sylvia: <m>18(4) + 53(3) + 19(2) + 10(1) = 279</m></p></li>
+          <li><p>Craig: <m>19(4) + 18(3) + 25(2) + 38(1) = 218</m></p></li>
+          <li><p>Brian: <m>30(4) + 10(3) + 23(2) + 37(1) = 233</m></p></li>
+        </ul>
+        <p><strong>Winner: Sylvia.</strong></p>
+      </li>
+
+      <li>
+        <p><strong>Pairwise Comparison:</strong></p>
+        <p>
+            For the <term>Pairwise Comparison Method</term>, we compare every possible pair. There are 100 total votes, so 51 are needed to win a matchup:
+            <ul>
+                <li><p>P vs. S: P has 52; S has 48. (P gets 1 pt)</p></li>
+                <li><p>P vs. C: P has 63; C has 37. (P gets 1 pt)</p></li>
+                <li><p>P vs. B: P has 70; B has 30. (P gets 1 pt)</p></li>
+                <li><p>S vs. C: S has 81; C has 19. (S gets 1 pt)</p></li>
+                <li><p>S vs. B: S has 60; B has 40. (S gets 1 pt)</p></li>
+                <li><p>C vs. B: C has 60; B has 40. (C gets 1 pt)</p></li>
+            </ul>
+        </p>
+        <p>
+            <strong>Total Points:</strong> Paula = 3, Sylvia = 2, Craig = 1, Brian = 0.
+            Paula is the winner; no tie-breaker is required.
+        </p>
+      </li>
+    </ol>
+  </p>
+</solution>
+
+</exercise>
+
+
+
+</subsection>
+ </section>

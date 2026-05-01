@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="unit-02" xmlns:xi="http://www.w3.org/2001/XInclude">
+   <title>Unit 2: Apportionment </title>
+   <!--<xi:include href="voting.ptx" />-->
+  <introduction>
+    <p>
+      Group decision-making often relies on voting to reach a consensus. 
+      While the concept is simple, the specific rules used to count those votes can vary significantly. 
+      The central objective is always to ensure the outcome reflects public preference as fairly as possible. 
+      By examining four distinct voting methods, we can observe how the same set of ballots can lead to different winners depending on the system applied.
+    </p>
+    <p> 
+    <term>Apportionment </term>, conversely, deals with distributing a fixed set of resources among groups of varying sizes. 
+    While most famously used to assign congressional seats to states, this mathematical theory applies to various logistical challenges, 
+    such as scheduling hospital staff or distributing buses across transit routes based on ridership.
+    </p>
+  </introduction>
+
+  <!-- Can also be <handout> instead of <subsection> to get a printable version -->
+  <handout xml:id="unit01" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Voting Methods</title>
+  <p>
+    In various decision-making scenarios—from friends picking a movie to a nation electing leaders—gathering a group consensus is essential. 
+    While the act of voting is common, the systems used to determine a winner differ. 
+    For instance, a group might use approval voting, a company might use a multi-stage elimination process, 
+    and a government may rely on a plurality of votes. 
+  </p>
+  <p>
+   In deciding upon a winner, there is always one main goal:  
+   to reflect the preferences of the people in the most fair way possible. 
+  </p>
+  <subsection xml:id="subsec-preference">
+    <title>preference</title>
+    <assemblage>
+      <p>
+      <term>Preference ballots</term> are ballots in which the voter ranks the choices in order of preference. 
+      </p>
+      <p>
+      A <term>preference table</term> is a table which shows the number of voters who voted for each option.
+      </p>
+    </assemblage>
+    <example xml:id="ex-vacation-club">
+    <statement>
+    <p>
+      A vacation club is trying to decide which destination to visit this year: 
+      Hawaii (H), Orlando (O), or Anaheim (A). Their preference ballots are shown below:
+    </p>
+
+    <tabular top="minor" left="minor">
+      <row bottom="medium">
+        <cell right="medium"></cell>
+        <cell right="minor">Bob</cell>
+        <cell right="minor">Ann</cell>
+        <cell right="minor">Marv</cell>
+        <cell right="minor">Alice</cell>
+        <cell right="minor">Eve</cell>
+        <cell right="minor">Omar</cell>
+        <cell right="minor">Lupe</cell>
+        <cell right="minor">Dave</cell>
+        <cell right="minor">Tish</cell>
+        <cell right="minor">Jim</cell>
+      </row>
+      <row bottom="minor">
+        <cell right="medium">1st choice</cell>
+        <cell right="minor">A</cell>
+        <cell right="minor">A</cell>
+        <cell right="minor">O</cell>
+        <cell right="minor">H</cell>
+        <cell right="minor">A</cell>
+        <cell right="minor">O</cell>
+        <cell right="minor">H</cell>
+        <cell right="minor">O</cell>
+        <cell right="minor">H</cell>
+        <cell right="minor">A</cell>
+      </row>
+      <row bottom="minor">
+        <cell right="medium">2nd choice</cell>
+        <cell right="minor">O</cell>
+        <cell right="minor">H</cell>
+        <cell right="minor">H</cell>
+        <cell right="minor">A</cell>
+        <cell right="minor">H</cell>
+        <cell right="minor">H</cell>
+        <cell right="minor">A</cell>
+        <cell right="minor">H</cell>
+        <cell right="minor">A</cell>
+        <cell right="minor">H</cell>
+      </row>
+      <row bottom="minor">
+        <cell right="medium">3rd choice</cell>
+        <cell right="minor">H</cell>
+        <cell right="minor">O</cell>
+        <cell right="minor">A</cell>
+        <cell right="minor">O</cell>
+        <cell right="minor">O</cell>
+        <cell right="minor">A</cell>
+        <cell right="minor">O</cell>
+        <cell right="minor">A</cell>
+        <cell right="minor">O</cell>
+        <cell right="minor">O</cell>
+      </row>
+    </tabular>
+
+    <p>
+      Notice that several members had the same preferences. For example, Ann, Eve, and Jim 
+      all listed Anaheim as their top preference, Hawaii as their second preference, 
+      and Orlando as their third preference. This is indicated by the 3 in the second 
+      column of the preference table below.
+    </p>
+
+    <tabular top="minor" left="minor">
+      <row bottom="medium">
+        <cell right="medium">Votes</cell>
+        <cell right="minor">1</cell>
+        <cell right="minor">3</cell>
+        <cell right="minor">3</cell>
+        <cell right="minor">3</cell>
+      </row>
+      <row bottom="minor">
+        <cell right="medium">1st choice</cell>
+        <cell right="minor">A</cell>
+        <cell right="minor">A</cell>
+        <cell right="minor">O</cell>
+        <cell right="minor">H</cell>
+      </row>
+      <row bottom="minor">
+        <cell right="medium">2nd choice</cell>
+        <cell right="minor">O</cell>
+        <cell right="minor">H</cell>
+        <cell right="minor">H</cell>
+        <cell right="minor">A</cell>
+      </row>
+      <row bottom="minor">
+        <cell right="medium">3rd choice</cell>
+        <cell right="minor">H</cell>
+        <cell right="minor">O</cell>
+        <cell right="minor">A</cell>
+        <cell right="minor">O</cell>
+      </row>
+    </tabular>
+
+    <p>
+      By totaling the vote count across the top row, we recover the total of <m>1+3+3+3=10</m> votes cast.
+      We will discuss four methods for determining the winner: plurality, plurality with 
+      elimination, Borda count, and pairwise comparison.
+    </p>
+  </statement>
+  </example>
+<activity>
+  <exercise>
+    <title>Understanding Preference Ballots and Preference Tables 01</title>
+    <myopenmath problem="1410996" />
+  </exercise>
+  <exercise>
+    <title>Understanding Preference Ballots and Preference Tables 02</title>
+    <myopenmath problem="1410999" />
+  </exercise>
+</activity>
+ 
+</subsection>
+
+<subsection xml:id="subsec-plurality">
+  <title>plurality</title>
+  <p> The voting method we're most familiar with in the United States is the plurality method. In this method, the choice with the most first-preference votes is declared the winner. 
+    Note that a preference table is not necessary for plurality, as only the first-choice votes are considered.
+  </p>
+  <p> This method is sometimes mistakenly called the majority method, or “majority rules”, but it is not necessary for a choice to have gained a majority of votes to win.
+     A majority is over 50%; it is possible for a winner to have a plurality without having a majority!
+  </p> 
+  <p> Here's an example demonstrating how the plurality method is used to determine the winner for an election.
+  </p>
+    <activity>
+    <exercise>
+      <title>Plurality Method</title>
+      <myopenmath problem="1411004" />
+    </exercise>
+  </activity>
+
+</subsection>
+
+
+
+
+
+
+ <activity>
+
+<exercise>
+  <title>Plurality with Elimination Method</title>
+  <myopenmath problem="1411007" />
+</exercise>
+<exercise>
+  <title>Borda Count Method</title>
+  <myopenmath problem="1411010" />
+</exercise>
+<exercise>
+  <title>Pairwise Comparisons</title>
+   <myopenmath problem="1411014" />
+</exercise>
+<exercise>
+  <title>Voting Methods: Wrapping Up!</title>
+  <p>We have seen four different methods for determining the winner of an election. Through our examples and problems, we have also seen that these different methods can lead to different winners! In particular, in the Math Club President election considered throughout the exercises, it turns out that each of the four voting methods leads to each of the four candidates being declared the winner!
+  </p>
+  <myopenmath problem="1411035" />
+</exercise>
+
+
+</activity>
+</handout>
+
+
+ 
+
+
+
+
+
+
+ 
+
+  
+
+  <subsection>
+    <title>Wednesday 8/24</title>
+
+    <p>
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Friday 8/26</title>
+
+    <p>
+    </p>
+  </subsection>
+</section>

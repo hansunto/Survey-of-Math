@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="notes-simple-interest">
+
+  <title>Understanding Interest: Simple Interest</title>
+
+    <p>
+      Interest is the dollar amount that we get paid for lending money or pay for borrowing money. When we deposit money in a financial institution, the institution pays us interest for its use. When we borrow money, interest is the price we pay for the privilege of using the money until we repay it.
+    </p>
+
+    <definition xml:id="definition-simple-interest" latex-style="myshadowbox">
+      <title>Simple Interest</title>
+      <statement>
+        <p>
+          The amount of money that we deposit or borrow is called the <alert>principal</alert>. The amount of interest depends on the principal, the interest <alert>rate</alert>, which is given as a percent and various from bank to bank, and the length of time for which the money is deposited. 
+          <alert>Simple interest</alert> involves interest calculated <alert>only on the principal</alert>.  
+          <alert><me> Interest = Principal \times rate \times time</me></alert>
+        </p>
+      </statement>
+    <me>
+      I = Prt
+    </me>
+    <p>
+    The rate, <m>r</m>, is expressed as a decimal when you calculating simple interest.</p>
+    </definition>
+
+    <example xml:id="example-S1" >
+      <title>Calculating Simple interest for a year</title>
+      <p>
+        You deposit $2,000 in a savings account, which has a rate 6.0%. Find the interest at the end of the first year.
+      </p>
+      <solution>
+        <p>
+          We can use the formula for simple interest to find the interest at the end of the first year. 
+          <m>Interest = Principal \times rate \times time</m>
+          <m>Interest = 2000 \times 0.06 \times 1 = 120</m> 
+        </p>
+      </solution>
+    </example>
+    
+    <example xml:id="example-S2" >
+      <title>Calculating Simple interest for more than a year</title>
+      <p>
+        A student took out a simple interest loan for $1,300 for two years at a rate of 7.5%to purchase a used car. 
+        What is the interest on the loan?
+      </p>  
+
+    <solution>
+    <p>
+      We can use the formula for simple interest to find the interest on the loan. 
+      <m>Interest = Principal \times rate \times time</m>
+      <m>Interest = 1300 \times 0.075 \times 2 = 195</m>  
+    </p>
+    </solution>
+    
+    </example>
+    <p>
+      When a loan is repaid, the interest is added to the original principal to find the total amount due. 
+      In <xref ref="example-S2"/>, at the end of 2 years the student will have to repay.
+    </p>
+    
+      <p>
+        <m>Principal + Interest = 1300 + (1300 \times 0.075 \times 2) = 1300 + 195 = 1495</m>
+      </p>
+
+    <p>
+      In general, after t years the amount due, A, can be determined as follows:
+      <md>
+        A=P + \underbrace{I}_{I=Prt}=P + Prt=P(1+rt)
+      </md>
+    </p>      
+
+    <definition xml:id="definition-future-value" latex-style="myshadowbox">
+      <title>Future Value</title>
+      <statement>
+        <p>
+          <alert>Future value = Principal + Interest</alert>: 
+          The amount due, <m>A</m>, is called the <alert>future value</alert> of the loan. 
+          The principal borrowed <m>P</m> is also known as the loan's <alert>present value</alert>.
+    <md>
+      A=P(1+rt)
+    </md>
+        </p>
+      </statement>
+    </definition>
+
+    <example xml:id="example-S3" >
+      <title>Calculating Future Value</title>
+      <p>
+        What is the future value of a $1,000 loan at 5% for 3 years?
+      </p>
+      <solution>
+        <p>
+          We can use the formula for future value to find the amount due at the end of 3 years. 
+          <m>A = P(1 + rt)</m>
+          <m>A = 1000(1 + 0.05 \times 3) = 1000(1 + 0.15) = 1000 \times 1.15 = 1150</m> 
+        </p>
+      </solution>
+      
+    </example>
+
+    <example xml:id="example-S4" >
+      <title>Determining a simple interest rate</title>
+      <p>
+        You borrow $2,500 from a friend and promise to pay back $2,655 in six months. What simple interest rate will you pay?
+      </p>
+        <solution>
+        <p>
+          We can use the formula for future value to find the interest rate. 
+        </p>
+          <md>
+            <mrow>A \amp =  P(1 + rt)</mrow>
+            <mrow>2655 \amp =  2500(1 + r \times 0.5)</mrow>
+            <mrow>2655 \amp =  2500 + 1250r</mrow>
+            <mrow>1250r \amp =  155</mrow>
+            <mrow>r \amp = \frac{155}{1250} </mrow>
+            <mrow>r \amp =  0.124 = 12.4\%</mrow> 
+          </md> 
+        
+      </solution>
+      
+    </example>
+
+    <example xml:id="example-S5">
+      <title>Determining a present value</title>
+      <p>
+        How much should you put an investment paying a simple interest rate of 8.0% if you need $3000 in six months?
+      </p>
+      <solution>
+        <p>
+          We can use the formula for future value to find the present value. 
+        </p>
+          <md>
+            <mrow>A \amp = P(1 + rt)</mrow>
+            <mrow>3000 \amp = P(1 + 0.08 \times 0.5)</mrow>
+            <mrow>3000 \amp = P(1 + 0.04)\amp = \amp P(1.04) </mrow>
+            <mrow>P \amp = \frac{3000}{1.04} </mrow>
+            <mrow>P \amp = 2884.62 </mrow> 
+          </md> 
+      </solution>
+    </example>
+
+  <exercises xml:id="practice-simple-interest">
+  <title>Exercises for Practice</title>
+<exercise>
+      <title>Calculating a simple interest rate for a T-bill</title> 
+      <statement>
+        <p>
+          Treasury bills (T-bills) can be purchased from the U.S. Treasury Department. You buy a T-bill for $981.60 that pays $1,000 in 13 weeks. What simple interest rate, to the nearest tenth of a percent, does this T-bill earn?
+        </p>
+      </statement>   
+      <answer>
+        <p>
+          We can use the formula for future value to find the interest rate. 
+        </p>
+          <md>
+            <mrow>A \amp = P(1 + rt)</mrow>
+            <mrow>1000 \amp = 981.60(1 + r \times \frac{13}{52})</mrow>
+            <mrow>1000 \amp = 981.60(1 + 0.25r)</mrow>
+            <mrow>1000 \amp = 981.60 + 245.40r</mrow>
+            <mrow>245.40r \amp =18.40</mrow>
+            <mrow>r \amp = \frac{18.40}{245.40} = 0.0749 = 7.5\%</mrow>
+          </md> 
+      </answer>   
+</exercise>
+
+<exercise>
+      <title>Calculating a present value for a CD</title>
+      <statement>
+        <p>
+          A bank offers a CD that pays a simple interest rate of 4.5%. How much must you put in this CD now in order to have $8,000 for a kitchen remodeling project in two years? Round up to the nearest cent.
+        </p>
+      </statement>
+      <!-- <knowl>-->
+      <answer>
+        <p>
+          We can use the formula for future value to find the present value. 
+        </p>
+          <md>
+            <mrow>A \amp =  P(1 + rt)</mrow>
+            <mrow>8000 \amp = P(1 + 0.045 \times 2)</mrow>
+            <mrow>8000 \amp = P(1 + 0.09) = P(1.09) </mrow>
+            <mrow>P \amp = \frac{8000}{1.09}  = 7339.45</mrow>
+          </md> 
+      </answer> 
+      <!-- </knowl> -->
+</exercise>
+
+<exercise>
+      <title>Calculating a future value for a savings account</title>
+      <statement>
+        <p>
+           You deposit $1,000 in a savings account at a bank that has a rate of 1.95%. Find a future value at the end of 5 years.
+        </p>
+      </statement>
+      <!--<knowl>-->
+      <answer>
+        <p>
+          We can use the formula for future value to find the amount due at the end of 5 years. 
+          <m>A = P(1 + rt)</m>
+          <m>A = 1000(1 + 0.0195 \times 5) = 1000(1 + 0.0975) = 1000 \times 1.0975 = 1097.50</m> 
+        </p>
+      </answer> 
+      <!-- </knowl>  -->
+</exercise>
+
+<exercise>
+      <title> Determining whether a statement makes sense or not, explain your reasoning.</title>  
+      <statement>
+        <ol>
+      <li>
+        <p>
+          After depositing $1,500 in an account at a rate of 4%, my balance at the end of the first year was <m>\$(1500)(0.04).</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          I planned to save $5,000 in four years, computed the present value to be $3,846.153, so I round the principal to $3,846.15.
+        </p> </li>
+    </ol>
+      </statement>
+  <answer> 
+        <ol>
+      <li> <p> This statement does not make sense because the balance at the end of the first year should be the future value, which is the sum of the principal and interest. The correct balance should be <m>\$1500 + (1500)(0.04) = \$1560.</m>
+      </p>
+      </li>
+
+      <li>
+        <p>
+          This makes sense. In fact, rounding down is the safer move here. Rounding Down ($3,846.15): By starting with slightly less than the exact "perfect" number, you technically might end up a fraction of a cent short of your $5,000 goal after four years. However, in practice, this is unlikely to be a significant issue, and it provides a small buffer to ensure you meet your target.
+          </p>
+      </li>
+    </ol>
+  </answer>
+</exercise>
+
+
+</exercises>
+
+</section>

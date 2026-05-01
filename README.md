@@ -18,6 +18,12 @@ and view it with
 pretext view course
 ```
 
+Note: This project uses `<latex-image>` elements, so a working TeX engine is required to build assets like SVG figures. If `pretext build course` fails with an error about `xelatex`, install it with:
+
+```bash
+sudo apt-get install texlive-xetex texlive-latex-extra texlive-pictures
+```
+
 Also included is the start of a slide deck.  This is a single file in the `source/slides` folder.  You could use this for all the slides in a course (as a single slideshow), or create separate slideshows.  In that case, you might want to build those separate ones with something like,
 
 ```bash

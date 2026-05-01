@@ -1,5 +1,5 @@
-<string>:56:0:ERROR:RELAXNGV:RELAXNG_ERR_NOELEM: Expecting an element idx, got nothing
-<string>:56:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element chapter failed to validate content
-<string>:11:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element subtitle there
-<string>:24:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element book has extra content: chapter
-<string>:4:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element docinfo, got pretext
+<string>:26:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element idx, got introduction
+<string>:26:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element introduction there
+<string>:26:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element sidebyside, got introduction
+<string>:26:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element proof, got introduction
+<string>:7:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element blockquote, got p

@@ -6,9 +6,9 @@
   <xi:include href="./docinfo.ptx" />
   <!-- By creating a PreTeXt "book" for the course, we can split components into "chapters" -->
   <book>
-    <title>Course Name (change me)</title>
+    <title>Survey of Math</title>
 
-    <subtitle>MATH xxx Semester 20xx</subtitle>
+    <subtitle>MA-105-BL Summer 2026</subtitle>
 
     <!-- Optional: include frontmatter with author info and date -->
     <xi:include href="./frontmatter.ptx" />
@@ -21,8 +21,53 @@
       <!-- Other documents could go here, like a schedule, project description, etc. -->
     </chapter>
 
-    <chapter xml:id="course-notes">
-      <title>Course Notes</title>
+    <chapter xml:id="ch-Personal-Finance">
+      <title>Personal Finance</title>
+      <introduction>
+        <p>
+          In an era of digital banking and shifting economies, understanding your personal finances is a superpower. This resource moves beyond the classroom to show how smart financial habits today can create long-term stability and open doors for the opportunities you care about most.
+        </p>
+      </introduction>
+      <xi:include href="./notes/simpleinterest.ptx" />
+      <xi:include href="./notes/compoundinterest.ptx" />
+      <xi:include href="./notes/Annuities.ptx"/>
+      <xi:include href="./notes/mortgage.ptx"/>
+      <xi:include href="./notes/identifyformula.ptx" />
+      <xi:include href="./notes/finchex.ptx" />
+    </chapter>
+
+    <chapter xml:id="ch-Voting-Apportionment">
+      <title>Voting and Apportionment</title>
+      <introduction>
+        <p>
+        Beyond just marking a ballot, these concepts shape how our voices are heard and how resources are distributed. This chapter breaks down the mechanics behind decision-making, offering clear examples of how mathematical fairness directly impacts your community and representation.
+        </p>
+      </introduction>
+      <xi:include href="./notes/voting.ptx" />
+      <xi:include href="./notes/Apportionment.ptx" />
+      <xi:include href="./notes/votingchex.ptx" />
+    </chapter>
+
+    <chapter xml:id="ch-Probability">
+      <title>Probability </title>
+      <introduction>
+    <p>
+      Probability is the mathematical study of uncertainty. Whether we are tossing a coin or predicting the weather, we use probability to quantify the likelihood of different outcomes.
+    </p>
+    <p>
+      In this chapter, we will define the fundamental building blocks of the theory, starting with the concept of a <term>sample space</term>.
+    </p>
+  </introduction>
+  <xi:include href="./notes/fundamentalP.ptx" />
+  <xi:include href="./notes/OrNotEvent.ptx" />
+  <!--<xi:include href="./notes/FCP.ptx" />-->
+  
+  
+
+    </chapter>
+
+    <chapter xml:id="Hands-On-Sessions">
+      <title>Hands-On Sessions</title>
 
       <introduction>
         <p>
@@ -31,8 +76,9 @@
         </p>
       </introduction>
 
-      <xi:include href="./notes/week01.ptx"/>
-      <xi:include href="./notes/week02.ptx"/>
+      <!-- <xi:include href="./notes/finance.ptx"/> -->
+      <!--<xi:include href="./notes/unit01.ptx"/>
+      <xi:include href="./notes/week02.ptx"/>-->
       <!-- etc. -->
 
     </chapter>

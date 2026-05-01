@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1410999">
+<statement>
+<p>
+Which of the following voting methods will we discuss in this course. Select all that apply!</p>
+<p><ol style="list-style-type:upper-alpha"><li>Borda count method</li> 
+<li>Plurality method</li> 
+<li>Pairwise comparison method</li> 
+<li>Hamilton's method</li> 
+<li>Plurality with elimination method</li> 
+<li>Jefferson's method</li> 
+</ol></p>
+
+
+</statement>
+<answer>
+<p><ul><li><p>Plurality method</p>
+<p>Plurality with elimination method</p>
+<p>Borda count method</p>
+<p>Pairwise comparison method</p></li></ul></p>
+</answer>
+
+</myopenmath>

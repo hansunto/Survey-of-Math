@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Saving Money: Compound Interest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "textmacros",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[tex]/textmacros",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Survey of Math">
+<meta property="book:author" content="Instructor Lastname">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.13.5';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Survey of Math</span> <span class="subtitle">MA-105-BL Summer 2026</span></a></h1>
+<p class="byline">Instructor Lastname</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="notes-simple-interest.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Personal-Finance.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="notes-Annuities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="syllabus.html" class="internal"><span class="title">Syllabus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="syllabus.html#sec-assessments" class="internal"><span class="title">Assessments and Grades</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-Personal-Finance.html" class="internal"><span class="title">Personal Finance</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-simple-interest.html" class="internal"><span class="title">Understanding Interest: Simple Interest</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-simple-interest.html#practice-simple-interest" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="notes-compound-interest.html" class="internal"><span class="title">Saving Money: Compound Interest</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-compound-interest.html#practice-compound-interest" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-Annuities.html" class="internal"><span class="title">Saving Money: Annuities</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-Annuities.html#practice-annuity" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-Mortgages.html" class="internal"><span class="title">Borrowing Money: Mortgage</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Identify-Formulas.html" class="internal"><span class="title">Identify Formulas to use: Simple, Compound, Annuity, Loan</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Identify-Formulas.html#exercises-finance-answers" class="internal"><span class="title">Identify the Formula to Use</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-fin-ch-ex.html" class="internal"><span class="title">Chapter Exercise</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-fin-ch-ex.html#sec-fin-ch-ex-2" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Voting-Apportionment.html" class="internal"><span class="title">Voting and Apportionment</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-Voting.html" class="internal"><span class="title">Voting methods</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="notes-Voting.html#notes-Voting-2" class="internal"><span class="title">How to determine a Winner?</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-apportionment.html" class="internal"><span class="title">Apportionment</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-voting-ch-ex.html" class="internal"><span class="title">Chapter Exercise</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-voting-ch-ex.html#sec-voting-ch-ex-2" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Probability.html" class="internal"><span class="title">Probability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Probability-3.html" class="internal"><span class="title">Fundamentals of Probability</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-events-not-or.html" class="internal"><span class="title">Events Involving NOT and OR</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="Hands-On-Sessions.html" class="internal"><span class="title">Hands-On Sessions</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="title">In-Class Activities</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">Introduction Activity</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="title">Handouts</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="homework.html" class="internal"><span class="title">Homework</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="notes-compound-interest">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Saving Money: Compound Interest</span>
+</h2>
+<div class="para" id="notes-compound-interest-2">In 1626, Peter Minuit convinced the wrappinger Indians to sell him Manhattan Island for $24. If the native American had <em class="alert">put the $24 into a bank account at a 5% interest rate</em> compound annually, by the year 2021 there would be well over $5.6 billion in the account!<div class="autopermalink" data-description="Paragraph"><a href="#notes-compound-interest-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="notes-compound-interest-3">
+<div class="para">So, how did the present value of Manhattan in 1626 attain a future value of over $5.6 billion in 2021, 395 years at 5% simple interest is</div>
+<div class="displaymath process-math" id="notes-compound-interest-3-1">
+\begin{equation*}
+A=P(1+rt)=24(1+(0.05)(395))=498.00
+\end{equation*}
+</div>
+<div class="para">or $498.00 compared to over $5.6 billion.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#notes-compound-interest-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="assemblage assemblage-like" id="aside-compound-interest"><h3 class="heading"><span class="title">Compound Interest vs. Simple Interest.</span></h3>
+<div class="para" id="aside-compound-interest-2">The difference between simple interest and compound interest is that simple interest is calculated only on the original principal, while compound interest is calculated on the original principal and any accumulated interest.<div class="autopermalink" data-description="Paragraph"><a href="#aside-compound-interest-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="aside-compound-interest-3">
+<em class="alert">Compound interest</em> is interest computed on the original principal as well as on any accumulated interest.<div class="autopermalink" data-description="Paragraph"><a href="#aside-compound-interest-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Assemblage: Compound Interest vs. Simple Interest"><a href="#aside-compound-interest" title="Copy heading and permalink for Assemblage: Compound Interest vs. Simple Interest" aria-label="Copy heading and permalink for Assemblage: Compound Interest vs. Simple Interest">🔗</a></div>
+</article>
+<div class="para" id="notes-compound-interest-5">For example, suppose you deposit $1,000 in a savings account at a rate of 5%. Following table shows how the investment grows.<div class="autopermalink" data-description="Paragraph"><a href="#notes-compound-interest-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="notes-compound-interest-6">Calculating Compound interest for a year.<div class="autopermalink" data-description="Paragraph"><a href="#notes-compound-interest-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="notes-compound-interest-7"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Compound Interest Growth of $1000 in a savings account at a rate of 5%<div class="autopermalink" data-description="Table 8: Compound Interest Growth of $1000 in a savings account at a rate of 5%"><a href="#notes-compound-interest-7" title="Copy heading and permalink for Table 8: Compound Interest Growth of $1000 in a savings account at a rate of 5%" aria-label="Copy heading and permalink for Table 8: Compound Interest Growth of $1000 in a savings account at a rate of 5%">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Year</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Beginning Balance ($)</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Interest Earned: <span class="process-math">\(I=Prt\)</span>
+</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">New Balance($)</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">1</td>
+<td class="c m b0 r0 l0 t0 lines">$1,000.00</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(I=\$ 1,000.00 \times 0.05\times 1=50\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">$1,050.00</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">$1,050.00</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(I=\$ 1,050.00 \times 0.05\times 1=52.50\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">$1,102.50</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">3</td>
+<td class="c m b0 r0 l0 t0 lines">$1,102.50</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(I=\$ 1,102.50 \times 0.05\times 1=55.13\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">$1,157.63</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">4</td>
+<td class="c m b0 r0 l0 t0 lines">$1,157.63</td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(I=\$ 1,157.63 \times 0.05\times 1=57.88\)</span></td>
+<td class="c m b0 r0 l0 t0 lines">$1,215.51</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">5</td>
+<td class="c m b0 r0 l0 t0 lines">$1,215.51</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">6</td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="notes-compound-interest-8">The fast way to determine the amount, <span class="process-math">\(A,\)</span> in the account subject to compound interest is the following formula. If <span class="process-math">\(P\)</span> dollars are deposited at rate <span class="process-math">\(r\text{,}\)</span> in decimal form, subject to compound interest, then the amount, <span class="process-math">\(A\text{,}\)</span> of money in the account after t years is given by<div class="autopermalink" data-description="Paragraph"><a href="#notes-compound-interest-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-compound-interest-one-year"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Compound Interest Paid Once a Year.</span>
+</h3>
+<div class="para logical" id="def-compound-interest-one-year-2-1">
+<div class="para">Calculating the amount in an account <em class="alert">for compound interest paid once year:</em>
+</div>
+<div class="displaymath process-math" id="def-compound-interest-one-year-2-1-2">
+\begin{equation*}
+A=P(1+r)^{t} 
+\end{equation*}
+</div>
+<div class="para">where the amount <span class="process-math">\(A\)</span> is the account’s <em class="alert">future value</em> and the principal <span class="process-math">\(P\)</span> is its <em class="alert">present value</em>.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-compound-interest-one-year-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 9: Compound Interest Paid Once a Year"><a href="#def-compound-interest-one-year" title="Copy heading and permalink for Definition 9: Compound Interest Paid Once a Year" aria-label="Copy heading and permalink for Definition 9: Compound Interest Paid Once a Year">🔗</a></div>
+</article>
+<details id="example-CI1" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculating Compound interest for a year.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="example-CI1-2">You deposit $2,000 in a savings account, which has a rate 6%. Find the amount, A, of money in the account after 3 years subject to compound interest and find the interest.<div class="autopermalink" data-description="Paragraph"><a href="#example-CI1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="example-CI1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="example-CI1-3-1">To find the amount <span class="process-math">\(A\)</span> after 3 years, we use the compound interest formula<div class="autopermalink" data-description="Paragraph"><a href="#example-CI1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-CI1-3-2">
+\begin{equation*}
+A = P(1 + r)^t
+\end{equation*}
+</div>
+<div class="para" id="example-CI1-3-3">where <span class="process-math">\(P = 2000 \text{,}\)</span> <span class="process-math">\(r = 0.06 \text{,}\)</span> and <span class="process-math">\(t = 3 \text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-CI1-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="example-CI1-3-4">
+<div class="para">Substituting the values:</div>
+<div class="displaymath process-math" id="example-CI1-3-4-1">
+\begin{equation*}
+A=2000(1+0.06)^3=2000(1.06)^3=\$2382.03
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-CI1-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="example-CI1-3-5">
+<div class="para">The interest earned is calculated as:</div>
+<div class="displaymath process-math" id="example-CI1-3-5-1">
+\begin{equation*}
+I = A - P = 2382.03 - 2000 = \$382.03
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-CI1-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 10.1"><a href="#example-CI1-3" title="Copy heading and permalink for Solution 10.1" aria-label="Copy heading and permalink for Solution 10.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Example 10: Calculating Compound interest for a year"><a href="#example-CI1" title="Copy heading and permalink for Example 10: Calculating Compound interest for a year" aria-label="Copy heading and permalink for Example 10: Calculating Compound interest for a year">🔗</a></div>
+</article></details>
+<div class="para" id="notes-compound-interest-11">Calculating the amount in an account <em class="alert">for compound interest paid more than once a year.</em> The period of time between two interest payments is called the <em class="alert">compounding period</em>.<div class="autopermalink" data-description="Paragraph"><a href="#notes-compound-interest-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="notes-compound-interest-12">If compound interest is paid once a year, the compounding period is one year. We say the interest is <em class="alert">compounded annually</em>.<div class="autopermalink" data-description="Paragraph"><a href="#notes-compound-interest-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="notes-compound-interest-13">If compound interest is paid twice a year, the compounding period is six months. We say the interest is <em class="alert">compounded semiannually</em>.<div class="autopermalink" data-description="Paragraph"><a href="#notes-compound-interest-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="notes-compound-interest-14">If compound interest is paid four times a year, the compounding period is three months. We say the interest is <em class="alert">compounded quarterly</em>.<div class="autopermalink" data-description="Paragraph"><a href="#notes-compound-interest-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="notes-compound-interest-15">If compound interest is paid every month of a year, the compounding period is twelve months. We say the interest is <em class="alert">compounded monthly</em>.<div class="autopermalink" data-description="Paragraph"><a href="#notes-compound-interest-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="notes-compound-interest-16">In general, if compound interest is paid <em class="alert">n</em> times per year, we say the interest is <em class="alert">n compounding periods per year</em>.<div class="autopermalink" data-description="Paragraph"><a href="#notes-compound-interest-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-Compound-interest-Future-Value"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Compound interest: Future Value.</span>
+</h3>
+<div class="para" id="def-Compound-interest-Future-Value-2-1">If <span class="process-math">\(P\)</span> dollars are deposited at rate <span class="process-math">\(r\text{,}\)</span> in decimal form, subject to compound interest paid n times per year, then the amount, <span class="process-math">\(A\text{,}\)</span> of money in the account after t years is given by<div class="autopermalink" data-description="Paragraph"><a href="#def-Compound-interest-Future-Value-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="eqn-compound-interest-formula">
+\begin{equation}
+A = P\left(1+\dfrac{r}{n}\right)^{nt}\tag{1}
+\end{equation}
+</div>
+<div class="para" id="def-Compound-interest-Future-Value-2-3">where the amount <span class="process-math">\(A\)</span> is the account’s <em class="alert">future value</em> and the principal <span class="process-math">\(P\)</span> is its <em class="alert">present value</em>.<div class="autopermalink" data-description="Paragraph"><a href="#def-Compound-interest-Future-Value-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 11: Compound interest: Future Value"><a href="#def-Compound-interest-Future-Value" title="Copy heading and permalink for Definition 11: Compound interest: Future Value" aria-label="Copy heading and permalink for Definition 11: Compound interest: Future Value">🔗</a></div>
+</article>
+<details id="example-C2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculating Compound Interest for More Than a Year.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="example-C2-2-1">You deposit $7,500 in a savings account that has a rate of 6%. The interest is compounded monthly. How much money will you have after five years? Find the interest after five years.<div class="autopermalink" data-description="Paragraph"><a href="#example-C2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="example-C2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="example-C2-3-1">To find the future value of the account, we use the compound interest formula:<div class="autopermalink" data-description="Paragraph"><a href="#example-C2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-C2-3-2">
+\begin{equation*}
+A = P \left(1 + \frac{r}{n}\right)^{nt}
+\end{equation*}
+</div>
+<div class="para" id="example-C2-3-3">Given <span class="process-math">\(P = 7500\text{,}\)</span> <span class="process-math">\(r = 0.06\text{,}\)</span> <span class="process-math">\(n = 12\text{,}\)</span> and <span class="process-math">\(t = 5\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-C2-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-C2-3-4">
+\begin{align*}
+A \amp = 7500 \left(1 + \frac{0.06}{12}\right)^{12 \times 5}\\
+\amp = 7500(1.005)^{60}\\
+\amp \approx 10116.38
+\end{align*}
+</div>
+<div class="para" id="example-C2-3-5">The account balance after five years is approximately $10,116.38. The interest earned over five years is:<div class="autopermalink" data-description="Paragraph"><a href="#example-C2-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-C2-3-6">
+\begin{equation*}
+I = 10116.38 - 7500 = 2616.38
+\end{equation*}
+</div>
+<div class="para" id="example-C2-3-7">The interest earned is $2,616.38.<div class="autopermalink" data-description="Paragraph"><a href="#example-C2-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 12.1"><a href="#example-C2-3" title="Copy heading and permalink for Solution 12.1" aria-label="Copy heading and permalink for Solution 12.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 12: Calculating Compound Interest for More Than a Year"><a href="#example-C2" title="Copy heading and permalink for Example 12: Calculating Compound Interest for More Than a Year" aria-label="Copy heading and permalink for Example 12: Calculating Compound Interest for More Than a Year">🔗</a></div>
+</article></details>
+<article class="definition definition-like" id="def-Compound-Interest-Present-Value"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Compound Interest: Present Value.</span>
+</h3>
+<div class="para logical" id="def-Compound-Interest-Present-Value-2-1">
+<div class="para">If <span class="process-math">\(A\)</span> dollars are to be accumulated in <span class="process-math">\(t\)</span> years in an account that pays rate <span class="process-math">\(r\)</span> compounded <span class="process-math">\(n\)</span> times per year, then the present value, <span class="process-math">\(P\text{,}\)</span> that needs to be invested now is given by</div>
+<div class="displaymath process-math" id="def-Compound-Interest-Present-Value-2-1-6">
+\begin{equation*}
+P=\dfrac{A}{ \bigl( 1+ \frac{r}{n}\bigr)^{nt}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-Compound-Interest-Present-Value-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 13: Compound Interest: Present Value"><a href="#def-Compound-Interest-Present-Value" title="Copy heading and permalink for Definition 13: Compound Interest: Present Value" aria-label="Copy heading and permalink for Definition 13: Compound Interest: Present Value">🔗</a></div>
+</article>
+<details id="example-C3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculating present value.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="example-C3-2">How much money should be deposited in an account today that earns 8% compounded monthly so that it will accumulate to $20,000 in five years?<div class="autopermalink" data-description="Paragraph"><a href="#example-C3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="example-C3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="example-C3-3-1">
+<div class="para">To find the required deposit (Present Value), we use the formula:</div>
+<div class="displaymath process-math" id="example-C3-3-1-1">
+\begin{equation*}
+P= \frac{A}{(1 + \frac{r}{n})^{nt}}
+\end{equation*}
+</div>
+<div class="para">where:</div>
+<ul class="disc" id="example-C3-3-1-2">
+<li id="example-C3-3-1-2-1">
+<div class="para" id="example-C3-3-1-2-1-1">
+<span class="process-math">\(A = 20,000\)</span> (Future Value)<div class="autopermalink" data-description="Paragraph"><a href="#example-C3-3-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#example-C3-3-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="example-C3-3-1-2-2">
+<div class="para" id="example-C3-3-1-2-2-1">
+<span class="process-math">\(r = 0.08\)</span> (Annual interest rate)<div class="autopermalink" data-description="Paragraph"><a href="#example-C3-3-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#example-C3-3-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="example-C3-3-1-2-3">
+<div class="para" id="example-C3-3-1-2-3-1">
+<span class="process-math">\(n = 12\)</span> (Compounding periods per year)<div class="autopermalink" data-description="Paragraph"><a href="#example-C3-3-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#example-C3-3-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="example-C3-3-1-2-4">
+<div class="para" id="example-C3-3-1-2-4-1">
+<span class="process-math">\(t = 5\)</span> (Time in years)<div class="autopermalink" data-description="Paragraph"><a href="#example-C3-3-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#example-C3-3-1-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-C3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="example-C3-3-2">
+<div class="para">Substituting these values into the formula gives:</div>
+<div class="displaymath process-math" id="example-C3-3-2-1">
+\begin{align*}
+P \amp = \frac{20,000}{(1 + \frac{0.08}{12})^{12 \times 5}}\\
+P \amp = \frac{20,000}{(1.0066667)^{60}}\\
+P \amp \approx 13,424.21
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-C3-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-C3-3-3">Therefore, a deposit of <span class="process-math">\(\$13,424.21\)</span> is required today.<div class="autopermalink" data-description="Paragraph"><a href="#example-C3-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 14.1"><a href="#example-C3-3" title="Copy heading and permalink for Solution 14.1" aria-label="Copy heading and permalink for Solution 14.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Example 14: Calculating present value"><a href="#example-C3" title="Copy heading and permalink for Example 14: Calculating present value" aria-label="Copy heading and permalink for Example 14: Calculating present value">🔗</a></div>
+</article></details>
+<div class="para" id="notes-compound-interest-21">The <em class="alert">annual percentage yield (APY),</em> or the <em class="alert">effective interest rate</em>, is the simple interest rate that produces the same amount of money in an account at the end of one year as when the account is subject to compound interest at a stated rate.<div class="autopermalink" data-description="Paragraph"><a href="#notes-compound-interest-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-APY"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Annual percentage yield (APY).</span>
+</h3>
+<div class="para logical" id="def-APY-2-1">
+<div class="para">Suppose that an investment has a nominal interest rate, <span class="process-math">\(r\text{,}\)</span> in decimal form, and pays compound interest <span class="process-math">\(n\)</span> times per year. The investment’s <em class="alert">effective annual yields</em>, APY, is given by</div>
+<div class="displaymath process-math" id="eqn-APY-formula">
+\begin{equation}
+Y=\bigl( 1+\frac{r}{n}\bigr)^{n}-1\tag{2}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-APY-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 15: Annual percentage yield (APY)"><a href="#def-APY" title="Copy heading and permalink for Definition 15: Annual percentage yield (APY)" aria-label="Copy heading and permalink for Definition 15: Annual percentage yield (APY)">🔗</a></div>
+</article>
+<details id="example-C4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Understanding effective annual yield.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="example-C4-2">You deposit $4000 in an account that pays 8% interest compounded monthly. Use the future value formula for simple interest to determine the effective annual yield.<div class="autopermalink" data-description="Paragraph"><a href="#example-C4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="example-C4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="example-C4-3-1">
+<div class="para">By the formula for future value</div>
+<div class="displaymath process-math" id="example-C4-3-1-1">
+\begin{equation*}
+A = P(1+ \dfrac{r}{n})^{nt}=4000(1+\dfrac{0.08}{12})^{12 \cdot 1}\approx \$4,332.00
+\end{equation*}
+</div>
+<div class="para">Rounded to nearest cent, the amount in the savings account after one year in $4332.00.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-C4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-C4-3-2">The effective annual yield is a simple interest rate. We use the future value formula for simple interest to determine the simple interest rate that produces a future value of $4332 for $4000 deposit after one year.<div class="autopermalink" data-description="Paragraph"><a href="#example-C4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-C4-3-3">
+\begin{align*}
+A \amp = P(1+rt) \\
+4332 \amp = 4000(1+r(1)) \\
+4332 \amp = 4000+4000r \\
+332 \amp = 4000r \\
+r \amp = 0.083=8.3 \% 
+\end{align*}
+</div>
+<div class="para" id="example-C4-3-4">You will pay a simple interest rate of 8.3%. This means that money invested at 8.3% simple interest earns the same amount in one year as money invested at 8%interest compounded monthly.<div class="autopermalink" data-description="Paragraph"><a href="#example-C4-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 16.1"><a href="#example-C4-3" title="Copy heading and permalink for Solution 16.1" aria-label="Copy heading and permalink for Solution 16.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Example 16: Understanding effective annual yield"><a href="#example-C4" title="Copy heading and permalink for Example 16: Understanding effective annual yield" aria-label="Copy heading and permalink for Example 16: Understanding effective annual yield">🔗</a></div>
+</article></details>
+<details id="example-C5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculating Effective Annual Yield.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="example-C5-2-1">A passbook savings account has a nominal rate of <span class="process-math">\(5\%\text{.}\)</span> The interest is compounded daily. Find the account’s effective annual yield, assuming a <span class="process-math">\(365\)</span>-day year.<div class="autopermalink" data-description="Paragraph"><a href="#example-C5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="example-C5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="example-C5-3-1">
+<div class="para">The Effective Yield (APY) represents the actual interest earned in one year. It is calculated using the formula:</div>
+<div class="displaymath process-math" id="example-C5-3-1-1">
+\begin{equation*}
+Y = \left(1 + \frac{r}{n}\right)^n - 1
+\end{equation*}
+</div>
+<div class="para">where:</div>
+<ul class="disc" id="example-C5-3-1-2">
+<li id="example-C5-3-1-2-1">
+<div class="para" id="example-C5-3-1-2-1-1">
+<span class="process-math">\(r = 0.05\)</span> (Nominal annual interest rate)<div class="autopermalink" data-description="Paragraph"><a href="#example-C5-3-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#example-C5-3-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="example-C5-3-1-2-2">
+<div class="para" id="example-C5-3-1-2-2-1">
+<span class="process-math">\(n = 365\)</span> (Compounding periods per year)<div class="autopermalink" data-description="Paragraph"><a href="#example-C5-3-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#example-C5-3-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-C5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="example-C5-3-2">
+<div class="para">Substituting the given values:</div>
+<div class="displaymath process-math" id="example-C5-3-2-1">
+\begin{align*}
+Y \amp = \left(1 + \frac{0.05}{365}\right)^{365} - 1\\
+Y \amp \approx (1.000136986)^{365} - 1\\
+Y \amp \approx 1.051267 - 1\\
+Y \amp \approx 0.051267
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-C5-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-C5-3-3">Converted to a percentage, the effective annual yield is approximately <span class="process-math">\(5.13\%\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-C5-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 17.1"><a href="#example-C5-3" title="Copy heading and permalink for Solution 17.1" aria-label="Copy heading and permalink for Solution 17.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 17: Calculating Effective Annual Yield"><a href="#example-C5" title="Copy heading and permalink for Example 17: Calculating Effective Annual Yield" aria-label="Copy heading and permalink for Example 17: Calculating Effective Annual Yield">🔗</a></div>
+</article></details>
+<details id="example-C6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Quarterly Compounding and Interest Calculation.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para logical" id="example-C6-2-1">
+<div class="para">You deposit <span class="process-math">\(\$1,000\)</span> in a savings account at a bank that has a rate of <span class="process-math">\(2.95\%\text{.}\)</span> The interest is compounded quarterly.</div>
+<ol class="lower-alpha ol-marker-1" id="example-C6-2-1-3">
+<li id="example-C6-2-1-3-1">
+<div class="para" id="example-C6-2-1-3-1-1">How much money will you have after ten years? Round up to the nearest cent.<div class="autopermalink" data-description="Paragraph"><a href="#example-C6-2-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#example-C6-2-1-3-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="example-C6-2-1-3-2">
+<div class="para" id="example-C6-2-1-3-2-1">Find the interest.<div class="autopermalink" data-description="Paragraph"><a href="#example-C6-2-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#example-C6-2-1-3-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-C6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="example-C6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="example-C6-3-1">
+<div class="para">First, we identify the variables for the compound interest formula:</div>
+<ul class="disc" id="example-C6-3-1-1">
+<li id="example-C6-3-1-1-1">
+<div class="para" id="example-C6-3-1-1-1-1">
+<span class="process-math">\(P = 1,000\)</span> (Principal)<div class="autopermalink" data-description="Paragraph"><a href="#example-C6-3-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#example-C6-3-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="example-C6-3-1-1-2">
+<div class="para" id="example-C6-3-1-1-2-1">
+<span class="process-math">\(r = 0.0295\)</span> (Annual rate)<div class="autopermalink" data-description="Paragraph"><a href="#example-C6-3-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#example-C6-3-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="example-C6-3-1-1-3">
+<div class="para" id="example-C6-3-1-1-3-1">
+<span class="process-math">\(n = 4\)</span> (Quarterly compounding)<div class="autopermalink" data-description="Paragraph"><a href="#example-C6-3-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#example-C6-3-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="example-C6-3-1-1-4">
+<div class="para" id="example-C6-3-1-1-4-1">
+<span class="process-math">\(t = 10\)</span> (Years)<div class="autopermalink" data-description="Paragraph"><a href="#example-C6-3-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#example-C6-3-1-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-C6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="example-C6-3-2">
+<div class="para">For part (a), we calculate the future value (<span class="process-math">\(A\)</span>):</div>
+<div class="displaymath process-math" id="example-C6-3-2-2">
+\begin{align*}
+A \amp = P\left(1 + \frac{r}{n}\right)^{nt}\\
+A \amp = 1,000\left(1 + \frac{0.0295}{4}\right)^{4 \times 10}\\
+A \amp = 1,000(1.007375)^{40}\\
+A \amp \approx 1,341.517
+\end{align*}
+</div>
+<div class="para">Rounding up, the account balance will be <span class="process-math">\(\$1,341.52\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-C6-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="example-C6-3-3">
+<div class="para">For part (b), we find the interest earned (<span class="process-math">\(I\)</span>) by subtracting the principal from the future value:</div>
+<div class="displaymath process-math" id="example-C6-3-3-2">
+\begin{align*}
+I \amp = A - P\\
+I \amp = 1,341.52 - 1,000\\
+I \amp = 341.52
+\end{align*}
+</div>
+<div class="para">The interest earned is <span class="process-math">\(\$341.52\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-C6-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 18.1"><a href="#example-C6-3" title="Copy heading and permalink for Solution 18.1" aria-label="Copy heading and permalink for Solution 18.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 18: Quarterly Compounding and Interest Calculation"><a href="#example-C6" title="Copy heading and permalink for Example 18: Quarterly Compounding and Interest Calculation" aria-label="Copy heading and permalink for Example 18: Quarterly Compounding and Interest Calculation">🔗</a></div>
+</article></details>
+<details id="exercise-C1" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Comparing Investment Options.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="exercise-C1-2-1">Suppose that you have <span class="process-math">\(\$10,000\)</span> to invest. Which investment yields the greater return over 5 years: <span class="process-math">\(7.55\%\)</span> compounded quarterly or <span class="process-math">\(7.6\%\)</span> compounded semiannually?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise-C1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exercise-C1-3-1">To determine which investment is superior, we calculate the future value (<span class="process-math">\(A\)</span>) for both options using the formula <span class="process-math">\(A = P(1 + \frac{r}{n})^{nt}\text{,}\)</span> where <span class="process-math">\(P = 10,000\)</span> and <span class="process-math">\(t = 5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-C1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercise-C1-3-2">
+<dl class="description-list">
+<dt id="exercise-C1-3-2-1-1">Option 1: <span class="process-math">\(7.55\%\)</span> compounded quarterly<div class="autopermalink" data-description="Item: Option 1: 7.55\% compounded quarterly"><a href="#exercise-C1-3-2-1-1" title="Copy heading and permalink for Item: Option 1: 7.55\% compounded quarterly" aria-label="Copy heading and permalink for Item: Option 1: 7.55\% compounded quarterly">🔗</a></div>
+</dt>
+<dd>
+<div class="para logical" id="exercise-C1-3-2-1-1-2">
+<div class="para">Here, <span class="process-math">\(r = 0.0755\)</span> and <span class="process-math">\(n = 4\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="exercise-C1-3-2-1-1-2-3">
+\begin{align*}
+A \amp = 10,000\left(1 + \frac{0.0755}{4}\right)^{4 \times 5}\\
+A \amp = 10,000(1.018875)^{20}\\
+A \amp \approx 14,530.01
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C1-3-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="exercise-C1-3-2-1-2">Option 2: <span class="process-math">\(7.6\%\)</span> compounded semiannually<div class="autopermalink" data-description="Item: Option 2: 7.6\% compounded semiannually"><a href="#exercise-C1-3-2-1-2" title="Copy heading and permalink for Item: Option 2: 7.6\% compounded semiannually" aria-label="Copy heading and permalink for Item: Option 2: 7.6\% compounded semiannually">🔗</a></div>
+</dt>
+<dd>
+<div class="para logical" id="exercise-C1-3-2-1-2-2">
+<div class="para">Here, <span class="process-math">\(r = 0.076\)</span> and <span class="process-math">\(n = 2\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="exercise-C1-3-2-1-2-2-3">
+\begin{align*}
+A \amp = 10,000\left(1 + \frac{0.076}{2}\right)^{2 \times 5}\\
+A \amp = 10,000(1.038)^{10}\\
+A \amp \approx 14,520.23
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C1-3-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercise-C1-3-3">Comparing the two totals, Option 1 results in <span class="process-math">\(\$14,530.01\)</span> while Option 2 results in <span class="process-math">\(\$14,520.23\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-C1-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercise-C1-3-4">Therefore, the <span class="process-math">\(7.55\%\)</span> investment compounded quarterly yields the greater return by <span class="process-math">\(\$9.78\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-C1-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 19.1"><a href="#exercise-C1-3" title="Copy heading and permalink for Solution 19.1" aria-label="Copy heading and permalink for Solution 19.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 19: Comparing Investment Options"><a href="#exercise-C1" title="Copy heading and permalink for Checkpoint 19: Comparing Investment Options" aria-label="Copy heading and permalink for Checkpoint 19: Comparing Investment Options">🔗</a></div>
+</article></details>
+<details id="exercise-C2" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Present Value with Quarterly Compounding.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="exercise-C2-2-1">How much money should be deposited today in an account that earns <span class="process-math">\(5\%\)</span> compounded quarterly so that it will accumulate to <span class="process-math">\(\$15,000\)</span> in ten years?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise-C2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exercise-C2-3-1">
+<div class="para">To find the required initial deposit, we use the Present Value formula:</div>
+<div class="displaymath process-math" id="exercise-C2-3-1-1">
+\begin{equation*}
+P = \frac{A}{(1 + \frac{r}{n})^{nt}}
+\end{equation*}
+</div>
+<div class="para">where:</div>
+<ul class="disc" id="exercise-C2-3-1-2">
+<li id="exercise-C2-3-1-2-1">
+<div class="para" id="exercise-C2-3-1-2-1-1">
+<span class="process-math">\(A = 15,000\)</span> (The target future value)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C2-3-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-C2-3-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-C2-3-1-2-2">
+<div class="para" id="exercise-C2-3-1-2-2-1">
+<span class="process-math">\(r = 0.05\)</span> (The annual interest rate)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C2-3-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-C2-3-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-C2-3-1-2-3">
+<div class="para" id="exercise-C2-3-1-2-3-1">
+<span class="process-math">\(n = 4\)</span> (Compounded quarterly)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C2-3-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-C2-3-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-C2-3-1-2-4">
+<div class="para" id="exercise-C2-3-1-2-4-1">
+<span class="process-math">\(t = 10\)</span> (The time in years)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C2-3-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-C2-3-1-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercise-C2-3-2">
+<div class="para">Substituting these values into the formula:</div>
+<div class="displaymath process-math" id="exercise-C2-3-2-1">
+\begin{align*}
+P \amp = \frac{15,000}{(1 + \frac{0.05}{4})^{4 \times 10}}\\
+P \amp = \frac{15,000}{(1.0125)^{40}}\\
+P \amp \approx \frac{15,000}{1.643619}\\
+P \amp \approx 9,126.20
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercise-C2-3-3">Therefore, a deposit of <span class="process-math">\(\$9,126.20\)</span> is required today to reach the goal of <span class="process-math">\(\$15,000\)</span> in ten years.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C2-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 20.1"><a href="#exercise-C2-3" title="Copy heading and permalink for Solution 20.1" aria-label="Copy heading and permalink for Solution 20.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 20: Present Value with Quarterly Compounding"><a href="#exercise-C2" title="Copy heading and permalink for Checkpoint 20: Present Value with Quarterly Compounding" aria-label="Copy heading and permalink for Checkpoint 20: Present Value with Quarterly Compounding">🔗</a></div>
+</article></details>
+<section class="exercises" id="practice-compound-interest">
+<h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises for Practice</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-C3"><h4 class="heading">
+<span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculating Effective Annual Yield.</span>
+</h4>
+<div class="para" id="exercise-C3-2-1">You deposit <span class="process-math">\(\$7,500\)</span> in an account that pays <span class="process-math">\(4.75\%\)</span> interest compounded monthly. Determine the effective annual yield.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise-C3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exercise-C3-3-1">
+<div class="para">The Effective Annual Yield (APY) is the actual annual rate of return and is independent of the principal amount deposited. We use the formula:</div>
+<div class="displaymath process-math" id="exercise-C3-3-1-1">
+\begin{equation*}
+Y = \left(1 + \frac{r}{n}\right)^n - 1
+\end{equation*}
+</div>
+<div class="para">where:</div>
+<ul class="disc" id="exercise-C3-3-1-2">
+<li id="exercise-C3-3-1-2-1">
+<div class="para" id="exercise-C3-3-1-2-1-1">
+<span class="process-math">\(r = 0.0475\)</span> (Nominal annual interest rate)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C3-3-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-C3-3-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-C3-3-1-2-2">
+<div class="para" id="exercise-C3-3-1-2-2-1">
+<span class="process-math">\(n = 12\)</span> (Compounding periods per year)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C3-3-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-C3-3-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercise-C3-3-2">
+<div class="para">Substituting these values:</div>
+<div class="displaymath process-math" id="exercise-C3-3-2-1">
+\begin{align*}
+Y \amp = \left(1 + \frac{0.0475}{12}\right)^{12} - 1\\
+Y \amp \approx (1.0039583)^{12} - 1\\
+Y \amp \approx 1.048545 - 1\\
+Y \amp \approx 0.048545
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C3-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercise-C3-3-3">Converted to a percentage and rounded to two decimal places, the effective annual yield is <span class="process-math">\(4.85\%\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-C3-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 1.1"><a href="#exercise-C3-3" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 1: Calculating Effective Annual Yield"><a href="#exercise-C3" title="Copy heading and permalink for Exercise 1: Calculating Effective Annual Yield" aria-label="Copy heading and permalink for Exercise 1: Calculating Effective Annual Yield">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-C4"><h4 class="heading">
+<span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Future Value for a Long-Term Investment.</span>
+</h4>
+<div class="para" id="exercise-C4-2-1">At the time of her grandson’s birth, a grandmother deposits <span class="process-math">\(\$5,000\)</span> in an account that pays <span class="process-math">\(6\%\)</span> compounded monthly. What will be the value of the account at the child’s twenty-first birthday, assuming that no other deposits or withdrawals are made during this period?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise-C4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exercise-C4-3-1">
+<div class="para">To find the future value of the account, we use the compound interest formula:</div>
+<div class="displaymath process-math" id="exercise-C4-3-1-1">
+\begin{equation*}
+A = P\left(1 + \frac{r}{n}\right)^{nt}
+\end{equation*}
+</div>
+<div class="para">where:</div>
+<ul class="disc" id="exercise-C4-3-1-2">
+<li id="exercise-C4-3-1-2-1">
+<div class="para" id="exercise-C4-3-1-2-1-1">
+<span class="process-math">\(P = 5,000\)</span> (Initial deposit)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C4-3-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-C4-3-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-C4-3-1-2-2">
+<div class="para" id="exercise-C4-3-1-2-2-1">
+<span class="process-math">\(r = 0.06\)</span> (Annual interest rate)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C4-3-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-C4-3-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-C4-3-1-2-3">
+<div class="para" id="exercise-C4-3-1-2-3-1">
+<span class="process-math">\(n = 12\)</span> (Compounding periods per year)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C4-3-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-C4-3-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-C4-3-1-2-4">
+<div class="para" id="exercise-C4-3-1-2-4-1">
+<span class="process-math">\(t = 21\)</span> (Time in years until the 21st birthday)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C4-3-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-C4-3-1-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercise-C4-3-2">
+<div class="para">Substituting these values into the formula:</div>
+<div class="displaymath process-math" id="exercise-C4-3-2-1">
+\begin{align*}
+A \amp = 5,000\left(1 + \frac{0.06}{12}\right)^{12 \times 21}\\
+A \amp = 5,000(1.005)^{252}\\
+A \amp \approx 5,000(3.514418)\\
+A \amp \approx \$17,572.09
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercise-C4-3-3">On the child’s twenty-first birthday, the account will be worth <span class="process-math">\(\$17,572.09\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-C4-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1"><a href="#exercise-C4-3" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 2: Future Value for a Long-Term Investment"><a href="#exercise-C4" title="Copy heading and permalink for Exercise 2: Future Value for a Long-Term Investment" aria-label="Copy heading and permalink for Exercise 2: Future Value for a Long-Term Investment">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-C5"><h4 class="heading">
+<span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Interest Rate Concepts: True or False.</span>
+</h4>
+<div class="para logical" id="exercise-C5-2-1">
+<div class="para">Determine whether each statement is True or False and explain your reasoning.</div>
+<ol class="decimal ol-marker-2" id="exercise-C5-2-1-1">
+<li id="exercise-C5-2-1-1-1">
+<div class="para" id="exercise-C5-2-1-1-1-1">My bank provides simple interest at <span class="process-math">\(3.25\%\)</span> per year, but I cannot determine if this is a better deal than a competing bank offering <span class="process-math">\(3.25\%\)</span> compound interest without knowing the compounding period.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C5-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.1"><a href="#exercise-C5-2-1-1-1" title="Copy heading and permalink for Item 3.1" aria-label="Copy heading and permalink for Item 3.1">🔗</a></div>
+</li>
+<li id="exercise-C5-2-1-1-2">
+<div class="para" id="exercise-C5-2-1-1-2-1">My bank advertises a compound interest rate of <span class="process-math">\(2.4\%\text{,}\)</span> although, without making deposits or withdrawals, the balance in my account increased by <span class="process-math">\(2.43\%\)</span> in one year.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C5-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2"><a href="#exercise-C5-2-1-1-2" title="Copy heading and permalink for Item 3.2" aria-label="Copy heading and permalink for Item 3.2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise-C5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exercise-C5-3-1">
+<ol class="decimal ol-marker-2" id="exercise-C5-3-1-1">
+<li id="exercise-C5-3-1-1-1">
+<div class="para" id="exercise-C5-3-1-1-1-1">False. Any amount of compounding is better than simple interest when the nominal rates are identical (and greater than zero). While the compounding period determines <em class="emphasis">how much</em> better the deal is, we already know compound interest will yield more than simple interest regardless of whether it is compounded annually, monthly, or daily.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C5-3-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.1"><a href="#exercise-C5-3-1-1-1" title="Copy heading and permalink for Item 3.1" aria-label="Copy heading and permalink for Item 3.1">🔗</a></div>
+</li>
+<li id="exercise-C5-3-1-1-2">
+<div class="para" id="exercise-C5-3-1-1-2-1">True. The advertised rate is the nominal rate (<span class="process-math">\(2.4\%\)</span>), but the <span class="process-math">\(2.43\%\)</span> increase represents the <em class="emphasis">Effective Annual Yield</em>. Because interest is added to the balance throughout the year, the actual growth is slightly higher than the nominal rate. For example, <span class="process-math">\(2.4\%\)</span> compounded monthly results in an effective yield of approximately <span class="process-math">\(2.427\%\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-C5-3-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2"><a href="#exercise-C5-3-1-1-2" title="Copy heading and permalink for Item 3.2" aria-label="Copy heading and permalink for Item 3.2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.1"><a href="#exercise-C5-3" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 3: Interest Rate Concepts: True or False"><a href="#exercise-C5" title="Copy heading and permalink for Exercise 3: Interest Rate Concepts: True or False" aria-label="Copy heading and permalink for Exercise 3: Interest Rate Concepts: True or False">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-C6"><h4 class="heading">
+<span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Quarterly Compounding vs. Simple Interest.</span>
+</h4>
+<div class="para logical" id="exercise-C6-2-1">
+<div class="para">A sum of <span class="process-math">\(\$10,000\)</span> is invested at an annual rate of <span class="process-math">\(3\%\text{.}\)</span> Find the balance in the account after 5 years subject to:</div>
+<ol class="decimal ol-marker-2" id="exercise-C6-2-1-3">
+<li id="exercise-C6-2-1-3-1">
+<div class="para" id="exercise-C6-2-1-3-1-1">quarterly compounding<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C6-2-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.1"><a href="#exercise-C6-2-1-3-1" title="Copy heading and permalink for Item 4.1" aria-label="Copy heading and permalink for Item 4.1">🔗</a></div>
+</li>
+<li id="exercise-C6-2-1-3-2">
+<div class="para" id="exercise-C6-2-1-3-2-1">simple interest<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C6-2-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.2"><a href="#exercise-C6-2-1-3-2" title="Copy heading and permalink for Item 4.2" aria-label="Copy heading and permalink for Item 4.2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise-C6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exercise-C6-3-1">We are given <span class="process-math">\(P = 10,000\text{,}\)</span> <span class="process-math">\(r = 0.03\text{,}\)</span> and <span class="process-math">\(t = 5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-C6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercise-C6-3-2">
+<ol class="decimal ol-marker-2" id="exercise-C6-3-2-1">
+<li id="exercise-C6-3-2-1-1">
+<span class="heading li--heading"><span class="title li--heading-title">Quarterly Compounding.</span></span>
+<div class="para logical" id="exercise-C6-3-2-1-1-2">
+<div class="para">Using the formula <span class="process-math">\(A = P(1 + \frac{r}{n})^{nt}\)</span> with <span class="process-math">\(n = 4\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="exercise-C6-3-2-1-1-2-3">
+\begin{align*}
+A \amp = 10,000\left(1 + \frac{0.03}{4}\right)^{4 \times 5}\\
+A \amp = 10,000(1.0075)^{20}\\
+A \amp \approx 10,000(1.161184)\\
+A \amp \approx 11,611.84
+\end{align*}
+</div>
+<div class="para">The balance with quarterly compounding is <span class="process-math">\(\$11,611.84\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C6-3-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.1: Quarterly Compounding"><a href="#exercise-C6-3-2-1-1" title="Copy heading and permalink for Item 4.1: Quarterly Compounding" aria-label="Copy heading and permalink for Item 4.1: Quarterly Compounding">🔗</a></div>
+</li>
+<li id="exercise-C6-3-2-1-2">
+<span class="heading li--heading"><span class="title li--heading-title">Simple Interest.</span></span>
+<div class="para logical" id="exercise-C6-3-2-1-2-2">
+<div class="para">Using the formula <span class="process-math">\(A = P(1 + rt)\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="exercise-C6-3-2-1-2-2-2">
+\begin{align*}
+A \amp = 10,000(1 + 0.03 \times 5)\\
+A \amp = 10,000(1 + 0.15)\\
+A \amp = 10,000(1.15)\\
+A \amp = 11,500.00
+\end{align*}
+</div>
+<div class="para">The balance with simple interest is <span class="process-math">\(\$11,500.00\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C6-3-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.2: Simple Interest"><a href="#exercise-C6-3-2-1-2" title="Copy heading and permalink for Item 4.2: Simple Interest" aria-label="Copy heading and permalink for Item 4.2: Simple Interest">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C6-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercise-C6-3-3">Quarterly compounding results in an additional <span class="process-math">\(\$111.84\)</span> compared to simple interest.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C6-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.1"><a href="#exercise-C6-3" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 4: Quarterly Compounding vs. Simple Interest"><a href="#exercise-C6" title="Copy heading and permalink for Exercise 4: Quarterly Compounding vs. Simple Interest" aria-label="Copy heading and permalink for Exercise 4: Quarterly Compounding vs. Simple Interest">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-C7"><h4 class="heading">
+<span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Future Value and Effective Yield.</span>
+</h4>
+<div class="para logical" id="exercise-C7-2-1">
+<div class="para">You deposit <span class="process-math">\(\$3,000\)</span> in an account that pays <span class="process-math">\(4.5\%\)</span> interest compounded monthly.</div>
+<ol class="decimal ol-marker-2" id="exercise-C7-2-1-3">
+<li id="exercise-C7-2-1-3-1">
+<div class="para" id="exercise-C7-2-1-3-1-1">Find the future value after one year.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C7-2-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5.1"><a href="#exercise-C7-2-1-3-1" title="Copy heading and permalink for Item 5.1" aria-label="Copy heading and permalink for Item 5.1">🔗</a></div>
+</li>
+<li id="exercise-C7-2-1-3-2">
+<div class="para" id="exercise-C7-2-1-3-2-1">Determine the effective annual yield.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C7-2-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5.2"><a href="#exercise-C7-2-1-3-2" title="Copy heading and permalink for Item 5.2" aria-label="Copy heading and permalink for Item 5.2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise-C7-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exercise-C7-3-1">Given: <span class="process-math">\(P = 3,000\text{,}\)</span> <span class="process-math">\(r = 0.045\text{,}\)</span> <span class="process-math">\(n = 12\text{,}\)</span> and <span class="process-math">\(t = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-C7-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercise-C7-3-2">
+<ol class="decimal ol-marker-2" id="exercise-C7-3-2-1">
+<li id="exercise-C7-3-2-1-1">
+<div class="para logical" id="exercise-C7-3-2-1-1-1">
+<div class="para">To find the future value (<span class="process-math">\(A\)</span>) after one year:</div>
+<div class="displaymath process-math" id="exercise-C7-3-2-1-1-1-2">
+\begin{align*}
+A \amp = P\left(1 + \frac{r}{n}\right)^{nt}\\
+A \amp = 3,000\left(1 + \frac{0.045}{12}\right)^{12 \times 1}\\
+A \amp = 3,000(1.00375)^{12}\\
+A \amp \approx 3,000(1.0459398)\\
+A \amp \approx 3,137.82
+\end{align*}
+</div>
+<div class="para">The future value after one year is <span class="process-math">\(\$3,137.82\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C7-3-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5.1"><a href="#exercise-C7-3-2-1-1" title="Copy heading and permalink for Item 5.1" aria-label="Copy heading and permalink for Item 5.1">🔗</a></div>
+</li>
+<li id="exercise-C7-3-2-1-2">
+<div class="para logical" id="exercise-C7-3-2-1-2-1">
+<div class="para">To find the effective annual yield (<span class="process-math">\(EAY\)</span>):</div>
+<div class="displaymath process-math" id="exercise-C7-3-2-1-2-1-2">
+\begin{align*}
+Y \amp = \left(1 + \frac{r}{n}\right)^n - 1\\
+Y \amp = \left(1 + \frac{0.045}{12}\right)^{12} - 1\\
+Y \amp \approx 1.0459398 - 1\\
+Y \amp \approx 0.04594
+\end{align*}
+</div>
+<div class="para">The effective annual yield is approximately <span class="process-math">\(4.59\%\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C7-3-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5.2"><a href="#exercise-C7-3-2-1-2" title="Copy heading and permalink for Item 5.2" aria-label="Copy heading and permalink for Item 5.2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C7-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.1"><a href="#exercise-C7-3" title="Copy heading and permalink for Solution 5.1" aria-label="Copy heading and permalink for Solution 5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 5: Future Value and Effective Yield"><a href="#exercise-C7" title="Copy heading and permalink for Exercise 5: Future Value and Effective Yield" aria-label="Copy heading and permalink for Exercise 5: Future Value and Effective Yield">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-C8"><h4 class="heading">
+<span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Planning for Education: Present Value.</span>
+</h4>
+<div class="para" id="exercise-C8-2-1">Parents wish to have <span class="process-math">\(\$120,000\)</span> available for a child’s education. If the child is now 1 year old, how much money must be set aside at <span class="process-math">\(8\%\)</span> compounded monthly to meet their financial goal when the child is 18?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise-C8-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exercise-C8-3-1">
+<div class="para">To find the required initial investment, we use the Present Value formula:</div>
+<div class="displaymath process-math" id="exercise-C8-3-1-1">
+\begin{equation*}
+P = \frac{A}{(1 + \frac{r}{n})^{nt}}
+\end{equation*}
+</div>
+<div class="para">where:</div>
+<ul class="disc" id="exercise-C8-3-1-2">
+<li id="exercise-C8-3-1-2-1">
+<div class="para" id="exercise-C8-3-1-2-1-1">
+<span class="process-math">\(A = 120,000\)</span> (The target goal)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C8-3-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-C8-3-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-C8-3-1-2-2">
+<div class="para" id="exercise-C8-3-1-2-2-1">
+<span class="process-math">\(r = 0.08\)</span> (Annual interest rate)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C8-3-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-C8-3-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-C8-3-1-2-3">
+<div class="para" id="exercise-C8-3-1-2-3-1">
+<span class="process-math">\(n = 12\)</span> (Monthly compounding)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C8-3-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-C8-3-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-C8-3-1-2-4">
+<div class="para" id="exercise-C8-3-1-2-4-1">
+<span class="process-math">\(t = 17\)</span> (Years remaining until the child is 18: <span class="process-math">\(18 - 1 = 17\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C8-3-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-C8-3-1-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C8-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercise-C8-3-2">
+<div class="para">Substituting these values into the formula:</div>
+<div class="displaymath process-math" id="exercise-C8-3-2-1">
+\begin{align*}
+P \amp = \frac{120,000}{(1 + \frac{0.08}{12})^{12 \times 17}}\\
+P \amp = \frac{120,000}{(1.0066667)^{204}}\\
+P \amp \approx \frac{120,000}{3.876778}\\
+P \amp \approx 30,953.54
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C8-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercise-C8-3-3">The parents must set aside <span class="process-math">\(\$30,953.54\)</span> today to meet the <span class="process-math">\(\$120,000\)</span> goal in 17 years.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C8-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.1"><a href="#exercise-C8-3" title="Copy heading and permalink for Solution 6.1" aria-label="Copy heading and permalink for Solution 6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 6: Planning for Education: Present Value"><a href="#exercise-C8" title="Copy heading and permalink for Exercise 6: Planning for Education: Present Value" aria-label="Copy heading and permalink for Exercise 6: Planning for Education: Present Value">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-C9"><h4 class="heading">
+<span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Historical DeHaven Debt Calculation.</span>
+</h4>
+<div class="para" id="exercise-C9-2-1">In 1777, Jacob DeHaven loaned George Washington’s army <span class="process-math">\(\$450,000\)</span> in gold and supplies. Due to a disagreement over repayment, he was never repaid. In 1989, his descendants sued the U.S. government over the 212-year-old debt. If the DeHavens used an interest rate of <span class="process-math">\(6\%\)</span> and daily compounding, how much money did the DeHaven family demand in their lawsuit?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise-C9-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exercise-C9-3-1">
+<div class="para">To find the total value of the debt after 212 years, we use the compound interest formula:</div>
+<div class="displaymath process-math" id="exercise-C9-3-1-1">
+\begin{equation*}
+A = P\left(1 + \frac{r}{n}\right)^{nt}
+\end{equation*}
+</div>
+<div class="para">where:</div>
+<ul class="disc" id="exercise-C9-3-1-2">
+<li id="exercise-C9-3-1-2-1">
+<div class="para" id="exercise-C9-3-1-2-1-1">
+<span class="process-math">\(P = 450,000\)</span> (Initial loan)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C9-3-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-C9-3-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-C9-3-1-2-2">
+<div class="para" id="exercise-C9-3-1-2-2-1">
+<span class="process-math">\(r = 0.06\)</span> (Annual interest rate)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C9-3-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-C9-3-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-C9-3-1-2-3">
+<div class="para" id="exercise-C9-3-1-2-3-1">
+<span class="process-math">\(n = 365\)</span> (Daily compounding)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C9-3-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-C9-3-1-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-C9-3-1-2-4">
+<div class="para" id="exercise-C9-3-1-2-4-1">
+<span class="process-math">\(t = 212\)</span> (Years from 1777 to 1989)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C9-3-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-C9-3-1-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C9-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercise-C9-3-2">
+<div class="para">Substituting these values:</div>
+<div class="displaymath process-math" id="exercise-C9-3-2-1">
+\begin{align*}
+A \amp = 450,000\left(1 + \frac{0.06}{365}\right)^{365 \times 212}\\
+A \amp = 450,000(1.00016438)^{77,380}\\
+A \amp \approx 450,000(336,543.15)\\
+A \amp \approx 151,444,417,500
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C9-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercise-C9-3-3">The DeHaven family’s demand in the lawsuit was approximately <span class="process-math">\(\$151.4\)</span> billion. (Depending on rounding, specific historical claims often cited amounts ranging from <span class="process-math">\(\$141\)</span> to <span class="process-math">\(\$151\)</span> billion).<div class="autopermalink" data-description="Paragraph"><a href="#exercise-C9-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 7.1"><a href="#exercise-C9-3" title="Copy heading and permalink for Solution 7.1" aria-label="Copy heading and permalink for Solution 7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Exercise 7: The Historical DeHaven Debt Calculation"><a href="#exercise-C9" title="Copy heading and permalink for Exercise 7: The Historical DeHaven Debt Calculation" aria-label="Copy heading and permalink for Exercise 7: The Historical DeHaven Debt Calculation">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercises: Exercises for Practice"><a href="#practice-compound-interest" title="Copy heading and permalink for Exercises: Exercises for Practice" aria-label="Copy heading and permalink for Exercises: Exercises for Practice">🔗</a></div>
+</section><div class="autopermalink" data-description="Section: Saving Money: Compound Interest"><a href="#notes-compound-interest" title="Copy heading and permalink for Section: Saving Money: Compound Interest" aria-label="Copy heading and permalink for Section: Saving Money: Compound Interest">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="notes-simple-interest.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="notes-Annuities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

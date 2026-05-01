@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1410996">
+<statement>
+<p>
+Four candidates are running for president of the Worcester State Math Club:  Alan (A), Brenda (B), Craig (C), and Diane (D). The club members are asked to submit preference ballots and the results are shown in the preference table below.</p><tabular>           
+  
+    <row>
+      <cell> </cell>
+      <cell> <m>\displaystyle{19}</m> </cell>
+      <cell><m>\displaystyle{15}</m> </cell>
+      <cell><m>\displaystyle{11}</m> </cell>
+      <cell><m>\displaystyle{7}</m> </cell>
+      <cell><m>\displaystyle{2}</m> </cell>
+    </row>
+    <row>
+      <cell>First</cell>
+      <cell><m>\displaystyle{B}</m> </cell>
+      <cell><m>\displaystyle{C}</m> </cell>
+      <cell><m>\displaystyle{D}</m> </cell>
+      <cell><m>\displaystyle{A}</m> </cell>
+      <cell><m>\displaystyle{C}</m> </cell>
+    </row>
+    <row>
+      <cell>Second</cell>
+      <cell><m>\displaystyle{A}</m> </cell>
+      <cell><m>\displaystyle{A}</m> </cell>
+      <cell><m>\displaystyle{C}</m> </cell>
+      <cell><m>\displaystyle{D}</m> </cell>
+      <cell><m>\displaystyle{D}</m> </cell>
+    </row>
+    <row>
+      <cell>Third</cell>
+      <cell><m>\displaystyle{C}</m> </cell>
+      <cell><m>\displaystyle{D}</m> </cell>
+      <cell><m>\displaystyle{A}</m> </cell>
+      <cell><m>\displaystyle{C}</m> </cell>
+      <cell><m>\displaystyle{A}</m> </cell>
+    </row>
+    <row>
+      <cell>Fourth</cell>
+      <cell><m>\displaystyle{D}</m> </cell>
+      <cell><m>\displaystyle{B}</m> </cell>
+      <cell><m>\displaystyle{B}</m> </cell>
+      <cell><m>\displaystyle{B}</m> </cell>
+      <cell><m>\displaystyle{B}</m> </cell>
+    </row>
+  
+</tabular><p>
+Note: All parts of the questions must be correct to earn credit!</p>
+<p>
+How many students are in the Math Club?</p>
+<p>
+<fillin characters="20"/></p>
+<p>
+How many members have Craig as their first choice?</p>
+<p>
+<fillin characters="20"/></p>
+<p>
+How many members have Brenda as their last choice?</p>
+<p>
+<fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>54</li><li>17</li><li>35</li></ul></p>
+</answer>
+
+</myopenmath>

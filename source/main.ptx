@@ -13,14 +13,6 @@
     <!-- Optional: include frontmatter with author info and date -->
     <xi:include href="./frontmatter.ptx" />
 
-    <chapter xml:id="course-documents">
-      <title>Course Documents</title>
-
-      <!-- Course syllabus -->
-      <xi:include href="./syllabus/syllabus.ptx" />
-      <!-- Other documents could go here, like a schedule, project description, etc. -->
-    </chapter>
-
     <chapter xml:id="ch-Voting-Apportionment">
       <title>Voting and Apportionment</title>
       <introduction>
@@ -87,7 +79,6 @@
 
     </chapter>
 
-
     <chapter xml:id="activities">
       <title>In-Class Activities</title>
 
@@ -118,6 +109,13 @@
     </chapter>
 
     <!-- Include additional chapters for other categories -->
+     
+<chapter xml:id="course-documents">
+      <title>Course Documents</title>
 
+      <!-- Course syllabus -->
+      <xi:include href="./syllabus/syllabus.ptx" />
+      <!-- Other documents could go here, like a schedule, project description, etc. -->
+    </chapter>
     </book>
   </pretext>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file contains the content for the "Probability with the FCP, nPr and nCr" section of the Probability chapter. 
+ It is included in the main course file (main.ptx) using an XInclude directive. -->
+
+<section xml:id="sec-probability-fcp-npr-ncr">
+  <title>Probability with the FCP, nPr and nCr</title>
+<subsection xml:id="subsec-nPr-Probability">
+    <title>Probability with Fundamental Counting Principle and permutations, nPr</title>
+    <introduction>
+    <p>
+      We return to our concert series with BTS, Blackstreet Boys, NSYNC and TLC. 
+      Now, <term>New Kids on the Block (NKOTB)</term> agrees to join the tour. 
+      The five groups determine the performance order by drawing names from a hat. 
+      </p>
+      <p>
+      What is the probability of <term>TLC</term> performing fourth and <term>BTS</term> performing last?
+    </p>
+    </introduction>
+    <p>
+        Recall the probability formula (<xref ref="def-theoretical-probability"/>), 
+        the probability is the fraction of the number of event outcomes over the total number of possible outcomes. 
+        
+    </p>
+    <p>
+        To solve this problem, we will use the <term>Fundamental Counting Principle (FCP)</term> 
+        to find the total number of possible arrangements of the five groups, 
+        and then determine how many of those arrangements have TLC performing fourth and BTS performing last.
+    </p>
+    <solution>
+      <p>
+        The probability is defined as:
+        <me>P(\text{TLC 4th, BTS last}) = \frac{\text{number of permutations with TLC 4th, BTS last}}{\text{total number of possible permutations}}</me>
+      </p>
+      <p>
+        First, we find the total number of ways to arrange the 5 groups using the <term>Fundamental Counting Principle</term>:
+        <me>5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120</me>
+      </p>
+      <p>
+        Next, we find the number of successful outcomes where TLC is 4th and BTS is last. 
+        By fixing these two positions, we only need to arrange the remaining 3 groups (Backstreet Boys, NSYNC, and NKOTB) in the first three slots:
+        <ul>
+        <li>1st spot: 3 choices</li>
+        <li>2nd spot: 2 choices</li>
+        <li>3rd spot: 1 choice</li>
+        <li>4th spot: <alert>Fixed (TLC)</alert></li>
+        <li>5th spot: <alert>Fixed (BTS)</alert></li>
+      </ul>
+        <me>3 \cdot 2 \cdot 1 \cdot 1 \cdot 1 = 6</me>
+      </p>
+      <p>
+        Therefore, calculate the probability:
+        <me>P(\text{TLC 4th, BTS last}) = \frac{6}{120} = \frac{1}{20}</me>
+      </p>
+      <p>
+      <alert>TI-30XIIS Keystrokes:</alert> 
+      To find the total permutations (5!), type <kbd>5</kbd> <m>\rightarrow</m> <kbd>PRB</kbd> <m>\rightarrow</m> arrow over to underline <c>!</c> <m>\rightarrow</m> <kbd>ENTER</kbd> <m>\rightarrow</m> <kbd>ENTER</kbd>. 
+      The result is 120.
+    </p>
+    </solution>
+  
+  <exercise>
+  <statement>
+    <p>
+      Seven performers A, B, C, D, E, F, and G are to appear in a fundraiser. The order of performance is determined by random selection. Find the probability that:
+    </p>
+    <p>
+      <ol label="a">
+        <li><p>D will perform first.</p></li>
+        <li><p>E will perform sixth and B will perform last.</p></li>
+        <li><p>They will perform in the following order: C, D, B, A, G, F, E.</p></li>
+        <li><p>F or G will perform first.</p></li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      First, we find the <term>total number of possible outcomes</term> for the sample space. Since there are 7 positions to fill:
+      <me>\underline{7} \times \underline{6} \times \underline{5} \times \underline{4} \times \underline{3} \times \underline{2} \times \underline{1}</me>
+      <me>7! = 5{,}040</me>
+      <p>
+        <alert>TI-30XIIS:</alert> Type <kbd>7</kbd> <m>\rightarrow</m> Press <kbd>PRB</kbd> <m>\rightarrow</m> Arrow right to underline <c>!</c> <m>\rightarrow</m> Press <kbd>ENTER</kbd> <m>\rightarrow</m> Press <kbd>ENTER</kbd>.
+      </p>
+    </p>
+    <p>
+      <ol label="a">
+        <li>
+          <p>
+            To find the number of ways <alert>D can perform first</alert>, we fix D in the first spot:
+            <me>\underline{1 (D)} \times \underline{6} \times \underline{5} \times \underline{4} \times \underline{3} \times \underline{2} \times \underline{1} = 720</me>
+            <me>P(\text{D first}) = \frac{720}{5,040} = \frac{1}{7}</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            To find the number of ways <alert>E performs 6th and B performs last</alert>, we fix those two positions:
+            <me>\underline{5} \times \underline{4} \times \underline{3} \times \underline{2} \times \underline{1} \times \underline{1 (E)} \times \underline{1 (B)} = 120</me>
+            <me>P(\text{E 6th, B last}) = \frac{120}{5,040} = \frac{1}{42}</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            There is only <alert>one specific sequence</alert> out of the 5,040 possibilities:
+            <me>\underline{1 (C)} \times \underline{1 (D)} \times \underline{1 (B)} \times \underline{1 (A)} \times \underline{1 (G)} \times \underline{1 (F)} \times \underline{1 (E)} = 1</me>
+            <me>P(\text{Specific order C, D, B, A, G, F, E}) = \frac{1}{5,040}</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            For <alert>F or G to perform first</alert>, we have 2 choices for the first spot:
+            <me>\underline{2 (\text{F or G})} \times \underline{6} \times \underline{5} \times \underline{4} \times \underline{3} \times \underline{2} \times \underline{1} = 1{,}440</me>
+            <me>P(\text{F or G first}) = \frac{1,440}{5,040} = \frac{2}{7}</me>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</exercise>
+</subsection>
+
+<subsection xml:id="subsec-nCr-Probability">
+    <title>Probability with Combinations, nCr</title>
+  <example>
+    <p>
+      Florida's lottery game LOTTO is set up so that each player chooses six different numbers from 1 to 53. 
+      If the six numbers chosen match the six numbers drawn randomly, the player wins the top cash prize. 
+      With one LOTTO ticket, what is the probability of winning this prize?
+    </p>
+    <solution>
+  <p>
+    Because the order of the six numbers does not matter, this is a situation involving combinations. We begin with the formula for probability:
+    <me>P(\text{winning}) = \frac{\text{number of ways of winning}}{\text{total number of possible combinations}}</me>
+  </p>
+  <p>
+    We are selecting <m>r = 6</m> numbers from a collection of <m>n = 53</m> numbers. 
+    Using the combination formula:
+    <me>{}_{53}C_6 = \frac{53!}{(53 - 6)! \times 6!} = \frac{53!}{47! \times 6!} = 22{,}957{,}480</me>
+  </p>
+  <p>
+    <alert>TI-30XIIS Keystrokes:</alert>
+    To calculate <m>{}_{53}C_6</m>: Type <kbd>53</kbd> <m>\rightarrow</m> Press <kbd>PRB</kbd> <m>\rightarrow</m> Underline <c>nCr</c> and press <kbd>ENTER</kbd> <m>\rightarrow</m> Type <kbd>6</kbd> <m>\rightarrow</m> Press <kbd>ENTER</kbd>.
+  </p>
+  <p>
+    There are nearly 23 million number combinations possible in LOTTO. If a person buys one LOTTO ticket, that person has selected only one combination of six numbers. With one LOTTO ticket, there is only one way of winning:
+    <me>P(\text{winning}) = \frac{1}{22{,}957{,}480} \approx 0.0000000436</me>
+  </p>
+  <p>
+    The probability of winning the top prize with one LOTTO ticket is <m>\frac{1}{22{,}957{,}480}</m> or about 1 in 23 million.
+  </p>
+</solution>
+
+  </example>
+
+  <exercise>
+    <statement>
+      <p>
+        A state lottery is designed so that a player chooses five numbers from 1 to 30 on one lottery ticket. 
+        What is the probability that a player with one lottery ticket will win? 
+        What is the probability of winning if 100 different lottery tickets are purchased?
+      </p>
+    </statement>
+  </exercise>
+
+  <example>
+    <p>
+      A club consists of five men and seven women. Three members are selected at random to attend a conference. 
+      Find the probability that the selected group consists of:
+      <ol label="a">
+        <li><p>three men.</p></li>
+        <li><p>one man and two women.</p></li>
+      </ol>
+    </p>
+    <solution>
+      <p>
+        <ol label="a">
+          <li>
+            <p>
+              Total combinations of 3 people from 12: 
+              <me>{}_{12}C_3 = \frac{12!}{9!3!} = 220</me>
+            </p>
+            <p>
+              Ways to select 3 men from 5:
+              <me>{}_{5}C_3 = \frac{5!}{2!3!} = 10</me>
+            </p>
+            <p>
+              <me>P(\text{3 men}) = \frac{10}{220} = \frac{1}{22}</me>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <exercise>
+    <statement>
+      <p>
+        A box contains 25 transistors, 6 of which are defective. If 6 are selected at random, find the probability that:
+        <ol label="a">
+          <li><p>all are defective.</p></li>
+          <li><p>none are defective.</p></li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        A parent-teacher committee consisting of four people is to be selected from fifteen parents and five teachers. 
+        Find the probability of selecting two parents and two teachers.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        If you are dealt 4 cards from a shuffled deck of 52 cards, find the probability that all 4 are hearts.
+      </p>
+    </statement>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>
+        If you are dealt 5 cards from a shuffled deck of 52 cards, find the probability that you get 3 kings and two aces.
+      </p>
+    </statement>
+  </exercise>
+  </subsection>
+</section>

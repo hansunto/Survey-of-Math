@@ -1717,7 +1717,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Combinations",
-  "body": " Combinations   Combination   A combination of items occurs when:  The items are selected from the same group.  No item is used more than once.  The order of items makes no difference .       Identifying Permutations and Combinations   For each of the following, determine whether the problem involves permutations or combinations:   How many ways can you select 6 free videos from a list of 200 videos?  In a race with 50 runners and no ties, in how many ways can the first three finishers come in?  Baskin-Robbins offers 31 different flavors of ice cream. One item is a bowl consisting of three scoops, each a different flavor. How many such bowls are possible?  A three-person committee is needed to study the possibility of expanding the neighborhood park. How many different committees could be formed from six people?       Combination : the order of the selected videos does not matter; only which 6 are chosen matters.  Permutation : first, second, and third place are distinct positions, so order matters.  Combination : the bowl is defined by the set of three flavors, and swapping flavors produces the same bowl.  Combination : the committee members are chosen without ordered roles.       The Combination Formula   The number of combinations of things taken at a time is denoted by :        Public Transportation Committee   A three-person committee is needed to study ways of improving public transportation. How many committees could be formed from the eight people on the board of supervisors?    This is a combination because the order of committee members does not matter.  Compute .  Simplify:   There are 56 possible committees.     Pet Combinations   You are volunteering to pet-sit for a friend who has seven different animals. How many different pet combinations are possible if you take three of the seven pets?    Order does not matter when choosing pets for a group, so use combinations.        Four-Card Hand   How many different 4-card hands can be dealt from a deck that has 16 different cards?    A hand is a combination because the order of the cards does not matter.        Poker Hands   In poker, a person is dealt 5 cards from a standard 52-card deck. The order in which the cards are dealt does not matter. How many different 5-card poker hands are possible?    Use combinations because only the set of cards matters.        Senate Committee Selection   The U.S. Senate of the 107th Congress consisted of 50 Democrats, 49 Republicans, and one independent. How many committees can be formed if each committee must have 3 Democrats and 2 Republicans?    Choose the Democrats and Republicans separately, then multiply.        Total committees:      Practice Problems   Answer the following problems. Identify whether each situation uses combinations, permutations, or the product rule, and then compute the requested count.   A popular brand of pen is available in three colors and four writing tips. How many different choices of pens do you have with this brand?  How many four-digit odd numbers are there?  An election ballot asks voters to select three city commissioners from a group of eight candidates. In how many ways can this be done?  Six singers are to perform on a weekend evening at a nightclub. How many different ways are there to schedule their appearances?  In how many ways can you arrange six books along a shelf, assuming that the order of the books makes a difference?  An ice cream store sells two drinks in four sizes and five flavors. In how many ways can a customer order a drink?  An electronic gate can be opened by entering five digits on a keypad containing the digits 0–9. How many different keypad sequences are possible if the digit 0 cannot be used as the first digit?  A math exam consists of 10 multiple-choice questions and 5 open-ended problems in which all work must be shown. If a student must answer 8 of the multiple-choice questions and 3 of the open-ended problems, in how many ways can the questions and problems be chosen?  For a temporary job, you are painting parking spaces for a new shopping mall with a letter of the alphabet and a single digit from 1 to 9. The first parking space is A1 and the last parking space is Z9. How many parking spaces can you paint with distinct labels?  In a race with 100 runners and no ties, in how many ways can the first three finishers come in?  Six people are on the board of supervisors for your neighborhood park. A three-person committee is needed to study the possibility of expanding the park. How many different committees could be formed from the six people?  Nine comedy acts will perform over two evenings. Five of the acts will perform on the first evening. How many ways can the schedule for the first evening be made?  To win Mega Millions, you must pick 5 numbers from a collection of 56 and one Megaball number from a collection of 46. The order of the first 5 does not matter. How many different selections are possible?  An exam consists of 20 multiple-choice questions and 10 open-ended problems. If a student must answer 15 of the multiple-choice and 5 of the open-ended questions, in how many ways can the questions and problems be chosen?  In a lucky draw, 10 names are placed in a box and three are drawn. Find the number of ways those three names can be selected.       Product rule: different pen choices.  First digit 1–9 (9 choices), last digit odd (5 choices), middle digits 0–9 (10 each): .  Combination: .  Permutation: schedules.  Permutation: arrangements.  Product rule: possible drink orders.  First digit 1–9 (9 choices) and each remaining digit 0–9: codes.  Combination selection: and . Total: .  Letters A–Z: 26 choices; digits 1–9: 9 choices. Total: .  Permutation: .  Combination: .  Combination: .  Lottery selection: ; multiply by 46 Megaball choices: .  Choose each part: and . Total: .  Combination: .      "
+  "body": " Combinations   Combination   A combination of items occurs when:  The items are selected from the same group.  No item is used more than once.  The order of items makes no difference .       Identifying Permutations and Combinations   For each of the following, determine whether the problem involves permutations or combinations:   How many ways can you select 6 free videos from a list of 200 videos?  In a race with 50 runners and no ties, in how many ways can the first three finishers come in?  Baskin-Robbins offers 31 different flavors of ice cream. One item is a bowl consisting of three scoops, each a different flavor. How many such bowls are possible?  A three-person committee is needed to study the possibility of expanding the neighborhood park. How many different committees could be formed from six people?       Combination : the order of the selected videos does not matter; only which 6 are chosen matters.  Permutation : first, second, and third place are distinct positions, so order matters.  Combination : the bowl is defined by the set of three flavors, and swapping flavors produces the same bowl.  Combination : the committee members are chosen without ordered roles.       The Combination Formula   The number of combinations of things taken at a time is denoted by :        Public Transportation Committee   A three-person committee is needed to study ways of improving public transportation. How many committees could be formed from the eight people on the board of supervisors?    This is a combination because the order of committee members does not matter.  Compute .  Simplify:   There are 56 possible committees.   TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 8  Press PRB , use the arrow keys to underline nCr , press ENTER  Type 3  Press ENTER again to get the result of 56.     Pet Combinations   You are volunteering to pet-sit for a friend who has seven different animals. How many different pet combinations are possible if you take three of the seven pets?    Order does not matter when choosing pets for a group, so use combinations.      TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 7  Press PRB , use the arrow keys to underline nCr , press ENTER  Type 3  Press ENTER again to get the result of 35.     Four-Card Hand   How many different 4-card hands can be dealt from a deck that has 16 different cards?    A hand is a combination because the order of the cards does not matter.        Poker Hands   In poker, a person is dealt 5 cards from a standard 52-card deck ( ). The order in which the cards are dealt does not matter. How many different 5-card poker hands are possible?    Use combinations because only the set of cards matters.      TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 52  Press PRB , use the arrow keys to underline nCr , press ENTER  Type 5  Press ENTER again to get the result of 2,598,960.     Senate Committee Selection   The U.S. Senate of the 107th Congress consisted of 50 Democrats, 49 Republicans, and one independent. How many committees can be formed if each committee must have 3 Democrats and 2 Republicans?    Use combinations because the order of committee members does not matter.  Choose 3 Democrats from 50: .  Choose 2 Republicans from 49: .  Total committees:    TI-30XIIS Keystrokes: To calculate : Type 50  Press PRB , use the arrow keys to underline nCr , press ENTER  Type 3  Press ENTER . Repeat the process for and multiply the results.     Practice Problems   Answer the following problems. Identify whether each situation uses combinations, permutations, or the product rule, and then compute the requested count.   A popular brand of pen is available in three colors and four writing tips. How many different choices of pens do you have with this brand?  How many four-digit odd numbers are there?  An election ballot asks voters to select three city commissioners from a group of eight candidates. In how many ways can this be done?  Six singers are to perform on a weekend evening at a nightclub. How many different ways are there to schedule their appearances?  In how many ways can you arrange six books along a shelf, assuming that the order of the books makes a difference?  An ice cream store sells two drinks in four sizes and five flavors. In how many ways can a customer order a drink?  An electronic gate can be opened by entering five digits on a keypad containing the digits 0–9. How many different keypad sequences are possible if the digit 0 cannot be used as the first digit?  A math exam consists of 10 multiple-choice questions and 5 open-ended problems in which all work must be shown. If a student must answer 8 of the multiple-choice questions and 3 of the open-ended problems, in how many ways can the questions and problems be chosen?  For a temporary job, you are painting parking spaces for a new shopping mall with a letter of the alphabet and a single digit from 1 to 9. The first parking space is A1 and the last parking space is Z9. How many parking spaces can you paint with distinct labels?  In a race with 100 runners and no ties, in how many ways can the first three finishers come in?  Six people are on the board of supervisors for your neighborhood park. A three-person committee is needed to study the possibility of expanding the park. How many different committees could be formed from the six people?  Nine comedy acts will perform over two evenings. Five of the acts will perform on the first evening. How many ways can the schedule for the first evening be made?  To win Mega Millions, you must pick 5 numbers from a collection of 56 and one Megaball number from a collection of 46. The order of the first 5 does not matter. How many different selections are possible?  An exam consists of 20 multiple-choice questions and 10 open-ended problems. If a student must answer 15 of the multiple-choice and 5 of the open-ended questions, in how many ways can the questions and problems be chosen?  In a lucky draw, 10 names are placed in a box and three are drawn. Find the number of ways those three names can be selected.        Since we are making two independent choices (brand and color), we use the Product Rule . Multiply the number of brand options by the number of color options:     We use the Fundamental Counting Principle for each of the four digits:  First digit (1-9): 9 choices  Middle digits (0-9): 10 choices each  Last digit (odd): 5 choices (1, 3, 5, 7, 9)       This is a combination because the order of committee members does not matter.     This is a permutation of all 6 distinct subjects.     Arranging all items in a row is a permutation .     By the Product Rule , multiply the choices for size, caffeine, and flavor:     The first digit cannot be zero (9 choices), and the remaining four digits can be any number 0-9 (10 choices each):     Select the items separately then multiply:      Multiply the number of letter options by the number of digit options:     Since the positions (President, VP, Secretary) are distinct, order matters; this is a permutation .     Choosing a subgroup where order is irrelevant is a combination .     Select 5 players from 9 without regard to order:     First, calculate the combinations for the 5 white balls, then multiply by the Megaball choice:      Calculate the ways to choose the two groups separately:      Selecting a group of 3 from 10 is a combination :        "
 },
 {
   "id": "def-combination",
@@ -1750,25 +1750,25 @@ var ptx_lunr_docs = [
   "id": "ex-committee-8",
   "level": "2",
   "url": "sec-combinations.html#ex-committee-8",
-  "type": "Checkpoint",
+  "type": "Example",
   "number": "4.56",
   "title": "Public Transportation Committee.",
-  "body": " Public Transportation Committee   A three-person committee is needed to study ways of improving public transportation. How many committees could be formed from the eight people on the board of supervisors?    This is a combination because the order of committee members does not matter.  Compute .  Simplify:   There are 56 possible committees.   "
+  "body": " Public Transportation Committee   A three-person committee is needed to study ways of improving public transportation. How many committees could be formed from the eight people on the board of supervisors?    This is a combination because the order of committee members does not matter.  Compute .  Simplify:   There are 56 possible committees.   TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 8  Press PRB , use the arrow keys to underline nCr , press ENTER  Type 3  Press ENTER again to get the result of 56.   "
 },
 {
   "id": "ex-pet-sitting",
   "level": "2",
   "url": "sec-combinations.html#ex-pet-sitting",
-  "type": "Checkpoint",
+  "type": "Example",
   "number": "4.57",
   "title": "Pet Combinations.",
-  "body": " Pet Combinations   You are volunteering to pet-sit for a friend who has seven different animals. How many different pet combinations are possible if you take three of the seven pets?    Order does not matter when choosing pets for a group, so use combinations.      "
+  "body": " Pet Combinations   You are volunteering to pet-sit for a friend who has seven different animals. How many different pet combinations are possible if you take three of the seven pets?    Order does not matter when choosing pets for a group, so use combinations.      TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 7  Press PRB , use the arrow keys to underline nCr , press ENTER  Type 3  Press ENTER again to get the result of 35.   "
 },
 {
   "id": "ex-4-card-hand",
   "level": "2",
   "url": "sec-combinations.html#ex-4-card-hand",
-  "type": "Checkpoint",
+  "type": "Example",
   "number": "4.58",
   "title": "Four-Card Hand.",
   "body": " Four-Card Hand   How many different 4-card hands can be dealt from a deck that has 16 different cards?    A hand is a combination because the order of the cards does not matter.      "
@@ -1777,19 +1777,19 @@ var ptx_lunr_docs = [
   "id": "ex-poker-hand",
   "level": "2",
   "url": "sec-combinations.html#ex-poker-hand",
-  "type": "Checkpoint",
+  "type": "Example",
   "number": "4.59",
   "title": "Poker Hands.",
-  "body": " Poker Hands   In poker, a person is dealt 5 cards from a standard 52-card deck. The order in which the cards are dealt does not matter. How many different 5-card poker hands are possible?    Use combinations because only the set of cards matters.      "
+  "body": " Poker Hands   In poker, a person is dealt 5 cards from a standard 52-card deck ( ). The order in which the cards are dealt does not matter. How many different 5-card poker hands are possible?    Use combinations because only the set of cards matters.      TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 52  Press PRB , use the arrow keys to underline nCr , press ENTER  Type 5  Press ENTER again to get the result of 2,598,960.   "
 },
 {
   "id": "ex-107-congress",
   "level": "2",
   "url": "sec-combinations.html#ex-107-congress",
-  "type": "Checkpoint",
+  "type": "Example",
   "number": "4.60",
   "title": "Senate Committee Selection.",
-  "body": " Senate Committee Selection   The U.S. Senate of the 107th Congress consisted of 50 Democrats, 49 Republicans, and one independent. How many committees can be formed if each committee must have 3 Democrats and 2 Republicans?    Choose the Democrats and Republicans separately, then multiply.        Total committees:    "
+  "body": " Senate Committee Selection   The U.S. Senate of the 107th Congress consisted of 50 Democrats, 49 Republicans, and one independent. How many committees can be formed if each committee must have 3 Democrats and 2 Republicans?    Use combinations because the order of committee members does not matter.  Choose 3 Democrats from 50: .  Choose 2 Republicans from 49: .  Total committees:    TI-30XIIS Keystrokes: To calculate : Type 50  Press PRB , use the arrow keys to underline nCr , press ENTER  Type 3  Press ENTER . Repeat the process for and multiply the results.   "
 },
 {
   "id": "ex-practice-combination-counting",
@@ -1798,7 +1798,124 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "4.61",
   "title": "Practice Problems.",
-  "body": " Practice Problems   Answer the following problems. Identify whether each situation uses combinations, permutations, or the product rule, and then compute the requested count.   A popular brand of pen is available in three colors and four writing tips. How many different choices of pens do you have with this brand?  How many four-digit odd numbers are there?  An election ballot asks voters to select three city commissioners from a group of eight candidates. In how many ways can this be done?  Six singers are to perform on a weekend evening at a nightclub. How many different ways are there to schedule their appearances?  In how many ways can you arrange six books along a shelf, assuming that the order of the books makes a difference?  An ice cream store sells two drinks in four sizes and five flavors. In how many ways can a customer order a drink?  An electronic gate can be opened by entering five digits on a keypad containing the digits 0–9. How many different keypad sequences are possible if the digit 0 cannot be used as the first digit?  A math exam consists of 10 multiple-choice questions and 5 open-ended problems in which all work must be shown. If a student must answer 8 of the multiple-choice questions and 3 of the open-ended problems, in how many ways can the questions and problems be chosen?  For a temporary job, you are painting parking spaces for a new shopping mall with a letter of the alphabet and a single digit from 1 to 9. The first parking space is A1 and the last parking space is Z9. How many parking spaces can you paint with distinct labels?  In a race with 100 runners and no ties, in how many ways can the first three finishers come in?  Six people are on the board of supervisors for your neighborhood park. A three-person committee is needed to study the possibility of expanding the park. How many different committees could be formed from the six people?  Nine comedy acts will perform over two evenings. Five of the acts will perform on the first evening. How many ways can the schedule for the first evening be made?  To win Mega Millions, you must pick 5 numbers from a collection of 56 and one Megaball number from a collection of 46. The order of the first 5 does not matter. How many different selections are possible?  An exam consists of 20 multiple-choice questions and 10 open-ended problems. If a student must answer 15 of the multiple-choice and 5 of the open-ended questions, in how many ways can the questions and problems be chosen?  In a lucky draw, 10 names are placed in a box and three are drawn. Find the number of ways those three names can be selected.       Product rule: different pen choices.  First digit 1–9 (9 choices), last digit odd (5 choices), middle digits 0–9 (10 each): .  Combination: .  Permutation: schedules.  Permutation: arrangements.  Product rule: possible drink orders.  First digit 1–9 (9 choices) and each remaining digit 0–9: codes.  Combination selection: and . Total: .  Letters A–Z: 26 choices; digits 1–9: 9 choices. Total: .  Permutation: .  Combination: .  Combination: .  Lottery selection: ; multiply by 46 Megaball choices: .  Choose each part: and . Total: .  Combination: .     "
+  "body": " Practice Problems   Answer the following problems. Identify whether each situation uses combinations, permutations, or the product rule, and then compute the requested count.   A popular brand of pen is available in three colors and four writing tips. How many different choices of pens do you have with this brand?  How many four-digit odd numbers are there?  An election ballot asks voters to select three city commissioners from a group of eight candidates. In how many ways can this be done?  Six singers are to perform on a weekend evening at a nightclub. How many different ways are there to schedule their appearances?  In how many ways can you arrange six books along a shelf, assuming that the order of the books makes a difference?  An ice cream store sells two drinks in four sizes and five flavors. In how many ways can a customer order a drink?  An electronic gate can be opened by entering five digits on a keypad containing the digits 0–9. How many different keypad sequences are possible if the digit 0 cannot be used as the first digit?  A math exam consists of 10 multiple-choice questions and 5 open-ended problems in which all work must be shown. If a student must answer 8 of the multiple-choice questions and 3 of the open-ended problems, in how many ways can the questions and problems be chosen?  For a temporary job, you are painting parking spaces for a new shopping mall with a letter of the alphabet and a single digit from 1 to 9. The first parking space is A1 and the last parking space is Z9. How many parking spaces can you paint with distinct labels?  In a race with 100 runners and no ties, in how many ways can the first three finishers come in?  Six people are on the board of supervisors for your neighborhood park. A three-person committee is needed to study the possibility of expanding the park. How many different committees could be formed from the six people?  Nine comedy acts will perform over two evenings. Five of the acts will perform on the first evening. How many ways can the schedule for the first evening be made?  To win Mega Millions, you must pick 5 numbers from a collection of 56 and one Megaball number from a collection of 46. The order of the first 5 does not matter. How many different selections are possible?  An exam consists of 20 multiple-choice questions and 10 open-ended problems. If a student must answer 15 of the multiple-choice and 5 of the open-ended questions, in how many ways can the questions and problems be chosen?  In a lucky draw, 10 names are placed in a box and three are drawn. Find the number of ways those three names can be selected.        Since we are making two independent choices (brand and color), we use the Product Rule . Multiply the number of brand options by the number of color options:     We use the Fundamental Counting Principle for each of the four digits:  First digit (1-9): 9 choices  Middle digits (0-9): 10 choices each  Last digit (odd): 5 choices (1, 3, 5, 7, 9)       This is a combination because the order of committee members does not matter.     This is a permutation of all 6 distinct subjects.     Arranging all items in a row is a permutation .     By the Product Rule , multiply the choices for size, caffeine, and flavor:     The first digit cannot be zero (9 choices), and the remaining four digits can be any number 0-9 (10 choices each):     Select the items separately then multiply:      Multiply the number of letter options by the number of digit options:     Since the positions (President, VP, Secretary) are distinct, order matters; this is a permutation .     Choosing a subgroup where order is irrelevant is a combination .     Select 5 players from 9 without regard to order:     First, calculate the combinations for the 5 white balls, then multiply by the Megaball choice:      Calculate the ways to choose the two groups separately:      Selecting a group of 3 from 10 is a combination :       "
+},
+{
+  "id": "sec-probability-fcp-npr-ncr",
+  "level": "1",
+  "url": "sec-probability-fcp-npr-ncr.html",
+  "type": "Section",
+  "number": "",
+  "title": "Probability with the FCP, nPr and nCr",
+  "body": " Probability with the FCP, nPr and nCr   Probability with Fundamental Counting Principle and permutations, nPr   We return to our concert series with BTS, Blackstreet Boys, NSYNC and TLC. Now, New Kids on the Block (NKOTB) agrees to join the tour. The five groups determine the performance order by drawing names from a hat.  What is the probability of TLC performing fourth and BTS performing last?   Recall the probability formula ( ), the probability is the fraction of the number of event outcomes over the total number of possible outcomes.  To solve this problem, we will use the Fundamental Counting Principle (FCP) to find the total number of possible arrangements of the five groups, and then determine how many of those arrangements have TLC performing fourth and BTS performing last.   The probability is defined as:   First, we find the total number of ways to arrange the 5 groups using the Fundamental Counting Principle :   Next, we find the number of successful outcomes where TLC is 4th and BTS is last. By fixing these two positions, we only need to arrange the remaining 3 groups (Backstreet Boys, NSYNC, and NKOTB) in the first three slots:  1st spot: 3 choices  2nd spot: 2 choices  3rd spot: 1 choice  4th spot: Fixed (TLC)  5th spot: Fixed (BTS)     Therefore, calculate the probability:    TI-30XIIS Keystrokes: To find the total permutations (5!), type 5   PRB  arrow over to underline !   ENTER   ENTER . The result is 120.     Seven performers A, B, C, D, E, F, and G are to appear in a fundraiser. The order of performance is determined by random selection. Find the probability that:    D will perform first.  E will perform sixth and B will perform last.  They will perform in the following order: C, D, B, A, G, F, E.  F or G will perform first.      First, we find the total number of possible outcomes for the sample space. Since there are 7 positions to fill:    TI-30XIIS: Type 7  Press PRB  Arrow right to underline !  Press ENTER  Press ENTER .      To find the number of ways D can perform first , we fix D in the first spot:      To find the number of ways E performs 6th and B performs last , we fix those two positions:      There is only one specific sequence out of the 5,040 possibilities:      For F or G to perform first , we have 2 choices for the first spot:           Probability with Combinations, nCr   Florida's lottery game LOTTO is set up so that each player chooses six different numbers from 1 to 53. If the six numbers chosen match the six numbers drawn randomly, the player wins the top cash prize. With one LOTTO ticket, what is the probability of winning this prize?   Because the order of the six numbers does not matter, this is a situation involving combinations. We begin with the formula for probability:   We are selecting numbers from a collection of numbers. Using the combination formula:    TI-30XIIS Keystrokes: To calculate : Type 53  Press PRB  Underline nCr and press ENTER  Type 6  Press ENTER .  There are nearly 23 million number combinations possible in LOTTO. If a person buys one LOTTO ticket, that person has selected only one combination of six numbers. With one LOTTO ticket, there is only one way of winning:   The probability of winning the top prize with one LOTTO ticket is or about 1 in 23 million.      A state lottery is designed so that a player chooses five numbers from 1 to 30 on one lottery ticket. What is the probability that a player with one lottery ticket will win? What is the probability of winning if 100 different lottery tickets are purchased?     A club consists of five men and seven women. Three members are selected at random to attend a conference. Find the probability that the selected group consists of:  three men.  one man and two women.        Total combinations of 3 people from 12:   Ways to select 3 men from 5:             A box contains 25 transistors, 6 of which are defective. If 6 are selected at random, find the probability that:  all are defective.  none are defective.        A parent-teacher committee consisting of four people is to be selected from fifteen parents and five teachers. Find the probability of selecting two parents and two teachers.      If you are dealt 4 cards from a shuffled deck of 52 cards, find the probability that all 4 are hearts.      If you are dealt 5 cards from a shuffled deck of 52 cards, find the probability that you get 3 kings and two aces.     "
+},
+{
+  "id": "subsec-nPr-Probability-2-1",
+  "level": "2",
+  "url": "sec-probability-fcp-npr-ncr.html#subsec-nPr-Probability-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "New Kids on the Block (NKOTB) "
+},
+{
+  "id": "subsec-nPr-Probability-2-2",
+  "level": "2",
+  "url": "sec-probability-fcp-npr-ncr.html#subsec-nPr-Probability-2-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "TLC BTS "
+},
+{
+  "id": "subsec-nPr-Probability-4",
+  "level": "2",
+  "url": "sec-probability-fcp-npr-ncr.html#subsec-nPr-Probability-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Fundamental Counting Principle (FCP) "
+},
+{
+  "id": "subsec-nPr-Probability-5-2",
+  "level": "2",
+  "url": "sec-probability-fcp-npr-ncr.html#subsec-nPr-Probability-5-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Fundamental Counting Principle "
+},
+{
+  "id": "subsec-nPr-Probability-6",
+  "level": "2",
+  "url": "sec-probability-fcp-npr-ncr.html#subsec-nPr-Probability-6",
+  "type": "Checkpoint",
+  "number": "4.62",
+  "title": "",
+  "body": "  Seven performers A, B, C, D, E, F, and G are to appear in a fundraiser. The order of performance is determined by random selection. Find the probability that:    D will perform first.  E will perform sixth and B will perform last.  They will perform in the following order: C, D, B, A, G, F, E.  F or G will perform first.      First, we find the total number of possible outcomes for the sample space. Since there are 7 positions to fill:    TI-30XIIS: Type 7  Press PRB  Arrow right to underline !  Press ENTER  Press ENTER .      To find the number of ways D can perform first , we fix D in the first spot:      To find the number of ways E performs 6th and B performs last , we fix those two positions:      There is only one specific sequence out of the 5,040 possibilities:      For F or G to perform first , we have 2 choices for the first spot:        "
+},
+{
+  "id": "subsec-nCr-Probability-2",
+  "level": "2",
+  "url": "sec-probability-fcp-npr-ncr.html#subsec-nCr-Probability-2",
+  "type": "Example",
+  "number": "4.63",
+  "title": "",
+  "body": " Florida's lottery game LOTTO is set up so that each player chooses six different numbers from 1 to 53. If the six numbers chosen match the six numbers drawn randomly, the player wins the top cash prize. With one LOTTO ticket, what is the probability of winning this prize?   Because the order of the six numbers does not matter, this is a situation involving combinations. We begin with the formula for probability:   We are selecting numbers from a collection of numbers. Using the combination formula:    TI-30XIIS Keystrokes: To calculate : Type 53  Press PRB  Underline nCr and press ENTER  Type 6  Press ENTER .  There are nearly 23 million number combinations possible in LOTTO. If a person buys one LOTTO ticket, that person has selected only one combination of six numbers. With one LOTTO ticket, there is only one way of winning:   The probability of winning the top prize with one LOTTO ticket is or about 1 in 23 million.   "
+},
+{
+  "id": "subsec-nCr-Probability-3",
+  "level": "2",
+  "url": "sec-probability-fcp-npr-ncr.html#subsec-nCr-Probability-3",
+  "type": "Checkpoint",
+  "number": "4.64",
+  "title": "",
+  "body": "  A state lottery is designed so that a player chooses five numbers from 1 to 30 on one lottery ticket. What is the probability that a player with one lottery ticket will win? What is the probability of winning if 100 different lottery tickets are purchased?   "
+},
+{
+  "id": "subsec-nCr-Probability-4",
+  "level": "2",
+  "url": "sec-probability-fcp-npr-ncr.html#subsec-nCr-Probability-4",
+  "type": "Example",
+  "number": "4.65",
+  "title": "",
+  "body": " A club consists of five men and seven women. Three members are selected at random to attend a conference. Find the probability that the selected group consists of:  three men.  one man and two women.        Total combinations of 3 people from 12:   Ways to select 3 men from 5:          "
+},
+{
+  "id": "subsec-nCr-Probability-5",
+  "level": "2",
+  "url": "sec-probability-fcp-npr-ncr.html#subsec-nCr-Probability-5",
+  "type": "Checkpoint",
+  "number": "4.66",
+  "title": "",
+  "body": "  A box contains 25 transistors, 6 of which are defective. If 6 are selected at random, find the probability that:  all are defective.  none are defective.     "
+},
+{
+  "id": "subsec-nCr-Probability-6",
+  "level": "2",
+  "url": "sec-probability-fcp-npr-ncr.html#subsec-nCr-Probability-6",
+  "type": "Checkpoint",
+  "number": "4.67",
+  "title": "",
+  "body": "  A parent-teacher committee consisting of four people is to be selected from fifteen parents and five teachers. Find the probability of selecting two parents and two teachers.   "
+},
+{
+  "id": "subsec-nCr-Probability-7",
+  "level": "2",
+  "url": "sec-probability-fcp-npr-ncr.html#subsec-nCr-Probability-7",
+  "type": "Checkpoint",
+  "number": "4.68",
+  "title": "",
+  "body": "  If you are dealt 4 cards from a shuffled deck of 52 cards, find the probability that all 4 are hearts.   "
+},
+{
+  "id": "subsec-nCr-Probability-8",
+  "level": "2",
+  "url": "sec-probability-fcp-npr-ncr.html#subsec-nCr-Probability-8",
+  "type": "Checkpoint",
+  "number": "4.69",
+  "title": "",
+  "body": "  If you are dealt 5 cards from a shuffled deck of 52 cards, find the probability that you get 3 kings and two aces.   "
 },
 {
   "id": "Hands-On-Sessions",

@@ -49,7 +49,7 @@
     </chapter>
 
    
-    <!--<chapter xml:id="ch-Probability">
+    <chapter xml:id="ch-Probability">
       <title>Probability </title>
       <introduction>
     <p>
@@ -67,7 +67,7 @@
   <xi:include href="./notes/Combinations.ptx" />
   <xi:include href="./notes/Probability.ptx" />
 
-   </chapter>-->
+   </chapter>
 
     <chapter xml:id="Hands-On-Sessions">
       <title>Hands-On Sessions</title>

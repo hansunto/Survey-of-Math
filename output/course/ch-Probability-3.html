@@ -205,8 +205,13 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="ch-Probability-3.html" class="internal"><span class="title">Fundamentals of Probability</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-events-not-or.html" class="internal"><span class="title">Events Involving NOT and OR</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-fcp.html" class="internal"><span class="title">The Fundamental Counting Principle</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-fcp.html" class="internal"><span class="title">The Fundamental Counting Principle</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-fcp.html#exercises-FCP" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-factorials.html" class="internal"><span class="title">Factorials</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-permutations.html" class="internal"><span class="title">Permutations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-combinations.html" class="internal"><span class="title">Combinations</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="Hands-On-Sessions.html" class="internal"><span class="codenumber">5</span> <span class="title">Hands-On Sessions</span></a></div></li>
@@ -222,20 +227,24 @@ eBookConfig.enable_chatcodes =  false;
 <h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Fundamentals of Probability</span>
 </h2>
-<article class="assemblage assemblage-like" id="assemblage-theoretical-probability">
-<div class="para logical" id="assemblage-theoretical-probability-2">
-<div class="para">If an event E has <span class="process-math">\(n(E)\)</span> equally likely outcomes and its sample space S has <span class="process-math">\(n(S)\)</span> equally likely outcomes, the <em class="alert">theoretical probability</em> of event, <span class="process-math">\(P(E)\text{,}\)</span> is</div>
-<div class="displaymath process-math" id="assemblage-theoretical-probability-2-5">
+<article class="definition definition-like" id="def-theoretical-probability"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Probability Formula.</span>
+</h3>
+<div class="para" id="def-theoretical-probability-2-1">The <em class="alert">theoretical probability</em> of an event is a measure of how likely that event is to occur based on the assumption that all outcomes in the sample space are equally likely.<div class="autopermalink" data-description="Paragraph"><a href="#def-theoretical-probability-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="def-theoretical-probability-2-2">
+<div class="para">If an event E has <span class="process-math">\(n(E)\)</span> equally likely outcomes and its sample space S has <span class="process-math">\(n(S)\)</span> equally likely outcomes, the <em class="alert">probability</em> of event, <span class="process-math">\(P(E)\text{,}\)</span> is</div>
+<div class="displaymath process-math" id="def-theoretical-probability-2-2-5">
 \begin{gather*}
 P(E) = \frac{\text{number of outcomes in event } E}{\text{total number of outcomes in sample space}} = \frac{n(E)}{n(S)}
 \end{gather*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-theoretical-probability-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-theoretical-probability-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage: "><a href="#assemblage-theoretical-probability" title="Copy heading and permalink for Assemblage: " aria-label="Copy heading and permalink for Assemblage: ">🔗</a></div>
+<div class="autopermalink" data-description="Definition 4.1: Probability Formula"><a href="#def-theoretical-probability" title="Copy heading and permalink for Definition 4.1: Probability Formula" aria-label="Copy heading and permalink for Definition 4.1: Probability Formula">🔗</a></div>
 </article>
 <details id="ch-Probability-3-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Probability of a Single Die Roll.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Probability of a Single Die Roll.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
 <div class="para" id="ch-Probability-3-3-2-1">A die is rolled. The set of equally likely outcomes is <span class="process-math">\(\{1, 2, 3, 4, 5, 6\}\text{.}\)</span> Find the probability of rolling:<div class="autopermalink" data-description="Paragraph"><a href="#ch-Probability-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -294,13 +303,13 @@ P(E) = \frac{\text{number of outcomes in event } E}{\text{total number of outcom
 </ol>
 <div class="autopermalink" data-description="Paragraph"><a href="#ch-Probability-3-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.1.1"><a href="#ch-Probability-3-3-3" title="Copy heading and permalink for Solution 4.1.1" aria-label="Copy heading and permalink for Solution 4.1.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.2.1"><a href="#ch-Probability-3-3-3" title="Copy heading and permalink for Solution 4.2.1" aria-label="Copy heading and permalink for Solution 4.2.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.1: Probability of a Single Die Roll"><a href="#ch-Probability-3-3" title="Copy heading and permalink for Example 4.1: Probability of a Single Die Roll" aria-label="Copy heading and permalink for Example 4.1: Probability of a Single Die Roll">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.2: Probability of a Single Die Roll"><a href="#ch-Probability-3-3" title="Copy heading and permalink for Example 4.2: Probability of a Single Die Roll" aria-label="Copy heading and permalink for Example 4.2: Probability of a Single Die Roll">🔗</a></div>
 </article></details>
 <details id="ch-Probability-3-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Probability of a Pair of Dice.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Probability of a Pair of Dice.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
 <div class="para" id="ch-Probability-3-4-2-1">A single die is rolled twice. Find the probability of rolling:<div class="autopermalink" data-description="Paragraph"><a href="#ch-Probability-3-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -335,7 +344,7 @@ P(E) = \frac{\text{number of outcomes in event } E}{\text{total number of outcom
 <div class="solutions">
 <details id="ch-Probability-3-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<figure class="table table-like" id="table-dice-sample-space"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Sample Space for Two Six-Sided Dice<div class="autopermalink" data-description="Table 4.3: Sample Space for Two Six-Sided Dice"><a href="#table-dice-sample-space" title="Copy heading and permalink for Table 4.3: Sample Space for Two Six-Sided Dice" aria-label="Copy heading and permalink for Table 4.3: Sample Space for Two Six-Sided Dice">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="table-dice-sample-space"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Sample Space for Two Six-Sided Dice<div class="autopermalink" data-description="Table 4.4: Sample Space for Two Six-Sided Dice"><a href="#table-dice-sample-space" title="Copy heading and permalink for Table 4.4: Sample Space for Two Six-Sided Dice" aria-label="Copy heading and permalink for Table 4.4: Sample Space for Two Six-Sided Dice">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">Die 1 \ 2</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">1</th>
@@ -454,13 +463,13 @@ P(E) = \frac{\text{number of outcomes in event } E}{\text{total number of outcom
 <div class="autopermalink" data-description="Item 5"><a href="#ch-Probability-3-4-3-2-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Solution 4.2.1"><a href="#ch-Probability-3-4-3" title="Copy heading and permalink for Solution 4.2.1" aria-label="Copy heading and permalink for Solution 4.2.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.3.1"><a href="#ch-Probability-3-4-3" title="Copy heading and permalink for Solution 4.3.1" aria-label="Copy heading and permalink for Solution 4.3.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.2: Probability of a Pair of Dice"><a href="#ch-Probability-3-4" title="Copy heading and permalink for Example 4.2: Probability of a Pair of Dice" aria-label="Copy heading and permalink for Example 4.2: Probability of a Pair of Dice">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.3: Probability of a Pair of Dice"><a href="#ch-Probability-3-4" title="Copy heading and permalink for Example 4.3: Probability of a Pair of Dice" aria-label="Copy heading and permalink for Example 4.3: Probability of a Pair of Dice">🔗</a></div>
 </article></details>
 <details id="ch-Probability-3-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Probability of Drawing a Single deck of Cards.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Probability of Drawing a Single deck of Cards.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
 <div class="para" id="ch-Probability-3-5-2-1">You are dealt one card from a standard 52-card deck. Find the probability of being dealt:<div class="autopermalink" data-description="Paragraph"><a href="#ch-Probability-3-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -503,11 +512,11 @@ P(E) = \frac{\text{number of outcomes in event } E}{\text{total number of outcom
 </li>
 </ol> 
 <figure class="figure figure-like" id="fig-deck-of-cards"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/cards.png" class="contained" alt="A grid showing all 52 playing cards organized by suit: Clubs and Spades in black, Hearts and Diamonds in red."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A standard deck of 52 playing cards.<div class="autopermalink" data-description="Figure 4.5"><a href="#fig-deck-of-cards" title="Copy heading and permalink for Figure 4.5" aria-label="Copy heading and permalink for Figure 4.5">🔗</a></div></figcaption>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A standard deck of 52 playing cards.<div class="autopermalink" data-description="Figure 4.6"><a href="#fig-deck-of-cards" title="Copy heading and permalink for Figure 4.6" aria-label="Copy heading and permalink for Figure 4.6">🔗</a></div></figcaption>
 </figure><div class="solutions">
 <details id="ch-Probability-3-5-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<figure class="table table-like" id="table-deck-color"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Standard Deck of 52 Playing Cards<div class="autopermalink" data-description="Table 4.6: Standard Deck of 52 Playing Cards"><a href="#table-deck-color" title="Copy heading and permalink for Table 4.6: Standard Deck of 52 Playing Cards" aria-label="Copy heading and permalink for Table 4.6: Standard Deck of 52 Playing Cards">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="table-deck-color"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Standard Deck of 52 Playing Cards<div class="autopermalink" data-description="Table 4.7: Standard Deck of 52 Playing Cards"><a href="#table-deck-color" title="Copy heading and permalink for Table 4.7: Standard Deck of 52 Playing Cards" aria-label="Copy heading and permalink for Table 4.7: Standard Deck of 52 Playing Cards">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">Suit</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">A</th>
@@ -629,13 +638,13 @@ P(E) = \frac{\text{number of outcomes in event } E}{\text{total number of outcom
 <div class="autopermalink" data-description="Item 7"><a href="#ch-Probability-3-5-3-3-7" title="Copy heading and permalink for Item 7" aria-label="Copy heading and permalink for Item 7">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Solution 4.4.1"><a href="#ch-Probability-3-5-3" title="Copy heading and permalink for Solution 4.4.1" aria-label="Copy heading and permalink for Solution 4.4.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.5.1"><a href="#ch-Probability-3-5-3" title="Copy heading and permalink for Solution 4.5.1" aria-label="Copy heading and permalink for Solution 4.5.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.4: Probability of Drawing a Single deck of Cards"><a href="#ch-Probability-3-5" title="Copy heading and permalink for Example 4.4: Probability of Drawing a Single deck of Cards" aria-label="Copy heading and permalink for Example 4.4: Probability of Drawing a Single deck of Cards">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.5: Probability of Drawing a Single deck of Cards"><a href="#ch-Probability-3-5" title="Copy heading and permalink for Example 4.5: Probability of Drawing a Single deck of Cards" aria-label="Copy heading and permalink for Example 4.5: Probability of Drawing a Single deck of Cards">🔗</a></div>
 </article></details>
 <details id="ch-Probability-3-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Probability of Three Coin Tosses.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Probability of Three Coin Tosses.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
 <div class="para" id="ch-Probability-3-6-2-1">A fair coin is tossed three times in succession. The set of equally likely outcomes is <span class="process-math">\(\{HHH, HHT, HTH, HTT, THH, THT, TTH, TTT\}\text{.}\)</span> Find the probability of getting:<div class="autopermalink" data-description="Paragraph"><a href="#ch-Probability-3-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -666,7 +675,7 @@ P(E) = \frac{\text{number of outcomes in event } E}{\text{total number of outcom
 <details id="ch-Probability-3-6-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
 <figure class="figure figure-like" id="fig-coin-toss-tree-clean"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="generated/latex-image/fig-coin-toss-tree-clean-2.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Tree diagram for three coin tosses<div class="autopermalink" data-description="Figure 4.8"><a href="#fig-coin-toss-tree-clean" title="Copy heading and permalink for Figure 4.8" aria-label="Copy heading and permalink for Figure 4.8">🔗</a></div></figcaption>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Tree diagram for three coin tosses<div class="autopermalink" data-description="Figure 4.9"><a href="#fig-coin-toss-tree-clean" title="Copy heading and permalink for Figure 4.9" aria-label="Copy heading and permalink for Figure 4.9">🔗</a></div></figcaption>
 </figure>
 <div class="para" id="ch-Probability-3-6-3-2">The total number of outcomes is 8.<div class="autopermalink" data-description="Paragraph"><a href="#ch-Probability-3-6-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -692,19 +701,19 @@ P(E) = \frac{\text{number of outcomes in event } E}{\text{total number of outcom
 <div class="autopermalink" data-description="Item 4"><a href="#ch-Probability-3-6-3-3-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Solution 4.7.1"><a href="#ch-Probability-3-6-3" title="Copy heading and permalink for Solution 4.7.1" aria-label="Copy heading and permalink for Solution 4.7.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.8.1"><a href="#ch-Probability-3-6-3" title="Copy heading and permalink for Solution 4.8.1" aria-label="Copy heading and permalink for Solution 4.8.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.7: Probability of Three Coin Tosses"><a href="#ch-Probability-3-6" title="Copy heading and permalink for Example 4.7: Probability of Three Coin Tosses" aria-label="Copy heading and permalink for Example 4.7: Probability of Three Coin Tosses">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.8: Probability of Three Coin Tosses"><a href="#ch-Probability-3-6" title="Copy heading and permalink for Example 4.8: Probability of Three Coin Tosses" aria-label="Copy heading and permalink for Example 4.8: Probability of Three Coin Tosses">🔗</a></div>
 </article></details>
 <details id="ch-Probability-3-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Probability of a Coin Toss and Die Roll.</span>
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Probability of a Coin Toss and Die Roll.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content">
 <div class="para" id="ch-Probability-3-7-2-1">A coin is tossed and a die is rolled. The tree diagram below illustrates the sample space of 12 equally likely outcomes.<div class="autopermalink" data-description="Paragraph"><a href="#ch-Probability-3-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
 <figure class="figure figure-like" id="fig-tree-coin-die"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/img-tree-coin-die.svg" role="img" class="contained" alt="A tree diagram starting from a point, splitting into Head and Tail. Each of those branches then splits into six branches numbered 1 through 6, ending in outcomes like (H, 1), (H, 2), etc."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Tree diagram for tossing a coin and rolling a die.<div class="autopermalink" data-description="Figure 4.10"><a href="#fig-tree-coin-die" title="Copy heading and permalink for Figure 4.10" aria-label="Copy heading and permalink for Figure 4.10">🔗</a></div></figcaption>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Tree diagram for tossing a coin and rolling a die.<div class="autopermalink" data-description="Figure 4.11"><a href="#fig-tree-coin-die" title="Copy heading and permalink for Figure 4.11" aria-label="Copy heading and permalink for Figure 4.11">🔗</a></div></figcaption>
 </figure> 
 <div class="para" id="ch-Probability-3-7-2-3">Find the probability of getting:<div class="autopermalink" data-description="Paragraph"><a href="#ch-Probability-3-7-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
@@ -712,17 +721,17 @@ P(E) = \frac{\text{number of outcomes in event } E}{\text{total number of outcom
 <li id="ch-Probability-3-7-2-4-1">
 <div class="para" id="ch-Probability-3-7-2-4-1-1">a head and an even number.<div class="autopermalink" data-description="Paragraph"><a href="#ch-Probability-3-7-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.9.1"><a href="#ch-Probability-3-7-2-4-1" title="Copy heading and permalink for Item 4.9.1" aria-label="Copy heading and permalink for Item 4.9.1">🔗</a></div>
+<div class="autopermalink" data-description="Item 4.10.1"><a href="#ch-Probability-3-7-2-4-1" title="Copy heading and permalink for Item 4.10.1" aria-label="Copy heading and permalink for Item 4.10.1">🔗</a></div>
 </li>
 <li id="ch-Probability-3-7-2-4-2">
 <div class="para" id="ch-Probability-3-7-2-4-2-1">a tail and a number less than 3.<div class="autopermalink" data-description="Paragraph"><a href="#ch-Probability-3-7-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.9.2"><a href="#ch-Probability-3-7-2-4-2" title="Copy heading and permalink for Item 4.9.2" aria-label="Copy heading and permalink for Item 4.9.2">🔗</a></div>
+<div class="autopermalink" data-description="Item 4.10.2"><a href="#ch-Probability-3-7-2-4-2" title="Copy heading and permalink for Item 4.10.2" aria-label="Copy heading and permalink for Item 4.10.2">🔗</a></div>
 </li>
 <li id="ch-Probability-3-7-2-4-3">
 <div class="para" id="ch-Probability-3-7-2-4-3-1">a head and a number greater than 6.<div class="autopermalink" data-description="Paragraph"><a href="#ch-Probability-3-7-2-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.9.3"><a href="#ch-Probability-3-7-2-4-3" title="Copy heading and permalink for Item 4.9.3" aria-label="Copy heading and permalink for Item 4.9.3">🔗</a></div>
+<div class="autopermalink" data-description="Item 4.10.3"><a href="#ch-Probability-3-7-2-4-3" title="Copy heading and permalink for Item 4.10.3" aria-label="Copy heading and permalink for Item 4.10.3">🔗</a></div>
 </li>
 </ol>
 <div class="solutions">
@@ -734,23 +743,23 @@ P(E) = \frac{\text{number of outcomes in event } E}{\text{total number of outcom
 <li id="ch-Probability-3-7-3-2-1">
 <div class="para" id="ch-Probability-3-7-3-2-1-1">The outcomes for a head and an even number are <span class="process-math">\(\{(H, 2), (H, 4), (H, 6)\}\text{.}\)</span> There are 3 such outcomes, so <span class="process-math">\(P(\text{head and even}) = \frac{3}{12} = \frac{1}{4}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch-Probability-3-7-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.9.1"><a href="#ch-Probability-3-7-3-2-1" title="Copy heading and permalink for Item 4.9.1" aria-label="Copy heading and permalink for Item 4.9.1">🔗</a></div>
+<div class="autopermalink" data-description="Item 4.10.1"><a href="#ch-Probability-3-7-3-2-1" title="Copy heading and permalink for Item 4.10.1" aria-label="Copy heading and permalink for Item 4.10.1">🔗</a></div>
 </li>
 <li id="ch-Probability-3-7-3-2-2">
 <div class="para" id="ch-Probability-3-7-3-2-2-1">The outcomes for a tail and a number less than 3 are <span class="process-math">\(\{(T, 1), (T, 2)\}\text{.}\)</span> There are 2 such outcomes, so <span class="process-math">\(P(\text{tail and less than 3}) = \frac{2}{12} = \frac{1}{6}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch-Probability-3-7-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.9.2"><a href="#ch-Probability-3-7-3-2-2" title="Copy heading and permalink for Item 4.9.2" aria-label="Copy heading and permalink for Item 4.9.2">🔗</a></div>
+<div class="autopermalink" data-description="Item 4.10.2"><a href="#ch-Probability-3-7-3-2-2" title="Copy heading and permalink for Item 4.10.2" aria-label="Copy heading and permalink for Item 4.10.2">🔗</a></div>
 </li>
 <li id="ch-Probability-3-7-3-2-3">
 <div class="para" id="ch-Probability-3-7-3-2-3-1">Since a standard die only goes up to 6, it is impossible to roll a number greater than 6. The probability is <span class="process-math">\(\frac{0}{12} = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ch-Probability-3-7-3-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.9.3"><a href="#ch-Probability-3-7-3-2-3" title="Copy heading and permalink for Item 4.9.3" aria-label="Copy heading and permalink for Item 4.9.3">🔗</a></div>
+<div class="autopermalink" data-description="Item 4.10.3"><a href="#ch-Probability-3-7-3-2-3" title="Copy heading and permalink for Item 4.10.3" aria-label="Copy heading and permalink for Item 4.10.3">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Solution 4.9.1"><a href="#ch-Probability-3-7-3" title="Copy heading and permalink for Solution 4.9.1" aria-label="Copy heading and permalink for Solution 4.9.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.10.1"><a href="#ch-Probability-3-7-3" title="Copy heading and permalink for Solution 4.10.1" aria-label="Copy heading and permalink for Solution 4.10.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 4.9: Probability of a Coin Toss and Die Roll"><a href="#ch-Probability-3-7" title="Copy heading and permalink for Checkpoint 4.9: Probability of a Coin Toss and Die Roll" aria-label="Copy heading and permalink for Checkpoint 4.9: Probability of a Coin Toss and Die Roll">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 4.10: Probability of a Coin Toss and Die Roll"><a href="#ch-Probability-3-7" title="Copy heading and permalink for Checkpoint 4.10: Probability of a Coin Toss and Die Roll" aria-label="Copy heading and permalink for Checkpoint 4.10: Probability of a Coin Toss and Die Roll">🔗</a></div>
 </article></details><div class="autopermalink" data-description="Section: Fundamentals of Probability"><a href="#ch-Probability-3" title="Copy heading and permalink for Section: Fundamentals of Probability" aria-label="Copy heading and permalink for Section: Fundamentals of Probability">🔗</a></div>
 </section>
 </div>

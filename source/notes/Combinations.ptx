@@ -1,0 +1,115 @@
+<section xml:id="sec-combinations">
+  <title>Combinations</title>
+
+  <definition xml:id="def-combination">
+    <title>Combination</title>
+    <statement>
+      <p>
+        A <term>combination</term> of items occurs when:
+        <ul>
+          <li><p>The items are selected from the same group.</p></li>
+          <li><p>No item is used more than once.</p></li>
+          <li><p><alert>The order of items makes no difference</alert>.</p></li>
+        </ul>
+      </p>
+    </statement>
+  </definition>
+
+  <exercise>
+    <title>Distinguishing Permutations and Combinations</title>
+    <statement>
+      <p>
+        For each of the following, determine whether the problem involves permutations or combinations:
+      </p>
+      <ol>
+        <li><p>How many ways can you select 6 free videos from a list of 200 videos?</p></li>
+        <li><p>In a race with 50 runners and no ties, in how many ways can the first three finishers come in?</p></li>
+        <li><p>Baskin-Robbins offers 31 flavors. How many different three-scoop bowls (each a different flavor) are possible?</p></li>
+        <li><p>A three-person committee is needed from a board of six supervisors. How many different committees can be formed?</p></li>
+      </ol>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li><p><term>Combination</term>: The order in which you pick the videos doesn't change the set you get to watch.</p></li>
+          <li><p><term>Permutation</term>: Order matters because 1st, 2nd, and 3rd place are different rankings.</p></li>
+          <li><p><term>Combination</term>: A bowl of Chocolate, Vanilla, and Strawberry is the same as Strawberry, Vanilla, and Chocolate.</p></li>
+          <li><p><term>Combination</term>: On a committee, all members have equal status; the order of selection does not change the group's makeup.</p></li>
+        </ol>
+      </p>
+    </solution>
+  </exercise>
+
+  <definition xml:id="def-combination-formula">
+    <title>The Combination Formula</title>
+    <statement>
+      <p>
+        The number of combinations of <m>n</m> things taken <m>r</m> at a time is denoted by <m>{}_n C_r</m>:
+        <me>{}_n C_r = \frac{n!}{(n-r)!r!}</me>
+      </p>
+    </statement>
+  </definition>
+
+  <example>
+    <title>Public Transportation Committee</title>
+    <statement>
+      <p>
+        A three-person committee is needed to study ways of improving public transportation. How many committees could be formed from the eight people on the board of supervisors?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Since this is a committee where roles are not specified, the order does not matter. We use the combination formula with <m>n=8</m> and <m>r=3</m>:
+        <me>{}_8 C_3 = \frac{8!}{(8-3)!3!} = \frac{8!}{5!3!}</me>
+        Expanding the factorials:
+        <me>\frac{8 \cdot 7 \cdot 6 \cdot 5!}{5! \cdot (3 \cdot 2 \cdot 1)} = \frac{336}{6} = 56</me>
+        There are 56 possible committees.
+      </p>
+      <p>
+        <alert>TI-30XIIS Keystrokes:</alert>
+        Type <c>8</c> <m>\rightarrow</m> <c>PRB</c> <m>\rightarrow</m> Use arrow to underline <c>nCr</c> <m>\rightarrow</m> <c>ENTER</c> <m>\rightarrow</m> <c>3</c> <m>\rightarrow</m> <c>ENTER</c>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <title>The 107th Congress Committee</title>
+    <statement>
+      <p>
+        The U.S. Senate of the 107th Congress consisted of 50 Democrats, 49 Republicans, and one independent. How many committees can be formed if each committee must have 3 Democrats and 2 Republicans?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We must choose the Democrats and the Republicans separately and then use the Fundamental Counting Principle to multiply them.
+      </p>
+      <p>
+        Step 1: Choose 3 Democrats from 50:
+        <me>{}_{50} C_3 = \frac{50 \cdot 49 \cdot 48}{3 \cdot 2 \cdot 1} = 19,600</me>
+        Step 2: Choose 2 Republicans from 49:
+        <me>{}_{49} C_2 = \frac{49 \cdot 48}{2 \cdot 1} = 1,176</me>
+        Step 3: Multiply the results:
+        <me>19,600 \cdot 1,176 = 23,049,600</me>
+        There are 23,049,600 possible committees.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <title>Lottery Selections</title>
+    <statement>
+      <p>
+        To win a Mega Millions lottery, you must pick 5 numbers from a collection of 56, and one Megaball number from a collection of 46. The order of the first 5 numbers does not matter. How many different selections are possible?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        First, we calculate the combinations for the 5 numbers:
+        <me>{}_{56} C_5 = \frac{56!}{51!5!} = 3,819,816</me>
+        Next, there are 46 choices for the single Megaball. We multiply these together:
+        <me>3,819,816 \cdot 46 = 175,711,536</me>
+        There are over 175 million possible number combinations.
+      </p>
+    </solution>
+  </example>
+</section>

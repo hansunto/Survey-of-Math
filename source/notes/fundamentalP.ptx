@@ -3,15 +3,20 @@
 <section>
     <title>Fundamentals of Probability</title>
 
-    <assemblage xml:id="assemblage-theoretical-probability">
-        <title></title>
+    <definition xml:id="def-theoretical-probability">
+      <title>Probability Formula</title>
+      <statement>
         <p>
-    If an event E has <m>n(E)</m> equally likely outcomes and its sample space S has <m>n(S)</m> equally likely outcomes, the <alert>theoretical probability</alert> of event, <m>P(E)</m>, is
+          The <alert>theoretical probability</alert> of an event is a measure of how likely that event is to occur based on the assumption that all outcomes in the sample space are equally likely.
+        </p>
+        <p>
+    If an event E has <m>n(E)</m> equally likely outcomes and its sample space S has <m>n(S)</m> equally likely outcomes, the <alert>probability</alert> of event, <m>P(E)</m>, is
     <md>
     <mrow>P(E) = \frac{\text{number of outcomes in event } E}{\text{total number of outcomes in sample space}} = \frac{n(E)}{n(S)}</mrow>
   </md>
         </p>
-    </assemblage>
+        </statement>
+    </definition>
 <example>
   <title>Probability of a Single Die Roll</title>
   <statement>

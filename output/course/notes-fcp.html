@@ -136,7 +136,7 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-events-not-or.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Probability.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-permutations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-events-not-or.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Probability.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="notes-factorials.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
@@ -205,8 +205,13 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Probability-3.html" class="internal"><span class="title">Fundamentals of Probability</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-events-not-or.html" class="internal"><span class="title">Events Involving NOT and OR</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="notes-fcp.html" class="internal"><span class="title">The Fundamental Counting Principle</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="notes-fcp.html" class="internal"><span class="title">The Fundamental Counting Principle</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-fcp.html#exercises-FCP" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-factorials.html" class="internal"><span class="title">Factorials</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-permutations.html" class="internal"><span class="title">Permutations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-combinations.html" class="internal"><span class="title">Combinations</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="Hands-On-Sessions.html" class="internal"><span class="codenumber">5</span> <span class="title">Hands-On Sessions</span></a></div></li>
@@ -222,241 +227,250 @@ eBookConfig.enable_chatcodes =  false;
 <h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Fundamental Counting Principle</span>
 </h2>
-<div class="para" id="notes-fcp-2">The probability of winning the top prize in the lottery is about the same as the probability of being struck by lightning. There are a million possible number combinations in the lottery games, and only one way of winning the grand prize.<div class="autopermalink" data-description="Paragraph"><a href="#notes-fcp-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="notes-fcp-2">
+<div class="para" id="notes-fcp-2-1">The Fundamental Counting Principle is a powerful tool for counting the number of possible outcomes in a variety of situations. It allows us to determine the total number of combinations or arrangements by multiplying the number of choices for each independent event.<div class="autopermalink" data-description="Paragraph"><a href="#notes-fcp-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<div class="para" id="notes-fcp-3">The probability of winning the top prize in the lottery is about the same as the probability of being struck by lightning. There are a million possible number combinations in the lottery games, and only one way of winning the grand prize.<div class="autopermalink" data-description="Paragraph"><a href="#notes-fcp-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="notes-fcp-3">We can generalize the idea to any two groups of items with the <em class="alert">Fundamental Counting Principle</em>.<div class="autopermalink" data-description="Paragraph"><a href="#notes-fcp-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="notes-fcp-4">We can generalize the idea to any two groups of items with the <em class="alert">Fundamental Counting Principle</em>.<div class="autopermalink" data-description="Paragraph"><a href="#notes-fcp-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="definition-fundamental-counting-two-groups"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Fundamental Counting Principle.</span>
-</h3>
-<div class="para" id="definition-fundamental-counting-two-groups-2-1">If you can select one item from a group of <span class="process-math">\(M\)</span> items and another item from a group of <span class="process-math">\(N\)</span> items, then the total number of possible two-item combinations is <span class="process-math">\(M \cdot N\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-fundamental-counting-two-groups-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Definition 4.19: The Fundamental Counting Principle"><a href="#definition-fundamental-counting-two-groups" title="Copy heading and permalink for Definition 4.19: The Fundamental Counting Principle" aria-label="Copy heading and permalink for Definition 4.19: The Fundamental Counting Principle">🔗</a></div>
-</article>
-<details id="exercise-two-course-meal-1" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Restaurant two-course meal.</span>
-</h3></summary>
-<article class="exercise exercise-like knowl__content">
-<div class="para" id="exercise-two-course-meal-1-2-1">The Greasy Spoon Restaurant offers 6 appetizers and 14 main courses. In how many ways can a person order a two-course meal?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-two-course-meal-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="solutions">
-<details id="exercise-two-course-meal-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
-<div class="para" id="exercise-two-course-meal-1-3-1">Use the Fundamental Counting Principle: choose 1 appetizer and 1 main course.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-two-course-meal-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<span class="process-math">\(6 \cdot 14 = 84\)</span>
-<div class="para" id="exercise-two-course-meal-1-3-3">There are 84 different two-course meals.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-two-course-meal-1-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 4.20.1"><a href="#exercise-two-course-meal-1-3" title="Copy heading and permalink for Solution 4.20.1" aria-label="Copy heading and permalink for Solution 4.20.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Checkpoint 4.20: Restaurant two-course meal"><a href="#exercise-two-course-meal-1" title="Copy heading and permalink for Checkpoint 4.20: Restaurant two-course meal" aria-label="Copy heading and permalink for Checkpoint 4.20: Restaurant two-course meal">🔗</a></div>
-</article></details>
-<details id="example-two-course-meal" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.21</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Two-course meal.</span>
-</h3></summary>
-<article class="example example-like knowl__content">
-<div class="para" id="example-two-course-meal-2-1">A restaurant offers 10 appetizers and 15 main courses. In how many ways can a person order a two-course meal?<div class="autopermalink" data-description="Paragraph"><a href="#example-two-course-meal-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="solutions">
-<details id="example-two-course-meal-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
-<div class="para" id="example-two-course-meal-3-1">Use the Fundamental Counting Principle and multiply the number of appetizers by the number of main courses.<div class="autopermalink" data-description="Paragraph"><a href="#example-two-course-meal-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<span class="process-math">\(10 \cdot 15 = 150\)</span>
-<div class="para" id="example-two-course-meal-3-3">There are 150 possible two-course meals.<div class="autopermalink" data-description="Paragraph"><a href="#example-two-course-meal-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 4.21.1"><a href="#example-two-course-meal-3" title="Copy heading and permalink for Solution 4.21.1" aria-label="Copy heading and permalink for Solution 4.21.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Example 4.21: Two-course meal"><a href="#example-two-course-meal" title="Copy heading and permalink for Example 4.21: Two-course meal" aria-label="Copy heading and permalink for Example 4.21: Two-course meal">🔗</a></div>
-</article></details>
-<details id="example-course-schedule" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.22</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Psychology and social science scheduling.</span>
-</h3></summary>
-<article class="example example-like knowl__content">
-<div class="para" id="example-course-schedule-2-1">This is a semester that you will take your required psychology and social sciences courses. Because you decide to register early, there are 15 sections of psychology from which you can choose. Moreover, there are 9 sections of social science that are available at times that do not conflict with those of psychology. In how many ways can you create two-course schedules that satisfy the psychology-social science requirement?<div class="autopermalink" data-description="Paragraph"><a href="#example-course-schedule-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="solutions">
-<details id="example-course-schedule-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
-<div class="para" id="example-course-schedule-3-1">Multiply the number of psychology section options by the number of social science section options.<div class="autopermalink" data-description="Paragraph"><a href="#example-course-schedule-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<span class="process-math">\(15 \cdot 9 = 135\)</span>
-<div class="para" id="example-course-schedule-3-3">There are 135 possible two-course schedules.<div class="autopermalink" data-description="Paragraph"><a href="#example-course-schedule-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 4.22.1"><a href="#example-course-schedule-3" title="Copy heading and permalink for Solution 4.22.1" aria-label="Copy heading and permalink for Solution 4.22.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Example 4.22: Psychology and social science scheduling"><a href="#example-course-schedule" title="Copy heading and permalink for Example 4.22: Psychology and social science scheduling" aria-label="Copy heading and permalink for Example 4.22: Psychology and social science scheduling">🔗</a></div>
-</article></details>
-<article class="definition definition-like" id="definition-fundamental-counting-multiple-events"><h3 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.23</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Fundamental Counting Principle.</span>
 </h3>
-<div class="para" id="definition-fundamental-counting-multiple-events-2-1">The number of ways in which a series of successive events can occur is determined <em class="alert">by multiplying</em> the number of ways each individual event can happen.<div class="autopermalink" data-description="Paragraph"><a href="#definition-fundamental-counting-multiple-events-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="definition-fundamental-counting-two-groups-2-1">If there are <span class="process-math">\(M\)</span> ways to choose an item from one group and <span class="process-math">\(N\)</span> ways to choose an item from another group, then there are <span class="process-math">\(M \cdot N\)</span> ways to choose one item from each group.<div class="autopermalink" data-description="Paragraph"><a href="#definition-fundamental-counting-two-groups-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 4.23: The Fundamental Counting Principle"><a href="#definition-fundamental-counting-multiple-events" title="Copy heading and permalink for Definition 4.23: The Fundamental Counting Principle" aria-label="Copy heading and permalink for Definition 4.23: The Fundamental Counting Principle">🔗</a></div>
+<div class="autopermalink" data-description="Definition 4.23: The Fundamental Counting Principle"><a href="#definition-fundamental-counting-two-groups" title="Copy heading and permalink for Definition 4.23: The Fundamental Counting Principle" aria-label="Copy heading and permalink for Definition 4.23: The Fundamental Counting Principle">🔗</a></div>
 </article>
-<details id="exercise-one-topping-pizza" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.24</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">One-topping pizza choices.</span>
-</h3></summary>
-<article class="exercise exercise-like knowl__content">
-<div class="para" id="exercise-one-topping-pizza-2-1">A pizza can be ordered with two choices of size (medium or large), three choices of crust (thin, thick or regular), and five choices of toppings (ground beef, sausage, pepperoni, bacon and mushrooms). How many different one-topping pizzas can be ordered?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-one-topping-pizza-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="solutions">
-<details id="exercise-one-topping-pizza-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
-<div class="para" id="exercise-one-topping-pizza-3-1">Multiply the number of size choices by the number of crust choices and the number of topping choices.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-one-topping-pizza-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<span class="process-math">\(2 \cdot 3 \cdot 5 = 30\)</span>
-<div class="para" id="exercise-one-topping-pizza-3-3">There are 30 different one-topping pizzas.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-one-topping-pizza-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 4.24.1"><a href="#exercise-one-topping-pizza-3" title="Copy heading and permalink for Solution 4.24.1" aria-label="Copy heading and permalink for Solution 4.24.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Checkpoint 4.24: One-topping pizza choices"><a href="#exercise-one-topping-pizza" title="Copy heading and permalink for Checkpoint 4.24: One-topping pizza choices" aria-label="Copy heading and permalink for Checkpoint 4.24: One-topping pizza choices">🔗</a></div>
-</article></details>
-<details id="exercise-three-wheel-car-options" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.25</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Three-wheel car options.</span>
-</h3></summary>
-<article class="exercise exercise-like knowl__content">
-<div class="para" id="exercise-three-wheel-car-options-2-1">Car manufacturers are now experimenting with lightweight three-wheel cars, designed for one person and considered ideal for city driving. Suppose you could order such a car with a choice of 9 possible colors, with or without air conditioning, electric or gas powered, and with or without an on-board computer. In how many ways can this car be ordered with regard to these options?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-three-wheel-car-options-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="solutions">
-<details id="exercise-three-wheel-car-options-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
-<div class="para" id="exercise-three-wheel-car-options-3-1">Multiply the number of choices for each independent feature.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-three-wheel-car-options-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<span class="process-math">\(9 \cdot 2 \cdot 2 \cdot 2 = 72\)</span>
-<div class="para" id="exercise-three-wheel-car-options-3-3">There are 72 possible car orders.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-three-wheel-car-options-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 4.25.1"><a href="#exercise-three-wheel-car-options-3" title="Copy heading and permalink for Solution 4.25.1" aria-label="Copy heading and permalink for Solution 4.25.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Checkpoint 4.25: Three-wheel car options"><a href="#exercise-three-wheel-car-options" title="Copy heading and permalink for Checkpoint 4.25: Three-wheel car options" aria-label="Copy heading and permalink for Checkpoint 4.25: Three-wheel car options">🔗</a></div>
-</article></details>
-<details id="example-car-ordering-with-gps" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.26</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Ordering a customizable car.</span>
+<details id="example-two-course-meal-1" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.24</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Restaurant two-course meal.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
-<div class="para" id="example-car-ordering-with-gps-2-1">The car in Example <a href="notes-fcp.html#exercise-three-wheel-car-options" class="xref" data-knowl="./knowl/xref/exercise-three-wheel-car-options.html" data-reveal-label="Reveal" data-close-label="Close" title="Checkpoint 4.25: Three-wheel car options">Checkpoint 4.25</a> is now available in 10 possible colors. The options involving air conditioning, power, and on-board computer still apply. Furthermore, the car is available with or without a global positioning system. In how many ways can this car be ordered in terms of these options?<div class="autopermalink" data-description="Paragraph"><a href="#example-car-ordering-with-gps-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-two-course-meal-1-2-1">The Greasy Spoon Restaurant offers 6 appetizers and 14 main courses. In how many ways can a person order a two-course meal?<div class="autopermalink" data-description="Paragraph"><a href="#example-two-course-meal-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="example-car-ordering-with-gps-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="example-two-course-meal-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="example-car-ordering-with-gps-3-1">Multiply the number of choices for each independent option.<div class="autopermalink" data-description="Paragraph"><a href="#example-car-ordering-with-gps-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-two-course-meal-1-3-1">Use the Fundamental Counting Principle: choose 1 appetizer and 1 main course.<div class="autopermalink" data-description="Paragraph"><a href="#example-two-course-meal-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<span class="process-math">\(10 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 160\)</span>
-<div class="para" id="example-car-ordering-with-gps-3-3">There are 160 possible car orders.<div class="autopermalink" data-description="Paragraph"><a href="#example-car-ordering-with-gps-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(6 \cdot 14 = 84\)</span>
+<div class="para" id="example-two-course-meal-1-3-3">There are 84 different two-course meals.<div class="autopermalink" data-description="Paragraph"><a href="#example-two-course-meal-1-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.26.1"><a href="#example-car-ordering-with-gps-3" title="Copy heading and permalink for Solution 4.26.1" aria-label="Copy heading and permalink for Solution 4.26.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.24.1"><a href="#example-two-course-meal-1-3" title="Copy heading and permalink for Solution 4.24.1" aria-label="Copy heading and permalink for Solution 4.24.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.26: Ordering a customizable car"><a href="#example-car-ordering-with-gps" title="Copy heading and permalink for Example 4.26: Ordering a customizable car" aria-label="Copy heading and permalink for Example 4.26: Ordering a customizable car">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.24: Restaurant two-course meal"><a href="#example-two-course-meal-1" title="Copy heading and permalink for Example 4.24: Restaurant two-course meal" aria-label="Copy heading and permalink for Example 4.24: Restaurant two-course meal">🔗</a></div>
 </article></details>
-<details id="exercise-ten-question-test" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.27</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Ten-question multiple-choice test.</span>
+<details id="exercise-two-course-meal" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.25</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Two-course meal.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="exercise-ten-question-test-2-1">You are taking a multiple-choice test that has ten questions. Each of the questions has four answer choices, with one correct answer per question. If you select one of these four choices for each question and leave nothing blank, in how many ways can you answer the questions?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-ten-question-test-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise-two-course-meal-2-1">The Diner offers 10 appetizers and 15 main courses. In how many ways can a person order a two-course meal?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-two-course-meal-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="exercise-ten-question-test-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise-two-course-meal-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="exercise-ten-question-test-3-1">This situation involves making choices with ten questions.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-ten-question-test-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise-two-course-meal-3-1">Use the Fundamental Counting Principle and multiply the number of appetizers by the number of main courses.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-two-course-meal-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math" id="exercise-ten-question-test-3-2">
+<span class="process-math">\(10 \cdot 15 = 150\)</span>
+<div class="para" id="exercise-two-course-meal-3-3">There are 150 possible two-course meals.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-two-course-meal-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.25.1"><a href="#exercise-two-course-meal-3" title="Copy heading and permalink for Solution 4.25.1" aria-label="Copy heading and permalink for Solution 4.25.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.25: Two-course meal"><a href="#exercise-two-course-meal" title="Copy heading and permalink for Checkpoint 4.25: Two-course meal" aria-label="Copy heading and permalink for Checkpoint 4.25: Two-course meal">🔗</a></div>
+</article></details>
+<details id="exercise-course-schedule" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.26</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Psychology and social science scheduling.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="exercise-course-schedule-2-1">This semester, you need to enroll in your required psychology and social science courses. Because you are registering early, you have 15 psychology sections to choose from. Additionally, there are 9 social science sections available that do not conflict with the psychology schedule. How many different two-course schedules can you create to fulfill these requirements?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-course-schedule-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise-course-schedule-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exercise-course-schedule-3-1">Multiply the number of psychology section options by the number of social science section options.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-course-schedule-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<span class="process-math">\(15 \cdot 9 = 135\)</span>
+<div class="para" id="exercise-course-schedule-3-3">There are 135 possible two-course schedules.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-course-schedule-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.26.1"><a href="#exercise-course-schedule-3" title="Copy heading and permalink for Solution 4.26.1" aria-label="Copy heading and permalink for Solution 4.26.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.26: Psychology and social science scheduling"><a href="#exercise-course-schedule" title="Copy heading and permalink for Checkpoint 4.26: Psychology and social science scheduling" aria-label="Copy heading and permalink for Checkpoint 4.26: Psychology and social science scheduling">🔗</a></div>
+</article></details>
+<article class="definition definition-like" id="definition-fundamental-counting-multiple-events"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.27</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Fundamental Counting Principle.</span>
+</h3>
+<div class="para" id="definition-fundamental-counting-multiple-events-2-1">If there are <span class="process-math">\(n\)</span> independent events and the first event can occur in <span class="process-math">\(m_1\)</span> ways, the second event can occur in <span class="process-math">\(m_2\)</span> ways, the third event can occur in <span class="process-math">\(m_3\)</span> ways, and so on, then the total number of ways that the events can occur is given by<div class="autopermalink" data-description="Paragraph"><a href="#definition-fundamental-counting-multiple-events-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="definition-fundamental-counting-multiple-events-2-2">
+\begin{equation*}
+m_1 \cdot m_2 \cdot m_3 \cdots m_n
+\end{equation*}
+</div>
+<div class="para" id="definition-fundamental-counting-multiple-events-2-3">by <em class="alert">multiplying</em> the number of ways each individual event can happen.<div class="autopermalink" data-description="Paragraph"><a href="#definition-fundamental-counting-multiple-events-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 4.27: The Fundamental Counting Principle"><a href="#definition-fundamental-counting-multiple-events" title="Copy heading and permalink for Definition 4.27: The Fundamental Counting Principle" aria-label="Copy heading and permalink for Definition 4.27: The Fundamental Counting Principle">🔗</a></div>
+</article>
+<details id="example-one-topping-pizza" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.28</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">One-topping pizza choices.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="example-one-topping-pizza-2-1">A pizza can be ordered with two choices of size (medium or large), three choices of crust (thin, thick or regular), and five choices of toppings (ground beef, sausage, pepperoni, bacon and mushrooms). How many different one-topping pizzas can be ordered?<div class="autopermalink" data-description="Paragraph"><a href="#example-one-topping-pizza-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="example-one-topping-pizza-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="example-one-topping-pizza-3-1">Multiply the number of size choices by the number of crust choices and the number of topping choices.<div class="autopermalink" data-description="Paragraph"><a href="#example-one-topping-pizza-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<span class="process-math">\(2 \cdot 3 \cdot 5 = 30\)</span>
+<div class="para" id="example-one-topping-pizza-3-3">There are 30 different one-topping pizzas.<div class="autopermalink" data-description="Paragraph"><a href="#example-one-topping-pizza-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.28.1"><a href="#example-one-topping-pizza-3" title="Copy heading and permalink for Solution 4.28.1" aria-label="Copy heading and permalink for Solution 4.28.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 4.28: One-topping pizza choices"><a href="#example-one-topping-pizza" title="Copy heading and permalink for Example 4.28: One-topping pizza choices" aria-label="Copy heading and permalink for Example 4.28: One-topping pizza choices">🔗</a></div>
+</article></details>
+<details id="example-three-wheel-car-options" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.29</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Three-wheel car options.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="example-three-wheel-car-options-2-1">Car manufacturers are now experimenting with lightweight three-wheel cars, designed for one person and considered ideal for city driving. Suppose you could order such a car with a choice of 9 possible colors, with or without air conditioning, electric or gas powered, and with or without an on-board computer. In how many ways can this car be ordered with regard to these options?<div class="autopermalink" data-description="Paragraph"><a href="#example-three-wheel-car-options-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="example-three-wheel-car-options-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="example-three-wheel-car-options-3-1">Multiply the number of choices for each independent feature.<div class="autopermalink" data-description="Paragraph"><a href="#example-three-wheel-car-options-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<span class="process-math">\(9 \cdot 2 \cdot 2 \cdot 2 = 72\)</span>
+<div class="para" id="example-three-wheel-car-options-3-3">There are 72 possible car orders.<div class="autopermalink" data-description="Paragraph"><a href="#example-three-wheel-car-options-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.29.1"><a href="#example-three-wheel-car-options-3" title="Copy heading and permalink for Solution 4.29.1" aria-label="Copy heading and permalink for Solution 4.29.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 4.29: Three-wheel car options"><a href="#example-three-wheel-car-options" title="Copy heading and permalink for Example 4.29: Three-wheel car options" aria-label="Copy heading and permalink for Example 4.29: Three-wheel car options">🔗</a></div>
+</article></details>
+<details id="exercise-car-ordering-with-gps" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.30</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Ordering a customizable car.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="exercise-car-ordering-with-gps-2-1">The car in Example <a href="notes-fcp.html#example-three-wheel-car-options" class="xref" data-knowl="./knowl/xref/example-three-wheel-car-options.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 4.29: Three-wheel car options">Example 4.29</a> is now available in 10 possible colors. The options involving air conditioning, power, and on-board computer still apply. Furthermore, the car is available with or without a global positioning system. In how many ways can this car be ordered in terms of these options?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-car-ordering-with-gps-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise-car-ordering-with-gps-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exercise-car-ordering-with-gps-3-1">Multiply the number of choices for each independent option.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-car-ordering-with-gps-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<span class="process-math">\(10 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 160\)</span>
+<div class="para" id="exercise-car-ordering-with-gps-3-3">There are 160 possible car orders.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-car-ordering-with-gps-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.30.1"><a href="#exercise-car-ordering-with-gps-3" title="Copy heading and permalink for Solution 4.30.1" aria-label="Copy heading and permalink for Solution 4.30.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.30: Ordering a customizable car"><a href="#exercise-car-ordering-with-gps" title="Copy heading and permalink for Checkpoint 4.30: Ordering a customizable car" aria-label="Copy heading and permalink for Checkpoint 4.30: Ordering a customizable car">🔗</a></div>
+</article></details>
+<details id="example-ten-question-test" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.31</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Ten-question multiple-choice test.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="example-ten-question-test-2-1">You are taking a multiple-choice test that has ten questions. Each of the questions has four answer choices, with one correct answer per question. If you select one of these four choices for each question and leave nothing blank, in how many ways can you answer the questions?<div class="autopermalink" data-description="Paragraph"><a href="#example-ten-question-test-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="example-ten-question-test-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="example-ten-question-test-3-1">This situation involves making choices with ten questions.<div class="autopermalink" data-description="Paragraph"><a href="#example-ten-question-test-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-ten-question-test-3-2">
 \begin{equation*}
 \text{Question 1 (4 choices) \\ Question 2 \\ Question 3 \\ \cdots \\ Question 10}
 \end{equation*}
 </div>
-<div class="para" id="exercise-ten-question-test-3-3">We use the Fundamental Counting Principle to find the number of ways that you can answer the questions on the test. Multiply the number of choices, 4, for each of the ten questions.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-ten-question-test-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-ten-question-test-3-3">We use the Fundamental Counting Principle to find the number of ways that you can answer the questions on the test. Multiply the number of choices, 4, for each of the ten questions.<div class="autopermalink" data-description="Paragraph"><a href="#example-ten-question-test-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<span class="process-math">\(4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 = 4^{10} = 1,048,576\)</span><div class="autopermalink" data-description="Solution 4.27.1"><a href="#exercise-ten-question-test-3" title="Copy heading and permalink for Solution 4.27.1" aria-label="Copy heading and permalink for Solution 4.27.1">🔗</a></div>
+<span class="process-math">\(4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 \cdot 4 = 4^{10} = 1,048,576\)</span><div class="autopermalink" data-description="Solution 4.31.1"><a href="#example-ten-question-test-3" title="Copy heading and permalink for Solution 4.31.1" aria-label="Copy heading and permalink for Solution 4.31.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 4.27: Ten-question multiple-choice test"><a href="#exercise-ten-question-test" title="Copy heading and permalink for Checkpoint 4.27: Ten-question multiple-choice test" aria-label="Copy heading and permalink for Checkpoint 4.27: Ten-question multiple-choice test">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.31: Ten-question multiple-choice test"><a href="#example-ten-question-test" title="Copy heading and permalink for Example 4.31: Ten-question multiple-choice test" aria-label="Copy heading and permalink for Example 4.31: Ten-question multiple-choice test">🔗</a></div>
 </article></details>
-<details id="example-six-question-test" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.28</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Six-question multiple-choice test.</span>
-</h3></summary>
-<article class="example example-like knowl__content">
-<div class="para" id="example-six-question-test-2-1">You are taking a multiple-choice test that has six questions. Each of the questions has three answer choices, with one correct answer per question. If you select one of these three choices for each question and leave nothing blank, in how many ways can you answer the questions?<div class="autopermalink" data-description="Paragraph"><a href="#example-six-question-test-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="exercises" id="exercises-FCP">
+<h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-six-question-test"><h4 class="heading">
+<span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Six-question multiple-choice test.</span>
+</h4>
+<div class="para" id="exercise-six-question-test-2-1">You are taking a multiple-choice test that has six questions. Each of the questions has three answer choices, with one correct answer per question. If you select one of these three choices for each question and leave nothing blank, in how many ways can you answer the questions?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-six-question-test-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="example-six-question-test-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise-six-question-test-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="example-six-question-test-3-1">Multiply the number of choices for each question.<div class="autopermalink" data-description="Paragraph"><a href="#example-six-question-test-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise-six-question-test-3-1">Multiply the number of choices for each question.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-six-question-test-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <span class="process-math">\(3^6 = 729\)</span>
-<div class="para" id="example-six-question-test-3-3">There are 729 possible answer sheets.<div class="autopermalink" data-description="Paragraph"><a href="#example-six-question-test-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise-six-question-test-3-3">There are 729 possible answer sheets.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-six-question-test-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.28.1"><a href="#example-six-question-test-3" title="Copy heading and permalink for Solution 4.28.1" aria-label="Copy heading and permalink for Solution 4.28.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 1.1"><a href="#exercise-six-question-test-3" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.28: Six-question multiple-choice test"><a href="#example-six-question-test" title="Copy heading and permalink for Example 4.28: Six-question multiple-choice test" aria-label="Copy heading and permalink for Example 4.28: Six-question multiple-choice test">🔗</a></div>
-</article></details>
-<details id="example-telephone-numbers" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.29</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Telephone number possibilities.</span>
-</h3></summary>
-<article class="example example-like knowl__content">
-<div class="para" id="example-telephone-numbers-2-1">Telephone numbers in the United States begin with three-digit area codes followed by seven-digit local telephone numbers. Area codes and local telephone numbers cannot begin with 0 or 1. How many different telephone numbers are possible?<div class="autopermalink" data-description="Paragraph"><a href="#example-telephone-numbers-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Exercise 1: Six-question multiple-choice test"><a href="#exercise-six-question-test" title="Copy heading and permalink for Exercise 1: Six-question multiple-choice test" aria-label="Copy heading and permalink for Exercise 1: Six-question multiple-choice test">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-telephone-numbers"><h4 class="heading">
+<span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Telephone number possibilities.</span>
+</h4>
+<div class="para" id="exercise-telephone-numbers-2-1">Telephone numbers in the United States begin with three-digit area codes followed by seven-digit local telephone numbers. Area codes and local telephone numbers cannot begin with 0 or 1. How many different telephone numbers are possible?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-telephone-numbers-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="example-telephone-numbers-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise-telephone-numbers-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="example-telephone-numbers-3-1">There are 8 choices for the first digit of the area code and 10 choices for each remaining area code digit. For the local number, the first digit also has 8 choices and each remaining digit has 10 choices.<div class="autopermalink" data-description="Paragraph"><a href="#example-telephone-numbers-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise-telephone-numbers-3-1">There are 8 choices for the first digit of the area code and 10 choices for each remaining area code digit. For the local number, the first digit also has 8 choices and each remaining digit has 10 choices.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-telephone-numbers-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <span class="process-math">\(8 \cdot 10 \cdot 10 \cdot 8 \cdot 10^6 = 6,400,000,000\)</span>
-<div class="para" id="example-telephone-numbers-3-3">There are 6,400,000,000 possible telephone numbers.<div class="autopermalink" data-description="Paragraph"><a href="#example-telephone-numbers-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise-telephone-numbers-3-3">There are 6,400,000,000 possible telephone numbers.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-telephone-numbers-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.29.1"><a href="#example-telephone-numbers-3" title="Copy heading and permalink for Solution 4.29.1" aria-label="Copy heading and permalink for Solution 4.29.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 2.1"><a href="#exercise-telephone-numbers-3" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.29: Telephone number possibilities"><a href="#example-telephone-numbers" title="Copy heading and permalink for Example 4.29: Telephone number possibilities" aria-label="Copy heading and permalink for Example 4.29: Telephone number possibilities">🔗</a></div>
-</article></details>
-<details id="example-pen-choices" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.30</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Pen choices.</span>
-</h3></summary>
-<article class="example example-like knowl__content">
-<div class="para" id="example-pen-choices-2-1">A popular type of pen comes in red, blue, or black ink. The writing tip varies from extra bold, bold, regular, fine, or micro. How many different choices of pens do you have with this type of pen?<div class="autopermalink" data-description="Paragraph"><a href="#example-pen-choices-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Exercise 2: Telephone number possibilities"><a href="#exercise-telephone-numbers" title="Copy heading and permalink for Exercise 2: Telephone number possibilities" aria-label="Copy heading and permalink for Exercise 2: Telephone number possibilities">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-pen-choices"><h4 class="heading">
+<span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Pen choices.</span>
+</h4>
+<div class="para" id="exercise-pen-choices-2-1">A popular type of pen comes in red, blue, or black ink. The writing tip varies from extra bold, bold, regular, fine, or micro. How many different choices of pens do you have with this type of pen?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-pen-choices-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="example-pen-choices-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise-pen-choices-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="example-pen-choices-3-1">Multiply the ink color choices by the tip style choices.<div class="autopermalink" data-description="Paragraph"><a href="#example-pen-choices-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise-pen-choices-3-1">Multiply the ink color choices by the tip style choices.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-pen-choices-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <span class="process-math">\(3 \cdot 5 = 15\)</span>
-<div class="para" id="example-pen-choices-3-3">There are 15 different pen choices.<div class="autopermalink" data-description="Paragraph"><a href="#example-pen-choices-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise-pen-choices-3-3">There are 15 different pen choices.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-pen-choices-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.30.1"><a href="#example-pen-choices-3" title="Copy heading and permalink for Solution 4.30.1" aria-label="Copy heading and permalink for Solution 4.30.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 3.1"><a href="#exercise-pen-choices-3" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.30: Pen choices"><a href="#example-pen-choices" title="Copy heading and permalink for Example 4.30: Pen choices" aria-label="Copy heading and permalink for Example 4.30: Pen choices">🔗</a></div>
-</article></details>
-<details id="example-catered-meal-combinations" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.31</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Catered meal combinations.</span>
-</h3></summary>
-<article class="example example-like knowl__content">
-<div class="para" id="example-catered-meal-combinations-2-1">A wedding caterer gives you three choices for the main course, six starter choices and five options for dessert. How many different meals (made up of starter, dinner and dessert) are there?<div class="autopermalink" data-description="Paragraph"><a href="#example-catered-meal-combinations-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Exercise 3: Pen choices"><a href="#exercise-pen-choices" title="Copy heading and permalink for Exercise 3: Pen choices" aria-label="Copy heading and permalink for Exercise 3: Pen choices">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-catered-meal-combinations"><h4 class="heading">
+<span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Catered meal combinations.</span>
+</h4>
+<div class="para" id="exercise-catered-meal-combinations-2-1">A wedding caterer gives you three choices for the main course, six starter choices and five options for dessert. How many different meals (made up of starter, dinner and dessert) are there?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-catered-meal-combinations-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="example-catered-meal-combinations-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise-catered-meal-combinations-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="example-catered-meal-combinations-3-1">Multiply the number of starter choices, main course choices, and dessert choices.<div class="autopermalink" data-description="Paragraph"><a href="#example-catered-meal-combinations-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise-catered-meal-combinations-3-1">Multiply the number of starter choices, main course choices, and dessert choices.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-catered-meal-combinations-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <span class="process-math">\(3 \cdot 6 \cdot 5 = 90\)</span>
-<div class="para" id="example-catered-meal-combinations-3-3">There are 90 different meals.<div class="autopermalink" data-description="Paragraph"><a href="#example-catered-meal-combinations-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise-catered-meal-combinations-3-3">There are 90 different meals.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-catered-meal-combinations-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.31.1"><a href="#example-catered-meal-combinations-3" title="Copy heading and permalink for Solution 4.31.1" aria-label="Copy heading and permalink for Solution 4.31.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.1"><a href="#exercise-catered-meal-combinations-3" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.31: Catered meal combinations"><a href="#example-catered-meal-combinations" title="Copy heading and permalink for Example 4.31: Catered meal combinations" aria-label="Copy heading and permalink for Example 4.31: Catered meal combinations">🔗</a></div>
-</article></details>
-<details id="exercise-yes-no-survey" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.32</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Yes/no survey.</span>
-</h3></summary>
-<article class="exercise exercise-like knowl__content">
+<div class="autopermalink" data-description="Exercise 4: Catered meal combinations"><a href="#exercise-catered-meal-combinations" title="Copy heading and permalink for Exercise 4: Catered meal combinations" aria-label="Copy heading and permalink for Exercise 4: Catered meal combinations">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-yes-no-survey"><h4 class="heading">
+<span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Yes/no survey.</span>
+</h4>
 <div class="para" id="exercise-yes-no-survey-2-1">You take a survey with five "yes" or "no" answers. How many different ways could you complete the survey?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-yes-no-survey-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
@@ -467,15 +481,14 @@ eBookConfig.enable_chatcodes =  false;
 <span class="process-math">\(2^5 = 32\)</span>
 <div class="para" id="exercise-yes-no-survey-3-3">There are 32 different ways to complete the survey.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-yes-no-survey-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.32.1"><a href="#exercise-yes-no-survey-3" title="Copy heading and permalink for Solution 4.32.1" aria-label="Copy heading and permalink for Solution 4.32.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 5.1"><a href="#exercise-yes-no-survey-3" title="Copy heading and permalink for Solution 5.1" aria-label="Copy heading and permalink for Solution 5.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 4.32: Yes/no survey"><a href="#exercise-yes-no-survey" title="Copy heading and permalink for Checkpoint 4.32: Yes/no survey" aria-label="Copy heading and permalink for Checkpoint 4.32: Yes/no survey">🔗</a></div>
-</article></details>
-<details id="exercise-product-code-possibilities" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.33</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Product code possibilities.</span>
-</h3></summary>
-<article class="exercise exercise-like knowl__content">
+<div class="autopermalink" data-description="Exercise 5: Yes/no survey"><a href="#exercise-yes-no-survey" title="Copy heading and permalink for Exercise 5: Yes/no survey" aria-label="Copy heading and permalink for Exercise 5: Yes/no survey">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-product-code-possibilities"><h4 class="heading">
+<span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Product code possibilities.</span>
+</h4>
 <div class="para" id="exercise-product-code-possibilities-2-1">A company puts a code on each different product they sell. The code is made up of 3 numbers and 2 letters. How many different codes are possible?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-product-code-possibilities-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
@@ -486,207 +499,16 @@ eBookConfig.enable_chatcodes =  false;
 <span class="process-math">\(10^3 \cdot 26^2 = 676,000\)</span>
 <div class="para" id="exercise-product-code-possibilities-3-3">There are 676,000 different product codes possible.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-product-code-possibilities-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.33.1"><a href="#exercise-product-code-possibilities-3" title="Copy heading and permalink for Solution 4.33.1" aria-label="Copy heading and permalink for Solution 4.33.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.1"><a href="#exercise-product-code-possibilities-3" title="Copy heading and permalink for Solution 6.1" aria-label="Copy heading and permalink for Solution 6.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 4.33: Product code possibilities"><a href="#exercise-product-code-possibilities" title="Copy heading and permalink for Checkpoint 4.33: Product code possibilities" aria-label="Copy heading and permalink for Checkpoint 4.33: Product code possibilities">🔗</a></div>
-</article></details>
-<article class="definition definition-like" id="definition-factorials"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.34</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Factorials.</span>
-</h3>
-<div class="para" id="definition-factorials-2-1">If <span class="process-math">\(n\)</span> is a positive integer, then <span class="process-math">\(n!\)</span> (<em class="alert"><span class="process-math">\(n\)</span> factorial</em>) is the product of all positive integers from <span class="process-math">\(n\)</span> down through 1.<div class="autopermalink" data-description="Paragraph"><a href="#definition-factorials-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="displaymath process-math" id="definition-factorials-2-2">
-\begin{equation*}
-\begin{array}{ccl}
-1! &amp; = &amp; 1 \\
-2! &amp; = &amp; 2 \cdot 1 = 2 \\
-3! &amp; = &amp; 3 \cdot 2 \cdot 1 = 6 \\
-4! &amp; = &amp; 4 \cdot 3 \cdot 2 \cdot 1 = 24 \\
-5! &amp; = &amp; 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120
-\end{array}
-\end{equation*}
-</div>
-<div class="para" id="definition-factorials-2-3">By definition, <span class="process-math">\(0!\)</span> is 1.<div class="autopermalink" data-description="Paragraph"><a href="#definition-factorials-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Definition 4.34: Factorials"><a href="#definition-factorials" title="Copy heading and permalink for Definition 4.34: Factorials" aria-label="Copy heading and permalink for Definition 4.34: Factorials">🔗</a></div>
-</article>
-<article class="definition definition-like" id="definition-factorial-expression"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.35</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Factorial formula.</span>
-</h3>
-<div class="para" id="definition-factorial-expression-2-1">The factorial of <span class="process-math">\(n\)</span> is<div class="autopermalink" data-description="Paragraph"><a href="#definition-factorial-expression-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="displaymath process-math" id="definition-factorial-expression-2-2">
-\begin{equation*}
-n! = n(n-1)(n-2)(n-3)\cdots(3)(2)(1)
-\end{equation*}
-</div>
-<div class="para" id="definition-factorial-expression-2-3">And by definition, <span class="process-math">\(0! = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-factorial-expression-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Definition 4.35: Factorial formula"><a href="#definition-factorial-expression" title="Copy heading and permalink for Definition 4.35: Factorial formula" aria-label="Copy heading and permalink for Definition 4.35: Factorial formula">🔗</a></div>
-</article>
-<details id="exercise-evaluate-factorial-expressions" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.36</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Evaluate factorial expressions.</span>
-</h3></summary>
-<article class="exercise exercise-like knowl__content">
-<div class="para" id="exercise-evaluate-factorial-expressions-2-1">Evaluate the following factorial expressions without using the factorial key on your calculator.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-evaluate-factorial-expressions-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<ol class="decimal" id="exercise-evaluate-factorial-expressions-2-2">
-<li id="exercise-evaluate-factorial-expressions-2-2-1">
-<div class="para" id="p-derived-exercise-evaluate-factorial-expressions-2-2-1"><span class="process-math">\(\displaystyle \frac{8!}{5!}\)</span></div>
-<div class="autopermalink" data-description="Item 4.36.1"><a href="#exercise-evaluate-factorial-expressions-2-2-1" title="Copy heading and permalink for Item 4.36.1" aria-label="Copy heading and permalink for Item 4.36.1">🔗</a></div>
-</li>
-<li id="exercise-evaluate-factorial-expressions-2-2-2">
-<div class="para" id="p-derived-exercise-evaluate-factorial-expressions-2-2-2"><span class="process-math">\(\displaystyle \frac{21!}{24!}\)</span></div>
-<div class="autopermalink" data-description="Item 4.36.2"><a href="#exercise-evaluate-factorial-expressions-2-2-2" title="Copy heading and permalink for Item 4.36.2" aria-label="Copy heading and permalink for Item 4.36.2">🔗</a></div>
-</li>
-<li id="exercise-evaluate-factorial-expressions-2-2-3">
-<div class="para" id="p-derived-exercise-evaluate-factorial-expressions-2-2-3"><span class="process-math">\(\displaystyle \frac{500!}{499!}\)</span></div>
-<div class="autopermalink" data-description="Item 4.36.3"><a href="#exercise-evaluate-factorial-expressions-2-2-3" title="Copy heading and permalink for Item 4.36.3" aria-label="Copy heading and permalink for Item 4.36.3">🔗</a></div>
-</li>
-<li id="exercise-evaluate-factorial-expressions-2-2-4">
-<div class="para" id="p-derived-exercise-evaluate-factorial-expressions-2-2-4"><span class="process-math">\(\displaystyle \frac{11!}{7!}\)</span></div>
-<div class="autopermalink" data-description="Item 4.36.4"><a href="#exercise-evaluate-factorial-expressions-2-2-4" title="Copy heading and permalink for Item 4.36.4" aria-label="Copy heading and permalink for Item 4.36.4">🔗</a></div>
-</li>
-<li id="exercise-evaluate-factorial-expressions-2-2-5">
-<div class="para" id="p-derived-exercise-evaluate-factorial-expressions-2-2-5"><span class="process-math">\(\displaystyle \frac{13!}{16!}\)</span></div>
-<div class="autopermalink" data-description="Item 4.36.5"><a href="#exercise-evaluate-factorial-expressions-2-2-5" title="Copy heading and permalink for Item 4.36.5" aria-label="Copy heading and permalink for Item 4.36.5">🔗</a></div>
-</li>
-<li id="exercise-evaluate-factorial-expressions-2-2-6">
-<div class="para" id="p-derived-exercise-evaluate-factorial-expressions-2-2-6"><span class="process-math">\(\displaystyle \frac{99!}{100!}\)</span></div>
-<div class="autopermalink" data-description="Item 4.36.6"><a href="#exercise-evaluate-factorial-expressions-2-2-6" title="Copy heading and permalink for Item 4.36.6" aria-label="Copy heading and permalink for Item 4.36.6">🔗</a></div>
-</li>
-<li id="exercise-evaluate-factorial-expressions-2-2-7">
-<div class="para" id="p-derived-exercise-evaluate-factorial-expressions-2-2-7"><span class="process-math">\(\displaystyle \frac{7!}{(5-1)!}\)</span></div>
-<div class="autopermalink" data-description="Item 4.36.7"><a href="#exercise-evaluate-factorial-expressions-2-2-7" title="Copy heading and permalink for Item 4.36.7" aria-label="Copy heading and permalink for Item 4.36.7">🔗</a></div>
-</li>
-<li id="exercise-evaluate-factorial-expressions-2-2-8">
-<div class="para" id="p-derived-exercise-evaluate-factorial-expressions-2-2-8"><span class="process-math">\(\displaystyle \frac{7!}{3!(4-4)!}\)</span></div>
-<div class="autopermalink" data-description="Item 4.36.8"><a href="#exercise-evaluate-factorial-expressions-2-2-8" title="Copy heading and permalink for Item 4.36.8" aria-label="Copy heading and permalink for Item 4.36.8">🔗</a></div>
-</li>
-</ol>
-<div class="solutions">
-<details id="exercise-evaluate-factorial-expressions-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
-<ol class="decimal" id="exercise-evaluate-factorial-expressions-3-1">
-<li id="exercise-evaluate-factorial-expressions-3-1-1">
-<div class="para" id="p-derived-exercise-evaluate-factorial-expressions-3-1-1"><span class="process-math">\(\displaystyle \frac{8!}{5!} = 8 \cdot 7 \cdot 6 = 336\)</span></div>
-<div class="autopermalink" data-description="Item 4.36.1"><a href="#exercise-evaluate-factorial-expressions-3-1-1" title="Copy heading and permalink for Item 4.36.1" aria-label="Copy heading and permalink for Item 4.36.1">🔗</a></div>
-</li>
-<li id="exercise-evaluate-factorial-expressions-3-1-2">
-<div class="para" id="p-derived-exercise-evaluate-factorial-expressions-3-1-2"><span class="process-math">\(\displaystyle \frac{21!}{24!} = \frac{1}{24 \cdot 23 \cdot 22} = \frac{1}{12,144}\)</span></div>
-<div class="autopermalink" data-description="Item 4.36.2"><a href="#exercise-evaluate-factorial-expressions-3-1-2" title="Copy heading and permalink for Item 4.36.2" aria-label="Copy heading and permalink for Item 4.36.2">🔗</a></div>
-</li>
-<li id="exercise-evaluate-factorial-expressions-3-1-3">
-<div class="para" id="p-derived-exercise-evaluate-factorial-expressions-3-1-3"><span class="process-math">\(\displaystyle \frac{500!}{499!} = 500\)</span></div>
-<div class="autopermalink" data-description="Item 4.36.3"><a href="#exercise-evaluate-factorial-expressions-3-1-3" title="Copy heading and permalink for Item 4.36.3" aria-label="Copy heading and permalink for Item 4.36.3">🔗</a></div>
-</li>
-<li id="exercise-evaluate-factorial-expressions-3-1-4">
-<div class="para" id="p-derived-exercise-evaluate-factorial-expressions-3-1-4"><span class="process-math">\(\displaystyle \frac{11!}{7!} = 11 \cdot 10 \cdot 9 \cdot 8 = 7,920\)</span></div>
-<div class="autopermalink" data-description="Item 4.36.4"><a href="#exercise-evaluate-factorial-expressions-3-1-4" title="Copy heading and permalink for Item 4.36.4" aria-label="Copy heading and permalink for Item 4.36.4">🔗</a></div>
-</li>
-<li id="exercise-evaluate-factorial-expressions-3-1-5">
-<div class="para" id="p-derived-exercise-evaluate-factorial-expressions-3-1-5"><span class="process-math">\(\displaystyle \frac{13!}{16!} = \frac{1}{16 \cdot 15 \cdot 14} = \frac{1}{3,360}\)</span></div>
-<div class="autopermalink" data-description="Item 4.36.5"><a href="#exercise-evaluate-factorial-expressions-3-1-5" title="Copy heading and permalink for Item 4.36.5" aria-label="Copy heading and permalink for Item 4.36.5">🔗</a></div>
-</li>
-<li id="exercise-evaluate-factorial-expressions-3-1-6">
-<div class="para" id="p-derived-exercise-evaluate-factorial-expressions-3-1-6"><span class="process-math">\(\displaystyle \frac{99!}{100!} = \frac{1}{100}\)</span></div>
-<div class="autopermalink" data-description="Item 4.36.6"><a href="#exercise-evaluate-factorial-expressions-3-1-6" title="Copy heading and permalink for Item 4.36.6" aria-label="Copy heading and permalink for Item 4.36.6">🔗</a></div>
-</li>
-<li id="exercise-evaluate-factorial-expressions-3-1-7">
-<div class="para" id="p-derived-exercise-evaluate-factorial-expressions-3-1-7"><span class="process-math">\(\displaystyle \frac{7!}{(5-1)!} = \frac{7!}{4!} = 7 \cdot 6 \cdot 5 = 210\)</span></div>
-<div class="autopermalink" data-description="Item 4.36.7"><a href="#exercise-evaluate-factorial-expressions-3-1-7" title="Copy heading and permalink for Item 4.36.7" aria-label="Copy heading and permalink for Item 4.36.7">🔗</a></div>
-</li>
-<li id="exercise-evaluate-factorial-expressions-3-1-8">
-<div class="para" id="p-derived-exercise-evaluate-factorial-expressions-3-1-8"><span class="process-math">\(\displaystyle \frac{7!}{3!(4-4)!} = \frac{7!}{3! \cdot 0!} = \frac{5040}{6} = 840\)</span></div>
-<div class="autopermalink" data-description="Item 4.36.8"><a href="#exercise-evaluate-factorial-expressions-3-1-8" title="Copy heading and permalink for Item 4.36.8" aria-label="Copy heading and permalink for Item 4.36.8">🔗</a></div>
-</li>
-</ol>
-<div class="autopermalink" data-description="Solution 4.36.1"><a href="#exercise-evaluate-factorial-expressions-3" title="Copy heading and permalink for Solution 4.36.1" aria-label="Copy heading and permalink for Solution 4.36.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Checkpoint 4.36: Evaluate factorial expressions"><a href="#exercise-evaluate-factorial-expressions" title="Copy heading and permalink for Checkpoint 4.36: Evaluate factorial expressions" aria-label="Copy heading and permalink for Checkpoint 4.36: Evaluate factorial expressions">🔗</a></div>
-</article></details>
-<article class="definition definition-like" id="definition-permutations-duplicate"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.37</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Permutations of duplicate items.</span>
-</h3>
-<div class="para" id="definition-permutations-duplicate-2-1">The number of permutations of <span class="process-math">\(n\)</span> items, where <span class="process-math">\(p\)</span> items are identical, <span class="process-math">\(q\)</span> items are identical, <span class="process-math">\(r\)</span> items are identical, <span class="process-math">\(s\)</span> items are identical, and so on, is given by<div class="autopermalink" data-description="Paragraph"><a href="#definition-permutations-duplicate-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="displaymath process-math" id="definition-permutations-duplicate-2-2">
-\begin{equation*}
-\displaystyle \frac{n!}{p!\ q!\ r!\ s!\cdots}
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Definition 4.37: Permutations of duplicate items"><a href="#definition-permutations-duplicate" title="Copy heading and permalink for Definition 4.37: Permutations of duplicate items" aria-label="Copy heading and permalink for Definition 4.37: Permutations of duplicate items">🔗</a></div>
-</article>
-<details id="exercise-arrange-mississippi" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.38</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Arrange MISSISSIPPI.</span>
-</h3></summary>
-<article class="exercise exercise-like knowl__content">
-<div class="para" id="exercise-arrange-mississippi-2-1">In how many distinct ways can the letters of the word "MISSISSIPPI" be arranged?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-arrange-mississippi-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="solutions">
-<details id="exercise-arrange-mississippi-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
-<div class="para" id="exercise-arrange-mississippi-3-1">The word has 11 letters with 4 identical I’s, 4 identical S’s, and 2 identical P’s.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-arrange-mississippi-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<span class="process-math">\(\frac{11!}{4! 4! 2!} = 34,650\)</span><div class="autopermalink" data-description="Solution 4.38.1"><a href="#exercise-arrange-mississippi-3" title="Copy heading and permalink for Solution 4.38.1" aria-label="Copy heading and permalink for Solution 4.38.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Checkpoint 4.38: Arrange MISSISSIPPI"><a href="#exercise-arrange-mississippi" title="Copy heading and permalink for Checkpoint 4.38: Arrange MISSISSIPPI" aria-label="Copy heading and permalink for Checkpoint 4.38: Arrange MISSISSIPPI">🔗</a></div>
-</article></details>
-<details id="exercise-arrange-banana" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.39</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Arrange BANANA.</span>
-</h3></summary>
-<article class="exercise exercise-like knowl__content">
-<div class="para" id="exercise-arrange-banana-2-1">In how many distinct ways can the letters of the word "BANANA" be arranged?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-arrange-banana-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="solutions">
-<details id="exercise-arrange-banana-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
-<div class="para" id="exercise-arrange-banana-3-1">The word has 6 letters with 3 identical A’s and 2 identical N’s.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-arrange-banana-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<span class="process-math">\(\frac{6!}{3! 2!} = 60\)</span><div class="autopermalink" data-description="Solution 4.39.1"><a href="#exercise-arrange-banana-3" title="Copy heading and permalink for Solution 4.39.1" aria-label="Copy heading and permalink for Solution 4.39.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Checkpoint 4.39: Arrange BANANA"><a href="#exercise-arrange-banana" title="Copy heading and permalink for Checkpoint 4.39: Arrange BANANA" aria-label="Copy heading and permalink for Checkpoint 4.39: Arrange BANANA">🔗</a></div>
-</article></details>
-<details id="exercise-arrange-massachusetts" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.40</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Arrange MASSACHUSETTS.</span>
-</h3></summary>
-<article class="exercise exercise-like knowl__content">
-<div class="para" id="exercise-arrange-massachusetts-2-1">In how many distinct ways can the letters of the word "MASSACHUSETTS" be arranged?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-arrange-massachusetts-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="solutions">
-<details id="exercise-arrange-massachusetts-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
-<div class="para" id="exercise-arrange-massachusetts-3-1">The word has 13 letters with 4 identical S’s, 2 identical A’s, and 2 identical T’s.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-arrange-massachusetts-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<span class="process-math">\(\frac{13!}{4! 2! 2!} = 64,864,800\)</span><div class="autopermalink" data-description="Solution 4.40.1"><a href="#exercise-arrange-massachusetts-3" title="Copy heading and permalink for Solution 4.40.1" aria-label="Copy heading and permalink for Solution 4.40.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Checkpoint 4.40: Arrange MASSACHUSETTS"><a href="#exercise-arrange-massachusetts" title="Copy heading and permalink for Checkpoint 4.40: Arrange MASSACHUSETTS" aria-label="Copy heading and permalink for Checkpoint 4.40: Arrange MASSACHUSETTS">🔗</a></div>
-</article></details>
-<details id="exercise-arrange-balloons" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.41</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Arrange balloons.</span>
-</h3></summary>
-<article class="exercise exercise-like knowl__content">
-<div class="para" id="exercise-arrange-balloons-2-1">There are seventeen balloons: 3 blue, 5 red, 2 green, 3 yellow, and 4 orange. In how many distinct ways can the balloons be arranged?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-arrange-balloons-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="solutions">
-<details id="exercise-arrange-balloons-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
-<div class="para" id="exercise-arrange-balloons-3-1">There are 17 total balloons with duplicates in several colors.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-arrange-balloons-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<span class="process-math">\(\frac{17!}{3! 5! 2! 3! 4!} = 1,715,313,600\)</span><div class="autopermalink" data-description="Solution 4.41.1"><a href="#exercise-arrange-balloons-3" title="Copy heading and permalink for Solution 4.41.1" aria-label="Copy heading and permalink for Solution 4.41.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Checkpoint 4.41: Arrange balloons"><a href="#exercise-arrange-balloons" title="Copy heading and permalink for Checkpoint 4.41: Arrange balloons" aria-label="Copy heading and permalink for Checkpoint 4.41: Arrange balloons">🔗</a></div>
-</article></details><div class="autopermalink" data-description="Section: The Fundamental Counting Principle"><a href="#notes-fcp" title="Copy heading and permalink for Section: The Fundamental Counting Principle" aria-label="Copy heading and permalink for Section: The Fundamental Counting Principle">🔗</a></div>
+<div class="autopermalink" data-description="Exercise 6: Product code possibilities"><a href="#exercise-product-code-possibilities" title="Copy heading and permalink for Exercise 6: Product code possibilities" aria-label="Copy heading and permalink for Exercise 6: Product code possibilities">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercises"><a href="#exercises-FCP" title="Copy heading and permalink for Exercises" aria-label="Copy heading and permalink for Exercises">🔗</a></div>
+</section><div class="autopermalink" data-description="Section: The Fundamental Counting Principle"><a href="#notes-fcp" title="Copy heading and permalink for Section: The Fundamental Counting Principle" aria-label="Copy heading and permalink for Section: The Fundamental Counting Principle">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="sec-events-not-or.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-permutations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-events-not-or.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="notes-factorials.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

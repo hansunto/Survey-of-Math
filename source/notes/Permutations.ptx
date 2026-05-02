@@ -14,8 +14,58 @@
     </statement>
   </definition>
 
-  <!-- Example 1: Books -->
-  <exercise>
+  <!-- Example 1: concert -->
+  <example xml:id="example-concert-lineup">
+    <title>The BTS Concert Permutation Problem</title>
+  <statement>
+    <p>
+      Suppose BTS, Blackstreet Boys, NSYNC and TLC are given a no-contact concert series. 
+      You decide that BTS should be the last group to perform at the four-group concert. 
+      Given this decision, in how many ways can you put together the concert?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      You can choose any one of the three groups (Blackstreet Boys, NSYNC, or TLC) as the opening act. 
+      Once you have chosen the first group, you will then have two groups left to choose for the second performance. 
+      You will then have just one group left to choose for the third performance. 
+      There is also just one choice for the closing act: BTS.
+    </p>
+    <table>
+      <title>Concert Performance Choices</title>
+      <tabular halign="center">
+        <row bottom="minor">
+          <cell>First Group to perform</cell>
+          <cell>Second Group to perform</cell>
+          <cell>Third Group to perform</cell>
+          <cell>Last Group to perform</cell>
+        </row>
+        <row>
+          <cell>3 choices</cell>
+          <cell>2 choices</cell>
+          <cell>1 choice</cell>
+          <cell>1 choice</cell>
+        </row>
+        <row>
+          <cell>Blackstreet Boys, NSYNC, TLC</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell>BTS</cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      We use the Fundamental Counting Principle to find the number of ways you can put together the concert. 
+      Multiply the choices:
+      <me>3 \cdot 2 \cdot 1 \cdot 1 = 6</me>
+      Thus, there are six different ways to arrange the concert if BTS is the final group to perform.
+    </p>
+  </solution>
+</example>
+
+  <!-- Example 2: Books -->
+  <example>
+    <title>Arrange books on a shelf</title>
     <statement>
       <p>You need to arrange five books along a small shelf. How many different ways can you arrange the books, assuming that the order of the books makes a difference to you?</p>
     </statement>
@@ -27,9 +77,9 @@
         There are 120 different ways to arrange the books.
       </p>
     </solution>
-  </exercise>
+  </example>
 
-  <!-- Example 2: Police Lineup -->
+  <!-- Exercise 2: Police Lineup -->
   <exercise>
     <statement>
       <p>In how many different ways can a police department arrange eight suspects in a police lineup if each lineup contains all eight people?</p>
@@ -43,7 +93,7 @@
     </solution>
   </exercise>
 
-  <!-- Example 3: Repetition Allowed (Not a permutation) -->
+  <!-- Exercise 3: Repetition Allowed (Not a permutation) -->
   <exercise>
     <statement>
       <p>If five digits 1, 2, 3, 4, 5 are being given and a three-digit code has to be made from it if the repetition of digits is allowed then how many such codes can be formed?</p>
@@ -57,6 +107,64 @@
     </solution>
   </exercise>
 
+    <statement>
+      <p>
+        The following examples will show how to calculate permutations.
+      </p>
+    
+      <p>
+          You are the coach of a 13-player baseball team and must set a 9-player batting lineup. 
+          Because different positions in the lineup carry different responsibilities, 
+          <alert>the order makes a difference</alert>. 
+           For example, a strong hitter like <q>Barry</q> in the clean-up spot (fourth) drives in more runs than a home run later in the order. 
+           How many different ways can you arrange your 9 starters?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        You have 13 players to choose from for the first person at bat. 
+        This leaves 12 players for the second position, 11 for the third, and so on, until the 9th position. 
+        The total number of batting orders is:
+        <me>13 \cdot 12 \cdot 11 \cdot 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5 = 259,459,200</me>
+        There are nearly 260 million possible batting orders for a team of 13 players.
+      </p>
+      <p>
+        We can derive a general formula for permutations by rewriting this calculation as a fraction of factorials:
+        <me>
+          \frac{13 \cdot 12 \cdot 11 \cdot 10 \cdot 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5 \cdot (4 \cdot 3 \cdot 2 \cdot 1)}{4 \cdot 3 \cdot 2 \cdot 1} = 
+          \frac{13!}{4!} = \frac{13!}{(13-9)!}
+        </me>
+      </p>
+      <p>
+        Using standard notation, we call this <q>the number of permutations of 13 things taken 9 at a time,</q> written as:
+        <me>{}_{13}P_9 = \frac{13!}{(13-9)!}</me>
+      </p>
+      <aside>
+        <title>Calculator Note: Using the TI-30XIIS</title>
+        <p>
+        <figure xml:id="calculator-note">
+    <caption>TI-30XIIS</caption>
+    <image source="TI-30XIIS.png" width="50%">
+        <shortdescription>
+          A screenshot of the TI-30XIIS calculator showing the permutation function.
+        </shortdescription>
+    </image>
+</figure>
+</p>
+  <p>
+    To evaluate <m>{}_{13}P_9</m> on the TI-30XIIS, follow these steps:
+    <ol>
+      <li><p>Enter the value of <m>n</m>: Type <c>13</c>.</p></li>
+      <li><p>Press the <c>PRB</c> key.</p></li>
+      <li><p>The menu will display <c>nPr</c> <c>nCr</c> <c>!</c>. Since <c>nPr</c> is already underlined, simply press <c>ENTER</c>.</p></li>
+      <li><p>Enter the value of <m>r</m>: Type <c>9</c>.</p></li>
+      <li><p>Press <c>ENTER</c> to get the result: <c>259,459,200</c>.</p></li>
+    </ol>
+  </p>
+</aside>
+    </solution>
+  
+
   <definition xml:id="def-permutation-formula">
     <title>Permutation Formula</title>
     <statement>
@@ -66,6 +174,35 @@
       </p>
     </statement>
   </definition>
+
+  <example xml:id="example-board-elections">
+  <title>Corporate Board Elections</title>
+  <statement>
+    <p>
+      A corporation has seven members on its board of directors. In how many different ways can the board elect a president, vice-president, secretary, and treasurer?
+    </p>
+  </statement>
+ <solution>
+  <p>
+    Since each officer holds a specific title, the order of selection matters. We are looking for the number of permutations of 7 items taken 4 at a time:
+    <me>
+      {}_{n}P_r = {}_{7}P_4 = \frac{7!}{(7-4)!} = \frac{7!}{3!}
+    </me>
+    Expanding the factorials, we get:
+    <me>
+      \frac{7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1}{3 \cdot 2 \cdot 1} = 7 \cdot 6 \cdot 5 \cdot 4 = 840
+    </me>
+    The board can elect the four officers in 840 different ways.
+  </p>
+
+  <p>
+    <alert>TI-30XIIS Keystrokes:</alert>
+    To calculate this on your TI-30XIIS: 
+    Type <c>7</c> <m>\rightarrow</m> Press <c>PRB</c> <m>\rightarrow</m> Select <c>nPr</c> and press <c>ENTER</c> <m>\rightarrow</m> Type <c>4</c> <m>\rightarrow</m> Press <c>ENTER</c>.
+  </p>
+</solution>
+
+</example>
 
   <!-- Example 4: Sitcoms -->
   <exercise>
@@ -78,6 +215,11 @@
         <me>{}_9 P_5 = \frac{9!}{(9-5)!} = \frac{9!}{4!} = 9 \cdot 8 \cdot 7 \cdot 6 \cdot 5 = 15,120</me>
         There are 15,120 possible programming schedules.
       </p>
+      <p>
+    <alert>TI-30XIIS Keystrokes:</alert>
+    To calculate this on your TI-30XIIS: 
+    Type <c>9</c> <m>\rightarrow</m> Press <c>PRB</c> <m>\rightarrow</m> Select <c>nPr</c> and press <c>ENTER</c> <m>\rightarrow</m> Type <c>5</c> <m>\rightarrow</m> Press <c>ENTER</c>.
+  </p>
     </solution>
   </exercise>
 

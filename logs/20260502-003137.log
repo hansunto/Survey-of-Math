@@ -1,0 +1,13 @@
+INFO    : Building target course
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+ERROR   : Error loading /workspaces/Survey-of-Math/source/notes/Factorials.ptx: Opening and ending tag mismatch: example line 173 and exercise, line 188, column 14 (Factorials.ptx, line 188)
+ERROR   : Error assembling source file: Opening and ending tag mismatch: example line 173 and exercise, line 188, column 14 (Factorials.ptx, line 188)
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

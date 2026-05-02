@@ -12,16 +12,10 @@ INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/so
 INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/assets
 INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
 INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
-INFO    : converting /workspaces/Survey-of-Math/source/main.ptx to LaTeX as /tmp/ptx-7bq0ppbp/main.tex
+INFO    : converting /workspaces/Survey-of-Math/source/main.ptx to LaTeX as /tmp/ptx-3j99lkqn/main.tex
 INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/pretext-latex.xsl
 INFO    : messages from the log for XSL processing:
 INFO    : * PTX:INFO:   checking all deprecated elements.
-WARNING : * PTX:DEPRECATE: (2022-04-25) a "@label" attribute (on a "ul" or "ol" element) has been deprecated and should be replaced by the functionally equivalent "@marker".  We will attempt to honor your request (5 times)
-INFO    : *              located within: "subsec-nPr-Probability" (xml:id), "Probability with Fundamental Counting Principle and permutations, nPr" (title)
-INFO    : *              located within: "subsec-nCr-Probability" (xml:id), "Probability with Combinations, nCr" (title)
-INFO    : * --------------
-ERROR   : * PTX:BUG:     Exercise component mis-labeled
-ERROR   : * PTX:BUG:     Exercise component mis-labeled
 INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/pretext-latex.xsl
 CRITICAL: [Errno 2] No such file or directory: 'main.pdf'
 INFO    : ------------------------

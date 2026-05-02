@@ -17,8 +17,8 @@
     </statement>
   </definition>
 
-  <exercise>
-    <title>Distinguishing Permutations and Combinations</title>
+  <exercise xml:id="ex-distinguish-perm-combo">
+    <title>Identifying Permutations and Combinations</title>
     <statement>
       <p>
         For each of the following, determine whether the problem involves permutations or combinations:
@@ -26,17 +26,17 @@
       <ol>
         <li><p>How many ways can you select 6 free videos from a list of 200 videos?</p></li>
         <li><p>In a race with 50 runners and no ties, in how many ways can the first three finishers come in?</p></li>
-        <li><p>Baskin-Robbins offers 31 flavors. How many different three-scoop bowls (each a different flavor) are possible?</p></li>
-        <li><p>A three-person committee is needed from a board of six supervisors. How many different committees can be formed?</p></li>
+        <li><p>Baskin-Robbins offers 31 different flavors of ice cream. One item is a bowl consisting of three scoops, each a different flavor. How many such bowls are possible?</p></li>
+        <li><p>A three-person committee is needed to study the possibility of expanding the neighborhood park. How many different committees could be formed from six people?</p></li>
       </ol>
     </statement>
     <solution>
       <p>
         <ol>
-          <li><p><term>Combination</term>: The order in which you pick the videos doesn't change the set you get to watch.</p></li>
-          <li><p><term>Permutation</term>: Order matters because 1st, 2nd, and 3rd place are different rankings.</p></li>
-          <li><p><term>Combination</term>: A bowl of Chocolate, Vanilla, and Strawberry is the same as Strawberry, Vanilla, and Chocolate.</p></li>
-          <li><p><term>Combination</term>: On a committee, all members have equal status; the order of selection does not change the group's makeup.</p></li>
+          <li><p><term>Combination</term>: the order of the selected videos does not matter; only which 6 are chosen matters.</p></li>
+          <li><p><term>Permutation</term>: first, second, and third place are distinct positions, so order matters.</p></li>
+          <li><p><term>Combination</term>: the bowl is defined by the set of three flavors, and swapping flavors produces the same bowl.</p></li>
+          <li><p><term>Combination</term>: the committee members are chosen without ordered roles.</p></li>
         </ol>
       </p>
     </solution>
@@ -47,12 +47,14 @@
     <statement>
       <p>
         The number of combinations of <m>n</m> things taken <m>r</m> at a time is denoted by <m>{}_n C_r</m>:
-        <me>{}_n C_r = \frac{n!}{(n-r)!r!}</me>
+      </p>
+      <p>
+        <me>{}_n C_r = \frac{n!}{(n-r)! \, r!}</me>
       </p>
     </statement>
   </definition>
 
-  <example>
+  <exercise xml:id="ex-committee-8">
     <title>Public Transportation Committee</title>
     <statement>
       <p>
@@ -61,21 +63,74 @@
     </statement>
     <solution>
       <p>
-        Since this is a committee where roles are not specified, the order does not matter. We use the combination formula with <m>n=8</m> and <m>r=3</m>:
-        <me>{}_8 C_3 = \frac{8!}{(8-3)!3!} = \frac{8!}{5!3!}</me>
-        Expanding the factorials:
-        <me>\frac{8 \cdot 7 \cdot 6 \cdot 5!}{5! \cdot (3 \cdot 2 \cdot 1)} = \frac{336}{6} = 56</me>
-        There are 56 possible committees.
+        This is a combination because the order of committee members does not matter.
       </p>
       <p>
-        <alert>TI-30XIIS Keystrokes:</alert>
-        Type <c>8</c> <m>\rightarrow</m> <c>PRB</c> <m>\rightarrow</m> Use arrow to underline <c>nCr</c> <m>\rightarrow</m> <c>ENTER</c> <m>\rightarrow</m> <c>3</c> <m>\rightarrow</m> <c>ENTER</c>.
+        Compute <me>{}_8 C_3 = \frac{8!}{5!3!}</me>.
+      </p>
+      <p>
+        Simplify:
+        <me>\frac{8 \cdot 7 \cdot 6 \cdot 5!}{5! \cdot (3 \cdot 2 \cdot 1)} = \frac{336}{6} = 56.</me>
+      </p>
+      <p>
+        There are 56 possible committees.
       </p>
     </solution>
-  </example>
+  </exercise>
 
-  <example>
-    <title>The 107th Congress Committee</title>
+  <exercise xml:id="ex-pet-sitting">
+    <title>Pet Combinations</title>
+    <statement>
+      <p>
+        You are volunteering to pet-sit for a friend who has seven different animals. How many different pet combinations are possible if you take three of the seven pets?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Order does not matter when choosing pets for a group, so use combinations.
+      </p>
+      <p>
+        <me>{}_7 C_3 = \frac{7!}{4!3!} = \frac{7 \cdot 6 \cdot 5}{3 \cdot 2 \cdot 1} = 35.</me>
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="ex-4-card-hand">
+    <title>Four-Card Hand</title>
+    <statement>
+      <p>
+        How many different 4-card hands can be dealt from a deck that has 16 different cards?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        A hand is a combination because the order of the cards does not matter.
+      </p>
+      <p>
+        <me>{}_{16} C_4 = \frac{16!}{12!4!} = \frac{16 \cdot 15 \cdot 14 \cdot 13}{4 \cdot 3 \cdot 2 \cdot 1} = 1,820.</me>
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="ex-poker-hand">
+    <title>Poker Hands</title>
+    <statement>
+      <p>
+        In poker, a person is dealt 5 cards from a standard 52-card deck. The order in which the cards are dealt does not matter. How many different 5-card poker hands are possible?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Use combinations because only the set of cards matters.
+      </p>
+      <p>
+        <me>{}_{52} C_5 = \frac{52!}{47!5!} = 2,598,960.</me>
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="ex-107-congress">
+    <title>Senate Committee Selection</title>
     <statement>
       <p>
         The U.S. Senate of the 107th Congress consisted of 50 Democrats, 49 Republicans, and one independent. How many committees can be formed if each committee must have 3 Democrats and 2 Republicans?
@@ -83,35 +138,64 @@
     </statement>
     <solution>
       <p>
-        We must choose the Democrats and the Republicans separately and then use the Fundamental Counting Principle to multiply them.
+        Choose the Democrats and Republicans separately, then multiply.
       </p>
       <p>
-        Step 1: Choose 3 Democrats from 50:
-        <me>{}_{50} C_3 = \frac{50 \cdot 49 \cdot 48}{3 \cdot 2 \cdot 1} = 19,600</me>
-        Step 2: Choose 2 Republicans from 49:
-        <me>{}_{49} C_2 = \frac{49 \cdot 48}{2 \cdot 1} = 1,176</me>
-        Step 3: Multiply the results:
-        <me>19,600 \cdot 1,176 = 23,049,600</me>
-        There are 23,049,600 possible committees.
+        <me>{}_{50} C_3 = \frac{50 \cdot 49 \cdot 48}{3 \cdot 2 \cdot 1} = 19,600.</me>
+      </p>
+      <p>
+        <me>{}_{49} C_2 = \frac{49 \cdot 48}{2 \cdot 1} = 1,176.</me>
+      </p>
+      <p>
+        Total committees: <me>19,600 \cdot 1,176 = 23,049,600.</me>
       </p>
     </solution>
-  </example>
+  </exercise>
 
-  <example>
-    <title>Lottery Selections</title>
+  <exercise xml:id="ex-practice-combination-counting">
+    <title>Practice Problems</title>
     <statement>
       <p>
-        To win a Mega Millions lottery, you must pick 5 numbers from a collection of 56, and one Megaball number from a collection of 46. The order of the first 5 numbers does not matter. How many different selections are possible?
+        Answer the following problems. Identify whether each situation uses combinations, permutations, or the product rule, and then compute the requested count.
       </p>
+      <ol>
+        <li><p>A popular brand of pen is available in three colors and four writing tips. How many different choices of pens do you have with this brand?</p></li>
+        <li><p>How many four-digit odd numbers are there?</p></li>
+        <li><p>An election ballot asks voters to select three city commissioners from a group of eight candidates. In how many ways can this be done?</p></li>
+        <li><p>Six singers are to perform on a weekend evening at a nightclub. How many different ways are there to schedule their appearances?</p></li>
+        <li><p>In how many ways can you arrange six books along a shelf, assuming that the order of the books makes a difference?</p></li>
+        <li><p>An ice cream store sells two drinks in four sizes and five flavors. In how many ways can a customer order a drink?</p></li>
+        <li><p>An electronic gate can be opened by entering five digits on a keypad containing the digits 0–9. How many different keypad sequences are possible if the digit 0 cannot be used as the first digit?</p></li>
+        <li><p>A math exam consists of 10 multiple-choice questions and 5 open-ended problems in which all work must be shown. If a student must answer 8 of the multiple-choice questions and 3 of the open-ended problems, in how many ways can the questions and problems be chosen?</p></li>
+        <li><p>For a temporary job, you are painting parking spaces for a new shopping mall with a letter of the alphabet and a single digit from 1 to 9. The first parking space is A1 and the last parking space is Z9. How many parking spaces can you paint with distinct labels?</p></li>
+        <li><p>In a race with 100 runners and no ties, in how many ways can the first three finishers come in?</p></li>
+        <li><p>Six people are on the board of supervisors for your neighborhood park. A three-person committee is needed to study the possibility of expanding the park. How many different committees could be formed from the six people?</p></li>
+        <li><p>Nine comedy acts will perform over two evenings. Five of the acts will perform on the first evening. How many ways can the schedule for the first evening be made?</p></li>
+        <li><p>To win Mega Millions, you must pick 5 numbers from a collection of 56 and one Megaball number from a collection of 46. The order of the first 5 does not matter. How many different selections are possible?</p></li>
+        <li><p>An exam consists of 20 multiple-choice questions and 10 open-ended problems. If a student must answer 15 of the multiple-choice and 5 of the open-ended questions, in how many ways can the questions and problems be chosen?</p></li>
+        <li><p>In a lucky draw, 10 names are placed in a box and three are drawn. Find the number of ways those three names can be selected.</p></li>
+      </ol>
     </statement>
     <solution>
       <p>
-        First, we calculate the combinations for the 5 numbers:
-        <me>{}_{56} C_5 = \frac{56!}{51!5!} = 3,819,816</me>
-        Next, there are 46 choices for the single Megaball. We multiply these together:
-        <me>3,819,816 \cdot 46 = 175,711,536</me>
-        There are over 175 million possible number combinations.
+        <ol>
+          <li><p>Product rule: <me>3 \cdot 4 = 12</me> different pen choices.</p></li>
+          <li><p>First digit 1–9 (9 choices), last digit odd (5 choices), middle digits 0–9 (10 each): <me>9 \cdot 10 \cdot 10 \cdot 5 = 4,500</me>.</p></li>
+          <li><p>Combination: <me>{}_8 C_3 = 56</me>.</p></li>
+          <li><p>Permutation: <me>6! = 720</me> schedules.</p></li>
+          <li><p>Permutation: <me>6! = 720</me> arrangements.</p></li>
+          <li><p>Product rule: <me>2 \cdot 4 \cdot 5 = 40</me> possible drink orders.</p></li>
+          <li><p>First digit 1–9 (9 choices) and each remaining digit 0–9: <me>9 \cdot 10^4 = 90{,}000</me> codes.</p></li>
+          <li><p>Combination selection: <me>{}_{10} C_8 = 45</me> and <me>{}_5 C_3 = 10</me>. Total: <me>45 \cdot 10 = 450</me>.</p></li>
+          <li><p>Letters A–Z: 26 choices; digits 1–9: 9 choices. Total: <me>26 \cdot 9 = 234</me>.</p></li>
+          <li><p>Permutation: <me>P(100,3) = 100 \cdot 99 \cdot 98 = 970{,}200</me>.</p></li>
+          <li><p>Combination: <me>{}_6 C_3 = 20</me>.</p></li>
+          <li><p>Combination: <me>{}_9 C_5 = 126</me>.</p></li>
+          <li><p>Lottery selection: <me>{}_{56} C_5 = 3{,}819{,}816</me>; multiply by 46 Megaball choices: <me>175{,}711{,}536</me>.</p></li>
+          <li><p>Choose each part: <me>{}_{20} C_{15} = 15{,}504</me> and <me>{}_{10} C_5 = 252</me>. Total: <me>3{,}905{,}008</me>.</p></li>
+          <li><p>Combination: <me>{}_{10} C_3 = 120</me>.</p></li>
+        </ol>
       </p>
     </solution>
-  </example>
+  </exercise>
 </section>

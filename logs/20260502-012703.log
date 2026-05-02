@@ -12,18 +12,9 @@ INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/so
 INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/assets
 INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
 INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
-INFO    : converting /workspaces/Survey-of-Math/source/main.ptx to LaTeX as /tmp/ptx-3aghembj/main.tex
+INFO    : converting /workspaces/Survey-of-Math/source/main.ptx to LaTeX as /tmp/ptx-_xkx6per/main.tex
 INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/pretext-latex.xsl
 INFO    : messages from the log for XSL processing:
 INFO    : * PTX:INFO:   checking all deprecated elements.
 ERROR   : * PTX:BUG:     Exercise component mis-labeled
 INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/pretext-latex.xsl
-CRITICAL: [Errno 2] No such file or directory: 'main.pdf'
-INFO    : ------------------------
-CRITICAL: Failed to build without errors.  Exiting...
-INFO    : 
-----------------------------------------------------
-INFO    : While running pretext, the following errors occurred:
-
-INFO    : (see log messages above or in the 'logs' folder for more information)
-INFO    : ----------------------------------------------------

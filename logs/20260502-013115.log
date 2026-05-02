@@ -1,10 +1,10 @@
-INFO    : Building target print
+INFO    : Building target course
 INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
 INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
 INFO    : Generating any needed assets.
 INFO    : Finished generating assets.
 
-INFO    : Preparing to build into /workspaces/Survey-of-Math/output/print.
+INFO    : Preparing to build into /workspaces/Survey-of-Math/output/course.
 INFO    : discovering source file's directory name: /workspaces/Survey-of-Math/source
 INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/source/../generated-assets
 INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/generated-assets
@@ -12,18 +12,22 @@ INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/so
 INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/assets
 INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
 INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
-INFO    : converting /workspaces/Survey-of-Math/source/main.ptx to LaTeX as /tmp/ptx-3aghembj/main.tex
-INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/pretext-latex.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 7.13.5
+INFO    : Downloading Runestone Services, version 7.13.5
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-denver
+INFO    : converting /workspaces/Survey-of-Math/source/main.ptx to HTML in /tmp/ptx-sx2084r5
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/pretext-html.xsl
 INFO    : messages from the log for XSL processing:
 INFO    : * PTX:INFO:   checking all deprecated elements.
-ERROR   : * PTX:BUG:     Exercise component mis-labeled
-INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/pretext-latex.xsl
-CRITICAL: [Errno 2] No such file or directory: 'main.pdf'
-INFO    : ------------------------
-CRITICAL: Failed to build without errors.  Exiting...
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /tmp/ptx-sx2084r5
+INFO    : Removing temporary directory /tmp/ptx-bam2re10
 INFO    : 
-----------------------------------------------------
-INFO    : While running pretext, the following errors occurred:
+Finished build for target course. Run `pretext view course` to see the results.
 
-INFO    : (see log messages above or in the 'logs' folder for more information)
-INFO    : ----------------------------------------------------
+INFO    : 
+Success!  Built requested target(s) without errors.
+
+INFO    : 

@@ -8,7 +8,7 @@
   <book>
     <title>Survey of Math</title>
 
-    <subtitle>MA-105-BL Summer 2026</subtitle>
+    <subtitle>MA-105 Worcester State University</subtitle>
 
     <!-- Optional: include frontmatter with author info and date -->
     <xi:include href="./frontmatter.ptx" />
@@ -58,13 +58,13 @@
       In this chapter, we will define the fundamental building blocks of the theory, starting with the concept of a <term>sample space</term>.
     </p>
   </introduction>
-  <!--<xi:include href="./notes/fundamentalP.ptx" />
+  <xi:include href="./notes/fundamentalP.ptx" />
   <xi:include href="./notes/OrNotEvent.ptx" />
   <xi:include href="./notes/FCP.ptx" />
   <xi:include href="./notes/Factorials.ptx" />
   <xi:include href="./notes/Permutations.ptx" />
   <xi:include href="./notes/Combinations.ptx" />
-  <xi:include href="./notes/Probability.ptx" />-->
+  <xi:include href="./notes/Probability.ptx" />
   
   
 

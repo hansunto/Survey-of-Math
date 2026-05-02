@@ -66,6 +66,7 @@
   <xi:include href="./notes/Permutations.ptx" />
   <xi:include href="./notes/Combinations.ptx" />
   <xi:include href="./notes/Probability.ptx" />
+  <xi:include href="./notes/Probchex.ptx" />
 
    </chapter>
 

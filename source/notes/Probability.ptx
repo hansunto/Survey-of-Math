@@ -59,6 +59,9 @@
     </solution>
   
   <exercise>
+    <title>Probability of Performers</title>
+    
+    
   <statement>
     <p>
       Seven performers A, B, C, D, E, F, and G are to appear in a fundraiser. The order of performance is determined by random selection. Find the probability that:
@@ -120,6 +123,7 @@
 <subsection xml:id="subsec-nCr-Probability">
     <title>Probability with Combinations, nCr</title>
   <example>
+    <title>Probability of Winning LOTTO</title>
     <p>
       Florida's lottery game LOTTO is set up so that each player chooses six different numbers from 1 to 53. 
       If the six numbers chosen match the six numbers drawn randomly, the player wins the top cash prize. 
@@ -151,80 +155,237 @@
   </example>
 
   <exercise>
-    <statement>
-      <p>
-        A state lottery is designed so that a player chooses five numbers from 1 to 30 on one lottery ticket. 
-        What is the probability that a player with one lottery ticket will win? 
-        What is the probability of winning if 100 different lottery tickets are purchased?
-      </p>
-    </statement>
+  <statement>
+    <p>
+      A state lottery is designed so that a player chooses five numbers from 1 to 30 on one lottery ticket.
+      What is the probability that a player with one lottery ticket will win?
+      What is the probability of winning if 100 different lottery tickets are purchased?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      The total number of possible outcomes is the number of ways to choose 5 numbers from 30:
+      <me>{}_{30}C_{5} = 142,506</me>
+    </p>
+    <p>
+      The probability of winning with one ticket is:
+      <me>P(\text{1 ticket}) = \frac{1}{142,506} \approx 0.000007</me>
+    </p>
+    <p>
+      The probability of winning with 100 tickets is:
+      <me>P(\text{100 tickets}) = \frac{100}{142,506} \approx 0.0007</me>
+    </p>
+  </solution>
+  <hint>
+    <p>
+      To calculate <m>{}_{30}C_{5}</m> on your <term>TI-30XIIS</term>:
+      <ol>
+        <li>Enter <kbd>30</kbd>.</li>
+        <li>Press the <kbd>PRB</kbd> key.</li>
+        <li>Use the <kbd>Right Arrow</kbd> to underline <term>nCr</term>.</li>
+        <li>Press <kbd>ENTER</kbd>.</li>
+        <li>Enter <kbd>5</kbd> and press <kbd>ENTER</kbd> (Result: 142,506).</li>
+        <li>To find the probability, press <kbd>1</kbd> <kbd>÷</kbd> <kbd>2nd</kbd> <kbd>ANS</kbd> <kbd>ENTER</kbd>.</li>
+      </ol>
+    </p>
+  </hint>
   </exercise>
 
   <example>
+  <title>Probability of Club Committee Selection</title>
+  <statement>
     <p>
-      A club consists of five men and seven women. Three members are selected at random to attend a conference. 
-      Find the probability that the selected group consists of:
+      A club consists of five men and seven women. Three members are selected at random to attend a conference. Find the probability that the selected group consists of:
       <ol label="a">
         <li><p>three men.</p></li>
         <li><p>one man and two women.</p></li>
       </ol>
     </p>
-    <solution>
-      <p>
-        <ol label="a">
-          <li>
-            <p>
-              Total combinations of 3 people from 12: 
-              <me>{}_{12}C_3 = \frac{12!}{9!3!} = 220</me>
-            </p>
-            <p>
-              Ways to select 3 men from 5:
-              <me>{}_{5}C_3 = \frac{5!}{2!3!} = 10</me>
-            </p>
-            <p>
-              <me>P(\text{3 men}) = \frac{10}{220} = \frac{1}{22}</me>
-            </p>
-          </li>
-        </ol>
-      </p>
-    </solution>
-  </example>
+  </statement>
+  <solution>
+    <p>
+      First, we find the total number of ways to choose 3 members from the group of 12 (5 men + 7 women):
+      <me>{}_{12}C_{3} = 220</me>
+    </p>
+    
+    <p>
+      <ol label="a">
+        <li>
+          <p>
+            To find the probability of selecting three men, we first find the number of ways to choose 3 men from the 5 available:
+            <me>{}_{5}C_{3} = 10</me>
+          </p>
+          <p>
+            The probability is:
+            <me>P(\text{3 men}) = \frac{{}_{5}C_{3}}{{}_{12}C_{3}} = \frac{10}{220} = \frac{1}{22} \approx 0.0455</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            To find the probability of selecting one man and two women, we calculate the ways to choose each and multiply them:
+            <ul>
+              <li><p>Ways to choose 1 man from 5: <m>{}_{5}C_{1} = 5</m></p></li>
+              <li><p>Ways to choose 2 women from 7: <m>{}_{7}C_{2} = 21</m></p></li>
+            </ul>
+            <me>P(\text{1 man, 2 women}) = \frac{{}_{5}C_{1} \times {}_{7}C_{2}}{{}_{12}C_{3}} = \frac{5 \times 21}{220} = \frac{105}{220} = \frac{21}{44} \approx 0.4773</me>
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      <term>TI-30XIIS Tip:</term> 
+      To calculate part (b) in one string: 
+      <kbd>5</kbd> <kbd>PRB</kbd> (<term>nCr</term>) <kbd>1</kbd> <kbd>×</kbd> <kbd>7</kbd> <kbd>PRB</kbd> (<term>nCr</term>) <kbd>2</kbd> <kbd>÷</kbd> <kbd>220</kbd> <kbd>ENTER</kbd>.
+    </p>
+  </solution>
+</example>
 
   <exercise>
-    <statement>
-      <p>
-        A box contains 25 transistors, 6 of which are defective. If 6 are selected at random, find the probability that:
-        <ol label="a">
-          <li><p>all are defective.</p></li>
-          <li><p>none are defective.</p></li>
-        </ol>
-      </p>
-    </statement>
-  </exercise>
+  <title>Probability of Defective Transistors</title>
+  <statement>
+    <p>
+      A box contains 25 transistors, 6 of which are defective. If 6 are selected at random, find the probability that:
+      <ol label="a">
+        <li><p>all are defective.</p></li>
+        <li><p>none are defective.</p></li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      First, we determine the total number of ways to select 6 transistors from 25:
+      <me>{}_{25}C_{6} = 177,100</me>
+    </p>
+    <p>
+      <ol label="a">
+        <li>
+          <p>
+            To find the probability that all 6 are defective, we choose 6 from the 6 defective transistors:
+            <me>{}_{6}C_{6} = 1</me>
+            <me>P(\text{all defective}) = \frac{1}{177,100} \approx 0.0000056</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            To find the probability that none are defective, all 6 must be chosen from the 19 non-defective transistors (25 total - 6 defective):
+            <me>{}_{19}C_{6} = 27,132</me>
+            <me>P(\text{none defective}) = \frac{27,132}{177,100} = \frac{6,783}{44,275} \approx 0.1532</me>
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      <term>TI-30XIIS Calculator Steps:</term>
+      <ul>
+        <li><p>For the denominator: <kbd>25</kbd> <kbd>PRB</kbd> (<term>nCr</term>) <kbd>6</kbd> <kbd>ENTER</kbd> (Result: 177,100).</p></li>
+        <li><p>For part (b): <kbd>19</kbd> <kbd>PRB</kbd> (<term>nCr</term>) <kbd>6</kbd> <kbd>÷</kbd> <kbd>177,100</kbd> <kbd>ENTER</kbd>.</p></li>
+      </ul>
+    </p>
+  </solution>
+</exercise>
+
 
   <exercise>
-    <statement>
-      <p>
-        A parent-teacher committee consisting of four people is to be selected from fifteen parents and five teachers. 
-        Find the probability of selecting two parents and two teachers.
-      </p>
-    </statement>
-  </exercise>
+  <title>Parent-Teacher Committee Selection</title>
+  <statement>
+    <p>
+      A parent-teacher committee consisting of four people is to be selected from fifteen parents and five teachers. Find the probability of selecting two parents and two teachers.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      First, we find the total number of ways to choose 4 members from the group of 20 (15 parents + 5 teachers):
+      <me>{}_{20}C_{4} = 4,845</me>
+    </p>
+    <p>
+      Next, we find the number of ways to select the specific group:
+      <ul>
+        <li><p>Ways to select 2 parents from 15: <m>{}_{15}C_{2} = 105</m></p></li>
+        <li><p>Ways to select 2 teachers from 5: <m>{}_{5}C_{2} = 10</m></p></li>
+      </ul>
+      Total successful outcomes: <m>105 \times 10 = 1,050</m>.
+    </p>
+    <p>
+      The probability is the number of successful outcomes divided by the total outcomes:
+      <me>P(\text{2 parents, 2 teachers}) = \frac{{}_{15}C_{2} \times {}_{5}C_{2}}{{}_{20}C_{4}} = \frac{1,050}{4,845}</me>
+    </p>
+    <p>
+      Simplifying the fraction and providing the decimal:
+      <me>P = \frac{70}{323} \approx 0.2167</me>
+    </p>
+    <p>
+      <term>TI-30XIIS Calculator Steps:</term>
+      <kbd>15</kbd> <kbd>PRB</kbd> (<term>nCr</term>) <kbd>2</kbd> <kbd>×</kbd> <kbd>5</kbd> <kbd>PRB</kbd> (<term>nCr</term>) <kbd>2</kbd> <kbd>÷</kbd> <kbd>20</kbd> <kbd>PRB</kbd> (<term>nCr</term>) <kbd>4</kbd> <kbd>ENTER</kbd>.
+    </p>
+  </solution>
+</exercise>
+
+ <exercise>
+  <title>Probability of Dealing Four Hearts</title>
+  <statement>
+    <p>
+      If you are dealt 4 cards from a shuffled deck of 52 cards (<xref ref="fig-deck-of-cards"/>), find the probability that all 4 are hearts.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      First, we determine the total number of ways to choose 4 cards from a deck of 52:
+      <me>{}_{52}C_{4} = 270,725</me>
+    </p>
+    <p>
+      Next, we determine the number of ways to choose 4 hearts. Since there are 13 hearts in a deck:
+      <me>{}_{13}C_{4} = 715</me>
+    </p>
+    <p>
+      The probability that all 4 cards are hearts is the number of ways to choose 4 hearts divided by the total number of ways to choose 4 cards:
+      <me>P(\text{4 hearts}) = \frac{{}_{13}C_{4}}{{}_{52}C_{4}} = \frac{715}{270,725}</me>
+    </p>
+    <p>
+      Simplifying the fraction and providing the decimal:
+      <me>P = \frac{11}{4,165} \approx 0.0026</me>
+    </p>
+    <p>
+      <term>TI-30XIIS Calculator Steps:</term>
+      <kbd>13</kbd> <kbd>PRB</kbd> (<term>nCr</term>) <kbd>4</kbd> <kbd>÷</kbd> <kbd>52</kbd> <kbd>PRB</kbd> (<term>nCr</term>) <kbd>4</kbd> <kbd>ENTER</kbd>.
+    </p>
+  </solution>
+</exercise>
 
   <exercise>
-    <statement>
-      <p>
-        If you are dealt 4 cards from a shuffled deck of 52 cards, find the probability that all 4 are hearts.
-      </p>
-    </statement>
-  </exercise>
+  <title>Probability of Full House: Kings and Aces</title>
+  <statement>
+    <p>
+      If you are dealt 5 cards from a shuffled deck of 52 cards (<xref ref="fig-deck-of-cards"/>), find the probability that you get 3 kings and two aces.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      First, we find the total number of ways to choose 5 cards from a deck of 52:
+      <me>{}_{52}C_{5} = 2,598,960</me>
+    </p>
+    <p>
+      Next, we calculate the number of ways to select the specific cards:
+      <ul>
+        <li><p>Ways to select 3 kings from the 4 available: <m>{}_{4}C_{3} = 4</m></p></li>
+        <li><p>Ways to select 2 aces from the 4 available: <m>{}_{4}C_{2} = 6</m></p></li>
+      </ul>
+      Total successful outcomes: <m>4 \times 6 = 24</m>.
+    </p>
+    <p>
+      The probability is the ratio of successful outcomes to the total possible outcomes:
+      <me>P(\text{3 kings and 2 aces}) = \frac{{}_{4}C_{3} \times {}_{4}C_{2}}{{}_{52}C_{5}} = \frac{24}{2,598,960}</me>
+    </p>
+    <p>
+      Simplifying the fraction and providing the decimal:
+      <me>P = \frac{1}{108,290} \approx 0.00000923</me>
+    </p>
+    <p>
+      <term>TI-30XIIS Calculator Steps:</term>
+      <kbd>4</kbd> <kbd>PRB</kbd> (<term>nCr</term>) <kbd>3</kbd> <kbd>×</kbd> <kbd>4</kbd> <kbd>PRB</kbd> (<term>nCr</term>) <kbd>2</kbd> <kbd>÷</kbd> <kbd>52</kbd> <kbd>PRB</kbd> (<term>nCr</term>) <kbd>5</kbd> <kbd>ENTER</kbd>.
+    </p>
+  </solution>
+</exercise>
 
-  <exercise>
-    <statement>
-      <p>
-        If you are dealt 5 cards from a shuffled deck of 52 cards, find the probability that you get 3 kings and two aces.
-      </p>
-    </statement>
-  </exercise>
   </subsection>
 </section>

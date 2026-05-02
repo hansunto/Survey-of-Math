@@ -1,0 +1,20 @@
+INFO    : Building target print
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /workspaces/Survey-of-Math/output/print.
+INFO    : discovering source file's directory name: /workspaces/Survey-of-Math/source
+INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/assets
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : converting /workspaces/Survey-of-Math/source/main.ptx to LaTeX as /tmp/ptx-3aghembj/main.tex
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/pretext-latex.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking all deprecated elements.
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/pretext-latex.xsl

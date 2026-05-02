@@ -21,6 +21,18 @@
       <!-- Other documents could go here, like a schedule, project description, etc. -->
     </chapter>
 
+    <chapter xml:id="ch-Voting-Apportionment">
+      <title>Voting and Apportionment</title>
+      <introduction>
+        <p>
+        Beyond just marking a ballot, these concepts shape how our voices are heard and how resources are distributed. This chapter breaks down the mechanics behind decision-making, offering clear examples of how mathematical fairness directly impacts your community and representation.
+        </p>
+      </introduction>
+      <xi:include href="./notes/voting.ptx" />
+      <xi:include href="./notes/Apportionment.ptx" />
+      <xi:include href="./notes/votingchex.ptx" />
+    </chapter>
+
     <chapter xml:id="ch-Personal-Finance">
       <title>Personal Finance</title>
       <introduction>
@@ -36,19 +48,8 @@
       <xi:include href="./notes/finchex.ptx" />
     </chapter>
 
-    <chapter xml:id="ch-Voting-Apportionment">
-      <title>Voting and Apportionment</title>
-      <introduction>
-        <p>
-        Beyond just marking a ballot, these concepts shape how our voices are heard and how resources are distributed. This chapter breaks down the mechanics behind decision-making, offering clear examples of how mathematical fairness directly impacts your community and representation.
-        </p>
-      </introduction>
-      <xi:include href="./notes/voting.ptx" />
-      <xi:include href="./notes/Apportionment.ptx" />
-      <xi:include href="./notes/votingchex.ptx" />
-    </chapter>
-
-    <chapter xml:id="ch-Probability">
+   
+    <!--<chapter xml:id="ch-Probability">
       <title>Probability </title>
       <introduction>
     <p>
@@ -65,10 +66,8 @@
   <xi:include href="./notes/Permutations.ptx" />
   <xi:include href="./notes/Combinations.ptx" />
   <xi:include href="./notes/Probability.ptx" />
-  
-  
 
-    </chapter>
+   </chapter>-->
 
     <chapter xml:id="Hands-On-Sessions">
       <title>Hands-On Sessions</title>

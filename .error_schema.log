@@ -1,5 +1,5 @@
-<string>:26:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element idx, got introduction
-<string>:26:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element introduction there
-<string>:26:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element sidebyside, got introduction
-<string>:26:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element proof, got introduction
-<string>:7:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element blockquote, got p
+<string>:251:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element table there
+<string>:251:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element sidebyside, got table
+<string>:292:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element ul there
+<string>:292:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element sidebyside, got ul
+<string>:251:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element solution has extra content: table

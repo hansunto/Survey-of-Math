@@ -19,6 +19,429 @@ var ptx_lunr_docs = [
   "body": "course name (MATH xxx, section xxx) "
 },
 {
+  "id": "notes-Voting",
+  "level": "1",
+  "url": "notes-Voting.html",
+  "type": "Section",
+  "number": "",
+  "title": "Voting methods",
+  "body": " Voting methods   How to determine a Winner?    Preference ballots are ballots in which a voter is asked to rank all candidates in order of preference. A preference table shows how often each particular outcomes occurred.     Four candidates are running for student body president: Alice (A), Bonnie (B), Carlos (C) and Daniel (D). The students were asked to rank all the candidates in order of preference.   Preference Table For The Election Of Student Body President    Number of Votes  130  120  100  150    First choice  A  D  D  C    Second choice  B  B  B  B    Third choice  C  C  A  A    Fourth choice  D  A  C  D       How many students voted in the election?  How many students selected the candidates in this order : D, B, A, C?  How many students selected Daniel (D) as their first choice for student body president?         To find the total number of students, sum the votes in the top row: students.    Looking at the columns, the order D, B, A, C appears in the third column. There were students who voted in this order.    Daniel (D) is listed as the first choice in the second and third columns. The total number of students is students.         The Plurality Method   The candidate (or candidates, if there is more than one) with the most first-place votes is the winner.       shows the preference table for the four candidates running for student body president. Who is declared the winner using the Plurality method?    A received 130 first-place votes, D received first-place votes and C received 150 first-place votes. Thus Daniel is the winner.       Majority Rule Decision is when more than 50% of the voters rank a candidate in first-place. The majority rule will almost always have a winner.    The Plurality-with-Elimination Method   The candidate with the majority (over 50% votes) of first-place votes is the winner. If no candidate receives a majority, eliminate the candidate with the fewest first-place votes. Move the candidates below them up one place and recount. Repeat until a candidate has a majority.     Elimination Method Example   Determine the winner for the student president election from , using Plurality-with-Elimination.    Total votes = 500. Majority needed = 251.   Round 1: A=130, D=220, C=150, B=0. No majority. Bonnie (B) is eliminated.   Preference Table: Round 2 (Bonnie Eliminated)    Number of Votes  130  120  100  150    First choice  A  D  D  C    Second choice  C  C  A  A    Third choice  D  A  C  D      Round 2: After shifting votes up, the first-place votes remain: A=130, D=220, C=150. Still no majority. Alice (A) has the fewest (130) and is eliminated.   Preference Table: Final Round (Alice and Bonnie Eliminated)    Number of Votes  130  120  100  150    First choice  C  D  D  C    Second choice  D  C  C  D      Round 3: Alice's 130 votes go to her next preferred candidate, Carlos (C). New totals: Daniel = 220, Carlos = .  Carlos now has 280 votes (a majority). Carlos is the winner.      The Borda Count Method   Each voter ranks the candidates from the most favorable to the least favorable. Each last-place vote is given 1 point, each next-to-last-place vote is given 2 points, and so on. The points are totaled for each candidate separately. The candidate with the most points is the winner.     Borda Count Example   Using the preference data from , who is declared the winner using the Borda Count Method?    With 4 candidates, 1st place gets 4 pts, 2nd gets 3 pts, 3rd gets 2 pts, and 4th gets 1 pt.   Borda Count Calculation Table    Number of Votes  130  120  100  150    1st choice: 4 pts  A:  D:  D:  C:    2nd choice: 3 pts  B:  B:  B:  B:    3rd choice: 2 pts  C:  C:  A:  A:    4th choice: 1 pt  D:  A:  C:  D:      Alice (A):  pts  Bonnie (B):  pts  Carlos (C):  pts  Daniel (D):  pts   Bonnie is the winner with 1500 points.      The Pairwise Comparison Method   Every candidate is matched on a one-to-one basis with every other candidate. If candidate A beats candidate B in one-to-one competition, then A receives 1 point and B receives 0. If they tie, each receives 0.5 points. The candidate with the most total points is the winner.  In an election with candidates, the number of comparisons, , is calculated as:      Pairwise Comparison Example   Using the same preference , for the four candidates (Alice, Bonnie, Carlos, and Daniel), who is the winner using the Pairwise Comparison Method?    With candidates, there are total comparisons (A vs.B, A vs.C, A vs.D, B vs.C, B vs.D, C vs.D) and determine the winner using the pairwise comparison method.     130 120 100 150  A B B B  B A A A   A vs B     130 120 100 150  A C A C  C A C A   A vs C     130 120 100 150  A D D A  D A A D   A vs D       130 120 100 150  B B B C  C C C B   B vs C     130 120 100 150  B D D B  D B B D   B vs D     130 120 100 150  C D D C  D C C D   C vs D       A vs B: Alice is preferred over Bonnie in 130 ballots. Bonnie is preferred over Alice in ballots. Winner: Bonnie (B gets 1 pt)      A vs C: Alice is preferred over Carlos in ballots. Carlos is preferred over Alice in 150. Winner: Alice (A gets 1 pt)      A vs D: Alice is preferred over Daniel in 130 ballots. Daniel is preferred over Alice in ballots. Winner: Daniel (D gets 1 pt)      B vs C: Bonnie is preferred over Carlos in ballots. Carlos is preferred over Bonnie in 150. Winner: Bonnie (B gets 1 pt)      B vs D: Bonnie is preferred over Daniel in ballots. Daniel is preferred over Bonnie in . Winner: Bonnie (B gets 1 pt)      C vs D: Carlos is preferred over Daniel in ballots. Daniel is preferred over Carlos in . Winner: Carlos (C gets 1 pt)      Final Point Totals:   Bonnie (B): 3 points  Alice (A): 1 point  Daniel (D): 1 point  Carlos (C): 1 point    Bonnie is the winner using Pairwise Comparison.     If a candidate wins all pair comparisons with other candidates, that candidate is called the Condorcet winner . A Condorcet winner automatically wins by the pairwise comparisons method.    Condorcet Winner   Is there a Condorcet winner in the following election?   Preference Table for Condorcet Example    Number of Votes  30  30  30  20    First choice  B  B  A  A    Second choice  A  A  C  D    Third choice  C  D  D  C    Fourth choice  D  C  B  B       To find a Condorcet winner, we must see if one candidate wins every head-to-head matchup. Let's check candidate B and candidate A :     B vs A: B is ranked higher than A in ballots. A is ranked higher than B in ballots. Winner: B .     B vs C: B is ranked higher than C in ballots (every ballot). Winner: B .     B vs D: B is ranked higher than D in ballots (every ballot). Winner: B .    Since B beats every other candidate in a one-on-one comparison, B is the Condorcet winner .      Arrow's Impossibility Theorem states that a ranked-voting electoral system cannot reach a community-wide ranked preference by converting individuals' preferences while meeting all the conditions of a fair voting system.  Consider the following situation with 3 candidates in one-to-one competition (pairwise comparison method):  Suppose candidate A beats candidate B  Suppose candidate B beats candidate C  Suppose candidate C beats candidate A    When this occurs, it is because the conflicting majorities are each made up of different groups of individuals. No winner can be determined.  This is called the Condorcet Paradox (also known as the voting paradox).    Condorcet Paradox   Who would win this election through the pairwise comparison method?   Preference Table: Three-Candidate Election    Number of Votes  8  9  10    First choice  C  B  A    Second choice  A  C  B    Third choice  B  A  C       We perform the three possible head-to-head comparisons:     A vs B: A is preferred on 8 (col 1) + 10 (col 3) = 18 ballots. B is preferred on 9 (col 2) ballots. Winner: A (A gets 1 pt).     B vs C: B is preferred on 9 (col 2) + 10 (col 3) = 19 ballots. C is preferred on 8 (col 1) ballots. Winner: B (B gets 1 pt).     C vs A: C is preferred on 8 (col 1) + 9 (col 2) = 17 ballots. A is preferred on 10 (col 3) ballots. Winner: C (C gets 1 pt).    Each candidate (A, B, and C) has exactly 1 point. This is a Condorcet Paradox because there is a \"rock-paper-scissors\" loop (A beats B, B beats C, and C beats A), resulting in a three-way tie.     Mayor of a Small Town   Three candidates A, B, and C are running for mayor of a small town. The results of the election are shown in the following preference table.   Mayor Election Preference Table    Number of Votes  1200  900  900  600    First choice  A  C  B  B    Second choice  B  A  C  A    Third choice  C  B  A  C       Determine the winner using the Plurality method.  Determine the winner using the Borda count method.  Determine the winner using the Plurality-with-elimination method.  Is there a Condorcet Winner?          Plurality: A = 1200, B = , C = 900. Winner: B .     Borda Count (3-2-1):   A:  B:  C:   Winner: B .     Plurality-with-Elimination: Total votes = 3600; Majority = 1801. Round 1: A=1200, B=1500, C=900. No majority. Eliminate C. C's 900 votes go to A (second choice). Final: A = , B = 1500. Winner: A .     Condorcet Winner Check:   A vs B: A is preferred on . B on 1500. (A wins)  A vs C: A is preferred on . C on . (Tie)  Since A does not win all matches, No Condorcet Winner exists .          Plurality Method  We count only the first-place votes for each candidate:   A: 1200 votes  B:  votes  C: 900 votes   Winner: B (1500 votes).    Borda Count Method (3-2-1 Points)   Borda Count Point Distribution    Candidate  1st (3 pts)  2nd (2 pts)  3rd (1 pt)  Total Points    A        B        C         Winner: B (7800 points).    Plurality-with-Elimination  Total Votes: 3600. Majority needed: 1801.  Round 1: A=1200, B=1500, C=900. No candidate has 1801. Eliminate C.   Final Round (C Eliminated)   Votes 1200 900 900 600  1st A A B B  2nd B B A A    New totals: A = . B = . Winner: A (2100 votes).        Math Club Presidential Election   Four candidates are running for president of the Math Club: Paula (P), Sylvia (S), Craig (C), and Brian (B). The results of the election are shown in the following preference table:   Election Preference Schedule    Number of Votes  15  19  23  10  18  15    First choice  B  C  P  P  S  B    Second choice  S  P  S  B  C  S    Third choice  P  S  B  C  P  C    Fourth choice  C  B  C  S  B  P       How many students voted in the election?  How many students voted Brian as their first choice?  Who would win the presidency using the Plurality method?  Is there a Majority Winner?  Who would win the presidency using the Plurality with Elimination method?  Who would win the presidency using the Borda count method?   Who would win the presidency using the pairwise comparison method? If a tie, use the Plurality method between the winners to determine the tie-breaker.          100 students  30 students  Paula (33 votes)  No (Majority requires 51 votes)  Craig  Sylvia (279 points)  Paula (3 points)         Total Votes: 100.  Brian 1st choice: 30.  Plurality Winner: Paula (33).  Majority: No (Requires 51).   Plurality with Elimination:  Round 1: Sylvia has the fewest 1st-place votes (18) and is eliminated.   Round 2 (Sylvia Eliminated)   Votes 15 19 23 10 18 15  1st B C P P C B  2nd P P B B P C  3rd C B C C B P    New totals: P=33, B=30, C=37 (19 + 18). Brian is eliminated.   Round 3 (Brian Eliminated)   Votes 15 19 23 10 18 15  1st P C P P C C  2nd C P C C P P    Round 3: Paula vs. Craig. Craig wins the final matchup against Paula 52 to 48.  Winner: Craig.    Borda Count Method:  Using 4 pts for 1st, 3 for 2nd, 2 for 3rd, and 1 for 4th:   Paula:  Sylvia:  Craig:  Brian:   Winner: Sylvia.    Pairwise Comparison:  For the Pairwise Comparison Method , we compare every possible pair. There are 100 total votes, so 51 are needed to win a matchup:  P vs. S: P has 52; S has 48. (P gets 1 pt)  P vs. C: P has 63; C has 37. (P gets 1 pt)  P vs. B: P has 70; B has 30. (P gets 1 pt)  S vs. C: S has 81; C has 19. (S gets 1 pt)  S vs. B: S has 60; B has 40. (S gets 1 pt)  C vs. B: C has 60; B has 40. (C gets 1 pt)     Total Points: Paula = 3, Sylvia = 2, Craig = 1, Brian = 0. Paula is the winner; no tie-breaker is required.        "
+},
+{
+  "id": "notes-Voting-2-2-1",
+  "level": "2",
+  "url": "notes-Voting.html#notes-Voting-2-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Preference ballots preference table "
+},
+{
+  "id": "exe-student-president",
+  "level": "2",
+  "url": "notes-Voting.html#exe-student-president",
+  "type": "Example",
+  "number": "2.1",
+  "title": "",
+  "body": "  Four candidates are running for student body president: Alice (A), Bonnie (B), Carlos (C) and Daniel (D). The students were asked to rank all the candidates in order of preference.   Preference Table For The Election Of Student Body President    Number of Votes  130  120  100  150    First choice  A  D  D  C    Second choice  B  B  B  B    Third choice  C  C  A  A    Fourth choice  D  A  C  D       How many students voted in the election?  How many students selected the candidates in this order : D, B, A, C?  How many students selected Daniel (D) as their first choice for student body president?         To find the total number of students, sum the votes in the top row: students.    Looking at the columns, the order D, B, A, C appears in the third column. There were students who voted in this order.    Daniel (D) is listed as the first choice in the second and third columns. The total number of students is students.      "
+},
+{
+  "id": "def-plurality-method",
+  "level": "2",
+  "url": "notes-Voting.html#def-plurality-method",
+  "type": "Definition",
+  "number": "2.3",
+  "title": "The Plurality Method.",
+  "body": " The Plurality Method   The candidate (or candidates, if there is more than one) with the most first-place votes is the winner.   "
+},
+{
+  "id": "ex-plurality",
+  "level": "2",
+  "url": "notes-Voting.html#ex-plurality",
+  "type": "Example",
+  "number": "2.4",
+  "title": "",
+  "body": "   shows the preference table for the four candidates running for student body president. Who is declared the winner using the Plurality method?    A received 130 first-place votes, D received first-place votes and C received 150 first-place votes. Thus Daniel is the winner.   "
+},
+{
+  "id": "notes-Voting-2-6-1",
+  "level": "2",
+  "url": "notes-Voting.html#notes-Voting-2-6-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Majority Rule Decision "
+},
+{
+  "id": "def-elimination",
+  "level": "2",
+  "url": "notes-Voting.html#def-elimination",
+  "type": "Definition",
+  "number": "2.5",
+  "title": "The Plurality-with-Elimination Method.",
+  "body": " The Plurality-with-Elimination Method   The candidate with the majority (over 50% votes) of first-place votes is the winner. If no candidate receives a majority, eliminate the candidate with the fewest first-place votes. Move the candidates below them up one place and recount. Repeat until a candidate has a majority.   "
+},
+{
+  "id": "exe-elimination-example",
+  "level": "2",
+  "url": "notes-Voting.html#exe-elimination-example",
+  "type": "Example",
+  "number": "2.6",
+  "title": "Elimination Method Example.",
+  "body": " Elimination Method Example   Determine the winner for the student president election from , using Plurality-with-Elimination.    Total votes = 500. Majority needed = 251.   Round 1: A=130, D=220, C=150, B=0. No majority. Bonnie (B) is eliminated.   Preference Table: Round 2 (Bonnie Eliminated)    Number of Votes  130  120  100  150    First choice  A  D  D  C    Second choice  C  C  A  A    Third choice  D  A  C  D      Round 2: After shifting votes up, the first-place votes remain: A=130, D=220, C=150. Still no majority. Alice (A) has the fewest (130) and is eliminated.   Preference Table: Final Round (Alice and Bonnie Eliminated)    Number of Votes  130  120  100  150    First choice  C  D  D  C    Second choice  D  C  C  D      Round 3: Alice's 130 votes go to her next preferred candidate, Carlos (C). New totals: Daniel = 220, Carlos = .  Carlos now has 280 votes (a majority). Carlos is the winner.   "
+},
+{
+  "id": "def-borda-count",
+  "level": "2",
+  "url": "notes-Voting.html#def-borda-count",
+  "type": "Definition",
+  "number": "2.9",
+  "title": "The Borda Count Method.",
+  "body": " The Borda Count Method   Each voter ranks the candidates from the most favorable to the least favorable. Each last-place vote is given 1 point, each next-to-last-place vote is given 2 points, and so on. The points are totaled for each candidate separately. The candidate with the most points is the winner.   "
+},
+{
+  "id": "exe-borda-example",
+  "level": "2",
+  "url": "notes-Voting.html#exe-borda-example",
+  "type": "Example",
+  "number": "2.10",
+  "title": "Borda Count Example.",
+  "body": " Borda Count Example   Using the preference data from , who is declared the winner using the Borda Count Method?    With 4 candidates, 1st place gets 4 pts, 2nd gets 3 pts, 3rd gets 2 pts, and 4th gets 1 pt.   Borda Count Calculation Table    Number of Votes  130  120  100  150    1st choice: 4 pts  A:  D:  D:  C:    2nd choice: 3 pts  B:  B:  B:  B:    3rd choice: 2 pts  C:  C:  A:  A:    4th choice: 1 pt  D:  A:  C:  D:      Alice (A):  pts  Bonnie (B):  pts  Carlos (C):  pts  Daniel (D):  pts   Bonnie is the winner with 1500 points.   "
+},
+{
+  "id": "def-pairwise-comparison",
+  "level": "2",
+  "url": "notes-Voting.html#def-pairwise-comparison",
+  "type": "Definition",
+  "number": "2.12",
+  "title": "The Pairwise Comparison Method.",
+  "body": " The Pairwise Comparison Method   Every candidate is matched on a one-to-one basis with every other candidate. If candidate A beats candidate B in one-to-one competition, then A receives 1 point and B receives 0. If they tie, each receives 0.5 points. The candidate with the most total points is the winner.  In an election with candidates, the number of comparisons, , is calculated as:    "
+},
+{
+  "id": "exe-pairwise-example",
+  "level": "2",
+  "url": "notes-Voting.html#exe-pairwise-example",
+  "type": "Example",
+  "number": "2.13",
+  "title": "Pairwise Comparison Example.",
+  "body": " Pairwise Comparison Example   Using the same preference , for the four candidates (Alice, Bonnie, Carlos, and Daniel), who is the winner using the Pairwise Comparison Method?    With candidates, there are total comparisons (A vs.B, A vs.C, A vs.D, B vs.C, B vs.D, C vs.D) and determine the winner using the pairwise comparison method.     130 120 100 150  A B B B  B A A A   A vs B     130 120 100 150  A C A C  C A C A   A vs C     130 120 100 150  A D D A  D A A D   A vs D       130 120 100 150  B B B C  C C C B   B vs C     130 120 100 150  B D D B  D B B D   B vs D     130 120 100 150  C D D C  D C C D   C vs D       A vs B: Alice is preferred over Bonnie in 130 ballots. Bonnie is preferred over Alice in ballots. Winner: Bonnie (B gets 1 pt)      A vs C: Alice is preferred over Carlos in ballots. Carlos is preferred over Alice in 150. Winner: Alice (A gets 1 pt)      A vs D: Alice is preferred over Daniel in 130 ballots. Daniel is preferred over Alice in ballots. Winner: Daniel (D gets 1 pt)      B vs C: Bonnie is preferred over Carlos in ballots. Carlos is preferred over Bonnie in 150. Winner: Bonnie (B gets 1 pt)      B vs D: Bonnie is preferred over Daniel in ballots. Daniel is preferred over Bonnie in . Winner: Bonnie (B gets 1 pt)      C vs D: Carlos is preferred over Daniel in ballots. Daniel is preferred over Carlos in . Winner: Carlos (C gets 1 pt)      Final Point Totals:   Bonnie (B): 3 points  Alice (A): 1 point  Daniel (D): 1 point  Carlos (C): 1 point    Bonnie is the winner using Pairwise Comparison.   "
+},
+{
+  "id": "notes-Voting-2-13-1",
+  "level": "2",
+  "url": "notes-Voting.html#notes-Voting-2-13-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Condorcet winner "
+},
+{
+  "id": "ex-condorcet-winner",
+  "level": "2",
+  "url": "notes-Voting.html#ex-condorcet-winner",
+  "type": "Example",
+  "number": "2.14",
+  "title": "Condorcet Winner.",
+  "body": " Condorcet Winner   Is there a Condorcet winner in the following election?   Preference Table for Condorcet Example    Number of Votes  30  30  30  20    First choice  B  B  A  A    Second choice  A  A  C  D    Third choice  C  D  D  C    Fourth choice  D  C  B  B       To find a Condorcet winner, we must see if one candidate wins every head-to-head matchup. Let's check candidate B and candidate A :     B vs A: B is ranked higher than A in ballots. A is ranked higher than B in ballots. Winner: B .     B vs C: B is ranked higher than C in ballots (every ballot). Winner: B .     B vs D: B is ranked higher than D in ballots (every ballot). Winner: B .    Since B beats every other candidate in a one-on-one comparison, B is the Condorcet winner .   "
+},
+{
+  "id": "notes-Voting-2-15-1",
+  "level": "2",
+  "url": "notes-Voting.html#notes-Voting-2-15-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Arrow's Impossibility Theorem "
+},
+{
+  "id": "notes-Voting-2-15-4",
+  "level": "2",
+  "url": "notes-Voting.html#notes-Voting-2-15-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Condorcet Paradox "
+},
+{
+  "id": "ex-condorcet-paradox",
+  "level": "2",
+  "url": "notes-Voting.html#ex-condorcet-paradox",
+  "type": "Example",
+  "number": "2.16",
+  "title": "Condorcet Paradox.",
+  "body": " Condorcet Paradox   Who would win this election through the pairwise comparison method?   Preference Table: Three-Candidate Election    Number of Votes  8  9  10    First choice  C  B  A    Second choice  A  C  B    Third choice  B  A  C       We perform the three possible head-to-head comparisons:     A vs B: A is preferred on 8 (col 1) + 10 (col 3) = 18 ballots. B is preferred on 9 (col 2) ballots. Winner: A (A gets 1 pt).     B vs C: B is preferred on 9 (col 2) + 10 (col 3) = 19 ballots. C is preferred on 8 (col 1) ballots. Winner: B (B gets 1 pt).     C vs A: C is preferred on 8 (col 1) + 9 (col 2) = 17 ballots. A is preferred on 10 (col 3) ballots. Winner: C (C gets 1 pt).    Each candidate (A, B, and C) has exactly 1 point. This is a Condorcet Paradox because there is a \"rock-paper-scissors\" loop (A beats B, B beats C, and C beats A), resulting in a three-way tie.   "
+},
+{
+  "id": "ex-mayor-election",
+  "level": "2",
+  "url": "notes-Voting.html#ex-mayor-election",
+  "type": "Checkpoint",
+  "number": "2.18",
+  "title": "Mayor of a Small Town.",
+  "body": " Mayor of a Small Town   Three candidates A, B, and C are running for mayor of a small town. The results of the election are shown in the following preference table.   Mayor Election Preference Table    Number of Votes  1200  900  900  600    First choice  A  C  B  B    Second choice  B  A  C  A    Third choice  C  B  A  C       Determine the winner using the Plurality method.  Determine the winner using the Borda count method.  Determine the winner using the Plurality-with-elimination method.  Is there a Condorcet Winner?          Plurality: A = 1200, B = , C = 900. Winner: B .     Borda Count (3-2-1):   A:  B:  C:   Winner: B .     Plurality-with-Elimination: Total votes = 3600; Majority = 1801. Round 1: A=1200, B=1500, C=900. No majority. Eliminate C. C's 900 votes go to A (second choice). Final: A = , B = 1500. Winner: A .     Condorcet Winner Check:   A vs B: A is preferred on . B on 1500. (A wins)  A vs C: A is preferred on . C on . (Tie)  Since A does not win all matches, No Condorcet Winner exists .          Plurality Method  We count only the first-place votes for each candidate:   A: 1200 votes  B:  votes  C: 900 votes   Winner: B (1500 votes).    Borda Count Method (3-2-1 Points)   Borda Count Point Distribution    Candidate  1st (3 pts)  2nd (2 pts)  3rd (1 pt)  Total Points    A        B        C         Winner: B (7800 points).    Plurality-with-Elimination  Total Votes: 3600. Majority needed: 1801.  Round 1: A=1200, B=1500, C=900. No candidate has 1801. Eliminate C.   Final Round (C Eliminated)   Votes 1200 900 900 600  1st A A B B  2nd B B A A    New totals: A = . B = . Winner: A (2100 votes).      "
+},
+{
+  "id": "math-club-election",
+  "level": "2",
+  "url": "notes-Voting.html#math-club-election",
+  "type": "Checkpoint",
+  "number": "2.22",
+  "title": "Math Club Presidential Election.",
+  "body": " Math Club Presidential Election   Four candidates are running for president of the Math Club: Paula (P), Sylvia (S), Craig (C), and Brian (B). The results of the election are shown in the following preference table:   Election Preference Schedule    Number of Votes  15  19  23  10  18  15    First choice  B  C  P  P  S  B    Second choice  S  P  S  B  C  S    Third choice  P  S  B  C  P  C    Fourth choice  C  B  C  S  B  P       How many students voted in the election?  How many students voted Brian as their first choice?  Who would win the presidency using the Plurality method?  Is there a Majority Winner?  Who would win the presidency using the Plurality with Elimination method?  Who would win the presidency using the Borda count method?   Who would win the presidency using the pairwise comparison method? If a tie, use the Plurality method between the winners to determine the tie-breaker.          100 students  30 students  Paula (33 votes)  No (Majority requires 51 votes)  Craig  Sylvia (279 points)  Paula (3 points)         Total Votes: 100.  Brian 1st choice: 30.  Plurality Winner: Paula (33).  Majority: No (Requires 51).   Plurality with Elimination:  Round 1: Sylvia has the fewest 1st-place votes (18) and is eliminated.   Round 2 (Sylvia Eliminated)   Votes 15 19 23 10 18 15  1st B C P P C B  2nd P P B B P C  3rd C B C C B P    New totals: P=33, B=30, C=37 (19 + 18). Brian is eliminated.   Round 3 (Brian Eliminated)   Votes 15 19 23 10 18 15  1st P C P P C C  2nd C P C C P P    Round 3: Paula vs. Craig. Craig wins the final matchup against Paula 52 to 48.  Winner: Craig.    Borda Count Method:  Using 4 pts for 1st, 3 for 2nd, 2 for 3rd, and 1 for 4th:   Paula:  Sylvia:  Craig:  Brian:   Winner: Sylvia.    Pairwise Comparison:  For the Pairwise Comparison Method , we compare every possible pair. There are 100 total votes, so 51 are needed to win a matchup:  P vs. S: P has 52; S has 48. (P gets 1 pt)  P vs. C: P has 63; C has 37. (P gets 1 pt)  P vs. B: P has 70; B has 30. (P gets 1 pt)  S vs. C: S has 81; C has 19. (S gets 1 pt)  S vs. B: S has 60; B has 40. (S gets 1 pt)  C vs. B: C has 60; B has 40. (C gets 1 pt)     Total Points: Paula = 3, Sylvia = 2, Craig = 1, Brian = 0. Paula is the winner; no tie-breaker is required.      "
+},
+{
+  "id": "section-apportionment",
+  "level": "1",
+  "url": "section-apportionment.html",
+  "type": "Section",
+  "number": "",
+  "title": "Apportionment",
+  "body": " Apportionment   Apportionment is the method of distributing power in political systems based on population density. Apportionment may reflect the availability of buses for city routes or doctors for patients.   The Standard Divisor   The standard divisor is found by dividing the total population under consideration by the number of items to be allocated.      The Standard Quota   The standard quota for a particular group is found by dividing that group's population by the standard divisor.     >  Palm Springs is composed of four states: A, B, C, and D. According to the country's constitution, the congress will have 30 seats, divided among the four states according to their respective populations. Find the standard quotas for states A, B, C, and D and complete the table below.   Population of Palm Springs by State    State  A  B  C  D  Total    Population (in thousands)  275  383  465  767  1890    Standard Quota            First, we find the Standard Divisor ( ):   Now, divide each state's population by the divisor to find the Standard Quota ( ):  State A:  State B:  State C:  State D:        State  A  B  C  D  Total    Population (in thousands)  275  383  465  767  1890    Standard Quota  4.365  6.079  7.381  12.175         The lower quota is the standard quota rounded down to the nearest whole number. The upper quota is the standard quota rounded up to the nearest whole number.  A group's apportionment should be either its upper quota or its lower quota. An apportionment method that guarantees that this will always occurs is said to satisfy the quota rule .    Hamilton's Method     Calculate each group's standard quota.  Find the lower quota for each group.  Give surplus items, one at a time, to groups with the largest decimal parts until no surplus remains.      >  From , use Hamilton's method to apportion the 30 congressmen for Palm Springs.   Hamilton's Method Table    State A B C D Total   Population 275 383 465 767 1890  Standard Quota 4.365 6.079 7.381 12.175 30.00  Lower Quota 4 6 7 12 29  Surplus +0 +0 +1 +0 1  Apportionment 4 6 8 12 30    1. The Standard Divisor is .  2. Lower quotas sum to 29, leaving 1 surplus seat.  3. State C has the largest decimal part (.381), so it receives the surplus seat.    Following the steps of Hamilton's Method :   The sum of the Lower Quotas is . Since we must allocate 30 seats, there is surplus seat.    We look at the decimal parts of the Standard Quotas:  A:  B:  C:  D:      State C has the largest decimal part ( ), so it receives the 1 surplus seat.    Final counts: A=4, B=6, C=8, D=12.        Modified Divisor (MD)  A Modified divisor is a divisor, chosen by guess-and-check, that is used to make the sum of the modified quotas exactly equal to the number of items to be apportioned.    Jefferson's Method   Find a modified divisor such that when each group's modified quota is rounded down ( modified lower quota ), the sum equals the number of items to be apportioned. Apportion to each group its modified lower quota.   Calculate the Standard Divisor ( ).  Calculate Standard Quotas and round down to find Lower Quotas .  If the sum of Lower Quotas is less than the total seats, choose a Modified Divisor ( ) that is smaller than the .  Recalculate quotas using and round down until the sum exactly matches the total seats.        From , apportion 30 seats to Palm Springs using Jefferson's Method.    The standard divisor ( ) produced a sum of 29. For Jefferson's method, we must decrease the divisor to increase the quotas. Using a Modified Divisor of :  A:  B:  C:  D:  Sum: . State D receives the extra seat.   Jefferson's Method: Palm Springs    State A B C D Total   Population 275 383 465 767 1890  Standard Quota (SD=63) 4.365 6.079 7.381 12.175 30  Lower Quota 4 6 7 12 29  Modified Quota (MD=61) 4.508 6.279 7.623 12.574 30.98  Modified LQ (Apportionment) 4 6 7 13 30        Apportioning 11 buses   Apportion 11 buses to the three towns using Jefferson's method.   Bus Apportionment Table    Town Westboro Shrewbury Worcester Total   Population 89 120 168 377  Final Apportionment            Step 1: Standard Divisor and Initial Quotas First, find the Standard Divisor: .   Trial 1: Using Standard Divisor (34.27)    Town Westboro Shrewbury Worcester Total   Population 89 120 168 377  Standard Quota 2.59 3.50 4.90 10.99  Lower Quota 2 3 4 9    The sum (9) is too low. We need 11 buses. We must decrease the divisor.    Step 2: First Modified Divisor Trial (MD = 31) Let's try a smaller divisor, .   Trial 2: Modified Divisor (31)    Town Westboro Shrewbury Worcester Total   Modified Quota 2.87 3.87 5.41 12.15  Lower Quota 2 3 5 10    The sum (10) is still too low. We must decrease the divisor further.    Step 3: Successful Modified Divisor (MD = 30) Trying .   Final Apportionment: Modified Divisor (30)    Town Westboro Shrewbury Worcester Total   Modified Quota 2.96 4.00 5.60 12.56  Modified LQ 2 4 5 11    The sum is exactly 11. Final Apportionment: Westboro: 2, Shrewbury: 4, Worcester: 5.   Bus Apportionment Work Table    Town Westboro Shrewbury Worcester Total   Population 89 120 168 377  Standard Quota 2.59 3.50 4.90 10.99  Lower Quota 2 3 4 9  Modified Quota (MD=31) 2.87 3.87 5.41 12.15  Modified LQ 2 3 5 10  Modified Quota (MD=30) 2.96 4.00 5.60 12.56  Final Apportionment 2 4 5 11        Adam's Method     Find a modified divisor , , so that when each group's modified quota is the upper quota, the sum of the whole numbers for all the groups is the number of items to be apportioned. The modified quotients that are rounded up are called modified upper quota .    Apportion to each group its modified upper quota.       When using Adam's method, begin with a modified divisor that is slightly greater than the standard divisor.     The Palm Springs is composed of four states: A, B, C, and D. According to the country's constitution, the congress will have 30 seats, divided among the four states according to their respective populations.  Find the standard quotas for states A, B, C, and D in Palm Springs and complete the table below. Use Adam's method with a modified divisor to apportion the congressmen.   Population Data and Apportionment    State  A  B  C  D  Total    Population (1000s)  275  383  465  767  1890    Standard Quota         Upper Quota         Modified UQ         Apportionment      30       1. First, find the Standard Divisor ( ):   2. Calculate Standard Quotas ( ):  A: (Upper Quota: 5)  B: (Upper Quota: 7)  C: (Upper Quota: 8)  D: (Upper Quota: 13)  Sum of Upper Quotas = (Too many seats).  3. Since the sum is too high, we increase the divisor. Let's try :  A:  B:  C:  D:  Sum = (Too low).  4. Refined : Sums will result in A:5, B:6, C:7, D:12 = 30.  Using :    State  A  B  C  D  Total    Standard Quota ( )  4.37  6.08  7.38  12.18  30    Upper Quota  5  7  8  13  33    Mod. Quota ( )  4.14  5.76  6.99  11.53  —    Modified UQ  5  6  7  12  30       Finding the Modified Divisor for Adam's Method:    Compute the standard divisor .  Increase by an amount so that when allocations (State population \/ Modified D) are rounded upward, they add up to the exact number of seats.      Apportioning 7 Doctors   Apportion 7 doctors to 4 clinics using Adam's method.    Clinic  West  North  South  East  Total    Population  120  180  160  240  700    Appointment           Standard Divisor ( ) = .  The final apportionment using Adam's method with a modified divisor of md=120 is: West: 1, North: 2, South: 2, and East: 2.    Clinic  West  North  South  East  Total    Population  120  180  160  240  700    Standard Quota ( )  1.2  1.8  1.6  2.4  7    Upper Quota (Initial)  2  2  2  3  9 (Too High)    Mod. Quota ( )  1.0  1.5  1.33  2.0  —    Modified UQ (Final)  1  2  2  2  7       Apportioning 40 HMO Doctors   An HMO has 40 doctors to be apportioned among four clinics: A, B, C, and D.    Clinic  A  B  C  D    Patient Load  275  392  611  724    Apportionment              Use Hamilton's method.  Use Jefferson's method with .  Use Adam's method.      Hamilton's Method Solution  Calculate Standard Divisor (SD) and Quotas  Total Patient Load:        Clinic  A  B  C  D  Total    Load  275  392  611  724  2002    Standard Quota  5.4945  7.8322  12.2078  14.4655  40    Lower Quota  5  7  12  14  38    Fractional Part  0.4945  0.8322  0.2078  0.4655  —    Surplus Seat  +1  +1  0  0  +2    Apportionment  6  8  12  14  40      Jefferson's Method Solution (d=48)    Clinic  A  B  C  D  Total    Modified Quota  5.73  8.17  12.73  15.08  —    Apportionment  5  8  12  15  40      Adam's Method Solution (md=52)    Clinic  A  B  C  D  Total    Modified Quota  5.29  7.54  11.75  13.92  —    Apportionment  6  8  12  14  40       Apportioning Math Course Sections   Thirty sections of math courses are to be offered in introductory algebra, intermediate algebra, college algebra, and liberal arts math. The preregistration figures for the number of students planning to enroll in each section are given in the following table.    Course  Intro  Intermed  College  Lib Arts  Total    Enrollment  388  405  213  345  1351      Use Hamilton's method to determine how many sections of each course should be offered.    Use Jefferson's method with Modified divisor md = to determine how many sections of each course should be offered.    Use Adam's method with Modified divisor md = to determine how many sections of each course should be offered.      Thirty sections of math courses are to be offered based on preregistration figures.       Hamilton's Method (SD = 45.0333):    Course  Intro  Intermed  College  Lib Arts  Total    Enrollment  388  405  213  345  1351    Standard Quota  8.6158  8.9933  4.7298  7.6610  30    Lower Quota  8  8  4  7  27    Fractional Part  0.6158  0.9933  0.7298  0.6610  —    Surplus Row  0  +1  +1  +1  +3    Apportionment  8  9  5  8  30       Jefferson's Method (using ):    Course  Intro  Intermed  College  Lib Arts  Total    Mod. Quota  9.129  9.529  5.011  8.117  —    Apportionment  9  9  5  8  31 (Try Again)    Mod. Quota ( )  9.023  9.418  4.953  8.023  —    Apportionment  9  9  4  8  30       Adam's Method (using ):    Course  Intro  Intermed  College  Lib Arts  Total    Mod. Quota  8.083  8.437  4.437  7.187  —    Apportionment  9  9  5  8  31 (Try Again)    Mod. Quota ( )  7.918  8.265  4.346  7.040  —    Apportionment  8  9  5  8  30          Hamilton's Method Apportionment of 100 seats  Suppose there were four states, A, B, C ,and D with populations as shown in the table below. Suppose these four states decide to create a legislature with 100 seats. Apply Hamilton's method to determine the apportionment.     Category  State A  State B  State C  State D  Total    Population  936  2,726  2,603  3,735  10,000    Standard Quota         Lower Quota         Surplus         Apportioned Seats      100      The following table demonstrates the apportionment using Hamilton's Method with a standard divisor of .   Hamilton's Method Apportionment    Category  State A  State B  State C  State D  Total    Population  936  2,726  2,603  3,735  10,000    Standard Quota  9.36  27.26  26.03  37.35  100.00    Lower Quota  9  27  26  37  99    Fractional Part  0.36  0.26  0.03  0.35  -    Surplus  +1        Final Seats  10  27  26  37  100        The Alabama Paradox   In a fair apportionment system, adding extra seats must not result in fewer seats for any state. The Alabama Paradox occurs when the total number of available seats increases, yet one state (or more) loses seats as a result. This paradox can occur when using Hamilton's method .     Hamilton's Method Apportionment of 101 seats  Using Hamilton's method, recompute the apportionment from , if there are 101 seats instead of 100. Does the Alabama paradox occur?     States  State A  State B  State C  State D  Total    Population  936  2,726  2,603  3,735  10,000    Standard Quota         Lower Quota         Surplus         Apportioned Seats      101      The table below shows the Hamilton's Method apportionment with seats.  Note that State A loses a seat compared to the 100-seat scenario, demonstrating the Alabama Paradox.   Hamilton's Method (101 Seats)    States  State A  State B  State C  State D  Total    Population  936  2,726  2,603  3,735  10,000    Standard Quota  9.4536  27.5326  26.2903  37.7235  101.0000    Lower Quota  9  27  26  37  99    Fractional Part  0.4536  0.5326  0.2903  0.7235  -    Surplus   +1   +1     Final Seats  9  28  26  38  101       "
+},
+{
+  "id": "section-apportionment-2",
+  "level": "2",
+  "url": "section-apportionment.html#section-apportionment-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Apportionment "
+},
+{
+  "id": "def-standard-divisor",
+  "level": "2",
+  "url": "section-apportionment.html#def-standard-divisor",
+  "type": "Definition",
+  "number": "2.26",
+  "title": "The Standard Divisor.",
+  "body": " The Standard Divisor   The standard divisor is found by dividing the total population under consideration by the number of items to be allocated.    "
+},
+{
+  "id": "def-standard-quota",
+  "level": "2",
+  "url": "section-apportionment.html#def-standard-quota",
+  "type": "Definition",
+  "number": "2.27",
+  "title": "The Standard Quota.",
+  "body": " The Standard Quota   The standard quota for a particular group is found by dividing that group's population by the standard divisor.    "
+},
+{
+  "id": "ex-palm-springs",
+  "level": "2",
+  "url": "section-apportionment.html#ex-palm-springs",
+  "type": "Example",
+  "number": "2.28",
+  "title": "",
+  "body": ">  Palm Springs is composed of four states: A, B, C, and D. According to the country's constitution, the congress will have 30 seats, divided among the four states according to their respective populations. Find the standard quotas for states A, B, C, and D and complete the table below.   Population of Palm Springs by State    State  A  B  C  D  Total    Population (in thousands)  275  383  465  767  1890    Standard Quota            First, we find the Standard Divisor ( ):   Now, divide each state's population by the divisor to find the Standard Quota ( ):  State A:  State B:  State C:  State D:        State  A  B  C  D  Total    Population (in thousands)  275  383  465  767  1890    Standard Quota  4.365  6.079  7.381  12.175       "
+},
+{
+  "id": "section-apportionment-6-1",
+  "level": "2",
+  "url": "section-apportionment.html#section-apportionment-6-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "lower quota upper quota "
+},
+{
+  "id": "section-apportionment-6-2",
+  "level": "2",
+  "url": "section-apportionment.html#section-apportionment-6-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "satisfy the quota rule "
+},
+{
+  "id": "method-hamilton",
+  "level": "2",
+  "url": "section-apportionment.html#method-hamilton",
+  "type": "Algorithm",
+  "number": "2.31",
+  "title": "Hamilton’s Method.",
+  "body": " Hamilton's Method     Calculate each group's standard quota.  Find the lower quota for each group.  Give surplus items, one at a time, to groups with the largest decimal parts until no surplus remains.     "
+},
+{
+  "id": "ex-palm-springs-hamilton",
+  "level": "2",
+  "url": "section-apportionment.html#ex-palm-springs-hamilton",
+  "type": "Example",
+  "number": "2.32",
+  "title": "",
+  "body": ">  From , use Hamilton's method to apportion the 30 congressmen for Palm Springs.   Hamilton's Method Table    State A B C D Total   Population 275 383 465 767 1890  Standard Quota 4.365 6.079 7.381 12.175 30.00  Lower Quota 4 6 7 12 29  Surplus +0 +0 +1 +0 1  Apportionment 4 6 8 12 30    1. The Standard Divisor is .  2. Lower quotas sum to 29, leaving 1 surplus seat.  3. State C has the largest decimal part (.381), so it receives the surplus seat.    Following the steps of Hamilton's Method :   The sum of the Lower Quotas is . Since we must allocate 30 seats, there is surplus seat.    We look at the decimal parts of the Standard Quotas:  A:  B:  C:  D:      State C has the largest decimal part ( ), so it receives the 1 surplus seat.    Final counts: A=4, B=6, C=8, D=12.      "
+},
+{
+  "id": "section-apportionment-9-2",
+  "level": "2",
+  "url": "section-apportionment.html#section-apportionment-9-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Modified divisor "
+},
+{
+  "id": "method-jefferson",
+  "level": "2",
+  "url": "section-apportionment.html#method-jefferson",
+  "type": "Algorithm",
+  "number": "2.34",
+  "title": "Jefferson’s Method.",
+  "body": " Jefferson's Method   Find a modified divisor such that when each group's modified quota is rounded down ( modified lower quota ), the sum equals the number of items to be apportioned. Apportion to each group its modified lower quota.   Calculate the Standard Divisor ( ).  Calculate Standard Quotas and round down to find Lower Quotas .  If the sum of Lower Quotas is less than the total seats, choose a Modified Divisor ( ) that is smaller than the .  Recalculate quotas using and round down until the sum exactly matches the total seats.    "
+},
+{
+  "id": "ex-palm-springs-jefferson",
+  "level": "2",
+  "url": "section-apportionment.html#ex-palm-springs-jefferson",
+  "type": "Example",
+  "number": "2.35",
+  "title": "",
+  "body": "  From , apportion 30 seats to Palm Springs using Jefferson's Method.    The standard divisor ( ) produced a sum of 29. For Jefferson's method, we must decrease the divisor to increase the quotas. Using a Modified Divisor of :  A:  B:  C:  D:  Sum: . State D receives the extra seat.   Jefferson's Method: Palm Springs    State A B C D Total   Population 275 383 465 767 1890  Standard Quota (SD=63) 4.365 6.079 7.381 12.175 30  Lower Quota 4 6 7 12 29  Modified Quota (MD=61) 4.508 6.279 7.623 12.574 30.98  Modified LQ (Apportionment) 4 6 7 13 30     "
+},
+{
+  "id": "exe-bus-apportionment",
+  "level": "2",
+  "url": "section-apportionment.html#exe-bus-apportionment",
+  "type": "Checkpoint",
+  "number": "2.37",
+  "title": "Apportioning 11 buses.",
+  "body": " Apportioning 11 buses   Apportion 11 buses to the three towns using Jefferson's method.   Bus Apportionment Table    Town Westboro Shrewbury Worcester Total   Population 89 120 168 377  Final Apportionment            Step 1: Standard Divisor and Initial Quotas First, find the Standard Divisor: .   Trial 1: Using Standard Divisor (34.27)    Town Westboro Shrewbury Worcester Total   Population 89 120 168 377  Standard Quota 2.59 3.50 4.90 10.99  Lower Quota 2 3 4 9    The sum (9) is too low. We need 11 buses. We must decrease the divisor.    Step 2: First Modified Divisor Trial (MD = 31) Let's try a smaller divisor, .   Trial 2: Modified Divisor (31)    Town Westboro Shrewbury Worcester Total   Modified Quota 2.87 3.87 5.41 12.15  Lower Quota 2 3 5 10    The sum (10) is still too low. We must decrease the divisor further.    Step 3: Successful Modified Divisor (MD = 30) Trying .   Final Apportionment: Modified Divisor (30)    Town Westboro Shrewbury Worcester Total   Modified Quota 2.96 4.00 5.60 12.56  Modified LQ 2 4 5 11    The sum is exactly 11. Final Apportionment: Westboro: 2, Shrewbury: 4, Worcester: 5.   Bus Apportionment Work Table    Town Westboro Shrewbury Worcester Total   Population 89 120 168 377  Standard Quota 2.59 3.50 4.90 10.99  Lower Quota 2 3 4 9  Modified Quota (MD=31) 2.87 3.87 5.41 12.15  Modified LQ 2 3 5 10  Modified Quota (MD=30) 2.96 4.00 5.60 12.56  Final Apportionment 2 4 5 11     "
+},
+{
+  "id": "method-adams",
+  "level": "2",
+  "url": "section-apportionment.html#method-adams",
+  "type": "Algorithm",
+  "number": "2.43",
+  "title": "Adam’s Method.",
+  "body": " Adam's Method     Find a modified divisor , , so that when each group's modified quota is the upper quota, the sum of the whole numbers for all the groups is the number of items to be apportioned. The modified quotients that are rounded up are called modified upper quota .    Apportion to each group its modified upper quota.     "
+},
+{
+  "id": "ex-palm-springs-adam",
+  "level": "2",
+  "url": "section-apportionment.html#ex-palm-springs-adam",
+  "type": "Example",
+  "number": "2.44",
+  "title": "",
+  "body": "  The Palm Springs is composed of four states: A, B, C, and D. According to the country's constitution, the congress will have 30 seats, divided among the four states according to their respective populations.  Find the standard quotas for states A, B, C, and D in Palm Springs and complete the table below. Use Adam's method with a modified divisor to apportion the congressmen.   Population Data and Apportionment    State  A  B  C  D  Total    Population (1000s)  275  383  465  767  1890    Standard Quota         Upper Quota         Modified UQ         Apportionment      30       1. First, find the Standard Divisor ( ):   2. Calculate Standard Quotas ( ):  A: (Upper Quota: 5)  B: (Upper Quota: 7)  C: (Upper Quota: 8)  D: (Upper Quota: 13)  Sum of Upper Quotas = (Too many seats).  3. Since the sum is too high, we increase the divisor. Let's try :  A:  B:  C:  D:  Sum = (Too low).  4. Refined : Sums will result in A:5, B:6, C:7, D:12 = 30.  Using :    State  A  B  C  D  Total    Standard Quota ( )  4.37  6.08  7.38  12.18  30    Upper Quota  5  7  8  13  33    Mod. Quota ( )  4.14  5.76  6.99  11.53  —    Modified UQ  5  6  7  12  30     "
+},
+{
+  "id": "ex-doctors",
+  "level": "2",
+  "url": "section-apportionment.html#ex-doctors",
+  "type": "Checkpoint",
+  "number": "2.46",
+  "title": "Apportioning 7 Doctors.",
+  "body": " Apportioning 7 Doctors   Apportion 7 doctors to 4 clinics using Adam's method.    Clinic  West  North  South  East  Total    Population  120  180  160  240  700    Appointment           Standard Divisor ( ) = .  The final apportionment using Adam's method with a modified divisor of md=120 is: West: 1, North: 2, South: 2, and East: 2.    Clinic  West  North  South  East  Total    Population  120  180  160  240  700    Standard Quota ( )  1.2  1.8  1.6  2.4  7    Upper Quota (Initial)  2  2  2  3  9 (Too High)    Mod. Quota ( )  1.0  1.5  1.33  2.0  —    Modified UQ (Final)  1  2  2  2  7     "
+},
+{
+  "id": "ex-hmo",
+  "level": "2",
+  "url": "section-apportionment.html#ex-hmo",
+  "type": "Checkpoint",
+  "number": "2.47",
+  "title": "Apportioning 40 HMO Doctors.",
+  "body": " Apportioning 40 HMO Doctors   An HMO has 40 doctors to be apportioned among four clinics: A, B, C, and D.    Clinic  A  B  C  D    Patient Load  275  392  611  724    Apportionment              Use Hamilton's method.  Use Jefferson's method with .  Use Adam's method.      Hamilton's Method Solution  Calculate Standard Divisor (SD) and Quotas  Total Patient Load:        Clinic  A  B  C  D  Total    Load  275  392  611  724  2002    Standard Quota  5.4945  7.8322  12.2078  14.4655  40    Lower Quota  5  7  12  14  38    Fractional Part  0.4945  0.8322  0.2078  0.4655  —    Surplus Seat  +1  +1  0  0  +2    Apportionment  6  8  12  14  40      Jefferson's Method Solution (d=48)    Clinic  A  B  C  D  Total    Modified Quota  5.73  8.17  12.73  15.08  —    Apportionment  5  8  12  15  40      Adam's Method Solution (md=52)    Clinic  A  B  C  D  Total    Modified Quota  5.29  7.54  11.75  13.92  —    Apportionment  6  8  12  14  40     "
+},
+{
+  "id": "ex-math-courses",
+  "level": "2",
+  "url": "section-apportionment.html#ex-math-courses",
+  "type": "Checkpoint",
+  "number": "2.48",
+  "title": "Apportioning Math Course Sections.",
+  "body": " Apportioning Math Course Sections   Thirty sections of math courses are to be offered in introductory algebra, intermediate algebra, college algebra, and liberal arts math. The preregistration figures for the number of students planning to enroll in each section are given in the following table.    Course  Intro  Intermed  College  Lib Arts  Total    Enrollment  388  405  213  345  1351      Use Hamilton's method to determine how many sections of each course should be offered.    Use Jefferson's method with Modified divisor md = to determine how many sections of each course should be offered.    Use Adam's method with Modified divisor md = to determine how many sections of each course should be offered.      Thirty sections of math courses are to be offered based on preregistration figures.       Hamilton's Method (SD = 45.0333):    Course  Intro  Intermed  College  Lib Arts  Total    Enrollment  388  405  213  345  1351    Standard Quota  8.6158  8.9933  4.7298  7.6610  30    Lower Quota  8  8  4  7  27    Fractional Part  0.6158  0.9933  0.7298  0.6610  —    Surplus Row  0  +1  +1  +1  +3    Apportionment  8  9  5  8  30       Jefferson's Method (using ):    Course  Intro  Intermed  College  Lib Arts  Total    Mod. Quota  9.129  9.529  5.011  8.117  —    Apportionment  9  9  5  8  31 (Try Again)    Mod. Quota ( )  9.023  9.418  4.953  8.023  —    Apportionment  9  9  4  8  30       Adam's Method (using ):    Course  Intro  Intermed  College  Lib Arts  Total    Mod. Quota  8.083  8.437  4.437  7.187  —    Apportionment  9  9  5  8  31 (Try Again)    Mod. Quota ( )  7.918  8.265  4.346  7.040  —    Apportionment  8  9  5  8  30        "
+},
+{
+  "id": "ex-100-seats",
+  "level": "2",
+  "url": "section-apportionment.html#ex-100-seats",
+  "type": "Example",
+  "number": "2.49",
+  "title": "Hamilton’s Method Apportionment of 100 seats.",
+  "body": " Hamilton's Method Apportionment of 100 seats  Suppose there were four states, A, B, C ,and D with populations as shown in the table below. Suppose these four states decide to create a legislature with 100 seats. Apply Hamilton's method to determine the apportionment.     Category  State A  State B  State C  State D  Total    Population  936  2,726  2,603  3,735  10,000    Standard Quota         Lower Quota         Surplus         Apportioned Seats      100      The following table demonstrates the apportionment using Hamilton's Method with a standard divisor of .   Hamilton's Method Apportionment    Category  State A  State B  State C  State D  Total    Population  936  2,726  2,603  3,735  10,000    Standard Quota  9.36  27.26  26.03  37.35  100.00    Lower Quota  9  27  26  37  99    Fractional Part  0.36  0.26  0.03  0.35  -    Surplus  +1        Final Seats  10  27  26  37  100      "
+},
+{
+  "id": "theorem-alabama-paradox",
+  "level": "2",
+  "url": "section-apportionment.html#theorem-alabama-paradox",
+  "type": "Theorem",
+  "number": "2.52",
+  "title": "The Alabama Paradox.",
+  "body": " The Alabama Paradox   In a fair apportionment system, adding extra seats must not result in fewer seats for any state. The Alabama Paradox occurs when the total number of available seats increases, yet one state (or more) loses seats as a result. This paradox can occur when using Hamilton's method .   "
+},
+{
+  "id": "ex-101-seats",
+  "level": "2",
+  "url": "section-apportionment.html#ex-101-seats",
+  "type": "Example",
+  "number": "2.53",
+  "title": "Hamilton’s Method Apportionment of 101 seats.",
+  "body": " Hamilton's Method Apportionment of 101 seats  Using Hamilton's method, recompute the apportionment from , if there are 101 seats instead of 100. Does the Alabama paradox occur?     States  State A  State B  State C  State D  Total    Population  936  2,726  2,603  3,735  10,000    Standard Quota         Lower Quota         Surplus         Apportioned Seats      101      The table below shows the Hamilton's Method apportionment with seats.  Note that State A loses a seat compared to the 100-seat scenario, demonstrating the Alabama Paradox.   Hamilton's Method (101 Seats)    States  State A  State B  State C  State D  Total    Population  936  2,726  2,603  3,735  10,000    Standard Quota  9.4536  27.5326  26.2903  37.7235  101.0000    Lower Quota  9  27  26  37  99    Fractional Part  0.4536  0.5326  0.2903  0.7235  -    Surplus   +1   +1     Final Seats  9  28  26  38  101      "
+},
+{
+  "id": "sec-voting-ch-ex",
+  "level": "1",
+  "url": "sec-voting-ch-ex.html",
+  "type": "Section",
+  "number": "",
+  "title": "Chapter Exercise",
+  "body": " Chapter Exercise     The city council gave a questionnaire to its citizens, asking them their priorities for next year's budget: (P)olice, (R)oads, (S)chools, and (T)rash removal.    Preference  15  30  18  17  2    1st  P  T  P  R  R    2nd  R  R  S  T  S    3rd  S  S  T  S  P    4th  T  P  R  P  T     Which option is selected using the plurality method?  Which option is selected using the plurality-with-elimination method?  Which option is selected using the Borda count method?  Which option is selected using the pairwise comparison method?        Plurality Method: Count only first-place votes.   P:  T:  R:  S:   Winner: Police (P) with 33 votes.     Plurality-with-Elimination:   Round 1: S has 0 votes. Eliminate S.   Preference  15  30  18  17  2    1st  P  T  P  R  R    2nd  R  R  T  T  P    3rd  T  P  R  P  T     Round 2: R has the fewest 1st place votes (19). Eliminate R. The 17 votes from (R, T, S, P) move to T. The 2 votes from (R, S, P, T) move to P.   Preference  15  30  18  17  2    1st  P  T  P  T  P    2nd  T  P  T  P  T   New totals: P: ; T: .  Winner: Trash Removal (T) .    Borda Count: 1st = 4pts, 2nd = 3pts, 3rd = 2pts, 4th = 1pt.   P:  R:  S:  T:   Winner: Roads (R) with 229 points.     Pairwise Comparison:   P vs R: P=33, R=49. (R wins)  P vs S: P=63, S=19. (P wins)  P vs T: P=35, T=47. (T wins)  R vs S: R=64, S=18. (R wins)  R vs T: R=52, T=30. (R wins)  S vs T: S=35, T=47. (T wins)  R has 3 wins, T has 2 wins, P has 1 win. Winner: Roads (R) .         The preference table shows the results of an election among three candidates, A, B, and C.    Number of votes  7  6  3    1st choice  A  B  C    2nd choice  B  C  B    3rd choice  C  A  A      Using the plurality method, who is the winner?  Is the Majority satisfied?  Is the Condorcet satisfied?      Total votes: . Votes needed for a majority: , so votes are required.      Plurality Method: Count only 1st choice votes:  A: 7 votes  B: 6 votes  C: 3 votes  The winner is Candidate A .     Majority Criterion: A candidate must have more than 50% of the first-place votes to be a majority winner. Since the leader (A) has only 7 votes and 9 were needed for a majority, there is no majority winner. The criterion is satisfied (vacuously) because the criterion only says \"if a majority winner exists, they must win.\" Since none exists, the rule isn't broken.     Condorcet Criterion: We check if the plurality winner (A) is also the Condorcet winner by doing pairwise comparisons:  A vs B: A is preferred by 7 voters; B is preferred by voters. B wins.  B vs C: B is preferred by voters; C is preferred by 6 voters. B wins.  A vs C: A is preferred by 7 voters; C is preferred by voters. C wins.  Candidate B wins all head-to-head matches and is the Condorcet Winner . Since the plurality method chose A instead of B, the Condorcet Criterion is not satisfied in this election.         The preference table shows the results of an election among three candidates, A, B, and C.    Number of votes  10  4  2    1st choice  A  B  C    2nd choice  B  C  B    3rd choice  C  A  A      Using the plurality-with-elimination method, who is the winner?  Is the Majority satisfied?   In the actual election, the 2 voters in the last column who voted C, B, and A, change their vote to A, B, C. Using the plurality-with-elimination method, which candidate wins the actual election?       Total votes: . Majority needed: votes.      Plurality-with-Elimination:   Round 1: A has 10 votes, B has 4, and C has 2. Since A has 10 votes (more than the majority of 9), A is the winner immediately.  Winner: Candidate A .     Majority: Yes. Candidate A has a majority of first-place votes (10 out of 16) and won the election. Therefore, the Majority is satisfied .     Changed Election: If the 2 voters for C change to A, the new totals are:  A: votes  B: 4 votes  C: 0 votes  Winner: Candidate A .         If a candidate wins all pairwise comparisons with other candidates, that candidate is called the Condorcet winner .  The mathematics department is hiring a new faculty member and the five-person hiring committee has interviewed four candidates: Adam(A), Beth(B), Carol(C), and Dan(D). They have decided to use Condorcet's method on their five ballots. Who gets the offer?    Choice  Voter 1  Voter 2  Voter 3  Voter 4  Voter 5    First  B  D  C  D  B    Second  A  B  A  A  A    Third  C  C  B  C  D    Fourth  D  A  D  B  C      To find the Condorcet winner, we must compare each candidate head-to-head. There are 5 voters, so 3 votes are needed to win a comparison.     A vs. B:  Voter 1: B, Voter 2: B, Voter 3: A, Voter 4: A, Voter 5: B.  Result: B wins 3 to 2.    A vs. C:  Voter 1: A, Voter 2: C, Voter 3: C, Voter 4: A, Voter 5: A.  Result: A wins 3 to 2.    A vs. D:  Voter 1: A, Voter 2: D, Voter 3: A, Voter 4: D, Voter 5: A.  Result: A wins 3 to 2.    B vs. C:  Voter 1: B, Voter 2: B, Voter 3: C, Voter 4: C, Voter 5: B.  Result: B wins 3 to 2.    B vs. D:  Voter 1: B, Voter 2: D, Voter 3: B, Voter 4: D, Voter 5: B.  Result: B wins 3 to 2.    C vs. D:  Voter 1: C, Voter 2: D, Voter 3: C, Voter 4: D, Voter 5: D.  Result: D wins 3 to 2.      Summary of Wins:   Beth (B) won 3 comparisons (vs. A, C, and D).  Adam (A) won 2 comparisons (vs. C and D).  Dan (D) won 1 comparison (vs. C).  Carol (C) won 0 comparisons.    Since Beth (B) won every head-to-head match, she is the Condorcet winner and gets the offer.      A small city has 30 police officers to be apportioned among 4 precincts based on the population of each precinct. The populations are given in the following table.    Precinct  1  2  3  4  Total    Population  3117  1883  2776  3174  10,950      Find the standard divisor.  Find the standard quota for each precinct.  Find the modified quota for the fourth precinct using Jefferson's method with a modified divisor of 350.  Find the apportionment for the second precinct using Adams's method with a modified divisor of 380.       Part (a) & (b): Standard Divisor and Standard Quotas   The Standard Divisor ( ) is .   Hamilton's Method (Standard Quotas)    Category  Precinct 1  Precinct 2  Precinct 3  Precinct 4  Total    Population  3117  1883  2776  3174  10,950    Std. Quota  8.54  5.16  7.61  8.70  30.00    Lower Quota  8  5  7  8  28    Fraction  0.54  0.16  0.61  0.70  -    Surplus    +1  +1     Hamilton Final  8  5  8  9  30      Part (c): Jefferson's Method (Modified Divisor )    Jefferson's Method Calculation    Category  Precinct 1  Precinct 2  Precinct 3  Precinct 4  Total    Mod. Quota  8.91  5.38  7.93  9.07  -    Jefferson Apport.  8  5  7  9  29     The modified quota for the fourth precinct is 9.07 .   Part (d): Adams's Method (Modified Divisor )    Adams's Method Calculation    Category  Precinct 1  Precinct 2  Precinct 3  Precinct 4  Total    Mod. Quota  8.20  4.96  7.31  8.35  -    Adams Apport.  9  5  8  9  31     The apportionment for the second precinct using Adams's method is 5 officers.      A mother has an incentive program to get her five children to read more. She has 30 pieces of candy to divide among her children at the end of the week based on the number of minutes each of them spends reading.    Child  Abby  Bobby  Charli  Dave  Eddie  Total    Reading Times  138  142  188  218  64  750      Use Hamilton's method to apportion 30 pieces of candy.  At the last minute, the mother finds another piece of candy and does the apportionment again. Now, she has 31 pieces of candy to divide among her children at the end of the week based on the number of minutes each of them spends reading. Use Hamilton's method to apportion the candy among the children.  Look at your answers for parts (a) and (b). What changed and why? Why is the change interesting?This is an example of which paradox?      Part (a): 30 Pieces (Standard Divisor = 25)   Apportionment for 30 Pieces    Category  Abby  Bobby  Charli  Dave  Eddie  Total    Reading Min  138  142  188  218  64  750    Std. Quota  5.52  5.68  7.52  8.72  2.56  30.00    Lower Quota  5  5  7  8  2  27    Fraction  0.52  0.68  0.52  0.72  0.56  -    Surplus   +1   +1  +1     Final Seats  5  6  7  9  3  30     Part (b): 31 Pieces (Standard Divisor = 24.1935)   Apportionment for 31 Pieces    Category  Abby  Bobby  Charli  Dave  Eddie  Total    Reading Min  138  142  188  218  64  750    Std. Quota  5.704  5.870  7.771  9.011  2.645  31.00    Lower Quota  5  5  7  9  2  28    Fraction  0.704  0.870  0.771  0.011  0.645  -    Surplus  +1  +1  +1       Final Seats  6  6  8  9  2  31     Part (c): Increasing the total number of items from 30 to 31 creates the Alabama Paradox . In this specific case, Eddie loses a candy even though the total amount of candy increased.     "
+},
+{
+  "id": "sec-voting-ch-ex-2-1",
+  "level": "2",
+  "url": "sec-voting-ch-ex.html#sec-voting-ch-ex-2-1",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  The city council gave a questionnaire to its citizens, asking them their priorities for next year's budget: (P)olice, (R)oads, (S)chools, and (T)rash removal.    Preference  15  30  18  17  2    1st  P  T  P  R  R    2nd  R  R  S  T  S    3rd  S  S  T  S  P    4th  T  P  R  P  T     Which option is selected using the plurality method?  Which option is selected using the plurality-with-elimination method?  Which option is selected using the Borda count method?  Which option is selected using the pairwise comparison method?        Plurality Method: Count only first-place votes.   P:  T:  R:  S:   Winner: Police (P) with 33 votes.     Plurality-with-Elimination:   Round 1: S has 0 votes. Eliminate S.   Preference  15  30  18  17  2    1st  P  T  P  R  R    2nd  R  R  T  T  P    3rd  T  P  R  P  T     Round 2: R has the fewest 1st place votes (19). Eliminate R. The 17 votes from (R, T, S, P) move to T. The 2 votes from (R, S, P, T) move to P.   Preference  15  30  18  17  2    1st  P  T  P  T  P    2nd  T  P  T  P  T   New totals: P: ; T: .  Winner: Trash Removal (T) .    Borda Count: 1st = 4pts, 2nd = 3pts, 3rd = 2pts, 4th = 1pt.   P:  R:  S:  T:   Winner: Roads (R) with 229 points.     Pairwise Comparison:   P vs R: P=33, R=49. (R wins)  P vs S: P=63, S=19. (P wins)  P vs T: P=35, T=47. (T wins)  R vs S: R=64, S=18. (R wins)  R vs T: R=52, T=30. (R wins)  S vs T: S=35, T=47. (T wins)  R has 3 wins, T has 2 wins, P has 1 win. Winner: Roads (R) .      "
+},
+{
+  "id": "sec-voting-ch-ex-2-2",
+  "level": "2",
+  "url": "sec-voting-ch-ex.html#sec-voting-ch-ex-2-2",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  The preference table shows the results of an election among three candidates, A, B, and C.    Number of votes  7  6  3    1st choice  A  B  C    2nd choice  B  C  B    3rd choice  C  A  A      Using the plurality method, who is the winner?  Is the Majority satisfied?  Is the Condorcet satisfied?      Total votes: . Votes needed for a majority: , so votes are required.      Plurality Method: Count only 1st choice votes:  A: 7 votes  B: 6 votes  C: 3 votes  The winner is Candidate A .     Majority Criterion: A candidate must have more than 50% of the first-place votes to be a majority winner. Since the leader (A) has only 7 votes and 9 were needed for a majority, there is no majority winner. The criterion is satisfied (vacuously) because the criterion only says \"if a majority winner exists, they must win.\" Since none exists, the rule isn't broken.     Condorcet Criterion: We check if the plurality winner (A) is also the Condorcet winner by doing pairwise comparisons:  A vs B: A is preferred by 7 voters; B is preferred by voters. B wins.  B vs C: B is preferred by voters; C is preferred by 6 voters. B wins.  A vs C: A is preferred by 7 voters; C is preferred by voters. C wins.  Candidate B wins all head-to-head matches and is the Condorcet Winner . Since the plurality method chose A instead of B, the Condorcet Criterion is not satisfied in this election.      "
+},
+{
+  "id": "sec-voting-ch-ex-2-3",
+  "level": "2",
+  "url": "sec-voting-ch-ex.html#sec-voting-ch-ex-2-3",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  The preference table shows the results of an election among three candidates, A, B, and C.    Number of votes  10  4  2    1st choice  A  B  C    2nd choice  B  C  B    3rd choice  C  A  A      Using the plurality-with-elimination method, who is the winner?  Is the Majority satisfied?   In the actual election, the 2 voters in the last column who voted C, B, and A, change their vote to A, B, C. Using the plurality-with-elimination method, which candidate wins the actual election?       Total votes: . Majority needed: votes.      Plurality-with-Elimination:   Round 1: A has 10 votes, B has 4, and C has 2. Since A has 10 votes (more than the majority of 9), A is the winner immediately.  Winner: Candidate A .     Majority: Yes. Candidate A has a majority of first-place votes (10 out of 16) and won the election. Therefore, the Majority is satisfied .     Changed Election: If the 2 voters for C change to A, the new totals are:  A: votes  B: 4 votes  C: 0 votes  Winner: Candidate A .      "
+},
+{
+  "id": "sec-voting-ch-ex-2-4",
+  "level": "2",
+  "url": "sec-voting-ch-ex.html#sec-voting-ch-ex-2-4",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  If a candidate wins all pairwise comparisons with other candidates, that candidate is called the Condorcet winner .  The mathematics department is hiring a new faculty member and the five-person hiring committee has interviewed four candidates: Adam(A), Beth(B), Carol(C), and Dan(D). They have decided to use Condorcet's method on their five ballots. Who gets the offer?    Choice  Voter 1  Voter 2  Voter 3  Voter 4  Voter 5    First  B  D  C  D  B    Second  A  B  A  A  A    Third  C  C  B  C  D    Fourth  D  A  D  B  C      To find the Condorcet winner, we must compare each candidate head-to-head. There are 5 voters, so 3 votes are needed to win a comparison.     A vs. B:  Voter 1: B, Voter 2: B, Voter 3: A, Voter 4: A, Voter 5: B.  Result: B wins 3 to 2.    A vs. C:  Voter 1: A, Voter 2: C, Voter 3: C, Voter 4: A, Voter 5: A.  Result: A wins 3 to 2.    A vs. D:  Voter 1: A, Voter 2: D, Voter 3: A, Voter 4: D, Voter 5: A.  Result: A wins 3 to 2.    B vs. C:  Voter 1: B, Voter 2: B, Voter 3: C, Voter 4: C, Voter 5: B.  Result: B wins 3 to 2.    B vs. D:  Voter 1: B, Voter 2: D, Voter 3: B, Voter 4: D, Voter 5: B.  Result: B wins 3 to 2.    C vs. D:  Voter 1: C, Voter 2: D, Voter 3: C, Voter 4: D, Voter 5: D.  Result: D wins 3 to 2.      Summary of Wins:   Beth (B) won 3 comparisons (vs. A, C, and D).  Adam (A) won 2 comparisons (vs. C and D).  Dan (D) won 1 comparison (vs. C).  Carol (C) won 0 comparisons.    Since Beth (B) won every head-to-head match, she is the Condorcet winner and gets the offer.   "
+},
+{
+  "id": "sec-voting-ch-ex-2-5",
+  "level": "2",
+  "url": "sec-voting-ch-ex.html#sec-voting-ch-ex-2-5",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  A small city has 30 police officers to be apportioned among 4 precincts based on the population of each precinct. The populations are given in the following table.    Precinct  1  2  3  4  Total    Population  3117  1883  2776  3174  10,950      Find the standard divisor.  Find the standard quota for each precinct.  Find the modified quota for the fourth precinct using Jefferson's method with a modified divisor of 350.  Find the apportionment for the second precinct using Adams's method with a modified divisor of 380.       Part (a) & (b): Standard Divisor and Standard Quotas   The Standard Divisor ( ) is .   Hamilton's Method (Standard Quotas)    Category  Precinct 1  Precinct 2  Precinct 3  Precinct 4  Total    Population  3117  1883  2776  3174  10,950    Std. Quota  8.54  5.16  7.61  8.70  30.00    Lower Quota  8  5  7  8  28    Fraction  0.54  0.16  0.61  0.70  -    Surplus    +1  +1     Hamilton Final  8  5  8  9  30      Part (c): Jefferson's Method (Modified Divisor )    Jefferson's Method Calculation    Category  Precinct 1  Precinct 2  Precinct 3  Precinct 4  Total    Mod. Quota  8.91  5.38  7.93  9.07  -    Jefferson Apport.  8  5  7  9  29     The modified quota for the fourth precinct is 9.07 .   Part (d): Adams's Method (Modified Divisor )    Adams's Method Calculation    Category  Precinct 1  Precinct 2  Precinct 3  Precinct 4  Total    Mod. Quota  8.20  4.96  7.31  8.35  -    Adams Apport.  9  5  8  9  31     The apportionment for the second precinct using Adams's method is 5 officers.   "
+},
+{
+  "id": "sec-voting-ch-ex-2-6",
+  "level": "2",
+  "url": "sec-voting-ch-ex.html#sec-voting-ch-ex-2-6",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  A mother has an incentive program to get her five children to read more. She has 30 pieces of candy to divide among her children at the end of the week based on the number of minutes each of them spends reading.    Child  Abby  Bobby  Charli  Dave  Eddie  Total    Reading Times  138  142  188  218  64  750      Use Hamilton's method to apportion 30 pieces of candy.  At the last minute, the mother finds another piece of candy and does the apportionment again. Now, she has 31 pieces of candy to divide among her children at the end of the week based on the number of minutes each of them spends reading. Use Hamilton's method to apportion the candy among the children.  Look at your answers for parts (a) and (b). What changed and why? Why is the change interesting?This is an example of which paradox?      Part (a): 30 Pieces (Standard Divisor = 25)   Apportionment for 30 Pieces    Category  Abby  Bobby  Charli  Dave  Eddie  Total    Reading Min  138  142  188  218  64  750    Std. Quota  5.52  5.68  7.52  8.72  2.56  30.00    Lower Quota  5  5  7  8  2  27    Fraction  0.52  0.68  0.52  0.72  0.56  -    Surplus   +1   +1  +1     Final Seats  5  6  7  9  3  30     Part (b): 31 Pieces (Standard Divisor = 24.1935)   Apportionment for 31 Pieces    Category  Abby  Bobby  Charli  Dave  Eddie  Total    Reading Min  138  142  188  218  64  750    Std. Quota  5.704  5.870  7.771  9.011  2.645  31.00    Lower Quota  5  5  7  9  2  28    Fraction  0.704  0.870  0.771  0.011  0.645  -    Surplus  +1  +1  +1       Final Seats  6  6  8  9  2  31     Part (c): Increasing the total number of items from 30 to 31 creates the Alabama Paradox . In this specific case, Eddie loses a candy even though the total amount of candy increased.   "
+},
+{
   "id": "notes-simple-interest",
   "level": "1",
   "url": "notes-simple-interest.html",
@@ -32,7 +455,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-simple-interest.html#definition-simple-interest",
   "type": "Definition",
-  "number": "2.1",
+  "number": "3.1",
   "title": "Simple Interest.",
   "body": " Simple Interest   The amount of money that we deposit or borrow is called the principal . The amount of interest depends on the principal, the interest rate , which is given as a percent and various from bank to bank, and the length of time for which the money is deposited. Simple interest involves interest calculated only on the principal .     The rate, , is expressed as a decimal when you calculating simple interest.  "
 },
@@ -41,7 +464,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-simple-interest.html#example-S1",
   "type": "Example",
-  "number": "2.2",
+  "number": "3.2",
   "title": "Calculating Simple interest for a year.",
   "body": " Calculating Simple interest for a year  You deposit $2,000 in a savings account, which has a rate 6.0%. Find the interest at the end of the first year.   We can use the formula for simple interest to find the interest at the end of the first year.     "
 },
@@ -50,7 +473,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-simple-interest.html#example-S2",
   "type": "Example",
-  "number": "2.3",
+  "number": "3.3",
   "title": "Calculating Simple interest for more than a year.",
   "body": " Calculating Simple interest for more than a year  A student took out a simple interest loan for $1,300 for two years at a rate of 7.5%to purchase a used car. What is the interest on the loan?   We can use the formula for simple interest to find the interest on the loan.     "
 },
@@ -59,7 +482,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-simple-interest.html#definition-future-value",
   "type": "Definition",
-  "number": "2.4",
+  "number": "3.4",
   "title": "Future Value.",
   "body": " Future Value    Future value = Principal + Interest : The amount due, , is called the future value of the loan. The principal borrowed is also known as the loan's present value .    "
 },
@@ -68,7 +491,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-simple-interest.html#example-S3",
   "type": "Example",
-  "number": "2.5",
+  "number": "3.5",
   "title": "Calculating Future Value.",
   "body": " Calculating Future Value  What is the future value of a $1,000 loan at 5% for 3 years?   We can use the formula for future value to find the amount due at the end of 3 years.     "
 },
@@ -77,7 +500,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-simple-interest.html#example-S4",
   "type": "Example",
-  "number": "2.6",
+  "number": "3.6",
   "title": "Determining a simple interest rate.",
   "body": " Determining a simple interest rate  You borrow $2,500 from a friend and promise to pay back $2,655 in six months. What simple interest rate will you pay?   We can use the formula for future value to find the interest rate.    "
 },
@@ -86,7 +509,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-simple-interest.html#example-S5",
   "type": "Example",
-  "number": "2.7",
+  "number": "3.7",
   "title": "Determining a present value.",
   "body": " Determining a present value  How much should you put an investment paying a simple interest rate of 8.0% if you need $3000 in six months?   We can use the formula for future value to find the present value.    "
 },
@@ -140,7 +563,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-compound-interest.html#notes-compound-interest-7",
   "type": "Table",
-  "number": "2.8",
+  "number": "3.8",
   "title": "Compound Interest Growth of $1000 in a savings account at a rate of 5%",
   "body": " Compound Interest Growth of $1000 in a savings account at a rate of 5%    Year  Beginning Balance ($)  Interest Earned:  New Balance($)    1  $1,000.00   $1,050.00    2  $1,050.00   $1,102.50    3  $1,102.50   $1,157.63    4  $1,157.63   $1,215.51    5  $1,215.51      6       "
 },
@@ -149,7 +572,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-compound-interest.html#def-compound-interest-one-year",
   "type": "Definition",
-  "number": "2.9",
+  "number": "3.9",
   "title": "Compound Interest Paid Once a Year.",
   "body": " Compound Interest Paid Once a Year   Calculating the amount in an account for compound interest paid once year:  where the amount is the account's future value and the principal is its present value .   "
 },
@@ -158,7 +581,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-compound-interest.html#example-CI1",
   "type": "Example",
-  "number": "2.10",
+  "number": "3.10",
   "title": "Calculating Compound interest for a year.",
   "body": " Calculating Compound interest for a year  You deposit $2,000 in a savings account, which has a rate 6%. Find the amount, A, of money in the account after 3 years subject to compound interest and find the interest.   To find the amount after 3 years, we use the compound interest formula   where , , and .  Substituting the values:   The interest earned is calculated as:    "
 },
@@ -167,7 +590,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-compound-interest.html#def-Compound-interest-Future-Value",
   "type": "Definition",
-  "number": "2.11",
+  "number": "3.11",
   "title": "Compound interest: Future Value.",
   "body": " Compound interest: Future Value   If dollars are deposited at rate , in decimal form, subject to compound interest paid n times per year, then the amount, , of money in the account after t years is given by   where the amount is the account's future value and the principal is its present value .   "
 },
@@ -176,7 +599,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-compound-interest.html#example-C2",
   "type": "Example",
-  "number": "2.12",
+  "number": "3.12",
   "title": "Calculating Compound Interest for More Than a Year.",
   "body": " Calculating Compound Interest for More Than a Year   You deposit $7,500 in a savings account that has a rate of 6%. The interest is compounded monthly. How much money will you have after five years? Find the interest after five years.    To find the future value of the account, we use the compound interest formula:   Given , , , and :   The account balance after five years is approximately $10,116.38. The interest earned over five years is:   The interest earned is $2,616.38.   "
 },
@@ -185,7 +608,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-compound-interest.html#def-Compound-Interest-Present-Value",
   "type": "Definition",
-  "number": "2.13",
+  "number": "3.13",
   "title": "Compound Interest: Present Value.",
   "body": " Compound Interest: Present Value   If dollars are to be accumulated in years in an account that pays rate compounded times per year, then the present value, , that needs to be invested now is given by    "
 },
@@ -194,7 +617,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-compound-interest.html#example-C3",
   "type": "Example",
-  "number": "2.14",
+  "number": "3.14",
   "title": "Calculating present value.",
   "body": " Calculating present value  How much money should be deposited in an account today that earns 8% compounded monthly so that it will accumulate to $20,000 in five years?   To find the required deposit (Present Value), we use the formula: where:  (Future Value)  (Annual interest rate)  (Compounding periods per year)  (Time in years)    Substituting these values into the formula gives:   Therefore, a deposit of is required today.   "
 },
@@ -203,7 +626,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-compound-interest.html#def-APY",
   "type": "Definition",
-  "number": "2.15",
+  "number": "3.15",
   "title": "Annual percentage yield (APY).",
   "body": " Annual percentage yield (APY)   Suppose that an investment has a nominal interest rate, , in decimal form, and pays compound interest times per year. The investment's effective annual yields , APY, is given by    "
 },
@@ -212,7 +635,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-compound-interest.html#example-C4",
   "type": "Example",
-  "number": "2.16",
+  "number": "3.16",
   "title": "Understanding effective annual yield.",
   "body": " Understanding effective annual yield  You deposit $4000 in an account that pays 8% interest compounded monthly. Use the future value formula for simple interest to determine the effective annual yield.   By the formula for future value Rounded to nearest cent, the amount in the savings account after one year in $4332.00.  The effective annual yield is a simple interest rate. We use the future value formula for simple interest to determine the simple interest rate that produces a future value of $4332 for $4000 deposit after one year.   You will pay a simple interest rate of 8.3%. This means that money invested at 8.3% simple interest earns the same amount in one year as money invested at 8%interest compounded monthly.   "
 },
@@ -221,7 +644,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-compound-interest.html#example-C5",
   "type": "Example",
-  "number": "2.17",
+  "number": "3.17",
   "title": "Calculating Effective Annual Yield.",
   "body": " Calculating Effective Annual Yield   A passbook savings account has a nominal rate of . The interest is compounded daily. Find the account's effective annual yield, assuming a -day year.    The Effective Yield (APY) represents the actual interest earned in one year. It is calculated using the formula: where:  (Nominal annual interest rate)  (Compounding periods per year)    Substituting the given values:   Converted to a percentage, the effective annual yield is approximately .   "
 },
@@ -230,7 +653,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-compound-interest.html#example-C6",
   "type": "Example",
-  "number": "2.18",
+  "number": "3.18",
   "title": "Quarterly Compounding and Interest Calculation.",
   "body": " Quarterly Compounding and Interest Calculation   You deposit in a savings account at a bank that has a rate of . The interest is compounded quarterly.   How much money will you have after ten years? Round up to the nearest cent.    Find the interest.       First, we identify the variables for the compound interest formula:  (Principal)  (Annual rate)  (Quarterly compounding)  (Years)    For part (a), we calculate the future value ( ): Rounding up, the account balance will be .  For part (b), we find the interest earned ( ) by subtracting the principal from the future value: The interest earned is .   "
 },
@@ -239,7 +662,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-compound-interest.html#exercise-C1",
   "type": "Checkpoint",
-  "number": "2.19",
+  "number": "3.19",
   "title": "Comparing Investment Options.",
   "body": " Comparing Investment Options   Suppose that you have to invest. Which investment yields the greater return over 5 years: compounded quarterly or compounded semiannually?    To determine which investment is superior, we calculate the future value ( ) for both options using the formula , where and .     Option 1: compounded quarterly  Here, and .     Option 2: compounded semiannually  Here, and .      Comparing the two totals, Option 1 results in while Option 2 results in .  Therefore, the investment compounded quarterly yields the greater return by .   "
 },
@@ -248,7 +671,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-compound-interest.html#exercise-C2",
   "type": "Checkpoint",
-  "number": "2.20",
+  "number": "3.20",
   "title": "Present Value with Quarterly Compounding.",
   "body": " Present Value with Quarterly Compounding   How much money should be deposited today in an account that earns compounded quarterly so that it will accumulate to in ten years?    To find the required initial deposit, we use the Present Value formula: where:  (The target future value)  (The annual interest rate)  (Compounded quarterly)  (The time in years)    Substituting these values into the formula:   Therefore, a deposit of is required today to reach the goal of in ten years.   "
 },
@@ -338,7 +761,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-Annuities.html#ex-annuity-intro",
   "type": "Example",
-  "number": "2.21",
+  "number": "3.21",
   "title": "Annuity Basics.",
   "body": " Annuity Basics   Suppose you deposit into a savings plan at the end of each year for three years. The interest rate is per year compounded annually.   Find the value of the annuity after three years.    Find the interest earned.       We calculate the balance step-by-step:   Value at the end of year 1:    Value at the end of year 2:     Value at the end of year 3:      The value of the annuity at the end of three years is . Since you made three payments of , the total principal deposited is .  The interest is:    "
 },
@@ -347,7 +770,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-Annuities.html#Value-of-an-Annuity",
   "type": "Definition",
-  "number": "2.22",
+  "number": "3.22",
   "title": "Value of an Annuity: Interest Compounded <span class=\"process-math\">\\(n\\)<\/span> Times per Year.",
   "body": " Value of an Annuity: Interest Compounded Times per Year   If is the deposit made at the end of each compounding period for an annuity that pays an annual interest rate compounded times per year, the future value, or , of the annuity after years is:    "
 },
@@ -356,7 +779,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-Annuities.html#example-a1",
   "type": "Example",
-  "number": "2.23",
+  "number": "3.23",
   "title": "Retirement Savings: IRA Annuity.",
   "body": " Retirement Savings: IRA Annuity   To save for retirement, you decide to deposit into an IRA at the end of each year for the next 30 years. If you can count on an interest rate of per year compounded annually:   How much will you have from the IRA after 30 years?    Find the interest.       We use the future value formula for an annuity: where , , , and .     Substituting the values into the formula: After 30 years, the IRA will have .    To find the interest, we subtract the total deposits from the future value. Total deposits = . The total interest earned is .      "
 },
@@ -365,7 +788,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-Annuities.html#example-a2",
   "type": "Example",
-  "number": "2.24",
+  "number": "3.24",
   "title": "Retirement Savings with Monthly Compounding.",
   "body": " Retirement Savings with Monthly Compounding   At age 25, to save for retirement, you decide to deposit at the end of each month into an IRA that pays compounded monthly.   How much will you have from the IRA when you retire at age 65?    Find the interest.       We use the future value formula for an annuity: where:  (Monthly deposit)  (Annual interest rate)  (Compounding periods per year)  (Years of investing: )       Substituting the values into the formula: At age 65, the IRA will be worth .    To find the interest, subtract the total deposits from the future value. Total deposits = . The total interest earned is .      "
 },
@@ -374,7 +797,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-Annuities.html#exercise-a1",
   "type": "Checkpoint",
-  "number": "2.25",
+  "number": "3.25",
   "title": "Calculating Future Value of an Annuity.",
   "body": " Calculating Future Value of an Annuity   To save for a down payment on a home, you deposit at the end of each quarter into an account that pays compounded quarterly. How much will be in the account after years?    We use the future value formula for an annuity: where:  (Quarterly deposit)  (Annual interest rate)  (Compounded quarterly)  (Number of years)    Substituting these values into the formula:   After years, the account balance will be .   "
 },
@@ -383,7 +806,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-Annuities.html#example-a3",
   "type": "Example",
-  "number": "2.26",
+  "number": "3.26",
   "title": "Logic Check: Annuities vs. Lump Sums.",
   "body": " Logic Check: Annuities vs. Lump Sums   Determine whether each statement is True or False and explain your reasoning.   With the same interest rate, compounding period, and time period, an annuity will generate more interest than a lump sum deposit.    By putting at the end of each month into an IRA that pays compounded monthly, I'll be able to retire comfortably in just 30 years.           False. A lump sum deposit of the same total amount invested earns more interest because the entire amount is present at the beginning and earns interest for the full duration. In an annuity, the money is deposited gradually, so later payments have less time to grow.     False. We can calculate the total using the annuity formula where , , , and : A total of is not nearly enough to sustain a comfortable retirement.      "
 },
@@ -392,7 +815,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-Annuities.html#example-a4",
   "type": "Example",
-  "number": "2.27",
+  "number": "3.27",
   "title": "Sinking Fund: Monthly Savings for College.",
   "body": " Sinking Fund: Monthly Savings for College   Parents of a baby girl are in a financial position to begin saving for her college education. They plan to have in a college fund in 18 years by making regular, end-of-month deposits in an annuity that pays compounded monthly.   How much should they deposit each month?    How much of the goal comes from interest?       To find the required monthly payment ( ), we use the sinking fund formula, which is the annuity formula solved for : where , , , and .     Substituting the values: The parents should deposit each month.    To find the interest, we first calculate the total principal deposited: Subtracting this from the future value: The amount from interest is .      "
 },
@@ -401,7 +824,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-Annuities.html#exercise-a3",
   "type": "Checkpoint",
-  "number": "2.28",
+  "number": "3.28",
   "title": "Calculating the Value of an Annuity.",
   "body": " Calculating the Value of an Annuity   You deposit $2,000 into a savings plan at the end of each year for three years. The interest rate is 10% per year compounded annually.    Find the value of the annuity after three years.    Find the interest earned.      We use the future value formula for an annuity: where , , , and .    Substituting the values into the formula: The value of the annuity after three years is $6,620.    The total amount of deposits made is . The interest earned is the difference between the future value and the total deposits: The interest earned is $620.     "
 },
@@ -410,7 +833,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-Annuities.html#exercise-a4",
   "type": "Checkpoint",
-  "number": "2.29",
+  "number": "3.29",
   "title": "Retirement Savings: Growth After Contributions Cease.",
   "body": " Retirement Savings: Growth After Contributions Cease   To save for retirement, you decide to deposit $3,000 into an IRA at the end of each year for the next 10 years. If you can count on an interest rate of 9% per year compounded annually:    How much will you have from the IRA after 40 years, assuming no additional deposits or withdrawals after the 10 years of contribution?    Find the interest earned.      This problem requires two steps. First, we find the value of the annuity after the 10-year contribution period. Second, we treat that amount as a lump sum that grows for the remaining 30 years.   Step 1: Future Value of the Annuity (Years 1-10)     Step 2: Compound Interest on the Lump Sum (Years 11-40) The balance grows for more years using the formula :     After 40 years, the total value will be $604,725.10.    The total deposits were . The interest earned is $574,725.10.     "
 },
@@ -464,7 +887,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-Mortgages.html#def-loan-payment",
   "type": "Definition",
-  "number": "2.30",
+  "number": "3.30",
   "title": "Loan Payment Formula for Fixed Installment Loans.",
   "body": " Loan Payment Formula for Fixed Installment Loans   The regular payment amount, , required to repay a loan of dollars paid times per year over years at an annual rate is given by:    where:    is the principal amount (loan balance)     is the annual interest rate (as a decimal)     is the number of payments per year     is the total number of years     "
 },
@@ -473,7 +896,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-Mortgages.html#example-m1",
   "type": "Example",
-  "number": "2.31",
+  "number": "3.31",
   "title": ".",
   "body": "   The price of a home is $195,000. The bank requires a 10% down payment and two points at the time of closing. The cost of the home is financed with 30-year fixed rate mortgage at 7.5%.    Find the required down payment.    Find the amount of the mortgage.    How much must be paid for the two points at closing?    Find the monthly payment    Find the total interest paid over 30 years.        The required down payment is 10% of $195,000 or     The amount of the mortgage is the difference between the price of the home and the down payment:     To find the cost of two points on a mortgage of $175,500: The down payment ($19,500) is paid to the seller and the cost of two points ($3,510) is paid to the lending institution.   Computing Monthly Mortgage Payments  The monthly mortgage payment, , required to repay a loan of dollars paid times per year over years at an annual rate is:      The monthly payments are:     The total payments are calculated by multiplying the monthly payment by the total number of periods (360 months): The interest paid over 30 years is the total payments minus the original principal:      "
 },
@@ -482,7 +905,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-Mortgages.html#example-mortgage-M01",
   "type": "Example",
-  "number": "2.32",
+  "number": "3.32",
   "title": "Comparing 30-Year and 15-Year Mortgages.",
   "body": " Comparing 30-Year and 15-Year Mortgages   In ,a mortgage of $175,500 was financed with a 30-year fixed rate at 7.5%.   Find the monthly payment for the 30-year mortgage.  Find the total interest paid over 30 years.  Find the total interest paid if the loan was instead for 15 years at the same rate.  How much interest is saved by reducing the mortgage from 30 to 15 years?       We use the formula with , , , and :     The total interest for 30 years is the total payments minus the principal:      First, find the 15-year monthly payment ( ): Now calculate the total 15-year interest:      The interest saved is the difference between the two interest totals:      "
 },
@@ -491,7 +914,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-Mortgages.html#ex-condo-mortgage-M02",
   "type": "Example",
-  "number": "2.33",
+  "number": "3.33",
   "title": "Condominium Mortgage Analysis.",
   "body": " Condominium Mortgage Analysis   The price of a condominium is $280,000. The bank requires a 5% down payment and one point at the time of closing. The cost of the condominium is financed with a 30-year fixed-rate mortgage at 8%.   Find the required down payment.  Find the amount of the mortgage.  How much must be paid for the one point at closing?  Find the monthly payment by using the monthly payment formula.  Find the total cost of interest over 30 years.       The down payment is 5% of the purchase price:     The mortgage amount is the price minus the down payment:     One point is 1% of the mortgage amount:     Using the formula with , , , and :     Total payments over 30 years are .  The total interest is:      "
 },
@@ -500,7 +923,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-Mortgages.html#ex-student-loan-comparison-M03",
   "type": "Checkpoint",
-  "number": "2.34",
+  "number": "3.34",
   "title": "Student Loan Term Comparison.",
   "body": " Student Loan Term Comparison   A student graduates from college with a loan of $36,000 at an 8% annual interest rate.    Find the monthly payments and the total interest for a 10-year loan term.    If the interest rate remains at 8% and the loan term is reduced to 5 years, how much more must the student pay each month and how much less will be paid in total interest?         Monthly payment: $436.78; Total interest: $16,413.60    Monthly increase: $293.07; Interest saved: $8,414.40         For :      For :    The monthly increase is . The interest saved is . (Note: Small differences may occur due to rounding).     "
 },
@@ -509,7 +932,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-Mortgages.html#ex-mortgage-comparison-points-M04",
   "type": "Checkpoint",
-  "number": "2.35",
+  "number": "3.35",
   "title": "Mortgage Comparison with Points and Closing Costs.",
   "body": " Mortgage Comparison with Points and Closing Costs   Which mortgage loan has the greater total cost and by how much? Consider a $210,000 mortgage with these two options:     Mortgage A : 20-year fixed at 7% with closing costs of $3,000 and 2 points.     Mortgage B : 20-year fixed at 6.75% with closing costs of $1,750 and 4 points.      Mortgage A has the greater total cost by $4,577.20.    The total cost for each mortgage includes the sum of all monthly payments, the cost of points, and the fixed closing costs.    Mortgage A Calculations  First, calculate the monthly payment ( ): Next, find the total cost of payments, points, and closing:     Mortgage B Calculations  First, calculate the monthly payment ( ): Next, find the total cost:     Comparison  Mortgage A is more expensive. The difference is: (Note: Differences in final cents may vary based on rounding the monthly payment).     "
 },
@@ -518,7 +941,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-Mortgages.html#def-max-purchase-price",
   "type": "Definition",
-  "number": "2.36",
+  "number": "3.36",
   "title": "Maximum Purchase Price Formula.",
   "body": " Maximum Purchase Price Formula   The maximum purchase price for a house is given by where:    is the monthly mortgage payment     is the number of payments per year     is the total number of years (loan term)     is the annual interest rate (as a decimal)      "
 },
@@ -527,7 +950,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-Mortgages.html#ex-max-purchase-M05",
   "type": "Example",
-  "number": "2.37",
+  "number": "3.37",
   "title": "Calculating Maximum Mortgage Amount.",
   "body": " Calculating Maximum Mortgage Amount   Amanda and Fred are buying a house on a 30-year mortgage. They can afford a monthly payment of $800. If the annual interest rate (APR) is 3.75%, what is the maximum mortgage amount they can take out?    We use the maximum purchase price formula with , , , and :   First, calculate the periodic interest rate: .  Now, substitute into the formula:   Amanda and Fred can take out a mortgage of approximately $172,795.90 .   "
 },
@@ -536,7 +959,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-Mortgages.html#ex-home-affordability-M06",
   "type": "Checkpoint",
-  "number": "2.38",
+  "number": "3.38",
   "title": "Home Affordability and Loan Terms.",
   "body": " Home Affordability and Loan Terms   Suppose you want to purchase a house and your take-home pay is $3,220 per month. You wish to stay within recommended guidelines by spending of your take-home pay on a house payment. You have $15,300 saved for a down payment. With your excellent credit, you can get an APR of 3.28% compounded monthly.   What is the total cost of a house you could afford with a 15-year mortgage?  What is the most that you could afford with a traditional 30-year mortgage?       15-year mortgage: $130,175.76  30-year mortgage: $199,444.60      First, calculate the allowed monthly payment ( ): The monthly interest rate is .    15-Year Mortgage Affordability  Using the Maximum Purchase Price formula with and ( ): The total house cost includes the down payment:     30-Year Mortgage Affordability  Using the formula with ( ): The total house cost includes the down payment:      "
 },
@@ -775,1154 +1198,11 @@ var ptx_lunr_docs = [
   "body": "  Loan of at for 10 years.  Find monthly payments and total interest.  Compare to a 5-year term.        Payment: ; Interest:  Pay more per month; Save interest.      Use .  10-yr: . Total paid = . Interest = .  5-yr: . Total paid = . Interest = .   "
 },
 {
-  "id": "notes-Voting",
-  "level": "1",
-  "url": "notes-Voting.html",
-  "type": "Section",
-  "number": "",
-  "title": "Voting methods",
-  "body": " Voting methods   How to determine a Winner?    Preference ballots are ballots in which a voter is asked to rank all candidates in order of preference. A preference table shows how often each particular outcomes occurred.     Four candidates are running for student body president: Alice (A), Bonnie (B), Carlos (C) and Daniel (D). The students were asked to rank all the candidates in order of preference.   Preference Table For The Election Of Student Body President    Number of Votes  130  120  100  150    First choice  A  D  D  C    Second choice  B  B  B  B    Third choice  C  C  A  A    Fourth choice  D  A  C  D       How many students voted in the election?  How many students selected the candidates in this order : D, B, A, C?  How many students selected Daniel (D) as their first choice for student body president?         To find the total number of students, sum the votes in the top row: students.    Looking at the columns, the order D, B, A, C appears in the third column. There were students who voted in this order.    Daniel (D) is listed as the first choice in the second and third columns. The total number of students is students.         The Plurality Method   The candidate (or candidates, if there is more than one) with the most first-place votes is the winner.       shows the preference table for the four candidates running for student body president. Who is declared the winner using the Plurality method?    A received 130 first-place votes, D received first-place votes and C received 150 first-place votes. Thus Daniel is the winner.       Majority Rule Decision is when more than 50% of the voters rank a candidate in first-place. The majority rule will almost always have a winner.    The Plurality-with-Elimination Method   The candidate with the majority (over 50% votes) of first-place votes is the winner. If no candidate receives a majority, eliminate the candidate with the fewest first-place votes. Move the candidates below them up one place and recount. Repeat until a candidate has a majority.     Elimination Method Example   Determine the winner for the student president election from , using Plurality-with-Elimination.    Total votes = 500. Majority needed = 251.   Round 1: A=130, D=220, C=150, B=0. No majority. Bonnie (B) is eliminated.   Preference Table: Round 2 (Bonnie Eliminated)    Number of Votes  130  120  100  150    First choice  A  D  D  C    Second choice  C  C  A  A    Third choice  D  A  C  D      Round 2: After shifting votes up, the first-place votes remain: A=130, D=220, C=150. Still no majority. Alice (A) has the fewest (130) and is eliminated.   Preference Table: Final Round (Alice and Bonnie Eliminated)    Number of Votes  130  120  100  150    First choice  C  D  D  C    Second choice  D  C  C  D      Round 3: Alice's 130 votes go to her next preferred candidate, Carlos (C). New totals: Daniel = 220, Carlos = .  Carlos now has 280 votes (a majority). Carlos is the winner.      The Borda Count Method   Each voter ranks the candidates from the most favorable to the least favorable. Each last-place vote is given 1 point, each next-to-last-place vote is given 2 points, and so on. The points are totaled for each candidate separately. The candidate with the most points is the winner.     Borda Count Example   Using the preference data from , who is declared the winner using the Borda Count Method?    With 4 candidates, 1st place gets 4 pts, 2nd gets 3 pts, 3rd gets 2 pts, and 4th gets 1 pt.   Borda Count Calculation Table    Number of Votes  130  120  100  150    1st choice: 4 pts  A:  D:  D:  C:    2nd choice: 3 pts  B:  B:  B:  B:    3rd choice: 2 pts  C:  C:  A:  A:    4th choice: 1 pt  D:  A:  C:  D:      Alice (A):  pts  Bonnie (B):  pts  Carlos (C):  pts  Daniel (D):  pts   Bonnie is the winner with 1500 points.      The Pairwise Comparison Method   Every candidate is matched on a one-to-one basis with every other candidate. If candidate A beats candidate B in one-to-one competition, then A receives 1 point and B receives 0. If they tie, each receives 0.5 points. The candidate with the most total points is the winner.  In an election with candidates, the number of comparisons, , is calculated as:      Pairwise Comparison Example   Using the same preference , for the four candidates (Alice, Bonnie, Carlos, and Daniel), who is the winner using the Pairwise Comparison Method?    With candidates, there are total comparisons (A vs.B, A vs.C, A vs.D, B vs.C, B vs.D, C vs.D) and determine the winner using the pairwise comparison method.     130 120 100 150  A B B B  B A A A   A vs B     130 120 100 150  A C A C  C A C A   A vs C     130 120 100 150  A D D A  D A A D   A vs D       130 120 100 150  B B B C  C C C B   B vs C     130 120 100 150  B D D B  D B B D   B vs D     130 120 100 150  C D D C  D C C D   C vs D       A vs B: Alice is preferred over Bonnie in 130 ballots. Bonnie is preferred over Alice in ballots. Winner: Bonnie (B gets 1 pt)      A vs C: Alice is preferred over Carlos in ballots. Carlos is preferred over Alice in 150. Winner: Alice (A gets 1 pt)      A vs D: Alice is preferred over Daniel in 130 ballots. Daniel is preferred over Alice in ballots. Winner: Daniel (D gets 1 pt)      B vs C: Bonnie is preferred over Carlos in ballots. Carlos is preferred over Bonnie in 150. Winner: Bonnie (B gets 1 pt)      B vs D: Bonnie is preferred over Daniel in ballots. Daniel is preferred over Bonnie in . Winner: Bonnie (B gets 1 pt)      C vs D: Carlos is preferred over Daniel in ballots. Daniel is preferred over Carlos in . Winner: Carlos (C gets 1 pt)      Final Point Totals:   Bonnie (B): 3 points  Alice (A): 1 point  Daniel (D): 1 point  Carlos (C): 1 point    Bonnie is the winner using Pairwise Comparison.     If a candidate wins all pair comparisons with other candidates, that candidate is called the Condorcet winner . A Condorcet winner automatically wins by the pairwise comparisons method.    Condorcet Winner   Is there a Condorcet winner in the following election?   Preference Table for Condorcet Example    Number of Votes  30  30  30  20    First choice  B  B  A  A    Second choice  A  A  C  D    Third choice  C  D  D  C    Fourth choice  D  C  B  B       To find a Condorcet winner, we must see if one candidate wins every head-to-head matchup. Let's check candidate B and candidate A :     B vs A: B is ranked higher than A in ballots. A is ranked higher than B in ballots. Winner: B .     B vs C: B is ranked higher than C in ballots (every ballot). Winner: B .     B vs D: B is ranked higher than D in ballots (every ballot). Winner: B .    Since B beats every other candidate in a one-on-one comparison, B is the Condorcet winner .      Arrow's Impossibility Theorem states that a ranked-voting electoral system cannot reach a community-wide ranked preference by converting individuals' preferences while meeting all the conditions of a fair voting system.  Consider the following situation with 3 candidates in one-to-one competition (pairwise comparison method):  Suppose candidate A beats candidate B  Suppose candidate B beats candidate C  Suppose candidate C beats candidate A    When this occurs, it is because the conflicting majorities are each made up of different groups of individuals. No winner can be determined.  This is called the Condorcet Paradox (also known as the voting paradox).    Condorcet Paradox   Who would win this election through the pairwise comparison method?   Preference Table: Three-Candidate Election    Number of Votes  8  9  10    First choice  C  B  A    Second choice  A  C  B    Third choice  B  A  C       We perform the three possible head-to-head comparisons:     A vs B: A is preferred on 8 (col 1) + 10 (col 3) = 18 ballots. B is preferred on 9 (col 2) ballots. Winner: A (A gets 1 pt).     B vs C: B is preferred on 9 (col 2) + 10 (col 3) = 19 ballots. C is preferred on 8 (col 1) ballots. Winner: B (B gets 1 pt).     C vs A: C is preferred on 8 (col 1) + 9 (col 2) = 17 ballots. A is preferred on 10 (col 3) ballots. Winner: C (C gets 1 pt).    Each candidate (A, B, and C) has exactly 1 point. This is a Condorcet Paradox because there is a \"rock-paper-scissors\" loop (A beats B, B beats C, and C beats A), resulting in a three-way tie.     Mayor of a Small Town   Three candidates A, B, and C are running for mayor of a small town. The results of the election are shown in the following preference table.   Mayor Election Preference Table    Number of Votes  1200  900  900  600    First choice  A  C  B  B    Second choice  B  A  C  A    Third choice  C  B  A  C       Determine the winner using the Plurality method.  Determine the winner using the Borda count method.  Determine the winner using the Plurality-with-elimination method.  Is there a Condorcet Winner?          Plurality: A = 1200, B = , C = 900. Winner: B .     Borda Count (3-2-1):   A:  B:  C:   Winner: B .     Plurality-with-Elimination: Total votes = 3600; Majority = 1801. Round 1: A=1200, B=1500, C=900. No majority. Eliminate C. C's 900 votes go to A (second choice). Final: A = , B = 1500. Winner: A .     Condorcet Winner Check:   A vs B: A is preferred on . B on 1500. (A wins)  A vs C: A is preferred on . C on . (Tie)  Since A does not win all matches, No Condorcet Winner exists .          Plurality Method  We count only the first-place votes for each candidate:   A: 1200 votes  B:  votes  C: 900 votes   Winner: B (1500 votes).    Borda Count Method (3-2-1 Points)   Borda Count Point Distribution    Candidate  1st (3 pts)  2nd (2 pts)  3rd (1 pt)  Total Points    A        B        C         Winner: B (7800 points).    Plurality-with-Elimination  Total Votes: 3600. Majority needed: 1801.  Round 1: A=1200, B=1500, C=900. No candidate has 1801. Eliminate C.   Final Round (C Eliminated)   Votes 1200 900 900 600  1st A A B B  2nd B B A A    New totals: A = . B = . Winner: A (2100 votes).        Math Club Presidential Election   Four candidates are running for president of the Math Club: Paula (P), Sylvia (S), Craig (C), and Brian (B). The results of the election are shown in the following preference table:   Election Preference Schedule    Number of Votes  15  19  23  10  18  15    First choice  B  C  P  P  S  B    Second choice  S  P  S  B  C  S    Third choice  P  S  B  C  P  C    Fourth choice  C  B  C  S  B  P       How many students voted in the election?  How many students voted Brian as their first choice?  Who would win the presidency using the Plurality method?  Is there a Majority Winner?  Who would win the presidency using the Plurality with Elimination method?  Who would win the presidency using the Borda count method?   Who would win the presidency using the pairwise comparison method? If a tie, use the Plurality method between the winners to determine the tie-breaker.          100 students  30 students  Paula (33 votes)  No (Majority requires 51 votes)  Craig  Sylvia (279 points)  Paula (3 points)         Total Votes: 100.  Brian 1st choice: 30.  Plurality Winner: Paula (33).  Majority: No (Requires 51).   Plurality with Elimination:  Round 1: Sylvia has the fewest 1st-place votes (18) and is eliminated.   Round 2 (Sylvia Eliminated)   Votes 15 19 23 10 18 15  1st B C P P C B  2nd P P B B P C  3rd C B C C B P    New totals: P=33, B=30, C=37 (19 + 18). Brian is eliminated.   Round 3 (Brian Eliminated)   Votes 15 19 23 10 18 15  1st P C P P C C  2nd C P C C P P    Round 3: Paula vs. Craig. Craig wins the final matchup against Paula 52 to 48.  Winner: Craig.    Borda Count Method:  Using 4 pts for 1st, 3 for 2nd, 2 for 3rd, and 1 for 4th:   Paula:  Sylvia:  Craig:  Brian:   Winner: Sylvia.    Pairwise Comparison:  For the Pairwise Comparison Method , we compare every possible pair. There are 100 total votes, so 51 are needed to win a matchup:  P vs. S: P has 52; S has 48. (P gets 1 pt)  P vs. C: P has 63; C has 37. (P gets 1 pt)  P vs. B: P has 70; B has 30. (P gets 1 pt)  S vs. C: S has 81; C has 19. (S gets 1 pt)  S vs. B: S has 60; B has 40. (S gets 1 pt)  C vs. B: C has 60; B has 40. (C gets 1 pt)     Total Points: Paula = 3, Sylvia = 2, Craig = 1, Brian = 0. Paula is the winner; no tie-breaker is required.        "
-},
-{
-  "id": "notes-Voting-2-2-1",
-  "level": "2",
-  "url": "notes-Voting.html#notes-Voting-2-2-1",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Preference ballots preference table "
-},
-{
-  "id": "exe-student-president",
-  "level": "2",
-  "url": "notes-Voting.html#exe-student-president",
-  "type": "Example",
-  "number": "3.1",
-  "title": "",
-  "body": "  Four candidates are running for student body president: Alice (A), Bonnie (B), Carlos (C) and Daniel (D). The students were asked to rank all the candidates in order of preference.   Preference Table For The Election Of Student Body President    Number of Votes  130  120  100  150    First choice  A  D  D  C    Second choice  B  B  B  B    Third choice  C  C  A  A    Fourth choice  D  A  C  D       How many students voted in the election?  How many students selected the candidates in this order : D, B, A, C?  How many students selected Daniel (D) as their first choice for student body president?         To find the total number of students, sum the votes in the top row: students.    Looking at the columns, the order D, B, A, C appears in the third column. There were students who voted in this order.    Daniel (D) is listed as the first choice in the second and third columns. The total number of students is students.      "
-},
-{
-  "id": "def-plurality-method",
-  "level": "2",
-  "url": "notes-Voting.html#def-plurality-method",
-  "type": "Definition",
-  "number": "3.3",
-  "title": "The Plurality Method.",
-  "body": " The Plurality Method   The candidate (or candidates, if there is more than one) with the most first-place votes is the winner.   "
-},
-{
-  "id": "ex-plurality",
-  "level": "2",
-  "url": "notes-Voting.html#ex-plurality",
-  "type": "Example",
-  "number": "3.4",
-  "title": "",
-  "body": "   shows the preference table for the four candidates running for student body president. Who is declared the winner using the Plurality method?    A received 130 first-place votes, D received first-place votes and C received 150 first-place votes. Thus Daniel is the winner.   "
-},
-{
-  "id": "notes-Voting-2-6-1",
-  "level": "2",
-  "url": "notes-Voting.html#notes-Voting-2-6-1",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Majority Rule Decision "
-},
-{
-  "id": "def-elimination",
-  "level": "2",
-  "url": "notes-Voting.html#def-elimination",
-  "type": "Definition",
-  "number": "3.5",
-  "title": "The Plurality-with-Elimination Method.",
-  "body": " The Plurality-with-Elimination Method   The candidate with the majority (over 50% votes) of first-place votes is the winner. If no candidate receives a majority, eliminate the candidate with the fewest first-place votes. Move the candidates below them up one place and recount. Repeat until a candidate has a majority.   "
-},
-{
-  "id": "exe-elimination-example",
-  "level": "2",
-  "url": "notes-Voting.html#exe-elimination-example",
-  "type": "Example",
-  "number": "3.6",
-  "title": "Elimination Method Example.",
-  "body": " Elimination Method Example   Determine the winner for the student president election from , using Plurality-with-Elimination.    Total votes = 500. Majority needed = 251.   Round 1: A=130, D=220, C=150, B=0. No majority. Bonnie (B) is eliminated.   Preference Table: Round 2 (Bonnie Eliminated)    Number of Votes  130  120  100  150    First choice  A  D  D  C    Second choice  C  C  A  A    Third choice  D  A  C  D      Round 2: After shifting votes up, the first-place votes remain: A=130, D=220, C=150. Still no majority. Alice (A) has the fewest (130) and is eliminated.   Preference Table: Final Round (Alice and Bonnie Eliminated)    Number of Votes  130  120  100  150    First choice  C  D  D  C    Second choice  D  C  C  D      Round 3: Alice's 130 votes go to her next preferred candidate, Carlos (C). New totals: Daniel = 220, Carlos = .  Carlos now has 280 votes (a majority). Carlos is the winner.   "
-},
-{
-  "id": "def-borda-count",
-  "level": "2",
-  "url": "notes-Voting.html#def-borda-count",
-  "type": "Definition",
-  "number": "3.9",
-  "title": "The Borda Count Method.",
-  "body": " The Borda Count Method   Each voter ranks the candidates from the most favorable to the least favorable. Each last-place vote is given 1 point, each next-to-last-place vote is given 2 points, and so on. The points are totaled for each candidate separately. The candidate with the most points is the winner.   "
-},
-{
-  "id": "exe-borda-example",
-  "level": "2",
-  "url": "notes-Voting.html#exe-borda-example",
-  "type": "Example",
-  "number": "3.10",
-  "title": "Borda Count Example.",
-  "body": " Borda Count Example   Using the preference data from , who is declared the winner using the Borda Count Method?    With 4 candidates, 1st place gets 4 pts, 2nd gets 3 pts, 3rd gets 2 pts, and 4th gets 1 pt.   Borda Count Calculation Table    Number of Votes  130  120  100  150    1st choice: 4 pts  A:  D:  D:  C:    2nd choice: 3 pts  B:  B:  B:  B:    3rd choice: 2 pts  C:  C:  A:  A:    4th choice: 1 pt  D:  A:  C:  D:      Alice (A):  pts  Bonnie (B):  pts  Carlos (C):  pts  Daniel (D):  pts   Bonnie is the winner with 1500 points.   "
-},
-{
-  "id": "def-pairwise-comparison",
-  "level": "2",
-  "url": "notes-Voting.html#def-pairwise-comparison",
-  "type": "Definition",
-  "number": "3.12",
-  "title": "The Pairwise Comparison Method.",
-  "body": " The Pairwise Comparison Method   Every candidate is matched on a one-to-one basis with every other candidate. If candidate A beats candidate B in one-to-one competition, then A receives 1 point and B receives 0. If they tie, each receives 0.5 points. The candidate with the most total points is the winner.  In an election with candidates, the number of comparisons, , is calculated as:    "
-},
-{
-  "id": "exe-pairwise-example",
-  "level": "2",
-  "url": "notes-Voting.html#exe-pairwise-example",
-  "type": "Example",
-  "number": "3.13",
-  "title": "Pairwise Comparison Example.",
-  "body": " Pairwise Comparison Example   Using the same preference , for the four candidates (Alice, Bonnie, Carlos, and Daniel), who is the winner using the Pairwise Comparison Method?    With candidates, there are total comparisons (A vs.B, A vs.C, A vs.D, B vs.C, B vs.D, C vs.D) and determine the winner using the pairwise comparison method.     130 120 100 150  A B B B  B A A A   A vs B     130 120 100 150  A C A C  C A C A   A vs C     130 120 100 150  A D D A  D A A D   A vs D       130 120 100 150  B B B C  C C C B   B vs C     130 120 100 150  B D D B  D B B D   B vs D     130 120 100 150  C D D C  D C C D   C vs D       A vs B: Alice is preferred over Bonnie in 130 ballots. Bonnie is preferred over Alice in ballots. Winner: Bonnie (B gets 1 pt)      A vs C: Alice is preferred over Carlos in ballots. Carlos is preferred over Alice in 150. Winner: Alice (A gets 1 pt)      A vs D: Alice is preferred over Daniel in 130 ballots. Daniel is preferred over Alice in ballots. Winner: Daniel (D gets 1 pt)      B vs C: Bonnie is preferred over Carlos in ballots. Carlos is preferred over Bonnie in 150. Winner: Bonnie (B gets 1 pt)      B vs D: Bonnie is preferred over Daniel in ballots. Daniel is preferred over Bonnie in . Winner: Bonnie (B gets 1 pt)      C vs D: Carlos is preferred over Daniel in ballots. Daniel is preferred over Carlos in . Winner: Carlos (C gets 1 pt)      Final Point Totals:   Bonnie (B): 3 points  Alice (A): 1 point  Daniel (D): 1 point  Carlos (C): 1 point    Bonnie is the winner using Pairwise Comparison.   "
-},
-{
-  "id": "notes-Voting-2-13-1",
-  "level": "2",
-  "url": "notes-Voting.html#notes-Voting-2-13-1",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Condorcet winner "
-},
-{
-  "id": "ex-condorcet-winner",
-  "level": "2",
-  "url": "notes-Voting.html#ex-condorcet-winner",
-  "type": "Example",
-  "number": "3.14",
-  "title": "Condorcet Winner.",
-  "body": " Condorcet Winner   Is there a Condorcet winner in the following election?   Preference Table for Condorcet Example    Number of Votes  30  30  30  20    First choice  B  B  A  A    Second choice  A  A  C  D    Third choice  C  D  D  C    Fourth choice  D  C  B  B       To find a Condorcet winner, we must see if one candidate wins every head-to-head matchup. Let's check candidate B and candidate A :     B vs A: B is ranked higher than A in ballots. A is ranked higher than B in ballots. Winner: B .     B vs C: B is ranked higher than C in ballots (every ballot). Winner: B .     B vs D: B is ranked higher than D in ballots (every ballot). Winner: B .    Since B beats every other candidate in a one-on-one comparison, B is the Condorcet winner .   "
-},
-{
-  "id": "notes-Voting-2-15-1",
-  "level": "2",
-  "url": "notes-Voting.html#notes-Voting-2-15-1",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Arrow's Impossibility Theorem "
-},
-{
-  "id": "notes-Voting-2-15-4",
-  "level": "2",
-  "url": "notes-Voting.html#notes-Voting-2-15-4",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Condorcet Paradox "
-},
-{
-  "id": "ex-condorcet-paradox",
-  "level": "2",
-  "url": "notes-Voting.html#ex-condorcet-paradox",
-  "type": "Example",
-  "number": "3.16",
-  "title": "Condorcet Paradox.",
-  "body": " Condorcet Paradox   Who would win this election through the pairwise comparison method?   Preference Table: Three-Candidate Election    Number of Votes  8  9  10    First choice  C  B  A    Second choice  A  C  B    Third choice  B  A  C       We perform the three possible head-to-head comparisons:     A vs B: A is preferred on 8 (col 1) + 10 (col 3) = 18 ballots. B is preferred on 9 (col 2) ballots. Winner: A (A gets 1 pt).     B vs C: B is preferred on 9 (col 2) + 10 (col 3) = 19 ballots. C is preferred on 8 (col 1) ballots. Winner: B (B gets 1 pt).     C vs A: C is preferred on 8 (col 1) + 9 (col 2) = 17 ballots. A is preferred on 10 (col 3) ballots. Winner: C (C gets 1 pt).    Each candidate (A, B, and C) has exactly 1 point. This is a Condorcet Paradox because there is a \"rock-paper-scissors\" loop (A beats B, B beats C, and C beats A), resulting in a three-way tie.   "
-},
-{
-  "id": "ex-mayor-election",
-  "level": "2",
-  "url": "notes-Voting.html#ex-mayor-election",
-  "type": "Checkpoint",
-  "number": "3.18",
-  "title": "Mayor of a Small Town.",
-  "body": " Mayor of a Small Town   Three candidates A, B, and C are running for mayor of a small town. The results of the election are shown in the following preference table.   Mayor Election Preference Table    Number of Votes  1200  900  900  600    First choice  A  C  B  B    Second choice  B  A  C  A    Third choice  C  B  A  C       Determine the winner using the Plurality method.  Determine the winner using the Borda count method.  Determine the winner using the Plurality-with-elimination method.  Is there a Condorcet Winner?          Plurality: A = 1200, B = , C = 900. Winner: B .     Borda Count (3-2-1):   A:  B:  C:   Winner: B .     Plurality-with-Elimination: Total votes = 3600; Majority = 1801. Round 1: A=1200, B=1500, C=900. No majority. Eliminate C. C's 900 votes go to A (second choice). Final: A = , B = 1500. Winner: A .     Condorcet Winner Check:   A vs B: A is preferred on . B on 1500. (A wins)  A vs C: A is preferred on . C on . (Tie)  Since A does not win all matches, No Condorcet Winner exists .          Plurality Method  We count only the first-place votes for each candidate:   A: 1200 votes  B:  votes  C: 900 votes   Winner: B (1500 votes).    Borda Count Method (3-2-1 Points)   Borda Count Point Distribution    Candidate  1st (3 pts)  2nd (2 pts)  3rd (1 pt)  Total Points    A        B        C         Winner: B (7800 points).    Plurality-with-Elimination  Total Votes: 3600. Majority needed: 1801.  Round 1: A=1200, B=1500, C=900. No candidate has 1801. Eliminate C.   Final Round (C Eliminated)   Votes 1200 900 900 600  1st A A B B  2nd B B A A    New totals: A = . B = . Winner: A (2100 votes).      "
-},
-{
-  "id": "math-club-election",
-  "level": "2",
-  "url": "notes-Voting.html#math-club-election",
-  "type": "Checkpoint",
-  "number": "3.22",
-  "title": "Math Club Presidential Election.",
-  "body": " Math Club Presidential Election   Four candidates are running for president of the Math Club: Paula (P), Sylvia (S), Craig (C), and Brian (B). The results of the election are shown in the following preference table:   Election Preference Schedule    Number of Votes  15  19  23  10  18  15    First choice  B  C  P  P  S  B    Second choice  S  P  S  B  C  S    Third choice  P  S  B  C  P  C    Fourth choice  C  B  C  S  B  P       How many students voted in the election?  How many students voted Brian as their first choice?  Who would win the presidency using the Plurality method?  Is there a Majority Winner?  Who would win the presidency using the Plurality with Elimination method?  Who would win the presidency using the Borda count method?   Who would win the presidency using the pairwise comparison method? If a tie, use the Plurality method between the winners to determine the tie-breaker.          100 students  30 students  Paula (33 votes)  No (Majority requires 51 votes)  Craig  Sylvia (279 points)  Paula (3 points)         Total Votes: 100.  Brian 1st choice: 30.  Plurality Winner: Paula (33).  Majority: No (Requires 51).   Plurality with Elimination:  Round 1: Sylvia has the fewest 1st-place votes (18) and is eliminated.   Round 2 (Sylvia Eliminated)   Votes 15 19 23 10 18 15  1st B C P P C B  2nd P P B B P C  3rd C B C C B P    New totals: P=33, B=30, C=37 (19 + 18). Brian is eliminated.   Round 3 (Brian Eliminated)   Votes 15 19 23 10 18 15  1st P C P P C C  2nd C P C C P P    Round 3: Paula vs. Craig. Craig wins the final matchup against Paula 52 to 48.  Winner: Craig.    Borda Count Method:  Using 4 pts for 1st, 3 for 2nd, 2 for 3rd, and 1 for 4th:   Paula:  Sylvia:  Craig:  Brian:   Winner: Sylvia.    Pairwise Comparison:  For the Pairwise Comparison Method , we compare every possible pair. There are 100 total votes, so 51 are needed to win a matchup:  P vs. S: P has 52; S has 48. (P gets 1 pt)  P vs. C: P has 63; C has 37. (P gets 1 pt)  P vs. B: P has 70; B has 30. (P gets 1 pt)  S vs. C: S has 81; C has 19. (S gets 1 pt)  S vs. B: S has 60; B has 40. (S gets 1 pt)  C vs. B: C has 60; B has 40. (C gets 1 pt)     Total Points: Paula = 3, Sylvia = 2, Craig = 1, Brian = 0. Paula is the winner; no tie-breaker is required.      "
-},
-{
-  "id": "section-apportionment",
-  "level": "1",
-  "url": "section-apportionment.html",
-  "type": "Section",
-  "number": "",
-  "title": "Apportionment",
-  "body": " Apportionment   Apportionment is the method of distributing power in political systems based on population density. Apportionment may reflect the availability of buses for city routes or doctors for patients.   The Standard Divisor   The standard divisor is found by dividing the total population under consideration by the number of items to be allocated.      The Standard Quota   The standard quota for a particular group is found by dividing that group's population by the standard divisor.     >  Palm Springs is composed of four states: A, B, C, and D. According to the country's constitution, the congress will have 30 seats, divided among the four states according to their respective populations. Find the standard quotas for states A, B, C, and D and complete the table below.   Population of Palm Springs by State    State  A  B  C  D  Total    Population (in thousands)  275  383  465  767  1890    Standard Quota            First, we find the Standard Divisor ( ):   Now, divide each state's population by the divisor to find the Standard Quota ( ):  State A:  State B:  State C:  State D:        State  A  B  C  D  Total    Population (in thousands)  275  383  465  767  1890    Standard Quota  4.365  6.079  7.381  12.175         The lower quota is the standard quota rounded down to the nearest whole number. The upper quota is the standard quota rounded up to the nearest whole number.  A group's apportionment should be either its upper quota or its lower quota. An apportionment method that guarantees that this will always occurs is said to satisfy the quota rule .    Hamilton's Method     Calculate each group's standard quota.  Find the lower quota for each group.  Give surplus items, one at a time, to groups with the largest decimal parts until no surplus remains.      >  From , use Hamilton's method to apportion the 30 congressmen for Palm Springs.   Hamilton's Method Table    State A B C D Total   Population 275 383 465 767 1890  Standard Quota 4.365 6.079 7.381 12.175 30.00  Lower Quota 4 6 7 12 29  Surplus +0 +0 +1 +0 1  Apportionment 4 6 8 12 30    1. The Standard Divisor is .  2. Lower quotas sum to 29, leaving 1 surplus seat.  3. State C has the largest decimal part (.381), so it receives the surplus seat.    Following the steps of Hamilton's Method :   The sum of the Lower Quotas is . Since we must allocate 30 seats, there is surplus seat.    We look at the decimal parts of the Standard Quotas:  A:  B:  C:  D:      State C has the largest decimal part ( ), so it receives the 1 surplus seat.    Final counts: A=4, B=6, C=8, D=12.        Modified Divisor (MD)  A Modified divisor is a divisor, chosen by guess-and-check, that is used to make the sum of the modified quotas exactly equal to the number of items to be apportioned.    Jefferson's Method   Find a modified divisor such that when each group's modified quota is rounded down ( modified lower quota ), the sum equals the number of items to be apportioned. Apportion to each group its modified lower quota.   Calculate the Standard Divisor ( ).  Calculate Standard Quotas and round down to find Lower Quotas .  If the sum of Lower Quotas is less than the total seats, choose a Modified Divisor ( ) that is smaller than the .  Recalculate quotas using and round down until the sum exactly matches the total seats.        From , apportion 30 seats to Palm Springs using Jefferson's Method.    The standard divisor ( ) produced a sum of 29. For Jefferson's method, we must decrease the divisor to increase the quotas. Using a Modified Divisor of :  A:  B:  C:  D:  Sum: . State D receives the extra seat.   Jefferson's Method: Palm Springs    State A B C D Total   Population 275 383 465 767 1890  Standard Quota (SD=63) 4.365 6.079 7.381 12.175 30  Lower Quota 4 6 7 12 29  Modified Quota (MD=61) 4.508 6.279 7.623 12.574 30.98  Modified LQ (Apportionment) 4 6 7 13 30        Apportioning 11 buses   Apportion 11 buses to the three towns using Jefferson's method.   Bus Apportionment Table    Town Westboro Shrewbury Worcester Total   Population 89 120 168 377  Final Apportionment            Step 1: Standard Divisor and Initial Quotas First, find the Standard Divisor: .   Trial 1: Using Standard Divisor (34.27)    Town Westboro Shrewbury Worcester Total   Population 89 120 168 377  Standard Quota 2.59 3.50 4.90 10.99  Lower Quota 2 3 4 9    The sum (9) is too low. We need 11 buses. We must decrease the divisor.    Step 2: First Modified Divisor Trial (MD = 31) Let's try a smaller divisor, .   Trial 2: Modified Divisor (31)    Town Westboro Shrewbury Worcester Total   Modified Quota 2.87 3.87 5.41 12.15  Lower Quota 2 3 5 10    The sum (10) is still too low. We must decrease the divisor further.    Step 3: Successful Modified Divisor (MD = 30) Trying .   Final Apportionment: Modified Divisor (30)    Town Westboro Shrewbury Worcester Total   Modified Quota 2.96 4.00 5.60 12.56  Modified LQ 2 4 5 11    The sum is exactly 11. Final Apportionment: Westboro: 2, Shrewbury: 4, Worcester: 5.   Bus Apportionment Work Table    Town Westboro Shrewbury Worcester Total   Population 89 120 168 377  Standard Quota 2.59 3.50 4.90 10.99  Lower Quota 2 3 4 9  Modified Quota (MD=31) 2.87 3.87 5.41 12.15  Modified LQ 2 3 5 10  Modified Quota (MD=30) 2.96 4.00 5.60 12.56  Final Apportionment 2 4 5 11        Adam's Method     Find a modified divisor , , so that when each group's modified quota is the upper quota, the sum of the whole numbers for all the groups is the number of items to be apportioned. The modified quotients that are rounded up are called modified upper quota .    Apportion to each group its modified upper quota.       When using Adam's method, begin with a modified divisor that is slightly greater than the standard divisor.     The Palm Springs is composed of four states: A, B, C, and D. According to the country's constitution, the congress will have 30 seats, divided among the four states according to their respective populations.  Find the standard quotas for states A, B, C, and D in Palm Springs and complete the table below. Use Adam's method with a modified divisor to apportion the congressmen.   Population Data and Apportionment    State  A  B  C  D  Total    Population (1000s)  275  383  465  767  1890    Standard Quota         Upper Quota         Modified UQ         Apportionment      30       1. First, find the Standard Divisor ( ):   2. Calculate Standard Quotas ( ):  A: (Upper Quota: 5)  B: (Upper Quota: 7)  C: (Upper Quota: 8)  D: (Upper Quota: 13)  Sum of Upper Quotas = (Too many seats).  3. Since the sum is too high, we increase the divisor. Let's try :  A:  B:  C:  D:  Sum = (Too low).  4. Refined : Sums will result in A:5, B:6, C:7, D:12 = 30.  Using :    State  A  B  C  D  Total    Standard Quota ( )  4.37  6.08  7.38  12.18  30    Upper Quota  5  7  8  13  33    Mod. Quota ( )  4.14  5.76  6.99  11.53  —    Modified UQ  5  6  7  12  30       Finding the Modified Divisor for Adam's Method:    Compute the standard divisor .  Increase by an amount so that when allocations (State population \/ Modified D) are rounded upward, they add up to the exact number of seats.      Apportioning 7 Doctors   Apportion 7 doctors to 4 clinics using Adam's method.    Clinic  West  North  South  East  Total    Population  120  180  160  240  700    Appointment           Standard Divisor ( ) = .  The final apportionment using Adam's method with a modified divisor of md=120 is: West: 1, North: 2, South: 2, and East: 2.    Clinic  West  North  South  East  Total    Population  120  180  160  240  700    Standard Quota ( )  1.2  1.8  1.6  2.4  7    Upper Quota (Initial)  2  2  2  3  9 (Too High)    Mod. Quota ( )  1.0  1.5  1.33  2.0  —    Modified UQ (Final)  1  2  2  2  7       Apportioning 40 HMO Doctors   An HMO has 40 doctors to be apportioned among four clinics: A, B, C, and D.    Clinic  A  B  C  D    Patient Load  275  392  611  724    Apportionment              Use Hamilton's method.  Use Jefferson's method with .  Use Adam's method.      Hamilton's Method Solution  Calculate Standard Divisor (SD) and Quotas  Total Patient Load:        Clinic  A  B  C  D  Total    Load  275  392  611  724  2002    Standard Quota  5.4945  7.8322  12.2078  14.4655  40    Lower Quota  5  7  12  14  38    Fractional Part  0.4945  0.8322  0.2078  0.4655  —    Surplus Seat  +1  +1  0  0  +2    Apportionment  6  8  12  14  40      Jefferson's Method Solution (d=48)    Clinic  A  B  C  D  Total    Modified Quota  5.73  8.17  12.73  15.08  —    Apportionment  5  8  12  15  40      Adam's Method Solution (md=52)    Clinic  A  B  C  D  Total    Modified Quota  5.29  7.54  11.75  13.92  —    Apportionment  6  8  12  14  40       Apportioning Math Course Sections   Thirty sections of math courses are to be offered in introductory algebra, intermediate algebra, college algebra, and liberal arts math. The preregistration figures for the number of students planning to enroll in each section are given in the following table.    Course  Intro  Intermed  College  Lib Arts  Total    Enrollment  388  405  213  345  1351      Use Hamilton's method to determine how many sections of each course should be offered.    Use Jefferson's method with Modified divisor md = to determine how many sections of each course should be offered.    Use Adam's method with Modified divisor md = to determine how many sections of each course should be offered.      Thirty sections of math courses are to be offered based on preregistration figures.       Hamilton's Method (SD = 45.0333):    Course  Intro  Intermed  College  Lib Arts  Total    Enrollment  388  405  213  345  1351    Standard Quota  8.6158  8.9933  4.7298  7.6610  30    Lower Quota  8  8  4  7  27    Fractional Part  0.6158  0.9933  0.7298  0.6610  —    Surplus Row  0  +1  +1  +1  +3    Apportionment  8  9  5  8  30       Jefferson's Method (using ):    Course  Intro  Intermed  College  Lib Arts  Total    Mod. Quota  9.129  9.529  5.011  8.117  —    Apportionment  9  9  5  8  31 (Try Again)    Mod. Quota ( )  9.023  9.418  4.953  8.023  —    Apportionment  9  9  4  8  30       Adam's Method (using ):    Course  Intro  Intermed  College  Lib Arts  Total    Mod. Quota  8.083  8.437  4.437  7.187  —    Apportionment  9  9  5  8  31 (Try Again)    Mod. Quota ( )  7.918  8.265  4.346  7.040  —    Apportionment  8  9  5  8  30          Hamilton's Method Apportionment of 100 seats  Suppose there were four states, A, B, C ,and D with populations as shown in the table below. Suppose these four states decide to create a legislature with 100 seats. Apply Hamilton's method to determine the apportionment.     Category  State A  State B  State C  State D  Total    Population  936  2,726  2,603  3,735  10,000    Standard Quota         Lower Quota         Surplus         Apportioned Seats      100      The following table demonstrates the apportionment using Hamilton's Method with a standard divisor of .   Hamilton's Method Apportionment    Category  State A  State B  State C  State D  Total    Population  936  2,726  2,603  3,735  10,000    Standard Quota  9.36  27.26  26.03  37.35  100.00    Lower Quota  9  27  26  37  99    Fractional Part  0.36  0.26  0.03  0.35  -    Surplus  +1        Final Seats  10  27  26  37  100        The Alabama Paradox   In a fair apportionment system, adding extra seats must not result in fewer seats for any state. The Alabama Paradox occurs when the total number of available seats increases, yet one state (or more) loses seats as a result. This paradox can occur when using Hamilton's method .     Hamilton's Method Apportionment of 101 seats  Using Hamilton's method, recompute the apportionment from , if there are 101 seats instead of 100. Does the Alabama paradox occur?     States  State A  State B  State C  State D  Total    Population  936  2,726  2,603  3,735  10,000    Standard Quota         Lower Quota         Surplus         Apportioned Seats      101      The table below shows the Hamilton's Method apportionment with seats.  Note that State A loses a seat compared to the 100-seat scenario, demonstrating the Alabama Paradox.   Hamilton's Method (101 Seats)    States  State A  State B  State C  State D  Total    Population  936  2,726  2,603  3,735  10,000    Standard Quota  9.4536  27.5326  26.2903  37.7235  101.0000    Lower Quota  9  27  26  37  99    Fractional Part  0.4536  0.5326  0.2903  0.7235  -    Surplus   +1   +1     Final Seats  9  28  26  38  101       "
-},
-{
-  "id": "section-apportionment-2",
-  "level": "2",
-  "url": "section-apportionment.html#section-apportionment-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Apportionment "
-},
-{
-  "id": "def-standard-divisor",
-  "level": "2",
-  "url": "section-apportionment.html#def-standard-divisor",
-  "type": "Definition",
-  "number": "3.26",
-  "title": "The Standard Divisor.",
-  "body": " The Standard Divisor   The standard divisor is found by dividing the total population under consideration by the number of items to be allocated.    "
-},
-{
-  "id": "def-standard-quota",
-  "level": "2",
-  "url": "section-apportionment.html#def-standard-quota",
-  "type": "Definition",
-  "number": "3.27",
-  "title": "The Standard Quota.",
-  "body": " The Standard Quota   The standard quota for a particular group is found by dividing that group's population by the standard divisor.    "
-},
-{
-  "id": "ex-palm-springs",
-  "level": "2",
-  "url": "section-apportionment.html#ex-palm-springs",
-  "type": "Example",
-  "number": "3.28",
-  "title": "",
-  "body": ">  Palm Springs is composed of four states: A, B, C, and D. According to the country's constitution, the congress will have 30 seats, divided among the four states according to their respective populations. Find the standard quotas for states A, B, C, and D and complete the table below.   Population of Palm Springs by State    State  A  B  C  D  Total    Population (in thousands)  275  383  465  767  1890    Standard Quota            First, we find the Standard Divisor ( ):   Now, divide each state's population by the divisor to find the Standard Quota ( ):  State A:  State B:  State C:  State D:        State  A  B  C  D  Total    Population (in thousands)  275  383  465  767  1890    Standard Quota  4.365  6.079  7.381  12.175       "
-},
-{
-  "id": "section-apportionment-6-1",
-  "level": "2",
-  "url": "section-apportionment.html#section-apportionment-6-1",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "lower quota upper quota "
-},
-{
-  "id": "section-apportionment-6-2",
-  "level": "2",
-  "url": "section-apportionment.html#section-apportionment-6-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "satisfy the quota rule "
-},
-{
-  "id": "method-hamilton",
-  "level": "2",
-  "url": "section-apportionment.html#method-hamilton",
-  "type": "Algorithm",
-  "number": "3.31",
-  "title": "Hamilton’s Method.",
-  "body": " Hamilton's Method     Calculate each group's standard quota.  Find the lower quota for each group.  Give surplus items, one at a time, to groups with the largest decimal parts until no surplus remains.     "
-},
-{
-  "id": "ex-palm-springs-hamilton",
-  "level": "2",
-  "url": "section-apportionment.html#ex-palm-springs-hamilton",
-  "type": "Example",
-  "number": "3.32",
-  "title": "",
-  "body": ">  From , use Hamilton's method to apportion the 30 congressmen for Palm Springs.   Hamilton's Method Table    State A B C D Total   Population 275 383 465 767 1890  Standard Quota 4.365 6.079 7.381 12.175 30.00  Lower Quota 4 6 7 12 29  Surplus +0 +0 +1 +0 1  Apportionment 4 6 8 12 30    1. The Standard Divisor is .  2. Lower quotas sum to 29, leaving 1 surplus seat.  3. State C has the largest decimal part (.381), so it receives the surplus seat.    Following the steps of Hamilton's Method :   The sum of the Lower Quotas is . Since we must allocate 30 seats, there is surplus seat.    We look at the decimal parts of the Standard Quotas:  A:  B:  C:  D:      State C has the largest decimal part ( ), so it receives the 1 surplus seat.    Final counts: A=4, B=6, C=8, D=12.      "
-},
-{
-  "id": "section-apportionment-9-2",
-  "level": "2",
-  "url": "section-apportionment.html#section-apportionment-9-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Modified divisor "
-},
-{
-  "id": "method-jefferson",
-  "level": "2",
-  "url": "section-apportionment.html#method-jefferson",
-  "type": "Algorithm",
-  "number": "3.34",
-  "title": "Jefferson’s Method.",
-  "body": " Jefferson's Method   Find a modified divisor such that when each group's modified quota is rounded down ( modified lower quota ), the sum equals the number of items to be apportioned. Apportion to each group its modified lower quota.   Calculate the Standard Divisor ( ).  Calculate Standard Quotas and round down to find Lower Quotas .  If the sum of Lower Quotas is less than the total seats, choose a Modified Divisor ( ) that is smaller than the .  Recalculate quotas using and round down until the sum exactly matches the total seats.    "
-},
-{
-  "id": "ex-palm-springs-jefferson",
-  "level": "2",
-  "url": "section-apportionment.html#ex-palm-springs-jefferson",
-  "type": "Example",
-  "number": "3.35",
-  "title": "",
-  "body": "  From , apportion 30 seats to Palm Springs using Jefferson's Method.    The standard divisor ( ) produced a sum of 29. For Jefferson's method, we must decrease the divisor to increase the quotas. Using a Modified Divisor of :  A:  B:  C:  D:  Sum: . State D receives the extra seat.   Jefferson's Method: Palm Springs    State A B C D Total   Population 275 383 465 767 1890  Standard Quota (SD=63) 4.365 6.079 7.381 12.175 30  Lower Quota 4 6 7 12 29  Modified Quota (MD=61) 4.508 6.279 7.623 12.574 30.98  Modified LQ (Apportionment) 4 6 7 13 30     "
-},
-{
-  "id": "exe-bus-apportionment",
-  "level": "2",
-  "url": "section-apportionment.html#exe-bus-apportionment",
-  "type": "Checkpoint",
-  "number": "3.37",
-  "title": "Apportioning 11 buses.",
-  "body": " Apportioning 11 buses   Apportion 11 buses to the three towns using Jefferson's method.   Bus Apportionment Table    Town Westboro Shrewbury Worcester Total   Population 89 120 168 377  Final Apportionment            Step 1: Standard Divisor and Initial Quotas First, find the Standard Divisor: .   Trial 1: Using Standard Divisor (34.27)    Town Westboro Shrewbury Worcester Total   Population 89 120 168 377  Standard Quota 2.59 3.50 4.90 10.99  Lower Quota 2 3 4 9    The sum (9) is too low. We need 11 buses. We must decrease the divisor.    Step 2: First Modified Divisor Trial (MD = 31) Let's try a smaller divisor, .   Trial 2: Modified Divisor (31)    Town Westboro Shrewbury Worcester Total   Modified Quota 2.87 3.87 5.41 12.15  Lower Quota 2 3 5 10    The sum (10) is still too low. We must decrease the divisor further.    Step 3: Successful Modified Divisor (MD = 30) Trying .   Final Apportionment: Modified Divisor (30)    Town Westboro Shrewbury Worcester Total   Modified Quota 2.96 4.00 5.60 12.56  Modified LQ 2 4 5 11    The sum is exactly 11. Final Apportionment: Westboro: 2, Shrewbury: 4, Worcester: 5.   Bus Apportionment Work Table    Town Westboro Shrewbury Worcester Total   Population 89 120 168 377  Standard Quota 2.59 3.50 4.90 10.99  Lower Quota 2 3 4 9  Modified Quota (MD=31) 2.87 3.87 5.41 12.15  Modified LQ 2 3 5 10  Modified Quota (MD=30) 2.96 4.00 5.60 12.56  Final Apportionment 2 4 5 11     "
-},
-{
-  "id": "method-adams",
-  "level": "2",
-  "url": "section-apportionment.html#method-adams",
-  "type": "Algorithm",
-  "number": "3.43",
-  "title": "Adam’s Method.",
-  "body": " Adam's Method     Find a modified divisor , , so that when each group's modified quota is the upper quota, the sum of the whole numbers for all the groups is the number of items to be apportioned. The modified quotients that are rounded up are called modified upper quota .    Apportion to each group its modified upper quota.     "
-},
-{
-  "id": "ex-palm-springs-adam",
-  "level": "2",
-  "url": "section-apportionment.html#ex-palm-springs-adam",
-  "type": "Example",
-  "number": "3.44",
-  "title": "",
-  "body": "  The Palm Springs is composed of four states: A, B, C, and D. According to the country's constitution, the congress will have 30 seats, divided among the four states according to their respective populations.  Find the standard quotas for states A, B, C, and D in Palm Springs and complete the table below. Use Adam's method with a modified divisor to apportion the congressmen.   Population Data and Apportionment    State  A  B  C  D  Total    Population (1000s)  275  383  465  767  1890    Standard Quota         Upper Quota         Modified UQ         Apportionment      30       1. First, find the Standard Divisor ( ):   2. Calculate Standard Quotas ( ):  A: (Upper Quota: 5)  B: (Upper Quota: 7)  C: (Upper Quota: 8)  D: (Upper Quota: 13)  Sum of Upper Quotas = (Too many seats).  3. Since the sum is too high, we increase the divisor. Let's try :  A:  B:  C:  D:  Sum = (Too low).  4. Refined : Sums will result in A:5, B:6, C:7, D:12 = 30.  Using :    State  A  B  C  D  Total    Standard Quota ( )  4.37  6.08  7.38  12.18  30    Upper Quota  5  7  8  13  33    Mod. Quota ( )  4.14  5.76  6.99  11.53  —    Modified UQ  5  6  7  12  30     "
-},
-{
-  "id": "ex-doctors",
-  "level": "2",
-  "url": "section-apportionment.html#ex-doctors",
-  "type": "Checkpoint",
-  "number": "3.46",
-  "title": "Apportioning 7 Doctors.",
-  "body": " Apportioning 7 Doctors   Apportion 7 doctors to 4 clinics using Adam's method.    Clinic  West  North  South  East  Total    Population  120  180  160  240  700    Appointment           Standard Divisor ( ) = .  The final apportionment using Adam's method with a modified divisor of md=120 is: West: 1, North: 2, South: 2, and East: 2.    Clinic  West  North  South  East  Total    Population  120  180  160  240  700    Standard Quota ( )  1.2  1.8  1.6  2.4  7    Upper Quota (Initial)  2  2  2  3  9 (Too High)    Mod. Quota ( )  1.0  1.5  1.33  2.0  —    Modified UQ (Final)  1  2  2  2  7     "
-},
-{
-  "id": "ex-hmo",
-  "level": "2",
-  "url": "section-apportionment.html#ex-hmo",
-  "type": "Checkpoint",
-  "number": "3.47",
-  "title": "Apportioning 40 HMO Doctors.",
-  "body": " Apportioning 40 HMO Doctors   An HMO has 40 doctors to be apportioned among four clinics: A, B, C, and D.    Clinic  A  B  C  D    Patient Load  275  392  611  724    Apportionment              Use Hamilton's method.  Use Jefferson's method with .  Use Adam's method.      Hamilton's Method Solution  Calculate Standard Divisor (SD) and Quotas  Total Patient Load:        Clinic  A  B  C  D  Total    Load  275  392  611  724  2002    Standard Quota  5.4945  7.8322  12.2078  14.4655  40    Lower Quota  5  7  12  14  38    Fractional Part  0.4945  0.8322  0.2078  0.4655  —    Surplus Seat  +1  +1  0  0  +2    Apportionment  6  8  12  14  40      Jefferson's Method Solution (d=48)    Clinic  A  B  C  D  Total    Modified Quota  5.73  8.17  12.73  15.08  —    Apportionment  5  8  12  15  40      Adam's Method Solution (md=52)    Clinic  A  B  C  D  Total    Modified Quota  5.29  7.54  11.75  13.92  —    Apportionment  6  8  12  14  40     "
-},
-{
-  "id": "ex-math-courses",
-  "level": "2",
-  "url": "section-apportionment.html#ex-math-courses",
-  "type": "Checkpoint",
-  "number": "3.48",
-  "title": "Apportioning Math Course Sections.",
-  "body": " Apportioning Math Course Sections   Thirty sections of math courses are to be offered in introductory algebra, intermediate algebra, college algebra, and liberal arts math. The preregistration figures for the number of students planning to enroll in each section are given in the following table.    Course  Intro  Intermed  College  Lib Arts  Total    Enrollment  388  405  213  345  1351      Use Hamilton's method to determine how many sections of each course should be offered.    Use Jefferson's method with Modified divisor md = to determine how many sections of each course should be offered.    Use Adam's method with Modified divisor md = to determine how many sections of each course should be offered.      Thirty sections of math courses are to be offered based on preregistration figures.       Hamilton's Method (SD = 45.0333):    Course  Intro  Intermed  College  Lib Arts  Total    Enrollment  388  405  213  345  1351    Standard Quota  8.6158  8.9933  4.7298  7.6610  30    Lower Quota  8  8  4  7  27    Fractional Part  0.6158  0.9933  0.7298  0.6610  —    Surplus Row  0  +1  +1  +1  +3    Apportionment  8  9  5  8  30       Jefferson's Method (using ):    Course  Intro  Intermed  College  Lib Arts  Total    Mod. Quota  9.129  9.529  5.011  8.117  —    Apportionment  9  9  5  8  31 (Try Again)    Mod. Quota ( )  9.023  9.418  4.953  8.023  —    Apportionment  9  9  4  8  30       Adam's Method (using ):    Course  Intro  Intermed  College  Lib Arts  Total    Mod. Quota  8.083  8.437  4.437  7.187  —    Apportionment  9  9  5  8  31 (Try Again)    Mod. Quota ( )  7.918  8.265  4.346  7.040  —    Apportionment  8  9  5  8  30        "
-},
-{
-  "id": "ex-100-seats",
-  "level": "2",
-  "url": "section-apportionment.html#ex-100-seats",
-  "type": "Example",
-  "number": "3.49",
-  "title": "Hamilton’s Method Apportionment of 100 seats.",
-  "body": " Hamilton's Method Apportionment of 100 seats  Suppose there were four states, A, B, C ,and D with populations as shown in the table below. Suppose these four states decide to create a legislature with 100 seats. Apply Hamilton's method to determine the apportionment.     Category  State A  State B  State C  State D  Total    Population  936  2,726  2,603  3,735  10,000    Standard Quota         Lower Quota         Surplus         Apportioned Seats      100      The following table demonstrates the apportionment using Hamilton's Method with a standard divisor of .   Hamilton's Method Apportionment    Category  State A  State B  State C  State D  Total    Population  936  2,726  2,603  3,735  10,000    Standard Quota  9.36  27.26  26.03  37.35  100.00    Lower Quota  9  27  26  37  99    Fractional Part  0.36  0.26  0.03  0.35  -    Surplus  +1        Final Seats  10  27  26  37  100      "
-},
-{
-  "id": "theorem-alabama-paradox",
-  "level": "2",
-  "url": "section-apportionment.html#theorem-alabama-paradox",
-  "type": "Theorem",
-  "number": "3.52",
-  "title": "The Alabama Paradox.",
-  "body": " The Alabama Paradox   In a fair apportionment system, adding extra seats must not result in fewer seats for any state. The Alabama Paradox occurs when the total number of available seats increases, yet one state (or more) loses seats as a result. This paradox can occur when using Hamilton's method .   "
-},
-{
-  "id": "ex-101-seats",
-  "level": "2",
-  "url": "section-apportionment.html#ex-101-seats",
-  "type": "Example",
-  "number": "3.53",
-  "title": "Hamilton’s Method Apportionment of 101 seats.",
-  "body": " Hamilton's Method Apportionment of 101 seats  Using Hamilton's method, recompute the apportionment from , if there are 101 seats instead of 100. Does the Alabama paradox occur?     States  State A  State B  State C  State D  Total    Population  936  2,726  2,603  3,735  10,000    Standard Quota         Lower Quota         Surplus         Apportioned Seats      101      The table below shows the Hamilton's Method apportionment with seats.  Note that State A loses a seat compared to the 100-seat scenario, demonstrating the Alabama Paradox.   Hamilton's Method (101 Seats)    States  State A  State B  State C  State D  Total    Population  936  2,726  2,603  3,735  10,000    Standard Quota  9.4536  27.5326  26.2903  37.7235  101.0000    Lower Quota  9  27  26  37  99    Fractional Part  0.4536  0.5326  0.2903  0.7235  -    Surplus   +1   +1     Final Seats  9  28  26  38  101      "
-},
-{
-  "id": "sec-voting-ch-ex",
-  "level": "1",
-  "url": "sec-voting-ch-ex.html",
-  "type": "Section",
-  "number": "",
-  "title": "Chapter Exercise",
-  "body": " Chapter Exercise     The city council gave a questionnaire to its citizens, asking them their priorities for next year's budget: (P)olice, (R)oads, (S)chools, and (T)rash removal.    Preference  15  30  18  17  2    1st  P  T  P  R  R    2nd  R  R  S  T  S    3rd  S  S  T  S  P    4th  T  P  R  P  T     Which option is selected using the plurality method?  Which option is selected using the plurality-with-elimination method?  Which option is selected using the Borda count method?  Which option is selected using the pairwise comparison method?        Plurality Method: Count only first-place votes.   P:  T:  R:  S:   Winner: Police (P) with 33 votes.     Plurality-with-Elimination:   Round 1: S has 0 votes. Eliminate S.   Preference  15  30  18  17  2    1st  P  T  P  R  R    2nd  R  R  T  T  P    3rd  T  P  R  P  T     Round 2: R has the fewest 1st place votes (19). Eliminate R. The 17 votes from (R, T, S, P) move to T. The 2 votes from (R, S, P, T) move to P.   Preference  15  30  18  17  2    1st  P  T  P  T  P    2nd  T  P  T  P  T   New totals: P: ; T: .  Winner: Trash Removal (T) .    Borda Count: 1st = 4pts, 2nd = 3pts, 3rd = 2pts, 4th = 1pt.   P:  R:  S:  T:   Winner: Roads (R) with 229 points.     Pairwise Comparison:   P vs R: P=33, R=49. (R wins)  P vs S: P=63, S=19. (P wins)  P vs T: P=35, T=47. (T wins)  R vs S: R=64, S=18. (R wins)  R vs T: R=52, T=30. (R wins)  S vs T: S=35, T=47. (T wins)  R has 3 wins, T has 2 wins, P has 1 win. Winner: Roads (R) .         The preference table shows the results of an election among three candidates, A, B, and C.    Number of votes  7  6  3    1st choice  A  B  C    2nd choice  B  C  B    3rd choice  C  A  A      Using the plurality method, who is the winner?  Is the Majority satisfied?  Is the Condorcet satisfied?      Total votes: . Votes needed for a majority: , so votes are required.      Plurality Method: Count only 1st choice votes:  A: 7 votes  B: 6 votes  C: 3 votes  The winner is Candidate A .     Majority Criterion: A candidate must have more than 50% of the first-place votes to be a majority winner. Since the leader (A) has only 7 votes and 9 were needed for a majority, there is no majority winner. The criterion is satisfied (vacuously) because the criterion only says \"if a majority winner exists, they must win.\" Since none exists, the rule isn't broken.     Condorcet Criterion: We check if the plurality winner (A) is also the Condorcet winner by doing pairwise comparisons:  A vs B: A is preferred by 7 voters; B is preferred by voters. B wins.  B vs C: B is preferred by voters; C is preferred by 6 voters. B wins.  A vs C: A is preferred by 7 voters; C is preferred by voters. C wins.  Candidate B wins all head-to-head matches and is the Condorcet Winner . Since the plurality method chose A instead of B, the Condorcet Criterion is not satisfied in this election.         The preference table shows the results of an election among three candidates, A, B, and C.    Number of votes  10  4  2    1st choice  A  B  C    2nd choice  B  C  B    3rd choice  C  A  A      Using the plurality-with-elimination method, who is the winner?  Is the Majority satisfied?   In the actual election, the 2 voters in the last column who voted C, B, and A, change their vote to A, B, C. Using the plurality-with-elimination method, which candidate wins the actual election?       Total votes: . Majority needed: votes.      Plurality-with-Elimination:   Round 1: A has 10 votes, B has 4, and C has 2. Since A has 10 votes (more than the majority of 9), A is the winner immediately.  Winner: Candidate A .     Majority: Yes. Candidate A has a majority of first-place votes (10 out of 16) and won the election. Therefore, the Majority is satisfied .     Changed Election: If the 2 voters for C change to A, the new totals are:  A: votes  B: 4 votes  C: 0 votes  Winner: Candidate A .         If a candidate wins all pairwise comparisons with other candidates, that candidate is called the Condorcet winner .  The mathematics department is hiring a new faculty member and the five-person hiring committee has interviewed four candidates: Adam(A), Beth(B), Carol(C), and Dan(D). They have decided to use Condorcet's method on their five ballots. Who gets the offer?    Choice  Voter 1  Voter 2  Voter 3  Voter 4  Voter 5    First  B  D  C  D  B    Second  A  B  A  A  A    Third  C  C  B  C  D    Fourth  D  A  D  B  C      To find the Condorcet winner, we must compare each candidate head-to-head. There are 5 voters, so 3 votes are needed to win a comparison.     A vs. B:  Voter 1: B, Voter 2: B, Voter 3: A, Voter 4: A, Voter 5: B.  Result: B wins 3 to 2.    A vs. C:  Voter 1: A, Voter 2: C, Voter 3: C, Voter 4: A, Voter 5: A.  Result: A wins 3 to 2.    A vs. D:  Voter 1: A, Voter 2: D, Voter 3: A, Voter 4: D, Voter 5: A.  Result: A wins 3 to 2.    B vs. C:  Voter 1: B, Voter 2: B, Voter 3: C, Voter 4: C, Voter 5: B.  Result: B wins 3 to 2.    B vs. D:  Voter 1: B, Voter 2: D, Voter 3: B, Voter 4: D, Voter 5: B.  Result: B wins 3 to 2.    C vs. D:  Voter 1: C, Voter 2: D, Voter 3: C, Voter 4: D, Voter 5: D.  Result: D wins 3 to 2.      Summary of Wins:   Beth (B) won 3 comparisons (vs. A, C, and D).  Adam (A) won 2 comparisons (vs. C and D).  Dan (D) won 1 comparison (vs. C).  Carol (C) won 0 comparisons.    Since Beth (B) won every head-to-head match, she is the Condorcet winner and gets the offer.      A small city has 30 police officers to be apportioned among 4 precincts based on the population of each precinct. The populations are given in the following table.    Precinct  1  2  3  4  Total    Population  3117  1883  2776  3174  10,950      Find the standard divisor.  Find the standard quota for each precinct.  Find the modified quota for the fourth precinct using Jefferson's method with a modified divisor of 350.  Find the apportionment for the second precinct using Adams's method with a modified divisor of 380.       Part (a) & (b): Standard Divisor and Standard Quotas   The Standard Divisor ( ) is .   Hamilton's Method (Standard Quotas)    Category  Precinct 1  Precinct 2  Precinct 3  Precinct 4  Total    Population  3117  1883  2776  3174  10,950    Std. Quota  8.54  5.16  7.61  8.70  30.00    Lower Quota  8  5  7  8  28    Fraction  0.54  0.16  0.61  0.70  -    Surplus    +1  +1     Hamilton Final  8  5  8  9  30      Part (c): Jefferson's Method (Modified Divisor )    Jefferson's Method Calculation    Category  Precinct 1  Precinct 2  Precinct 3  Precinct 4  Total    Mod. Quota  8.91  5.38  7.93  9.07  -    Jefferson Apport.  8  5  7  9  29     The modified quota for the fourth precinct is 9.07 .   Part (d): Adams's Method (Modified Divisor )    Adams's Method Calculation    Category  Precinct 1  Precinct 2  Precinct 3  Precinct 4  Total    Mod. Quota  8.20  4.96  7.31  8.35  -    Adams Apport.  9  5  8  9  31     The apportionment for the second precinct using Adams's method is 5 officers.      A mother has an incentive program to get her five children to read more. She has 30 pieces of candy to divide among her children at the end of the week based on the number of minutes each of them spends reading.    Child  Abby  Bobby  Charli  Dave  Eddie  Total    Reading Times  138  142  188  218  64  750      Use Hamilton's method to apportion 30 pieces of candy.  At the last minute, the mother finds another piece of candy and does the apportionment again. Now, she has 31 pieces of candy to divide among her children at the end of the week based on the number of minutes each of them spends reading. Use Hamilton's method to apportion the candy among the children.  Look at your answers for parts (a) and (b). What changed and why? Why is the change interesting?This is an example of which paradox?      Part (a): 30 Pieces (Standard Divisor = 25)   Apportionment for 30 Pieces    Category  Abby  Bobby  Charli  Dave  Eddie  Total    Reading Min  138  142  188  218  64  750    Std. Quota  5.52  5.68  7.52  8.72  2.56  30.00    Lower Quota  5  5  7  8  2  27    Fraction  0.52  0.68  0.52  0.72  0.56  -    Surplus   +1   +1  +1     Final Seats  5  6  7  9  3  30     Part (b): 31 Pieces (Standard Divisor ≈ 24.1935)   Apportionment for 31 Pieces    Category  Abby  Bobby  Charli  Dave  Eddie  Total    Reading Min  138  142  188  218  64  750    Std. Quota  5.704  5.870  7.771  9.011  2.645  31.00    Lower Quota  5  5  7  9  2  28    Fraction  0.704  0.870  0.771  0.011  0.645  -    Surplus  +1  +1  +1       Final Seats  6  6  8  9  2  31     Part (c): Increasing the total number of items from 30 to 31 creates the Alabama Paradox . In this specific case, Eddie loses a candy even though the total amount of candy increased.     "
-},
-{
-  "id": "sec-voting-ch-ex-2-1",
-  "level": "2",
-  "url": "sec-voting-ch-ex.html#sec-voting-ch-ex-2-1",
-  "type": "Exercise",
-  "number": "1",
-  "title": "",
-  "body": "  The city council gave a questionnaire to its citizens, asking them their priorities for next year's budget: (P)olice, (R)oads, (S)chools, and (T)rash removal.    Preference  15  30  18  17  2    1st  P  T  P  R  R    2nd  R  R  S  T  S    3rd  S  S  T  S  P    4th  T  P  R  P  T     Which option is selected using the plurality method?  Which option is selected using the plurality-with-elimination method?  Which option is selected using the Borda count method?  Which option is selected using the pairwise comparison method?        Plurality Method: Count only first-place votes.   P:  T:  R:  S:   Winner: Police (P) with 33 votes.     Plurality-with-Elimination:   Round 1: S has 0 votes. Eliminate S.   Preference  15  30  18  17  2    1st  P  T  P  R  R    2nd  R  R  T  T  P    3rd  T  P  R  P  T     Round 2: R has the fewest 1st place votes (19). Eliminate R. The 17 votes from (R, T, S, P) move to T. The 2 votes from (R, S, P, T) move to P.   Preference  15  30  18  17  2    1st  P  T  P  T  P    2nd  T  P  T  P  T   New totals: P: ; T: .  Winner: Trash Removal (T) .    Borda Count: 1st = 4pts, 2nd = 3pts, 3rd = 2pts, 4th = 1pt.   P:  R:  S:  T:   Winner: Roads (R) with 229 points.     Pairwise Comparison:   P vs R: P=33, R=49. (R wins)  P vs S: P=63, S=19. (P wins)  P vs T: P=35, T=47. (T wins)  R vs S: R=64, S=18. (R wins)  R vs T: R=52, T=30. (R wins)  S vs T: S=35, T=47. (T wins)  R has 3 wins, T has 2 wins, P has 1 win. Winner: Roads (R) .      "
-},
-{
-  "id": "sec-voting-ch-ex-2-2",
-  "level": "2",
-  "url": "sec-voting-ch-ex.html#sec-voting-ch-ex-2-2",
-  "type": "Exercise",
-  "number": "2",
-  "title": "",
-  "body": "  The preference table shows the results of an election among three candidates, A, B, and C.    Number of votes  7  6  3    1st choice  A  B  C    2nd choice  B  C  B    3rd choice  C  A  A      Using the plurality method, who is the winner?  Is the Majority satisfied?  Is the Condorcet satisfied?      Total votes: . Votes needed for a majority: , so votes are required.      Plurality Method: Count only 1st choice votes:  A: 7 votes  B: 6 votes  C: 3 votes  The winner is Candidate A .     Majority Criterion: A candidate must have more than 50% of the first-place votes to be a majority winner. Since the leader (A) has only 7 votes and 9 were needed for a majority, there is no majority winner. The criterion is satisfied (vacuously) because the criterion only says \"if a majority winner exists, they must win.\" Since none exists, the rule isn't broken.     Condorcet Criterion: We check if the plurality winner (A) is also the Condorcet winner by doing pairwise comparisons:  A vs B: A is preferred by 7 voters; B is preferred by voters. B wins.  B vs C: B is preferred by voters; C is preferred by 6 voters. B wins.  A vs C: A is preferred by 7 voters; C is preferred by voters. C wins.  Candidate B wins all head-to-head matches and is the Condorcet Winner . Since the plurality method chose A instead of B, the Condorcet Criterion is not satisfied in this election.      "
-},
-{
-  "id": "sec-voting-ch-ex-2-3",
-  "level": "2",
-  "url": "sec-voting-ch-ex.html#sec-voting-ch-ex-2-3",
-  "type": "Exercise",
-  "number": "3",
-  "title": "",
-  "body": "  The preference table shows the results of an election among three candidates, A, B, and C.    Number of votes  10  4  2    1st choice  A  B  C    2nd choice  B  C  B    3rd choice  C  A  A      Using the plurality-with-elimination method, who is the winner?  Is the Majority satisfied?   In the actual election, the 2 voters in the last column who voted C, B, and A, change their vote to A, B, C. Using the plurality-with-elimination method, which candidate wins the actual election?       Total votes: . Majority needed: votes.      Plurality-with-Elimination:   Round 1: A has 10 votes, B has 4, and C has 2. Since A has 10 votes (more than the majority of 9), A is the winner immediately.  Winner: Candidate A .     Majority: Yes. Candidate A has a majority of first-place votes (10 out of 16) and won the election. Therefore, the Majority is satisfied .     Changed Election: If the 2 voters for C change to A, the new totals are:  A: votes  B: 4 votes  C: 0 votes  Winner: Candidate A .      "
-},
-{
-  "id": "sec-voting-ch-ex-2-4",
-  "level": "2",
-  "url": "sec-voting-ch-ex.html#sec-voting-ch-ex-2-4",
-  "type": "Exercise",
-  "number": "4",
-  "title": "",
-  "body": "  If a candidate wins all pairwise comparisons with other candidates, that candidate is called the Condorcet winner .  The mathematics department is hiring a new faculty member and the five-person hiring committee has interviewed four candidates: Adam(A), Beth(B), Carol(C), and Dan(D). They have decided to use Condorcet's method on their five ballots. Who gets the offer?    Choice  Voter 1  Voter 2  Voter 3  Voter 4  Voter 5    First  B  D  C  D  B    Second  A  B  A  A  A    Third  C  C  B  C  D    Fourth  D  A  D  B  C      To find the Condorcet winner, we must compare each candidate head-to-head. There are 5 voters, so 3 votes are needed to win a comparison.     A vs. B:  Voter 1: B, Voter 2: B, Voter 3: A, Voter 4: A, Voter 5: B.  Result: B wins 3 to 2.    A vs. C:  Voter 1: A, Voter 2: C, Voter 3: C, Voter 4: A, Voter 5: A.  Result: A wins 3 to 2.    A vs. D:  Voter 1: A, Voter 2: D, Voter 3: A, Voter 4: D, Voter 5: A.  Result: A wins 3 to 2.    B vs. C:  Voter 1: B, Voter 2: B, Voter 3: C, Voter 4: C, Voter 5: B.  Result: B wins 3 to 2.    B vs. D:  Voter 1: B, Voter 2: D, Voter 3: B, Voter 4: D, Voter 5: B.  Result: B wins 3 to 2.    C vs. D:  Voter 1: C, Voter 2: D, Voter 3: C, Voter 4: D, Voter 5: D.  Result: D wins 3 to 2.      Summary of Wins:   Beth (B) won 3 comparisons (vs. A, C, and D).  Adam (A) won 2 comparisons (vs. C and D).  Dan (D) won 1 comparison (vs. C).  Carol (C) won 0 comparisons.    Since Beth (B) won every head-to-head match, she is the Condorcet winner and gets the offer.   "
-},
-{
-  "id": "sec-voting-ch-ex-2-5",
-  "level": "2",
-  "url": "sec-voting-ch-ex.html#sec-voting-ch-ex-2-5",
-  "type": "Exercise",
-  "number": "5",
-  "title": "",
-  "body": "  A small city has 30 police officers to be apportioned among 4 precincts based on the population of each precinct. The populations are given in the following table.    Precinct  1  2  3  4  Total    Population  3117  1883  2776  3174  10,950      Find the standard divisor.  Find the standard quota for each precinct.  Find the modified quota for the fourth precinct using Jefferson's method with a modified divisor of 350.  Find the apportionment for the second precinct using Adams's method with a modified divisor of 380.       Part (a) & (b): Standard Divisor and Standard Quotas   The Standard Divisor ( ) is .   Hamilton's Method (Standard Quotas)    Category  Precinct 1  Precinct 2  Precinct 3  Precinct 4  Total    Population  3117  1883  2776  3174  10,950    Std. Quota  8.54  5.16  7.61  8.70  30.00    Lower Quota  8  5  7  8  28    Fraction  0.54  0.16  0.61  0.70  -    Surplus    +1  +1     Hamilton Final  8  5  8  9  30      Part (c): Jefferson's Method (Modified Divisor )    Jefferson's Method Calculation    Category  Precinct 1  Precinct 2  Precinct 3  Precinct 4  Total    Mod. Quota  8.91  5.38  7.93  9.07  -    Jefferson Apport.  8  5  7  9  29     The modified quota for the fourth precinct is 9.07 .   Part (d): Adams's Method (Modified Divisor )    Adams's Method Calculation    Category  Precinct 1  Precinct 2  Precinct 3  Precinct 4  Total    Mod. Quota  8.20  4.96  7.31  8.35  -    Adams Apport.  9  5  8  9  31     The apportionment for the second precinct using Adams's method is 5 officers.   "
-},
-{
-  "id": "sec-voting-ch-ex-2-6",
-  "level": "2",
-  "url": "sec-voting-ch-ex.html#sec-voting-ch-ex-2-6",
-  "type": "Exercise",
-  "number": "6",
-  "title": "",
-  "body": "  A mother has an incentive program to get her five children to read more. She has 30 pieces of candy to divide among her children at the end of the week based on the number of minutes each of them spends reading.    Child  Abby  Bobby  Charli  Dave  Eddie  Total    Reading Times  138  142  188  218  64  750      Use Hamilton's method to apportion 30 pieces of candy.  At the last minute, the mother finds another piece of candy and does the apportionment again. Now, she has 31 pieces of candy to divide among her children at the end of the week based on the number of minutes each of them spends reading. Use Hamilton's method to apportion the candy among the children.  Look at your answers for parts (a) and (b). What changed and why? Why is the change interesting?This is an example of which paradox?      Part (a): 30 Pieces (Standard Divisor = 25)   Apportionment for 30 Pieces    Category  Abby  Bobby  Charli  Dave  Eddie  Total    Reading Min  138  142  188  218  64  750    Std. Quota  5.52  5.68  7.52  8.72  2.56  30.00    Lower Quota  5  5  7  8  2  27    Fraction  0.52  0.68  0.52  0.72  0.56  -    Surplus   +1   +1  +1     Final Seats  5  6  7  9  3  30     Part (b): 31 Pieces (Standard Divisor ≈ 24.1935)   Apportionment for 31 Pieces    Category  Abby  Bobby  Charli  Dave  Eddie  Total    Reading Min  138  142  188  218  64  750    Std. Quota  5.704  5.870  7.771  9.011  2.645  31.00    Lower Quota  5  5  7  9  2  28    Fraction  0.704  0.870  0.771  0.011  0.645  -    Surplus  +1  +1  +1       Final Seats  6  6  8  9  2  31     Part (c): Increasing the total number of items from 30 to 31 creates the Alabama Paradox . In this specific case, Eddie loses a candy even though the total amount of candy increased.   "
-},
-{
-  "id": "ch-Probability-3",
-  "level": "1",
-  "url": "ch-Probability-3.html",
-  "type": "Section",
-  "number": "",
-  "title": "Fundamentals of Probability",
-  "body": " Fundamentals of Probability   Probability Formula   The theoretical probability of an event is a measure of how likely that event is to occur based on the assumption that all outcomes in the sample space are equally likely.  If an event E has equally likely outcomes and its sample space S has equally likely outcomes, the probability of event, , is      Probability of a Single Die Roll   A die is rolled. The set of equally likely outcomes is . Find the probability of rolling:    a 2  a number less than 4  a number greater than 7  a number less than 7         The outcomes are , so  There are no such outcomes, so  All outcomes are less than 7, so       Probability of a Pair of Dice   A single die is rolled twice. Find the probability of rolling:   two even numbers  two numbers whose sum is 6  two numbers whose sum exceeds 12  two prime numbers  two numbers whose sum is less than 7      Sample Space for Two Six-Sided Dice    Die 1 \\ 2  1 2 3  4 5 6    1  (1,1) (1,2) (1,3)  (1,4) (1,5) (1,6)    2  (2,1) (2,2) (2,3)  (2,4) (2,5) (2,6)    3  (3,1) (3,2) (3,3)  (3,4) (3,5) (3,6)    4  (4,1) (4,2) (4,3)  (4,4) (4,5) (4,6)    5  (5,1) (5,2) (5,3)  (5,4) (5,5) (5,6)    6  (6,1) (6,2) (6,3)  (6,4) (6,5) (6,6)       The even numbers on a die are . There are outcomes where both numbers are even. The probability is     The outcomes with a sum of 6 are . There are 5 such outcomes, so the probability is .    The maximum possible sum is . It is impossible for the sum to exceed 12. The probability is .    The prime numbers on a die are . There are outcomes where both numbers are prime. The probability is .    The outcomes with a sum less than 7 are:  Sum 2: (1,1) [1 outcome]  Sum 3: (1,2), (2,1) [2 outcomes]  Sum 4: (1,3), (2,2), (3,1) [3 outcomes]  Sum 5: (1,4), (2,3), (3,2), (4,1) [4 outcomes]  Sum 6: (1,5), (2,4), (3,3), (4,2), (5,1) [5 outcomes]  Total outcomes = . The probability is .       Probability of Drawing a Single deck of Cards   You are dealt one card from a standard 52-card deck. Find the probability of being dealt:   an ace  a red card  a red king  a spade  an even number heart  an odd number diamond  a face card    A standard deck of 52 playing cards.   A grid showing all 52 playing cards organized by suit: Clubs and Spades in black, Hearts and Diamonds in red.       Standard Deck of 52 Playing Cards    Suit  A 2 3 4 5 6  7 8 9 10 J Q K     Hearts (Red)                 Diamonds (Red)                  Spades (Black)  A♠ 2♠ 3♠ 4♠ 5♠ 6♠  7♠ 8♠ 9♠ 10♠ J♠ Q♠ K♠    Clubs (Black)  A♣ 2♣ 3♣ 4♣ 5♣ 6♣  7♣ 8♣ 9♣ 10♣ J♣ Q♣ K♣     There are 52 total outcomes in a standard deck.    There are 4 aces in a deck.    There are 26 red cards (hearts and diamonds).    There are 2 red kings (king of hearts and king of diamonds).    There are 13 spades in a deck.    The even numbered hearts are . There are 5 such cards.    The odd numbered diamonds (excluding face cards) are . (Note: Ace is usually not considered an odd number in this context, but if included, the count would be 5). Using , there are 4 such cards.    There are 12 face cards (Jack, Queen, King of each suit).       Probability of Three Coin Tosses   A fair coin is tossed three times in succession. The set of equally likely outcomes is . Find the probability of getting:   Exactly one tail.  Exactly 2 heads.  At least one head.  Five tails.      Tree diagram for three coin tosses      The total number of outcomes is 8.    The outcomes with exactly one tail are . There are 3 such outcomes, so .    The outcomes with exactly two heads are . There are 3 such outcomes, so .    The only outcome with no heads is . Therefore, there are outcomes with at least one head. .    It is impossible to get five tails in only three tosses. .       Probability of a Coin Toss and Die Roll   A coin is tossed and a die is rolled. The tree diagram below illustrates the sample space of 12 equally likely outcomes.   Tree diagram for tossing a coin and rolling a die.   A tree diagram starting from a point, splitting into Head and Tail. Each of those branches then splits into six branches numbered 1 through 6, ending in outcomes like (H, 1), (H, 2), etc.     Find the probability of getting:   a head and an even number.  a tail and a number less than 3.  a head and a number greater than 6.     The total number of equally likely outcomes is .    The outcomes for a head and an even number are . There are 3 such outcomes, so .    The outcomes for a tail and a number less than 3 are . There are 2 such outcomes, so .    Since a standard die only goes up to 6, it is impossible to roll a number greater than 6. The probability is .      "
-},
-{
-  "id": "def-theoretical-probability",
-  "level": "2",
-  "url": "ch-Probability-3.html#def-theoretical-probability",
-  "type": "Definition",
-  "number": "4.1",
-  "title": "Probability Formula.",
-  "body": " Probability Formula   The theoretical probability of an event is a measure of how likely that event is to occur based on the assumption that all outcomes in the sample space are equally likely.  If an event E has equally likely outcomes and its sample space S has equally likely outcomes, the probability of event, , is    "
-},
-{
-  "id": "ch-Probability-3-3",
-  "level": "2",
-  "url": "ch-Probability-3.html#ch-Probability-3-3",
-  "type": "Example",
-  "number": "4.2",
-  "title": "Probability of a Single Die Roll.",
-  "body": " Probability of a Single Die Roll   A die is rolled. The set of equally likely outcomes is . Find the probability of rolling:    a 2  a number less than 4  a number greater than 7  a number less than 7         The outcomes are , so  There are no such outcomes, so  All outcomes are less than 7, so     "
-},
-{
-  "id": "ch-Probability-3-4",
-  "level": "2",
-  "url": "ch-Probability-3.html#ch-Probability-3-4",
-  "type": "Example",
-  "number": "4.3",
-  "title": "Probability of a Pair of Dice.",
-  "body": " Probability of a Pair of Dice   A single die is rolled twice. Find the probability of rolling:   two even numbers  two numbers whose sum is 6  two numbers whose sum exceeds 12  two prime numbers  two numbers whose sum is less than 7      Sample Space for Two Six-Sided Dice    Die 1 \\ 2  1 2 3  4 5 6    1  (1,1) (1,2) (1,3)  (1,4) (1,5) (1,6)    2  (2,1) (2,2) (2,3)  (2,4) (2,5) (2,6)    3  (3,1) (3,2) (3,3)  (3,4) (3,5) (3,6)    4  (4,1) (4,2) (4,3)  (4,4) (4,5) (4,6)    5  (5,1) (5,2) (5,3)  (5,4) (5,5) (5,6)    6  (6,1) (6,2) (6,3)  (6,4) (6,5) (6,6)       The even numbers on a die are . There are outcomes where both numbers are even. The probability is     The outcomes with a sum of 6 are . There are 5 such outcomes, so the probability is .    The maximum possible sum is . It is impossible for the sum to exceed 12. The probability is .    The prime numbers on a die are . There are outcomes where both numbers are prime. The probability is .    The outcomes with a sum less than 7 are:  Sum 2: (1,1) [1 outcome]  Sum 3: (1,2), (2,1) [2 outcomes]  Sum 4: (1,3), (2,2), (3,1) [3 outcomes]  Sum 5: (1,4), (2,3), (3,2), (4,1) [4 outcomes]  Sum 6: (1,5), (2,4), (3,3), (4,2), (5,1) [5 outcomes]  Total outcomes = . The probability is .     "
-},
-{
-  "id": "ch-Probability-3-5",
-  "level": "2",
-  "url": "ch-Probability-3.html#ch-Probability-3-5",
-  "type": "Example",
-  "number": "4.5",
-  "title": "Probability of Drawing a Single deck of Cards.",
-  "body": " Probability of Drawing a Single deck of Cards   You are dealt one card from a standard 52-card deck. Find the probability of being dealt:   an ace  a red card  a red king  a spade  an even number heart  an odd number diamond  a face card    A standard deck of 52 playing cards.   A grid showing all 52 playing cards organized by suit: Clubs and Spades in black, Hearts and Diamonds in red.       Standard Deck of 52 Playing Cards    Suit  A 2 3 4 5 6  7 8 9 10 J Q K     Hearts (Red)                 Diamonds (Red)                  Spades (Black)  A♠ 2♠ 3♠ 4♠ 5♠ 6♠  7♠ 8♠ 9♠ 10♠ J♠ Q♠ K♠    Clubs (Black)  A♣ 2♣ 3♣ 4♣ 5♣ 6♣  7♣ 8♣ 9♣ 10♣ J♣ Q♣ K♣     There are 52 total outcomes in a standard deck.    There are 4 aces in a deck.    There are 26 red cards (hearts and diamonds).    There are 2 red kings (king of hearts and king of diamonds).    There are 13 spades in a deck.    The even numbered hearts are . There are 5 such cards.    The odd numbered diamonds (excluding face cards) are . (Note: Ace is usually not considered an odd number in this context, but if included, the count would be 5). Using , there are 4 such cards.    There are 12 face cards (Jack, Queen, King of each suit).     "
-},
-{
-  "id": "ch-Probability-3-6",
-  "level": "2",
-  "url": "ch-Probability-3.html#ch-Probability-3-6",
-  "type": "Example",
-  "number": "4.8",
-  "title": "Probability of Three Coin Tosses.",
-  "body": " Probability of Three Coin Tosses   A fair coin is tossed three times in succession. The set of equally likely outcomes is . Find the probability of getting:   Exactly one tail.  Exactly 2 heads.  At least one head.  Five tails.      Tree diagram for three coin tosses      The total number of outcomes is 8.    The outcomes with exactly one tail are . There are 3 such outcomes, so .    The outcomes with exactly two heads are . There are 3 such outcomes, so .    The only outcome with no heads is . Therefore, there are outcomes with at least one head. .    It is impossible to get five tails in only three tosses. .     "
-},
-{
-  "id": "ch-Probability-3-7",
-  "level": "2",
-  "url": "ch-Probability-3.html#ch-Probability-3-7",
-  "type": "Checkpoint",
-  "number": "4.10",
-  "title": "Probability of a Coin Toss and Die Roll.",
-  "body": " Probability of a Coin Toss and Die Roll   A coin is tossed and a die is rolled. The tree diagram below illustrates the sample space of 12 equally likely outcomes.   Tree diagram for tossing a coin and rolling a die.   A tree diagram starting from a point, splitting into Head and Tail. Each of those branches then splits into six branches numbered 1 through 6, ending in outcomes like (H, 1), (H, 2), etc.     Find the probability of getting:   a head and an even number.  a tail and a number less than 3.  a head and a number greater than 6.     The total number of equally likely outcomes is .    The outcomes for a head and an even number are . There are 3 such outcomes, so .    The outcomes for a tail and a number less than 3 are . There are 2 such outcomes, so .    Since a standard die only goes up to 6, it is impossible to roll a number greater than 6. The probability is .     "
-},
-{
-  "id": "sec-events-not-or",
-  "level": "1",
-  "url": "sec-events-not-or.html",
-  "type": "Section",
-  "number": "",
-  "title": "Events Involving NOT and OR",
-  "body": " Events Involving NOT and OR  A survey asked 500 Americans to rate their health. Of the surveyed, 270 rated their health as good\/excellent. This means that people surveyed did not rate their health as good\/excellent. In general, since the sum of probabilities of all possible outcomes in any situation is 1:    The Probability of an Event Not Occurring   The probability that an event will not occur is equal to 1 minus the probability that it will occur:       If you are dealt one card from a standard 52-card deck ( ), find the probability that you are not dealt a queen.    .      If you are dealt one card from a standard 52-card deck, find the probability that you are not dealt a diamond.    .     Mutually Exclusive Events   Two events are mutually exclusive if they cannot occur at the same time. In other words, if one event occurs, the other cannot occur.    Or Probabilities with Mutually Exclusive Events: If and are mutually exclusive events, then:       If one card is randomly selected from a deck of cards ( ), what is the probability of selecting a king or a queen?    These are mutually exclusive. .      If you roll a single, six-sided die, what is the probability of getting either a 4 or a 5?    .    If one card is randomly selected from a deck of cards ( ), what is the probability of selecting a diamond or a picture card? However, there are three cards that are simultaneously diamonds and picture cards . The events are not mutually exclusive.  To correct for the double-counting:    Events that are NOT Mutually Exclusive   If it is possible for events and to occur simultaneously, the events are said to be not mutually exclusive .  If and are not mutually exclusive events, then:       In a group of 50 students, 23 take math, 11 take psychology, and 7 take both. Find the probability that a randomly selected student takes math or psychology.    Let be the event that a student takes math, and be the event that a student takes psychology. We are given the following:  Total students:  Students in math:  Students in psychology:  Students in both:    To find the probability that a student takes math or psychology, we use the Addition Rule for Probability:   Substituting the known values as fractions of the total population:   Since the denominators are the same, we combine the numerators:   Thus, the probability that a randomly selected student takes math or psychology is (or ).    The following table shows the distribution of active duty personnel in the U.S. military (in thousands).   U.S. Military Personnel by Branch and Gender     Air Force  Army  Marine Corps  Navy  Total    Male  290  400  160  320  1,170    Female  70  70  10  50  200    Total  360  470  170  370  1,370       Using , find the probability that a person selected at random is in the Army or is a woman.    We use the Addition Rule for Probability:   From the table, we identify the following values:  Total Personnel:  Total in Army:  Total Female:  Females in the Army (the overlap):    Now, substitute these into the formula:   Simplifying the fraction, we get .      Using , find the probability that a person selected at random is in the Navy or is a man.    To find the probability of a person being in the Navy or a man, we apply the Addition Rule:   Identify the relevant values from the table:  Total Personnel:  Total in Navy:  Total Male:  Males in the Navy (the overlap):    Substitute the values:   Simplifying the fraction, we get .    "
-},
-{
-  "id": "def-Not-probability",
-  "level": "2",
-  "url": "sec-events-not-or.html#def-Not-probability",
-  "type": "Definition",
-  "number": "4.12",
-  "title": "The Probability of an Event Not Occurring.",
-  "body": " The Probability of an Event Not Occurring   The probability that an event will not occur is equal to 1 minus the probability that it will occur:    "
-},
-{
-  "id": "sec-events-not-or-4",
-  "level": "2",
-  "url": "sec-events-not-or.html#sec-events-not-or-4",
-  "type": "Example",
-  "number": "4.13",
-  "title": "",
-  "body": "  If you are dealt one card from a standard 52-card deck ( ), find the probability that you are not dealt a queen.    .   "
-},
-{
-  "id": "sec-events-not-or-5",
-  "level": "2",
-  "url": "sec-events-not-or.html#sec-events-not-or-5",
-  "type": "Checkpoint",
-  "number": "4.14",
-  "title": "",
-  "body": "  If you are dealt one card from a standard 52-card deck, find the probability that you are not dealt a diamond.    .   "
-},
-{
-  "id": "def-mutually-exclusive",
-  "level": "2",
-  "url": "sec-events-not-or.html#def-mutually-exclusive",
-  "type": "Definition",
-  "number": "4.15",
-  "title": "Mutually Exclusive Events.",
-  "body": " Mutually Exclusive Events   Two events are mutually exclusive if they cannot occur at the same time. In other words, if one event occurs, the other cannot occur.    Or Probabilities with Mutually Exclusive Events: If and are mutually exclusive events, then:    "
-},
-{
-  "id": "sec-events-not-or-7",
-  "level": "2",
-  "url": "sec-events-not-or.html#sec-events-not-or-7",
-  "type": "Example",
-  "number": "4.16",
-  "title": "",
-  "body": "  If one card is randomly selected from a deck of cards ( ), what is the probability of selecting a king or a queen?    These are mutually exclusive. .   "
-},
-{
-  "id": "sec-events-not-or-8",
-  "level": "2",
-  "url": "sec-events-not-or.html#sec-events-not-or-8",
-  "type": "Checkpoint",
-  "number": "4.17",
-  "title": "",
-  "body": "  If you roll a single, six-sided die, what is the probability of getting either a 4 or a 5?    .   "
-},
-{
-  "id": "def-not-mutually-exclusive",
-  "level": "2",
-  "url": "sec-events-not-or.html#def-not-mutually-exclusive",
-  "type": "Definition",
-  "number": "4.18",
-  "title": "Events that are NOT Mutually Exclusive.",
-  "body": " Events that are NOT Mutually Exclusive   If it is possible for events and to occur simultaneously, the events are said to be not mutually exclusive .  If and are not mutually exclusive events, then:    "
-},
-{
-  "id": "exercise-prob-math-psych",
-  "level": "2",
-  "url": "sec-events-not-or.html#exercise-prob-math-psych",
-  "type": "Checkpoint",
-  "number": "4.19",
-  "title": "",
-  "body": "  In a group of 50 students, 23 take math, 11 take psychology, and 7 take both. Find the probability that a randomly selected student takes math or psychology.    Let be the event that a student takes math, and be the event that a student takes psychology. We are given the following:  Total students:  Students in math:  Students in psychology:  Students in both:    To find the probability that a student takes math or psychology, we use the Addition Rule for Probability:   Substituting the known values as fractions of the total population:   Since the denominators are the same, we combine the numerators:   Thus, the probability that a randomly selected student takes math or psychology is (or ).   "
-},
-{
-  "id": "table-military-personnel",
-  "level": "2",
-  "url": "sec-events-not-or.html#table-military-personnel",
-  "type": "Table",
-  "number": "4.20",
-  "title": "U.S. Military Personnel by Branch and Gender",
-  "body": " U.S. Military Personnel by Branch and Gender     Air Force  Army  Marine Corps  Navy  Total    Male  290  400  160  320  1,170    Female  70  70  10  50  200    Total  360  470  170  370  1,370    "
-},
-{
-  "id": "sec-events-not-or-15",
-  "level": "2",
-  "url": "sec-events-not-or.html#sec-events-not-or-15",
-  "type": "Checkpoint",
-  "number": "4.21",
-  "title": "",
-  "body": "  Using , find the probability that a person selected at random is in the Army or is a woman.    We use the Addition Rule for Probability:   From the table, we identify the following values:  Total Personnel:  Total in Army:  Total Female:  Females in the Army (the overlap):    Now, substitute these into the formula:   Simplifying the fraction, we get .   "
-},
-{
-  "id": "sec-events-not-or-16",
-  "level": "2",
-  "url": "sec-events-not-or.html#sec-events-not-or-16",
-  "type": "Checkpoint",
-  "number": "4.22",
-  "title": "",
-  "body": "  Using , find the probability that a person selected at random is in the Navy or is a man.    To find the probability of a person being in the Navy or a man, we apply the Addition Rule:   Identify the relevant values from the table:  Total Personnel:  Total in Navy:  Total Male:  Males in the Navy (the overlap):    Substitute the values:   Simplifying the fraction, we get .   "
-},
-{
-  "id": "notes-fcp",
-  "level": "1",
-  "url": "notes-fcp.html",
-  "type": "Section",
-  "number": "",
-  "title": "The Fundamental Counting Principle",
-  "body": " The Fundamental Counting Principle   The Fundamental Counting Principle is a powerful tool for counting the number of possible outcomes in a variety of situations. It allows us to determine the total number of combinations or arrangements by multiplying the number of choices for each independent event.   The probability of winning the top prize in the lottery is about the same as the probability of being struck by lightning. There are a million possible number combinations in the lottery games, and only one way of winning the grand prize.  We can generalize the idea to any two groups of items with the Fundamental Counting Principle .   The Fundamental Counting Principle   If there are ways to choose an item from one group and ways to choose an item from another group, then there are ways to choose one item from each group.     Restaurant two-course meal   The Greasy Spoon Restaurant offers 6 appetizers and 14 main courses. In how many ways can a person order a two-course meal?    Use the Fundamental Counting Principle: choose 1 appetizer and 1 main course.   There are 84 different two-course meals.     Two-course meal   The Diner offers 10 appetizers and 15 main courses. In how many ways can a person order a two-course meal?    Use the Fundamental Counting Principle and multiply the number of appetizers by the number of main courses.   There are 150 possible two-course meals.     Psychology and social science scheduling   This semester, you need to enroll in your required psychology and social science courses. Because you are registering early, you have 15 psychology sections to choose from. Additionally, there are 9 social science sections available that do not conflict with the psychology schedule. How many different two-course schedules can you create to fulfill these requirements?    Multiply the number of psychology section options by the number of social science section options.   There are 135 possible two-course schedules.     The Fundamental Counting Principle   If there are independent events and the first event can occur in ways, the second event can occur in ways, the third event can occur in ways, and so on, then the total number of ways that the events can occur is given by   by multiplying the number of ways each individual event can happen.     One-topping pizza choices   A pizza can be ordered with two choices of size (medium or large), three choices of crust (thin, thick or regular), and five choices of toppings (ground beef, sausage, pepperoni, bacon and mushrooms). How many different one-topping pizzas can be ordered?    Multiply the number of size choices by the number of crust choices and the number of topping choices.   There are 30 different one-topping pizzas.     Three-wheel car options   Car manufacturers are now experimenting with lightweight three-wheel cars, designed for one person and considered ideal for city driving. Suppose you could order such a car with a choice of 9 possible colors, with or without air conditioning, electric or gas powered, and with or without an on-board computer. In how many ways can this car be ordered with regard to these options?    Multiply the number of choices for each independent feature.   There are 72 possible car orders.     Ordering a customizable car   The car in Example is now available in 10 possible colors. The options involving air conditioning, power, and on-board computer still apply. Furthermore, the car is available with or without a global positioning system. In how many ways can this car be ordered in terms of these options?    Multiply the number of choices for each independent option.   There are 160 possible car orders.     Ten-question multiple-choice test   You are taking a multiple-choice test that has ten questions. Each of the questions has four answer choices, with one correct answer per question. If you select one of these four choices for each question and leave nothing blank, in how many ways can you answer the questions?    This situation involves making choices with ten questions.   We use the Fundamental Counting Principle to find the number of ways that you can answer the questions on the test. Multiply the number of choices, 4, for each of the ten questions.       Six-question multiple-choice test   You are taking a multiple-choice test that has six questions. Each of the questions has three answer choices, with one correct answer per question. If you select one of these three choices for each question and leave nothing blank, in how many ways can you answer the questions?    Multiply the number of choices for each question.   There are 729 possible answer sheets.     Telephone number possibilities   Telephone numbers in the United States begin with three-digit area codes followed by seven-digit local telephone numbers. Area codes and local telephone numbers cannot begin with 0 or 1. How many different telephone numbers are possible?    There are 8 choices for the first digit of the area code and 10 choices for each remaining area code digit. For the local number, the first digit also has 8 choices and each remaining digit has 10 choices.   There are 6,400,000,000 possible telephone numbers.     Pen choices   A popular type of pen comes in red, blue, or black ink. The writing tip varies from extra bold, bold, regular, fine, or micro. How many different choices of pens do you have with this type of pen?    Multiply the ink color choices by the tip style choices.   There are 15 different pen choices.     Catered meal combinations   A wedding caterer gives you three choices for the main course, six starter choices and five options for dessert. How many different meals (made up of starter, dinner and dessert) are there?    Multiply the number of starter choices, main course choices, and dessert choices.   There are 90 different meals.     Yes\/no survey   You take a survey with five \"yes\" or \"no\" answers. How many different ways could you complete the survey?    Each question has 2 choices, and the choices are independent.   There are 32 different ways to complete the survey.     Product code possibilities   A company puts a code on each different product they sell. The code is made up of 3 numbers and 2 letters. How many different codes are possible?    Each number can be one of 10 digits, and each letter can be one of 26 letters.   There are 676,000 different product codes possible.     "
-},
-{
-  "id": "definition-fundamental-counting-two-groups",
-  "level": "2",
-  "url": "notes-fcp.html#definition-fundamental-counting-two-groups",
-  "type": "Definition",
-  "number": "4.23",
-  "title": "The Fundamental Counting Principle.",
-  "body": " The Fundamental Counting Principle   If there are ways to choose an item from one group and ways to choose an item from another group, then there are ways to choose one item from each group.   "
-},
-{
-  "id": "example-two-course-meal-1",
-  "level": "2",
-  "url": "notes-fcp.html#example-two-course-meal-1",
-  "type": "Example",
-  "number": "4.24",
-  "title": "Restaurant two-course meal.",
-  "body": " Restaurant two-course meal   The Greasy Spoon Restaurant offers 6 appetizers and 14 main courses. In how many ways can a person order a two-course meal?    Use the Fundamental Counting Principle: choose 1 appetizer and 1 main course.   There are 84 different two-course meals.   "
-},
-{
-  "id": "exercise-two-course-meal",
-  "level": "2",
-  "url": "notes-fcp.html#exercise-two-course-meal",
-  "type": "Checkpoint",
-  "number": "4.25",
-  "title": "Two-course meal.",
-  "body": " Two-course meal   The Diner offers 10 appetizers and 15 main courses. In how many ways can a person order a two-course meal?    Use the Fundamental Counting Principle and multiply the number of appetizers by the number of main courses.   There are 150 possible two-course meals.   "
-},
-{
-  "id": "exercise-course-schedule",
-  "level": "2",
-  "url": "notes-fcp.html#exercise-course-schedule",
-  "type": "Checkpoint",
-  "number": "4.26",
-  "title": "Psychology and social science scheduling.",
-  "body": " Psychology and social science scheduling   This semester, you need to enroll in your required psychology and social science courses. Because you are registering early, you have 15 psychology sections to choose from. Additionally, there are 9 social science sections available that do not conflict with the psychology schedule. How many different two-course schedules can you create to fulfill these requirements?    Multiply the number of psychology section options by the number of social science section options.   There are 135 possible two-course schedules.   "
-},
-{
-  "id": "definition-fundamental-counting-multiple-events",
-  "level": "2",
-  "url": "notes-fcp.html#definition-fundamental-counting-multiple-events",
-  "type": "Definition",
-  "number": "4.27",
-  "title": "The Fundamental Counting Principle.",
-  "body": " The Fundamental Counting Principle   If there are independent events and the first event can occur in ways, the second event can occur in ways, the third event can occur in ways, and so on, then the total number of ways that the events can occur is given by   by multiplying the number of ways each individual event can happen.   "
-},
-{
-  "id": "example-one-topping-pizza",
-  "level": "2",
-  "url": "notes-fcp.html#example-one-topping-pizza",
-  "type": "Example",
-  "number": "4.28",
-  "title": "One-topping pizza choices.",
-  "body": " One-topping pizza choices   A pizza can be ordered with two choices of size (medium or large), three choices of crust (thin, thick or regular), and five choices of toppings (ground beef, sausage, pepperoni, bacon and mushrooms). How many different one-topping pizzas can be ordered?    Multiply the number of size choices by the number of crust choices and the number of topping choices.   There are 30 different one-topping pizzas.   "
-},
-{
-  "id": "example-three-wheel-car-options",
-  "level": "2",
-  "url": "notes-fcp.html#example-three-wheel-car-options",
-  "type": "Example",
-  "number": "4.29",
-  "title": "Three-wheel car options.",
-  "body": " Three-wheel car options   Car manufacturers are now experimenting with lightweight three-wheel cars, designed for one person and considered ideal for city driving. Suppose you could order such a car with a choice of 9 possible colors, with or without air conditioning, electric or gas powered, and with or without an on-board computer. In how many ways can this car be ordered with regard to these options?    Multiply the number of choices for each independent feature.   There are 72 possible car orders.   "
-},
-{
-  "id": "exercise-car-ordering-with-gps",
-  "level": "2",
-  "url": "notes-fcp.html#exercise-car-ordering-with-gps",
-  "type": "Checkpoint",
-  "number": "4.30",
-  "title": "Ordering a customizable car.",
-  "body": " Ordering a customizable car   The car in Example is now available in 10 possible colors. The options involving air conditioning, power, and on-board computer still apply. Furthermore, the car is available with or without a global positioning system. In how many ways can this car be ordered in terms of these options?    Multiply the number of choices for each independent option.   There are 160 possible car orders.   "
-},
-{
-  "id": "example-ten-question-test",
-  "level": "2",
-  "url": "notes-fcp.html#example-ten-question-test",
-  "type": "Example",
-  "number": "4.31",
-  "title": "Ten-question multiple-choice test.",
-  "body": " Ten-question multiple-choice test   You are taking a multiple-choice test that has ten questions. Each of the questions has four answer choices, with one correct answer per question. If you select one of these four choices for each question and leave nothing blank, in how many ways can you answer the questions?    This situation involves making choices with ten questions.   We use the Fundamental Counting Principle to find the number of ways that you can answer the questions on the test. Multiply the number of choices, 4, for each of the ten questions.    "
-},
-{
-  "id": "exercise-six-question-test",
-  "level": "2",
-  "url": "notes-fcp.html#exercise-six-question-test",
-  "type": "Exercise",
-  "number": "1",
-  "title": "Six-question multiple-choice test.",
-  "body": " Six-question multiple-choice test   You are taking a multiple-choice test that has six questions. Each of the questions has three answer choices, with one correct answer per question. If you select one of these three choices for each question and leave nothing blank, in how many ways can you answer the questions?    Multiply the number of choices for each question.   There are 729 possible answer sheets.   "
-},
-{
-  "id": "exercise-telephone-numbers",
-  "level": "2",
-  "url": "notes-fcp.html#exercise-telephone-numbers",
-  "type": "Exercise",
-  "number": "2",
-  "title": "Telephone number possibilities.",
-  "body": " Telephone number possibilities   Telephone numbers in the United States begin with three-digit area codes followed by seven-digit local telephone numbers. Area codes and local telephone numbers cannot begin with 0 or 1. How many different telephone numbers are possible?    There are 8 choices for the first digit of the area code and 10 choices for each remaining area code digit. For the local number, the first digit also has 8 choices and each remaining digit has 10 choices.   There are 6,400,000,000 possible telephone numbers.   "
-},
-{
-  "id": "exercise-pen-choices",
-  "level": "2",
-  "url": "notes-fcp.html#exercise-pen-choices",
-  "type": "Exercise",
-  "number": "3",
-  "title": "Pen choices.",
-  "body": " Pen choices   A popular type of pen comes in red, blue, or black ink. The writing tip varies from extra bold, bold, regular, fine, or micro. How many different choices of pens do you have with this type of pen?    Multiply the ink color choices by the tip style choices.   There are 15 different pen choices.   "
-},
-{
-  "id": "exercise-catered-meal-combinations",
-  "level": "2",
-  "url": "notes-fcp.html#exercise-catered-meal-combinations",
-  "type": "Exercise",
-  "number": "4",
-  "title": "Catered meal combinations.",
-  "body": " Catered meal combinations   A wedding caterer gives you three choices for the main course, six starter choices and five options for dessert. How many different meals (made up of starter, dinner and dessert) are there?    Multiply the number of starter choices, main course choices, and dessert choices.   There are 90 different meals.   "
-},
-{
-  "id": "exercise-yes-no-survey",
-  "level": "2",
-  "url": "notes-fcp.html#exercise-yes-no-survey",
-  "type": "Exercise",
-  "number": "5",
-  "title": "Yes\/no survey.",
-  "body": " Yes\/no survey   You take a survey with five \"yes\" or \"no\" answers. How many different ways could you complete the survey?    Each question has 2 choices, and the choices are independent.   There are 32 different ways to complete the survey.   "
-},
-{
-  "id": "exercise-product-code-possibilities",
-  "level": "2",
-  "url": "notes-fcp.html#exercise-product-code-possibilities",
-  "type": "Exercise",
-  "number": "6",
-  "title": "Product code possibilities.",
-  "body": " Product code possibilities   A company puts a code on each different product they sell. The code is made up of 3 numbers and 2 letters. How many different codes are possible?    Each number can be one of 10 digits, and each letter can be one of 26 letters.   There are 676,000 different product codes possible.   "
-},
-{
-  "id": "notes-factorials",
-  "level": "1",
-  "url": "notes-factorials.html",
-  "type": "Section",
-  "number": "",
-  "title": "Factorials",
-  "body": " Factorials   In this section, we will explore the concept of factorials and how they are used in combinatorial counting problems. Factorials are a fundamental tool in counting arrangements and selections, and they play a crucial role in the formulas for permutations and combinations. We will define what a factorial is, how to compute it, and how to apply it in various counting scenarios.    Factorials  Factorials are a fundamental concept in combinatorics and play a crucial role in counting problems. The factorial of a positive integer , denoted as , is the product of all positive integers from down to 1. For example,   By definition, is equal to 1.  Factorials are used in various counting problems, such as permutations and combinations, where we need to count the number of ways to arrange or select items. In the following sections, we will explore how factorials are applied in these contexts and how they can help us solve complex counting problems.  If is a positive integer, then ( factorial ) is the product of all positive integers from down through 1.   By definition, is 1.    Factorial formula   The factorial of is   And by definition, .     Evaluate factorial expressions   Evaluate the following factorial expressions without using the factorial key on your calculator.                Expand both factorials completely to show the common factors: After canceling the common factors from the top and bottom:     Since the denominator is larger, the remaining factors will be in the denominator:          Expand both factorials completely: After canceling the common factors :               First, simplify the expression inside the parentheses:     Recall that :        Permutations of duplicate items   The number of permutations of items, where items are identical, items are identical, items are identical, items are identical, and so on, is given by      Arrange MISSISSIPPI   In how many distinct ways can the letters of the word \"MISSISSIPPI\" be arranged?    The word has 11 letters with 4 identical I's, 4 identical S's, and 2 identical P's.      Arrange BANANA   In how many distinct ways can the letters of the word \"BANANA\" be arranged?    The word has 6 letters with 3 identical A's and 2 identical N's.      Arrange MASSACHUSETTS   In how many distinct ways can the letters of the word \"MASSACHUSETTS\" be arranged?    The word has 13 letters with 4 identical S's, 2 identical A's, and 2 identical T's.      Arrange balloons   There are seventeen balloons: 3 blue, 5 red, 2 green, 3 yellow, and 4 orange. In how many distinct ways can the balloons be arranged?    There are 17 total balloons with duplicates in several colors.     "
-},
-{
-  "id": "definition-factorial-expression",
-  "level": "2",
-  "url": "notes-factorials.html#definition-factorial-expression",
-  "type": "Definition",
-  "number": "4.32",
-  "title": "Factorial formula.",
-  "body": " Factorial formula   The factorial of is   And by definition, .   "
-},
-{
-  "id": "example-evaluate-factorial-expressions",
-  "level": "2",
-  "url": "notes-factorials.html#example-evaluate-factorial-expressions",
-  "type": "Example",
-  "number": "4.33",
-  "title": "Evaluate factorial expressions.",
-  "body": " Evaluate factorial expressions   Evaluate the following factorial expressions without using the factorial key on your calculator.                Expand both factorials completely to show the common factors: After canceling the common factors from the top and bottom:     Since the denominator is larger, the remaining factors will be in the denominator:          Expand both factorials completely: After canceling the common factors :               First, simplify the expression inside the parentheses:     Recall that :      "
-},
-{
-  "id": "definition-permutations-duplicate",
-  "level": "2",
-  "url": "notes-factorials.html#definition-permutations-duplicate",
-  "type": "Definition",
-  "number": "4.34",
-  "title": "Permutations of duplicate items.",
-  "body": " Permutations of duplicate items   The number of permutations of items, where items are identical, items are identical, items are identical, items are identical, and so on, is given by    "
-},
-{
-  "id": "example-arrange-mississippi",
-  "level": "2",
-  "url": "notes-factorials.html#example-arrange-mississippi",
-  "type": "Example",
-  "number": "4.35",
-  "title": "Arrange MISSISSIPPI.",
-  "body": " Arrange MISSISSIPPI   In how many distinct ways can the letters of the word \"MISSISSIPPI\" be arranged?    The word has 11 letters with 4 identical I's, 4 identical S's, and 2 identical P's.    "
-},
-{
-  "id": "example-arrange-banana",
-  "level": "2",
-  "url": "notes-factorials.html#example-arrange-banana",
-  "type": "Example",
-  "number": "4.36",
-  "title": "Arrange BANANA.",
-  "body": " Arrange BANANA   In how many distinct ways can the letters of the word \"BANANA\" be arranged?    The word has 6 letters with 3 identical A's and 2 identical N's.    "
-},
-{
-  "id": "exercise-arrange-massachusetts",
-  "level": "2",
-  "url": "notes-factorials.html#exercise-arrange-massachusetts",
-  "type": "Checkpoint",
-  "number": "4.37",
-  "title": "Arrange MASSACHUSETTS.",
-  "body": " Arrange MASSACHUSETTS   In how many distinct ways can the letters of the word \"MASSACHUSETTS\" be arranged?    The word has 13 letters with 4 identical S's, 2 identical A's, and 2 identical T's.    "
-},
-{
-  "id": "exercise-arrange-balloons",
-  "level": "2",
-  "url": "notes-factorials.html#exercise-arrange-balloons",
-  "type": "Checkpoint",
-  "number": "4.38",
-  "title": "Arrange balloons.",
-  "body": " Arrange balloons   There are seventeen balloons: 3 blue, 5 red, 2 green, 3 yellow, and 4 orange. In how many distinct ways can the balloons be arranged?    There are 17 total balloons with duplicates in several colors.    "
-},
-{
-  "id": "sec-permutations",
-  "level": "1",
-  "url": "sec-permutations.html",
-  "type": "Section",
-  "number": "",
-  "title": "Permutations",
-  "body": " Permutations   Permutation   A permutation is an ordered arrangement of items that occurs when:  No item is used more than once.  The order of arrangement makes a difference.        The BTS Concert Permutation Problem   Suppose BTS, Blackstreet Boys, NSYNC and TLC are given a no-contact concert series. You decide that BTS should be the last group to perform at the four-group concert. Given this decision, in how many ways can you put together the concert?    You can choose any one of the three groups (Blackstreet Boys, NSYNC, or TLC) as the opening act. Once you have chosen the first group, you will then have two groups left to choose for the second performance. You will then have just one group left to choose for the third performance. There is also just one choice for the closing act: BTS.   Concert Performance Choices    First Group to perform  Second Group to perform  Third Group to perform  Last Group to perform    3 choices  2 choices  1 choice  1 choice    Blackstreet Boys, NSYNC, TLC    BTS     We use the Fundamental Counting Principle to find the number of ways you can put together the concert. Multiply the choices: Thus, there are six different ways to arrange the concert if BTS is the final group to perform.      Arrange books on a shelf   You need to arrange five books along a small shelf. How many different ways can you arrange the books, assuming that the order of the books makes a difference to you?    There are 5 choices for the first position, 4 for the second, 3 for the third, 2 for the fourth, and 1 for the last. Using the Fundamental Counting Principle: There are 120 different ways to arrange the books.       In how many different ways can a police department arrange eight suspects in a police lineup if each lineup contains all eight people?    Since all 8 people are used and order matters, this is a permutation of 8 items taken 8 at a time: There are 40,320 different ways to arrange the lineup.       If five digits 1, 2, 3, 4, 5 are being given and a three-digit code has to be made from it if the repetition of digits is allowed then how many such codes can be formed?    Because repetition is allowed, there are 5 choices for each of the three positions in the code: There are 125 possible codes.     The following examples will show how to calculate permutations.  You are the coach of a 13-player baseball team and must set a 9-player batting lineup. Because different positions in the lineup carry different responsibilities, the order makes a difference . For example, a strong hitter like Barry in the clean-up spot (fourth) drives in more runs than a home run later in the order. How many different ways can you arrange your 9 starters?    You have 13 players to choose from for the first person at bat. This leaves 12 players for the second position, 11 for the third, and so on, until the 9th position. The total number of batting orders is: There are nearly 260 million possible batting orders for a team of 13 players.  We can derive a general formula for permutations by rewriting this calculation as a fraction of factorials:   Using standard notation, we call this the number of permutations of 13 things taken 9 at a time, written as:    Calculator Note: Using the TI-30XIIS    TI-30XIIS   A screenshot of the TI-30XIIS calculator showing the permutation function.     To evaluate on the TI-30XIIS, follow these steps:  Enter the value of : Type 13 .  Press the PRB key.  The menu will display nPr  nCr  ! . Since nPr is already underlined, simply press ENTER .  Enter the value of : Type 9 .  Press ENTER to get the result: 259,459,200 .       Permutation Formula   The notation means the number of permutations of things taken at a time :      Corporate Board Elections   A corporation has seven members on its board of directors. In how many different ways can the board elect a president, vice-president, secretary, and treasurer?    Since each officer holds a specific title, the order of selection matters. We are looking for the number of permutations of 7 items taken 4 at a time: Expanding the factorials, we get: The board can elect the four officers in 840 different ways.   TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 7  Press PRB  Select nPr and press ENTER  Type 4  Press ENTER .       How many different programming schedules can be arranged by choosing 5 situation comedies from a collection of 9 classic sitcoms?    We are choosing items from a set of where order matters: There are 15,120 possible programming schedules.   TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 9  Press PRB  Select nPr and press ENTER  Type 5  Press ENTER .       In a race in which six automobiles are entered and there are no ties, in how many ways can the first three finishers come in?    We are looking for the number of permutations of 6 cars taken 3 at a time: There are 120 ways the first three finishers can come in.       Five singers are to perform on a weekend evening at a night club. How many different ways are there to schedule their appearances?    This is a permutation of all 5 singers: There are 120 different scheduling arrangements.       A stock can go up, go down, or stay unchanged. How many possibilities are there if you own seven stocks?    Each of the 7 stocks has 3 possible outcomes. Since the outcome of one stock is independent of the others and order (which stock does what) matters: There are 2,187 different possibilities for the seven stocks.       Seven seats are positioned in a row at a movie theater. Alice, Betty, Craig, Dan, Evelyn, Frank, and Gavin want to sit together.   How many different ways can they be arranged?  How many different ways can they be arranged if Betty sits in the second seat?  How many different ways can they be arranged if Craig and Gavin want to sit in the two aisle seats?        Total arrangements of 7 people: .    If Betty is fixed in the second seat, we only need to arrange the remaining 6 people in the remaining 6 seats: .    There are two aisle seats (the first and the last). First, arrange Craig and Gavin in those 2 seats: ways (Craig-Gavin or Gavin-Craig). Then, arrange the remaining 5 people in the middle 5 seats: . Total: .       "
-},
-{
-  "id": "def-permutation",
-  "level": "2",
-  "url": "sec-permutations.html#def-permutation",
-  "type": "Definition",
-  "number": "4.39",
-  "title": "Permutation.",
-  "body": " Permutation   A permutation is an ordered arrangement of items that occurs when:  No item is used more than once.  The order of arrangement makes a difference.     "
-},
-{
-  "id": "example-concert-lineup",
-  "level": "2",
-  "url": "sec-permutations.html#example-concert-lineup",
-  "type": "Example",
-  "number": "4.40",
-  "title": "The BTS Concert Permutation Problem.",
-  "body": " The BTS Concert Permutation Problem   Suppose BTS, Blackstreet Boys, NSYNC and TLC are given a no-contact concert series. You decide that BTS should be the last group to perform at the four-group concert. Given this decision, in how many ways can you put together the concert?    You can choose any one of the three groups (Blackstreet Boys, NSYNC, or TLC) as the opening act. Once you have chosen the first group, you will then have two groups left to choose for the second performance. You will then have just one group left to choose for the third performance. There is also just one choice for the closing act: BTS.   Concert Performance Choices    First Group to perform  Second Group to perform  Third Group to perform  Last Group to perform    3 choices  2 choices  1 choice  1 choice    Blackstreet Boys, NSYNC, TLC    BTS     We use the Fundamental Counting Principle to find the number of ways you can put together the concert. Multiply the choices: Thus, there are six different ways to arrange the concert if BTS is the final group to perform.   "
-},
-{
-  "id": "sec-permutations-4",
-  "level": "2",
-  "url": "sec-permutations.html#sec-permutations-4",
-  "type": "Example",
-  "number": "4.42",
-  "title": "Arrange books on a shelf.",
-  "body": " Arrange books on a shelf   You need to arrange five books along a small shelf. How many different ways can you arrange the books, assuming that the order of the books makes a difference to you?    There are 5 choices for the first position, 4 for the second, 3 for the third, 2 for the fourth, and 1 for the last. Using the Fundamental Counting Principle: There are 120 different ways to arrange the books.   "
-},
-{
-  "id": "sec-permutations-5",
-  "level": "2",
-  "url": "sec-permutations.html#sec-permutations-5",
-  "type": "Checkpoint",
-  "number": "4.43",
-  "title": "",
-  "body": "  In how many different ways can a police department arrange eight suspects in a police lineup if each lineup contains all eight people?    Since all 8 people are used and order matters, this is a permutation of 8 items taken 8 at a time: There are 40,320 different ways to arrange the lineup.   "
-},
-{
-  "id": "sec-permutations-6",
-  "level": "2",
-  "url": "sec-permutations.html#sec-permutations-6",
-  "type": "Checkpoint",
-  "number": "4.44",
-  "title": "",
-  "body": "  If five digits 1, 2, 3, 4, 5 are being given and a three-digit code has to be made from it if the repetition of digits is allowed then how many such codes can be formed?    Because repetition is allowed, there are 5 choices for each of the three positions in the code: There are 125 possible codes.   "
-},
-{
-  "id": "calculator-note",
-  "level": "2",
-  "url": "sec-permutations.html#calculator-note",
-  "type": "Figure",
-  "number": "4.45",
-  "title": "",
-  "body": " TI-30XIIS   A screenshot of the TI-30XIIS calculator showing the permutation function.   "
-},
-{
-  "id": "def-permutation-formula",
-  "level": "2",
-  "url": "sec-permutations.html#def-permutation-formula",
-  "type": "Definition",
-  "number": "4.46",
-  "title": "Permutation Formula.",
-  "body": " Permutation Formula   The notation means the number of permutations of things taken at a time :    "
-},
-{
-  "id": "example-board-elections",
-  "level": "2",
-  "url": "sec-permutations.html#example-board-elections",
-  "type": "Example",
-  "number": "4.47",
-  "title": "Corporate Board Elections.",
-  "body": " Corporate Board Elections   A corporation has seven members on its board of directors. In how many different ways can the board elect a president, vice-president, secretary, and treasurer?    Since each officer holds a specific title, the order of selection matters. We are looking for the number of permutations of 7 items taken 4 at a time: Expanding the factorials, we get: The board can elect the four officers in 840 different ways.   TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 7  Press PRB  Select nPr and press ENTER  Type 4  Press ENTER .   "
-},
-{
-  "id": "sec-permutations-11",
-  "level": "2",
-  "url": "sec-permutations.html#sec-permutations-11",
-  "type": "Checkpoint",
-  "number": "4.48",
-  "title": "",
-  "body": "  How many different programming schedules can be arranged by choosing 5 situation comedies from a collection of 9 classic sitcoms?    We are choosing items from a set of where order matters: There are 15,120 possible programming schedules.   TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 9  Press PRB  Select nPr and press ENTER  Type 5  Press ENTER .   "
-},
-{
-  "id": "sec-permutations-12",
-  "level": "2",
-  "url": "sec-permutations.html#sec-permutations-12",
-  "type": "Checkpoint",
-  "number": "4.49",
-  "title": "",
-  "body": "  In a race in which six automobiles are entered and there are no ties, in how many ways can the first three finishers come in?    We are looking for the number of permutations of 6 cars taken 3 at a time: There are 120 ways the first three finishers can come in.   "
-},
-{
-  "id": "sec-permutations-13",
-  "level": "2",
-  "url": "sec-permutations.html#sec-permutations-13",
-  "type": "Checkpoint",
-  "number": "4.50",
-  "title": "",
-  "body": "  Five singers are to perform on a weekend evening at a night club. How many different ways are there to schedule their appearances?    This is a permutation of all 5 singers: There are 120 different scheduling arrangements.   "
-},
-{
-  "id": "sec-permutations-14",
-  "level": "2",
-  "url": "sec-permutations.html#sec-permutations-14",
-  "type": "Checkpoint",
-  "number": "4.51",
-  "title": "",
-  "body": "  A stock can go up, go down, or stay unchanged. How many possibilities are there if you own seven stocks?    Each of the 7 stocks has 3 possible outcomes. Since the outcome of one stock is independent of the others and order (which stock does what) matters: There are 2,187 different possibilities for the seven stocks.   "
-},
-{
-  "id": "sec-permutations-15",
-  "level": "2",
-  "url": "sec-permutations.html#sec-permutations-15",
-  "type": "Checkpoint",
-  "number": "4.52",
-  "title": "",
-  "body": "  Seven seats are positioned in a row at a movie theater. Alice, Betty, Craig, Dan, Evelyn, Frank, and Gavin want to sit together.   How many different ways can they be arranged?  How many different ways can they be arranged if Betty sits in the second seat?  How many different ways can they be arranged if Craig and Gavin want to sit in the two aisle seats?        Total arrangements of 7 people: .    If Betty is fixed in the second seat, we only need to arrange the remaining 6 people in the remaining 6 seats: .    There are two aisle seats (the first and the last). First, arrange Craig and Gavin in those 2 seats: ways (Craig-Gavin or Gavin-Craig). Then, arrange the remaining 5 people in the middle 5 seats: . Total: .      "
-},
-{
-  "id": "sec-combinations",
-  "level": "1",
-  "url": "sec-combinations.html",
-  "type": "Section",
-  "number": "",
-  "title": "Combinations",
-  "body": " Combinations   Combination   A combination of items occurs when:  The items are selected from the same group.  No item is used more than once.  The order of items makes no difference .       Identifying Permutations and Combinations   For each of the following, determine whether the problem involves permutations or combinations:   How many ways can you select 6 free videos from a list of 200 videos?  In a race with 50 runners and no ties, in how many ways can the first three finishers come in?  Baskin-Robbins offers 31 different flavors of ice cream. One item is a bowl consisting of three scoops, each a different flavor. How many such bowls are possible?  A three-person committee is needed to study the possibility of expanding the neighborhood park. How many different committees could be formed from six people?       Combination : the order of the selected videos does not matter; only which 6 are chosen matters.  Permutation : first, second, and third place are distinct positions, so order matters.  Combination : the bowl is defined by the set of three flavors, and swapping flavors produces the same bowl.  Combination : the committee members are chosen without ordered roles.       The Combination Formula   The number of combinations of things taken at a time is denoted by :        Public Transportation Committee   A three-person committee is needed to study ways of improving public transportation. How many committees could be formed from the eight people on the board of supervisors?    This is a combination because the order of committee members does not matter.  Compute .  Simplify:   There are 56 possible committees.   TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 8  Press PRB , use the arrow keys to underline nCr , press ENTER  Type 3  Press ENTER again to get the result of 56.     Pet Combinations   You are volunteering to pet-sit for a friend who has seven different animals. How many different pet combinations are possible if you take three of the seven pets?    Order does not matter when choosing pets for a group, so use combinations.      TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 7  Press PRB , use the arrow keys to underline nCr , press ENTER  Type 3  Press ENTER again to get the result of 35.     Four-Card Hand   How many different 4-card hands can be dealt from a deck that has 16 different cards?    A hand is a combination because the order of the cards does not matter.        Poker Hands   In poker, a person is dealt 5 cards from a standard 52-card deck ( ). The order in which the cards are dealt does not matter. How many different 5-card poker hands are possible?    Use combinations because only the set of cards matters.      TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 52  Press PRB , use the arrow keys to underline nCr , press ENTER  Type 5  Press ENTER again to get the result of 2,598,960.     Senate Committee Selection   The U.S. Senate of the 107th Congress consisted of 50 Democrats, 49 Republicans, and one independent. How many committees can be formed if each committee must have 3 Democrats and 2 Republicans?    Use combinations because the order of committee members does not matter.  Choose 3 Democrats from 50: .  Choose 2 Republicans from 49: .  Total committees:    TI-30XIIS Keystrokes: To calculate : Type 50  Press PRB , use the arrow keys to underline nCr , press ENTER  Type 3  Press ENTER . Repeat the process for and multiply the results.     Practice Problems   Answer the following problems. Identify whether each situation uses combinations, permutations, or the product rule, and then compute the requested count.   A popular brand of pen is available in three colors and four writing tips. How many different choices of pens do you have with this brand?  How many four-digit odd numbers are there?  An election ballot asks voters to select three city commissioners from a group of eight candidates. In how many ways can this be done?  Six singers are to perform on a weekend evening at a nightclub. How many different ways are there to schedule their appearances?  In how many ways can you arrange six books along a shelf, assuming that the order of the books makes a difference?  An ice cream store sells two drinks in four sizes and five flavors. In how many ways can a customer order a drink?  An electronic gate can be opened by entering five digits on a keypad containing the digits 0–9. How many different keypad sequences are possible if the digit 0 cannot be used as the first digit?  A math exam consists of 10 multiple-choice questions and 5 open-ended problems in which all work must be shown. If a student must answer 8 of the multiple-choice questions and 3 of the open-ended problems, in how many ways can the questions and problems be chosen?  For a temporary job, you are painting parking spaces for a new shopping mall with a letter of the alphabet and a single digit from 1 to 9. The first parking space is A1 and the last parking space is Z9. How many parking spaces can you paint with distinct labels?  In a race with 100 runners and no ties, in how many ways can the first three finishers come in?  Six people are on the board of supervisors for your neighborhood park. A three-person committee is needed to study the possibility of expanding the park. How many different committees could be formed from the six people?  Nine comedy acts will perform over two evenings. Five of the acts will perform on the first evening. How many ways can the schedule for the first evening be made?  To win Mega Millions, you must pick 5 numbers from a collection of 56 and one Megaball number from a collection of 46. The order of the first 5 does not matter. How many different selections are possible?  An exam consists of 20 multiple-choice questions and 10 open-ended problems. If a student must answer 15 of the multiple-choice and 5 of the open-ended questions, in how many ways can the questions and problems be chosen?  In a lucky draw, 10 names are placed in a box and three are drawn. Find the number of ways those three names can be selected.        Since we are making two independent choices (brand and color), we use the Product Rule . Multiply the number of brand options by the number of color options:     We use the Fundamental Counting Principle for each of the four digits:  First digit (1-9): 9 choices  Middle digits (0-9): 10 choices each  Last digit (odd): 5 choices (1, 3, 5, 7, 9)       This is a combination because the order of committee members does not matter.     This is a permutation of all 6 distinct subjects.     Arranging all items in a row is a permutation .     By the Product Rule , multiply the choices for size, caffeine, and flavor:     The first digit cannot be zero (9 choices), and the remaining four digits can be any number 0-9 (10 choices each):     Select the items separately then multiply:      Multiply the number of letter options by the number of digit options:     Since the positions (President, VP, Secretary) are distinct, order matters; this is a permutation .     Choosing a subgroup where order is irrelevant is a combination .     Select 5 players from 9 without regard to order:     First, calculate the combinations for the 5 white balls, then multiply by the Megaball choice:      Calculate the ways to choose the two groups separately:      Selecting a group of 3 from 10 is a combination :        "
-},
-{
-  "id": "def-combination",
-  "level": "2",
-  "url": "sec-combinations.html#def-combination",
-  "type": "Definition",
-  "number": "4.53",
-  "title": "Combination.",
-  "body": " Combination   A combination of items occurs when:  The items are selected from the same group.  No item is used more than once.  The order of items makes no difference .     "
-},
-{
-  "id": "ex-distinguish-perm-combo",
-  "level": "2",
-  "url": "sec-combinations.html#ex-distinguish-perm-combo",
-  "type": "Checkpoint",
-  "number": "4.54",
-  "title": "Identifying Permutations and Combinations.",
-  "body": " Identifying Permutations and Combinations   For each of the following, determine whether the problem involves permutations or combinations:   How many ways can you select 6 free videos from a list of 200 videos?  In a race with 50 runners and no ties, in how many ways can the first three finishers come in?  Baskin-Robbins offers 31 different flavors of ice cream. One item is a bowl consisting of three scoops, each a different flavor. How many such bowls are possible?  A three-person committee is needed to study the possibility of expanding the neighborhood park. How many different committees could be formed from six people?       Combination : the order of the selected videos does not matter; only which 6 are chosen matters.  Permutation : first, second, and third place are distinct positions, so order matters.  Combination : the bowl is defined by the set of three flavors, and swapping flavors produces the same bowl.  Combination : the committee members are chosen without ordered roles.     "
-},
-{
-  "id": "def-combination-formula",
-  "level": "2",
-  "url": "sec-combinations.html#def-combination-formula",
-  "type": "Definition",
-  "number": "4.55",
-  "title": "The Combination Formula.",
-  "body": " The Combination Formula   The number of combinations of things taken at a time is denoted by :      "
-},
-{
-  "id": "ex-committee-8",
-  "level": "2",
-  "url": "sec-combinations.html#ex-committee-8",
-  "type": "Example",
-  "number": "4.56",
-  "title": "Public Transportation Committee.",
-  "body": " Public Transportation Committee   A three-person committee is needed to study ways of improving public transportation. How many committees could be formed from the eight people on the board of supervisors?    This is a combination because the order of committee members does not matter.  Compute .  Simplify:   There are 56 possible committees.   TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 8  Press PRB , use the arrow keys to underline nCr , press ENTER  Type 3  Press ENTER again to get the result of 56.   "
-},
-{
-  "id": "ex-pet-sitting",
-  "level": "2",
-  "url": "sec-combinations.html#ex-pet-sitting",
-  "type": "Example",
-  "number": "4.57",
-  "title": "Pet Combinations.",
-  "body": " Pet Combinations   You are volunteering to pet-sit for a friend who has seven different animals. How many different pet combinations are possible if you take three of the seven pets?    Order does not matter when choosing pets for a group, so use combinations.      TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 7  Press PRB , use the arrow keys to underline nCr , press ENTER  Type 3  Press ENTER again to get the result of 35.   "
-},
-{
-  "id": "ex-4-card-hand",
-  "level": "2",
-  "url": "sec-combinations.html#ex-4-card-hand",
-  "type": "Example",
-  "number": "4.58",
-  "title": "Four-Card Hand.",
-  "body": " Four-Card Hand   How many different 4-card hands can be dealt from a deck that has 16 different cards?    A hand is a combination because the order of the cards does not matter.      "
-},
-{
-  "id": "ex-poker-hand",
-  "level": "2",
-  "url": "sec-combinations.html#ex-poker-hand",
-  "type": "Example",
-  "number": "4.59",
-  "title": "Poker Hands.",
-  "body": " Poker Hands   In poker, a person is dealt 5 cards from a standard 52-card deck ( ). The order in which the cards are dealt does not matter. How many different 5-card poker hands are possible?    Use combinations because only the set of cards matters.      TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 52  Press PRB , use the arrow keys to underline nCr , press ENTER  Type 5  Press ENTER again to get the result of 2,598,960.   "
-},
-{
-  "id": "ex-107-congress",
-  "level": "2",
-  "url": "sec-combinations.html#ex-107-congress",
-  "type": "Example",
-  "number": "4.60",
-  "title": "Senate Committee Selection.",
-  "body": " Senate Committee Selection   The U.S. Senate of the 107th Congress consisted of 50 Democrats, 49 Republicans, and one independent. How many committees can be formed if each committee must have 3 Democrats and 2 Republicans?    Use combinations because the order of committee members does not matter.  Choose 3 Democrats from 50: .  Choose 2 Republicans from 49: .  Total committees:    TI-30XIIS Keystrokes: To calculate : Type 50  Press PRB , use the arrow keys to underline nCr , press ENTER  Type 3  Press ENTER . Repeat the process for and multiply the results.   "
-},
-{
-  "id": "ex-practice-combination-counting",
-  "level": "2",
-  "url": "sec-combinations.html#ex-practice-combination-counting",
-  "type": "Checkpoint",
-  "number": "4.61",
-  "title": "Practice Problems.",
-  "body": " Practice Problems   Answer the following problems. Identify whether each situation uses combinations, permutations, or the product rule, and then compute the requested count.   A popular brand of pen is available in three colors and four writing tips. How many different choices of pens do you have with this brand?  How many four-digit odd numbers are there?  An election ballot asks voters to select three city commissioners from a group of eight candidates. In how many ways can this be done?  Six singers are to perform on a weekend evening at a nightclub. How many different ways are there to schedule their appearances?  In how many ways can you arrange six books along a shelf, assuming that the order of the books makes a difference?  An ice cream store sells two drinks in four sizes and five flavors. In how many ways can a customer order a drink?  An electronic gate can be opened by entering five digits on a keypad containing the digits 0–9. How many different keypad sequences are possible if the digit 0 cannot be used as the first digit?  A math exam consists of 10 multiple-choice questions and 5 open-ended problems in which all work must be shown. If a student must answer 8 of the multiple-choice questions and 3 of the open-ended problems, in how many ways can the questions and problems be chosen?  For a temporary job, you are painting parking spaces for a new shopping mall with a letter of the alphabet and a single digit from 1 to 9. The first parking space is A1 and the last parking space is Z9. How many parking spaces can you paint with distinct labels?  In a race with 100 runners and no ties, in how many ways can the first three finishers come in?  Six people are on the board of supervisors for your neighborhood park. A three-person committee is needed to study the possibility of expanding the park. How many different committees could be formed from the six people?  Nine comedy acts will perform over two evenings. Five of the acts will perform on the first evening. How many ways can the schedule for the first evening be made?  To win Mega Millions, you must pick 5 numbers from a collection of 56 and one Megaball number from a collection of 46. The order of the first 5 does not matter. How many different selections are possible?  An exam consists of 20 multiple-choice questions and 10 open-ended problems. If a student must answer 15 of the multiple-choice and 5 of the open-ended questions, in how many ways can the questions and problems be chosen?  In a lucky draw, 10 names are placed in a box and three are drawn. Find the number of ways those three names can be selected.        Since we are making two independent choices (brand and color), we use the Product Rule . Multiply the number of brand options by the number of color options:     We use the Fundamental Counting Principle for each of the four digits:  First digit (1-9): 9 choices  Middle digits (0-9): 10 choices each  Last digit (odd): 5 choices (1, 3, 5, 7, 9)       This is a combination because the order of committee members does not matter.     This is a permutation of all 6 distinct subjects.     Arranging all items in a row is a permutation .     By the Product Rule , multiply the choices for size, caffeine, and flavor:     The first digit cannot be zero (9 choices), and the remaining four digits can be any number 0-9 (10 choices each):     Select the items separately then multiply:      Multiply the number of letter options by the number of digit options:     Since the positions (President, VP, Secretary) are distinct, order matters; this is a permutation .     Choosing a subgroup where order is irrelevant is a combination .     Select 5 players from 9 without regard to order:     First, calculate the combinations for the 5 white balls, then multiply by the Megaball choice:      Calculate the ways to choose the two groups separately:      Selecting a group of 3 from 10 is a combination :       "
-},
-{
-  "id": "sec-probability-fcp-npr-ncr",
-  "level": "1",
-  "url": "sec-probability-fcp-npr-ncr.html",
-  "type": "Section",
-  "number": "",
-  "title": "Probability with the FCP, nPr and nCr",
-  "body": " Probability with the FCP, nPr and nCr   Probability with Fundamental Counting Principle and permutations, nPr   We return to our concert series with BTS, Blackstreet Boys, NSYNC and TLC. Now, New Kids on the Block (NKOTB) agrees to join the tour. The five groups determine the performance order by drawing names from a hat.  What is the probability of TLC performing fourth and BTS performing last?   Recall the probability formula ( ), the probability is the fraction of the number of event outcomes over the total number of possible outcomes.  To solve this problem, we will use the Fundamental Counting Principle (FCP) to find the total number of possible arrangements of the five groups, and then determine how many of those arrangements have TLC performing fourth and BTS performing last.   The probability is defined as:   First, we find the total number of ways to arrange the 5 groups using the Fundamental Counting Principle :   Next, we find the number of successful outcomes where TLC is 4th and BTS is last. By fixing these two positions, we only need to arrange the remaining 3 groups (Backstreet Boys, NSYNC, and NKOTB) in the first three slots:  1st spot: 3 choices  2nd spot: 2 choices  3rd spot: 1 choice  4th spot: Fixed (TLC)  5th spot: Fixed (BTS)     Therefore, calculate the probability:    TI-30XIIS Keystrokes: To find the total permutations (5!), type 5   PRB  arrow over to underline !   ENTER   ENTER . The result is 120.     Seven performers A, B, C, D, E, F, and G are to appear in a fundraiser. The order of performance is determined by random selection. Find the probability that:    D will perform first.  E will perform sixth and B will perform last.  They will perform in the following order: C, D, B, A, G, F, E.  F or G will perform first.      First, we find the total number of possible outcomes for the sample space. Since there are 7 positions to fill:    TI-30XIIS: Type 7  Press PRB  Arrow right to underline !  Press ENTER  Press ENTER .      To find the number of ways D can perform first , we fix D in the first spot:      To find the number of ways E performs 6th and B performs last , we fix those two positions:      There is only one specific sequence out of the 5,040 possibilities:      For F or G to perform first , we have 2 choices for the first spot:           Probability with Combinations, nCr   Florida's lottery game LOTTO is set up so that each player chooses six different numbers from 1 to 53. If the six numbers chosen match the six numbers drawn randomly, the player wins the top cash prize. With one LOTTO ticket, what is the probability of winning this prize?   Because the order of the six numbers does not matter, this is a situation involving combinations. We begin with the formula for probability:   We are selecting numbers from a collection of numbers. Using the combination formula:    TI-30XIIS Keystrokes: To calculate : Type 53  Press PRB  Underline nCr and press ENTER  Type 6  Press ENTER .  There are nearly 23 million number combinations possible in LOTTO. If a person buys one LOTTO ticket, that person has selected only one combination of six numbers. With one LOTTO ticket, there is only one way of winning:   The probability of winning the top prize with one LOTTO ticket is or about 1 in 23 million.      A state lottery is designed so that a player chooses five numbers from 1 to 30 on one lottery ticket. What is the probability that a player with one lottery ticket will win? What is the probability of winning if 100 different lottery tickets are purchased?     A club consists of five men and seven women. Three members are selected at random to attend a conference. Find the probability that the selected group consists of:  three men.  one man and two women.        Total combinations of 3 people from 12:   Ways to select 3 men from 5:             A box contains 25 transistors, 6 of which are defective. If 6 are selected at random, find the probability that:  all are defective.  none are defective.        A parent-teacher committee consisting of four people is to be selected from fifteen parents and five teachers. Find the probability of selecting two parents and two teachers.      If you are dealt 4 cards from a shuffled deck of 52 cards, find the probability that all 4 are hearts.      If you are dealt 5 cards from a shuffled deck of 52 cards, find the probability that you get 3 kings and two aces.     "
-},
-{
-  "id": "subsec-nPr-Probability-2-1",
-  "level": "2",
-  "url": "sec-probability-fcp-npr-ncr.html#subsec-nPr-Probability-2-1",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "New Kids on the Block (NKOTB) "
-},
-{
-  "id": "subsec-nPr-Probability-2-2",
-  "level": "2",
-  "url": "sec-probability-fcp-npr-ncr.html#subsec-nPr-Probability-2-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "TLC BTS "
-},
-{
-  "id": "subsec-nPr-Probability-4",
-  "level": "2",
-  "url": "sec-probability-fcp-npr-ncr.html#subsec-nPr-Probability-4",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Fundamental Counting Principle (FCP) "
-},
-{
-  "id": "subsec-nPr-Probability-5-2",
-  "level": "2",
-  "url": "sec-probability-fcp-npr-ncr.html#subsec-nPr-Probability-5-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Fundamental Counting Principle "
-},
-{
-  "id": "subsec-nPr-Probability-6",
-  "level": "2",
-  "url": "sec-probability-fcp-npr-ncr.html#subsec-nPr-Probability-6",
-  "type": "Checkpoint",
-  "number": "4.62",
-  "title": "",
-  "body": "  Seven performers A, B, C, D, E, F, and G are to appear in a fundraiser. The order of performance is determined by random selection. Find the probability that:    D will perform first.  E will perform sixth and B will perform last.  They will perform in the following order: C, D, B, A, G, F, E.  F or G will perform first.      First, we find the total number of possible outcomes for the sample space. Since there are 7 positions to fill:    TI-30XIIS: Type 7  Press PRB  Arrow right to underline !  Press ENTER  Press ENTER .      To find the number of ways D can perform first , we fix D in the first spot:      To find the number of ways E performs 6th and B performs last , we fix those two positions:      There is only one specific sequence out of the 5,040 possibilities:      For F or G to perform first , we have 2 choices for the first spot:        "
-},
-{
-  "id": "subsec-nCr-Probability-2",
-  "level": "2",
-  "url": "sec-probability-fcp-npr-ncr.html#subsec-nCr-Probability-2",
-  "type": "Example",
-  "number": "4.63",
-  "title": "",
-  "body": " Florida's lottery game LOTTO is set up so that each player chooses six different numbers from 1 to 53. If the six numbers chosen match the six numbers drawn randomly, the player wins the top cash prize. With one LOTTO ticket, what is the probability of winning this prize?   Because the order of the six numbers does not matter, this is a situation involving combinations. We begin with the formula for probability:   We are selecting numbers from a collection of numbers. Using the combination formula:    TI-30XIIS Keystrokes: To calculate : Type 53  Press PRB  Underline nCr and press ENTER  Type 6  Press ENTER .  There are nearly 23 million number combinations possible in LOTTO. If a person buys one LOTTO ticket, that person has selected only one combination of six numbers. With one LOTTO ticket, there is only one way of winning:   The probability of winning the top prize with one LOTTO ticket is or about 1 in 23 million.   "
-},
-{
-  "id": "subsec-nCr-Probability-3",
-  "level": "2",
-  "url": "sec-probability-fcp-npr-ncr.html#subsec-nCr-Probability-3",
-  "type": "Checkpoint",
-  "number": "4.64",
-  "title": "",
-  "body": "  A state lottery is designed so that a player chooses five numbers from 1 to 30 on one lottery ticket. What is the probability that a player with one lottery ticket will win? What is the probability of winning if 100 different lottery tickets are purchased?   "
-},
-{
-  "id": "subsec-nCr-Probability-4",
-  "level": "2",
-  "url": "sec-probability-fcp-npr-ncr.html#subsec-nCr-Probability-4",
-  "type": "Example",
-  "number": "4.65",
-  "title": "",
-  "body": " A club consists of five men and seven women. Three members are selected at random to attend a conference. Find the probability that the selected group consists of:  three men.  one man and two women.        Total combinations of 3 people from 12:   Ways to select 3 men from 5:          "
-},
-{
-  "id": "subsec-nCr-Probability-5",
-  "level": "2",
-  "url": "sec-probability-fcp-npr-ncr.html#subsec-nCr-Probability-5",
-  "type": "Checkpoint",
-  "number": "4.66",
-  "title": "",
-  "body": "  A box contains 25 transistors, 6 of which are defective. If 6 are selected at random, find the probability that:  all are defective.  none are defective.     "
-},
-{
-  "id": "subsec-nCr-Probability-6",
-  "level": "2",
-  "url": "sec-probability-fcp-npr-ncr.html#subsec-nCr-Probability-6",
-  "type": "Checkpoint",
-  "number": "4.67",
-  "title": "",
-  "body": "  A parent-teacher committee consisting of four people is to be selected from fifteen parents and five teachers. Find the probability of selecting two parents and two teachers.   "
-},
-{
-  "id": "subsec-nCr-Probability-7",
-  "level": "2",
-  "url": "sec-probability-fcp-npr-ncr.html#subsec-nCr-Probability-7",
-  "type": "Checkpoint",
-  "number": "4.68",
-  "title": "",
-  "body": "  If you are dealt 4 cards from a shuffled deck of 52 cards, find the probability that all 4 are hearts.   "
-},
-{
-  "id": "subsec-nCr-Probability-8",
-  "level": "2",
-  "url": "sec-probability-fcp-npr-ncr.html#subsec-nCr-Probability-8",
-  "type": "Checkpoint",
-  "number": "4.69",
-  "title": "",
-  "body": "  If you are dealt 5 cards from a shuffled deck of 52 cards, find the probability that you get 3 kings and two aces.   "
-},
-{
   "id": "Hands-On-Sessions",
   "level": "1",
   "url": "Hands-On-Sessions.html",
   "type": "Chapter",
-  "number": "5",
+  "number": "4",
   "title": "Hands-On Sessions",
   "body": " Hands-On Sessions   The following notes are intended to remind you what we covered each week. They are not a substitute for attending class and not a substitute for reading the textbook.      "
 },
@@ -1949,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "handouts.html",
   "type": "Chapter",
-  "number": "7",
+  "number": "6",
   "title": "Handouts",
   "body": " Handouts    "
 },
@@ -1958,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "homework.html",
   "type": "Chapter",
-  "number": "8",
+  "number": "7",
   "title": "Homework",
   "body": " Homework    "
 }

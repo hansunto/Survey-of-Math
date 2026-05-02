@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file contains the content for the "Combinations" section of the Probability chapter. It is included in the main course file (main.ptx) using an XInclude directive. -->
 <section xml:id="sec-combinations">
   <title>Combinations</title>
 

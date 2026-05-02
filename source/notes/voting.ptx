@@ -825,7 +825,7 @@
             </tabular>
         </table>
         <p>
-            <ol label="1">
+            <ol marker="1">
                 <li><p>How many students voted in the election?</p></li>
                 <li><p>How many students voted Brian as their first choice?</p></li>
                 <li><p>Who would win the presidency using the Plurality method?</p></li>
@@ -845,7 +845,7 @@
     <!-- Short Answers -->
     <answer>
         <p>
-            <ol label="1">
+            <ol marker="1">
                 <li><p>100 students</p></li>
                 <li><p>30 students</p></li>
                 <li><p>Paula (33 votes)</p></li>
@@ -859,7 +859,7 @@
 
     <solution>
   <p>
-    <ol label="1">
+    <ol marker="1">
       <!-- Parts 1-4 remain as previously provided -->
       <li><p>Total Votes: 100.</p></li>
       <li><p>Brian 1st choice: 30.</p></li>

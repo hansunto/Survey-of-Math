@@ -1,0 +1,34 @@
+INFO    : Building target print
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /workspaces/Survey-of-Math/output/print.
+INFO    : discovering source file's directory name: /workspaces/Survey-of-Math/source
+INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/assets
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : converting /workspaces/Survey-of-Math/source/main.ptx to LaTeX as /tmp/ptx-lqa83c_h/main.tex
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/pretext-latex.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking all deprecated elements.
+WARNING : * PTX:DEPRECATE: (2022-04-25) a "@label" attribute (on a "ul" or "ol" element) has been deprecated and should be replaced by the functionally equivalent "@marker".  We will attempt to honor your request (6 times)
+INFO    : *              located within: "math-club-election" (xml:id), "Math Club Presidential Election" (title)
+INFO    : *              located within: "ex-hmo" (xml:id), "Apportioning 40 HMO Doctors" (title)
+INFO    : *              located within: "ex-math-courses" (xml:id), "Apportioning Math Course Sections" (title)
+INFO    : * --------------
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/pretext-latex.xsl
+CRITICAL: [Errno 2] No such file or directory: 'main.pdf'
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

@@ -613,7 +613,7 @@
       </row>
     </tabular>
   <p>
-    <ol label="1">
+    <ol marker="1">
      <li>Use Hamilton's method.</li>
      <li>Use Jefferson's method with <m>d=48</m>.</li>
      <li>Use Adam's method.</li>
@@ -622,7 +622,6 @@
   </statement>
   <solution xml:id="sol-hmo-hamilton">
     <title>Hamilton's Method Solution</title>
-    <statement>
       <p>
         Calculate Standard Divisor (SD) and Quotas 
         <ul>
@@ -688,12 +687,10 @@
                 <cell>40</cell>
             </row>
         </tabular>
-    </statement>
   </solution>
 
   <solution xml:id="sol-hmo-jefferson">
     <title>Jefferson's Method Solution (d=48)</title>
-    <statement>
         <tabular bottom="minor" top="minor" left="minor" right="minor">
             <row header="yes">
                 <cell>Clinic</cell>
@@ -720,12 +717,10 @@
                 <cell>40</cell>
             </row>
         </tabular>
-    </statement>
   </solution>
 
   <solution xml:id="sol-hmo-adams">
     <title>Adam's Method Solution (md=52)</title>
-    <statement>
         <tabular bottom="minor" top="minor" left="minor" right="minor">
             <row header="yes">
                 <cell>Clinic</cell>
@@ -752,7 +747,6 @@
                 <cell>40</cell>
             </row>
         </tabular>
-    </statement>
   </solution>
 
 </exercise>
@@ -781,7 +775,7 @@
                 <cell>1351</cell>
                 </row>
   </tabular>
-  <ol label="1">
+  <ol marker="1">
     <li> <p> Use Hamilton's method to determine how many sections of each course should be offered. </p> </li>
     <li> <p> Use Jefferson's method with Modified divisor md = <fillin characters="5" /> to determine how many sections of each course should be offered. </p> </li>
     <li> <p> Use Adam's method with Modified divisor md = <fillin characters="5" /> to determine how many sections of each course should be offered. </p> </li>
@@ -794,7 +788,7 @@
 
   <!-- Part a: Hamilton's Method -->
     <p>
-    <ol label="1">
+    <ol marker="1">
         <li> <p> <strong>Hamilton's Method</strong> (SD = 45.0333): </p>
             <tabular bottom="minor" top="minor" left="minor" right="minor">
               <row header="yes">

@@ -61,7 +61,7 @@
 
    </chapter>
 
-    <chapter xml:id="Hands-On-Sessions">
+   <chapter xml:id="Hands-On-Sessions">
       <title>Hands-On Sessions</title>
 
       <introduction>
@@ -108,6 +108,7 @@
     </chapter>
 
     <!-- Include additional chapters for other categories -->
+  
 
   <chapter xml:id="course-documents">
       <title>Course Documents</title>

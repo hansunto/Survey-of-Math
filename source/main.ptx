@@ -38,7 +38,7 @@
       <xi:include href="./notes/mortgage.ptx"/>
       <xi:include href="./notes/identifyformula.ptx" />
       <xi:include href="./notes/finchex.ptx" />
-    </chapter> 
+    </chapter>
    
     <chapter xml:id="ch-Probability">
       <title>Probability </title>
@@ -50,6 +50,7 @@
       In this chapter, we will define the fundamental building blocks of the theory, starting with the concept of a <term>sample space</term>.
     </p>
   </introduction>
+
   <xi:include href="./notes/fundamentalP.ptx" />
   <xi:include href="./notes/OrNotEvent.ptx" />
   <xi:include href="./notes/FCP.ptx" />

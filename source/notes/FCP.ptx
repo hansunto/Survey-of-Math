@@ -171,7 +171,11 @@ happen. </p>
         This situation involves making choices with ten questions.
       </p>
       <md>
-        \text{Question 1 (4 choices) \\ Question 2 \\ Question 3 \\ \cdots \\ Question 10}
+  <mrow>\text{Question 1 (4 choices)}</mrow>
+  <mrow>\text{Question 2}</mrow>
+  <mrow>\text{Question 3}</mrow>
+  <mrow>\cdots</mrow>
+  <mrow>\text{Question 10}</mrow>
       </md>
       <p>
         We use the Fundamental Counting Principle to find the number of ways that you can answer the questions on the test. Multiply the number of choices, 4, for each of the ten questions.

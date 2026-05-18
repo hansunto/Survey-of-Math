@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <section xml:id="sec-permutations">
   <title>Permutations</title>
 
@@ -48,8 +50,8 @@
         </row>
         <row>
           <cell>Blackstreet Boys, NSYNC, TLC</cell>
-          <cell></cell>
-          <cell></cell>
+          <cell> </cell>
+          <cell> </cell>
           <cell>BTS</cell>
         </row>
       </tabular>
@@ -107,19 +109,19 @@
     </solution>
   </exercise>
 
-    <statement>
-      <p>
-        The following examples will show how to calculate permutations.
-      </p>
-    
-      <p>
-          You are the coach of a 13-player baseball team and must set a 9-player batting lineup. 
-          Because different positions in the lineup carry different responsibilities, 
-          <alert>the order makes a difference</alert>. 
-           For example, a strong hitter like <q>Barry</q> in the clean-up spot (fourth) drives in more runs than a home run later in the order. 
-           How many different ways can you arrange your 9 starters?
-      </p>
-    </statement>
+  <example xml:id="example-baseball-lineup">
+  <title>Baseball Batting Lineup</title>
+  <introduction>
+    <p> The following examples will show how to calculate permutations. </p>
+  </introduction>
+  <statement>
+    <p> You are the coach of a 13-player baseball team and must set a 9-player batting lineup. 
+      Because different positions in the lineup carry different responsibilities, 
+      <alert>the order makes a difference</alert>. 
+      For example, a strong hitter like <q>Barry</q> in the clean-up spot (
+        fourth) drives in more runs than a home run later in the order. 
+        How many different ways can you arrange your 9 starters? </p>
+  </statement>
     <solution>
       <p>
         You have 13 players to choose from for the first person at bat. 
@@ -139,6 +141,8 @@
         Using standard notation, we call this <q>the number of permutations of 13 things taken 9 at a time,</q> written as:
         <me>{}_{13}P_9 = \frac{13!}{(13-9)!}</me>
       </p>
+       </solution>
+      </example>
       <aside>
         <title>Calculator Note: Using the TI-30XIIS</title>
         <p>
@@ -162,7 +166,7 @@
     </ol>
   </p>
 </aside>
-    </solution>
+  
   
 
   <definition xml:id="def-permutation-formula">

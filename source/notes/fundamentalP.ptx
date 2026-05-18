@@ -170,62 +170,6 @@
 </figure>
   </statement>
 <solution>
- <table xml:id="table-deck-color">
-  <title>Standard Deck of 52 Playing Cards</title>
-  <tabular halign="center" top="minor" left="minor" right="minor" bottom="minor">
-    <row header="yes">
-      <cell>Suit</cell>
-      <cell>A</cell><cell>2</cell><cell>3</cell><cell>4</cell><cell>5</cell><cell>6</cell>
-      <cell>7</cell><cell>8</cell><cell>9</cell><cell>10</cell><cell>J</cell><cell>Q</cell><cell>K</cell>
-    </row>
-    <!-- Red Suits -->
-    <row>
-      <cell header="yes">Hearts (Red)</cell>
-      <cell><m>\color{red}{A\heartsuit}</m></cell>
-      <cell><m>\color{red}{2\heartsuit}</m></cell>
-      <cell><m>\color{red}{3\heartsuit}</m></cell>
-      <cell><m>\color{red}{4\heartsuit}</m></cell>
-      <cell><m>\color{red}{5\heartsuit}</m></cell>
-      <cell><m>\color{red}{6\heartsuit}</m></cell>
-      <cell><m>\color{red}{7\heartsuit}</m></cell>
-      <cell><m>\color{red}{8\heartsuit}</m></cell>
-      <cell><m>\color{red}{9\heartsuit}</m></cell>
-      <cell><m>\color{red}{10\heartsuit}</m></cell>
-      <cell><m>\color{red}{J\heartsuit}</m></cell>
-      <cell><m>\color{red}{Q\heartsuit}</m></cell>
-      <cell><m>\color{red}{K\heartsuit}</m></cell>
-    </row>
-    <row>
-      <cell header="yes">Diamonds (Red)</cell>
-      <cell><m>\color{red}{A\diamondsuit}</m></cell>
-      <cell><m>\color{red}{2\diamondsuit}</m></cell>
-      <cell><m>\color{red}{3\diamondsuit}</m></cell>
-      <cell><m>\color{red}{4\diamondsuit}</m></cell>
-      <cell><m>\color{red}{5\diamondsuit}</m></cell>
-      <cell><m>\color{red}{6\diamondsuit}</m></cell>
-      <cell><m>\color{red}{7\diamondsuit}</m></cell>
-      <cell><m>\color{red}{8\diamondsuit}</m></cell>
-      <cell><m>\color{red}{9\diamondsuit}</m></cell>
-      <cell><m>\color{red}{10\diamondsuit}</m></cell>
-      <cell><m>\color{red}{J\diamondsuit}</m></cell>
-      <cell><m>\color{red}{Q\diamondsuit}</m></cell>
-      <cell><m>\color{red}{K\diamondsuit}</m></cell>
-    </row>
-    <!-- Black Suits -->
-    <row>
-      <cell header="yes">Spades (Black)</cell>
-      <cell>A♠</cell><cell>2♠</cell><cell>3♠</cell><cell>4♠</cell><cell>5♠</cell><cell>6♠</cell>
-      <cell>7♠</cell><cell>8♠</cell><cell>9♠</cell><cell>10♠</cell><cell>J♠</cell><cell>Q♠</cell><cell>K♠</cell>
-    </row>
-    <row>
-      <cell header="yes">Clubs (Black)</cell>
-      <cell>A♣</cell><cell>2♣</cell><cell>3♣</cell><cell>4♣</cell><cell>5♣</cell><cell>6♣</cell>
-      <cell>7♣</cell><cell>8♣</cell><cell>9♣</cell><cell>10♣</cell><cell>J♣</cell><cell>Q♣</cell><cell>K♣</cell>
-    </row>
-  </tabular>
-</table>
-
-
     <p>There are 52 total outcomes in a standard deck.</p>
     <ol>
       <li>

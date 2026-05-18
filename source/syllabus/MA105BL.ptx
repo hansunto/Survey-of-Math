@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<section xml:id="ma-150-syllabus" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>MA-105-BL: Survey of Math</title>
+  
+  <introduction>
+    <p>
+      Worcester State University, DGCE, Summer 2026
+    </p>
+  </introduction>
+
+  <!-- Include chapters -->
+
+  <subsection xml:id="sec-150-course-info">
+    <title>Course Information</title>
+
+    <p>
+      <dl>
+        <li>
+          <title>Instructor</title>
+          <p>
+            Dr. Hansun To, Professor of Mathematics, 
+            <url href="mailto:hto1@worcester.edu">hto1@worcester.edu</url>.
+          </p>
+        </li>
+
+        <li>
+          <title>Meeting Information</title>
+          <p>
+  This is a <term>Hybrid Course</term>, combining online and in-person learning to provide 
+  a flexible and tailored experience. You'll have the opportunity to learn at your own pace 
+  using MyOpenMath, participate in Zoom discussions as needed, and attend in-person sessions 
+  for exams.
+</p>
+
+<p>
+  <em>In-person attendance is required</em> for the following sessions:
+</p>
+
+<ul>
+  <li> <p> Two midterm exams (1 hour and 30 minutes): </p>
+    <ul>
+      <li> <p> <strong>(In person)</strong> Thursday, June 4th, from 03:30 PM to 05:00 PM </p> </li>
+      <li> <p> <strong>(Online)</strong> Thursday, June 25th. (The exam will be available on Thursday, June 25th, at 08:00 AM. Please submit your work by 06:30 PM, including any necessary show work attachments.) </p> </li>
+    </ul>
+  </li>
+  <li> <p> Final exam (three hours): </p>
+    <ul>
+      <li> <p> <strong>(In person)</strong> Thursday, July 2nd, from 03:30 PM to 05:30 PM </p> </li>
+    </ul>
+  </li>
+</ul>
+
+<p>
+  All in-person exams will be held in <strong>Sullivan room S-136</strong>. 
+  Please plan accordingly to ensure your attendance at these mandatory sessions.
+</p>
+
+        </li>       
+        <li>
+          <title>Prerequisite</title>
+
+          <p>
+            Math placement exam code 3 or higher, or a weighted high school GPA of 2.7 or 
+            higher within the past 3 years
+          </p>
+        </li>
+      </dl>
+    </p>
+
+
+    <paragraphs>
+      <title>Responsibility for Learning</title>
+      <p>
+        Every student is responsible for their own learning. 
+        The instructor will make every effort to support you; however, if you need any help it is your responsibility to reach out with questions
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Course Content</title>
+    <p>
+    <p>
+    In this course we will learn to improve the level of quantitative awareness of students 
+    using familiar situations that provide a sense of purpose for studying mathematics. 
+    The objective is not to make mathematicians of the students, but to help them deal as 
+    comfortably as possible with an environment that increasingly makes use of quantitative 
+    reasoning. Topics will include voting and apportionment methods, personal finance, 
+    set theory, and probability theory.
+    </p>
+    </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Required Materials</title>
+      <p>
+        A calculator is required for this course. 
+        There is no required textbook; notes will be provided in class (or in pdf format) 
+        and other materials will be freely available on the MyOpenMath platform.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Calculators</title>
+      <p>
+        A scientific, non-graphing calculator capable of computing logarithmic and trigonometric values is required, 
+        though its use will be limited to only a handful of sections. 
+        I recommend the <alert>TI-30X IIS</alert>, which you can usually find for around <m>\$15. </m>
+        Graphing calculators, phones, tablets and any unauthorized devices are never allowed!
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+        <title>MyOpenMath</title>
+        <p>
+            MyOpenMath (MOM) is a free, open source, online course management system designed for mathematics which we will use extensively in this course. 
+            It is available at https://www.myopenmath.com/ . 
+            You will need to create an account and register for our course on MyOpenMath to get started; 
+            we will do this as a group during the first class meeting. 
+            All course documents and materials will be posted on MyOpenMath; 
+            and all homework will be completed through MyOpenMath.
+        </p>
+    </paragraphs>
+  </subsection>
+
+
+  <!-- Other subsections for larger dividers -->
+  <subsection xml:id="sec-105-grading">
+    <title>Assignments and Grading</title>
+
+    <paragraphs>
+        <title>Homework</title>
+        <p>
+            Practice is a primary component of the mathematical learning process. 
+            For this reason, homework sets will be assigned on MyOpenMath after most class meetings. 
+            Assignments will always be due on Wednesdays by 11:59pm. 
+            This means you will often have two homework sets due on Wednesday, 
+            one which opened on the previous Monday and the other which opened on the previous Wednesday. 
+            While the number of problems in each homework set will vary, your score will be considered as a percentage and each set will be 
+            weighted equally when computing your homework grade. 
+            The problems on the homework sets are sometimes meant to deepen or extend the understanding you have gained from the class lecture 
+            and discussion; you should expect to find some of the exercises difficult.
+        </p>
+        <p>
+            The online homework is set up so you can try most problems two times, then the correct answer will be shown 
+            (there may be some questions in which you have only one try, this will be indicated in the homework set). 
+            If you miss a problem and want to improve your score, you can click the ``Try a similar problem'' link, 
+            which will give you a new question of the same type. 
+            You can keep on working on versions of a question until you get it correct. 
+            <alert>You must earn at least 50% on an assignment for your score to count towards your grade; 
+            any set in which you earn less than 50% will be counted as a 0.</alert> 
+            Assignments will remain available in "Practice" mode after their due date to provide additional practice of concepts; 
+            new versions of problems can be generated and answered, but scores will not be saved.
+            <alert>Be aware, opening an online homework assignment in "Practice" mode will disqualify you from being able to redeem a LatePass on that assignment!</alert> 
+            If you are having trouble on a problem, you may use the "Message Instructor" link, which will allow you to send me a message through MyOpenMath; 
+            the specific problem you are working on will be automatically included in the message. 
+            I can then reply to the message with some guidance. 
+            These messages are internal to MyOpenMath and not email, so my reply will go to your messages when you login to MyOpenMath. 
+            I will check my messages on MyOpenMath at least once per day. Some problems may have a link to a video solution of a similar problem.
+        </p>
+        <p>
+            To account for any unexpected emergencies or technical issues that may occur, we will utilize the LatePass feature in MyOpenMath. 
+            A LatePass can be redeemed for an automatic 48-hour extension on any online homework set which has NOT been viewed in "Practice" mode. 
+            To use a LatePass, click the "Use LatePass" button next to the appropriate assignment on MyOpenMath and the platform will automatically 
+            extend the due date for that assignment to 48 hours after the original due date. 
+            Each student will be given 8 LatePasses to use as they wish throughout the semester. 
+            Note a maximum of two LatePasses can be used on any single assignment. 
+            If circumstances require a more substantial extension, contact your instructor as soon as possible to discuss this possibility.
+        </p>
+    </paragraphs>
+
+
+    <!--<paragraphs>
+      <title>Data Analysis Labs</title>
+
+      <p>
+        Two data analysis labs utilizing Google Sheets will be assigned throughout the semester; more details will be provided later in the course. 
+        Each data lab will count as two homework assignment scores.
+      </p>
+    </paragraphs>-->
+
+    <paragraphs>
+      <title>Exams</title>
+      <p>
+        There will be four exams in this course, one of which will be a cumulative final exam. 
+        Tentative dates are June 4, June 25, May 6, and July 2. 
+        <!--Make-up exams will be given at the instructor's discretion; if you miss an exam for any reason, 
+        it is your responsibility to reach out regarding a potential make-up exam.-->
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+        <title>Grade Allocation</title>
+        <p>
+            Your course grade will be determined by the following distribution. 
+            <alert>You must get at least a 50% on the final exam in order to pass the class</alert>.
+        </p>
+        <tabular>
+            <row header="yes">
+                <cell>Assignment</cell>
+                <cell>Percentage</cell>
+            </row>
+            <row>
+                <cell>MyOpenMath Online Homework</cell>
+                <cell>10%</cell>
+            </row>
+            <row>
+                <cell>MyOpenMath Online Interactive Activities</cell>
+                <cell>10%</cell>
+            </row>
+            <row>
+                <cell>MyOpenMath Online Quizzes</cell>
+                <cell>10%</cell>
+            </row>
+            <row>
+                <cell>Exam 1</cell>
+                <cell>20%</cell>
+            </row>
+            <row>
+                <cell>Exam 2 (online) </cell>
+                <cell>20%</cell>
+            </row>
+            <row>
+                <cell>Final Exam</cell>
+                <cell>30%</cell>
+            </row>
+        </tabular>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Grading Scale</title>
+      <p>
+        Letter grades will be assigned as follows. Grades will not be curved.
+      </p>
+      <tabular>
+        <row header="yes">
+            <cell>Letter Grade</cell>
+            <cell>Percent Needed</cell>
+        </row>
+        <row>
+            <cell>A</cell>
+            <cell>93%</cell>
+        </row>
+        <row>
+            <cell>A-</cell>
+            <cell>90%</cell>
+        </row>
+        <row>
+            <cell>B+</cell>
+            <cell>87%</cell>
+        </row>
+        <row>
+            <cell>B</cell>
+            <cell>83%</cell>
+        </row>
+        <row>
+            <cell>B-</cell>
+            <cell>80%</cell>
+        </row>
+        <row>
+            <cell>C+</cell>
+            <cell>77%</cell>
+        </row>
+        <row>
+            <cell>C</cell>
+            <cell>73%</cell>
+        </row>
+        <row>
+            <cell>C-</cell>
+            <cell>70%</cell>
+        </row>
+        <row>
+            <cell>D+</cell>
+            <cell>67%</cell>
+        </row>
+        <row>
+            <cell>D</cell>
+            <cell>63%</cell>
+        </row>
+        <row>
+            <cell>D-</cell>
+            <cell>60%</cell>
+        </row>
+        <row>
+            <cell>E</cell>
+            <cell>Below 60%</cell>
+        </row>
+      </tabular>
+    </paragraphs>
+  </subsection>
+
+  <subsection xml:id="subsec-105-Course_Policies">
+    <title>Course Policies</title>
+
+    <paragraphs>
+      <title>Email</title>
+      
+      <p>
+        I try to respond to emails and MyOpenMath messages within 24 hours. 
+        You are encouraged to email/message regarding the homework; 
+        however, emails sent within 24 hours of a due date may not get a response 
+        before the deadline. 
+        So do not wait until the last minute to attempt the assignments!
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Studying</title>
+      
+        <p>
+          To succeed in this course, you will need to do more than simply attend class. 
+          Mathematics is a subject which is learned by doing, meaning it is important to work problems outside of class to fully understand the concepts we cover. 
+          The assigned homework is the minimum amount you should be completing; 
+          if you feel like you don't fully understand a concept, ask me to guide you to some additional practice problems. 
+          A general rule for studying (in all college courses) is for each hour of class per week you spend a minimum of two hours outside of class on 
+          homework, studying, reading the text, etc. 
+          <!--Since this course meets three hours per week, you should plan to spend at least six hours per week working on course material.-->
+        </p>
+        <p>
+         Since this is a hybrid course and it is three credit hours, you should plan to spend 
+         at least six hours per week working on course material for a regular semester. 
+         Since this is a 7-week summer course, that time is doubled to 12 hours per week.
+        </p>
+
+    </paragraphs>
+
+    <paragraphs>
+  <title>Academic Integrity and AI Usage</title>
+  <p>
+    The WSU Mathematics Department does not tolerate academic dishonesty! 
+    For an explanation of what is considered <q>academic dishonesty</q> at WSU, 
+    please see the policy included in the <url href="https://catalog.worcester.edu/undergraduate/academic-policies-procedures/academic-honesty"> 
+        2025-2026 Undergraduate Catalog</url>. 
+        All instructors in the WSU Mathematics Department are required to report all incidents 
+        of academic dishonesty observed, detected, or otherwise determined to have occurred to the 
+        WSU Academic Central File. WSU requires some penalty be imposed for every reported violation 
+        of the academic honesty policy. All incidents of academic dishonesty in this course will 
+        result in (at least) a score of 0 on that assignment; additional penalties will be imposed 
+        at the instructor's discretion and/or as required by the 
+        <url href="https://webcdn.worcester.edu/mathematics/wp-content/uploads/sites/17/2023/03/Math-Department-Academic-Honesty-Policy.pdf">
+            Mathematics Department Academic Honesty Policy</url>.
+  </p>
+  <p>
+    <strong>Artificial Intelligence (AI) Policy:</strong> Artificial intelligence (AI) tools 
+    (ChatGPT and similar platforms) may be used for <em>study support and practice only</em>. 
+    Acceptable uses include reviewing concepts, generating practice problems, checking 
+    understanding of definitions, or exploring alternative explanations of course material. 
+    <strong>AI tools are not permitted on any graded assignments, quizzes, or examinations 
+        unless explicitly authorized by the instructor.</strong> This includes, but is not 
+        limited to, using AI to generate solutions, explanations, written work, computations, 
+        graphs, or code that is submitted for credit. All submitted work must reflect the 
+        student's own understanding and effort. Reliance on AI-generated responses in place 
+        of independent problem-solving undermines the learning objectives of this course and 
+        is not allowed. Students are responsible for ensuring that any work they submit 
+        complies with this policy. Use of AI in violation of this policy will be treated as 
+        a violation of the Academic Honesty Policy and may result in penalties including a 
+        score of zero on the assignment, quiz, or exam, and additional disciplinary action as 
+        required by university policy.
+  </p>
+</paragraphs>
+
+
+    <paragraphs>
+      <title>Instructor Rights</title>
+      <p>
+        <alert> As the instructor of this course, I reserve the right to make changes to the above course policies at any time. All changes will be announced in class.</alert>
+      </p>
+    </paragraphs>
+  </subsection>
+
+<subsection xml:id="subsec-105-StudentLearningOutcomes">
+  <title>Student Learning Outcomes</title>
+  <p>
+    Students will be able to:
+  </p>
+  <ol>
+  <li> <p> Students will be able to communicate their mathematical reasoning. </p> </li>
+  <li> <p> <strong>Financial Management:</strong> Students will be able to calculate simple and 
+    compound interest, loan installments and mortgage payments. </p> </li>
+  <li> <p> <strong>Probability Theory:</strong> Students will be able to determine sample spaces 
+    for experiments, calculate probabilities with fundamental counting principles, permutations 
+    and combinations. </p> </li>
+  <li> <p> <strong>Voting Methods:</strong> Students will be able to discuss the pros and cons of 
+    several voting methods and how they can be manipulated by a knowledgeable individual. </p> </li>
+</ol>
+
+</subsection>
+
+  <subsection xml:id="subsec-105-LASC">
+    <title>LASC</title>
+    <p>
+    This is a Quantitative Reasoning (QR) course in the Liberal Arts and Sciences Curriculum (LASC). 
+    </p>
+    <p>
+    The course addresses the following LASC Quantitative Reasoning objectives:
+    </p>
+    <ol>
+        <li> <p> Acquaint students with formal systems, procedures, and sequences of operations. </p> </li>
+        <li> <p> Strengthen students' understanding of variables and functions. </p> </li>
+        <li> <p> Apply mathematical techniques to the analysis and solution of real-life problems. </p> </li>
+        <li> <p> Emphasize the importance of accuracy, including precise language and careful definitions of mathematical concepts. </p> </li>
+        <li> <p> Understand both the underlying principles and practical applications of one or more fields of mathematics. </p> </li>
+        <li> <p> Develop an understanding of and facility with statistical analysis an analysis, including understanding of its applications and limitations. </p> </li>
+    </ol>
+    <p>
+        and the following LASC overarching objectives:
+    </p>
+    <ol>
+        <li> <p> Communicate effectively orally and in writing. </p> </li>
+        <li> <p> Understand and employ quantitative and qualitative reasoning. </p> </li>
+        <li> <p> Apply skills in critical thinking. </p> </li>
+        <li> <p> Understand the roles of science and technology in our modern world. </p> </li>
+        <li> <p> Become socially responsible agents in the world. </p> </li>
+        <li> <p> Make connections across courses and disciplines. </p> </li>
+        <li> <p> Develop as healthy individuals--physically, emotionally, socially, ethically, and intellectually. </p> </li>
+    </ol>
+  </subsection>
+
+  <subsection xml:id="subsec-105-TentativeSchedule">
+    <title>Course Schedule</title>
+
+    <p>
+      Here is a tentative schedule of topics.<!-- to be discussed in our class meetings. -->
+      We will try to stay on schedule as much as possible. 
+      If class is canceled for any reason, then the schedule will be adjusted to accommodate this cancelation. 
+      This could include a rearrangement of topics, removing a "review" day, or skipping a topic entirely, depending on the timing of the cancelation. 
+      Any changes to this schedule will be announced in class and via email. 
+    </p>
+
+<table>
+  <title>Course Schedule and Exam Dates</title>
+<tabular xml:id="schedule">
+  <col halign="center"/>
+  <col halign="left"/>
+  <col halign="left"/>
+  <col halign="center"/>
+  <row header="yes" bottom="medium">
+    <cell>Unit</cell>
+    <cell>Topics</cell>
+    <cell>Due Dates</cell>
+  </row>
+  <row bottom="minor">
+    <cell>1</cell>
+    <cell>Voting methods, apportionment</cell>
+    <cell>Fri 5/22</cell>
+  </row>
+  <row bottom="minor">
+    <cell>2</cell>
+    <cell>Simple interest, compound interest</cell>
+    <cell>Wed 5/27</cell>
+  </row>
+  <row bottom="minor">
+    <cell>3</cell>
+    <cell>Annuities, installment loans <alert>(Quiz 1)</alert> </cell>
+    <cell>Wed 5/27</cell>
+  </row>
+  <row bottom="minor">
+    <cell>4</cell>
+    <cell>Mortgages, credit cards</cell>
+    <cell>Wed 6/3</cell>
+  </row>
+  <row bottom="medium" bg="lightgray">
+    <cell> </cell>
+    <cell><alert>In-Person Exam 1</alert> Thu 6/4 (3:30-5:00pm) (S-136) </cell>
+    <cell></cell>
+  </row>
+  <row bottom="minor">
+    <cell>5</cell>
+    <cell>Set basics, subsets</cell>
+    <cell>Wed 6/10</cell>
+  </row>
+  <row bottom="minor">
+    <cell>6</cell>
+    <cell>Set operations, surveys <alert>(Quiz 2)</alert> </cell>
+    <cell>Wed 6/10</cell>
+  </row>
+  <row bottom="minor">
+    <cell>7</cell>
+    <cell>Intro to probability, events involving “not”, “or”, “and”</cell>
+    <cell>Wed 6/17</cell>
+  </row>
+  <row bottom="minor">
+    <cell>8</cell>
+    <cell>Counting, permutations, combinations <alert>(Quiz 3)</alert></cell>
+    <cell>Wed 6/17</cell>
+  </row>
+  <row bottom="medium" bg="lightgray">
+    <cell> </cell>
+    <cell><alert>Online Exam 2 (Thu 6/25) </alert></cell>
+    <cell></cell>
+  </row>
+  <row bottom="minor">
+    <cell>9</cell>
+    <cell>Probability with counting, odds, conditional</cell>
+    <cell>Fri 6/26</cell>
+  </row>
+  <row bottom="medium" bg="lightgray">
+    <cell> </cell>
+    <cell><alert>In-Person FINAL EXAM</alert> Thu 7/2 (3:30-6:30pm) (S-136) </cell>
+    <cell> </cell>
+  </row>
+</tabular>
+</table>
+
+
+<!--regular semester schedule sample-->
+ <!--    <tabular bottom="medium">
+        <row header="yes">
+          <cell>Week (Mon)</cell>
+          <cell>Monday Topics</cell>
+          <cell>Wednesday Topics</cell>
+        </row>
+        <row>
+          <cell>1/19</cell>
+          <cell>No class - MLK Day</cell>
+          <cell>Statistics Basics</cell>
+        </row>
+        <row>
+          <cell>1/26</cell>
+          <cell>No class - snow</cell>
+          <cell>Measures of center, distributions</cell>
+        </row>
+        <row>
+          <cell>2/2</cell>
+          <cell>Measures of spread</cell>
+          <cell>Five-number summary, box plots</cell>
+        </row>
+        <row>
+          <cell>2/9</cell>
+          <cell>Empirical rule, z-scores</cell>
+          <cell>Probability</cell>
+        </row>
+        <row>
+          <cell>2/16</cell>
+          <cell colspan="2" halign="center"><alert>No class - February Break</alert></cell>
+        </row>
+        <row>
+          <cell>2/23</cell>
+          <cell>Probability Rules</cell>
+          <cell>Conditional Probability</cell>
+        </row>
+        <row>
+          <cell>3/2</cell>
+          <cell>Review</cell>
+          <cell><alert>Exam 1</alert></cell>
+        </row>
+        <row>
+          <cell>3/9</cell>
+          <cell>Standard normal distribution</cell>
+          <cell>Normally distributed variables</cell>
+        </row>
+        <row>
+          <cell>3/16</cell>
+          <cell>Percentiles</cell>
+          <cell>Mean/SD of sampling distribution</cell>
+        </row>
+        <row>
+          <cell>3/23</cell>
+          <cell>Prob with sampling distribution</cell>
+          <cell>Confidence intervals</cell>
+        </row>
+        <row>
+          <cell>3/30</cell>
+          <cell>Review</cell>
+          <cell><alert>Exam 2</alert></cell>
+        </row>
+        <row>
+          <cell>4/6</cell>
+          <cell>Intro to hypothesis testing</cell>
+          <cell>Hypothesis testing with CVs</cell>
+        </row>
+        <row>
+          <cell>4/13</cell>
+          <cell>Hypothesis testing with p-values</cell>
+          <cell>Two-mean hypothesis testing</cell>
+        </row>
+        <row>
+          <cell>4/20</cell>
+          <cell colspan="2" halign="center"><alert>No class - April Break</alert></cell>
+        </row>
+        <row>
+          <cell>4/27</cell>
+          <cell>Regression basics</cell>
+          <cell>Correlation</cell>
+        </row>
+        <row>
+          <cell>5/4</cell>
+          <cell >Review</cell>
+          <cell><alert>Exam 3</alert></cell>
+        </row>
+        <row>
+          <cell>5/11</cell>
+          <cell>Review</cell>
+          <cell><alert>Final Exam</alert></cell>
+        </row>
+      </tabular>-->
+
+  </subsection>
+</section>

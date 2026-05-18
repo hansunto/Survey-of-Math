@@ -38,8 +38,7 @@
       <xi:include href="./notes/mortgage.ptx"/>
       <xi:include href="./notes/identifyformula.ptx" />
       <xi:include href="./notes/finchex.ptx" />
-    </chapter>
-
+    </chapter> 
    
     <chapter xml:id="ch-Probability">
       <title>Probability </title>
@@ -110,12 +109,12 @@
 
     <!-- Include additional chapters for other categories -->
 
-<chapter xml:id="course-documents">
+  <chapter xml:id="course-documents">
       <title>Course Documents</title>
 
       <!-- Course syllabus -->
-      <xi:include href="./syllabus/syllabus.ptx" />
+      <xi:include href="./syllabus/MA105BL.ptx" />
       <!-- Other documents could go here, like a schedule, project description, etc. -->
-    </chapter>
+  </chapter>
     </book>
   </pretext>

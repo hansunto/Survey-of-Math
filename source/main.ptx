@@ -89,7 +89,8 @@
       </introduction>
 
       <!-- Remove the example and replace with your own activities -->
-      <xi:include href="./activities/01-intro-activity.ptx"/>
+      <xi:include href="./activities/ActVoting.ptx"/>
+      <!--<xi:include href="./activities/01-intro-activity.ptx"/>-->
 
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>

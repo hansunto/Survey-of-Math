@@ -3,8 +3,9 @@
 <section xml:id="notes-Voting">
 
 <title>Voting methods</title>
-<subsection>
-  <title>How to determine a Winner?</title>
+<introduction>
+  <p>How to determine a Winner?</p>
+</introduction>
 
     <assemblage>
       <p>
@@ -931,8 +932,4 @@
 </solution>
 
 </exercise>
-
-
-
-</subsection>
  </section>

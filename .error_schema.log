@@ -1,5 +1,5 @@
-<string>:251:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element table there
-<string>:251:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element sidebyside, got table
-<string>:292:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element ul there
-<string>:292:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element sidebyside, got ul
-<string>:251:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element solution has extra content: table
+<string>:17:0:ERROR:RELAXNGV:RELAXNG_ERR_NOTELEM: Expecting an element got text
+<string>:17:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element title failed to validate content
+<string>:18:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element introduction there
+<string>:18:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element sidebyside, got introduction
+<string>:18:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element proof, got introduction

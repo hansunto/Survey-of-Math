@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-01-intro-activity" xmlns:xi="http://w3.org">
+    <title>01. Activity Voting Methods</title>
+
+  <!-- Optional introduction -->
+  <introduction>
+    <p>
+      In many decision making situations, it is necessary to gather the group consensus 
+      using some sort of vote. While the basic idea of voting is fairly universal, 
+      the method by which those votes are used to determine a winner can vary. 
+      In deciding upon a winner, there is always one main goal: to reflect the preferences 
+      of the people in the most fair way possible. We will discuss four different methods 
+      for determining the winner of an election using preference ballots, and will see that 
+      we can sometimes have different winners under different methods of voting. 
+    </p>
+  </introduction>
+
+  <p>See <xref ref="notes-Voting" /> for the voting notes.</p>
+
+  <!-- Exercises start here. -->
+
+  <page>
+    <exercise workspace="2in"> <myopenmath problem="1410996" /> </exercise>
+  </page>
+  <page>
+    <exercise workspace="2in"> <myopenmath problem="1410999" /> </exercise>
+  </page>
+  <page>
+    <exercise workspace="2in"> <myopenmath problem="1411004" /> </exercise>
+  </page>
+  <page>
+    <exercise workspace="2in"> <myopenmath problem="1411007" /> </exercise>
+  </page>
+  <page>
+    <exercise workspace="2in"> <myopenmath problem="1411010" /> </exercise>
+  </page>
+  <page>
+    <exercise workspace="2in"> <myopenmath problem="1411014" /> </exercise>
+  </page>
+  <page>
+    <exercise workspace="2in"> 
+      <p> We have seen four different methods for determining the winner of an election. 
+        Through our examples and problems, we have also seen that these different methods can 
+        lead to different winners! In particular, in the Math Club President election considered 
+        throughout the exercises, it turns out that each of the four voting methods leads to each 
+        of the four candidates being declared the winner!</p>
+      <myopenmath problem="1411035" /> </exercise>
+  </page>
+
+
+
+
+
+  <!--<exercise workspace="2in">
+    <statement>
+      <p>
+        Add MyOpeMath question 
+      </p>
+    </statement>
+  </exercise>-->
+
+</worksheet>

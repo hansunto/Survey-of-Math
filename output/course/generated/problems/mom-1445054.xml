@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1445054">
+<statement>
+<p>
+Which of the following apportionment methods will we discuss in this course. Select all that apply!</p>
+<p><ol style="list-style-type:upper-alpha"><li>Pairwise comparison method</li> 
+<li>Plurality method</li> 
+<li>Plurality with elimination method</li> 
+<li>Adam's Method</li> 
+<li>Borda count method</li> 
+<li>Jefferson's method</li> 
+<li>Hamilton's method</li> 
+</ol></p>
+
+
+</statement>
+<answer>
+<p><ul><li><p>Hamilton's method</p>
+<p>Jefferson's method</p>
+<p>Adam's Method</p></li></ul></p>
+</answer>
+
+</myopenmath>

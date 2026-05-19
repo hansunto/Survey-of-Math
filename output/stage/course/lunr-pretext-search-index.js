@@ -2098,6 +2098,69 @@ var ptx_lunr_docs = [
   "body": " We have seen four different methods for determining the winner of an election. Through our examples and problems, we have also seen that these different methods can lead to different winners! In particular, in the Math Club President election considered throughout the exercises, it turns out that each of the four voting methods leads to each of the four candidates being declared the winner!   "
 },
 {
+  "id": "activity-02-intro-activity",
+  "level": "1",
+  "url": "activity-02-intro-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "02. Activity Apportionment Methods",
+  "body": " 02. Activity Apportionment Methods     Apportionment is the problem of dividing up a fixed number of things among groups of different sizes. In politics, this takes the form of allocating a limited number of representatives amongst voters. This problem, presumably, is older than the United States, but the best-known ways to solve it have their origins in the problem of assigning each state an appropriate number of representatives in the new Congress when the country was formed. Apportionment theory is also used in many non-political situations, such as staffing a hospital with the appropriate number of nurses per shift and allocating buses to cover a set of bus routes based on the number of passengers.  The goal with any apportionment problem is to find a way to fairly distribute the items (e.g., doctors, buses, instructors) amoung the groups (e.g., clinics, routes, courses).  We face several real-world restrictions in this distribution process:    The things being divided up can exist only in whole numbers.    We must use all of the things being divided up, and we cannot use any more.    Each group must get at least one of the things being divided up.    The number of things assigned to each group should be at least approximately proportional to the population of the group. (Exact proportionality isn't possible because of the whole number requirement, but we should try to be close, and in any case, if Group A is larger than Group B, then Group B shouldn't get more of the things than Group A does.)    In terms of the apportionment of the United States House of Representatives, these rules imply:     We can only have whole representatives. Massachusetts can't have 8.4 representatives.    We can only use the (currently) 435 representatives available. If one state gets another representative, another state has to lose one.    Every state gets at least one representative.    The number of representatives each state gets should be approximately proportional to the state population. This way, the number of constituents each representative has should be approximately equal.     There are many different methods for solving an apportionment problem. In this course, we will discuss three of them: Hamilton's method, Jefferson's method, and Adams method. The first step for each method will be to compute the standard divisor and standard quotas.   See for the apportionment notes.                 Standard Divisor and Standard Quotas       Hamilton's Method       Jefferson's Method       Adam's Method      "
+},
+{
+  "id": "activity-02-intro-activity-3-1",
+  "level": "2",
+  "url": "activity-02-intro-activity.html#activity-02-intro-activity-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-02-intro-activity-4-1",
+  "level": "2",
+  "url": "activity-02-intro-activity.html#activity-02-intro-activity-4-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-02-intro-activity-5-1",
+  "level": "2",
+  "url": "activity-02-intro-activity.html#activity-02-intro-activity-5-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Standard Divisor and Standard Quotas.",
+  "body": " Standard Divisor and Standard Quotas   "
+},
+{
+  "id": "activity-02-intro-activity-6-1",
+  "level": "2",
+  "url": "activity-02-intro-activity.html#activity-02-intro-activity-6-1",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Hamilton’s Method.",
+  "body": " Hamilton's Method   "
+},
+{
+  "id": "activity-02-intro-activity-7-1",
+  "level": "2",
+  "url": "activity-02-intro-activity.html#activity-02-intro-activity-7-1",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Jefferson’s Method.",
+  "body": " Jefferson's Method   "
+},
+{
+  "id": "activity-02-intro-activity-8-1",
+  "level": "2",
+  "url": "activity-02-intro-activity.html#activity-02-intro-activity-8-1",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "Adam’s Method.",
+  "body": " Adam's Method   "
+},
+{
   "id": "handouts",
   "level": "1",
   "url": "handouts.html",

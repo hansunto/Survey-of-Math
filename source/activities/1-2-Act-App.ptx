@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-02-intro-activity" xmlns:xi="http://w3.org">
+    <title>02. Activity Apportionment Methods</title>
+    <page>
+    <!-- Optional introduction -->
+    <introduction>
+        <p>
+        Apportionment is the problem of dividing up a fixed number of things
+        among groups of different sizes. In politics, this takes the form of 
+        allocating a limited number of representatives amongst voters. 
+        This problem, presumably, is older than the United States, but the 
+        best-known ways to solve it have their origins in the problem of assigning 
+        each state an appropriate number of representatives in the new Congress 
+        when the country was formed. Apportionment theory is also used in many 
+        non-political situations, such as staffing a hospital with the appropriate 
+        number of nurses per shift and allocating buses to cover a set of bus routes 
+        based on the number of passengers.
+        </p>
+        
+        <p>
+        The goal with any apportionment problem is to find a way to fairly 
+        distribute the items (e.g., doctors, buses, instructors) amoung the groups 
+        (e.g., clinics, routes, courses). 
+        </p> 
+        <p> 
+        We face several real-world restrictions in this distribution process: 
+        </p> 
+        <ol label="1">
+        <li> <p> The things being divided up can exist only in whole numbers.  </p> </li>
+        <li> <p> We must use all of the things being divided up, and we cannot use any more.  </p> </li>
+        <li> <p> Each group must get at least one of the things being divided up. </p> </li>
+        <li> <p> The number of things assigned to each group should be at least approximately 
+        proportional to the population of the group. (Exact proportionality isn't 
+        possible because of the whole number requirement, but we should try to be 
+        close, and in any case, if Group A is larger than Group B, then Group B 
+        shouldn't get more of the things than Group A does.) </p> </li>
+        </ol>
+
+     <p> In terms of the apportionment of the United States House of Representatives, these rules imply: </p>
+ <p> <ol label="1">   
+    <li> <p> We can only have whole representatives. Massachusetts can't have 8.4 representatives.</p> </li>
+    <li> <p> We can only use the (currently) 435 representatives available. If one state gets another representative, another state has to lose one. </p> </li>
+    <li> <p> Every state gets at least one representative. </p> </li>
+    <li> <p> The number of representatives each state gets should be approximately proportional to the state population. This way, the number of constituents each representative has should be approximately equal. </p> </li>
+ </ol> </p>
+ <p> There are many different methods for solving an apportionment problem. In this course, we will discuss three of them: Hamilton's method, Jefferson's method, and Adams method. The first step for each method will be to compute the standard divisor and standard quotas.
+    </p>
+    </introduction>
+    
+    <p>See <xref ref="section-apportionment" /> for the apportionment notes.</p>
+</page>
+
+    <!-- Exercises start here. -->
+    <page>
+        <exercise workspace="0.2in">
+            <myopenmath problem="1445055" />
+        </exercise>
+    </page>
+    <page>
+        <exercise workspace="0.2in">
+            <myopenmath problem="1445054" />
+        </exercise>
+    </page>
+
+    <!--<page>
+        <exercise workspace="2in">
+            <title>Standard Divisor and Standard Quotas</title>
+            <myopenmath problem="1445059" />
+        </exercise>
+    </page>-->
+    <page>
+        <exercise workspace="2in">
+            <title>Standard Divisor and Standard Quotas</title>
+            <myopenmath problem="1445060" />
+        </exercise>
+    </page>
+    <page>
+        <exercise workspace="2in">
+            <title>Hamilton's Method</title>
+            <myopenmath problem="1445078" />
+        </exercise>
+    </page>
+    <page>
+        <exercise workspace="2in">
+            <title>Jefferson's Method</title>
+            <myopenmath problem="1445079" />
+        </exercise>
+    </page>
+    <page>
+        <exercise workspace="2in">
+            <title>Adam's Method</title>
+            <myopenmath problem="1445082" />
+        </exercise>
+    </page>
+    <!--<exercise workspace="2in"> <statement> <p> Add MyOpeMath question </p> </statement> </exercise>-->
+</worksheet>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1445078">
+<statement>
+<p>
+An HMO has <m>\displaystyle{40}</m> doctors to be apportioned among four clinics (<m>\displaystyle{A}</m>, <m>\displaystyle{B}</m>, <m>\displaystyle{C}</m>, <m>\displaystyle{D}</m>). The HMO decides to apportion the doctors based on the average weekly patient load for each clinic, shown in the table below. Use Hamilton's method to apportion the doctors to the clinics.</p>
+<p>
+Recall the standard divisor for this problem is <m>\displaystyle{50.05}</m>.</p><image width="100%" pi:generated="problems/images/mom-1445078-1.PNG"/><p>
+Total doctors for Clinic <m>\displaystyle{A}</m> = <fillin characters="20"/>   </p>
+<p>
+Total doctors for Clinic <m>\displaystyle{B}</m> = <fillin characters="20"/>   </p>
+<p>
+Total doctors for Clinic <m>\displaystyle{C}</m> = <fillin characters="20"/>   </p>
+<p>
+Total doctors for Clinic <m>\displaystyle{D}</m> = <fillin characters="20"/>   
+</p>
+</statement>
+<answer>
+<p><ul><li>6</li><li>8</li><li>12</li><li>14</li></ul></p>
+</answer>
+
+</myopenmath>

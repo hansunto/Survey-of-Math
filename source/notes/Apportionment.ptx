@@ -8,7 +8,8 @@
     <title>The Standard Divisor</title>
     <statement>
       <p>
-        The standard divisor is found by dividing the total population under consideration by the number of items to be allocated.
+        The standard divisor is found by dividing the total population under 
+        consideration by the number of items to be allocated.
       </p>
       <me>\text{Standard divisor} = \frac{\text{total population in a group}}{\text{total number of items to be apportioned}}</me>
     </statement>

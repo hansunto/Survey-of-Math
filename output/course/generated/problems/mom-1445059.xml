@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1445059">
+<statement>
+<p>
+Complete the example above by finding the standard quotas for states <m>\displaystyle{B}</m>, <m>\displaystyle{C}</m>, and <m>\displaystyle{D}</m>. Round your answers to two decimal places!</p>
+<p>
+Standard quota for state <m>\displaystyle{B}</m>:  <fillin characters="8"/>   </p>
+<p>
+Standard quota for state <m>\displaystyle{C}</m>:  <fillin characters="8"/>   </p>
+<p>
+Standard quota for state <m>\displaystyle{D}</m>:  <fillin characters="8"/>   
+</p>
+</statement>
+<answer>
+<p><ul><li>6.08</li><li>7.38</li><li>12.17</li></ul></p>
+</answer>
+
+</myopenmath>

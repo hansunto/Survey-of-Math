@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1445060">
+<statement>
+<p>
+An HMO has <m>\displaystyle{40}</m> doctors to be apportioned among four clinics (<m>\displaystyle{A}</m>, <m>\displaystyle{B}</m> ,<m>\displaystyle{C}</m> , <m>\displaystyle{D}</m>). The HMO decides to apportion the doctors based on the average weekly patient load for each clinic, shown in the table below. Find the standard divisor and the standard quota for each clinic. Round all answers, including the standard divisor, to two decimal places!</p><image width="100%" pi:generated="problems/images/mom-1445060-1.PNG"/><p>
+Standard divisor = <fillin characters="20"/>   </p>
+<p>
+Standard quota for Clinic <m>\displaystyle{A}</m> = <fillin characters="20"/>   </p>
+<p>
+Standard quota for Clinic <m>\displaystyle{B}</m> = <fillin characters="20"/>   </p>
+<p>
+Standard quota for Clinic <m>\displaystyle{C}</m> = <fillin characters="20"/>   </p>
+<p>
+Standard quota for Clinic <m>\displaystyle{D}</m> = <fillin characters="20"/>   
+</p>
+</statement>
+<answer>
+<p><ul><li>50.05</li><li>5.49</li><li>7.83</li><li>12.21</li><li>14.47</li></ul></p>
+</answer>
+
+</myopenmath>

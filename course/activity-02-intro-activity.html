@@ -14,7 +14,7 @@
 <!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>01. Activity Voting Methods</title>
+<title>02. Activity Apportionment Methods</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -136,7 +136,7 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="activities.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="activities.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="activity-02-intro-activity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="activity-01-intro-activity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="activities.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="handouts.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
@@ -216,8 +216,8 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="activities.html" class="internal"><span class="codenumber">5</span> <span class="title">In-Class Activities</span></a></div>
 <ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">01. Activity Voting Methods</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-02-intro-activity.html" class="internal"><span class="title">02. Activity Apportionment Methods</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">01. Activity Voting Methods</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="activity-02-intro-activity.html" class="internal"><span class="title">02. Activity Apportionment Methods</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="codenumber">6</span> <span class="title">Handouts</span></a></div></li>
@@ -262,55 +262,114 @@ eBookConfig.enable_chatcodes =  false;
 <button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
 </div>
 </div>
-<section class="worksheet" id="activity-01-intro-activity" data-margins="0.75in 0.75in 0.75in 0.75in">
+<section class="worksheet" id="activity-02-intro-activity" data-margins="0.75in 0.75in 0.75in 0.75in">
 <h2 class="heading hide-type">
-<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">01. Activity Voting Methods</span><div class="print-links"><a href="?printpreview=activity-01-intro-activity" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">02. Activity Apportionment Methods</span><div class="print-links"><a href="?printpreview=activity-02-intro-activity" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
 </h2>
-<section class="introduction" id="activity-01-intro-activity-2">
-<div class="para" id="activity-01-intro-activity-2-1">In many decision making situations, it is necessary to gather the group consensus using some sort of vote. While the basic idea of voting is fairly universal, the method by which those votes are used to determine a winner can vary. In deciding upon a winner, there is always one main goal: to reflect the preferences of the people in the most fair way possible. We will discuss four different methods for determining the winner of an election using preference ballots, and will see that we can sometimes have different winners under different methods of voting.<div class="autopermalink" data-description="Paragraph"><a href="#activity-01-intro-activity-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section>
-<div class="para" id="activity-01-intro-activity-3">See <a href="notes-Voting.html" class="internal" title="Section: Voting methods">Section </a> for the voting notes.<div class="autopermalink" data-description="Paragraph"><a href="#activity-01-intro-activity-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="onepage" id="activity-02-intro-activity-2">
+<div class="introduction" id="activity-02-intro-activity-2-1">
+<div class="para" id="activity-02-intro-activity-2-1-1">Apportionment is the problem of dividing up a fixed number of things among groups of different sizes. In politics, this takes the form of allocating a limited number of representatives amongst voters. This problem, presumably, is older than the United States, but the best-known ways to solve it have their origins in the problem of assigning each state an appropriate number of representatives in the new Congress when the country was formed. Apportionment theory is also used in many non-political situations, such as staffing a hospital with the appropriate number of nurses per shift and allocating buses to cover a set of bus routes based on the number of passengers.<div class="autopermalink" data-description="Paragraph"><a href="#activity-02-intro-activity-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<section class="onepage" id="activity-01-intro-activity-4">
-<article class="exercise exercise-like" id="activity-01-intro-activity-4-1"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div id="momactivity-01-intro-activity-4-1-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-01-intro-activity-4-1-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1410996&amp;frame_id=momactivity-01-intro-activity-4-1-1"></iframe></div>
+<div class="para" id="activity-02-intro-activity-2-1-2">The goal with any apportionment problem is to find a way to fairly distribute the items (e.g., doctors, buses, instructors) amoung the groups (e.g., clinics, routes, courses).<div class="autopermalink" data-description="Paragraph"><a href="#activity-02-intro-activity-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="activity-02-intro-activity-2-1-3">We face several real-world restrictions in this distribution process:<div class="autopermalink" data-description="Paragraph"><a href="#activity-02-intro-activity-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ol class="decimal ol-marker-1" id="activity-02-intro-activity-2-1-4">
+<li id="activity-02-intro-activity-2-1-4-1">
+<div class="para" id="activity-02-intro-activity-2-1-4-1-1">The things being divided up can exist only in whole numbers.<div class="autopermalink" data-description="Paragraph"><a href="#activity-02-intro-activity-2-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#activity-02-intro-activity-2-1-4-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="activity-02-intro-activity-2-1-4-2">
+<div class="para" id="activity-02-intro-activity-2-1-4-2-1">We must use all of the things being divided up, and we cannot use any more.<div class="autopermalink" data-description="Paragraph"><a href="#activity-02-intro-activity-2-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#activity-02-intro-activity-2-1-4-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="activity-02-intro-activity-2-1-4-3">
+<div class="para" id="activity-02-intro-activity-2-1-4-3-1">Each group must get at least one of the things being divided up.<div class="autopermalink" data-description="Paragraph"><a href="#activity-02-intro-activity-2-1-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#activity-02-intro-activity-2-1-4-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="activity-02-intro-activity-2-1-4-4">
+<div class="para" id="activity-02-intro-activity-2-1-4-4-1">The number of things assigned to each group should be at least approximately proportional to the population of the group. (Exact proportionality isn’t possible because of the whole number requirement, but we should try to be close, and in any case, if Group A is larger than Group B, then Group B shouldn’t get more of the things than Group A does.)<div class="autopermalink" data-description="Paragraph"><a href="#activity-02-intro-activity-2-1-4-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#activity-02-intro-activity-2-1-4-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="para" id="activity-02-intro-activity-2-1-5">In terms of the apportionment of the United States House of Representatives, these rules imply:<div class="autopermalink" data-description="Paragraph"><a href="#activity-02-intro-activity-2-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="activity-02-intro-activity-2-1-6">
+<ol class="decimal ol-marker-1" id="activity-02-intro-activity-2-1-6-1">
+<li id="activity-02-intro-activity-2-1-6-1-1">
+<div class="para" id="activity-02-intro-activity-2-1-6-1-1-1">We can only have whole representatives. Massachusetts can’t have 8.4 representatives.<div class="autopermalink" data-description="Paragraph"><a href="#activity-02-intro-activity-2-1-6-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#activity-02-intro-activity-2-1-6-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="activity-02-intro-activity-2-1-6-1-2">
+<div class="para" id="activity-02-intro-activity-2-1-6-1-2-1">We can only use the (currently) 435 representatives available. If one state gets another representative, another state has to lose one.<div class="autopermalink" data-description="Paragraph"><a href="#activity-02-intro-activity-2-1-6-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#activity-02-intro-activity-2-1-6-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="activity-02-intro-activity-2-1-6-1-3">
+<div class="para" id="activity-02-intro-activity-2-1-6-1-3-1">Every state gets at least one representative.<div class="autopermalink" data-description="Paragraph"><a href="#activity-02-intro-activity-2-1-6-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#activity-02-intro-activity-2-1-6-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="activity-02-intro-activity-2-1-6-1-4">
+<div class="para" id="activity-02-intro-activity-2-1-6-1-4-1">The number of representatives each state gets should be approximately proportional to the state population. This way, the number of constituents each representative has should be approximately equal.<div class="autopermalink" data-description="Paragraph"><a href="#activity-02-intro-activity-2-1-6-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#activity-02-intro-activity-2-1-6-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#activity-02-intro-activity-2-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="activity-02-intro-activity-2-1-7">There are many different methods for solving an apportionment problem. In this course, we will discuss three of them: Hamilton’s method, Jefferson’s method, and Adams method. The first step for each method will be to compute the standard divisor and standard quotas.<div class="autopermalink" data-description="Paragraph"><a href="#activity-02-intro-activity-2-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="para" id="activity-02-intro-activity-2-2">See <a href="section-apportionment.html" class="internal" title="Section: Apportionment">Section </a> for the apportionment notes.<div class="autopermalink" data-description="Paragraph"><a href="#activity-02-intro-activity-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="onepage" id="activity-02-intro-activity-3">
+<article class="exercise exercise-like" id="activity-02-intro-activity-3-1"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div id="momactivity-02-intro-activity-3-1-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-02-intro-activity-3-1-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1445055&amp;frame_id=momactivity-02-intro-activity-3-1-1"></iframe></div>
+<div class="workspace" data-space="0.2in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activity-02-intro-activity-3-1" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+</article></section><section class="onepage" id="activity-02-intro-activity-4">
+<article class="exercise exercise-like" id="activity-02-intro-activity-4-1"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div id="momactivity-02-intro-activity-4-1-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-02-intro-activity-4-1-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1445054&amp;frame_id=momactivity-02-intro-activity-4-1-1"></iframe></div>
+<div class="workspace" data-space="0.2in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activity-02-intro-activity-4-1" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article></section><section class="onepage" id="activity-02-intro-activity-5">
+<article class="exercise exercise-like" id="activity-02-intro-activity-5-1"><h3 class="heading">
+<span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Standard Divisor and Standard Quotas.</span>
+</h3>
+<div id="momactivity-02-intro-activity-5-1-2wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-02-intro-activity-5-1-2" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1445060&amp;frame_id=momactivity-02-intro-activity-5-1-2"></iframe></div>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activity-01-intro-activity-4-1" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
-</article></section><section class="onepage" id="activity-01-intro-activity-5">
-<article class="exercise exercise-like" id="activity-01-intro-activity-5-1"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div id="momactivity-01-intro-activity-5-1-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-01-intro-activity-5-1-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1410999&amp;frame_id=momactivity-01-intro-activity-5-1-1"></iframe></div>
+<div class="autopermalink" data-description="Worksheet Exercise 3: Standard Divisor and Standard Quotas"><a href="#activity-02-intro-activity-5-1" title="Copy heading and permalink for Worksheet Exercise 3: Standard Divisor and Standard Quotas" aria-label="Copy heading and permalink for Worksheet Exercise 3: Standard Divisor and Standard Quotas">🔗</a></div>
+</article></section><section class="onepage" id="activity-02-intro-activity-6">
+<article class="exercise exercise-like" id="activity-02-intro-activity-6-1"><h3 class="heading">
+<span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Hamilton’s Method.</span>
+</h3>
+<div id="momactivity-02-intro-activity-6-1-2wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-02-intro-activity-6-1-2" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1445078&amp;frame_id=momactivity-02-intro-activity-6-1-2"></iframe></div>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activity-01-intro-activity-5-1" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
-</article></section><section class="onepage" id="activity-01-intro-activity-6">
-<article class="exercise exercise-like" id="activity-01-intro-activity-6-1"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div id="momactivity-01-intro-activity-6-1-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-01-intro-activity-6-1-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1411004&amp;frame_id=momactivity-01-intro-activity-6-1-1"></iframe></div>
+<div class="autopermalink" data-description="Worksheet Exercise 4: Hamilton’s Method"><a href="#activity-02-intro-activity-6-1" title="Copy heading and permalink for Worksheet Exercise 4: Hamilton’s Method" aria-label="Copy heading and permalink for Worksheet Exercise 4: Hamilton’s Method">🔗</a></div>
+</article></section><section class="onepage" id="activity-02-intro-activity-7">
+<article class="exercise exercise-like" id="activity-02-intro-activity-7-1"><h3 class="heading">
+<span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Jefferson’s Method.</span>
+</h3>
+<div id="momactivity-02-intro-activity-7-1-2wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-02-intro-activity-7-1-2" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1445079&amp;frame_id=momactivity-02-intro-activity-7-1-2"></iframe></div>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#activity-01-intro-activity-6-1" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
-</article></section><section class="onepage" id="activity-01-intro-activity-7">
-<article class="exercise exercise-like" id="activity-01-intro-activity-7-1"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div id="momactivity-01-intro-activity-7-1-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-01-intro-activity-7-1-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1411007&amp;frame_id=momactivity-01-intro-activity-7-1-1"></iframe></div>
+<div class="autopermalink" data-description="Worksheet Exercise 5: Jefferson’s Method"><a href="#activity-02-intro-activity-7-1" title="Copy heading and permalink for Worksheet Exercise 5: Jefferson’s Method" aria-label="Copy heading and permalink for Worksheet Exercise 5: Jefferson’s Method">🔗</a></div>
+</article></section><section class="onepage" id="activity-02-intro-activity-8">
+<article class="exercise exercise-like" id="activity-02-intro-activity-8-1"><h3 class="heading">
+<span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Adam’s Method.</span>
+</h3>
+<div id="momactivity-02-intro-activity-8-1-2wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-02-intro-activity-8-1-2" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1445082&amp;frame_id=momactivity-02-intro-activity-8-1-2"></iframe></div>
 <div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#activity-01-intro-activity-7-1" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>
-</article></section><section class="onepage" id="activity-01-intro-activity-8">
-<article class="exercise exercise-like" id="activity-01-intro-activity-8-1"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div id="momactivity-01-intro-activity-8-1-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-01-intro-activity-8-1-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1411010&amp;frame_id=momactivity-01-intro-activity-8-1-1"></iframe></div>
-<div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 5"><a href="#activity-01-intro-activity-8-1" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div>
-</article></section><section class="onepage" id="activity-01-intro-activity-9">
-<article class="exercise exercise-like" id="activity-01-intro-activity-9-1"><h3 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div id="momactivity-01-intro-activity-9-1-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-01-intro-activity-9-1-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1411014&amp;frame_id=momactivity-01-intro-activity-9-1-1"></iframe></div>
-<div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 6"><a href="#activity-01-intro-activity-9-1" title="Copy heading and permalink for Worksheet Exercise 6" aria-label="Copy heading and permalink for Worksheet Exercise 6">🔗</a></div>
-</article></section><section class="onepage" id="activity-01-intro-activity-10">
-<article class="exercise exercise-like" id="activity-01-intro-activity-10-1"><h3 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div id="momactivity-01-intro-activity-10-1-2wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-01-intro-activity-10-1-2" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1411035&amp;frame_id=momactivity-01-intro-activity-10-1-2"></iframe></div>
-<div class="workspace" data-space="2in"></div>
-<div class="autopermalink" data-description="Worksheet Exercise 7"><a href="#activity-01-intro-activity-10-1" title="Copy heading and permalink for Worksheet Exercise 7" aria-label="Copy heading and permalink for Worksheet Exercise 7">🔗</a></div>
-</article></section><div class="autopermalink" data-description="Worksheet: 01. Activity Voting Methods"><a href="#activity-01-intro-activity" title="Copy heading and permalink for Worksheet: 01. Activity Voting Methods" aria-label="Copy heading and permalink for Worksheet: 01. Activity Voting Methods">🔗</a></div>
+<div class="autopermalink" data-description="Worksheet Exercise 6: Adam’s Method"><a href="#activity-02-intro-activity-8-1" title="Copy heading and permalink for Worksheet Exercise 6: Adam’s Method" aria-label="Copy heading and permalink for Worksheet Exercise 6: Adam’s Method">🔗</a></div>
+</article></section><div class="autopermalink" data-description="Worksheet: 02. Activity Apportionment Methods"><a href="#activity-02-intro-activity" title="Copy heading and permalink for Worksheet: 02. Activity Apportionment Methods" aria-label="Copy heading and permalink for Worksheet: 02. Activity Apportionment Methods">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="activities.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="activity-02-intro-activity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="activity-01-intro-activity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="handouts.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

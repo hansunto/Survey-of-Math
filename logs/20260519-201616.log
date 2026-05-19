@@ -12,7 +12,7 @@ INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/so
 INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/assets
 INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
 INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
-INFO    : converting /workspaces/Survey-of-Math/source/main.ptx to LaTeX as /tmp/ptx-rfuja0uu/main.tex
+INFO    : converting /workspaces/Survey-of-Math/source/main.ptx to LaTeX as /tmp/ptx-u6c1zngg/main.tex
 INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/pretext-latex.xsl
 INFO    : messages from the log for XSL processing:
 INFO    : * PTX:INFO:   checking all deprecated elements.

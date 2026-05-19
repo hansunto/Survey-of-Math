@@ -12,17 +12,19 @@ INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/so
 INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/assets
 INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
 INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
-INFO    : converting /workspaces/Survey-of-Math/source/main.ptx to LaTeX as /tmp/ptx-rfuja0uu/main.tex
+INFO    : converting /workspaces/Survey-of-Math/source/main.ptx to LaTeX as /tmp/ptx-o32_88gy/main.tex
 INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/pretext-latex.xsl
 INFO    : messages from the log for XSL processing:
 INFO    : * PTX:INFO:   checking all deprecated elements.
 INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/pretext-latex.xsl
-CRITICAL: [Errno 2] No such file or directory: 'main.pdf'
-INFO    : ------------------------
-CRITICAL: Failed to build without errors.  Exiting...
+INFO    : Rerunning LaTeX for main.tex (pass 2)
+INFO    : Removing temporary directory /tmp/ptx-o32_88gy
+INFO    : Removing temporary directory /tmp/ptx-gstp_569
+INFO    : Removing temporary directory /tmp/ptx-42hda8s0
 INFO    : 
-----------------------------------------------------
-INFO    : While running pretext, the following errors occurred:
+Finished build for target print. The output is in /workspaces/Survey-of-Math/output/print.
 
-INFO    : (see log messages above or in the 'logs' folder for more information)
-INFO    : ----------------------------------------------------
+INFO    : 
+Success!  Built requested target(s) without errors.
+
+INFO    : 

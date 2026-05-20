@@ -2161,6 +2161,141 @@ var ptx_lunr_docs = [
   "body": " Adam's Method   "
 },
 {
+  "id": "activity-03-intro-activity",
+  "level": "1",
+  "url": "activity-03-intro-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "03. Activity Simple Interest",
+  "body": " 03. Activity Simple Interest     We have to work with money every day. While balancing your checkbook or calculating your monthly expenditures on coffee requires only arithmetic, when we start saving, planning for retirement, or need a loan, we need more mathematics!  See for the simple interest notes.   Discussing interest starts with the principal, which is the amount your account starts with. This could be a starting investment or the starting amount of a loan. Interest is the amount earned for depositing money or the amount paid for borrowing money. It is calculated as a percentage of the principal (called the interest rate) and is written as a decimal (for example, is ).  For a simple example, if you borrowed from a friend and agreed to repay it with interest, then the amount of interest you would pay would just be of : . The total amount you would repay would be , which is the original principal plus the interest. This is an example of one-time simple interest, where the interest is calculated based on the principal only.        One-time simple interest is only common for extremely short-term loans. For longer-term loans, it is common for interest to be paid on a daily, monthly, quarterly, or annual basis. In that case, interest would be earned regularly. For example, bonds are essentially a loan made to the bond issuer (a company or government) by you, the bondholder. In return for the loan, the issuer agrees to pay interest, often annually. Bonds have a maturity date, at which time the issuer pays back the original bond value.    Suppose your city is building a new park, and issues bonds to raise the money to build it. You obtain a bond that pays interest annually that matures in years. How much interest will you earn?    Each year you would earn interest: . So, over the course of five years, you would earn a total of . When the bond matures, you would receive back the you originally paid, leaving you with a total of .    Notice how the amount of interest ( ) was computed in this example: we multiplied the principal by the interest rate (represented as a decimal), then multiplied this by the number of years. We can generalize this idea of simple interest over time to obtain a formula that we can use to find the amount of simple interest earned: where:  is the amount of simple interest  is the principal (starting amount)  is the interest rate represented as a decimal  is the time in years     You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!   Let's look at a quick example demonstrating the simple interest formula.    A student took out a simple interest loan for for years at a rate of to purchase a used car. What is the interest on the loan?    We are given the following: , , and . Using the simple interest formula, the amount of interest on the loan is:             -->  While finding the amount of interest accrued for a loan is important, it is perhaps more important that we determine the total amount that must be repaid. We will call this amount — that is, the total amount required to be repaid in a loan or the total amount earned in an investment — the future value . We will denote this quantity with the variable .  As we saw with the example on the previous page involving a city issuing bonds to build a new park, the future value of a loan can be found by adding together the principal and the interest. This is true for an investment as well. This will allow us to develop a formula for the future value involving simple interest: Since , we can substitute this into the equation to get: This short calculation provides us with a formula for computing the future value for a simple interest loan or investment: where:  is the future value of the loan or investment  is the principal (starting amount) of the loan or investment  is the interest rate represented as a decimal  is the time in years     You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!   Let's look at a quick example demonstrating the simple interest formula.    A loan of has been made at for months. Find the loan’s future value.    We are given the following: and .  For , note that we are given a time in months, not years! For the simple interest formula to be used correctly, we must give this value in years. Since there are months in a year, we can always convert from months to years by dividing the number of months by . In this case, we have:   Now, using the formula above we find a future value of:                  In addition to determining the future value for a simple interest loan or investment, the simple interest formula can be used to solve other types of problems. We might want to know how much we should deposit into an account with a given simple interest rate to ensure we have a given amount in the future. Or, like in the example below, we might want to determine the simple interest rate based on the principal and future values.    You borrow from a friend and promise to pay back in months. What simple interest rate will you pay?    We are given the following: , , and years.  We are looking to find the value of (hence, the \"?\"). We substitute the given values into the simple interest formula and solve for :    Divide both sides by : Subtract from both sides: Divide by :   Since , we convert this to a percent to get a simple interest rate of .         "
+},
+{
+  "id": "activity-03-intro-activity-2-4",
+  "level": "2",
+  "url": "activity-03-intro-activity.html#activity-03-intro-activity-2-4",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-03-intro-activity-3-2",
+  "level": "2",
+  "url": "activity-03-intro-activity.html#activity-03-intro-activity-3-2",
+  "type": "Example",
+  "number": "5.1",
+  "title": "",
+  "body": "  Suppose your city is building a new park, and issues bonds to raise the money to build it. You obtain a bond that pays interest annually that matures in years. How much interest will you earn?    Each year you would earn interest: . So, over the course of five years, you would earn a total of . When the bond matures, you would receive back the you originally paid, leaving you with a total of .   "
+},
+{
+  "id": "activity-03-intro-activity-3-4",
+  "level": "2",
+  "url": "activity-03-intro-activity.html#activity-03-intro-activity-3-4",
+  "type": "Note",
+  "number": "5.2",
+  "title": "",
+  "body": " You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!  "
+},
+{
+  "id": "activity-03-intro-activity-3-6",
+  "level": "2",
+  "url": "activity-03-intro-activity.html#activity-03-intro-activity-3-6",
+  "type": "Example",
+  "number": "5.3",
+  "title": "",
+  "body": "  A student took out a simple interest loan for for years at a rate of to purchase a used car. What is the interest on the loan?    We are given the following: , , and . Using the simple interest formula, the amount of interest on the loan is:    "
+},
+{
+  "id": "activity-03-intro-activity-4-1",
+  "level": "2",
+  "url": "activity-03-intro-activity.html#activity-03-intro-activity-4-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-03-intro-activity-4-2",
+  "level": "2",
+  "url": "activity-03-intro-activity.html#activity-03-intro-activity-4-2",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-03-intro-activity-5-1",
+  "level": "2",
+  "url": "activity-03-intro-activity.html#activity-03-intro-activity-5-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "future value "
+},
+{
+  "id": "activity-03-intro-activity-5-3",
+  "level": "2",
+  "url": "activity-03-intro-activity.html#activity-03-intro-activity-5-3",
+  "type": "Note",
+  "number": "5.4",
+  "title": "",
+  "body": " You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!  "
+},
+{
+  "id": "activity-03-intro-activity-5-5",
+  "level": "2",
+  "url": "activity-03-intro-activity.html#activity-03-intro-activity-5-5",
+  "type": "Example",
+  "number": "5.5",
+  "title": "",
+  "body": "  A loan of has been made at for months. Find the loan’s future value.    We are given the following: and .  For , note that we are given a time in months, not years! For the simple interest formula to be used correctly, we must give this value in years. Since there are months in a year, we can always convert from months to years by dividing the number of months by . In this case, we have:   Now, using the formula above we find a future value of:    "
+},
+{
+  "id": "activity-03-intro-activity-6-1",
+  "level": "2",
+  "url": "activity-03-intro-activity.html#activity-03-intro-activity-6-1",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-03-intro-activity-6-2",
+  "level": "2",
+  "url": "activity-03-intro-activity.html#activity-03-intro-activity-6-2",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-03-intro-activity-6-3",
+  "level": "2",
+  "url": "activity-03-intro-activity.html#activity-03-intro-activity-6-3",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-03-intro-activity-7-2",
+  "level": "2",
+  "url": "activity-03-intro-activity.html#activity-03-intro-activity-7-2",
+  "type": "Example",
+  "number": "5.6",
+  "title": "",
+  "body": "  You borrow from a friend and promise to pay back in months. What simple interest rate will you pay?    We are given the following: , , and years.  We are looking to find the value of (hence, the \"?\"). We substitute the given values into the simple interest formula and solve for :    Divide both sides by : Subtract from both sides: Divide by :   Since , we convert this to a percent to get a simple interest rate of .   "
+},
+{
+  "id": "activity-03-intro-activity-7-3",
+  "level": "2",
+  "url": "activity-03-intro-activity.html#activity-03-intro-activity-7-3",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  "
+},
+{
   "id": "handouts",
   "level": "1",
   "url": "handouts.html",

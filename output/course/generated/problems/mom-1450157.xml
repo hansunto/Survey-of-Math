@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1450157">
+<statement>
+<p>
+You take out a simple interest loan for <m>\displaystyle\${500}</m> for 3 years at an interest rate of <m>\displaystyle{4}\%</m>to pay for textbooks. What is the simple interest on the loan?</p>
+<p>
+<dollar/> <fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>60</li></ul></p>
+</answer>
+
+</myopenmath>

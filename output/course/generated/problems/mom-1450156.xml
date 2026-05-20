@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1450156">
+<statement>
+<p>
+In the simple interest formula <m>\displaystyle{I}={P}{r}{t}</m>, what unit must <m>\displaystyle{t}</m> be given in?</p>
+<p><ol style="list-style-type:upper-alpha"><li>Weeks</li> 
+<li>Days</li> 
+<li>Months</li> 
+<li>Decimals</li> 
+<li>Quarters</li> 
+<li>Years</li> 
+<li>Whatever unit is given in the problem</li> 
+<li>There is no particular unit</li> 
+</ol></p>
+
+
+</statement>
+<answer>
+<p><ul><li>F: Years</li></ul></p>
+</answer>
+
+</myopenmath>

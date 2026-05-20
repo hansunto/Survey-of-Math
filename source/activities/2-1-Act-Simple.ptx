@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-03-intro-activity" xmlns:xi="http://w3.org">
+    <title>03. Activity Simple Interest</title>
+<page>
+    <!-- Optional introduction -->
+    <introduction>
+  <p>
+    We have to work with money every day. While balancing your checkbook or 
+    calculating your monthly expenditures on coffee requires only arithmetic, 
+    when we start saving, planning for retirement, or need a loan, we need 
+    more mathematics!
+  </p>
+  <p>See <xref ref="notes-simple-interest" /> for the simple interest notes.</p>
+</introduction>
+
+  <p>
+    Discussing interest starts with the principal, which is the amount your 
+    account starts with. This could be a starting investment or the starting 
+    amount of a loan. Interest is the amount earned for depositing money or 
+    the amount paid for borrowing money. It is calculated as a percentage of 
+    the principal (called the interest rate) and is written as a decimal (for 
+    example, <m>5\%</m> is <m>0.05</m>).
+  </p>
+  <p>
+    For a simple example, if you borrowed <m>\$100</m> from a friend and agreed 
+    to repay it with <m>5\%</m> interest, then the amount of interest you would 
+    pay would just be <m>5\%</m> of <m>\$100</m>: 
+    <me>\$100 \times 0.05 = \$5</me>. 
+    The total amount you would repay would be <m>\$105</m>, which is the original 
+    principal plus the interest. This is an example of one-time simple interest, 
+    where the interest is calculated based on the principal only.
+  </p>
+
+    <!-- Exercises start here. -->
+        <exercise workspace="0.2in">
+            <myopenmath problem="1450155" />
+        </exercise>
+</page>
+<page>
+    <p>
+  One-time simple interest is only common for extremely short-term loans. For longer-term 
+  loans, it is common for interest to be paid on a daily, monthly, quarterly, or annual 
+  basis. In that case, interest would be earned regularly. For example, bonds are 
+  essentially a loan made to the bond issuer (a company or government) by you, the bondholder. 
+  In return for the loan, the issuer agrees to pay interest, often annually. Bonds have a 
+  maturity date, at which time the issuer pays back the original bond value.
+</p>
+
+<example>
+  <statement>
+    <p>
+      Suppose your city is building a new park, and issues bonds to raise the money to build it. 
+      You obtain a <m>\$1,000</m> bond that pays <m>5\%</m> interest annually that matures 
+      in <m>5</m> years. How much interest will you earn?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Each year you would earn interest: <me>\$1,000 \times 0.05 = \$50</me>. 
+      So, over the course of five years, you would earn a total of 
+      <me>\$50 \times 5 = \$250</me>. 
+      When the bond matures, you would receive back the <m>\$1,000</m> you originally paid, 
+      leaving you with a total of <m>\$1,250</m>.
+    </p>
+  </solution>
+</example>
+
+<p>
+  Notice how the amount of interest (<m>I</m>) was computed in this example: we multiplied 
+  the principal by the interest rate (represented as a decimal), then multiplied this by 
+  the number of years. We can generalize this idea of simple interest over time to obtain 
+  a formula that we can use to find the amount of simple interest earned:
+  <me>I = Prt</me>
+  where:
+  <ul>
+    <li><p><m>I</m> is the amount of simple interest</p></li>
+    <li><p><m>P</m> is the principal (starting amount)</p></li>
+    <li><p><m>r</m> is the interest rate represented as a decimal</p></li>
+    <li><p><m>t</m> is the time in years</p></li>
+  </ul>
+</p>
+
+<note>
+  <p>
+    You do NOT need to memorize this formula! It will be provided for you on all 
+    quizzes and exams!
+  </p>
+</note>
+
+<p>
+  Let's look at a quick example demonstrating the simple interest formula.
+</p>
+
+<example>
+  <statement>
+    <p>
+      A student took out a simple interest loan for <m>\$5,000</m> for <m>3</m> years at a 
+      rate of <m>4\%</m> to purchase a used car. What is the interest on the loan?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We are given the following: <m>P = \$5,000</m>, <m>t = 3</m>, and <m>r = 0.04</m>. 
+      Using the simple interest formula, the amount of interest on the loan is:
+      <me>I = \$5,000 \times 0.04 \times 3 = \$600</me>
+    </p>
+  </solution>
+</example>
+</page>
+    
+<page>
+        <exercise >
+            <myopenmath problem="1450156" />
+        </exercise>
+    
+        <exercise >
+            <myopenmath problem="1450157" />
+        </exercise>
+</page>-->
+<page>
+<p>
+  While finding the amount of interest accrued for a loan is important, it is perhaps 
+  more important that we determine the total amount that must be repaid. We will call 
+  this amount — that is, the total amount required to be repaid in a loan or the total 
+  amount earned in an investment — the <term>future value</term>. We will denote this 
+  quantity with the variable <m>A</m>.
+</p>
+
+<p>
+  As we saw with the example on the previous page involving a city issuing bonds to build 
+  a new park, the future value of a loan can be found by adding together the principal 
+  and the interest. This is true for an investment as well. This will allow us to develop 
+  a formula for the future value involving simple interest:
+  <me>A = P + I</me>
+  Since <m>I = Prt</m>, we can substitute this into the equation to get:
+  <me>A = P + Prt = P(1 + rt)</me>
+  This short calculation provides us with a formula for computing the future value for 
+  a simple interest loan or investment:
+  <me>A = P(1 + rt)</me>
+  where:
+  <ul>
+    <li><p><m>A</m> is the future value of the loan or investment</p></li>
+    <li><p><m>P</m> is the principal (starting amount) of the loan or investment</p></li>
+    <li><p><m>r</m> is the interest rate represented as a decimal</p></li>
+    <li><p><m>t</m> is the time in years</p></li>
+  </ul>
+</p>
+
+<note>
+  <p>
+    You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!
+  </p>
+</note>
+
+<p>
+  Let's look at a quick example demonstrating the simple interest formula.
+</p>
+
+<example>
+  <statement>
+    <p>
+      A loan of <m>\$2,500</m> has been made at <m>6\%</m> for <m>9</m> months. Find the loan’s future value.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We are given the following: <m>P = \$2,500</m> and <m>r = 0.06</m>.
+    </p>
+    <p>
+      For <m>t</m>, note that we are given a time in months, not years! For the simple interest formula 
+      to be used correctly, we must give this value in years. Since there are <m>12</m> months in a 
+      year, we can always convert from months to years by dividing the number of months by <m>12</m>. 
+      In this case, we have:
+      <me>t = \frac{9}{12} = 0.75 \text{ years}</me>
+    </p>
+    <p>
+      Now, using the formula above we find a future value of:
+      <me>A = \$2,500(1 + 0.06 \times 0.75) = \$2,612.50</me>
+    </p>
+  </solution>
+</example>
+</page>
+    
+<page>
+    <exercise>
+            <myopenmath problem="1450159" />
+        </exercise>
+    <exercise>
+        <myopenmath problem="1450163" />
+    </exercise>
+    <exercise>
+        <myopenmath problem="1450164" />
+    </exercise>
+</page>
+
+<page>
+    <p>
+  In addition to determining the future value for a simple interest loan or investment, 
+  the simple interest formula can be used to solve other types of problems. We might want 
+  to know how much we should deposit into an account with a given simple interest rate 
+  to ensure we have a given amount in the future. Or, like in the example below, we 
+  might want to determine the simple interest rate based on the principal and future values.
+</p>
+
+<example>
+  <statement>
+    <p>
+      You borrow <m>\$500</m> from a friend and promise to pay back <m>\$560</m> in 
+      <m>18</m> months. What simple interest rate will you pay?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We are given the following: <m>P = \$500</m>, <m>A = \$560</m>, and 
+      <m>t = \frac{18}{12} = 1.5</m> years.
+    </p>
+    <p>
+      We are looking to find the value of <m>r</m> (hence, the "?"). We substitute the 
+      given values into the simple interest formula and solve for <m>r</m>:
+      <me>A = P(1 + rt)</me>
+      <me>560 = 500(1 + r \times 1.5)</me>
+    </p>
+    <p>
+      Divide both sides by <m>500</m>:
+      <me>1.12 = 1 + 1.5r</me>
+      Subtract <m>1</m> from both sides:
+      <me>0.12 = 1.5r</me>
+      Divide by <m>1.5</m>:
+      <me>r = \frac{0.12}{1.5} = 0.08</me>
+    </p>
+    <p>
+      Since <m>r = 0.08</m>, we convert this to a percent to get a simple interest 
+      rate of <m>8\%</m>.
+    </p>
+  </solution>
+</example>
+
+    <exercise workspace="2in">
+    <myopenmath problem="1450165" />
+    </exercise>
+</page>
+    <!--<exercise workspace="2in"> <statement> <p> Add MyOpeMath question </p> </statement> </exercise>-->
+</worksheet>

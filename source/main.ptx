@@ -91,6 +91,7 @@
       <!-- Remove the example and replace with your own activities -->
       <xi:include href="./activities/1-1-Act-Voting.ptx"/>
       <xi:include href="./activities/1-2-Act-App.ptx"/>
+      <xi:include href="./activities/2-1-Act-Simple.ptx"/>
       
       <!--<xi:include href="./activities/01-intro-activity.ptx"/>-->
 

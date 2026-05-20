@@ -35,9 +35,7 @@
 
     <!-- Exercises start here. -->
         <exercise workspace="0.2in">
-          <statement>
-            <myopenmath problem="1450155" />
-          </statement>
+          <myopenmath problem="1450155" />
         </exercise>
 </page>
 <page>
@@ -114,15 +112,11 @@
     
 <page>
         <exercise>
-          <statement>
-            <myopenmath problem="1450156" />
-          </statement>
+          <myopenmath problem="1450156" />
         </exercise>
     
         <exercise>
-          <statement>
-            <myopenmath problem="1450157" />
-          </statement>
+          <myopenmath problem="1450157" />
         </exercise>
 </page>-->
 <page>
@@ -191,19 +185,13 @@
     
 <page>
     <exercise>
-      <statement>
-        <myopenmath problem="1450159" />
-      </statement>
+      <myopenmath problem="1450159" />
     </exercise>
     <exercise>
-      <statement>
-        <myopenmath problem="1450163" />
-      </statement>
+      <myopenmath problem="1450163" />
     </exercise>
     <exercise>
-      <statement>
-        <myopenmath problem="1450164" />
-      </statement>
+      <myopenmath problem="1450164" />
     </exercise>
 </page>
 
@@ -250,9 +238,7 @@
 </example>
 
     <exercise workspace="2in">
-      <statement>
-        <myopenmath problem="1450165" />
-      </statement>
+      <myopenmath problem="1450165" />
     </exercise>
 </page>
     <!--<exercise workspace="2in"> <statement> <p> Add MyOpeMath question </p> </statement> </exercise>-->

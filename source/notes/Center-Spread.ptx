@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-measures-of-center-spread">
+  <title>Measures of Center and Spread</title>
+  
+  <p>
+    Understanding distributions and their measures of center and spread is crucial for solving many statistics problems on the math practice. 
+    These concepts help summarize data sets concisely and allow for easier comparison and interpretation.
+  </p>
+  
+  <p>
+    The center of a distribution describes a typical value of the data set and can be represented by the mean, median, or mode. 
+    The spread of a distribution indicates how much the data varies and can be measured using the range and standard deviation.
+  </p>
+
+  <!-- =================================================================== -->
+  <!-- SUBSECTION: MEAN                                                    -->
+  <!-- =================================================================== -->
+  <definition xml:id="def-mean">
+    <title>Mean</title>
+    <p>
+      The mean, or average, is calculated by summing all values in a data set and dividing by the number of values. 
+      It represents a central point in the data. 
+      The mean is a measure of center that is sensitive to every value in the data set, making it particularly useful when the values are relatively close to each other.
+    </p>
+    <p>
+      To calculate the mean, add up all the values in the data set and then divide by the number of values. 
+      This gives an average value that can be used to represent the entire data set.
+    </p>
+    </definition>
+
+    <example xml:id="example-mean">
+      <statement>
+        <p>
+          Find the mean of the data set <m>\{2, 4, 6, 8, 10\}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Sum the values (<m>2 + 4 + 6 + 8 + 10 = 30</m>) and divide by the number of values (<m>5</m>). 
+          The mean is <m>30/5 = 6</m>.
+        </p>
+      </solution>
+    </example>
+  
+
+  <!-- =================================================================== -->
+  <!-- SUBSECTION: MEDIAN                                                  -->
+  <!-- =================================================================== -->
+  <definition xml:id="def-median">
+    <title>Median</title>
+    <p>
+      The median is the middle value of a data set when the values are arranged in ascending order. 
+      If there is an odd number of values, the median is the middle value. 
+      If there is an even number of values, the median is the average of the two middle values.
+    </p>
+    <p>
+      The median is a useful measure of center because it is not affected by extremely high or low values (outliers). 
+      This makes it a better representative of the data set when there are outliers present.
+    </p>
+    </definition>
+
+    <example xml:id="example-median-odd">
+      <title>Odd Number of Values</title>
+      <statement>
+        <p>
+          Find the median of <m>\{3, 5, 7, 9, 11\}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The data set is already in order. 
+          The median is <m>7</m>.
+        </p>
+      </solution>
+    </example>
+
+    <example xml:id="example-median-even">
+      <title>Even Number of Values</title>
+      <statement>
+        <p>
+          Find the median of <m>\{1, 3, 5, 7, 9, 11\}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The middle values are <m>5</m> and <m>7</m>. 
+          The median is <m>(5 + 7)/2 = 6</m>.
+        </p>
+      </solution>
+    </example>
+  
+
+  <!-- =================================================================== -->
+  <!-- SUBSECTION: MODE                                                    -->
+  <!-- =================================================================== -->
+  <definition xml:id="def-mode">
+    <title>Mode</title>
+    <p>
+      The mode is the value that appears most frequently in a data set. 
+      A data set can have no mode, one mode, or multiple modes. 
+      The mode is useful for understanding which values are most common in the data set. 
+      The mode is particularly useful for categorical data, where we are interested in knowing the most frequent category.
+    </p>
+    </definition>
+
+    <example xml:id="example-mode">
+      <statement>
+        <p>
+          Find the mode of the data set <m>\{4, 4, 6, 8, 8, 8, 9\}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The mode is <m>8</m> because it appears most frequently.
+        </p>
+      </solution>
+    </example>
+  
+
+  <!-- =================================================================== -->
+  <!-- SUBSECTION: MEASURES OF SPREAD                                      -->
+  <!-- =================================================================== -->
+  <definition xml:id="def-measures-of-spread">
+    <title>Measures of Spread</title>
+    <p>
+      Measures of spread describe how much the data varies. 
+      Two common measures are range and standard deviation. 
+      These measures help to understand the variability within the data set.
+    </p>
+    </definition>
+
+    <note>
+      <title>Range</title>
+      <p>
+        The range is the difference between the maximum and minimum values in a data set. 
+        It gives a quick sense of the spread of the data. 
+        A larger range indicates greater variability, while a smaller range indicates less variability.
+      </p>
+    </note>
+
+    <example xml:id="example-range">
+      <statement>
+        <p>
+          Find the range of the data set <m>\{1, 3, 5, 7, 9\}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The range is <m>9 - 1 = 8</m>.
+        </p>
+      </solution>
+    </example>
+
+    <note>
+      <title>Standard Deviation</title>
+      <p>
+        The standard deviation measures the typical spread from the mean; it is the average distance between the mean and a value in the data set. 
+        Larger standard deviations indicate greater spread. 
+        Standard deviation is a more complex measure of spread, but it provides a more detailed picture of variability within the data set than the range.
+      </p>
+    </note>
+
+
+  <!-- =================================================================== -->
+  <!-- SUBSECTION: EFFECT OF OUTLIERS                                      -->
+  <!-- =================================================================== -->
+  <subsection xml:id="subsec-effect-of-outliers">
+    <title>Effect of Outliers</title>
+    <p>
+      Outliers are values significantly different from other values in a data set. 
+      They can greatly affect summary statistics like the mean, median, mode, range, and standard deviation.
+    </p>
+
+    <p>
+      Consider the baseline data set <m>\{1, 2, 2, 3, 100\}</m> where the outlier is <m>100</m>. 
+      The sections below highlight how this outlier impacts each statistic:
+    </p>
+
+    <dl>
+      <li>
+        <title>Effect on Mean</title>
+        <p>
+          Outliers can significantly skew the mean of a data set. 
+          Including it, the mean is skewed higher. 
+          Removing it, the mean is more representative of the majority of the data.
+        </p>
+      </li>
+      <li>
+        <title>Effect on Median</title>
+        <p>
+          The median is less affected by outliers because it is based on the middle values of the data set. 
+          In the data set <m>\{1, 2, 2, 3, 100\}</m>, the median remains <m>2</m> regardless of the outlier.
+        </p>
+      </li>
+      <li>
+        <title>Effect on Mode</title>
+        <p>
+          Outliers have little to no effect on the mode since the mode is determined by the most frequently occurring values. 
+          In the data set <m>\{1, 2, 2, 3, 100\}</m>, the mode is still <m>2</m>.
+        </p>
+      </li>
+      <li>
+        <title>Effect on Range</title>
+        <p>
+          Outliers can drastically increase the range of a data set since the range is the difference between the maximum and minimum values. 
+          In the data set <m>\{1, 2, 2, 3, 100\}</m>, the range is <m>100 - 1 = 99</m>, which is significantly affected by the outlier.
+        </p>
+      </li>
+      <li>
+        <title>Effect on Standard Deviation</title>
+        <p>
+          Outliers increase the standard deviation because they increase the average distance from the mean. 
+          The standard deviation is much larger when the outlier is included compared to when it is excluded.
+        </p>
+      </li>
+    </dl>
+  </subsection>
+
+  <!-- =================================================================== -->
+  <!-- SUBSECTION: PRACTICE QUESTIONS                                      -->
+  <!-- =================================================================== -->
+    <exercises>
+        <title>Practice Questions</title>
+      <exercise xml:id="exercise-practice-1">
+        <statement>
+          <p>
+            Find the mean of the data set <m>\{4, 6, 8, 10, 12\}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            First, sum all the values in the data set:
+            <me>4 + 6 + 8 + 10 + 12 = 40</me>
+            Next, divide the sum by the total number of values (<m>n = 5</m>):
+            <me>\text{Mean} = \frac{40}{5} = 8</me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise xml:id="exercise-practice-2">
+        <statement>
+          <p>
+            Find the median of the data set <m>\{7, 3, 9, 1, 5\}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            First, arrange the data set in ascending order:
+            <m>\{1, 3, 5, 7, 9\}</m>.
+            Since there is an odd number of values (<m>n = 5</m>), the median is the exact middle value.
+            The middle value is <m>5</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise xml:id="exercise-practice-3">
+        <statement>
+          <p>
+            Find the mode of the data set <m>\{2, 4, 4, 6, 6, 6, 8\}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Count the frequency of each value in the set:
+            <ul>
+              <li><p><m>2</m> appears <m>1</m> time</p></li>
+              <li><p><m>4</m> appears <m>2</m> times</p></li>
+              <li><p><m>6</m> appears <m>3</m> times</p></li>
+              <li><p><m>8</m> appears <m>1</m> time</p></li>
+            </ul>
+            The value <m>6</m> appears most frequently, so the mode is <m>6</m>.
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise xml:id="exercise-practice-4">
+        <statement>
+          <p>
+            Find the range of the data set <m>\{14, 18, 21, 24, 29\}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Identify the maximum and minimum values in the data set:
+            <me>\text{Maximum} = 29, \quad \text{Minimum} = 14</me>
+            Subtract the minimum value from the maximum value:
+            <me>\text{Range} = 29 - 14 = 15</me>
+          </p>
+        </solution>
+      </exercise>
+
+      <exercise xml:id="exercise-practice-5">
+        <statement>
+          <p>
+            If the mean of <m>\{2, 3, 5, 7, x\}</m> is <m>5</m>, what is <m>x</m>?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The formula for the mean of <m>5</m> values is:
+            <me>\frac{2 + 3 + 5 + 7 + x}{5} = 5</me>
+            Simplify the numerator by adding the known constants:
+            <me>\frac{17 + x}{5} = 5</me>
+            Multiply both sides by <m>5</m> to isolate the numerator:
+            <me>17 + x = 25</me>
+            Subtract <m>17</m> from both sides to find <m>x</m>:
+            <me>x = 25 - 17 = 8</me>
+          </p>
+        </solution>
+      </exercise>
+    </exercises>
+
+  <!-- =================================================================== -->
+  <!-- SUBSECTION: FREQUENTLY ASKED QUESTIONS                              -->
+  <!-- =================================================================== -->
+  <subsection xml:id="subsec-faq">
+    <title>Frequently Asked Questions</title>
+    <dl>
+      <li>
+        <title>What is the difference between mean, median, and mode?</title>
+        <p>
+          The mean is the average (sum of values divided by count), the median is the middle value when data is ordered, and the mode is the most frequently occurring value. 
+          The median is less affected by outliers than the mean.
+        </p>
+      </li>
+      <li>
+        <title>What is standard deviation?</title>
+        <p>
+          Standard deviation measures the typical spread from the mean—it is the average distance between each data point and the mean. 
+          A larger standard deviation indicates greater variability in the data set.
+        </p>
+      </li>
+      <li>
+        <title>How do I find the median of an even number of values?</title>
+        <p>
+          When there is an even number of values, the median is the average of the two middle values. 
+          First arrange the data in order, then identify the two middle values and calculate their average.
+        </p>
+      </li>
+    </dl>
+  </subsection>
+</section>

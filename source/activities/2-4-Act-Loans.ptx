@@ -38,14 +38,10 @@
 <page> 
     <!-- Exercises start here. -->
         <exercise>
-          <statement>
-            <myopenmath problem="1455416" />
-          </statement>
+          <myopenmath problem="1455416" />
         </exercise>
         <exercise>
-          <statement>
-            <myopenmath problem="1455417" />
-          </statement>
+          <myopenmath problem="1455417" />
         </exercise>
 </page>
 
@@ -86,9 +82,7 @@
 
 <page>
 <exercise>
-  <statement>
-    <myopenmath problem="1455429" />
-  </statement>
+  <myopenmath problem="1455429" />
 </exercise>
 </page>
     
@@ -134,9 +128,7 @@
 </example>
 
     <exercise>
-      <statement>
-        <myopenmath problem="1455445" />
-      </statement>
+      <myopenmath problem="1455445" />
     </exercise>
 </page>
 

@@ -2017,11 +2017,164 @@ var ptx_lunr_docs = [
   "body": " Distinct Arrangements (IMMUNOLOGY)   In how many distinct ways can the letters in IMMUNOLOGY be arranged?    There are 10 letters total. We identify the repeats: M (2), O (2). The formula for distinguishable permutations is:    TI-30XIIS:  10  PRB ( ! ) ÷  (  2  PRB  !  ×  2  PRB  !  )  ENTER .   "
 },
 {
+  "id": "sec-measures-of-center-spread",
+  "level": "1",
+  "url": "sec-measures-of-center-spread.html",
+  "type": "Section",
+  "number": "",
+  "title": "Measures of Center and Spread",
+  "body": " Measures of Center and Spread  Understanding distributions and their measures of center and spread is crucial for solving many statistics problems on the math practice. These concepts help summarize data sets concisely and allow for easier comparison and interpretation.  The center of a distribution describes a typical value of the data set and can be represented by the mean, median, or mode. The spread of a distribution indicates how much the data varies and can be measured using the range and standard deviation.      Mean  The mean, or average, is calculated by summing all values in a data set and dividing by the number of values. It represents a central point in the data. The mean is a measure of center that is sensitive to every value in the data set, making it particularly useful when the values are relatively close to each other.  To calculate the mean, add up all the values in the data set and then divide by the number of values. This gives an average value that can be used to represent the entire data set.     Find the mean of the data set .    Sum the values ( ) and divide by the number of values ( ). The mean is .        Median  The median is the middle value of a data set when the values are arranged in ascending order. If there is an odd number of values, the median is the middle value. If there is an even number of values, the median is the average of the two middle values.  The median is a useful measure of center because it is not affected by extremely high or low values (outliers). This makes it a better representative of the data set when there are outliers present.    Odd Number of Values   Find the median of .    The data set is already in order. The median is .     Even Number of Values   Find the median of .    The middle values are and . The median is .        Mode  The mode is the value that appears most frequently in a data set. A data set can have no mode, one mode, or multiple modes. The mode is useful for understanding which values are most common in the data set. The mode is particularly useful for categorical data, where we are interested in knowing the most frequent category.     Find the mode of the data set .    The mode is because it appears most frequently.        Measures of Spread  Measures of spread describe how much the data varies. Two common measures are range and standard deviation. These measures help to understand the variability within the data set.    Range  The range is the difference between the maximum and minimum values in a data set. It gives a quick sense of the spread of the data. A larger range indicates greater variability, while a smaller range indicates less variability.     Find the range of the data set .    The range is .     Standard Deviation  The standard deviation measures the typical spread from the mean; it is the average distance between the mean and a value in the data set. Larger standard deviations indicate greater spread. Standard deviation is a more complex measure of spread, but it provides a more detailed picture of variability within the data set than the range.       Effect of Outliers  Outliers are values significantly different from other values in a data set. They can greatly affect summary statistics like the mean, median, mode, range, and standard deviation.  Consider the baseline data set where the outlier is . The sections below highlight how this outlier impacts each statistic:    Effect on Mean  Outliers can significantly skew the mean of a data set. Including it, the mean is skewed higher. Removing it, the mean is more representative of the majority of the data.    Effect on Median  The median is less affected by outliers because it is based on the middle values of the data set. In the data set , the median remains regardless of the outlier.    Effect on Mode  Outliers have little to no effect on the mode since the mode is determined by the most frequently occurring values. In the data set , the mode is still .    Effect on Range  Outliers can drastically increase the range of a data set since the range is the difference between the maximum and minimum values. In the data set , the range is , which is significantly affected by the outlier.    Effect on Standard Deviation  Outliers increase the standard deviation because they increase the average distance from the mean. The standard deviation is much larger when the outlier is included compared to when it is excluded.         Practice Questions    Find the mean of the data set .    First, sum all the values in the data set: Next, divide the sum by the total number of values ( ):       Find the median of the data set .    First, arrange the data set in ascending order: . Since there is an odd number of values ( ), the median is the exact middle value. The middle value is .      Find the mode of the data set .    Count the frequency of each value in the set:  appears time  appears times  appears times  appears time  The value appears most frequently, so the mode is .      Find the range of the data set .    Identify the maximum and minimum values in the data set: Subtract the minimum value from the maximum value:       If the mean of is , what is ?    The formula for the mean of values is: Simplify the numerator by adding the known constants: Multiply both sides by to isolate the numerator: Subtract from both sides to find :          Frequently Asked Questions    What is the difference between mean, median, and mode?  The mean is the average (sum of values divided by count), the median is the middle value when data is ordered, and the mode is the most frequently occurring value. The median is less affected by outliers than the mean.    What is standard deviation?  Standard deviation measures the typical spread from the mean—it is the average distance between each data point and the mean. A larger standard deviation indicates greater variability in the data set.    How do I find the median of an even number of values?  When there is an even number of values, the median is the average of the two middle values. First arrange the data in order, then identify the two middle values and calculate their average.     "
+},
+{
+  "id": "def-mean",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#def-mean",
+  "type": "Definition",
+  "number": "4.1",
+  "title": "Mean.",
+  "body": " Mean  The mean, or average, is calculated by summing all values in a data set and dividing by the number of values. It represents a central point in the data. The mean is a measure of center that is sensitive to every value in the data set, making it particularly useful when the values are relatively close to each other.  To calculate the mean, add up all the values in the data set and then divide by the number of values. This gives an average value that can be used to represent the entire data set.  "
+},
+{
+  "id": "example-mean",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#example-mean",
+  "type": "Example",
+  "number": "4.2",
+  "title": "",
+  "body": "  Find the mean of the data set .    Sum the values ( ) and divide by the number of values ( ). The mean is .   "
+},
+{
+  "id": "def-median",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#def-median",
+  "type": "Definition",
+  "number": "4.3",
+  "title": "Median.",
+  "body": " Median  The median is the middle value of a data set when the values are arranged in ascending order. If there is an odd number of values, the median is the middle value. If there is an even number of values, the median is the average of the two middle values.  The median is a useful measure of center because it is not affected by extremely high or low values (outliers). This makes it a better representative of the data set when there are outliers present.  "
+},
+{
+  "id": "example-median-odd",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#example-median-odd",
+  "type": "Example",
+  "number": "4.4",
+  "title": "Odd Number of Values.",
+  "body": " Odd Number of Values   Find the median of .    The data set is already in order. The median is .   "
+},
+{
+  "id": "example-median-even",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#example-median-even",
+  "type": "Example",
+  "number": "4.5",
+  "title": "Even Number of Values.",
+  "body": " Even Number of Values   Find the median of .    The middle values are and . The median is .   "
+},
+{
+  "id": "def-mode",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#def-mode",
+  "type": "Definition",
+  "number": "4.6",
+  "title": "Mode.",
+  "body": " Mode  The mode is the value that appears most frequently in a data set. A data set can have no mode, one mode, or multiple modes. The mode is useful for understanding which values are most common in the data set. The mode is particularly useful for categorical data, where we are interested in knowing the most frequent category.  "
+},
+{
+  "id": "example-mode",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#example-mode",
+  "type": "Example",
+  "number": "4.7",
+  "title": "",
+  "body": "  Find the mode of the data set .    The mode is because it appears most frequently.   "
+},
+{
+  "id": "def-measures-of-spread",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#def-measures-of-spread",
+  "type": "Definition",
+  "number": "4.8",
+  "title": "Measures of Spread.",
+  "body": " Measures of Spread  Measures of spread describe how much the data varies. Two common measures are range and standard deviation. These measures help to understand the variability within the data set.  "
+},
+{
+  "id": "sec-measures-of-center-spread-12",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#sec-measures-of-center-spread-12",
+  "type": "Note",
+  "number": "4.9",
+  "title": "Range.",
+  "body": " Range  The range is the difference between the maximum and minimum values in a data set. It gives a quick sense of the spread of the data. A larger range indicates greater variability, while a smaller range indicates less variability.  "
+},
+{
+  "id": "example-range",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#example-range",
+  "type": "Example",
+  "number": "4.10",
+  "title": "",
+  "body": "  Find the range of the data set .    The range is .   "
+},
+{
+  "id": "sec-measures-of-center-spread-14",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#sec-measures-of-center-spread-14",
+  "type": "Note",
+  "number": "4.11",
+  "title": "Standard Deviation.",
+  "body": " Standard Deviation  The standard deviation measures the typical spread from the mean; it is the average distance between the mean and a value in the data set. Larger standard deviations indicate greater spread. Standard deviation is a more complex measure of spread, but it provides a more detailed picture of variability within the data set than the range.  "
+},
+{
+  "id": "exercise-practice-1",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#exercise-practice-1",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Find the mean of the data set .    First, sum all the values in the data set: Next, divide the sum by the total number of values ( ):    "
+},
+{
+  "id": "exercise-practice-2",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#exercise-practice-2",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Find the median of the data set .    First, arrange the data set in ascending order: . Since there is an odd number of values ( ), the median is the exact middle value. The middle value is .   "
+},
+{
+  "id": "exercise-practice-3",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#exercise-practice-3",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Find the mode of the data set .    Count the frequency of each value in the set:  appears time  appears times  appears times  appears time  The value appears most frequently, so the mode is .   "
+},
+{
+  "id": "exercise-practice-4",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#exercise-practice-4",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Find the range of the data set .    Identify the maximum and minimum values in the data set: Subtract the minimum value from the maximum value:    "
+},
+{
+  "id": "exercise-practice-5",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#exercise-practice-5",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  If the mean of is , what is ?    The formula for the mean of values is: Simplify the numerator by adding the known constants: Multiply both sides by to isolate the numerator: Subtract from both sides to find :    "
+},
+{
   "id": "Hands-On-Sessions",
   "level": "1",
   "url": "Hands-On-Sessions.html",
   "type": "Chapter",
-  "number": "4",
+  "number": "5",
   "title": "Hands-On Sessions",
   "body": " Hands-On Sessions   The following notes are intended to remind you what we covered each week. They are not a substitute for attending class and not a substitute for reading the textbook.      "
 },
@@ -2032,7 +2185,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "01. Activity Voting Methods",
-  "body": " 01. Activity Voting Methods    In many decision making situations, it is necessary to gather the group consensus using some sort of vote. While the basic idea of voting is fairly universal, the method by which those votes are used to determine a winner can vary. In deciding upon a winner, there is always one main goal: to reflect the preferences of the people in the most fair way possible. We will discuss four different methods for determining the winner of an election using preference ballots, and will see that we can sometimes have different winners under different methods of voting.   See for the voting notes.                                                We have seen four different methods for determining the winner of an election. Through our examples and problems, we have also seen that these different methods can lead to different winners! In particular, in the Math Club President election considered throughout the exercises, it turns out that each of the four voting methods leads to each of the four candidates being declared the winner!       "
+  "body": " 01. Activity Voting Methods    In many decision making situations, it is necessary to gather the group consensus using some sort of vote. While the basic idea of voting is fairly universal, the method by which those votes are used to determine a winner can vary. In deciding upon a winner, there is always one main goal: to reflect the preferences of the people in the most fair way possible. We will discuss four different methods for determining the winner of an election using preference ballots, and will see that we can sometimes have different winners under different methods of voting.   See for the voting notes.                                    We have seen four different methods for determining the winner of an election. Through our examples and problems, we have also seen that these different methods can lead to different winners! In particular, in the Math Club President election considered throughout the exercises, it turns out that each of the four voting methods leads to each of the four candidates being declared the winner!       "
 },
 {
   "id": "activity-01-intro-activity-4-1",
@@ -2041,7 +2194,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-01-intro-activity-5-1",
@@ -2050,7 +2203,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-01-intro-activity-6-1",
@@ -2059,7 +2212,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-01-intro-activity-7-1",
@@ -2068,7 +2221,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-01-intro-activity-8-1",
@@ -2077,7 +2230,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-01-intro-activity-9-1",
@@ -2086,7 +2239,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "6",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-01-intro-activity-10-1",
@@ -2104,7 +2257,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "02. Activity Apportionment Methods",
-  "body": " 02. Activity Apportionment Methods     Apportionment is the problem of dividing up a fixed number of things among groups of different sizes. In politics, this takes the form of allocating a limited number of representatives amongst voters. This problem, presumably, is older than the United States, but the best-known ways to solve it have their origins in the problem of assigning each state an appropriate number of representatives in the new Congress when the country was formed. Apportionment theory is also used in many non-political situations, such as staffing a hospital with the appropriate number of nurses per shift and allocating buses to cover a set of bus routes based on the number of passengers.  The goal with any apportionment problem is to find a way to fairly distribute the items (e.g., doctors, buses, instructors) amoung the groups (e.g., clinics, routes, courses).  We face several real-world restrictions in this distribution process:    The things being divided up can exist only in whole numbers.    We must use all of the things being divided up, and we cannot use any more.    Each group must get at least one of the things being divided up.    The number of things assigned to each group should be at least approximately proportional to the population of the group. (Exact proportionality isn't possible because of the whole number requirement, but we should try to be close, and in any case, if Group A is larger than Group B, then Group B shouldn't get more of the things than Group A does.)    In terms of the apportionment of the United States House of Representatives, these rules imply:     We can only have whole representatives. Massachusetts can't have 8.4 representatives.    We can only use the (currently) 435 representatives available. If one state gets another representative, another state has to lose one.    Every state gets at least one representative.    The number of representatives each state gets should be approximately proportional to the state population. This way, the number of constituents each representative has should be approximately equal.     There are many different methods for solving an apportionment problem. In this course, we will discuss three of them: Hamilton's method, Jefferson's method, and Adams method. The first step for each method will be to compute the standard divisor and standard quotas.   See for the apportionment notes.                      Standard Divisor and Standard Quotas         Hamilton's Method         Jefferson's Method         Adam's Method       "
+  "body": " 02. Activity Apportionment Methods     Apportionment is the problem of dividing up a fixed number of things among groups of different sizes. In politics, this takes the form of allocating a limited number of representatives amongst voters. This problem, presumably, is older than the United States, but the best-known ways to solve it have their origins in the problem of assigning each state an appropriate number of representatives in the new Congress when the country was formed. Apportionment theory is also used in many non-political situations, such as staffing a hospital with the appropriate number of nurses per shift and allocating buses to cover a set of bus routes based on the number of passengers.  The goal with any apportionment problem is to find a way to fairly distribute the items (e.g., doctors, buses, instructors) amoung the groups (e.g., clinics, routes, courses).  We face several real-world restrictions in this distribution process:    The things being divided up can exist only in whole numbers.    We must use all of the things being divided up, and we cannot use any more.    Each group must get at least one of the things being divided up.    The number of things assigned to each group should be at least approximately proportional to the population of the group. (Exact proportionality isn't possible because of the whole number requirement, but we should try to be close, and in any case, if Group A is larger than Group B, then Group B shouldn't get more of the things than Group A does.)    In terms of the apportionment of the United States House of Representatives, these rules imply:     We can only have whole representatives. Massachusetts can't have 8.4 representatives.    We can only use the (currently) 435 representatives available. If one state gets another representative, another state has to lose one.    Every state gets at least one representative.    The number of representatives each state gets should be approximately proportional to the state population. This way, the number of constituents each representative has should be approximately equal.     There are many different methods for solving an apportionment problem. In this course, we will discuss three of them: Hamilton's method, Jefferson's method, and Adams method. The first step for each method will be to compute the standard divisor and standard quotas.   See for the apportionment notes.                  Standard Divisor and Standard Quotas         Hamilton's Method         Jefferson's Method         Adam's Method       "
 },
 {
   "id": "activity-02-intro-activity-3-1",
@@ -2113,7 +2266,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-02-intro-activity-4-1",
@@ -2122,7 +2275,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-02-intro-activity-5-1",
@@ -2167,7 +2320,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "03. Activity Simple Interest",
-  "body": " 03. Activity Simple Interest     We have to work with money every day. While balancing your checkbook or calculating your monthly expenditures on coffee requires only arithmetic, when we start saving, planning for retirement, or need a loan, we need more mathematics!  See for the simple interest notes.   Discussing interest starts with the principal, which is the amount your account starts with. This could be a starting investment or the starting amount of a loan. Interest is the amount earned for depositing money or the amount paid for borrowing money. It is calculated as a percentage of the principal (called the interest rate) and is written as a decimal (for example, is ).  For a simple example, if you borrowed from a friend and agreed to repay it with interest, then the amount of interest you would pay would just be of : . The total amount you would repay would be , which is the original principal plus the interest. This is an example of one-time simple interest, where the interest is calculated based on the principal only.          One-time simple interest is only common for extremely short-term loans. For longer-term loans, it is common for interest to be paid on a daily, monthly, quarterly, or annual basis. In that case, interest would be earned regularly. For example, bonds are essentially a loan made to the bond issuer (a company or government) by you, the bondholder. In return for the loan, the issuer agrees to pay interest, often annually. Bonds have a maturity date, at which time the issuer pays back the original bond value.    Suppose your city is building a new park, and issues bonds to raise the money to build it. You obtain a bond that pays interest annually that matures in years. How much interest will you earn?    Each year you would earn interest: . So, over the course of five years, you would earn a total of . When the bond matures, you would receive back the you originally paid, leaving you with a total of .    Notice how the amount of interest ( ) was computed in this example: we multiplied the principal by the interest rate (represented as a decimal), then multiplied this by the number of years. We can generalize this idea of simple interest over time to obtain a formula that we can use to find the amount of simple interest earned: where:  is the amount of simple interest  is the principal (starting amount)  is the interest rate represented as a decimal  is the time in years     You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!   Let's look at a quick example demonstrating the simple interest formula.    A student took out a simple interest loan for for years at a rate of to purchase a used car. What is the interest on the loan?    We are given the following: , , and . Using the simple interest formula, the amount of interest on the loan is:                 -->  While finding the amount of interest accrued for a loan is important, it is perhaps more important that we determine the total amount that must be repaid. We will call this amount — that is, the total amount required to be repaid in a loan or the total amount earned in an investment — the future value . We will denote this quantity with the variable .  As we saw with the example on the previous page involving a city issuing bonds to build a new park, the future value of a loan can be found by adding together the principal and the interest. This is true for an investment as well. This will allow us to develop a formula for the future value involving simple interest: Since , we can substitute this into the equation to get: This short calculation provides us with a formula for computing the future value for a simple interest loan or investment: where:  is the future value of the loan or investment  is the principal (starting amount) of the loan or investment  is the interest rate represented as a decimal  is the time in years     You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!   Let's look at a quick example demonstrating the simple interest formula.    A loan of has been made at for months. Find the loan’s future value.    We are given the following: and .  For , note that we are given a time in months, not years! For the simple interest formula to be used correctly, we must give this value in years. Since there are months in a year, we can always convert from months to years by dividing the number of months by . In this case, we have:   Now, using the formula above we find a future value of:                        In addition to determining the future value for a simple interest loan or investment, the simple interest formula can be used to solve other types of problems. We might want to know how much we should deposit into an account with a given simple interest rate to ensure we have a given amount in the future. Or, like in the example below, we might want to determine the simple interest rate based on the principal and future values.    You borrow from a friend and promise to pay back in months. What simple interest rate will you pay?    We are given the following: , , and years.  We are looking to find the value of (hence, the \"?\"). We substitute the given values into the simple interest formula and solve for :    Divide both sides by : Subtract from both sides: Divide by :   Since , we convert this to a percent to get a simple interest rate of .           "
+  "body": " 03. Activity Simple Interest     We have to work with money every day. While balancing your checkbook or calculating your monthly expenditures on coffee requires only arithmetic, when we start saving, planning for retirement, or need a loan, we need more mathematics!  See for the simple interest notes.   Discussing interest starts with the principal, which is the amount your account starts with. This could be a starting investment or the starting amount of a loan. Interest is the amount earned for depositing money or the amount paid for borrowing money. It is calculated as a percentage of the principal (called the interest rate) and is written as a decimal (for example, is ).  For a simple example, if you borrowed from a friend and agreed to repay it with interest, then the amount of interest you would pay would just be of : . The total amount you would repay would be , which is the original principal plus the interest. This is an example of one-time simple interest, where the interest is calculated based on the principal only.        One-time simple interest is only common for extremely short-term loans. For longer-term loans, it is common for interest to be paid on a daily, monthly, quarterly, or annual basis. In that case, interest would be earned regularly. For example, bonds are essentially a loan made to the bond issuer (a company or government) by you, the bondholder. In return for the loan, the issuer agrees to pay interest, often annually. Bonds have a maturity date, at which time the issuer pays back the original bond value.    Suppose your city is building a new park, and issues bonds to raise the money to build it. You obtain a bond that pays interest annually that matures in years. How much interest will you earn?    Each year you would earn interest: . So, over the course of five years, you would earn a total of . When the bond matures, you would receive back the you originally paid, leaving you with a total of .    Notice how the amount of interest ( ) was computed in this example: we multiplied the principal by the interest rate (represented as a decimal), then multiplied this by the number of years. We can generalize this idea of simple interest over time to obtain a formula that we can use to find the amount of simple interest earned: where:  is the amount of simple interest  is the principal (starting amount)  is the interest rate represented as a decimal  is the time in years     You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!   Let's look at a quick example demonstrating the simple interest formula.    A student took out a simple interest loan for for years at a rate of to purchase a used car. What is the interest on the loan?    We are given the following: , , and . Using the simple interest formula, the amount of interest on the loan is:             -->  While finding the amount of interest accrued for a loan is important, it is perhaps more important that we determine the total amount that must be repaid. We will call this amount — that is, the total amount required to be repaid in a loan or the total amount earned in an investment — the future value . We will denote this quantity with the variable .  As we saw with the example on the previous page involving a city issuing bonds to build a new park, the future value of a loan can be found by adding together the principal and the interest. This is true for an investment as well. This will allow us to develop a formula for the future value involving simple interest: Since , we can substitute this into the equation to get: This short calculation provides us with a formula for computing the future value for a simple interest loan or investment: where:  is the future value of the loan or investment  is the principal (starting amount) of the loan or investment  is the interest rate represented as a decimal  is the time in years     You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!   Let's look at a quick example demonstrating the simple interest formula.    A loan of has been made at for months. Find the loan’s future value.    We are given the following: and .  For , note that we are given a time in months, not years! For the simple interest formula to be used correctly, we must give this value in years. Since there are months in a year, we can always convert from months to years by dividing the number of months by . In this case, we have:   Now, using the formula above we find a future value of:                  In addition to determining the future value for a simple interest loan or investment, the simple interest formula can be used to solve other types of problems. We might want to know how much we should deposit into an account with a given simple interest rate to ensure we have a given amount in the future. Or, like in the example below, we might want to determine the simple interest rate based on the principal and future values.    You borrow from a friend and promise to pay back in months. What simple interest rate will you pay?    We are given the following: , , and years.  We are looking to find the value of (hence, the \"?\"). We substitute the given values into the simple interest formula and solve for :    Divide both sides by : Subtract from both sides: Divide by :   Since , we convert this to a percent to get a simple interest rate of .         "
 },
 {
   "id": "activity-03-intro-activity-2-4",
@@ -2176,14 +2329,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-03-intro-activity-3-2",
   "level": "2",
   "url": "activity-03-intro-activity.html#activity-03-intro-activity-3-2",
   "type": "Example",
-  "number": "5.1",
+  "number": "6.1",
   "title": "",
   "body": "  Suppose your city is building a new park, and issues bonds to raise the money to build it. You obtain a bond that pays interest annually that matures in years. How much interest will you earn?    Each year you would earn interest: . So, over the course of five years, you would earn a total of . When the bond matures, you would receive back the you originally paid, leaving you with a total of .   "
 },
@@ -2192,7 +2345,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-03-intro-activity.html#activity-03-intro-activity-3-4",
   "type": "Note",
-  "number": "5.2",
+  "number": "6.2",
   "title": "",
   "body": " You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!  "
 },
@@ -2201,7 +2354,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-03-intro-activity.html#activity-03-intro-activity-3-6",
   "type": "Example",
-  "number": "5.3",
+  "number": "6.3",
   "title": "",
   "body": "  A student took out a simple interest loan for for years at a rate of to purchase a used car. What is the interest on the loan?    We are given the following: , , and . Using the simple interest formula, the amount of interest on the loan is:    "
 },
@@ -2212,7 +2365,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-03-intro-activity-4-2",
@@ -2221,7 +2374,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-03-intro-activity-5-1",
@@ -2237,7 +2390,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-03-intro-activity.html#activity-03-intro-activity-5-3",
   "type": "Note",
-  "number": "5.4",
+  "number": "6.4",
   "title": "",
   "body": " You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!  "
 },
@@ -2246,7 +2399,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-03-intro-activity.html#activity-03-intro-activity-5-5",
   "type": "Example",
-  "number": "5.5",
+  "number": "6.5",
   "title": "",
   "body": "  A loan of has been made at for months. Find the loan’s future value.    We are given the following: and .  For , note that we are given a time in months, not years! For the simple interest formula to be used correctly, we must give this value in years. Since there are months in a year, we can always convert from months to years by dividing the number of months by . In this case, we have:   Now, using the formula above we find a future value of:    "
 },
@@ -2257,7 +2410,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-03-intro-activity-6-2",
@@ -2266,7 +2419,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-03-intro-activity-6-3",
@@ -2275,14 +2428,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "6",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-03-intro-activity-7-2",
   "level": "2",
   "url": "activity-03-intro-activity.html#activity-03-intro-activity-7-2",
   "type": "Example",
-  "number": "5.6",
+  "number": "6.6",
   "title": "",
   "body": "  You borrow from a friend and promise to pay back in months. What simple interest rate will you pay?    We are given the following: , , and years.  We are looking to find the value of (hence, the \"?\"). We substitute the given values into the simple interest formula and solve for :    Divide both sides by : Subtract from both sides: Divide by :   Since , we convert this to a percent to get a simple interest rate of .   "
 },
@@ -2293,7 +2446,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "7",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-04-intro-activity",
@@ -2302,7 +2455,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "04. Activity Compound Interest",
-  "body": " 04. Activity Compound Interest     With simple interest, we were assuming that we pocketed the interest when we received it. In a standard bank account, any interest we earn is automatically added to our balance, and we earn interest on that interest in future years. This reinvestment of interest is called compounding .  See for the compound interest notes.   Suppose that we deposit in a bank account offering simple interest. After year, the account would have a balance of .  Now, suppose that we deposit our in a bank account offering interest, compounded monthly. How will our money grow?  In the first month (note we use so that time is given in years!): In the first month, we will earn in interest, raising our account balance to .  In the second month: Notice that in the second month we earned more interest than we did in the first month. This is because we earned interest not only on the original we deposited, but we also earned interest on the of interest we earned the first month. This is the key advantage that compounding of interest gives us.  Calculating out a few more months, we obtain the following:    Month  Starting Balance  Interest Earned  Ending Balance    1  $1,000.00  $10.00  $1,010.00    2  $1,010.00  $10.10  $1,020.10    3  $1,020.10  $10.20  $1,030.30    4  $1,030.30  $10.30  $1,040.60    5  $1,040.60  $10.41  $1,051.01    6  $1,051.01  $10.51  $1,061.52    7  $1,061.52  $10.62  $1,072.14    8  $1,072.14  $10.72  $1,082.86    9  $1,082.86  $10.83  $1,093.69    10  $1,093.69  $10.94  $1,104.63    11  $1,104.63  $11.05  $1,115.68    12  $1,115.68  $11.16  $1,126.84    Notice that we earned slightly more interest with compound interest than with simple interest.            The calculation on the previous page was quite tedious! Fortunately, there are formulas that can be used to help us determine the future value of a loan or investment that undergoes compound interest and solve other problems relating to compound interest!  There are two formulas we will consider in this course. Both are mathematically equivalent, but are solved in terms of different values for our convenience.  where:  is the principal (starting amount) of the loan or investment, sometimes called the present value.  is the future value of the loan or investment.  is the interest rate represented as a decimal.  is the number of compounding periods per year.  is the time in years.     You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!   The first formula (the one with on the left-hand side) is called the future value formula since it is solved for the future value. It should be used when we want to determine the future value of a loan or investment with a given present value.  The second formula (the one with on the left-hand side) is called the present value formula since it is solved for the present value (principal). It should be used when we want to determine the present value of a loan or investment with a given future value.  The new quantity here that was not present before is , the number of compounding periods per year. This will need to be given to us, and is often done so using keywords. Some examples of these are:  If the compounding is done annually (once a year), then .  If the compounding is done semi-annually, then .  If the compounding is done quarterly, then .  If the compounding is done monthly, then .  If the compounding is done weekly, then .  If the compounding is done daily, then .    The most important thing to remember about using these formulas is that it assumes that we put money in the account once and let it sit there earning interest. An account where we make regular deposits is called an annuity , and will be discussed in our next unit! We look at some examples of using these formulas on the next page!                  A certificate of deposit (CD) is a savings instrument that many banks offer. It usually gives a higher interest rate, but you cannot access your investment for a specified amount of time. Suppose you deposit in a CD paying interest compounded monthly. How much will you have in the account after years? How much interest was earned?    We are given the following values:  (the initial deposit)  (the interest rate as a decimal)  (interest is compounded monthly)  (we're looking for the amount after 20 years)    We are asked to find the value in the account in the future (i.e., the future value), so we use the future value formula for compound interest:     To find the amount of interest earned, we observe that everything in the account other than the initial deposit must be interest! Since we deposited and ended up with , the amount of interest earned must be:   Note that we did NOT use the formula here to compute the amount of interest earned. This formula applies only to situations which use simple interest. If we used it here, we would not have calculated the correct amount of interest.             A new mother knows she will need for her child’s education in years. If the account earns compounded quarterly, how much should the mother deposit now to reach her goal? How much interest is earned?    We are given the following values:  (the amount we want in 18 years)  (the interest rate as a decimal)  (interest is compounded quarterly)  (we're given the timeframe of 18 years)    We are asked to find the amount that needs to be deposited today (i.e., the present value), so we use the present value formula for compound interest:     To find the amount of interest earned, we observe that everything in the account other than the initial deposit must be interest! Since we deposited and ended up with , the amount of interest earned must be:   Again, note we did NOT use the formula to compute the amount of interest earned. This formula should be used only in situations in which simple interest is being used.           The effective annual yield (or effective rate) of an account is the simple interest rate that would produce the same account balance after one year as the compound interest at a stated rate and compounding period. The effective annual yield is determined by the following formula: where:  is the effective annual yield  is the compound interest rate represented as a decimal  is the number of compounding periods per year     You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!   Let's look at an example!    Sue deposits in an account that pays interest compounded monthly. Find the account’s effective annual yield.    We are given and (monthly compounding). Using the formula we see that:   This means that if we were to deposit in an account using a simple interest rate of , we would have the same balance after one year as the account with monthly compounding at .          "
+  "body": " 04. Activity Compound Interest     With simple interest, we were assuming that we pocketed the interest when we received it. In a standard bank account, any interest we earn is automatically added to our balance, and we earn interest on that interest in future years. This reinvestment of interest is called compounding .  See for the compound interest notes.   Suppose that we deposit in a bank account offering simple interest. After year, the account would have a balance of .  Now, suppose that we deposit our in a bank account offering interest, compounded monthly. How will our money grow?  In the first month (note we use so that time is given in years!): In the first month, we will earn in interest, raising our account balance to .  In the second month: Notice that in the second month we earned more interest than we did in the first month. This is because we earned interest not only on the original we deposited, but we also earned interest on the of interest we earned the first month. This is the key advantage that compounding of interest gives us.  Calculating out a few more months, we obtain the following:    Month  Starting Balance  Interest Earned  Ending Balance    1  $1,000.00  $10.00  $1,010.00    2  $1,010.00  $10.10  $1,020.10    3  $1,020.10  $10.20  $1,030.30    4  $1,030.30  $10.30  $1,040.60    5  $1,040.60  $10.41  $1,051.01    6  $1,051.01  $10.51  $1,061.52    7  $1,061.52  $10.62  $1,072.14    8  $1,072.14  $10.72  $1,082.86    9  $1,082.86  $10.83  $1,093.69    10  $1,093.69  $10.94  $1,104.63    11  $1,104.63  $11.05  $1,115.68    12  $1,115.68  $11.16  $1,126.84    Notice that we earned slightly more interest with compound interest than with simple interest.          The calculation on the previous page was quite tedious! Fortunately, there are formulas that can be used to help us determine the future value of a loan or investment that undergoes compound interest and solve other problems relating to compound interest!  There are two formulas we will consider in this course. Both are mathematically equivalent, but are solved in terms of different values for our convenience.  where:  is the principal (starting amount) of the loan or investment, sometimes called the present value.  is the future value of the loan or investment.  is the interest rate represented as a decimal.  is the number of compounding periods per year.  is the time in years.     You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!   The first formula (the one with on the left-hand side) is called the future value formula since it is solved for the future value. It should be used when we want to determine the future value of a loan or investment with a given present value.  The second formula (the one with on the left-hand side) is called the present value formula since it is solved for the present value (principal). It should be used when we want to determine the present value of a loan or investment with a given future value.  The new quantity here that was not present before is , the number of compounding periods per year. This will need to be given to us, and is often done so using keywords. Some examples of these are:  If the compounding is done annually (once a year), then .  If the compounding is done semi-annually, then .  If the compounding is done quarterly, then .  If the compounding is done monthly, then .  If the compounding is done weekly, then .  If the compounding is done daily, then .    The most important thing to remember about using these formulas is that it assumes that we put money in the account once and let it sit there earning interest. An account where we make regular deposits is called an annuity , and will be discussed in our next unit! We look at some examples of using these formulas on the next page!              A certificate of deposit (CD) is a savings instrument that many banks offer. It usually gives a higher interest rate, but you cannot access your investment for a specified amount of time. Suppose you deposit in a CD paying interest compounded monthly. How much will you have in the account after years? How much interest was earned?    We are given the following values:  (the initial deposit)  (the interest rate as a decimal)  (interest is compounded monthly)  (we're looking for the amount after 20 years)    We are asked to find the value in the account in the future (i.e., the future value), so we use the future value formula for compound interest:     To find the amount of interest earned, we observe that everything in the account other than the initial deposit must be interest! Since we deposited and ended up with , the amount of interest earned must be:   Note that we did NOT use the formula here to compute the amount of interest earned. This formula applies only to situations which use simple interest. If we used it here, we would not have calculated the correct amount of interest.           A new mother knows she will need for her child’s education in years. If the account earns compounded quarterly, how much should the mother deposit now to reach her goal? How much interest is earned?    We are given the following values:  (the amount we want in 18 years)  (the interest rate as a decimal)  (interest is compounded quarterly)  (we're given the timeframe of 18 years)    We are asked to find the amount that needs to be deposited today (i.e., the present value), so we use the present value formula for compound interest:     To find the amount of interest earned, we observe that everything in the account other than the initial deposit must be interest! Since we deposited and ended up with , the amount of interest earned must be:   Again, note we did NOT use the formula to compute the amount of interest earned. This formula should be used only in situations in which simple interest is being used.         The effective annual yield (or effective rate) of an account is the simple interest rate that would produce the same account balance after one year as the compound interest at a stated rate and compounding period. The effective annual yield is determined by the following formula: where:  is the effective annual yield  is the compound interest rate represented as a decimal  is the number of compounding periods per year     You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!   Let's look at an example!    Sue deposits in an account that pays interest compounded monthly. Find the account’s effective annual yield.    We are given and (monthly compounding). Using the formula we see that:   This means that if we were to deposit in an account using a simple interest rate of , we would have the same balance after one year as the account with monthly compounding at .        "
 },
 {
   "id": "activity-04-intro-activity-3-1",
@@ -2311,14 +2464,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-04-intro-activity-4-3",
   "level": "2",
   "url": "activity-04-intro-activity.html#activity-04-intro-activity-4-3",
   "type": "Note",
-  "number": "5.7",
+  "number": "6.7",
   "title": "",
   "body": " You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!  "
 },
@@ -2356,7 +2509,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-04-intro-activity-5-2",
@@ -2365,14 +2518,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-04-intro-activity-6-1",
   "level": "2",
   "url": "activity-04-intro-activity.html#activity-04-intro-activity-6-1",
   "type": "Example",
-  "number": "5.8",
+  "number": "6.8",
   "title": "",
   "body": "  A certificate of deposit (CD) is a savings instrument that many banks offer. It usually gives a higher interest rate, but you cannot access your investment for a specified amount of time. Suppose you deposit in a CD paying interest compounded monthly. How much will you have in the account after years? How much interest was earned?    We are given the following values:  (the initial deposit)  (the interest rate as a decimal)  (interest is compounded monthly)  (we're looking for the amount after 20 years)    We are asked to find the value in the account in the future (i.e., the future value), so we use the future value formula for compound interest:     To find the amount of interest earned, we observe that everything in the account other than the initial deposit must be interest! Since we deposited and ended up with , the amount of interest earned must be:   Note that we did NOT use the formula here to compute the amount of interest earned. This formula applies only to situations which use simple interest. If we used it here, we would not have calculated the correct amount of interest.   "
 },
@@ -2383,14 +2536,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-04-intro-activity-7-1",
   "level": "2",
   "url": "activity-04-intro-activity.html#activity-04-intro-activity-7-1",
   "type": "Example",
-  "number": "5.9",
+  "number": "6.9",
   "title": "",
   "body": "  A new mother knows she will need for her child’s education in years. If the account earns compounded quarterly, how much should the mother deposit now to reach her goal? How much interest is earned?    We are given the following values:  (the amount we want in 18 years)  (the interest rate as a decimal)  (interest is compounded quarterly)  (we're given the timeframe of 18 years)    We are asked to find the amount that needs to be deposited today (i.e., the present value), so we use the present value formula for compound interest:     To find the amount of interest earned, we observe that everything in the account other than the initial deposit must be interest! Since we deposited and ended up with , the amount of interest earned must be:   Again, note we did NOT use the formula to compute the amount of interest earned. This formula should be used only in situations in which simple interest is being used.   "
 },
@@ -2401,14 +2554,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-04-intro-activity-8-2",
   "level": "2",
   "url": "activity-04-intro-activity.html#activity-04-intro-activity-8-2",
   "type": "Note",
-  "number": "5.10",
+  "number": "6.10",
   "title": "",
   "body": " You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!  "
 },
@@ -2417,7 +2570,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-04-intro-activity.html#activity-04-intro-activity-8-4",
   "type": "Example",
-  "number": "5.11",
+  "number": "6.11",
   "title": "",
   "body": "  Sue deposits in an account that pays interest compounded monthly. Find the account’s effective annual yield.    We are given and (monthly compounding). Using the formula we see that:   This means that if we were to deposit in an account using a simple interest rate of , we would have the same balance after one year as the account with monthly compounding at .   "
 },
@@ -2428,7 +2581,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "6",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-05-intro-activity",
@@ -2437,7 +2590,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "05. Activity Annuities",
-  "body": " 05. Activity Annuities     Accounts with simple\/compound interest require a one-time deposit. If we want to ensure the account balance reaches a certain amount by a particular point in the future, then we usually need to make a substantial deposit. For example, in a previous example we saw that to ensure a future value of in years at interest compounded monthly, we would need to deposit today!  For most of us, we aren’t able to put a large sum of money like this in the bank today. Instead, we save for the future by depositing a smaller amount of money from each paycheck into the bank. This idea is called an annuity . Most retirement plans like 401(k) plans or IRA plans are examples of annuities.  In simplistic terms:   For compound interest , we make a single deposit and this money sits in the account and earns interest.    For an annuity , we make regular deposits (every month, week, year, etc.) and the money sits in the account and earns interest.     One technical thing: for the annuity formulas we will use, interest must be compounded at the same rate as the regular deposits are made. So if an annuity receives monthly deposits, interest will be compounded monthly.  See for the annuity notes.                  Like with compound interest, there are two formulas we will consider in this course. Both are mathematically equivalent, but are solved in terms of different values for our convenience.  where:  is the deposit amount made during each compounding period.  is the amount in the annuity after years.  is the interest rate represented as a decimal.  is the number of compounding periods per year.  is the time in years.     You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!   The first formula (the one with on the left-hand side) should be used when we want to determine the future value of an annuity with a given deposit amount.  The second formula (the one with on the left-hand side) should be used when we want to determine the deposit amount for an annuity to ensure a given future value. We look at some examples of using these formulas on the next page!         The calculation on the previous page was quite tedious! Fortunately, there are formulas that can be used to help us determine the future value of a loan or investment that undergoes compound interest and solve other problems relating to compound interest!  There are two formulas we will consider in this course. Both are mathematically equivalent, but are solved in terms of different values for our convenience.  where:  is the principal (starting amount) of the loan or investment, sometimes called the present value.  is the future value of the loan or investment.  is the interest rate represented as a decimal.  is the number of compounding periods per year.  is the time in years.     You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!   The first formula (the one with on the left-hand side) is called the future value formula since it is solved for the future value. It should be used when we want to determine the future value of a loan or investment with a given present value.  The second formula (the one with on the left-hand side) is called the present value formula since it is solved for the present value (principal). It should be used when we want to determine the present value of a loan or investment with a given future value.  The new quantity here that was not present before is , the number of compounding periods per year. This will need to be given to us, and is often done so using keywords. Some examples of these are:  If the compounding is done annually (once a year), then .  If the compounding is done semi-annually, then .  If the compounding is done quarterly, then .  If the compounding is done monthly, then .  If the compounding is done weekly, then .  If the compounding is done daily, then .    The most important thing to remember about using these formulas is that it assumes that we put money in the account once and let it sit there earning interest. An account where we make regular deposits is called an annuity , and will be discussed in our next unit! We look at some examples of using these formulas on the next page!             You want to have in your account when you retire in years. Your retirement account earns interest compounded weekly. How much do you need to deposit each week to meet your retirement goal? How much of the is from interest?    We are given the following values:  (the amount we want in 40 years)  (the interest rate as a decimal)  (interest is compounded weekly)  (we're given the timeframe of 40 years)    We are asked to find the amount of the regular deposits, so we use the deposit formula for an annuity:     To find the amount of interest earned, we observe that everything in the account other than the regular deposits must be interest! We first find the total amount deposited over the course of the annuity. Since we deposited each week ( per year) for years, the total amount deposited is:   Since we deposited and ended up with , the amount of interest earned must be:   Note we did NOT use the formula here to compute the amount of interest earned. This formula applies only to situations which use simple interest. If we used it here, we would not have calculated the correct amount of interest.          "
+  "body": " 05. Activity Annuities     Accounts with simple\/compound interest require a one-time deposit. If we want to ensure the account balance reaches a certain amount by a particular point in the future, then we usually need to make a substantial deposit. For example, in a previous example we saw that to ensure a future value of in years at interest compounded monthly, we would need to deposit today!  For most of us, we aren’t able to put a large sum of money like this in the bank today. Instead, we save for the future by depositing a smaller amount of money from each paycheck into the bank. This idea is called an annuity . Most retirement plans like 401(k) plans or IRA plans are examples of annuities.  In simplistic terms:   For compound interest , we make a single deposit and this money sits in the account and earns interest.    For an annuity , we make regular deposits (every month, week, year, etc.) and the money sits in the account and earns interest.     One technical thing: for the annuity formulas we will use, interest must be compounded at the same rate as the regular deposits are made. So if an annuity receives monthly deposits, interest will be compounded monthly.  See for the annuity notes.              Like with compound interest, there are two formulas we will consider in this course. Both are mathematically equivalent, but are solved in terms of different values for our convenience.  where:  is the deposit amount made during each compounding period.  is the amount in the annuity after years.  is the interest rate represented as a decimal.  is the number of compounding periods per year.  is the time in years.     You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!   The first formula (the one with on the left-hand side) should be used when we want to determine the future value of an annuity with a given deposit amount.  The second formula (the one with on the left-hand side) should be used when we want to determine the deposit amount for an annuity to ensure a given future value. We look at some examples of using these formulas on the next page!       The calculation on the previous page was quite tedious! Fortunately, there are formulas that can be used to help us determine the future value of a loan or investment that undergoes compound interest and solve other problems relating to compound interest!  There are two formulas we will consider in this course. Both are mathematically equivalent, but are solved in terms of different values for our convenience.  where:  is the principal (starting amount) of the loan or investment, sometimes called the present value.  is the future value of the loan or investment.  is the interest rate represented as a decimal.  is the number of compounding periods per year.  is the time in years.     You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!   The first formula (the one with on the left-hand side) is called the future value formula since it is solved for the future value. It should be used when we want to determine the future value of a loan or investment with a given present value.  The second formula (the one with on the left-hand side) is called the present value formula since it is solved for the present value (principal). It should be used when we want to determine the present value of a loan or investment with a given future value.  The new quantity here that was not present before is , the number of compounding periods per year. This will need to be given to us, and is often done so using keywords. Some examples of these are:  If the compounding is done annually (once a year), then .  If the compounding is done semi-annually, then .  If the compounding is done quarterly, then .  If the compounding is done monthly, then .  If the compounding is done weekly, then .  If the compounding is done daily, then .    The most important thing to remember about using these formulas is that it assumes that we put money in the account once and let it sit there earning interest. An account where we make regular deposits is called an annuity , and will be discussed in our next unit! We look at some examples of using these formulas on the next page!           You want to have in your account when you retire in years. Your retirement account earns interest compounded weekly. How much do you need to deposit each week to meet your retirement goal? How much of the is from interest?    We are given the following values:  (the amount we want in 40 years)  (the interest rate as a decimal)  (interest is compounded weekly)  (we're given the timeframe of 40 years)    We are asked to find the amount of the regular deposits, so we use the deposit formula for an annuity:     To find the amount of interest earned, we observe that everything in the account other than the regular deposits must be interest! We first find the total amount deposited over the course of the annuity. Since we deposited each week ( per year) for years, the total amount deposited is:   Since we deposited and ended up with , the amount of interest earned must be:   Note we did NOT use the formula here to compute the amount of interest earned. This formula applies only to situations which use simple interest. If we used it here, we would not have calculated the correct amount of interest.        "
 },
 {
   "id": "activity-05-intro-activity-2-1-2",
@@ -2455,7 +2608,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-05-intro-activity-3-2",
@@ -2464,14 +2617,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-05-intro-activity-4-2",
   "level": "2",
   "url": "activity-05-intro-activity.html#activity-05-intro-activity-4-2",
   "type": "Note",
-  "number": "5.12",
+  "number": "6.12",
   "title": "",
   "body": " You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!  "
 },
@@ -2482,14 +2635,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-05-intro-activity-5-3",
   "level": "2",
   "url": "activity-05-intro-activity.html#activity-05-intro-activity-5-3",
   "type": "Note",
-  "number": "5.13",
+  "number": "6.13",
   "title": "",
   "body": " You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!  "
 },
@@ -2527,14 +2680,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-05-intro-activity-7-1",
   "level": "2",
   "url": "activity-05-intro-activity.html#activity-05-intro-activity-7-1",
   "type": "Example",
-  "number": "5.14",
+  "number": "6.14",
   "title": "",
   "body": "  You want to have in your account when you retire in years. Your retirement account earns interest compounded weekly. How much do you need to deposit each week to meet your retirement goal? How much of the is from interest?    We are given the following values:  (the amount we want in 40 years)  (the interest rate as a decimal)  (interest is compounded weekly)  (we're given the timeframe of 40 years)    We are asked to find the amount of the regular deposits, so we use the deposit formula for an annuity:     To find the amount of interest earned, we observe that everything in the account other than the regular deposits must be interest! We first find the total amount deposited over the course of the annuity. Since we deposited each week ( per year) for years, the total amount deposited is:   Since we deposited and ended up with , the amount of interest earned must be:   Note we did NOT use the formula here to compute the amount of interest earned. This formula applies only to situations which use simple interest. If we used it here, we would not have calculated the correct amount of interest.   "
 },
@@ -2545,7 +2698,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-06-intro-activity",
@@ -2554,7 +2707,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "06. Activity Loans",
-  "body": " 06. Activity Loans     An installment loan is a loan which you pay off with regular weekly or monthly payments. Examples include car loans, student loans, and mortgages; we will discuss mortgages in the next unit.  Sometimes a loan requires a down payment , which is the amount paid at the time of purchase. The amount of the loan is the actual amount borrowed. It does not include the down payment (when there is one) because this money is not part of the debt.  The loan amount must be repaid, with interest, in regular payments (monthly, weekly, quarterly, etc.). The compounding frequency for interest is not always explicitly given, but is determined by how often you make payments. So, if you are required to make monthly payments on an installment loan, the interest will be compounded monthly.  For our purposes in this course, we will assume that you make loan payments on a regular schedule (every month, year, quarter, etc.) and are paying interest on the loan.  See for the Mortgages notes.                  Like with compound interest and annuities, there are two formulas we will consider in this course. Both are mathematically equivalent, but are solved in terms of different values for our convenience.  where:  is the amount of the loan (borrowed amount).  is the regular payment amount.  is the interest rate represented as a decimal.  is the number of compounding periods per year.  is the time in years.     You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!   The first formula (the one with on the left-hand side) should be used when we want to determine the payment amount for a given loan, and the second formula (the one with on the left-hand side) should be used when we want to determine how much we can afford with a given payment amount.  We look at some examples of using these formulas on the next page!             You decide to borrow for a new car. You take out an installment loan for years at interest which requires regular monthly payments. How much will the monthly payment be? How much interest will you pay in total?    We are given the following values:  (the amount borrowed)  (the interest rate as a decimal)  (interest is compounded monthly)  (the loan is taken out for 3 years)    We are asked to find the amount of the monthly payment, so we use the formula for an installment loan:     To find the amount of interest paid, we first calculate the total amount paid over the course of the loan. We know that of this went to pay off the amount borrowed, and the rest must be interest. Since we paid each month ( per year) for years, the total amount paid is:   Since of this is the amount borrowed, the amount of interest you will pay will be:           "
+  "body": " 06. Activity Loans     An installment loan is a loan which you pay off with regular weekly or monthly payments. Examples include car loans, student loans, and mortgages; we will discuss mortgages in the next unit.  Sometimes a loan requires a down payment , which is the amount paid at the time of purchase. The amount of the loan is the actual amount borrowed. It does not include the down payment (when there is one) because this money is not part of the debt.  The loan amount must be repaid, with interest, in regular payments (monthly, weekly, quarterly, etc.). The compounding frequency for interest is not always explicitly given, but is determined by how often you make payments. So, if you are required to make monthly payments on an installment loan, the interest will be compounded monthly.  For our purposes in this course, we will assume that you make loan payments on a regular schedule (every month, year, quarter, etc.) and are paying interest on the loan.  See for the Mortgages notes.              Like with compound interest and annuities, there are two formulas we will consider in this course. Both are mathematically equivalent, but are solved in terms of different values for our convenience.  where:  is the amount of the loan (borrowed amount).  is the regular payment amount.  is the interest rate represented as a decimal.  is the number of compounding periods per year.  is the time in years.     You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!   The first formula (the one with on the left-hand side) should be used when we want to determine the payment amount for a given loan, and the second formula (the one with on the left-hand side) should be used when we want to determine how much we can afford with a given payment amount.  We look at some examples of using these formulas on the next page!           You decide to borrow for a new car. You take out an installment loan for years at interest which requires regular monthly payments. How much will the monthly payment be? How much interest will you pay in total?    We are given the following values:  (the amount borrowed)  (the interest rate as a decimal)  (interest is compounded monthly)  (the loan is taken out for 3 years)    We are asked to find the amount of the monthly payment, so we use the formula for an installment loan:     To find the amount of interest paid, we first calculate the total amount paid over the course of the loan. We know that of this went to pay off the amount borrowed, and the rest must be interest. Since we paid each month ( per year) for years, the total amount paid is:   Since of this is the amount borrowed, the amount of interest you will pay will be:         "
 },
 {
   "id": "activity-06-intro-activity-2-1-1",
@@ -2581,7 +2734,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-06-intro-activity-3-2",
@@ -2590,14 +2743,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-06-intro-activity-4-2",
   "level": "2",
   "url": "activity-06-intro-activity.html#activity-06-intro-activity-4-2",
   "type": "Note",
-  "number": "5.15",
+  "number": "6.15",
   "title": "",
   "body": " You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!  "
 },
@@ -2608,14 +2761,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-06-intro-activity-6-1",
   "level": "2",
   "url": "activity-06-intro-activity.html#activity-06-intro-activity-6-1",
   "type": "Example",
-  "number": "5.16",
+  "number": "6.16",
   "title": "",
   "body": "  You decide to borrow for a new car. You take out an installment loan for years at interest which requires regular monthly payments. How much will the monthly payment be? How much interest will you pay in total?    We are given the following values:  (the amount borrowed)  (the interest rate as a decimal)  (interest is compounded monthly)  (the loan is taken out for 3 years)    We are asked to find the amount of the monthly payment, so we use the formula for an installment loan:     To find the amount of interest paid, we first calculate the total amount paid over the course of the loan. We know that of this went to pay off the amount borrowed, and the rest must be interest. Since we paid each month ( per year) for years, the total amount paid is:   Since of this is the amount borrowed, the amount of interest you will pay will be:    "
 },
@@ -2626,7 +2779,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-07-intro-activity",
@@ -2635,7 +2788,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "07. Activity Mortgages",
-  "body": " 07. Activity Mortgages     A mortgage is a long-term loan, usually 15 or 30 years, for purposes of buying a home. Like other loans, they must be repaid on regular intervals (usually monthly) with regular payments and accrue interest over time compounded at the same rate as the payments.  See for the Mortgages notes.   We begin by noting that we will be considering a very simplistic view of mortgages. In reality, they are extraordinarily complicated and technical, and the complete mathematics behind them is too advanced for us in this course. However, our goal is to understand the basics of how mortgages work and how math can be used to analyze them.  Mortgages have some special features that distinguish them from a typical loan. These include:    Down Payment : This is a percent of the sale price of the home that is paid at the time of closing (purchase). Because it is paid at closing, money is not borrowed to cover the down payment. In other words, the amount of the mortgage is the sale price of the home minus the down payment amount.     Points : This is a fee paid to a lender at the time of closing. Each point represents one percent of the mortgage amount, i.e.:  point is of the mortgage amount  points is of the mortgage amount  points is of the mortgage amount       Points are not included in the mortgage amount since they must be paid at closing, and is not considered interest. One important point (ha!) here: points are taken on the mortgage amount, not the sale price!  There are MANY other fees associated with mortgages that we will not discuss here; this is an example of the simplistic view mentioned above. One nice thing about mortgages is that once we take the down payment into consideration, the basic mathematics of mortgages is the same as with installment loans! For example, we use the same two formulas to determine the payment amount for a given mortgage and the maximum mortgage amount we can afford based on a given payment amount, respectively: where:  is the amount of the mortgage (borrowed amount).  is the regular payment amount.  is the interest rate represented as a decimal.  is the number of compounding periods per year.  is the time in years.     You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!                        See and . The price of a home is . The bank requires a down payment and two points at the time of closing. The cost of the home is financed with a -year fixed-rate mortgage at .  If we take a closer look at the example above, we notice something that is likely surprising to anyone who has not encountered a mortgage before: more than half of the amount paid covers the interest for the mortgage! In fact, over of the total paid covers the interest. This is a consequence of the long length of the mortgage.           Amanda and Fred are buying a house on a -year mortgage. They can only afford to pay per month for a mortgage. If they have an interest rate of , what is the maximum price of a mortgage they can afford?    We are given the following values:  (their max payment amount)  (the interest rate as a decimal)  (interest is compounded monthly)  (the mortgage will be for 30 years)    We are asked to find the maximum amount of a loan we can afford, so we use the installment loan formula solved for :     Based on this calculation, if Amanda and Fred can only afford an monthly payment for a mortgage, then they should be sure not to take out a mortgage larger than around .          "
+  "body": " 07. Activity Mortgages     A mortgage is a long-term loan, usually 15 or 30 years, for purposes of buying a home. Like other loans, they must be repaid on regular intervals (usually monthly) with regular payments and accrue interest over time compounded at the same rate as the payments.  See for the Mortgages notes.   We begin by noting that we will be considering a very simplistic view of mortgages. In reality, they are extraordinarily complicated and technical, and the complete mathematics behind them is too advanced for us in this course. However, our goal is to understand the basics of how mortgages work and how math can be used to analyze them.  Mortgages have some special features that distinguish them from a typical loan. These include:    Down Payment : This is a percent of the sale price of the home that is paid at the time of closing (purchase). Because it is paid at closing, money is not borrowed to cover the down payment. In other words, the amount of the mortgage is the sale price of the home minus the down payment amount.     Points : This is a fee paid to a lender at the time of closing. Each point represents one percent of the mortgage amount, i.e.:  point is of the mortgage amount  points is of the mortgage amount  points is of the mortgage amount       Points are not included in the mortgage amount since they must be paid at closing, and is not considered interest. One important point (ha!) here: points are taken on the mortgage amount, not the sale price!  There are MANY other fees associated with mortgages that we will not discuss here; this is an example of the simplistic view mentioned above. One nice thing about mortgages is that once we take the down payment into consideration, the basic mathematics of mortgages is the same as with installment loans! For example, we use the same two formulas to determine the payment amount for a given mortgage and the maximum mortgage amount we can afford based on a given payment amount, respectively: where:  is the amount of the mortgage (borrowed amount).  is the regular payment amount.  is the interest rate represented as a decimal.  is the number of compounding periods per year.  is the time in years.     You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!                  See and . The price of a home is . The bank requires a down payment and two points at the time of closing. The cost of the home is financed with a -year fixed-rate mortgage at .  If we take a closer look at the example above, we notice something that is likely surprising to anyone who has not encountered a mortgage before: more than half of the amount paid covers the interest for the mortgage! In fact, over of the total paid covers the interest. This is a consequence of the long length of the mortgage.         Amanda and Fred are buying a house on a -year mortgage. They can only afford to pay per month for a mortgage. If they have an interest rate of , what is the maximum price of a mortgage they can afford?    We are given the following values:  (their max payment amount)  (the interest rate as a decimal)  (interest is compounded monthly)  (the mortgage will be for 30 years)    We are asked to find the maximum amount of a loan we can afford, so we use the installment loan formula solved for :     Based on this calculation, if Amanda and Fred can only afford an monthly payment for a mortgage, then they should be sure not to take out a mortgage larger than around .        "
 },
 {
   "id": "activity-07-intro-activity-2-1-1",
@@ -2660,7 +2813,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-07-intro-activity.html#activity-07-intro-activity-2-6",
   "type": "Note",
-  "number": "5.17",
+  "number": "6.17",
   "title": "",
   "body": " You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!  "
 },
@@ -2671,7 +2824,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-07-intro-activity-4-1",
@@ -2680,7 +2833,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-07-intro-activity-4-2",
@@ -2689,7 +2842,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-07-intro-activity-5-3",
@@ -2698,14 +2851,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "activity-07-intro-activity-6-1",
   "level": "2",
   "url": "activity-07-intro-activity.html#activity-07-intro-activity-6-1",
   "type": "Example",
-  "number": "5.18",
+  "number": "6.18",
   "title": "",
   "body": "  Amanda and Fred are buying a house on a -year mortgage. They can only afford to pay per month for a mortgage. If they have an interest rate of , what is the maximum price of a mortgage they can afford?    We are given the following values:  (their max payment amount)  (the interest rate as a decimal)  (interest is compounded monthly)  (the mortgage will be for 30 years)    We are asked to find the maximum amount of a loan we can afford, so we use the installment loan formula solved for :     Based on this calculation, if Amanda and Fred can only afford an monthly payment for a mortgage, then they should be sure not to take out a mortgage larger than around .   "
 },
@@ -2716,14 +2869,14 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
-  "body": "    "
+  "body": "  "
 },
 {
   "id": "handouts",
   "level": "1",
   "url": "handouts.html",
   "type": "Chapter",
-  "number": "6",
+  "number": "7",
   "title": "Handouts",
   "body": " Handouts    "
 },
@@ -2732,7 +2885,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "homework.html",
   "type": "Chapter",
-  "number": "7",
+  "number": "8",
   "title": "Homework",
   "body": " Homework    "
 },
@@ -2759,7 +2912,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ma-150-syllabus.html#subsec-105-TentativeSchedule-3",
   "type": "Table",
-  "number": "8.1",
+  "number": "9.1",
   "title": "Course Schedule and Exam Dates",
   "body": " Course Schedule and Exam Dates        Unit  Topics  Due Dates    1  Voting methods, apportionment  Fri 5\/22    2  Simple interest, compound interest  Wed 5\/27    3  Annuities, installment loans (Quiz 1)   Wed 5\/27    4  Mortgages, credit cards  Wed 6\/3      In-Person Exam 1 Thu 6\/4 (3:30-5:00pm) (S-136)     5  Set basics, subsets  Wed 6\/10    6  Set operations, surveys (Quiz 2)   Wed 6\/10    7  Intro to probability, events involving “not”, “or”, “and”  Wed 6\/17    8  Counting, permutations, combinations (Quiz 3)  Wed 6\/17      Online Exam 2 (Thu 6\/25)     9  Probability with counting, odds, conditional  Fri 6\/26      In-Person FINAL EXAM Thu 7\/2 (3:30-6:30pm) (S-136)      "
 }

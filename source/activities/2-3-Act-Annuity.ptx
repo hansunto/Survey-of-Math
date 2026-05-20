@@ -47,14 +47,10 @@
 <page> 
     <!-- Exercises start here. -->
         <exercise>
-          <statement>
-            <myopenmath problem="1455393" />
-          </statement>
+          <myopenmath problem="1455393" />
         </exercise>
         <exercise>
-          <statement>
-            <myopenmath problem="1455379" />
-          </statement>
+          <myopenmath problem="1455379" />
         </exercise>
 </page>
 
@@ -92,9 +88,7 @@
   We look at some examples of using these formulas on the next page!
 </p>
 <exercise>
-  <statement>
-    <myopenmath problem="1455397" />
-  </statement>
+  <myopenmath problem="1455397" />
 </exercise>
 </page>
     
@@ -161,9 +155,7 @@
     
 <page>
     <exercise>
-      <statement>
-        <myopenmath problem="1455403" />
-      </statement>
+      <myopenmath problem="1455403" />
     </exercise>
 </page>
 
@@ -219,9 +211,7 @@
 
 
 <exercise>
-  <statement>
-    <myopenmath problem="1455406" />
-  </statement>
+  <myopenmath problem="1455406" />
 </exercise>
 </page>
 

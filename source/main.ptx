@@ -69,6 +69,20 @@
 
    </chapter>
 
+   <chapter xml:id="ch-Intro-Statistics">
+      <title>Introduction to Statistics</title>
+      <introduction>
+      <p>
+        
+      </p>
+
+      </introduction>  
+      <xi:include href="./notes/Center-Spread.ptx" />
+    </chapter>    
+
+
+
+
    <chapter xml:id="Hands-On-Sessions">
       <title>Hands-On Sessions</title>
 

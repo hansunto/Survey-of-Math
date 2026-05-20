@@ -55,16 +55,12 @@
     <!-- Exercises start here. -->
     <page>
         <exercise workspace="0.2in">
-            <statement>
-                <myopenmath problem="1445055" />
-            </statement>
+            <myopenmath problem="1445055" />
         </exercise>
     </page>
     <page>
         <exercise workspace="0.2in">
-            <statement>
-                <myopenmath problem="1445054" />
-            </statement>
+            <myopenmath problem="1445054" />
         </exercise>
     </page>
 

@@ -29,7 +29,7 @@
     </p>
     <p>
     (The <term> mean </term> of a set of data is the sum of the data values divided by the number of
-values.)
+values, <m>\bar{x}= \dfrac{\sum x}{n} </m>.)
     </p>
     </definition>
 
@@ -41,8 +41,8 @@ values.)
       </statement>
       <solution>
         <p>
-          Sum the values (<m>2 + 4 + 6 + 8 + 10 = 30</m>) and divide by the number of values (<m>5</m>). 
-          The mean is <m>30/5 = 6</m>.
+          Sum the values (<m>\sum x = 2 + 4 + 6 + 8 + 10 = 30</m>) and divide by the number of values (<m>n = 5</m>). 
+          The mean is <m>\bar{x} = \dfrac{30}{5} = 6</m>.
         </p>
       </solution>
     </example>
@@ -56,7 +56,7 @@ values.)
   <solution>
     <p>
       To find the mean, sum the scores and divide by the total number of exams:
-      <me>\frac{79 + 86 + 82 + 94}{4} = 85.25</me>
+      <me>\bar{x}= \dfrac{\sum x}{n} = \dfrac{79 + 86 + 82 + 94}{4} = 85.25</me>
     </p>
     <p>
       Typically, we round means to one more decimal place than the original data had. 
@@ -129,7 +129,7 @@ values.)
     </p>
     <p>
       Next, divide by <m>31</m>, which is the total number of data values:
-      <me>\frac{634}{31} \approx 20.4516</me>
+      <me>\bar{x} = \dfrac{634}{31} \approx 20.4516</me>
     </p>
     <p>
       Following the standard rounding convention, we round the mean to one more decimal place than the original data. 
@@ -155,7 +155,7 @@ values.)
     </p>
     <p>
       Next, divide the total sum by the number of stores (<m>5</m>):
-      <me>\text{Mean} = \frac{18.41}{5} = 3.682</me>
+      <me>\text{Mean} =\bar{x} = \dfrac{18.41}{5} = 3.682</me>
     </p>
     <p>
       Following the standard rounding rule for the mean (rounding to one more decimal place than the original data), we round from two decimal places to three decimal places. 
@@ -555,6 +555,7 @@ values.)
 <assemblage>
     <title>To compute standard deviation:</title>
     <p> <ol>
+        <li>Find the mean (<m>\bar{x}= \dfrac{\sum x}{n} </m>).</li>
         <li>Subtract the mean from each individual data value.</li>
         <li>Square each individual deviation result.</li>
         <li>Sum all of the squared deviations together.</li>
@@ -563,42 +564,182 @@ values.)
     </ol> </p>
 </assemblage>
 
-<example>
-    <statement>
-      <p>  A group of diners were asked how much they would pay for a meal. Their responses were: $7.50, $8.25, $9.00, $8.00, $7.25, $7.50, $8.00, $7.00.
-      </p>
-      <p>
-    <ol id="a">
-        <li> <p>Find the mean</p> </li>
-        <li> <p>Find the median</p> </li>
-       <li> <p>Find the standard deviation of this data</p> </li>
-    </ol>
-  </p>
-    </statement>
-    <solution>
-        <p>Find the Mean</p>
-        <ol marker="1">
-            <li>Sum all values: 7.50 + 8.25 + 9.00 + 8.00 + 7.25 + 7.50 + 8.00 + 7.00 = 62.50</li>
-            <li>Count total values: n = 8</li>
-            <li>Divide sum by total count: 62.50 / 8 = 7.8125</li>
-        </ol>
-        <p>Find the Median</p>
-        <ol marker="1">
-            <li>Arrange the data values in order: $7.00, $7.25, $7.50, $7.50, $8.00, $8.00, $8.25, $9.00</li>
-            <li>Locate the two middle values at positions 4 and 5: $7.50 and $8.00</li>
-            <li>Calculate the average of the two middle values: (7.50 + 8.00) / 2 = $7.75</li>
-        </ol>
-        <p>Find the Standard Deviation</p>
-        <ol marker="1">
-            <li>Find the deviation of each value from the mean ($7.8125): -0.8125, 0.4375, 1.1875, 0.1875, -0.5625, -0.3125, 0.1875, -0.8125</li>
-            <li>Square each individual deviation: 0.660156, 0.191406, 1.410156, 0.035156, 0.316406, 0.097656, 0.035156, 0.660156</li>
-            <li>Sum all the squared deviations together: 3.40625</li>
-            <li>Divide by n - 1 since this represents a sample: 3.40625 / 7 = 0.486607</li>
-            <li>Calculate the square root of the variance: sqrt(0.486607) = 0.637577 = $0.64</li>
-        </ol>
-    </solution>
+<example xml:id="example-diner-meals">
+  <statement>
+    <p>
+      A group of diners were asked how much they would pay for a meal. Their responses were: $7.50, $8.25, $9.00, $8.00, $7.25, $7.50, $8.00, $7.00.
+    </p>
+    <p>
+      <ol marker="a">
+        <li>
+          <p>Find the mean</p>
+        </li>
+        <li>
+          <p>Find the median</p>
+        </li>
+        <li>
+          <p>Find the standard deviation of this data</p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <strong>(a) Find the Mean</strong>
+    </p>
+    <p>
+      <ol marker="1">
+        <li><p>Sum all values: <m>7.50 + 8.25 + 9.00 + 8.00 + 7.25 + 7.50 + 8.00 + 7.00 = 62.50</m></p></li>
+        <li><p>Count total values: <m>n = 8</m></p></li>
+        <li><p>Divide sum by total count: <m>62.50 / 8 = 7.8125</m></p></li>
+      </ol>
+    </p>
+    <p>
+      <strong>(b) Find the Median</strong>
+    </p>
+    <p>
+      <ol marker="1">
+        <li><p>Arrange the data values in order: $7.00, $7.25, $7.50, $7.50, $8.00, $8.00, $8.25, $9.00</p></li>
+        <li><p>Locate the two middle values at positions 4 and 5: $7.50 and $8.00</p></li>
+        <li><p>Calculate the average of the two middle values: <m>(7.50 + 8.00) / 2 = \$7.75</m></p></li>
+      </ol>
+    </p>
+    <p>
+      <strong>(c) Find the Standard Deviation</strong>
+    </p>
+    <p>
+      We construct a table to find the deviation of each value from the mean (<m>\bar{x} = 7.8125</m>) and square those results.
+    </p>
+
+    <table xml:id="table-meal-deviations">
+      <title>Standard Deviation Calculations for Meal Prices</title>
+      <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+        <row header="yes">
+          <cell><m>x</m></cell>
+          <cell><m>x - \bar{x}</m></cell>
+          <cell><m>(x - \bar{x})^2</m></cell>
+        </row>
+        <row><cell>7.50</cell><cell><m>-0.3125</m></cell><cell><m>0.097656</m></cell></row>
+        <row><cell>8.25</cell><cell><m>0.4375</m></cell><cell><m>0.191406</m></cell></row>
+        <row><cell>9.00</cell><cell><m>1.1875</m></cell><cell><m>1.410156</m></cell></row>
+        <row><cell>8.00</cell><cell><m>0.1875</m></cell><cell><m>0.035156</m></cell></row>
+        <row><cell>7.25</cell><cell><m>-0.5625</m></cell><cell><m>0.316406</m></cell></row>
+        <row><cell>7.50</cell><cell><m>-0.3125</m></cell><cell><m>0.097656</m></cell></row>
+        <row><cell>8.00</cell><cell><m>0.1875</m></cell><cell><m>0.035156</m></cell></row>
+        <row><cell>7.00</cell><cell><m>-0.8125</m></cell><cell><m>0.660156</m></cell></row>
+        <row bottom="minor">
+          <cell><m>\sum x = 62.50</m></cell>
+          <cell></cell>
+          <cell><m>\sum (x - \bar{x})^2 = 3.40625</m></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      <ol marker="1">
+        <li><p>Sum all the squared deviations together from the table: <m>3.40625</m></p></li>
+        <li><p>Divide by <m>n - 1</m> since this represents a sample: <m>3.40625 / 7 = 0.486607</m></p></li>
+        <li><p>Calculate the square root of the variance: <m>\sqrt{0.486607} = 0.637577 \approx \$0.64</m></p></li>
+      </ol>
+    </p>
+  </solution>
 </example>
 
+<exercise>
+    <statement>
+        The price of a jar of peanut butter at 5 stores were: $3.29, $3.59, $3.79, $3.75, and $3.99.
+    </statement>
+    <ol id="a">
+        <li>
+            <p>Find the standard deviation of the prices.</p>
+        </li>
+    </ol>
+    <solution>
+        <p>Find the Standard Deviation</p>
+        <ol marker="1">
+            <li>Find the mean price: (3.29 + 3.59 + 3.79 + 3.75 + 3.99) / 5 = 18.41 / 5 = $3.682</li>
+            <li>Find the deviation of each value from the mean ($3.682): -0.392, -0.092, 0.108, 0.068, 0.308</li>
+            <li>Square each individual deviation: 0.153664, 0.008464, 0.011664, 0.004624, 0.094864</li>
+            <li>Sum all the squared deviations together: 0.27328</li>
+            <li>Divide by n - 1 since this represents a sample: 0.27328 / 4 = 0.06832</li>
+            <li>Calculate the square root of the variance: sqrt(0.06832) = 0.26138 = $0.26</li>
+        </ol>
+    </solution>
+</exercise>
+
+
+<example xml:id="example-baseball-ages">
+  <statement>
+    <p>
+      On a baseball team, the ages of each of the players are as follows:
+    </p>
+    <p>
+      <me>21; 21; 22; 23; 24; 24; 25; 25; 28; 29; 29; 31; 32; 33; 33; 34; 35; 36; 36; 36; 36; 38; 38; 38; 40</me>
+    </p>
+    <p>
+      Find the mean and standard deviation. Then find the value that is two standard deviations 
+      above the mean.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      First, we find the sample mean (<m>\bar{x}</m>) by adding all the ages together and 
+      dividing by the total number of players (<m>n = 25</m>):
+      <me>\bar{x} = \frac{\sum x}{n} = \frac{767}{25} = 30.68</me>
+    </p>
+    <p>
+      Next, we build a table to find the deviations from the mean (<m>x - \bar{x}</m>) and their squares (<m>(x - \bar{x})^2</m>) to compute the sample standard deviation (<m>s</m>).
+    </p>
+    <table xml:id="table-age-deviations">
+      <title>Standard Deviation Calculations for Player Ages</title>
+      <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+        <row header="yes">
+          <cell><m>x</m></cell>
+          <cell><m>x - \bar{x}</m></cell>
+          <cell><m>(x - \bar{x})^2</m></cell>
+        </row>
+        <row><cell>21</cell><cell><m>-9.68</m></cell><cell><m>93.7024</m></cell></row>
+        <row><cell>21</cell><cell><m>-9.68</m></cell><cell><m>93.7024</m></cell></row>
+        <row><cell>22</cell><cell><m>-8.68</m></cell><cell><m>75.3424</m></cell></row>
+        <row><cell>23</cell><cell><m>-7.68</m></cell><cell><m>58.9824</m></cell></row>
+        <row><cell>24</cell><cell><m>-6.68</m></cell><cell><m>44.6224</m></cell></row>
+        <row><cell>24</cell><cell><m>-6.68</m></cell><cell><m>44.6224</m></cell></row>
+        <row><cell>25</cell><cell><m>-5.68</m></cell><cell><m>32.2624</m></cell></row>
+        <row><cell>25</cell><cell><m>-5.68</m></cell><cell><m>32.2624</m></cell></row>
+        <row><cell>28</cell><cell><m>-2.68</m></cell><cell><m>7.1824</m></cell></row>
+        <row><cell>29</cell><cell><m>-1.68</m></cell><cell><m>2.8224</m></cell></row>
+        <row><cell>29</cell><cell><m>-1.68</m></cell><cell><m>2.8224</m></cell></row>
+        <row><cell>31</cell><cell><m>0.32</m></cell><cell><m>0.1024</m></cell></row>
+        <row><cell>32</cell><cell><m>1.32</m></cell><cell><m>1.7424</m></cell></row>
+        <row><cell>33</cell><cell><m>2.32</m></cell><cell><m>5.3824</m></cell></row>
+        <row><cell>33</cell><cell><m>2.32</m></cell><cell><m>5.3824</m></cell></row>
+        <row><cell>34</cell><cell><m>3.32</m></cell><cell><m>11.0224</m></cell></row>
+        <row><cell>35</cell><cell><m>4.32</m></cell><cell><m>18.6624</m></cell></row>
+        <row><cell>36</cell><cell><m>5.32</m></cell><cell><m>28.3024</m></cell></row>
+        <row><cell>36</cell><cell><m>5.32</m></cell><cell><m>28.3024</m></cell></row>
+        <row><cell>36</cell><cell><m>5.32</m></cell><cell><m>28.3024</m></cell></row>
+        <row><cell>36</cell><cell><m>5.32</m></cell><cell><m>28.3024</m></cell></row>
+        <row><cell>38</cell><cell><m>7.32</m></cell><cell><m>53.5824</m></cell></row>
+        <row><cell>38</cell><cell><m>7.32</m></cell><cell><m>53.5824</m></cell></row>
+        <row><cell>38</cell><cell><m>7.32</m></cell><cell><m>53.5824</m></cell></row>
+        <row><cell>40</cell><cell><m>9.32</m></cell><cell><m>86.8624</m></cell></row>
+        <row bottom="minor">
+          <cell><m>\sum x = 767</m></cell>
+          <cell></cell>
+          <cell><m>\sum (x - \bar{x})^2 = 891.44</m></cell>
+        </row>
+      </tabular>
+    </table>
+    <p>
+      Using the sum of squared deviations, we find the sample standard deviation (<m>s</m>):
+      <me>s = \sqrt{\frac{\sum(x - \bar{x})^2}{n - 1}} = \sqrt{\frac{891.44}{24}} = \sqrt{37.1433} \approx 6.09</me>
+    </p>
+    <p>
+      Finally, we calculate the value that is two standard deviations above the mean:
+      <me>\text{Value} = \bar{x} + 2s = 30.68 + 2(6.09) = 30.68 + 12.18 = 42.86</me>
+    </p>
+  </solution>
+</example>
 
 <exercise>
     <title>Puzzle Solving Times</title>
@@ -608,7 +749,7 @@ values.)
         The times were: 15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4.
       </p>
       <p>
-    <ol id="a">
+    <ol marker="a">
         <li> <p>Find the mean</p> </li>
         <li> <p>Find the median</p> </li>
        <li> <p>Find the standard deviation of this data</p> </li>
@@ -617,7 +758,7 @@ values.)
     </statement>
     <solution>
         <task id="a">
-            <title>Find the mean</title>
+            <p>Find the mean</p>
             <ol marker="1">
                 <li>Sum all values: 15.2 + 18.8 + 19.3 + 19.7 + 20.2 + 21.8 + 22.1 + 29.4 = 166.5</li>
                 <li>Count total values: n = 8</li>
@@ -626,7 +767,7 @@ values.)
            
         </task>
         <task id="b">
-            <title>Find the median</title>
+            <p>Find the median</p>
             <ol>
                 <li>Arrange the data values in order: 15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4</li>
                 <li>Locate the two middle values at positions 4 and 5: 19.7 and 20.2</li>
@@ -635,7 +776,7 @@ values.)
             
         </task>
         <task id="c">
-            <title>Find the standard deviation of this data</title>
+            <p>Find the standard deviation of this data</p>
             <ol marker="1">
                 <li>Find the deviation of each value from the mean (20.8125): -5.6125, -2.0125, -1.5125, -1.1125, -0.6125, 0.9875, 1.2875, 8.5875</li>
                 <li>Square each individual deviation: 31.500156, 4.050156, 2.287656, 1.237656, 0.375156, 0.975156, 1.657656, 73.745156</li>
@@ -646,7 +787,6 @@ values.)
         </task>
     </solution>
 </exercise>
-
 
   <!-- =================================================================== -->
   <!-- SUBSECTION: EFFECT OF OUTLIERS                                      -->

@@ -2023,7 +2023,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Measures of Center and Spread",
-  "body": " Measures of Center and Spread  Understanding distributions and their measures of center and spread is crucial for solving many statistics problems on the math practice. These concepts help summarize data sets concisely and allow for easier comparison and interpretation.  The center of a distribution describes a typical value of the data set and can be represented by the mean, median, or mode. The spread of a distribution indicates how much the data varies and can be measured using the range and standard deviation.      Mean  The mean, or average, is calculated by summing all values in a data set and dividing by the number of values. It represents a central point in the data. The mean is a measure of center that is sensitive to every value in the data set, making it particularly useful when the values are relatively close to each other.  To calculate the mean, add up all the values in the data set and then divide by the number of values. This gives an average value that can be used to represent the entire data set.     Find the mean of the data set .    Sum the values ( ) and divide by the number of values ( ). The mean is .        Median  The median is the middle value of a data set when the values are arranged in ascending order. If there is an odd number of values, the median is the middle value. If there is an even number of values, the median is the average of the two middle values.  The median is a useful measure of center because it is not affected by extremely high or low values (outliers). This makes it a better representative of the data set when there are outliers present.    Odd Number of Values   Find the median of .    The data set is already in order. The median is .     Even Number of Values   Find the median of .    The middle values are and . The median is .        Mode  The mode is the value that appears most frequently in a data set. A data set can have no mode, one mode, or multiple modes. The mode is useful for understanding which values are most common in the data set. The mode is particularly useful for categorical data, where we are interested in knowing the most frequent category.     Find the mode of the data set .    The mode is because it appears most frequently.        Measures of Spread  Measures of spread describe how much the data varies. Two common measures are range and standard deviation. These measures help to understand the variability within the data set.    Range  The range is the difference between the maximum and minimum values in a data set. It gives a quick sense of the spread of the data. A larger range indicates greater variability, while a smaller range indicates less variability.     Find the range of the data set .    The range is .     Standard Deviation  The standard deviation measures the typical spread from the mean; it is the average distance between the mean and a value in the data set. Larger standard deviations indicate greater spread. Standard deviation is a more complex measure of spread, but it provides a more detailed picture of variability within the data set than the range.       Effect of Outliers  Outliers are values significantly different from other values in a data set. They can greatly affect summary statistics like the mean, median, mode, range, and standard deviation.  Consider the baseline data set where the outlier is . The sections below highlight how this outlier impacts each statistic:    Effect on Mean  Outliers can significantly skew the mean of a data set. Including it, the mean is skewed higher. Removing it, the mean is more representative of the majority of the data.    Effect on Median  The median is less affected by outliers because it is based on the middle values of the data set. In the data set , the median remains regardless of the outlier.    Effect on Mode  Outliers have little to no effect on the mode since the mode is determined by the most frequently occurring values. In the data set , the mode is still .    Effect on Range  Outliers can drastically increase the range of a data set since the range is the difference between the maximum and minimum values. In the data set , the range is , which is significantly affected by the outlier.    Effect on Standard Deviation  Outliers increase the standard deviation because they increase the average distance from the mean. The standard deviation is much larger when the outlier is included compared to when it is excluded.         Practice Questions    Find the mean of the data set .    First, sum all the values in the data set: Next, divide the sum by the total number of values ( ):       Find the median of the data set .    First, arrange the data set in ascending order: . Since there is an odd number of values ( ), the median is the exact middle value. The middle value is .      Find the mode of the data set .    Count the frequency of each value in the set:  appears time  appears times  appears times  appears time  The value appears most frequently, so the mode is .      Find the range of the data set .    Identify the maximum and minimum values in the data set: Subtract the minimum value from the maximum value:       If the mean of is , what is ?    The formula for the mean of values is: Simplify the numerator by adding the known constants: Multiply both sides by to isolate the numerator: Subtract from both sides to find :          Frequently Asked Questions    What is the difference between mean, median, and mode?  The mean is the average (sum of values divided by count), the median is the middle value when data is ordered, and the mode is the most frequently occurring value. The median is less affected by outliers than the mean.    What is standard deviation?  Standard deviation measures the typical spread from the mean—it is the average distance between each data point and the mean. A larger standard deviation indicates greater variability in the data set.    How do I find the median of an even number of values?  When there is an even number of values, the median is the average of the two middle values. First arrange the data in order, then identify the two middle values and calculate their average.     "
+  "body": " Measures of Center and Spread  Understanding distributions and their measures of center and spread is crucial for solving many statistics problems on the math practice. These concepts help summarize data sets concisely and allow for easier comparison and interpretation.  The center of a distribution describes a typical value of the data set and can be represented by the mean, median, or mode. The spread of a distribution indicates how much the data varies and can be measured using the range and standard deviation.      Mean  The mean, or average, is calculated by summing all values in a data set and dividing by the number of values. It represents a central point in the data. The mean is a measure of center that is sensitive to every value in the data set, making it particularly useful when the values are relatively close to each other.  To calculate the mean, add up all the values in the data set and then divide by the number of values. This gives an average value that can be used to represent the entire data set.  (The mean of a set of data is the sum of the data values divided by the number of values.)     Find the mean of the data set .    Sum the values ( ) and divide by the number of values ( ). The mean is .      Marci's exam scores for her last math class were: . Find the mean of these exam scores and round it appropriately.    To find the mean, sum the scores and divide by the total number of exams:   Typically, we round means to one more decimal place than the original data had. Since the original scores are whole numbers, we round our final answer to one decimal place. Therefore, we round to .      The number of touchdown (TD) passes thrown by each of the 31 teams in the National Football League in the 2000 season are shown below:   NFL Touchdown Passes (2000 Season)    37  33  33  32  29  28  28  23    22  22  22  21  21  21  20  20    19  19  18  18  18  18  16  15    14  14  14  12  12  9  6      Find the mean number of touchdown passes thrown during this season.    First, find the sum of all the values in the data set:   Next, divide by , which is the total number of data values:   Following the standard rounding convention, we round the mean to one more decimal place than the original data. Since the raw touchdown counts are whole numbers, we round our final answer to one decimal place, giving .  It is most correct to report that The mean number of touchdown passes thrown in the NFL in the 2000 season was 20.5 passes, though it is common to see the more casual term average used in place of mean.       The price of a jar of peanut butter at 5 stores was: , , , , and . Find the mean price.    First, find the sum of the prices across all 5 stores:   Next, divide the total sum by the number of stores ( ):   Following the standard rounding rule for the mean (rounding to one more decimal place than the original data), we round from two decimal places to three decimal places. The exact mean price is (or approximately when rounded to the nearest standard cent).        Median  The median is the middle value of a data set when the values are arranged in ascending order. If there is an odd number of values, the median is the middle value. If there is an even number of values, the median is the average of the two middle values.  The median is a useful measure of center because it is not affected by extremely high or low values (outliers). This makes it a better representative of the data set when there are outliers present.    Odd Number of Values   Find the median of .    The data set is already in order. The median is .     Even Number of Values   Find the median of .    The middle values are and . The median is .      Returning to the football touchdown data from , find the median number of touchdown passes thrown in the NFL during the 2000 season.    To find the median, we start by listing the data in order. As seen in , the data is already in decreasing order, so we can work with it without needing to reorder it first.  Since there are data values (an odd number), the median will be the middle number, which is the 16th data value. We can compute its position by evaluating and rounding up to , which leaves exactly values below it and values above it.  Counting to the 16th data value in the ordered list yields . Therefore, the median number of touchdown passes in the 2000 season was passes. Notice that for this data, the median is fairly close to the mean of that we calculated earlier in .      Find the median of these quiz scores:     We start by listing the data in ascending order:   Since there are data values (an even number), there is no single middle number. Instead, we find the mean of the two middle numbers, which are the 5th and 6th values: and .  Calculating their average gives: Therefore, the median quiz score was .      The price of a jar of peanut butter at 5 stores was: , , , , and . Find the median price.    First, arrange the prices in ascending order:   Since there is an odd number of data values ( ), the median is the exact middle number, which is the 3rd value in our ordered list.  The middle value is . Therefore, the median price for a jar of peanut butter is .        Mode  The mode is the value that appears most frequently in a data set. A data set can have no mode, one mode, or multiple modes. The mode is useful for understanding which values are most common in the data set. The mode is particularly useful for categorical data, where we are interested in knowing the most frequent category.     Find the mode of the data set .    The mode is because it appears most frequently.      In a vehicle color survey, the following frequency data was collected:   Vehicle Color Survey Frequencies    Color  Frequency    Blue  3    Green  5    Red  4    White  3    Black  2    Grey  3     Find the mode of this data set.    For this data, Green is the mode, since it is the data value that occurred most frequently with a count of .  It is possible for a data set to have more than one mode if several categories share the same highest frequency, or no modes if every single category occurs only once.      Reviewers were asked to rate a product on a scale of 1 to 5. The results are shown in the frequency table below:   Product Rating Frequencies    Rating  Frequency    1  4    2  8    3  7    4  3    5  1     Find:  The mean rating  The median rating  The mode rating      First, determine the total number of reviewers ( ) by summing the frequencies:      To find the mean rating, calculate the weighted sum of the ratings and divide by the total number of reviewers:   Rounding to one more decimal place than the original data gives a mean rating of .    Since there are data values (an odd number), the median is the middle value, located at position . Accumulating frequencies from the lowest rating up to the 12th value:  Ratings of 1 account for the first values (positions 1–4).  Ratings of 2 account for the next values (positions 5–12).  The 12th value falls exactly at the end of the 2-rating group, so the median rating is .    The mode is the value with the highest frequency. A rating of has the highest frequency with reviews, so the mode rating is .           Measures of Spread  Measures of spread describe how much the data varies. Two common measures are range and standard deviation. These measures help to understand the variability within the data set.   Consider these three sets of quiz scores:      Section A:       Section B:       Section C:       All three of these sets of data have a mean of and a median of , yet the sets of scores are clearly quite different. In Section A, everyone had the same score. In Section B, half the class got no points and the other half got a perfect score, assuming this was a 10-point quiz. Section C was not as consistent as Section A, but not as widely varied as Section B.  In addition to the mean and median, which are measures of the typical or middle value, we also need a measure of how spread out or varied each data set is. There are several ways to measure this spread of the data. The first is the simplest and is called the range .   Range  The range is the difference between the maximum and minimum values in a data set. It gives a quick sense of the spread of the data. A larger range indicates greater variability, while a smaller range indicates less variability.     Find the range of the data set .    The range is .      Using the quiz scores from above, find the range for Section A, Section B, and Section C.    The range is calculated by subtracting the minimum score from the maximum score in each data set:     For Section A, the maximum value is and the minimum value is . The range is .    For Section B, the maximum value is and the minimum value is . The range is .    For Section C, the maximum value is and the minimum value is . The range is .        Standard Deviation  The standard deviation measures the typical spread from the mean; it is the average distance between the mean and a value in the data set. Larger standard deviations indicate greater spread. Standard deviation is a more complex measure of spread, but it provides a more detailed picture of variability within the data set than the range.       Effect of Outliers  Outliers are values significantly different from other values in a data set. They can greatly affect summary statistics like the mean, median, mode, range, and standard deviation.  Consider the baseline data set where the outlier is . The sections below highlight how this outlier impacts each statistic:    Effect on Mean  Outliers can significantly skew the mean of a data set. Including it, the mean is skewed higher. Removing it, the mean is more representative of the majority of the data.    Effect on Median  The median is less affected by outliers because it is based on the middle values of the data set. In the data set , the median remains regardless of the outlier.    Effect on Mode  Outliers have little to no effect on the mode since the mode is determined by the most frequently occurring values. In the data set , the mode is still .    Effect on Range  Outliers can drastically increase the range of a data set since the range is the difference between the maximum and minimum values. In the data set , the range is , which is significantly affected by the outlier.    Effect on Standard Deviation  Outliers increase the standard deviation because they increase the average distance from the mean. The standard deviation is much larger when the outlier is included compared to when it is excluded.         Practice Questions    Find the mean of the data set .    First, sum all the values in the data set: Next, divide the sum by the total number of values ( ):       Find the median of the data set .    First, arrange the data set in ascending order: . Since there is an odd number of values ( ), the median is the exact middle value. The middle value is .      Find the mode of the data set .    Count the frequency of each value in the set:  appears time  appears times  appears times  appears time  The value appears most frequently, so the mode is .      Find the range of the data set .    Identify the maximum and minimum values in the data set: Subtract the minimum value from the maximum value:       If the mean of is , what is ?    The formula for the mean of values is: Simplify the numerator by adding the known constants: Multiply both sides by to isolate the numerator: Subtract from both sides to find :          Frequently Asked Questions    What is the difference between mean, median, and mode?  The mean is the average (sum of values divided by count), the median is the middle value when data is ordered, and the mode is the most frequently occurring value. The median is less affected by outliers than the mean.    What is standard deviation?  Standard deviation measures the typical spread from the mean—it is the average distance between each data point and the mean. A larger standard deviation indicates greater variability in the data set.    How do I find the median of an even number of values?  When there is an even number of values, the median is the average of the two middle values. First arrange the data in order, then identify the two middle values and calculate their average.     "
 },
 {
   "id": "def-mean",
@@ -2032,7 +2032,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "4.1",
   "title": "Mean.",
-  "body": " Mean  The mean, or average, is calculated by summing all values in a data set and dividing by the number of values. It represents a central point in the data. The mean is a measure of center that is sensitive to every value in the data set, making it particularly useful when the values are relatively close to each other.  To calculate the mean, add up all the values in the data set and then divide by the number of values. This gives an average value that can be used to represent the entire data set.  "
+  "body": " Mean  The mean, or average, is calculated by summing all values in a data set and dividing by the number of values. It represents a central point in the data. The mean is a measure of center that is sensitive to every value in the data set, making it particularly useful when the values are relatively close to each other.  To calculate the mean, add up all the values in the data set and then divide by the number of values. This gives an average value that can be used to represent the entire data set.  (The mean of a set of data is the sum of the data values divided by the number of values.)  "
 },
 {
   "id": "example-mean",
@@ -2044,11 +2044,38 @@ var ptx_lunr_docs = [
   "body": "  Find the mean of the data set .    Sum the values ( ) and divide by the number of values ( ). The mean is .   "
 },
 {
+  "id": "example-rounding-mean",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#example-rounding-mean",
+  "type": "Example",
+  "number": "4.3",
+  "title": "",
+  "body": "  Marci's exam scores for her last math class were: . Find the mean of these exam scores and round it appropriately.    To find the mean, sum the scores and divide by the total number of exams:   Typically, we round means to one more decimal place than the original data had. Since the original scores are whole numbers, we round our final answer to one decimal place. Therefore, we round to .   "
+},
+{
+  "id": "example-nfl-touchdowns-mean",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#example-nfl-touchdowns-mean",
+  "type": "Example",
+  "number": "4.4",
+  "title": "",
+  "body": "  The number of touchdown (TD) passes thrown by each of the 31 teams in the National Football League in the 2000 season are shown below:   NFL Touchdown Passes (2000 Season)    37  33  33  32  29  28  28  23    22  22  22  21  21  21  20  20    19  19  18  18  18  18  16  15    14  14  14  12  12  9  6      Find the mean number of touchdown passes thrown during this season.    First, find the sum of all the values in the data set:   Next, divide by , which is the total number of data values:   Following the standard rounding convention, we round the mean to one more decimal place than the original data. Since the raw touchdown counts are whole numbers, we round our final answer to one decimal place, giving .  It is most correct to report that The mean number of touchdown passes thrown in the NFL in the 2000 season was 20.5 passes, though it is common to see the more casual term average used in place of mean.    "
+},
+{
+  "id": "exercise-peanut-butter-mean",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#exercise-peanut-butter-mean",
+  "type": "Checkpoint",
+  "number": "4.6",
+  "title": "",
+  "body": "  The price of a jar of peanut butter at 5 stores was: , , , , and . Find the mean price.    First, find the sum of the prices across all 5 stores:   Next, divide the total sum by the number of stores ( ):   Following the standard rounding rule for the mean (rounding to one more decimal place than the original data), we round from two decimal places to three decimal places. The exact mean price is (or approximately when rounded to the nearest standard cent).   "
+},
+{
   "id": "def-median",
   "level": "2",
   "url": "sec-measures-of-center-spread.html#def-median",
   "type": "Definition",
-  "number": "4.3",
+  "number": "4.7",
   "title": "Median.",
   "body": " Median  The median is the middle value of a data set when the values are arranged in ascending order. If there is an odd number of values, the median is the middle value. If there is an even number of values, the median is the average of the two middle values.  The median is a useful measure of center because it is not affected by extremely high or low values (outliers). This makes it a better representative of the data set when there are outliers present.  "
 },
@@ -2057,7 +2084,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-measures-of-center-spread.html#example-median-odd",
   "type": "Example",
-  "number": "4.4",
+  "number": "4.8",
   "title": "Odd Number of Values.",
   "body": " Odd Number of Values   Find the median of .    The data set is already in order. The median is .   "
 },
@@ -2066,16 +2093,43 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-measures-of-center-spread.html#example-median-even",
   "type": "Example",
-  "number": "4.5",
+  "number": "4.9",
   "title": "Even Number of Values.",
   "body": " Even Number of Values   Find the median of .    The middle values are and . The median is .   "
+},
+{
+  "id": "example-nfl-touchdowns-median",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#example-nfl-touchdowns-median",
+  "type": "Example",
+  "number": "4.10",
+  "title": "",
+  "body": "  Returning to the football touchdown data from , find the median number of touchdown passes thrown in the NFL during the 2000 season.    To find the median, we start by listing the data in order. As seen in , the data is already in decreasing order, so we can work with it without needing to reorder it first.  Since there are data values (an odd number), the median will be the middle number, which is the 16th data value. We can compute its position by evaluating and rounding up to , which leaves exactly values below it and values above it.  Counting to the 16th data value in the ordered list yields . Therefore, the median number of touchdown passes in the 2000 season was passes. Notice that for this data, the median is fairly close to the mean of that we calculated earlier in .   "
+},
+{
+  "id": "example-quiz-scores-median",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#example-quiz-scores-median",
+  "type": "Example",
+  "number": "4.11",
+  "title": "",
+  "body": "  Find the median of these quiz scores:     We start by listing the data in ascending order:   Since there are data values (an even number), there is no single middle number. Instead, we find the mean of the two middle numbers, which are the 5th and 6th values: and .  Calculating their average gives: Therefore, the median quiz score was .   "
+},
+{
+  "id": "exercise-peanut-butter-median",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#exercise-peanut-butter-median",
+  "type": "Checkpoint",
+  "number": "4.12",
+  "title": "",
+  "body": "  The price of a jar of peanut butter at 5 stores was: , , , , and . Find the median price.    First, arrange the prices in ascending order:   Since there is an odd number of data values ( ), the median is the exact middle number, which is the 3rd value in our ordered list.  The middle value is . Therefore, the median price for a jar of peanut butter is .   "
 },
 {
   "id": "def-mode",
   "level": "2",
   "url": "sec-measures-of-center-spread.html#def-mode",
   "type": "Definition",
-  "number": "4.6",
+  "number": "4.13",
   "title": "Mode.",
   "body": " Mode  The mode is the value that appears most frequently in a data set. A data set can have no mode, one mode, or multiple modes. The mode is useful for understanding which values are most common in the data set. The mode is particularly useful for categorical data, where we are interested in knowing the most frequent category.  "
 },
@@ -2084,25 +2138,52 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-measures-of-center-spread.html#example-mode",
   "type": "Example",
-  "number": "4.7",
+  "number": "4.14",
   "title": "",
   "body": "  Find the mode of the data set .    The mode is because it appears most frequently.   "
+},
+{
+  "id": "example-vehicle-color-mode",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#example-vehicle-color-mode",
+  "type": "Example",
+  "number": "4.15",
+  "title": "",
+  "body": "  In a vehicle color survey, the following frequency data was collected:   Vehicle Color Survey Frequencies    Color  Frequency    Blue  3    Green  5    Red  4    White  3    Black  2    Grey  3     Find the mode of this data set.    For this data, Green is the mode, since it is the data value that occurred most frequently with a count of .  It is possible for a data set to have more than one mode if several categories share the same highest frequency, or no modes if every single category occurs only once.   "
+},
+{
+  "id": "exercise-product-ratings",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#exercise-product-ratings",
+  "type": "Checkpoint",
+  "number": "4.17",
+  "title": "",
+  "body": "  Reviewers were asked to rate a product on a scale of 1 to 5. The results are shown in the frequency table below:   Product Rating Frequencies    Rating  Frequency    1  4    2  8    3  7    4  3    5  1     Find:  The mean rating  The median rating  The mode rating      First, determine the total number of reviewers ( ) by summing the frequencies:      To find the mean rating, calculate the weighted sum of the ratings and divide by the total number of reviewers:   Rounding to one more decimal place than the original data gives a mean rating of .    Since there are data values (an odd number), the median is the middle value, located at position . Accumulating frequencies from the lowest rating up to the 12th value:  Ratings of 1 account for the first values (positions 1–4).  Ratings of 2 account for the next values (positions 5–12).  The 12th value falls exactly at the end of the 2-rating group, so the median rating is .    The mode is the value with the highest frequency. A rating of has the highest frequency with reviews, so the mode rating is .      "
 },
 {
   "id": "def-measures-of-spread",
   "level": "2",
   "url": "sec-measures-of-center-spread.html#def-measures-of-spread",
   "type": "Definition",
-  "number": "4.8",
+  "number": "4.19",
   "title": "Measures of Spread.",
   "body": " Measures of Spread  Measures of spread describe how much the data varies. Two common measures are range and standard deviation. These measures help to understand the variability within the data set.  "
 },
 {
-  "id": "sec-measures-of-center-spread-12",
+  "id": "sec-measures-of-center-spread-23",
   "level": "2",
-  "url": "sec-measures-of-center-spread.html#sec-measures-of-center-spread-12",
+  "url": "sec-measures-of-center-spread.html#sec-measures-of-center-spread-23",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "range "
+},
+{
+  "id": "sec-measures-of-center-spread-24",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#sec-measures-of-center-spread-24",
   "type": "Note",
-  "number": "4.9",
+  "number": "4.20",
   "title": "Range.",
   "body": " Range  The range is the difference between the maximum and minimum values in a data set. It gives a quick sense of the spread of the data. A larger range indicates greater variability, while a smaller range indicates less variability.  "
 },
@@ -2111,16 +2192,25 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-measures-of-center-spread.html#example-range",
   "type": "Example",
-  "number": "4.10",
+  "number": "4.21",
   "title": "",
   "body": "  Find the range of the data set .    The range is .   "
 },
 {
-  "id": "sec-measures-of-center-spread-14",
+  "id": "example-quiz-scores-range",
   "level": "2",
-  "url": "sec-measures-of-center-spread.html#sec-measures-of-center-spread-14",
+  "url": "sec-measures-of-center-spread.html#example-quiz-scores-range",
+  "type": "Example",
+  "number": "4.22",
+  "title": "",
+  "body": "  Using the quiz scores from above, find the range for Section A, Section B, and Section C.    The range is calculated by subtracting the minimum score from the maximum score in each data set:     For Section A, the maximum value is and the minimum value is . The range is .    For Section B, the maximum value is and the minimum value is . The range is .    For Section C, the maximum value is and the minimum value is . The range is .      "
+},
+{
+  "id": "sec-measures-of-center-spread-27",
+  "level": "2",
+  "url": "sec-measures-of-center-spread.html#sec-measures-of-center-spread-27",
   "type": "Note",
-  "number": "4.11",
+  "number": "4.23",
   "title": "Standard Deviation.",
   "body": " Standard Deviation  The standard deviation measures the typical spread from the mean; it is the average distance between the mean and a value in the data set. Larger standard deviations indicate greater spread. Standard deviation is a more complex measure of spread, but it provides a more detailed picture of variability within the data set than the range.  "
 },

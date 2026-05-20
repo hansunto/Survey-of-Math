@@ -27,6 +27,10 @@
       To calculate the mean, add up all the values in the data set and then divide by the number of values. 
       This gives an average value that can be used to represent the entire data set.
     </p>
+    <p>
+    (The <term> mean </term> of a set of data is the sum of the data values divided by the number of
+values.)
+    </p>
     </definition>
 
     <example xml:id="example-mean">
@@ -42,15 +46,131 @@
         </p>
       </solution>
     </example>
-  
+    <example xml:id="example-rounding-mean">
+  <statement>
+    <p>
+      Marci's exam scores for her last math class were: <m>79, 86, 82, 94</m>. 
+      Find the mean of these exam scores and round it appropriately.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      To find the mean, sum the scores and divide by the total number of exams:
+      <me>\frac{79 + 86 + 82 + 94}{4} = 85.25</me>
+    </p>
+    <p>
+      Typically, we round means to one more decimal place than the original data had. 
+      Since the original scores are whole numbers, we round our final answer to one decimal place. 
+      Therefore, we round <m>85.25</m> to <m>85.3</m>.
+    </p>
+  </solution>
+</example>
 
+<example xml:id="example-nfl-touchdowns-mean">
+  <statement>
+    <p>
+      The number of touchdown (TD) passes thrown by each of the 31 teams in the National Football League in the 2000 season are shown below:
+    </p>
+    
+    <table xml:id="table-nfl-tds">
+      <title>NFL Touchdown Passes (2000 Season)</title>
+      <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+        <row>
+          <cell>37</cell>
+          <cell>33</cell>
+          <cell>33</cell>
+          <cell>32</cell>
+          <cell>29</cell>
+          <cell>28</cell>
+          <cell>28</cell>
+          <cell>23</cell>
+        </row>
+        <row>
+          <cell>22</cell>
+          <cell>22</cell>
+          <cell>22</cell>
+          <cell>21</cell>
+          <cell>21</cell>
+          <cell>21</cell>
+          <cell>20</cell>
+          <cell>20</cell>
+        </row>
+        <row>
+          <cell>19</cell>
+          <cell>19</cell>
+          <cell>18</cell>
+          <cell>18</cell>
+          <cell>18</cell>
+          <cell>18</cell>
+          <cell>16</cell>
+          <cell>15</cell>
+        </row>
+        <row>
+          <cell>14</cell>
+          <cell>14</cell>
+          <cell>14</cell>
+          <cell>12</cell>
+          <cell>12</cell>
+          <cell>9</cell>
+          <cell>6</cell>
+          <cell Edvard="none"></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Find the mean number of touchdown passes thrown during this season.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      First, find the sum of all the values in the data set:
+      <me>37 + 33 + 33 + 32 + 29 + 28 + 28 + 23 + 22 + 22 + 22 + 21 + 21 + 21 + 20 + 20 + 19 + 19 + 18 + 18 + 18 + 18 + 16 + 15 + 14 + 14 + 14 + 12 + 12 + 9 + 6 = 634 \text{ total TDs}</me>
+    </p>
+    <p>
+      Next, divide by <m>31</m>, which is the total number of data values:
+      <me>\frac{634}{31} \approx 20.4516</me>
+    </p>
+    <p>
+      Following the standard rounding convention, we round the mean to one more decimal place than the original data. 
+      Since the raw touchdown counts are whole numbers, we round our final answer to one decimal place, giving <m>20.5</m>.
+    </p>
+    <p>
+      It is most correct to report that <q>The mean number of touchdown passes thrown in the NFL in the 2000 season was 20.5 passes,</q> though it is common to see the more casual term <q>average</q> used in place of <q>mean.</q>
+    </p>
+  </solution>
+</example>
+
+ <exercise xml:id="exercise-peanut-butter-mean">
+  <statement>
+    <p>
+      The price of a jar of peanut butter at 5 stores was: <m>\$3.29</m>, <m>\$3.59</m>, <m>\$3.79</m>, <m>\$3.75</m>, and <m>\$3.99</m>. 
+      Find the mean price.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      First, find the sum of the prices across all 5 stores:
+      <me>3.29 + 3.59 + 3.79 + 3.75 + 3.99 = 18.41</me>
+    </p>
+    <p>
+      Next, divide the total sum by the number of stores (<m>5</m>):
+      <me>\text{Mean} = \frac{18.41}{5} = 3.682</me>
+    </p>
+    <p>
+      Following the standard rounding rule for the mean (rounding to one more decimal place than the original data), we round from two decimal places to three decimal places. 
+      The exact mean price is <m>\$3.682</m> (or approximately <m>\$3.68</m> when rounded to the nearest standard cent).
+    </p>
+  </solution>
+</exercise>
+ 
   <!-- =================================================================== -->
   <!-- SUBSECTION: MEDIAN                                                  -->
   <!-- =================================================================== -->
   <definition xml:id="def-median">
     <title>Median</title>
     <p>
-      The median is the middle value of a data set when the values are arranged in ascending order. 
+      The <term>median </term>  is the middle value of a data set when the values are arranged in ascending order. 
       If there is an odd number of values, the median is the middle value. 
       If there is an even number of values, the median is the average of the two middle values.
     </p>
@@ -89,7 +209,73 @@
         </p>
       </solution>
     </example>
-  
+  <example xml:id="example-nfl-touchdowns-median">
+  <statement>
+    <p>
+      Returning to the football touchdown data from <xref ref="example-nfl-touchdowns-mean" />, find the median number of touchdown passes thrown in the NFL during the 2000 season.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      To find the median, we start by listing the data in order. 
+      As seen in <xref ref="table-nfl-tds" />, the data is already in decreasing order, so we can work with it without needing to reorder it first.
+    </p>
+    <p>
+      Since there are <m>31</m> data values (an odd number), the median will be the middle number, which is the 16th data value. 
+      We can compute its position by evaluating <m>31/2 = 15.5</m> and rounding up to <m>16</m>, which leaves exactly <m>15</m> values below it and <m>15</m> values above it.
+    </p>
+    <p>
+      Counting to the 16th data value in the ordered list yields <m>20</m>. 
+      Therefore, the median number of touchdown passes in the 2000 season was <m>20</m> passes. 
+      Notice that for this data, the median is fairly close to the mean of <m>20.5</m> that we calculated earlier in <xref ref="example-nfl-touchdowns-mean" />.
+    </p>
+  </solution>
+</example>
+
+<example xml:id="example-quiz-scores-median">
+  <statement>
+    <p>
+      Find the median of these quiz scores:
+      <me>5, 10, 8, 6, 4, 8, 2, 5, 7, 7</me>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We start by listing the data in ascending order:
+      <me>2, 4, 5, 5, 6, 7, 7, 8, 8, 10</me>
+    </p>
+    <p>
+      Since there are <m>10</m> data values (an even number), there is no single middle number. 
+      Instead, we find the mean of the two middle numbers, which are the 5th and 6th values: <m>6</m> and <m>7</m>.
+    </p>
+    <p>
+      Calculating their average gives:
+      <me>\frac{6 + 7}{2} = 6.5</me>
+      Therefore, the median quiz score was <m>6.5</m>.
+    </p>
+  </solution>
+</example>
+<exercise xml:id="exercise-peanut-butter-median">
+  <statement>
+    <p>
+      The price of a jar of peanut butter at 5 stores was: <m>\$3.29</m>, <m>\$3.59</m>, <m>\$3.79</m>, <m>\$3.75</m>, and <m>\$3.99</m>. 
+      Find the median price.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      First, arrange the prices in ascending order:
+      <me>3.29, \ 3.59, \ 3.75, \ 3.79, \ 3.99</me>
+    </p>
+    <p>
+      Since there is an odd number of data values (<m>n = 5</m>), the median is the exact middle number, which is the 3rd value in our ordered list.
+    </p>
+    <p>
+      The middle value is <m>3.75</m>. 
+      Therefore, the median price for a jar of peanut butter is <m>\$3.75</m>.
+    </p>
+  </solution>
+</exercise>
 
   <!-- =================================================================== -->
   <!-- SUBSECTION: MODE                                                    -->
@@ -97,7 +283,7 @@
   <definition xml:id="def-mode">
     <title>Mode</title>
     <p>
-      The mode is the value that appears most frequently in a data set. 
+      The <term>mode </term>  is the value that appears most frequently in a data set. 
       A data set can have no mode, one mode, or multiple modes. 
       The mode is useful for understanding which values are most common in the data set. 
       The mode is particularly useful for categorical data, where we are interested in knowing the most frequent category.
@@ -116,7 +302,141 @@
         </p>
       </solution>
     </example>
-  
+  <example xml:id="example-vehicle-color-mode">
+  <statement>
+    <p>
+      In a vehicle color survey, the following frequency data was collected:
+    </p>
+
+    <table xml:id="table-vehicle-colors">
+      <title>Vehicle Color Survey Frequencies</title>
+      <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+        <row header="yes">
+          <cell>Color</cell>
+          <cell>Frequency</cell>
+        </row>
+        <row>
+          <cell>Blue</cell>
+          <cell>3</cell>
+        </row>
+        <row>
+          <cell>Green</cell>
+          <cell>5</cell>
+        </row>
+        <row>
+          <cell>Red</cell>
+          <cell>4</cell>
+        </row>
+        <row>
+          <cell>White</cell>
+          <cell>3</cell>
+        </row>
+        <row>
+          <cell>Black</cell>
+          <cell>2</cell>
+        </row>
+        <row>
+          <cell>Grey</cell>
+          <cell>3</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Find the mode of this data set.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      For this data, <q>Green</q> is the mode, since it is the data value that occurred most frequently with a count of <m>5</m>.
+    </p>
+    <p>
+      It is possible for a data set to have more than one mode if several categories share the same highest frequency, or no modes if every single category occurs only once.
+    </p>
+  </solution>
+</example>
+<exercise xml:id="exercise-product-ratings">
+  <statement>
+    <p>
+      Reviewers were asked to rate a product on a scale of 1 to 5. The results are shown in the frequency table below:
+    </p>
+
+    <table xml:id="table-product-ratings">
+      <title>Product Rating Frequencies</title>
+      <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+        <row header="yes">
+          <cell>Rating</cell>
+          <cell>Frequency</cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>4</cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>8</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>7</cell>
+        </row>
+        <row>
+          <cell>4</cell>
+          <cell>3</cell>
+        </row>
+        <row>
+          <cell>5</cell>
+          <cell>1</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Find:
+      <ol marker="a.">
+        <li><p>The mean rating</p></li>
+        <li><p>The median rating</p></li>
+        <li><p>The mode rating</p></li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      First, determine the total number of reviewers (<m>n</m>) by summing the frequencies:
+      <me>n = 4 + 8 + 7 + 3 + 1 = 23</me>
+    </p>
+    <p>
+      <ol marker="a.">
+        <li>
+          <p>
+            To find the mean rating, calculate the weighted sum of the ratings and divide by the total number of reviewers:
+            <me>\text{Sum} = (1 \times 4) + (2 \times 8) + (3 \times 7) + (4 \times 3) + (5 \times 1)</me>
+            <me>\text{Sum} = 4 + 16 + 21 + 12 + 5 = 58</me>
+            <me>\text{Mean} = \frac{58}{23} \approx 2.5217</me>
+            Rounding to one more decimal place than the original data gives a mean rating of <m>2.5</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Since there are <m>23</m> data values (an odd number), the median is the middle value, located at position <m>(23 + 1) / 2 = 12</m>. 
+            Accumulating frequencies from the lowest rating up to the 12th value:
+            <ul>
+              <li><p>Ratings of 1 account for the first <m>4</m> values (positions 1–4).</p></li>
+              <li><p>Ratings of 2 account for the next <m>8</m> values (positions 5–12).</p></li>
+            </ul>
+            The 12th value falls exactly at the end of the 2-rating group, so the median rating is <m>2</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The mode is the value with the highest frequency. 
+            A rating of <m>2</m> has the highest frequency with <m>8</m> reviews, so the mode rating is <m>2</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</exercise>
 
   <!-- =================================================================== -->
   <!-- SUBSECTION: MEASURES OF SPREAD                                      -->
@@ -129,7 +449,30 @@
       These measures help to understand the variability within the data set.
     </p>
     </definition>
+<p>
+  Consider these three sets of quiz scores:
+</p>
 
+<p>
+  <ul>
+    <li> <p> <strong>Section A:</strong> <m>5, 5, 5, 5, 5, 5, 5, 5, 5, 5</m> </p> </li>
+    <li> <p> <strong>Section B:</strong> <m>0, 0, 0, 0, 0, 10, 10, 10, 10, 10</m> </p> </li>
+    <li> <p> <strong>Section C:</strong> <m>4, 4, 4, 5, 5, 5, 5, 6, 6, 6</m> </p> </li>
+  </ul>
+</p>
+
+<p>
+  All three of these sets of data have a mean of <m>5</m> and a median of <m>5</m>, yet the sets of scores are clearly quite different. 
+  In Section A, everyone had the same score. 
+  In Section B, half the class got no points and the other half got a perfect score, assuming this was a 10-point quiz. 
+  Section C was not as consistent as Section A, but not as widely varied as Section B.
+</p>
+
+<p>
+  In addition to the mean and median, which are measures of the <q>typical</q> or <q>middle</q> value, we also need a measure of how <q>spread out</q> or varied each data set is. 
+  There are several ways to measure this <q>spread</q> of the data. 
+  The first is the simplest and is called the <term>range</term>.
+</p>
     <note>
       <title>Range</title>
       <p>
@@ -152,10 +495,45 @@
       </solution>
     </example>
 
+    <example xml:id="example-quiz-scores-range">
+  <statement>
+    <p>
+      Using the quiz scores from above, find the range for Section A, Section B, and Section C.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      The range is calculated by subtracting the minimum score from the maximum score in each data set:
+    </p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            For Section A, the maximum value is <m>5</m> and the minimum value is <m>5</m>. 
+            The range is <m>5 - 5 = 0</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            For Section B, the maximum value is <m>10</m> and the minimum value is <m>0</m>. 
+            The range is <m>10 - 0 = 10</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            For Section C, the maximum value is <m>6</m> and the minimum value is <m>4</m>. 
+            The range is <m>6 - 4 = 2</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </solution>
+</example>
+
     <note>
       <title>Standard Deviation</title>
       <p>
-        The standard deviation measures the typical spread from the mean; it is the average distance between the mean and a value in the data set. 
+        The <term>standard deviation </term>  measures the typical spread from the mean; it is the average distance between the mean and a value in the data set. 
         Larger standard deviations indicate greater spread. 
         Standard deviation is a more complex measure of spread, but it provides a more detailed picture of variability within the data set than the range.
       </p>

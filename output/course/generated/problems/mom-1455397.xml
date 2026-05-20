@@ -4,15 +4,15 @@
 <p>
 In which of the following situations would the formula <m>\displaystyle{P}=\frac{{{A}{\left(\frac{{r}}{{n}}\right)}}}{{{\left({1}+\frac{{r}}{{n}}\right)}^{{{n}{t}}}-{1}}}</m> be best used?</p>
 <p><ol style="list-style-type:upper-alpha"><li>You want to know the future value of an account in <m>\displaystyle{10}</m> years which was started with a one-time deposit of <m>\displaystyle\${5000}</m>.</li> 
-<li>You want to determine the amount of a one-time deposit into an account with <m>\displaystyle{6}\%</m> interest compounded weekly.</li> 
 <li>You want to know how much would be in an annuity after <m>\displaystyle{5}</m> years with regular monthly deposits of <m>\displaystyle\${250}</m>.</li> 
 <li>You want to determine the amount to regularly deposit into an annuity so that there is <m>\displaystyle\${10},{000}</m> in the account in <m>\displaystyle{10}</m> years.</li> 
+<li>You want to determine the amount of a one-time deposit into an account with <m>\displaystyle{6}\%</m> interest compounded weekly.</li> 
 </ol></p>
 
 
 </statement>
 <answer>
-<p><ul><li>D: You want to determine the amount to regularly deposit into an annuity so that there is <m>\displaystyle\${10},{000}</m> in the account in <m>\displaystyle{10}</m> years.</li></ul></p>
+<p><ul><li>C: You want to determine the amount to regularly deposit into an annuity so that there is <m>\displaystyle\${10},{000}</m> in the account in <m>\displaystyle{10}</m> years.</li></ul></p>
 </answer>
 
 </myopenmath>

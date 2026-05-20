@@ -1573,7 +1573,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "Permutations",
-  "body": " Permutations   Permutation   A permutation is an ordered arrangement of items that occurs when:  No item is used more than once.  The order of arrangement makes a difference.        The BTS Concert Permutation Problem   Suppose BTS, Blackstreet Boys, NSYNC and TLC are given a no-contact concert series. You decide that BTS should be the last group to perform at the four-group concert. Given this decision, in how many ways can you put together the concert?    You can choose any one of the three groups (Blackstreet Boys, NSYNC, or TLC) as the opening act. Once you have chosen the first group, you will then have two groups left to choose for the second performance. You will then have just one group left to choose for the third performance. There is also just one choice for the closing act: BTS.   Concert Performance Choices    First Group to perform  Second Group to perform  Third Group to perform  Last Group to perform    3 choices  2 choices  1 choice  1 choice    Blackstreet Boys, NSYNC, TLC      BTS     We use the Fundamental Counting Principle to find the number of ways you can put together the concert. Multiply the choices: Thus, there are six different ways to arrange the concert if BTS is the final group to perform.      Arrange books on a shelf   You need to arrange five books along a small shelf. How many different ways can you arrange the books, assuming that the order of the books makes a difference to you?    There are 5 choices for the first position, 4 for the second, 3 for the third, 2 for the fourth, and 1 for the last. Using the Fundamental Counting Principle: There are 120 different ways to arrange the books.       In how many different ways can a police department arrange eight suspects in a police lineup if each lineup contains all eight people?    Since all 8 people are used and order matters, this is a permutation of 8 items taken 8 at a time: There are 40,320 different ways to arrange the lineup.       If five digits 1, 2, 3, 4, 5 are being given and a three-digit code has to be made from it if the repetition of digits is allowed then how many such codes can be formed?    Because repetition is allowed, there are 5 choices for each of the three positions in the code: There are 125 possible codes.     Baseball Batting Lineup   The following examples will show how to calculate permutations.    You are the coach of a 13-player baseball team and must set a 9-player batting lineup. Because different positions in the lineup carry different responsibilities, the order makes a difference . For example, a strong hitter like Barry in the clean-up spot ( fourth) drives in more runs than a home run later in the order. How many different ways can you arrange your 9 starters?    You have 13 players to choose from for the first person at bat. This leaves 12 players for the second position, 11 for the third, and so on, until the 9th position. The total number of batting orders is: There are nearly 260 million possible batting orders for a team of 13 players.  We can derive a general formula for permutations by rewriting this calculation as a fraction of factorials:   Using standard notation, we call this the number of permutations of 13 things taken 9 at a time, written as:      Calculator Note: Using the TI-30XIIS    TI-30XIIS   A screenshot of the TI-30XIIS calculator showing the permutation function.     To evaluate on the TI-30XIIS, follow these steps:  Enter the value of : Type 13 .  Press the PRB key.  The menu will display nPr  nCr  ! . Since nPr is already underlined, simply press ENTER .  Enter the value of : Type 9 .  Press ENTER to get the result: 259,459,200 .      Permutation Formula   The notation means the number of permutations of things taken at a time :      Corporate Board Elections   A corporation has seven members on its board of directors. In how many different ways can the board elect a president, vice-president, secretary, and treasurer?    Since each officer holds a specific title, the order of selection matters. We are looking for the number of permutations of 7 items taken 4 at a time: Expanding the factorials, we get: The board can elect the four officers in 840 different ways.   TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 7  Press PRB  Select nPr and press ENTER  Type 4  Press ENTER .       How many different programming schedules can be arranged by choosing 5 situation comedies from a collection of 9 classic sitcoms?    We are choosing items from a set of where order matters: There are 15,120 possible programming schedules.   TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 9  Press PRB  Select nPr and press ENTER  Type 5  Press ENTER .       In a race in which six automobiles are entered and there are no ties, in how many ways can the first three finishers come in?    We are looking for the number of permutations of 6 cars taken 3 at a time: There are 120 ways the first three finishers can come in.       Five singers are to perform on a weekend evening at a night club. How many different ways are there to schedule their appearances?    This is a permutation of all 5 singers: There are 120 different scheduling arrangements.       A stock can go up, go down, or stay unchanged. How many possibilities are there if you own seven stocks?    Each of the 7 stocks has 3 possible outcomes. Since the outcome of one stock is independent of the others and order (which stock does what) matters: There are 2,187 different possibilities for the seven stocks.       Seven seats are positioned in a row at a movie theater. Alice, Betty, Craig, Dan, Evelyn, Frank, and Gavin want to sit together.   How many different ways can they be arranged?  How many different ways can they be arranged if Betty sits in the second seat?  How many different ways can they be arranged if Craig and Gavin want to sit in the two aisle seats?        Total arrangements of 7 people: .    If Betty is fixed in the second seat, we only need to arrange the remaining 6 people in the remaining 6 seats: .    There are two aisle seats (the first and the last). First, arrange Craig and Gavin in those 2 seats: ways (Craig-Gavin or Gavin-Craig). Then, arrange the remaining 5 people in the middle 5 seats: . Total: .       "
+  "body": " Permutations   Permutation   A permutation is an ordered arrangement of items that occurs when:  No item is used more than once.  The order of arrangement makes a difference.        The BTS Concert Permutation Problem   Suppose BTS, Blackstreet Boys, NSYNC and TLC are given a no-contact concert series. You decide that BTS should be the last group to perform at the four-group concert. Given this decision, in how many ways can you put together the concert?    You can choose any one of the three groups (Blackstreet Boys, NSYNC, or TLC) as the opening act. Once you have chosen the first group, you will then have two groups left to choose for the second performance. You will then have just one group left to choose for the third performance. There is also just one choice for the closing act: BTS.   Concert Performance Choices    First Group to perform  Second Group to perform  Third Group to perform  Last Group to perform    3 choices  2 choices  1 choice  1 choice    Blackstreet Boys, NSYNC, TLC      BTS     We use the Fundamental Counting Principle to find the number of ways you can put together the concert. Multiply the choices: Thus, there are six different ways to arrange the concert if BTS is the final group to perform.      Arrange books on a shelf   You need to arrange five books along a small shelf. How many different ways can you arrange the books, assuming that the order of the books makes a difference to you?    There are 5 choices for the first position, 4 for the second, 3 for the third, 2 for the fourth, and 1 for the last. Using the Fundamental Counting Principle: There are 120 different ways to arrange the books.       In how many different ways can a police department arrange eight suspects in a police lineup if each lineup contains all eight people?    Since all 8 people are used and order matters, this is a permutation of 8 items taken 8 at a time: There are 40,320 different ways to arrange the lineup.       If five digits 1, 2, 3, 4, 5 are being given and a three-digit code has to be made from it if the repetition of digits is allowed then how many such codes can be formed?    Because repetition is allowed, there are 5 choices for each of the three positions in the code: There are 125 possible codes.     Baseball Batting Lineup   The following examples will show how to calculate permutations.    You are the coach of a 13-player baseball team and must set a 9-player batting lineup. Because different positions in the lineup carry different responsibilities, the order makes a difference . For example, a strong hitter like Barry in the clean-up spot ( fourth) drives in more runs than a home run later in the order. How many different ways can you arrange your 9 starters?    You have 13 players to choose from for the first person at bat. This leaves 12 players for the second position, 11 for the third, and so on, until the 9th position. The total number of batting orders is: There are nearly 260 million possible batting orders for a team of 13 players.  We can derive a general formula for permutations by rewriting this calculation as a fraction of factorials:   Using standard notation, we call this the number of permutations of 13 things taken 9 at a time, written as:      Calculator Note: Using the TI-30XIIS    TI-30XIIS Calculator   A screenshot of the TI-30XIIS calculator showing the permutation function.     To evaluate on the TI-30XIIS, follow these steps:  Enter the value of : Type 13 .  Press the PRB key.  The menu will display nPr  nCr  ! . Since nPr is already underlined, simply press ENTER .  Enter the value of : Type 9 .  Press ENTER to get the result: 259,459,200 .      Permutation Formula   The notation means the number of permutations of things taken at a time :      Corporate Board Elections   A corporation has seven members on its board of directors. In how many different ways can the board elect a president, vice-president, secretary, and treasurer?    Since each officer holds a specific title, the order of selection matters. We are looking for the number of permutations of 7 items taken 4 at a time: Expanding the factorials, we get: The board can elect the four officers in 840 different ways.   TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 7  Press PRB  Select nPr and press ENTER  Type 4  Press ENTER .       How many different programming schedules can be arranged by choosing 5 situation comedies from a collection of 9 classic sitcoms?    We are choosing items from a set of where order matters: There are 15,120 possible programming schedules.   TI-30XIIS Keystrokes: To calculate this on your TI-30XIIS: Type 9  Press PRB  Select nPr and press ENTER  Type 5  Press ENTER .       In a race in which six automobiles are entered and there are no ties, in how many ways can the first three finishers come in?    We are looking for the number of permutations of 6 cars taken 3 at a time: There are 120 ways the first three finishers can come in.       Five singers are to perform on a weekend evening at a night club. How many different ways are there to schedule their appearances?    This is a permutation of all 5 singers: There are 120 different scheduling arrangements.       A stock can go up, go down, or stay unchanged. How many possibilities are there if you own seven stocks?    Each of the 7 stocks has 3 possible outcomes. Since the outcome of one stock is independent of the others and order (which stock does what) matters: There are 2,187 different possibilities for the seven stocks.       Seven seats are positioned in a row at a movie theater. Alice, Betty, Craig, Dan, Evelyn, Frank, and Gavin want to sit together.   How many different ways can they be arranged?  How many different ways can they be arranged if Betty sits in the second seat?  How many different ways can they be arranged if Craig and Gavin want to sit in the two aisle seats?        Total arrangements of 7 people: .    If Betty is fixed in the second seat, we only need to arrange the remaining 6 people in the remaining 6 seats: .    There are two aisle seats (the first and the last). First, arrange Craig and Gavin in those 2 seats: ways (Craig-Gavin or Gavin-Craig). Then, arrange the remaining 5 people in the middle 5 seats: . Total: .       "
 },
 {
   "id": "def-permutation",
@@ -1636,7 +1636,7 @@ var ptx_lunr_docs = [
   "type": "Note",
   "number": "3.45",
   "title": "Calculator Note: Using the TI-30XIIS.",
-  "body": " Calculator Note: Using the TI-30XIIS    TI-30XIIS   A screenshot of the TI-30XIIS calculator showing the permutation function.     To evaluate on the TI-30XIIS, follow these steps:  Enter the value of : Type 13 .  Press the PRB key.  The menu will display nPr  nCr  ! . Since nPr is already underlined, simply press ENTER .  Enter the value of : Type 9 .  Press ENTER to get the result: 259,459,200 .    "
+  "body": " Calculator Note: Using the TI-30XIIS    TI-30XIIS Calculator   A screenshot of the TI-30XIIS calculator showing the permutation function.     To evaluate on the TI-30XIIS, follow these steps:  Enter the value of : Type 13 .  Press the PRB key.  The menu will display nPr  nCr  ! . Since nPr is already underlined, simply press ENTER .  Enter the value of : Type 9 .  Press ENTER to get the result: 259,459,200 .    "
 },
 {
   "id": "def-permutation-formula",
@@ -2625,6 +2625,96 @@ var ptx_lunr_docs = [
   "url": "activity-06-intro-activity.html#activity-06-intro-activity-6-2",
   "type": "Worksheet Exercise",
   "number": "4",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-07-intro-activity",
+  "level": "1",
+  "url": "activity-07-intro-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "07. Activity Mortgages",
+  "body": " 07. Activity Mortgages     A mortgage is a long-term loan, usually 15 or 30 years, for purposes of buying a home. Like other loans, they must be repaid on regular intervals (usually monthly) with regular payments and accrue interest over time compounded at the same rate as the payments.  See for the Mortgages notes.   We begin by noting that we will be considering a very simplistic view of mortgages. In reality, they are extraordinarily complicated and technical, and the complete mathematics behind them is too advanced for us in this course. However, our goal is to understand the basics of how mortgages work and how math can be used to analyze them.  Mortgages have some special features that distinguish them from a typical loan. These include:    Down Payment : This is a percent of the sale price of the home that is paid at the time of closing (purchase). Because it is paid at closing, money is not borrowed to cover the down payment. In other words, the amount of the mortgage is the sale price of the home minus the down payment amount.     Points : This is a fee paid to a lender at the time of closing. Each point represents one percent of the mortgage amount, i.e.:  point is of the mortgage amount  points is of the mortgage amount  points is of the mortgage amount       Points are not included in the mortgage amount since they must be paid at closing, and is not considered interest. One important point (ha!) here: points are taken on the mortgage amount, not the sale price!  There are MANY other fees associated with mortgages that we will not discuss here; this is an example of the simplistic view mentioned above. One nice thing about mortgages is that once we take the down payment into consideration, the basic mathematics of mortgages is the same as with installment loans! For example, we use the same two formulas to determine the payment amount for a given mortgage and the maximum mortgage amount we can afford based on a given payment amount, respectively: where:  is the amount of the mortgage (borrowed amount).  is the regular payment amount.  is the interest rate represented as a decimal.  is the number of compounding periods per year.  is the time in years.     You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!                  See and . The price of a home is . The bank requires a down payment and two points at the time of closing. The cost of the home is financed with a -year fixed-rate mortgage at .  If we take a closer look at the example above, we notice something that is likely surprising to anyone who has not encountered a mortgage before: more than half of the amount paid covers the interest for the mortgage! In fact, over of the total paid covers the interest. This is a consequence of the long length of the mortgage.         Amanda and Fred are buying a house on a -year mortgage. They can only afford to pay per month for a mortgage. If they have an interest rate of , what is the maximum price of a mortgage they can afford?    We are given the following values:  (their max payment amount)  (the interest rate as a decimal)  (interest is compounded monthly)  (the mortgage will be for 30 years)    We are asked to find the maximum amount of a loan we can afford, so we use the installment loan formula solved for :     Based on this calculation, if Amanda and Fred can only afford an monthly payment for a mortgage, then they should be sure not to take out a mortgage larger than around .        "
+},
+{
+  "id": "activity-07-intro-activity-2-1-1",
+  "level": "2",
+  "url": "activity-07-intro-activity.html#activity-07-intro-activity-2-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "mortgage "
+},
+{
+  "id": "activity-07-intro-activity-2-3",
+  "level": "2",
+  "url": "activity-07-intro-activity.html#activity-07-intro-activity-2-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Down Payment Points "
+},
+{
+  "id": "activity-07-intro-activity-2-6",
+  "level": "2",
+  "url": "activity-07-intro-activity.html#activity-07-intro-activity-2-6",
+  "type": "Note",
+  "number": "5.17",
+  "title": "",
+  "body": " You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!  "
+},
+{
+  "id": "activity-07-intro-activity-3-1",
+  "level": "2",
+  "url": "activity-07-intro-activity.html#activity-07-intro-activity-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-07-intro-activity-4-1",
+  "level": "2",
+  "url": "activity-07-intro-activity.html#activity-07-intro-activity-4-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-07-intro-activity-4-2",
+  "level": "2",
+  "url": "activity-07-intro-activity.html#activity-07-intro-activity-4-2",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-07-intro-activity-5-3",
+  "level": "2",
+  "url": "activity-07-intro-activity.html#activity-07-intro-activity-5-3",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-07-intro-activity-6-1",
+  "level": "2",
+  "url": "activity-07-intro-activity.html#activity-07-intro-activity-6-1",
+  "type": "Example",
+  "number": "5.18",
+  "title": "",
+  "body": "  Amanda and Fred are buying a house on a -year mortgage. They can only afford to pay per month for a mortgage. If they have an interest rate of , what is the maximum price of a mortgage they can afford?    We are given the following values:  (their max payment amount)  (the interest rate as a decimal)  (interest is compounded monthly)  (the mortgage will be for 30 years)    We are asked to find the maximum amount of a loan we can afford, so we use the installment loan formula solved for :     Based on this calculation, if Amanda and Fred can only afford an monthly payment for a mortgage, then they should be sure not to take out a mortgage larger than around .   "
+},
+{
+  "id": "activity-07-intro-activity-6-2",
+  "level": "2",
+  "url": "activity-07-intro-activity.html#activity-07-intro-activity-6-2",
+  "type": "Worksheet Exercise",
+  "number": "5",
   "title": "",
   "body": "  "
 },

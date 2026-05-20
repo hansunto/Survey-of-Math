@@ -1,0 +1,141 @@
+DEBUG   : CLI version 2.38.3 matches requirements.txt 2.38.3.
+INFO    : Building target print
+DEBUG   : Parsing source element for target print
+DEBUG   : converting /workspaces/Survey-of-Math/source/main.ptx to enhanced (pre-processed) PreTeXt source for internal use
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+DEBUG   : XSL conversion via /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl of /workspaces/Survey-of-Math/source/main.ptx to None and/or into directory None with parameters {'cli.version': '2.38', 'publisher': '/workspaces/Survey-of-Math/publication/publication.ptx', 'assembly.version-only': 'yes'}
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+DEBUG   : XML syntax appears well formed.
+DEBUG   : Using cached source_element for target print
+DEBUG   : PreTeXt document did not pass schema validation; unexpected output may result. See .error_schema.log for hints.  Continuing with build.
+DEBUG   : Source does not contain webwork problems
+INFO    : Generating any needed assets.
+DEBUG   : Using cached assets in /workspaces/Survey-of-Math/.cache where possible.
+DEBUG   : Ensuring webwork representations file is present.
+DEBUG   : Ensuring MyOpenMath XML files are present.
+DEBUG   : MyOpenMath directory exists, not creating
+DEBUG   : Checking for MyOpenMath problem 1410996
+DEBUG   : Checking for MyOpenMath problem 1410999
+DEBUG   : Checking for MyOpenMath problem 1411004
+DEBUG   : Checking for MyOpenMath problem 1411007
+DEBUG   : Checking for MyOpenMath problem 1411010
+DEBUG   : Checking for MyOpenMath problem 1411014
+DEBUG   : Checking for MyOpenMath problem 1411035
+DEBUG   : Checking for MyOpenMath problem 1445055
+DEBUG   : Checking for MyOpenMath problem 1445054
+DEBUG   : Checking for MyOpenMath problem 1445060
+DEBUG   : Checking for MyOpenMath problem 1445078
+DEBUG   : Checking for MyOpenMath problem 1445079
+DEBUG   : Checking for MyOpenMath problem 1445082
+DEBUG   : Checking for MyOpenMath problem 1450155
+DEBUG   : Checking for MyOpenMath problem 1450156
+DEBUG   : Checking for MyOpenMath problem 1450157
+DEBUG   : Checking for MyOpenMath problem 1450159
+DEBUG   : Checking for MyOpenMath problem 1450163
+DEBUG   : Checking for MyOpenMath problem 1450164
+DEBUG   : Checking for MyOpenMath problem 1450165
+DEBUG   : Checking for MyOpenMath problem 1450167
+DEBUG   : Checking for MyOpenMath problem 1450171
+DEBUG   : Checking for MyOpenMath problem 1450170
+DEBUG   : Checking for MyOpenMath problem 1450173
+DEBUG   : Checking for MyOpenMath problem 1450176
+DEBUG   : Checking for MyOpenMath problem 1450178
+DEBUG   : Checking for MyOpenMath problem 1455393
+DEBUG   : Checking for MyOpenMath problem 1455379
+DEBUG   : Checking for MyOpenMath problem 1455397
+DEBUG   : Checking for MyOpenMath problem 1455403
+DEBUG   : Checking for MyOpenMath problem 1455406
+DEBUG   : Checking for MyOpenMath problem 1455416
+DEBUG   : Checking for MyOpenMath problem 1455417
+DEBUG   : Checking for MyOpenMath problem 1455429
+DEBUG   : Checking for MyOpenMath problem 1455445
+DEBUG   : Checking for MyOpenMath problem 1459946
+DEBUG   : Checking for MyOpenMath problem 1459948
+DEBUG   : Checking for MyOpenMath problem 1459957
+DEBUG   : Checking for MyOpenMath problem 1459979
+DEBUG   : Checking for MyOpenMath problem 1459983
+DEBUG   : Assets generation requested for: ['webwork', 'latex-image', 'sageplot', 'asymptote', 'prefigure', 'youtube', 'codelens', 'datafile', 'interactive', 'qrcode', 'mermaid', 'myopenmath', 'dynamic-subs', 'references', 'stack'].
+DEBUG   : Based on format Format.PDF, assets to be generated are: ['webwork', 'sageplot', 'asymptote', 'prefigure', 'youtube', 'codelens', 'datafile', 'interactive', 'qrcode', 'mermaid', 'myopenmath', 'dynamic-subs'].
+DEBUG   : Based on what is in your source, the assets that will be considered are ['myopenmath'].
+DEBUG   : Assets to be generated: []
+DEBUG   : Temporary directories left behind for inspection: []
+DEBUG   : Updated these assets successfully: []
+DEBUG   : These assets were unsuccessful: []
+INFO    : Finished generating assets.
+
+DEBUG   : Ensuring output directory for print: /workspaces/Survey-of-Math/output/print
+INFO    : Preparing to build into /workspaces/Survey-of-Math/output/print.
+INFO    : discovering source file's directory name: /workspaces/Survey-of-Math/source
+INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/assets
+DEBUG   : parsing the publisher file variables
+DEBUG   : temporary directory for publisher variables: /tmp/ptx-6dtl2rez
+DEBUG   : file of publisher variables: /tmp/ptx-6dtl2rez/pub_var.txt
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
+DEBUG   : XSL conversion via /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl of /workspaces/Survey-of-Math/source/main.ptx to /tmp/ptx-6dtl2rez/pub_var.txt and/or into directory None with parameters {'cli.version': '2.38', 'publisher': '/workspaces/Survey-of-Math/publication/publication.ptx', 'assembly.version-only': 'yes'}
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
+DEBUG   : determining value of publisher variable 'journal-name'
+DEBUG   : determining value of publisher variable 'latex-style'
+INFO    : converting /workspaces/Survey-of-Math/source/main.ptx to LaTeX as /tmp/ptx-596sgyfa/main.tex
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/pretext-latex.xsl
+DEBUG   : XSL conversion via /home/codespace/.ptx/2.38.3/core/xsl/pretext-latex.xsl of /workspaces/Survey-of-Math/source/main.ptx to /tmp/ptx-596sgyfa/main.tex and/or into directory None with parameters {'cli.version': '2.38', 'publisher': '/workspaces/Survey-of-Math/publication/publication.ptx'}
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking all deprecated elements.
+WARNING : * PTX:DEPRECATE: (2022-04-25) a "@label" attribute (on a "ul" or "ol" element) has been deprecated and should be replaced by the functionally equivalent "@marker".  We will attempt to honor your request (10 times)
+INFO    : *              located within: "Probability of Performers" (title)
+INFO    : *              located within: "Probability of Club Committee Selection" (title)
+INFO    : *              located within: "Probability of Defective Transistors" (title)
+INFO    : *              located within: "Probability of Marbles Without Replacement" (title)
+INFO    : *              located within: "activity-02-intro-activity" (xml:id), "02. Activity Apportionment Methods" (title)
+INFO    : * --------------
+ERROR   : * PTX:BUG:     Exercise component mis-labeled
+WARNING : * PTX:WARNING: there appears to be an "xref" by number to an item (of type "section") without a number (or there is a bug).  The "xref" is
+INFO    : *              located within: "activity-01-intro-activity" (xml:id), "01. Activity Voting Methods" (title)
+INFO    : *              The target is
+INFO    : *              located within: "notes-Voting" (xml:id), "Voting methods" (title)
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "notes-Voting") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located within: "section-apportionment" (xml:id), "Apportionment" (title)
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "section-apportionment") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located within: "activity-03-intro-activity" (xml:id), "03. Activity Simple Interest" (title)
+INFO    : *              located within: "notes-simple-interest" (xml:id), "Understanding Interest: Simple Interest" (title)
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "notes-simple-interest") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located within: "activity-04-intro-activity" (xml:id), "04. Activity Compound Interest" (title)
+INFO    : *              located within: "notes-compound-interest" (xml:id), "Saving Money: Compound Interest" (title)
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "notes-compound-interest") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located within: "activity-05-intro-activity" (xml:id), "05. Activity Annuities" (title)
+INFO    : *              located within: "notes-Annuities" (xml:id), "Saving Money: Annuities " (title)
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "notes-Annuities") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located within: "activity-06-intro-activity" (xml:id), "06. Activity Loans" (title)
+INFO    : *              located within: "notes-Mortgages" (xml:id), "Borrowing Money: Mortgage " (title)
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "notes-Mortgages") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located within: "activity-07-intro-activity" (xml:id), "07. Activity Mortgages" (title)
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/pretext-latex.xsl
+DEBUG   : temporary directory for publisher variables: /tmp/ptx-i1d7fav0
+DEBUG   : file of publisher variables: /tmp/ptx-i1d7fav0/pub_var.txt
+DEBUG   : XSL conversion via /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl of /workspaces/Survey-of-Math/source/main.ptx to /tmp/ptx-i1d7fav0/pub_var.txt and/or into directory None with parameters {'cli.version': '2.38', 'publisher': '/workspaces/Survey-of-Math/publication/publication.ptx', 'assembly.version-only': 'yes'}
+DEBUG   : Now working in directory /tmp/ptx-596sgyfa
+DEBUG   : locating "LatexEngine.PDFLATEX" in [executables] section of configuration file
+DEBUG   : LatexEngine.PDFLATEX executable: pdflatex, options: 
+INFO    : Rerunning LaTeX for main.tex (pass 2)
+DEBUG   : Successfully changed directory back to /workspaces/Survey-of-Math
+DEBUG   : Temporary directories left behind for inspection: ['/tmp/ptx-596sgyfa', '/tmp/ptx-6dtl2rez', '/tmp/ptx-i1d7fav0']
+INFO    : 
+Finished build for target print. The output is in /workspaces/Survey-of-Math/output/print.
+
+CRITICAL: There were errors during the build.  See above.
+DEBUG   : Exception info:
+------------------------
+Traceback (most recent call last):
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/pretext/cli.py", line 653, in build
+    raise Exception("There were errors during the build.  See above.")
+Exception: There were errors during the build.  See above.
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-07-intro-activity" xmlns:xi="http://w3.org">
+    <title>07. Activity Mortgages</title>
+<page>
+    <!-- Optional introduction -->
+<introduction>
+<p>
+  A <term>mortgage</term> is a long-term loan, usually 15 or 30 years, 
+  for purposes of buying a home. Like other loans, they must be repaid on 
+  regular intervals (usually monthly) with regular payments and accrue interest 
+  over time compounded at the same rate as the payments.
+</p>
+  <p>See <xref ref="notes-Mortgages"/> for the Mortgages notes.</p>
+</introduction>
+<p>
+  We begin by noting that we will be considering a very simplistic view of mortgages. 
+  In reality, they are extraordinarily complicated and technical, and the complete 
+  mathematics behind them is too advanced for us in this course. However, our goal is 
+  to understand the basics of how mortgages work and how math can be used to analyze them.
+</p>
+
+<p>
+  Mortgages have some special features that distinguish them from a typical loan. 
+  These include:
+  <ul>
+    <li>
+      <p>
+        <term>Down Payment</term>: This is a percent of the sale price of the home that 
+        is paid at the time of closing (purchase). Because it is paid at closing, money 
+        is <alert>not</alert> borrowed to cover the down payment. In other words, the 
+        amount of the mortgage is the sale price of the home minus the down payment amount.
+      </p>
+    </li>
+    <li>
+      <p>
+        <term>Points</term>: This is a fee paid to a lender at the time of closing. 
+        Each point represents one percent of the mortgage amount, i.e.:
+        <ul>
+          <li><p><m>1</m> point is <m>1\%</m> of the mortgage amount</p></li>
+          <li><p><m>2</m> points is <m>2\%</m> of the mortgage amount</p></li>
+          <li><p><m>3</m> points is <m>3\%</m> of the mortgage amount</p></li>
+        </ul>
+      </p>
+    </li>
+  </ul>
+</p>
+
+<p>
+  Points are not included in the mortgage amount since they must be paid at closing, 
+  and is not considered interest. One important point (ha!) here: points are taken on 
+  the mortgage amount, not the sale price!
+</p>
+
+<p>
+  There are MANY other fees associated with mortgages that we will not discuss here; 
+  this is an example of the simplistic view mentioned above. One nice thing about 
+  mortgages is that once we take the down payment into consideration, the basic mathematics 
+  of mortgages is the same as with installment loans! For example, we use the same two 
+  formulas to determine the payment amount for a given mortgage and the maximum mortgage 
+  amount we can afford based on a given payment amount, respectively:
+  <me>{\text{Payment }} PMT = \frac{P \cdot (\frac{r}{n})}{1 - \left(1 + \frac{r}{n}\right)^{-nt}}, 
+  {\text{ Mortgage }} P = \frac{PMT\left[1 - \left(1 + \frac{r}{n}\right)^{-nt}\right]}{(\frac{r}{n})} </me>
+  where:
+  <ul>
+    <li><p><m>P</m> is the amount of the mortgage (borrowed amount).</p></li>
+    <li><p><m>PMT</m> is the regular payment amount.</p></li>
+    <li><p><m>r</m> is the interest rate represented as a decimal.</p></li>
+    <li><p><m>n</m> is the number of compounding periods per year.</p></li>
+    <li><p><m>t</m> is the time in years.</p></li>
+  </ul>
+</p>
+
+<note>
+  <p>
+    You do NOT need to memorize these formulas! 
+    They will be provided for you on all quizzes and exams!
+  </p>
+</note>
+</page>
+
+<page>
+    <exercise>
+      <statement>
+        <myopenmath problem="1459946" />
+      </statement>
+    </exercise>
+</page>
+
+<page>
+  <exercise>
+    <statement>
+      <myopenmath problem="1459948" />
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <myopenmath problem="1459957" />
+    </statement>
+  </exercise>
+</page>
+    
+<page>
+<p>
+  See <xref ref="example-m1"/> and <xref ref="example-mortgage-M01"/>. The price of a home is 
+  <m>\$195,000</m>. The bank requires a <m>10\%</m> down payment and two 
+  points at the time of closing. The cost of the home is financed with a 
+  <m>30</m>-year fixed-rate mortgage at <m>7.5\%</m>.
+</p>
+<p>
+  If we take a closer look at the example above, we notice something that is likely 
+  surprising to anyone who has not encountered a mortgage before: more than half of 
+  the amount paid covers the interest for the mortgage! In fact, over <m>60\%</m> of 
+  the total paid covers the interest. This is a consequence of the long length of 
+  the mortgage.
+</p>
+
+<exercise>
+  <statement>
+    <myopenmath problem="1459979" />
+  </statement>
+</exercise>
+</page>
+
+<page>
+    <example>
+  <statement>
+    <p>
+      Amanda and Fred are buying a house on a <m>30</m>-year mortgage. They can only 
+      afford to pay <m>\$800</m> per month for a mortgage. If they have an interest 
+      rate of <m>3.75\%</m>, what is the maximum price of a mortgage they can afford?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We are given the following values:
+      <ul>
+        <li><p><m>PMT = \$800</m> (their max payment amount)</p></li>
+        <li><p><m>r = 0.0375</m> (the interest rate as a decimal)</p></li>
+        <li><p><m>n = 12</m> (interest is compounded monthly)</p></li>
+        <li><p><m>t = 30</m> (the mortgage will be for 30 years)</p></li>
+      </ul>
+    </p>
+    <p>
+      We are asked to find the maximum amount of a loan we can afford, so we use the 
+      installment loan formula solved for <m>P</m>:
+      <me>P = \frac{PMT\left[1 - \left(1 + \frac{r}{n}\right)^{-nt}\right]}{(\frac{r}{n})}</me>
+      <me>P = \frac{800\left[1 - \left(1 + \frac{0.0375}{12}\right)^{-12 \times 30}\right]}{(\frac{0.0375}{12})}</me>
+      <me>P \approx \$172,743.05</me>
+    </p>
+    <p>
+      Based on this calculation, if Amanda and Fred can only afford an <m>\$800</m> 
+      monthly payment for a mortgage, then they should be sure not to take out a 
+      mortgage larger than around <m>\$172,743.05</m>.
+    </p>
+  </solution>
+</example>
+
+<exercise>
+  <statement>
+    <myopenmath problem="1459983" />
+  </statement>
+</exercise>
+
+</page>
+
+
+
+
+
+
+</worksheet>

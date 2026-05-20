@@ -134,7 +134,9 @@
 <page> 
     <!-- Exercises start here. -->
         <exercise workspace="0.2in">
+          <statement>
             <myopenmath problem="1450167" />
+          </statement>
         </exercise>
 </page>
 <page>
@@ -199,12 +201,16 @@
 </page>
     
 <page>
-    <exercise >
-     <myopenmath problem="1450171" />
+    <exercise>
+      <statement>
+        <myopenmath problem="1450171" />
+      </statement>
     </exercise>
     
-    <exercise >
-     <myopenmath problem="1450170" />
+    <exercise>
+      <statement>
+        <myopenmath problem="1450170" />
+      </statement>
     </exercise>
 </page>
 
@@ -251,7 +257,9 @@
 </example>
 
 <exercise>
-      <myopenmath problem="1450173" />
+  <statement>
+    <myopenmath problem="1450173" />
+  </statement>
 </exercise>
 </page>
 
@@ -296,7 +304,9 @@
 </example>
 
     <exercise>
+      <statement>
         <myopenmath problem="1450176" />
+      </statement>
     </exercise>
 </page>
 
@@ -347,7 +357,9 @@
 </example>
 
     <exercise workspace="2in">
+      <statement>
         <myopenmath problem="1450178" />
+      </statement>
     </exercise>
 </page>
 

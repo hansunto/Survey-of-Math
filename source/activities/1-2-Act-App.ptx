@@ -55,12 +55,16 @@
     <!-- Exercises start here. -->
     <page>
         <exercise workspace="0.2in">
-            <myopenmath problem="1445055" />
+            <statement>
+                <myopenmath problem="1445055" />
+            </statement>
         </exercise>
     </page>
     <page>
         <exercise workspace="0.2in">
-            <myopenmath problem="1445054" />
+            <statement>
+                <myopenmath problem="1445054" />
+            </statement>
         </exercise>
     </page>
 
@@ -72,26 +76,34 @@
     </page>-->
     <page>
         <exercise workspace="2in">
-            <title>Standard Divisor and Standard Quotas</title>
-            <myopenmath problem="1445060" />
+            <statement>
+                <title>Standard Divisor and Standard Quotas</title>
+                <myopenmath problem="1445060" />
+            </statement>
         </exercise>
     </page>
     <page>
         <exercise workspace="2in">
-            <title>Hamilton's Method</title>
-            <myopenmath problem="1445078" />
+            <statement>
+                <title>Hamilton's Method</title>
+                <myopenmath problem="1445078" />
+            </statement>
         </exercise>
     </page>
     <page>
         <exercise workspace="2in">
-            <title>Jefferson's Method</title>
-            <myopenmath problem="1445079" />
+            <statement>
+                <title>Jefferson's Method</title>
+                <myopenmath problem="1445079" />
+            </statement>
         </exercise>
     </page>
     <page>
         <exercise workspace="2in">
-            <title>Adam's Method</title>
-            <myopenmath problem="1445082" />
+            <statement>
+                <title>Adam's Method</title>
+                <myopenmath problem="1445082" />
+            </statement>
         </exercise>
     </page>
     <!--<exercise workspace="2in"> <statement> <p> Add MyOpeMath question </p> </statement> </exercise>-->

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1459979">
+<statement>
+<p>
+The price of a condo is <m>\displaystyle\${280},{000}</m>. The bank requires a <m>\displaystyle{5}\%</m> down payment and one point at the time of closing. The cost of the condo is financed with a <m>\displaystyle{15}</m>-year fixed-rate mortgage at <m>\displaystyle{8}\%</m>.</p>
+<p>
+a)  Find the required down payment.</p>
+<p>
+<dollar/><fillin characters="20"/></p>
+<p>
+b)  Find the mortgage amount.</p>
+<p>
+<dollar/><fillin characters="20"/></p>
+<p>
+c)  Find the amount paid for the one point at closing.</p>
+<p>
+<dollar/><fillin characters="20"/></p>
+<p>
+d)  Find the monthly payment amount. Round to the nearest dollar.</p>
+<p>
+<dollar/><fillin characters="20"/></p>
+<p>
+e)  Find the total amount paid over the <m>\displaystyle{15}</m> years (not including the down payment or points).</p>
+<p>
+<dollar/><fillin characters="20"/></p>
+<p>
+f)  Find the total amount of interest accrued over the <m>\displaystyle{15}</m> years.</p>
+<p>
+<dollar/><fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>14000</li><li>266000</li><li>2660</li><li>2542</li><li>457560</li><li>191560</li></ul></p>
+</answer>
+
+</myopenmath>

@@ -47,10 +47,14 @@
 <page> 
     <!-- Exercises start here. -->
         <exercise>
+          <statement>
             <myopenmath problem="1455393" />
+          </statement>
         </exercise>
         <exercise>
+          <statement>
             <myopenmath problem="1455379" />
+          </statement>
         </exercise>
 </page>
 
@@ -87,9 +91,11 @@
   want to determine the deposit amount for an annuity to ensure a given future value. 
   We look at some examples of using these formulas on the next page!
 </p>
-<exercise >
-     <myopenmath problem="1455397" />
-    </exercise>
+<exercise>
+  <statement>
+    <myopenmath problem="1455397" />
+  </statement>
+</exercise>
 </page>
     
 <page>
@@ -154,8 +160,10 @@
 </page>
     
 <page>
-    <exercise >
-     <myopenmath problem="1455403" />
+    <exercise>
+      <statement>
+        <myopenmath problem="1455403" />
+      </statement>
     </exercise>
 </page>
 
@@ -211,7 +219,9 @@
 
 
 <exercise>
-      <myopenmath problem="1455406" />
+  <statement>
+    <myopenmath problem="1455406" />
+  </statement>
 </exercise>
 </page>
 

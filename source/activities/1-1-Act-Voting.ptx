@@ -22,31 +22,58 @@
   <!-- Exercises start here. -->
 
   <page>
-    <exercise workspace="2in"> <myopenmath problem="1410996" /> </exercise>
+    <exercise workspace="2in">
+      <statement>
+        <myopenmath problem="1410996" />
+      </statement>
+    </exercise>
   </page>
   <page>
-    <exercise workspace="2in"> <myopenmath problem="1410999" /> </exercise>
+    <exercise workspace="2in">
+      <statement>
+        <myopenmath problem="1410999" />
+      </statement>
+    </exercise>
   </page>
   <page>
-    <exercise workspace="2in"> <myopenmath problem="1411004" /> </exercise>
+    <exercise workspace="2in">
+      <statement>
+        <myopenmath problem="1411004" />
+      </statement>
+    </exercise>
   </page>
   <page>
-    <exercise workspace="2in"> <myopenmath problem="1411007" /> </exercise>
+    <exercise workspace="2in">
+      <statement>
+        <myopenmath problem="1411007" />
+      </statement>
+    </exercise>
   </page>
   <page>
-    <exercise workspace="2in"> <myopenmath problem="1411010" /> </exercise>
+    <exercise workspace="2in">
+      <statement>
+        <myopenmath problem="1411010" />
+      </statement>
+    </exercise>
   </page>
   <page>
-    <exercise workspace="2in"> <myopenmath problem="1411014" /> </exercise>
+    <exercise workspace="2in">
+      <statement>
+        <myopenmath problem="1411014" />
+      </statement>
+    </exercise>
   </page>
   <page>
-    <exercise workspace="2in"> 
-      <p> We have seen four different methods for determining the winner of an election. 
+    <exercise workspace="2in">
+      <statement>
+        <p> We have seen four different methods for determining the winner of an election. 
         Through our examples and problems, we have also seen that these different methods can 
         lead to different winners! In particular, in the Math Club President election considered 
         throughout the exercises, it turns out that each of the four voting methods leads to each 
         of the four candidates being declared the winner!</p>
-      <myopenmath problem="1411035" /> </exercise>
+        <myopenmath problem="1411035" />
+      </statement>
+    </exercise>
   </page>
 
 

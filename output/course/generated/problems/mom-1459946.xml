@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1459946">
+<statement>
+<p>
+Suppose you are taking out a mortgage and you must pay two points on it. How much must be paid?</p>
+<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{1}\%</m> of the mortgage amount</li> 
+<li><m>\displaystyle{3}\%</m> of the down payment</li> 
+<li><m>\displaystyle{3}\%</m> of the sale price</li> 
+<li><m>\displaystyle{3}\%</m> of the mortgage amount</li> 
+<li><m>\displaystyle{2}\%</m> of the monthly payment</li> 
+<li><m>\displaystyle{2}\%</m> of the sale price</li> 
+<li><m>\displaystyle{2}\%</m> of the down payment</li> 
+<li><m>\displaystyle{1}\%</m> of the down payment</li> 
+<li><m>\displaystyle{2}\%</m> of the mortgage amount</li> 
+<li><m>\displaystyle{3}\%</m> of the monthly payment</li> 
+<li><m>\displaystyle{1}\%</m> of the sale price</li> 
+<li><m>\displaystyle{1}\%</m> of the monthly payment</li> 
+</ol></p>
+
+
+</statement>
+<answer>
+<p><ul><li>I: <m>\displaystyle{2}\%</m> of the mortgage amount</li></ul></p>
+</answer>
+
+</myopenmath>

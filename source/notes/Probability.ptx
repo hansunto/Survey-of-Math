@@ -28,7 +28,7 @@
     </p>
     <solution>
       <p>
-        The probability is defined as:
+        {}The probability is defined as:
         <me>P(\text{TLC 4th, BTS last}) = \frac{\text{number of permutations with TLC 4th, BTS last}}{\text{total number of possible permutations}}</me>
       </p>
       <p>

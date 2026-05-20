@@ -148,19 +148,21 @@
 <note>
     <title>Calculator Note: Using the TI-30XIIS</title>
     <p>
-        <figure xml:id="calculator-note">
-            <caption>TI-30XIIS</caption>
-            <image source="TI-30XIIS.png" width="50%">
-                <shortdescription>A screenshot of the TI-30XIIS calculator showing the permutation function.</shortdescription>
-            </image>
-        </figure>
+<figure xml:id="calculator-note">
+  <caption>TI-30XIIS Calculator </caption>
+  <image source="TI-30XIIS.png" width="50%">
+    <shortdescription>A screenshot of the TI-30XIIS calculator showing the permutation function.</shortdescription>
+  </image>
+</figure>
+
     </p>
     <p>
         To evaluate <m>{}_{13}P_9</m> on the TI-30XIIS, follow these steps:
         <ol>
             <li><p>Enter the value of <m>n</m>: Type <c>13</c>.</p></li>
             <li><p>Press the <c>PRB</c> key.</p></li>
-            <li><p>The menu will display <c>nPr</c> <c>nCr</c> <c>!</c>. Since <c>nPr</c> is already underlined, simply press <c>ENTER</c>.</p></li>
+            <li><p>The menu will display <c>nPr</c> <c>nCr</c> <c>!</c>. 
+              Since <c>nPr</c> is already underlined, simply press <c>ENTER</c>.</p></li>
             <li><p>Enter the value of <m>r</m>: Type <c>9</c>.</p></li>
             <li><p>Press <c>ENTER</c> to get the result: <c>259,459,200</c>.</p></li>
         </ol>

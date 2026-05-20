@@ -3,19 +3,19 @@
 <statement>
 <p>
 Suppose you want to make weekly deposits into an annuity. How often should interest be compounded for this account?</p>
-<p><ol style="list-style-type:upper-alpha"><li>Annually</li> 
-<li>Weekly</li> 
-<li>Daily</li> 
+<p><ol style="list-style-type:upper-alpha"><li>Monthly</li> 
 <li>Quarterly</li> 
-<li>Monthly</li> 
+<li>Daily</li> 
+<li>Annually</li> 
 <li>Semi-annually</li> 
 <li>It doesn't matter</li> 
+<li>Weekly</li> 
 </ol></p>
 
 
 </statement>
 <answer>
-<p><ul><li>B: Weekly</li></ul></p>
+<p><ul><li>G: Weekly</li></ul></p>
 </answer>
 
 </myopenmath>

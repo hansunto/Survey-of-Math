@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1455429">
+<statement>
+<p>
+Identfy the correct formula to use in each situation. </p>
+<p>
+You borrow <m>\displaystyle\${25},{000}</m> for a new car. You take out an installment loan for <m>\displaystyle{3}</m> years at <m>\displaystyle{5}\%</m> interest which requires regular monthly payments. How much will the monthly payments be?</p>
+<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{P}{M}{T}=\frac{{{P}{\left(\frac{{r}}{{n}}\right)}}}{{{\left[{1}-{\left({1}+\frac{{r}}{{n}}\right)}^{{-{n}{t}}}\right]}}}</m></li> 
+<li><m>\displaystyle{P}=\frac{{{P}{M}{T}{\left[{1}-{\left({1}+\frac{{r}}{{n}}\right)}^{{-{n}{t}}}\right]}}}{{{\left(\frac{{r}}{{n}}\right)}}}</m></li> 
+<li>Neither of these</li> 
+</ol></p>
+<p>
+You can afford to pay <m>\displaystyle\${200}</m> per month as a car payment. If you can get a loan at <m>\displaystyle{3}\%</m> interest for <m>\displaystyle{5}</m> years, how expensive of a car can you afford?</p>
+<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{P}{M}{T}=\frac{{{P}{\left(\frac{{r}}{{n}}\right)}}}{{{\left[{1}-{\left({1}+\frac{{r}}{{n}}\right)}^{{-{n}{t}}}\right]}}}</m></li> 
+<li><m>\displaystyle{P}=\frac{{{P}{M}{T}{\left[{1}-{\left({1}+\frac{{r}}{{n}}\right)}^{{-{n}{t}}}\right]}}}{{{\left(\frac{{r}}{{n}}\right)}}}</m></li> 
+<li>Neither of these</li> 
+</ol></p>
+
+
+</statement>
+<answer>
+<p><ul><li>A: <m>\displaystyle{P}{M}{T}=\frac{{{P}{\left(\frac{{r}}{{n}}\right)}}}{{{\left[{1}-{\left({1}+\frac{{r}}{{n}}\right)}^{{-{n}{t}}}\right]}}}</m></li><li>B: <m>\displaystyle{P}=\frac{{{P}{M}{T}{\left[{1}-{\left({1}+\frac{{r}}{{n}}\right)}^{{-{n}{t}}}\right]}}}{{{\left(\frac{{r}}{{n}}\right)}}}</m></li></ul></p>
+</answer>
+
+</myopenmath>

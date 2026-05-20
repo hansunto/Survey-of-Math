@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1450176">
+<statement>
+<p>
+How much money should you deposit in a CD today paying <m>\displaystyle{8}\%</m> interest compounded monthly so it will accumulate to <m>\displaystyle\${20},{000}</m> in <m>\displaystyle{5}</m> years?</p>
+<p>
+<dollar/> <fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>13424.21</li></ul></p>
+</answer>
+
+</myopenmath>

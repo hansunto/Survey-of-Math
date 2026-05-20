@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-05-intro-activity" xmlns:xi="http://w3.org">
+    <title>05. Activity Annuities</title>
+<page>
+    <!-- Optional introduction -->
+<introduction>
+  <p>
+  Accounts with simple/compound interest require a one-time deposit. If we want to ensure 
+  the account balance reaches a certain amount by a particular point in the future, then 
+  we usually need to make a substantial deposit. For example, in a previous example we saw 
+  that to ensure a future value of <m>\$9,930.61</m> in <m>20</m> years at <m>6\%</m> interest 
+  compounded monthly, we would need to deposit <m>\$3,000</m> today!
+</p>
+
+<p>
+  For most of us, we aren’t able to put a large sum of money like this in the bank today. 
+  Instead, we save for the future by depositing a smaller amount of money from each paycheck 
+  into the bank. This idea is called an <term>annuity</term>. Most retirement plans like 
+  401(k) plans or IRA plans are examples of annuities.
+</p>
+
+<p>
+  In simplistic terms:
+  <ul>
+    <li>
+      <p> For <em>compound interest</em>, we make a single deposit and this money sits in the 
+        account and earns interest. </p>
+    </li>
+    <li>
+      <p> For an <em>annuity</em>, we make regular deposits (every month, week, year, etc.) and 
+        the money sits in the account and earns interest. </p>
+    </li>
+  </ul>
+</p>
+
+<p>
+  One technical thing: for the annuity formulas we will use, interest must be compounded 
+  at the same rate as the regular deposits are made. So if an annuity receives monthly 
+  deposits, interest will be compounded monthly.
+</p>
+
+  <p>See <xref ref="notes-Annuities"/> for the annuity notes.</p>
+</introduction>
+</page>
+<page> 
+    <!-- Exercises start here. -->
+        <exercise>
+            <myopenmath problem="1455393" />
+        </exercise>
+        <exercise>
+            <myopenmath problem="1455379" />
+        </exercise>
+</page>
+
+<page>
+<p>
+  Like with compound interest, there are two formulas we will consider in this course. 
+  Both are mathematically equivalent, but are solved in terms of different values for 
+  our convenience.
+  <me>A = \frac{P\left[\left(1 + \frac{r}{n}\right)^{nt} - 1\right]}{\left(\frac{r}{n}\right)}</me>
+  <me>P = \frac{A \cdot \left(\frac{r}{n}\right)}{\left(1 + \frac{r}{n}\right)^{nt} - 1}</me>
+  where:
+  <ul>
+    <li><p><m>P</m> is the deposit amount made during each compounding period.</p></li>
+    <li><p><m>A</m> is the amount in the annuity after <m>t</m> years.</p></li>
+    <li><p><m>r</m> is the interest rate represented as a decimal.</p></li>
+    <li><p><m>n</m> is the number of compounding periods per year.</p></li>
+    <li><p><m>t</m> is the time in years.</p></li>
+  </ul>
+</p>
+
+<note>
+  <p>
+    You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!
+  </p>
+</note>
+
+<p>
+  The first formula (the one with <m>A</m> on the left-hand side) should be used when we 
+  want to determine the future value of an annuity with a given deposit amount.
+</p>
+
+<p>
+  The second formula (the one with <m>P</m> on the left-hand side) should be used when we 
+  want to determine the deposit amount for an annuity to ensure a given future value. 
+  We look at some examples of using these formulas on the next page!
+</p>
+<exercise >
+     <myopenmath problem="1455397" />
+    </exercise>
+</page>
+    
+<page>
+    <p>
+  The calculation on the previous page was quite tedious! Fortunately, there are formulas 
+  that can be used to help us determine the future value of a loan or investment that 
+  undergoes compound interest and solve other problems relating to compound interest!
+</p>
+
+<p>
+  There are two formulas we will consider in this course. Both are mathematically equivalent, 
+  but are solved in terms of different values for our convenience.
+  <me>A = P\left(1 + \frac{r}{n}\right)^{nt}</me>
+  <me>P = \frac{A}{\left(1 + \frac{r}{n}\right)^{nt}}</me>
+  where:
+  <ul>
+    <li><p><m>P</m> is the principal (starting amount) of the loan or investment, sometimes called the present value.</p></li>
+    <li><p><m>A</m> is the future value of the loan or investment.</p></li>
+    <li><p><m>r</m> is the interest rate represented as a decimal.</p></li>
+    <li><p><m>n</m> is the number of compounding periods per year.</p></li>
+    <li><p><m>t</m> is the time in years.</p></li>
+  </ul>
+</p>
+
+<note>
+  <p>
+    You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!
+  </p>
+</note>
+
+<p>
+  The first formula (the one with <m>A</m> on the left-hand side) is called the <term>future value formula</term> 
+  since it is solved for the future value. It should be used when we want to determine the future value of a 
+  loan or investment with a given present value.
+</p>
+
+<p>
+  The second formula (the one with <m>P</m> on the left-hand side) is called the <term>present value formula</term> 
+  since it is solved for the present value (principal). It should be used when we want to determine the present 
+  value of a loan or investment with a given future value.
+</p>
+
+<p>
+  The new quantity here that was not present before is <m>n</m>, the number of compounding periods per year. 
+  This will need to be given to us, and is often done so using keywords. Some examples of these are:
+  <ul>
+    <li><p>If the compounding is done annually (once a year), then <m>n = 1</m>.</p></li>
+    <li><p>If the compounding is done semi-annually, then <m>n = 2</m>.</p></li>
+    <li><p>If the compounding is done quarterly, then <m>n = 4</m>.</p></li>
+    <li><p>If the compounding is done monthly, then <m>n = 12</m>.</p></li>
+    <li><p>If the compounding is done weekly, then <m>n = 52</m>.</p></li>
+    <li><p>If the compounding is done daily, then <m>n = 365</m>.</p></li>
+  </ul>
+</p>
+
+<p>
+  The most important thing to remember about using these formulas is that it assumes that we put money 
+  in the account once and let it sit there earning interest. An account where we make regular deposits 
+  is called an <term>annuity</term>, and will be discussed in our next unit! We look at some examples 
+  of using these formulas on the next page!
+</p>
+</page>
+    
+<page>
+    <exercise >
+     <myopenmath problem="1455403" />
+    </exercise>
+</page>
+
+
+<page>
+<example>
+  <statement>
+    <p>
+      You want to have <m>\$1,000,000</m> in your account when you retire in <m>40</m> 
+      years. Your retirement account earns <m>7\%</m> interest compounded weekly. How 
+      much do you need to deposit each week to meet your retirement goal? How much of 
+      the <m>\$1,000,000</m> is from interest?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We are given the following values:
+      <ul>
+        <li><p><m>A = \$1,000,000</m> (the amount we want in 40 years)</p></li>
+        <li><p><m>r = 0.07</m> (the interest rate as a decimal)</p></li>
+        <li><p><m>n = 52</m> (interest is compounded weekly)</p></li>
+        <li><p><m>t = 40</m> (we're given the timeframe of 40 years)</p></li>
+      </ul>
+    </p>
+    <p>
+      We are asked to find the amount of the regular deposits, so we use the deposit formula 
+      for an annuity:
+      <me>d = \frac{A \cdot \frac{r}{n}}{\left(1 + \frac{r}{n}\right)^{nt} - 1}</me>
+      <me>d = \frac{1,000,000 \cdot \frac{0.07}{52}}{\left(1 + \frac{0.07}{52}\right)^{52 \times 40} - 1}</me>
+      <me>d \approx \$87.47</me>
+    </p>
+    <p>
+      To find the amount of interest earned, we observe that everything in the account 
+      other than the regular deposits must be interest! We first find the total amount 
+      deposited over the course of the annuity. Since we deposited <m>\$87.47</m> each week 
+      (<m>52</m> per year) for <m>40</m> years, the total amount deposited is:
+      <me>\text{Total Deposited} = \$87.47 \times 52 \times 40 = \$181,937.60</me>
+    </p>
+    <p>
+      Since we deposited <m>\$181,937.60</m> and ended up with <m>\$1,000,000</m>, the 
+      amount of interest earned must be:
+      <me>\text{Interest} = \$1,000,000 - \$181,937.60 = \$818,062.40</me>
+    </p>
+    <p>
+      Note we did NOT use the formula <m>I = Prt</m> here to compute the amount of 
+      interest earned. This formula applies only to situations which use simple interest. 
+      If we used it here, we would not have calculated the correct amount of interest.
+    </p>
+  </solution>
+</example>
+
+
+
+
+<exercise>
+      <myopenmath problem="1455406" />
+</exercise>
+</page>
+
+</worksheet>

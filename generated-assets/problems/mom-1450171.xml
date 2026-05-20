@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1450171">
+<statement>
+<p>
+Which quantity is often called the present value of a loan or investment?</p>
+<p><ol style="list-style-type:upper-alpha"><li><m>\displaystyle{n}</m></li> 
+<li><m>\displaystyle{t}</m></li> 
+<li><m>\displaystyle{A}</m></li> 
+<li><m>\displaystyle{P}</m></li> 
+<li><m>\displaystyle{r}</m></li> 
+<li>None of these</li> 
+</ol></p>
+
+
+</statement>
+<answer>
+<p><ul><li>D: <m>\displaystyle{P}</m></li></ul></p>
+</answer>
+
+</myopenmath>

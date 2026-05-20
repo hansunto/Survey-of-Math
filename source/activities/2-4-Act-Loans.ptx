@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-06-intro-activity" xmlns:xi="http://w3.org">
+    <title>06. Activity Loans</title>
+<page>
+    <!-- Optional introduction -->
+<introduction>
+<p>
+  An <term>installment loan</term> is a loan which you pay off with regular weekly or 
+  monthly payments. Examples include car loans, student loans, and mortgages; we will 
+  discuss mortgages in the next unit.
+</p>
+
+<p>
+  Sometimes a loan requires a <term>down payment</term>, which is the amount paid at 
+  the time of purchase. The <term>amount of the loan</term> is the actual amount borrowed. 
+  It does <alert>not</alert> include the down payment (when there is one) because this 
+  money is not part of the debt.
+</p>
+
+<p>
+  The loan amount must be repaid, with interest, in regular payments (monthly, weekly, 
+  quarterly, etc.). The compounding frequency for interest is not always explicitly 
+  given, but is determined by how often you make payments. So, if you are required to 
+  make monthly payments on an installment loan, the interest will be compounded monthly.
+</p>
+
+<p>
+  For our purposes in this course, we will assume that you make loan payments on a 
+  regular schedule (every month, year, quarter, etc.) and are paying interest on the loan.
+</p>
+
+  <p>See <xref ref="notes-Mortgages"/> for the Mortgages notes.</p>
+</introduction>
+</page>
+
+<page> 
+    <!-- Exercises start here. -->
+        <exercise>
+            <myopenmath problem="1455416" />
+        </exercise>
+        <exercise>
+            <myopenmath problem="1455417" />
+        </exercise>
+</page>
+
+<page>
+<p>
+  Like with compound interest and annuities, there are two formulas we will consider 
+  in this course. Both are mathematically equivalent, but are solved in terms of 
+  different values for our convenience.
+  <me>PMT = \frac{P \cdot (\frac{r}{n})}{1 - \left(1 + \frac{r}{n}\right)^{-nt}}</me>
+  <me>P = \frac{PMT\left[1 - \left(1 + \frac{r}{n}\right)^{-nt}\right]}{(\frac{r}{n})}</me>
+  where:
+  <ul>
+    <li><p><m>P</m> is the amount of the loan (borrowed amount).</p></li>
+    <li><p><m>PMT</m> is the regular payment amount.</p></li>
+    <li><p><m>r</m> is the interest rate represented as a decimal.</p></li>
+    <li><p><m>n</m> is the number of compounding periods per year.</p></li>
+    <li><p><m>t</m> is the time in years.</p></li>
+  </ul>
+</p>
+
+<note>
+  <p>
+    You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!
+  </p>
+</note>
+
+<p>
+  The first formula (the one with <m>PMT</m> on the left-hand side) should be used when we 
+  want to determine the payment amount for a given loan, and the second formula (the one 
+  with <m>P</m> on the left-hand side) should be used when we want to determine how much 
+  we can afford with a given payment amount.
+</p>
+
+<p>
+  We look at some examples of using these formulas on the next page!
+</p>
+</page>
+
+<page>
+<exercise >
+     <myopenmath problem="1455429" />
+    </exercise>
+</page>
+    
+<page>
+ <example>
+  <statement>
+    <p>
+      You decide to borrow <m>\$25,000</m> for a new car. You take out an installment loan 
+      for <m>3</m> years at <m>5\%</m> interest which requires regular monthly payments. 
+      How much will the monthly payment be? How much interest will you pay in total?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We are given the following values:
+      <ul>
+        <li><p><m>P = \$25,000</m> (the amount borrowed)</p></li>
+        <li><p><m>r = 0.05</m> (the interest rate as a decimal)</p></li>
+        <li><p><m>n = 12</m> (interest is compounded monthly)</p></li>
+        <li><p><m>t = 3</m> (the loan is taken out for 3 years)</p></li>
+      </ul>
+    </p>
+    <p>
+      We are asked to find the amount of the monthly payment, so we use the formula for an 
+      installment loan:
+      <me>PMT = \frac{P \cdot \frac{r}{n}}{1 - \left(1 + \frac{r}{n}\right)^{-nt}}</me>
+      <me>PMT = \frac{25,000 \cdot \frac{0.05}{12}}{1 - \left(1 + \frac{0.05}{12}\right)^{-12 \times 3}}</me>
+      <me>PMT \approx \$749.38</me>
+    </p>
+    <p>
+      To find the amount of interest paid, we first calculate the total amount paid over the 
+      course of the loan. We know that <m>\$25,000</m> of this went to pay off the amount 
+      borrowed, and the rest must be interest. Since we paid <m>\$749.38</m> each month 
+      (<m>12</m> per year) for <m>3</m> years, the total amount paid is:
+      <me>\text{Total Paid} = \$749.38 \times 12 \times 3 = \$26,977.68</me>
+    </p>
+    <p>
+      Since <m>\$25,000</m> of this is the amount borrowed, the amount of interest you will 
+      pay will be:
+      <me>\text{Interest} = \$26,977.68 - \$25,000 = \$1,977.68</me>
+    </p>
+  </solution>
+</example>
+
+    <exercise >
+     <myopenmath problem="1455445" />
+    </exercise>
+</page>
+
+
+</worksheet>

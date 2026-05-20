@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1455403">
+<statement>
+<p>
+At age <m>\displaystyle{25}</m>, Joe decides to start saving for retirement. He decides to deposit <m>\displaystyle\${200}</m> at the end of each month into an IRA that pays <m>\displaystyle{7.5}\%</m> compounded monthly. How much money will be in the account when Joe retires at age <m>\displaystyle{65}</m>? How much interest is earned?</p>
+<p>
+Round your answer to the nearest dollar!</p>
+<p>
+<fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>604765</li></ul></p>
+</answer>
+
+</myopenmath>

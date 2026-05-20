@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1455445">
+<statement>
+<p>
+You borrow <m>\displaystyle\${40},{000}</m> to purchase a new car. To pay for this, you take out a car loan for <m>\displaystyle{5}</m> years at <m>\displaystyle{7.5}\%</m> interest. How much will your monthly payments be?</p>
+<p>
+<fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>801.52</li></ul></p>
+</answer>
+
+</myopenmath>

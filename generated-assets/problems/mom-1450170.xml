@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1450170">
+<statement>
+<p>
+What would the value of <m>\displaystyle{n}</m> be in the compound interest formulas if interest is compounded</p>
+<p>
+a)  monthly?</p>
+<p>
+<fillin characters="20"/></p>
+<p>
+b)  daily?</p>
+<p>
+<fillin characters="20"/></p>
+<p>
+c) semi-annually?</p>
+<p>
+<fillin characters="20"/></p>
+<p>
+d) <m>\displaystyle{7}</m> times per year?</p>
+<p>
+<fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>12</li><li>365</li><li>2</li><li>7</li></ul></p>
+</answer>
+
+</myopenmath>

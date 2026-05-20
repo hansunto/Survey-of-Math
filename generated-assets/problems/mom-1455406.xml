@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1455406">
+<statement>
+<p>
+How much should you deposit at the end of each month into an annuity that pays <m>\displaystyle{6.5}\%</m> interest compounded monthly if you would like to have <m>\displaystyle\${2}</m> million when you retire in <m>\displaystyle{45}</m> years?</p>
+<p>
+<fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>619.48</li></ul></p>
+</answer>
+
+</myopenmath>

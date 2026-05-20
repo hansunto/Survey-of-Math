@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1455393">
+<statement>
+<p>
+Suppose you want to make weekly deposits into an annuity. How often should interest be compounded for this account?</p>
+<p><ol style="list-style-type:upper-alpha"><li>Annually</li> 
+<li>Weekly</li> 
+<li>Daily</li> 
+<li>Quarterly</li> 
+<li>Monthly</li> 
+<li>Semi-annually</li> 
+<li>It doesn't matter</li> 
+</ol></p>
+
+
+</statement>
+<answer>
+<p><ul><li>B: Weekly</li></ul></p>
+</answer>
+
+</myopenmath>

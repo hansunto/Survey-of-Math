@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1455416">
+<statement>
+<p>
+The amount paid at the time of purchase is called what?</p>
+<p><ol style="list-style-type:upper-alpha"><li>Compounding amount</li> 
+<li>Principal</li> 
+<li>Down payment</li> 
+<li>Loan amount</li> 
+<li>Compounding period</li> 
+<li>Interest</li> 
+<li>None of the above</li> 
+</ol></p>
+
+
+</statement>
+<answer>
+<p><ul><li>C: Down payment</li></ul></p>
+</answer>
+
+</myopenmath>

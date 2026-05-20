@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- When creating a new activity, make a copy of this file with appropriate name -->
+<worksheet xml:id="activity-04-intro-activity" xmlns:xi="http://w3.org">
+    <title>04. Activity Compound Interest</title>
+<page>
+    <!-- Optional introduction -->
+<introduction>
+  <p>
+  With simple interest, we were assuming that we pocketed the interest when we received it. 
+  In a standard bank account, any interest we earn is automatically added to our balance, 
+  and we earn interest on that interest in future years. This reinvestment of interest is 
+  called <alert>compounding</alert>.
+</p>
+
+  <p>See <xref ref="notes-compound-interest" /> for the compound interest notes.</p>
+</introduction>
+
+<p>
+  Suppose that we deposit <m>\$1,000</m> in a bank account offering <m>12\%</m> simple 
+  interest. After <m>1</m> year, the account would have a balance of <m>\$1,120</m>.
+</p>
+
+<p>
+  Now, suppose that we deposit our <m>\$1,000</m> in a bank account offering <m>12\%</m> 
+  interest, compounded monthly. How will our money grow?
+</p>
+
+<p>
+  In the first month (note we use <m>t = \frac{1}{12}</m> so that time is given in years!):
+  <me>I = \$1,000 \times 0.12 \times \frac{1}{12} = \$10</me>
+  In the first month, we will earn <m>\$10</m> in interest, raising our account balance 
+  to <m>\$1,010</m>.
+</p>
+
+<p>
+  In the second month:
+  <me>I = \$1,010 \times 0.12 \times \frac{1}{12} = \$10.10</me>
+  Notice that in the second month we earned more interest than we did in the first month. 
+  This is because we earned interest not only on the original <m>\$1,000</m> we deposited, 
+  but we also earned interest on the <m>\$10</m> of interest we earned the first month. 
+  This is the key advantage that compounding of interest gives us.
+</p>
+
+<p>
+  Calculating out a few more months, we obtain the following:
+</p>
+
+<tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+  <row header="yes">
+    <cell>Month</cell>
+    <cell>Starting Balance</cell>
+    <cell>Interest Earned</cell>
+    <cell>Ending Balance</cell>
+  </row>
+  <row>
+    <cell>1</cell>
+    <cell>$1,000.00</cell>
+    <cell>$10.00</cell>
+    <cell>$1,010.00</cell>
+  </row>
+  <row>
+    <cell>2</cell>
+    <cell>$1,010.00</cell>
+    <cell>$10.10</cell>
+    <cell>$1,020.10</cell>
+  </row>
+  <row>
+    <cell>3</cell>
+    <cell>$1,020.10</cell>
+    <cell>$10.20</cell>
+    <cell>$1,030.30</cell>
+  </row>
+  <row>
+    <cell>4</cell>
+    <cell>$1,030.30</cell>
+    <cell>$10.30</cell>
+    <cell>$1,040.60</cell>
+  </row>
+    <row>
+    <cell>5</cell>
+    <cell>$1,040.60</cell>
+    <cell>$10.41</cell>
+    <cell>$1,051.01</cell>
+  </row>
+  <row>
+    <cell>6</cell>
+    <cell>$1,051.01</cell>
+    <cell>$10.51</cell>
+    <cell>$1,061.52</cell>
+  </row>
+  <row>
+    <cell>7</cell>
+    <cell>$1,061.52</cell>
+    <cell>$10.62</cell>
+    <cell>$1,072.14</cell>
+  </row>
+  <row>
+    <cell>8</cell>
+    <cell>$1,072.14</cell>
+    <cell>$10.72</cell>
+    <cell>$1,082.86</cell>
+  </row>
+  <row>
+    <cell>9</cell>
+    <cell>$1,082.86</cell>
+    <cell>$10.83</cell>
+    <cell>$1,093.69</cell>
+  </row>
+  <row>
+    <cell>10</cell>
+    <cell>$1,093.69</cell>
+    <cell>$10.94</cell>
+    <cell>$1,104.63</cell>
+  </row>
+  <row>
+    <cell>11</cell>
+    <cell>$1,104.63</cell>
+    <cell>$11.05</cell>
+    <cell>$1,115.68</cell>
+  </row>
+  <row>
+    <cell>12</cell>
+    <cell>$1,115.68</cell>
+    <cell>$11.16</cell>
+    <cell>$1,126.84</cell>
+  </row>
+</tabular>
+
+<p>
+  Notice that we earned slightly more interest with compound interest than with simple interest.
+</p>
+</page>
+<page> 
+    <!-- Exercises start here. -->
+        <exercise workspace="0.2in">
+            <myopenmath problem="1450167" />
+        </exercise>
+</page>
+<page>
+<p>
+  The calculation on the previous page was quite tedious! Fortunately, there are formulas 
+  that can be used to help us determine the future value of a loan or investment that 
+  undergoes compound interest and solve other problems relating to compound interest!
+</p>
+
+<p>
+  There are two formulas we will consider in this course. Both are mathematically equivalent, 
+  but are solved in terms of different values for our convenience.
+  <me>A = P\left(1 + \frac{r}{n}\right)^{nt}</me>
+  <me>P = \frac{A}{\left(1 + \frac{r}{n}\right)^{nt}}</me>
+  where:
+  <ul>
+    <li><p><m>P</m> is the principal (starting amount) of the loan or investment, sometimes called the present value.</p></li>
+    <li><p><m>A</m> is the future value of the loan or investment.</p></li>
+    <li><p><m>r</m> is the interest rate represented as a decimal.</p></li>
+    <li><p><m>n</m> is the number of compounding periods per year.</p></li>
+    <li><p><m>t</m> is the time in years.</p></li>
+  </ul>
+</p>
+
+<note>
+  <p>
+    You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!
+  </p>
+</note>
+
+<p>
+  The first formula (the one with <m>A</m> on the left-hand side) is called the <term>future value formula</term> 
+  since it is solved for the future value. It should be used when we want to determine the future value of a 
+  loan or investment with a given present value.
+</p>
+
+<p>
+  The second formula (the one with <m>P</m> on the left-hand side) is called the <term>present value formula</term> 
+  since it is solved for the present value (principal). It should be used when we want to determine the present 
+  value of a loan or investment with a given future value.
+</p>
+
+<p>
+  The new quantity here that was not present before is <m>n</m>, the number of compounding periods per year. 
+  This will need to be given to us, and is often done so using keywords. Some examples of these are:
+  <ul>
+    <li><p>If the compounding is done annually (once a year), then <m>n = 1</m>.</p></li>
+    <li><p>If the compounding is done semi-annually, then <m>n = 2</m>.</p></li>
+    <li><p>If the compounding is done quarterly, then <m>n = 4</m>.</p></li>
+    <li><p>If the compounding is done monthly, then <m>n = 12</m>.</p></li>
+    <li><p>If the compounding is done weekly, then <m>n = 52</m>.</p></li>
+    <li><p>If the compounding is done daily, then <m>n = 365</m>.</p></li>
+  </ul>
+</p>
+
+<p>
+  The most important thing to remember about using these formulas is that it assumes that we put money 
+  in the account once and let it sit there earning interest. An account where we make regular deposits 
+  is called an <term>annuity</term>, and will be discussed in our next unit! We look at some examples 
+  of using these formulas on the next page!
+</p>
+</page>
+    
+<page>
+    <exercise >
+     <myopenmath problem="1450171" />
+    </exercise>
+    
+    <exercise >
+     <myopenmath problem="1450170" />
+    </exercise>
+</page>
+
+<page>
+<example>
+  <statement>
+    <p>
+      A certificate of deposit (CD) is a savings instrument that many banks offer. 
+      It usually gives a higher interest rate, but you cannot access your investment 
+      for a specified amount of time. Suppose you deposit <m>\$3,000</m> in a CD paying 
+      <m>6\%</m> interest compounded monthly. How much will you have in the account 
+      after <m>20</m> years? How much interest was earned?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We are given the following values:
+      <ul>
+        <li><p><m>P = \$3,000</m> (the initial deposit)</p></li>
+        <li><p><m>r = 0.06</m> (the interest rate as a decimal)</p></li>
+        <li><p><m>n = 12</m> (interest is compounded monthly)</p></li>
+        <li><p><m>t = 20</m> (we're looking for the amount after 20 years)</p></li>
+      </ul>
+    </p>
+    <p>
+      We are asked to find the value in the account in the future (i.e., the future value), 
+      so we use the future value formula for compound interest:
+      <me>A = P\left(1 + \frac{r}{n}\right)^{nt}</me>
+      <me>A = 3,000\left(1 + \frac{0.06}{12}\right)^{12 \times 20}</me>
+      <me>A = 3,000(1.005)^{240} \approx \$9,930.61</me>
+    </p>
+    <p>
+      To find the amount of interest earned, we observe that everything in the account 
+      other than the initial deposit must be interest! Since we deposited <m>\$3,000</m> 
+      and ended up with <m>\$9,930.61</m>, the amount of interest earned must be:
+      <me>\text{Interest} = \$9,930.61 - \$3,000 = \$6,930.61</me>
+    </p>
+    <p>
+      Note that we did NOT use the formula <m>I = Prt</m> here to compute the amount of 
+      interest earned. This formula applies only to situations which use simple interest. 
+      If we used it here, we would not have calculated the correct amount of interest.
+    </p>
+  </solution>
+</example>
+
+<exercise>
+      <myopenmath problem="1450173" />
+</exercise>
+</page>
+
+<page>
+    <example>
+  <statement>
+    <p>
+      A new mother knows she will need <m>\$50,000</m> for her child’s education in 
+      <m>18</m> years. If the account earns <m>6\%</m> compounded quarterly, how much 
+      should the mother deposit now to reach her goal? How much interest is earned?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We are given the following values:
+      <ul>
+        <li><p><m>A = \$50,000</m> (the amount we want in 18 years)</p></li>
+        <li><p><m>r = 0.06</m> (the interest rate as a decimal)</p></li>
+        <li><p><m>n = 4</m> (interest is compounded quarterly)</p></li>
+        <li><p><m>t = 18</m> (we're given the timeframe of 18 years)</p></li>
+      </ul>
+    </p>
+    <p>
+      We are asked to find the amount that needs to be deposited today (i.e., the present value), 
+      so we use the present value formula for compound interest:
+      <me>P = \frac{A}{\left(1 + \frac{r}{n}\right)^{nt}}</me>
+      <me>P = \frac{50,000}{\left(1 + \frac{0.06}{4}\right)^{4 \times 18}}</me>
+      <me>P = \frac{50,000}{(1.015)^{72}} \approx \$17,116.50</me>
+    </p>
+    <p>
+      To find the amount of interest earned, we observe that everything in the account 
+      other than the initial deposit must be interest! Since we deposited <m>\$17,116.50</m> 
+      and ended up with <m>\$50,000</m>, the amount of interest earned must be:
+      <me>\text{Interest} = \$50,000 - \$17,116.50 = \$32,883.50</me>
+    </p>
+    <p>
+      Again, note we did NOT use the formula <m>I = Prt</m> to compute the amount of 
+      interest earned. This formula should be used only in situations in which simple 
+      interest is being used.
+    </p>
+  </solution>
+</example>
+
+    <exercise>
+        <myopenmath problem="1450176" />
+    </exercise>
+</page>
+
+<page>
+    <p>
+  The effective annual yield (or effective rate) of an account is the simple interest rate 
+  that would produce the same account balance after one year as the compound interest at a 
+  stated rate and compounding period. The effective annual yield is determined by the 
+  following formula:
+  <me>Y = \left(1 + \frac{r}{n}\right)^n - 1</me>
+  where:
+  <ul>
+    <li><p><m>Y</m> is the effective annual yield</p></li>
+    <li><p><m>r</m> is the compound interest rate represented as a decimal</p></li>
+    <li><p><m>n</m> is the number of compounding periods per year</p></li>
+  </ul>
+</p>
+
+<note>
+  <p>
+    You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!
+  </p>
+</note>
+
+<p>
+  Let's look at an example!
+</p>
+
+<example>
+  <statement>
+    <p>
+      Sue deposits <m>\$1,000</m> in an account that pays <m>5\%</m> interest compounded 
+      monthly. Find the account’s effective annual yield.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We are given <m>r = 0.05</m> and <m>n = 12</m> (monthly compounding). Using the 
+      formula we see that:
+      <me>Y = \left(1 + \frac{0.05}{12}\right)^{12} - 1 \approx 0.0512</me>
+    </p>
+    <p>
+      This means that if we were to deposit <m>\$1,000</m> in an account using a simple 
+      interest rate of <m>5.12\%</m>, we would have the same balance after one year as 
+      the account with monthly compounding at <m>5\%</m>.
+    </p>
+  </solution>
+</example>
+
+    <exercise workspace="2in">
+        <myopenmath problem="1450178" />
+    </exercise>
+</page>
+
+</worksheet>

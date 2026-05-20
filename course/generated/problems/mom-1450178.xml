@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1450178">
+<statement>
+<p>
+A passbook savings account has an interest rate of <m>\displaystyle{5}\%</m>. The interest is compounded daily. Find the account's effective annual yield.</p>
+<p>
+Round your answer to the nearest tenth of a percent (e.g., 7.3).</p>
+<p>
+<fillin characters="20"/> <percent/>
+</p>
+</statement>
+<answer>
+<p><ul><li>5.1</li></ul></p>
+</answer>
+
+</myopenmath>

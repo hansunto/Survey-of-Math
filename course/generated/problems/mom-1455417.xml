@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1455417">
+<statement>
+<p>
+In this course, what assumptions will we be making about installment loans? Select ALL that apply!</p>
+<p><ol style="list-style-type:upper-alpha"><li>We will not have a down payment.</li> 
+<li>We will be paying interest on the loan.</li> 
+<li>We will have a down payment.</li> 
+<li>We will make regular payments on the loan.</li> 
+</ol></p>
+
+
+</statement>
+<answer>
+<p><ul><li><p>We will make regular payments on the loan.</p>
+<p>We will be paying interest on the loan.</p></li></ul></p>
+</answer>
+
+</myopenmath>

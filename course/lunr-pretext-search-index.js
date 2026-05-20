@@ -2296,6 +2296,339 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
+  "id": "activity-04-intro-activity",
+  "level": "1",
+  "url": "activity-04-intro-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "04. Activity Compound Interest",
+  "body": " 04. Activity Compound Interest     With simple interest, we were assuming that we pocketed the interest when we received it. In a standard bank account, any interest we earn is automatically added to our balance, and we earn interest on that interest in future years. This reinvestment of interest is called compounding .  See for the compound interest notes.   Suppose that we deposit in a bank account offering simple interest. After year, the account would have a balance of .  Now, suppose that we deposit our in a bank account offering interest, compounded monthly. How will our money grow?  In the first month (note we use so that time is given in years!): In the first month, we will earn in interest, raising our account balance to .  In the second month: Notice that in the second month we earned more interest than we did in the first month. This is because we earned interest not only on the original we deposited, but we also earned interest on the of interest we earned the first month. This is the key advantage that compounding of interest gives us.  Calculating out a few more months, we obtain the following:    Month  Starting Balance  Interest Earned  Ending Balance    1  $1,000.00  $10.00  $1,010.00    2  $1,010.00  $10.10  $1,020.10    3  $1,020.10  $10.20  $1,030.30    4  $1,030.30  $10.30  $1,040.60    5  $1,040.60  $10.41  $1,051.01    6  $1,051.01  $10.51  $1,061.52    7  $1,061.52  $10.62  $1,072.14    8  $1,072.14  $10.72  $1,082.86    9  $1,082.86  $10.83  $1,093.69    10  $1,093.69  $10.94  $1,104.63    11  $1,104.63  $11.05  $1,115.68    12  $1,115.68  $11.16  $1,126.84    Notice that we earned slightly more interest with compound interest than with simple interest.          The calculation on the previous page was quite tedious! Fortunately, there are formulas that can be used to help us determine the future value of a loan or investment that undergoes compound interest and solve other problems relating to compound interest!  There are two formulas we will consider in this course. Both are mathematically equivalent, but are solved in terms of different values for our convenience.  where:  is the principal (starting amount) of the loan or investment, sometimes called the present value.  is the future value of the loan or investment.  is the interest rate represented as a decimal.  is the number of compounding periods per year.  is the time in years.     You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!   The first formula (the one with on the left-hand side) is called the future value formula since it is solved for the future value. It should be used when we want to determine the future value of a loan or investment with a given present value.  The second formula (the one with on the left-hand side) is called the present value formula since it is solved for the present value (principal). It should be used when we want to determine the present value of a loan or investment with a given future value.  The new quantity here that was not present before is , the number of compounding periods per year. This will need to be given to us, and is often done so using keywords. Some examples of these are:  If the compounding is done annually (once a year), then .  If the compounding is done semi-annually, then .  If the compounding is done quarterly, then .  If the compounding is done monthly, then .  If the compounding is done weekly, then .  If the compounding is done daily, then .    The most important thing to remember about using these formulas is that it assumes that we put money in the account once and let it sit there earning interest. An account where we make regular deposits is called an annuity , and will be discussed in our next unit! We look at some examples of using these formulas on the next page!              A certificate of deposit (CD) is a savings instrument that many banks offer. It usually gives a higher interest rate, but you cannot access your investment for a specified amount of time. Suppose you deposit in a CD paying interest compounded monthly. How much will you have in the account after years? How much interest was earned?    We are given the following values:  (the initial deposit)  (the interest rate as a decimal)  (interest is compounded monthly)  (we're looking for the amount after 20 years)    We are asked to find the value in the account in the future (i.e., the future value), so we use the future value formula for compound interest:     To find the amount of interest earned, we observe that everything in the account other than the initial deposit must be interest! Since we deposited and ended up with , the amount of interest earned must be:   Note that we did NOT use the formula here to compute the amount of interest earned. This formula applies only to situations which use simple interest. If we used it here, we would not have calculated the correct amount of interest.           A new mother knows she will need for her child’s education in years. If the account earns compounded quarterly, how much should the mother deposit now to reach her goal? How much interest is earned?    We are given the following values:  (the amount we want in 18 years)  (the interest rate as a decimal)  (interest is compounded quarterly)  (we're given the timeframe of 18 years)    We are asked to find the amount that needs to be deposited today (i.e., the present value), so we use the present value formula for compound interest:     To find the amount of interest earned, we observe that everything in the account other than the initial deposit must be interest! Since we deposited and ended up with , the amount of interest earned must be:   Again, note we did NOT use the formula to compute the amount of interest earned. This formula should be used only in situations in which simple interest is being used.         The effective annual yield (or effective rate) of an account is the simple interest rate that would produce the same account balance after one year as the compound interest at a stated rate and compounding period. The effective annual yield is determined by the following formula: where:  is the effective annual yield  is the compound interest rate represented as a decimal  is the number of compounding periods per year     You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!   Let's look at an example!    Sue deposits in an account that pays interest compounded monthly. Find the account’s effective annual yield.    We are given and (monthly compounding). Using the formula we see that:   This means that if we were to deposit in an account using a simple interest rate of , we would have the same balance after one year as the account with monthly compounding at .        "
+},
+{
+  "id": "activity-04-intro-activity-3-1",
+  "level": "2",
+  "url": "activity-04-intro-activity.html#activity-04-intro-activity-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-04-intro-activity-4-3",
+  "level": "2",
+  "url": "activity-04-intro-activity.html#activity-04-intro-activity-4-3",
+  "type": "Note",
+  "number": "5.7",
+  "title": "",
+  "body": " You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!  "
+},
+{
+  "id": "activity-04-intro-activity-4-4",
+  "level": "2",
+  "url": "activity-04-intro-activity.html#activity-04-intro-activity-4-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "future value formula "
+},
+{
+  "id": "activity-04-intro-activity-4-5",
+  "level": "2",
+  "url": "activity-04-intro-activity.html#activity-04-intro-activity-4-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "present value formula "
+},
+{
+  "id": "activity-04-intro-activity-4-7",
+  "level": "2",
+  "url": "activity-04-intro-activity.html#activity-04-intro-activity-4-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "annuity "
+},
+{
+  "id": "activity-04-intro-activity-5-1",
+  "level": "2",
+  "url": "activity-04-intro-activity.html#activity-04-intro-activity-5-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-04-intro-activity-5-2",
+  "level": "2",
+  "url": "activity-04-intro-activity.html#activity-04-intro-activity-5-2",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-04-intro-activity-6-1",
+  "level": "2",
+  "url": "activity-04-intro-activity.html#activity-04-intro-activity-6-1",
+  "type": "Example",
+  "number": "5.8",
+  "title": "",
+  "body": "  A certificate of deposit (CD) is a savings instrument that many banks offer. It usually gives a higher interest rate, but you cannot access your investment for a specified amount of time. Suppose you deposit in a CD paying interest compounded monthly. How much will you have in the account after years? How much interest was earned?    We are given the following values:  (the initial deposit)  (the interest rate as a decimal)  (interest is compounded monthly)  (we're looking for the amount after 20 years)    We are asked to find the value in the account in the future (i.e., the future value), so we use the future value formula for compound interest:     To find the amount of interest earned, we observe that everything in the account other than the initial deposit must be interest! Since we deposited and ended up with , the amount of interest earned must be:   Note that we did NOT use the formula here to compute the amount of interest earned. This formula applies only to situations which use simple interest. If we used it here, we would not have calculated the correct amount of interest.   "
+},
+{
+  "id": "activity-04-intro-activity-6-2",
+  "level": "2",
+  "url": "activity-04-intro-activity.html#activity-04-intro-activity-6-2",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-04-intro-activity-7-1",
+  "level": "2",
+  "url": "activity-04-intro-activity.html#activity-04-intro-activity-7-1",
+  "type": "Example",
+  "number": "5.9",
+  "title": "",
+  "body": "  A new mother knows she will need for her child’s education in years. If the account earns compounded quarterly, how much should the mother deposit now to reach her goal? How much interest is earned?    We are given the following values:  (the amount we want in 18 years)  (the interest rate as a decimal)  (interest is compounded quarterly)  (we're given the timeframe of 18 years)    We are asked to find the amount that needs to be deposited today (i.e., the present value), so we use the present value formula for compound interest:     To find the amount of interest earned, we observe that everything in the account other than the initial deposit must be interest! Since we deposited and ended up with , the amount of interest earned must be:   Again, note we did NOT use the formula to compute the amount of interest earned. This formula should be used only in situations in which simple interest is being used.   "
+},
+{
+  "id": "activity-04-intro-activity-7-2",
+  "level": "2",
+  "url": "activity-04-intro-activity.html#activity-04-intro-activity-7-2",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-04-intro-activity-8-2",
+  "level": "2",
+  "url": "activity-04-intro-activity.html#activity-04-intro-activity-8-2",
+  "type": "Note",
+  "number": "5.10",
+  "title": "",
+  "body": " You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!  "
+},
+{
+  "id": "activity-04-intro-activity-8-4",
+  "level": "2",
+  "url": "activity-04-intro-activity.html#activity-04-intro-activity-8-4",
+  "type": "Example",
+  "number": "5.11",
+  "title": "",
+  "body": "  Sue deposits in an account that pays interest compounded monthly. Find the account’s effective annual yield.    We are given and (monthly compounding). Using the formula we see that:   This means that if we were to deposit in an account using a simple interest rate of , we would have the same balance after one year as the account with monthly compounding at .   "
+},
+{
+  "id": "activity-04-intro-activity-8-5",
+  "level": "2",
+  "url": "activity-04-intro-activity.html#activity-04-intro-activity-8-5",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-05-intro-activity",
+  "level": "1",
+  "url": "activity-05-intro-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "05. Activity Annuities",
+  "body": " 05. Activity Annuities     Accounts with simple\/compound interest require a one-time deposit. If we want to ensure the account balance reaches a certain amount by a particular point in the future, then we usually need to make a substantial deposit. For example, in a previous example we saw that to ensure a future value of in years at interest compounded monthly, we would need to deposit today!  For most of us, we aren’t able to put a large sum of money like this in the bank today. Instead, we save for the future by depositing a smaller amount of money from each paycheck into the bank. This idea is called an annuity . Most retirement plans like 401(k) plans or IRA plans are examples of annuities.  In simplistic terms:   For compound interest , we make a single deposit and this money sits in the account and earns interest.    For an annuity , we make regular deposits (every month, week, year, etc.) and the money sits in the account and earns interest.     One technical thing: for the annuity formulas we will use, interest must be compounded at the same rate as the regular deposits are made. So if an annuity receives monthly deposits, interest will be compounded monthly.  See for the annuity notes.              Like with compound interest, there are two formulas we will consider in this course. Both are mathematically equivalent, but are solved in terms of different values for our convenience.  where:  is the deposit amount made during each compounding period.  is the amount in the annuity after years.  is the interest rate represented as a decimal.  is the number of compounding periods per year.  is the time in years.     You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!   The first formula (the one with on the left-hand side) should be used when we want to determine the future value of an annuity with a given deposit amount.  The second formula (the one with on the left-hand side) should be used when we want to determine the deposit amount for an annuity to ensure a given future value. We look at some examples of using these formulas on the next page!       The calculation on the previous page was quite tedious! Fortunately, there are formulas that can be used to help us determine the future value of a loan or investment that undergoes compound interest and solve other problems relating to compound interest!  There are two formulas we will consider in this course. Both are mathematically equivalent, but are solved in terms of different values for our convenience.  where:  is the principal (starting amount) of the loan or investment, sometimes called the present value.  is the future value of the loan or investment.  is the interest rate represented as a decimal.  is the number of compounding periods per year.  is the time in years.     You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!   The first formula (the one with on the left-hand side) is called the future value formula since it is solved for the future value. It should be used when we want to determine the future value of a loan or investment with a given present value.  The second formula (the one with on the left-hand side) is called the present value formula since it is solved for the present value (principal). It should be used when we want to determine the present value of a loan or investment with a given future value.  The new quantity here that was not present before is , the number of compounding periods per year. This will need to be given to us, and is often done so using keywords. Some examples of these are:  If the compounding is done annually (once a year), then .  If the compounding is done semi-annually, then .  If the compounding is done quarterly, then .  If the compounding is done monthly, then .  If the compounding is done weekly, then .  If the compounding is done daily, then .    The most important thing to remember about using these formulas is that it assumes that we put money in the account once and let it sit there earning interest. An account where we make regular deposits is called an annuity , and will be discussed in our next unit! We look at some examples of using these formulas on the next page!           You want to have in your account when you retire in years. Your retirement account earns interest compounded weekly. How much do you need to deposit each week to meet your retirement goal? How much of the is from interest?    We are given the following values:  (the amount we want in 40 years)  (the interest rate as a decimal)  (interest is compounded weekly)  (we're given the timeframe of 40 years)    We are asked to find the amount of the regular deposits, so we use the deposit formula for an annuity:     To find the amount of interest earned, we observe that everything in the account other than the regular deposits must be interest! We first find the total amount deposited over the course of the annuity. Since we deposited each week ( per year) for years, the total amount deposited is:   Since we deposited and ended up with , the amount of interest earned must be:   Note we did NOT use the formula here to compute the amount of interest earned. This formula applies only to situations which use simple interest. If we used it here, we would not have calculated the correct amount of interest.        "
+},
+{
+  "id": "activity-05-intro-activity-2-1-2",
+  "level": "2",
+  "url": "activity-05-intro-activity.html#activity-05-intro-activity-2-1-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "annuity "
+},
+{
+  "id": "activity-05-intro-activity-3-1",
+  "level": "2",
+  "url": "activity-05-intro-activity.html#activity-05-intro-activity-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-05-intro-activity-3-2",
+  "level": "2",
+  "url": "activity-05-intro-activity.html#activity-05-intro-activity-3-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-05-intro-activity-4-2",
+  "level": "2",
+  "url": "activity-05-intro-activity.html#activity-05-intro-activity-4-2",
+  "type": "Note",
+  "number": "5.12",
+  "title": "",
+  "body": " You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!  "
+},
+{
+  "id": "activity-05-intro-activity-4-5",
+  "level": "2",
+  "url": "activity-05-intro-activity.html#activity-05-intro-activity-4-5",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-05-intro-activity-5-3",
+  "level": "2",
+  "url": "activity-05-intro-activity.html#activity-05-intro-activity-5-3",
+  "type": "Note",
+  "number": "5.13",
+  "title": "",
+  "body": " You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!  "
+},
+{
+  "id": "activity-05-intro-activity-5-4",
+  "level": "2",
+  "url": "activity-05-intro-activity.html#activity-05-intro-activity-5-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "future value formula "
+},
+{
+  "id": "activity-05-intro-activity-5-5",
+  "level": "2",
+  "url": "activity-05-intro-activity.html#activity-05-intro-activity-5-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "present value formula "
+},
+{
+  "id": "activity-05-intro-activity-5-7",
+  "level": "2",
+  "url": "activity-05-intro-activity.html#activity-05-intro-activity-5-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "annuity "
+},
+{
+  "id": "activity-05-intro-activity-6-1",
+  "level": "2",
+  "url": "activity-05-intro-activity.html#activity-05-intro-activity-6-1",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-05-intro-activity-7-1",
+  "level": "2",
+  "url": "activity-05-intro-activity.html#activity-05-intro-activity-7-1",
+  "type": "Example",
+  "number": "5.14",
+  "title": "",
+  "body": "  You want to have in your account when you retire in years. Your retirement account earns interest compounded weekly. How much do you need to deposit each week to meet your retirement goal? How much of the is from interest?    We are given the following values:  (the amount we want in 40 years)  (the interest rate as a decimal)  (interest is compounded weekly)  (we're given the timeframe of 40 years)    We are asked to find the amount of the regular deposits, so we use the deposit formula for an annuity:     To find the amount of interest earned, we observe that everything in the account other than the regular deposits must be interest! We first find the total amount deposited over the course of the annuity. Since we deposited each week ( per year) for years, the total amount deposited is:   Since we deposited and ended up with , the amount of interest earned must be:   Note we did NOT use the formula here to compute the amount of interest earned. This formula applies only to situations which use simple interest. If we used it here, we would not have calculated the correct amount of interest.   "
+},
+{
+  "id": "activity-05-intro-activity-7-2",
+  "level": "2",
+  "url": "activity-05-intro-activity.html#activity-05-intro-activity-7-2",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-06-intro-activity",
+  "level": "1",
+  "url": "activity-06-intro-activity.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "06. Activity Loans",
+  "body": " 06. Activity Loans     An installment loan is a loan which you pay off with regular weekly or monthly payments. Examples include car loans, student loans, and mortgages; we will discuss mortgages in the next unit.  Sometimes a loan requires a down payment , which is the amount paid at the time of purchase. The amount of the loan is the actual amount borrowed. It does not include the down payment (when there is one) because this money is not part of the debt.  The loan amount must be repaid, with interest, in regular payments (monthly, weekly, quarterly, etc.). The compounding frequency for interest is not always explicitly given, but is determined by how often you make payments. So, if you are required to make monthly payments on an installment loan, the interest will be compounded monthly.  For our purposes in this course, we will assume that you make loan payments on a regular schedule (every month, year, quarter, etc.) and are paying interest on the loan.  See for the Mortgages notes.              Like with compound interest and annuities, there are two formulas we will consider in this course. Both are mathematically equivalent, but are solved in terms of different values for our convenience.  where:  is the amount of the loan (borrowed amount).  is the regular payment amount.  is the interest rate represented as a decimal.  is the number of compounding periods per year.  is the time in years.     You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!   The first formula (the one with on the left-hand side) should be used when we want to determine the payment amount for a given loan, and the second formula (the one with on the left-hand side) should be used when we want to determine how much we can afford with a given payment amount.  We look at some examples of using these formulas on the next page!           You decide to borrow for a new car. You take out an installment loan for years at interest which requires regular monthly payments. How much will the monthly payment be? How much interest will you pay in total?    We are given the following values:  (the amount borrowed)  (the interest rate as a decimal)  (interest is compounded monthly)  (the loan is taken out for 3 years)    We are asked to find the amount of the monthly payment, so we use the formula for an installment loan:     To find the amount of interest paid, we first calculate the total amount paid over the course of the loan. We know that of this went to pay off the amount borrowed, and the rest must be interest. Since we paid each month ( per year) for years, the total amount paid is:   Since of this is the amount borrowed, the amount of interest you will pay will be:         "
+},
+{
+  "id": "activity-06-intro-activity-2-1-1",
+  "level": "2",
+  "url": "activity-06-intro-activity.html#activity-06-intro-activity-2-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "installment loan "
+},
+{
+  "id": "activity-06-intro-activity-2-1-2",
+  "level": "2",
+  "url": "activity-06-intro-activity.html#activity-06-intro-activity-2-1-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "down payment amount of the loan "
+},
+{
+  "id": "activity-06-intro-activity-3-1",
+  "level": "2",
+  "url": "activity-06-intro-activity.html#activity-06-intro-activity-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-06-intro-activity-3-2",
+  "level": "2",
+  "url": "activity-06-intro-activity.html#activity-06-intro-activity-3-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-06-intro-activity-4-2",
+  "level": "2",
+  "url": "activity-06-intro-activity.html#activity-06-intro-activity-4-2",
+  "type": "Note",
+  "number": "5.15",
+  "title": "",
+  "body": " You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!  "
+},
+{
+  "id": "activity-06-intro-activity-5-1",
+  "level": "2",
+  "url": "activity-06-intro-activity.html#activity-06-intro-activity-5-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "activity-06-intro-activity-6-1",
+  "level": "2",
+  "url": "activity-06-intro-activity.html#activity-06-intro-activity-6-1",
+  "type": "Example",
+  "number": "5.16",
+  "title": "",
+  "body": "  You decide to borrow for a new car. You take out an installment loan for years at interest which requires regular monthly payments. How much will the monthly payment be? How much interest will you pay in total?    We are given the following values:  (the amount borrowed)  (the interest rate as a decimal)  (interest is compounded monthly)  (the loan is taken out for 3 years)    We are asked to find the amount of the monthly payment, so we use the formula for an installment loan:     To find the amount of interest paid, we first calculate the total amount paid over the course of the loan. We know that of this went to pay off the amount borrowed, and the rest must be interest. Since we paid each month ( per year) for years, the total amount paid is:   Since of this is the amount borrowed, the amount of interest you will pay will be:    "
+},
+{
+  "id": "activity-06-intro-activity-6-2",
+  "level": "2",
+  "url": "activity-06-intro-activity.html#activity-06-intro-activity-6-2",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  "
+},
+{
   "id": "handouts",
   "level": "1",
   "url": "handouts.html",

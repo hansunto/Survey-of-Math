@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1450155">
+<statement>
+<p>
+Alex borrows <m>\displaystyle\${1200}</m> from their parents for college expenses and agrees to repay them with <m>\displaystyle{7}\%</m> interest.</p>
+<p>
+a)  What is the principle in this situation?</p>
+<p>
+<dollar/> <fillin characters="20"/></p>
+<p>
+b)  Write the interest rate as a decimal.</p>
+<p>
+<fillin characters="20"/> <percent/></p>
+<p>
+c)  How much interest will Alex pay their parents?</p>
+<p>
+<dollar/> <fillin characters="20"/></p>
+<p>
+d)  What is the total amount, principle plus interest, Alex will repay?</p>
+<p>
+<dollar/> <fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>1200</li><li>0.07</li><li>84</li><li>1284</li></ul></p>
+</answer>
+
+</myopenmath>

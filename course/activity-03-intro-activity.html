@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>03. Activity Simple Interest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "textmacros",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[tex]/textmacros",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="MA-105 (Survey of Math)">
+<meta property="book:author" content="Professor Hansun To">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.0.0';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">MA-105 (Survey of Math)</span> <span class="subtitle">Worcester State University</span></a></h1>
+<p class="byline">Professor Hansun To</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="activity-02-intro-activity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="activities.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="handouts.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Voting-Apportionment.html" class="internal"><span class="codenumber">1</span> <span class="title">Voting and Apportionment</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-Voting.html" class="internal"><span class="title">Voting methods</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-apportionment.html" class="internal"><span class="title">Apportionment</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-voting-ch-ex.html" class="internal"><span class="title">Chapter Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-voting-ch-ex.html#sec-voting-ch-ex-2" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Personal-Finance.html" class="internal"><span class="codenumber">2</span> <span class="title">Personal Finance</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-simple-interest.html" class="internal"><span class="title">Understanding Interest: Simple Interest</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-simple-interest.html#practice-simple-interest" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-compound-interest.html" class="internal"><span class="title">Saving Money: Compound Interest</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-compound-interest.html#practice-compound-interest" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-Annuities.html" class="internal"><span class="title">Saving Money: Annuities</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-Annuities.html#practice-annuity" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-Mortgages.html" class="internal"><span class="title">Borrowing Money: Mortgage</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Identify-Formulas.html" class="internal"><span class="title">Identify Formulas to use: Simple, Compound, Annuity, Loan</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Identify-Formulas.html#exercises-finance-answers" class="internal"><span class="title">Identify the Formula to Use</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-fin-ch-ex.html" class="internal"><span class="title">Chapter Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-fin-ch-ex.html#sec-fin-ch-ex-2" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Probability.html" class="internal"><span class="codenumber">3</span> <span class="title">Probability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Probability-3.html" class="internal"><span class="title">Fundamentals of Probability</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-events-not-or.html" class="internal"><span class="title">Events Involving NOT and OR</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-fcp.html" class="internal"><span class="title">The Fundamental Counting Principle</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-fcp.html#exercises-FCP" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-factorials.html" class="internal"><span class="title">Factorials</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-permutations.html" class="internal"><span class="title">Permutations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-combinations.html" class="internal"><span class="title">Combinations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-probability-fcp-npr-ncr.html" class="internal"><span class="title">Probability with the FCP, nPr and nCr</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-probability-fcp-npr-ncr.html#subsec-nPr-Probability" class="internal"><span class="title">Probability with Fundamental Counting Principle and permutations, nPr</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-probability-fcp-npr-ncr.html#subsec-nCr-Probability" class="internal"><span class="title">Probability with Combinations, nCr</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-prob-ch-ex.html" class="internal"><span class="title">Chapter Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-prob-ch-ex.html#sec-prob-ch-ex-2" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="Hands-On-Sessions.html" class="internal"><span class="codenumber">4</span> <span class="title">Hands-On Sessions</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="codenumber">5</span> <span class="title">In-Class Activities</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">01. Activity Voting Methods</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-02-intro-activity.html" class="internal"><span class="title">02. Activity Apportionment Methods</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="activity-03-intro-activity.html" class="internal"><span class="title">03. Activity Simple Interest</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="codenumber">6</span> <span class="title">Handouts</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="homework.html" class="internal"><span class="codenumber">7</span> <span class="title">Homework</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="codenumber">8</span> <span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ma-150-syllabus.html" class="internal"><span class="title">MA-105-BL: Survey of Math</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#sec-150-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#sec-105-grading" class="internal"><span class="title">Assignments and Grading</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#subsec-105-Course_Policies" class="internal"><span class="title">Course Policies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#subsec-105-StudentLearningOutcomes" class="internal"><span class="title">Student Learning Outcomes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#subsec-105-LASC" class="internal"><span class="title">LASC</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#subsec-105-TentativeSchedule" class="internal"><span class="title">Course Schedule</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="worksheet" id="activity-03-intro-activity" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h2 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">03. Activity Simple Interest</span><div class="print-links"><a href="?printpreview=activity-03-intro-activity" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h2>
+<section class="onepage" id="activity-03-intro-activity-2">
+<div class="introduction" id="activity-03-intro-activity-2-1">
+<div class="para" id="activity-03-intro-activity-2-1-1">We have to work with money every day. While balancing your checkbook or calculating your monthly expenditures on coffee requires only arithmetic, when we start saving, planning for retirement, or need a loan, we need more mathematics!<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="activity-03-intro-activity-2-1-2">See <a href="notes-simple-interest.html" class="internal" title="Section: Understanding Interest: Simple Interest">Section </a> for the simple interest notes.<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="para" id="activity-03-intro-activity-2-2">Discussing interest starts with the principal, which is the amount your account starts with. This could be a starting investment or the starting amount of a loan. Interest is the amount earned for depositing money or the amount paid for borrowing money. It is calculated as a percentage of the principal (called the interest rate) and is written as a decimal (for example, <span class="process-math">\(5\%\)</span> is <span class="process-math">\(0.05\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="activity-03-intro-activity-2-3">
+<div class="para">For a simple example, if you borrowed <span class="process-math">\(\$100\)</span> from a friend and agreed to repay it with <span class="process-math">\(5\%\)</span> interest, then the amount of interest you would pay would just be <span class="process-math">\(5\%\)</span> of <span class="process-math">\(\$100\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="activity-03-intro-activity-2-3-5">
+\begin{equation*}
+\$100 \times 0.05 = \$5\text{.}
+\end{equation*}
+</div>
+<div class="para">The total amount you would repay would be <span class="process-math">\(\$105\text{,}\)</span> which is the original principal plus the interest. This is an example of one-time simple interest, where the interest is calculated based on the principal only.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="activity-03-intro-activity-2-4"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div id="momactivity-03-intro-activity-2-4-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-03-intro-activity-2-4-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1450155&amp;frame_id=momactivity-03-intro-activity-2-4-1"></iframe></div>
+<div class="workspace" data-space="0.2in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#activity-03-intro-activity-2-4" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+</article></section><section class="onepage" id="activity-03-intro-activity-3">
+<div class="para" id="activity-03-intro-activity-3-1">One-time simple interest is only common for extremely short-term loans. For longer-term loans, it is common for interest to be paid on a daily, monthly, quarterly, or annual basis. In that case, interest would be earned regularly. For example, bonds are essentially a loan made to the bond issuer (a company or government) by you, the bondholder. In return for the loan, the issuer agrees to pay interest, often annually. Bonds have a maturity date, at which time the issuer pays back the original bond value.<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="activity-03-intro-activity-3-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="activity-03-intro-activity-3-2-1-1">Suppose your city is building a new park, and issues bonds to raise the money to build it. You obtain a <span class="process-math">\(\$1,000\)</span> bond that pays <span class="process-math">\(5\%\)</span> interest annually that matures in <span class="process-math">\(5\)</span> years. How much interest will you earn?<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activity-03-intro-activity-3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activity-03-intro-activity-3-2-2-1">
+<div class="para">Each year you would earn interest:</div>
+<div class="displaymath process-math" id="activity-03-intro-activity-3-2-2-1-1">
+\begin{equation*}
+\$1,000 \times 0.05 = \$50\text{.}
+\end{equation*}
+</div>
+<div class="para">So, over the course of five years, you would earn a total of</div>
+<div class="displaymath process-math" id="activity-03-intro-activity-3-2-2-1-2">
+\begin{equation*}
+\$50 \times 5 = \$250\text{.}
+\end{equation*}
+</div>
+<div class="para">When the bond matures, you would receive back the <span class="process-math">\(\$1,000\)</span> you originally paid, leaving you with a total of <span class="process-math">\(\$1,250\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.1.1"><a href="#activity-03-intro-activity-3-2-2" title="Copy heading and permalink for Solution 5.1.1" aria-label="Copy heading and permalink for Solution 5.1.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 5.1"><a href="#activity-03-intro-activity-3-2" title="Copy heading and permalink for Example 5.1" aria-label="Copy heading and permalink for Example 5.1">🔗</a></div>
+</article></details>
+<div class="para logical" id="activity-03-intro-activity-3-3">
+<div class="para">Notice how the amount of interest (<span class="process-math">\(I\)</span>) was computed in this example: we multiplied the principal by the interest rate (represented as a decimal), then multiplied this by the number of years. We can generalize this idea of simple interest over time to obtain a formula that we can use to find the amount of simple interest earned:</div>
+<div class="displaymath process-math" id="activity-03-intro-activity-3-3-2">
+\begin{equation*}
+I = Prt
+\end{equation*}
+</div>
+<div class="para">where:</div>
+<ul class="disc" id="activity-03-intro-activity-3-3-3">
+<li id="activity-03-intro-activity-3-3-3-1">
+<div class="para" id="activity-03-intro-activity-3-3-3-1-1">
+<span class="process-math">\(I\)</span> is the amount of simple interest<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-3-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#activity-03-intro-activity-3-3-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activity-03-intro-activity-3-3-3-2">
+<div class="para" id="activity-03-intro-activity-3-3-3-2-1">
+<span class="process-math">\(P\)</span> is the principal (starting amount)<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-3-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#activity-03-intro-activity-3-3-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activity-03-intro-activity-3-3-3-3">
+<div class="para" id="activity-03-intro-activity-3-3-3-3-1">
+<span class="process-math">\(r\)</span> is the interest rate represented as a decimal<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-3-3-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#activity-03-intro-activity-3-3-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activity-03-intro-activity-3-3-3-4">
+<div class="para" id="activity-03-intro-activity-3-3-3-4-1">
+<span class="process-math">\(t\)</span> is the time in years<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-3-3-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#activity-03-intro-activity-3-3-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="note remark-like" id="activity-03-intro-activity-3-4"><h3 class="heading">
+<span class="type">Note</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="activity-03-intro-activity-3-4-1">You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Note 5.2"><a href="#activity-03-intro-activity-3-4" title="Copy heading and permalink for Note 5.2" aria-label="Copy heading and permalink for Note 5.2">🔗</a></div>
+</article>
+<div class="para" id="activity-03-intro-activity-3-5">Let’s look at a quick example demonstrating the simple interest formula.<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="activity-03-intro-activity-3-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="activity-03-intro-activity-3-6-1-1">A student took out a simple interest loan for <span class="process-math">\(\$5,000\)</span> for <span class="process-math">\(3\)</span> years at a rate of <span class="process-math">\(4\%\)</span> to purchase a used car. What is the interest on the loan?<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activity-03-intro-activity-3-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="activity-03-intro-activity-3-6-2-1">
+<div class="para">We are given the following: <span class="process-math">\(P = \$5,000\text{,}\)</span> <span class="process-math">\(t = 3\text{,}\)</span> and <span class="process-math">\(r = 0.04\text{.}\)</span> Using the simple interest formula, the amount of interest on the loan is:</div>
+<div class="displaymath process-math" id="activity-03-intro-activity-3-6-2-1-4">
+\begin{equation*}
+I = \$5,000 \times 0.04 \times 3 = \$600
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-3-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.3.1"><a href="#activity-03-intro-activity-3-6-2" title="Copy heading and permalink for Solution 5.3.1" aria-label="Copy heading and permalink for Solution 5.3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 5.3"><a href="#activity-03-intro-activity-3-6" title="Copy heading and permalink for Example 5.3" aria-label="Copy heading and permalink for Example 5.3">🔗</a></div>
+</article></details></section><section class="onepage" id="activity-03-intro-activity-4">
+<article class="exercise exercise-like" id="activity-03-intro-activity-4-1"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div id="momactivity-03-intro-activity-4-1-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-03-intro-activity-4-1-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1450156&amp;frame_id=momactivity-03-intro-activity-4-1-1"></iframe></div>
+<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#activity-03-intro-activity-4-1" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activity-03-intro-activity-4-2"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div id="momactivity-03-intro-activity-4-2-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-03-intro-activity-4-2-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1450157&amp;frame_id=momactivity-03-intro-activity-4-2-1"></iframe></div>
+<div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#activity-03-intro-activity-4-2" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
+</article></section><section class="onepage" id="activity-03-intro-activity-5">
+<div class="para" id="activity-03-intro-activity-5-1">While finding the amount of interest accrued for a loan is important, it is perhaps more important that we determine the total amount that must be repaid. We will call this amount — that is, the total amount required to be repaid in a loan or the total amount earned in an investment — the <dfn class="terminology">future value</dfn>. We will denote this quantity with the variable <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="activity-03-intro-activity-5-2">
+<div class="para">As we saw with the example on the previous page involving a city issuing bonds to build a new park, the future value of a loan can be found by adding together the principal and the interest. This is true for an investment as well. This will allow us to develop a formula for the future value involving simple interest:</div>
+<div class="displaymath process-math" id="activity-03-intro-activity-5-2-1">
+\begin{equation*}
+A = P + I
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(I = Prt\text{,}\)</span> we can substitute this into the equation to get:</div>
+<div class="displaymath process-math" id="activity-03-intro-activity-5-2-3">
+\begin{equation*}
+A = P + Prt = P(1 + rt)
+\end{equation*}
+</div>
+<div class="para">This short calculation provides us with a formula for computing the future value for a simple interest loan or investment:</div>
+<div class="displaymath process-math" id="activity-03-intro-activity-5-2-4">
+\begin{equation*}
+A = P(1 + rt)
+\end{equation*}
+</div>
+<div class="para">where:</div>
+<ul class="disc" id="activity-03-intro-activity-5-2-5">
+<li id="activity-03-intro-activity-5-2-5-1">
+<div class="para" id="activity-03-intro-activity-5-2-5-1-1">
+<span class="process-math">\(A\)</span> is the future value of the loan or investment<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-5-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#activity-03-intro-activity-5-2-5-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activity-03-intro-activity-5-2-5-2">
+<div class="para" id="activity-03-intro-activity-5-2-5-2-1">
+<span class="process-math">\(P\)</span> is the principal (starting amount) of the loan or investment<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-5-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#activity-03-intro-activity-5-2-5-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activity-03-intro-activity-5-2-5-3">
+<div class="para" id="activity-03-intro-activity-5-2-5-3-1">
+<span class="process-math">\(r\)</span> is the interest rate represented as a decimal<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-5-2-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#activity-03-intro-activity-5-2-5-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="activity-03-intro-activity-5-2-5-4">
+<div class="para" id="activity-03-intro-activity-5-2-5-4-1">
+<span class="process-math">\(t\)</span> is the time in years<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-5-2-5-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#activity-03-intro-activity-5-2-5-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="note remark-like" id="activity-03-intro-activity-5-3"><h3 class="heading">
+<span class="type">Note</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="activity-03-intro-activity-5-3-1">You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Note 5.4"><a href="#activity-03-intro-activity-5-3" title="Copy heading and permalink for Note 5.4" aria-label="Copy heading and permalink for Note 5.4">🔗</a></div>
+</article>
+<div class="para" id="activity-03-intro-activity-5-4">Let’s look at a quick example demonstrating the simple interest formula.<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="activity-03-intro-activity-5-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="activity-03-intro-activity-5-5-1-1">A loan of <span class="process-math">\(\$2,500\)</span> has been made at <span class="process-math">\(6\%\)</span> for <span class="process-math">\(9\)</span> months. Find the loan’s future value.<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-5-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activity-03-intro-activity-5-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activity-03-intro-activity-5-5-2-1">We are given the following: <span class="process-math">\(P = \$2,500\)</span> and <span class="process-math">\(r = 0.06\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-5-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="activity-03-intro-activity-5-5-2-2">
+<div class="para">For <span class="process-math">\(t\text{,}\)</span> note that we are given a time in months, not years! For the simple interest formula to be used correctly, we must give this value in years. Since there are <span class="process-math">\(12\)</span> months in a year, we can always convert from months to years by dividing the number of months by <span class="process-math">\(12\text{.}\)</span> In this case, we have:</div>
+<div class="displaymath process-math" id="activity-03-intro-activity-5-5-2-2-4">
+\begin{equation*}
+t = \frac{9}{12} = 0.75 \text{ years}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-5-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="activity-03-intro-activity-5-5-2-3">
+<div class="para">Now, using the formula above we find a future value of:</div>
+<div class="displaymath process-math" id="activity-03-intro-activity-5-5-2-3-1">
+\begin{equation*}
+A = \$2,500(1 + 0.06 \times 0.75) = \$2,612.50
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-5-5-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.5.1"><a href="#activity-03-intro-activity-5-5-2" title="Copy heading and permalink for Solution 5.5.1" aria-label="Copy heading and permalink for Solution 5.5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 5.5"><a href="#activity-03-intro-activity-5-5" title="Copy heading and permalink for Example 5.5" aria-label="Copy heading and permalink for Example 5.5">🔗</a></div>
+</article></details></section><section class="onepage" id="activity-03-intro-activity-6">
+<article class="exercise exercise-like" id="activity-03-intro-activity-6-1"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div id="momactivity-03-intro-activity-6-1-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-03-intro-activity-6-1-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1450159&amp;frame_id=momactivity-03-intro-activity-6-1-1"></iframe></div>
+<div class="autopermalink" data-description="Worksheet Exercise 4"><a href="#activity-03-intro-activity-6-1" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activity-03-intro-activity-6-2"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div id="momactivity-03-intro-activity-6-2-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-03-intro-activity-6-2-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1450163&amp;frame_id=momactivity-03-intro-activity-6-2-1"></iframe></div>
+<div class="autopermalink" data-description="Worksheet Exercise 5"><a href="#activity-03-intro-activity-6-2" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="activity-03-intro-activity-6-3"><h3 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div id="momactivity-03-intro-activity-6-3-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-03-intro-activity-6-3-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1450164&amp;frame_id=momactivity-03-intro-activity-6-3-1"></iframe></div>
+<div class="autopermalink" data-description="Worksheet Exercise 6"><a href="#activity-03-intro-activity-6-3" title="Copy heading and permalink for Worksheet Exercise 6" aria-label="Copy heading and permalink for Worksheet Exercise 6">🔗</a></div>
+</article></section><section class="onepage" id="activity-03-intro-activity-7">
+<div class="para" id="activity-03-intro-activity-7-1">In addition to determining the future value for a simple interest loan or investment, the simple interest formula can be used to solve other types of problems. We might want to know how much we should deposit into an account with a given simple interest rate to ensure we have a given amount in the future. Or, like in the example below, we might want to determine the simple interest rate based on the principal and future values.<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="activity-03-intro-activity-7-2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="activity-03-intro-activity-7-2-1-1">You borrow <span class="process-math">\(\$500\)</span> from a friend and promise to pay back <span class="process-math">\(\$560\)</span> in <span class="process-math">\(18\)</span> months. What simple interest rate will you pay?<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="activity-03-intro-activity-7-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="activity-03-intro-activity-7-2-2-1">We are given the following: <span class="process-math">\(P = \$500\text{,}\)</span> <span class="process-math">\(A = \$560\text{,}\)</span> and <span class="process-math">\(t = \frac{18}{12} = 1.5\)</span> years.<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-7-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="activity-03-intro-activity-7-2-2-2">
+<div class="para">We are looking to find the value of <span class="process-math">\(r\)</span> (hence, the "?"). We substitute the given values into the simple interest formula and solve for <span class="process-math">\(r\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="activity-03-intro-activity-7-2-2-2-3">
+\begin{equation*}
+A = P(1 + rt)
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="activity-03-intro-activity-7-2-2-2-4">
+\begin{equation*}
+560 = 500(1 + r \times 1.5)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-7-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="activity-03-intro-activity-7-2-2-3">
+<div class="para">Divide both sides by <span class="process-math">\(500\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="activity-03-intro-activity-7-2-2-3-2">
+\begin{equation*}
+1.12 = 1 + 1.5r
+\end{equation*}
+</div>
+<div class="para">Subtract <span class="process-math">\(1\)</span> from both sides:</div>
+<div class="displaymath process-math" id="activity-03-intro-activity-7-2-2-3-4">
+\begin{equation*}
+0.12 = 1.5r
+\end{equation*}
+</div>
+<div class="para">Divide by <span class="process-math">\(1.5\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="activity-03-intro-activity-7-2-2-3-6">
+\begin{equation*}
+r = \frac{0.12}{1.5} = 0.08
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-7-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="activity-03-intro-activity-7-2-2-4">Since <span class="process-math">\(r = 0.08\text{,}\)</span> we convert this to a percent to get a simple interest rate of <span class="process-math">\(8\%\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#activity-03-intro-activity-7-2-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.6.1"><a href="#activity-03-intro-activity-7-2-2" title="Copy heading and permalink for Solution 5.6.1" aria-label="Copy heading and permalink for Solution 5.6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 5.6"><a href="#activity-03-intro-activity-7-2" title="Copy heading and permalink for Example 5.6" aria-label="Copy heading and permalink for Example 5.6">🔗</a></div>
+</article></details>
+<article class="exercise exercise-like" id="activity-03-intro-activity-7-3"><h3 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div id="momactivity-03-intro-activity-7-3-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momactivity-03-intro-activity-7-3-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1450165&amp;frame_id=momactivity-03-intro-activity-7-3-1"></iframe></div>
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 7"><a href="#activity-03-intro-activity-7-3" title="Copy heading and permalink for Worksheet Exercise 7" aria-label="Copy heading and permalink for Worksheet Exercise 7">🔗</a></div>
+</article></section><div class="autopermalink" data-description="Worksheet: 03. Activity Simple Interest"><a href="#activity-03-intro-activity" title="Copy heading and permalink for Worksheet: 03. Activity Simple Interest" aria-label="Copy heading and permalink for Worksheet: 03. Activity Simple Interest">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="activity-02-intro-activity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="handouts.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

@@ -530,6 +530,19 @@ values.)
   </solution>
 </example>
 
+
+<definition>
+    <concept>Standard Deviation</concept>
+    <description>The standard deviation is a measure of variation based on measuring how far each data value deviates, or is different, from the mean.</description>
+<ul>
+    <li>The standard deviation is a measure of variation based on measuring how far each data value deviates, or is different, from the mean.</li>
+    <li>Standard deviation is always positive.</li>
+    <li>Standard deviation will be zero if all the data values are equal, and will get larger as the data spreads out.</li>
+    <li>Standard deviation has the same units as the original data.</li>
+    <li>Standard deviation, like the mean, can be highly influenced by outliers.</li>
+</ul>
+</definition>
+
     <note>
       <title>Standard Deviation</title>
       <p>
@@ -538,6 +551,101 @@ values.)
         Standard deviation is a more complex measure of spread, but it provides a more detailed picture of variability within the data set than the range.
       </p>
     </note>
+
+<assemblage>
+    <title>To compute standard deviation:</title>
+    <p> <ol>
+        <li>Subtract the mean from each individual data value.</li>
+        <li>Square each individual deviation result.</li>
+        <li>Sum all of the squared deviations together.</li>
+        <li>Divide the sum by N for populations, or by n - 1 for samples.</li>
+        <li>Calculate the square root of the variance.</li>
+    </ol> </p>
+</assemblage>
+
+<example>
+    <statement>
+      <p>  A group of diners were asked how much they would pay for a meal. Their responses were: $7.50, $8.25, $9.00, $8.00, $7.25, $7.50, $8.00, $7.00.
+      </p>
+      <p>
+    <ol id="a">
+        <li> <p>Find the mean</p> </li>
+        <li> <p>Find the median</p> </li>
+       <li> <p>Find the standard deviation of this data</p> </li>
+    </ol>
+  </p>
+    </statement>
+    <solution>
+        <p>Find the Mean</p>
+        <ol marker="1">
+            <li>Sum all values: 7.50 + 8.25 + 9.00 + 8.00 + 7.25 + 7.50 + 8.00 + 7.00 = 62.50</li>
+            <li>Count total values: n = 8</li>
+            <li>Divide sum by total count: 62.50 / 8 = 7.8125</li>
+        </ol>
+        <p>Find the Median</p>
+        <ol marker="1">
+            <li>Arrange the data values in order: $7.00, $7.25, $7.50, $7.50, $8.00, $8.00, $8.25, $9.00</li>
+            <li>Locate the two middle values at positions 4 and 5: $7.50 and $8.00</li>
+            <li>Calculate the average of the two middle values: (7.50 + 8.00) / 2 = $7.75</li>
+        </ol>
+        <p>Find the Standard Deviation</p>
+        <ol marker="1">
+            <li>Find the deviation of each value from the mean ($7.8125): -0.8125, 0.4375, 1.1875, 0.1875, -0.5625, -0.3125, 0.1875, -0.8125</li>
+            <li>Square each individual deviation: 0.660156, 0.191406, 1.410156, 0.035156, 0.316406, 0.097656, 0.035156, 0.660156</li>
+            <li>Sum all the squared deviations together: 3.40625</li>
+            <li>Divide by n - 1 since this represents a sample: 3.40625 / 7 = 0.486607</li>
+            <li>Calculate the square root of the variance: sqrt(0.486607) = 0.637577 = $0.64</li>
+        </ol>
+    </solution>
+</example>
+
+
+<exercise>
+    <title>Puzzle Solving Times</title>
+    <statement>
+      <p>
+        You recorded the time in seconds it took for 8 participants to solve a puzzle. 
+        The times were: 15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4.
+      </p>
+      <p>
+    <ol id="a">
+        <li> <p>Find the mean</p> </li>
+        <li> <p>Find the median</p> </li>
+       <li> <p>Find the standard deviation of this data</p> </li>
+    </ol>
+  </p>
+    </statement>
+    <solution>
+        <task id="a">
+            <title>Find the mean</title>
+            <ol marker="1">
+                <li>Sum all values: 15.2 + 18.8 + 19.3 + 19.7 + 20.2 + 21.8 + 22.1 + 29.4 = 166.5</li>
+                <li>Count total values: n = 8</li>
+                <li>Divide sum by total count: 166.5 / 8 = 20.8125 seconds</li>
+            </ol>
+           
+        </task>
+        <task id="b">
+            <title>Find the median</title>
+            <ol>
+                <li>Arrange the data values in order: 15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4</li>
+                <li>Locate the two middle values at positions 4 and 5: 19.7 and 20.2</li>
+                <li>Calculate the average of the two middle values: (19.7 + 20.2) / 2 = 19.95 seconds</li>
+            </ol>
+            
+        </task>
+        <task id="c">
+            <title>Find the standard deviation of this data</title>
+            <ol marker="1">
+                <li>Find the deviation of each value from the mean (20.8125): -5.6125, -2.0125, -1.5125, -1.1125, -0.6125, 0.9875, 1.2875, 8.5875</li>
+                <li>Square each individual deviation: 31.500156, 4.050156, 2.287656, 1.237656, 0.375156, 0.975156, 1.657656, 73.745156</li>
+                <li>Sum all the squared deviations together: 115.82875</li>
+                <li>Divide by n - 1 since this represents a sample: 115.82875 / 7 = 16.546964</li>
+                <li>Calculate the square root of the variance: sqrt(16.546964) = 4.067796 = 4.07 seconds</li>
+            </ol>
+        </task>
+    </solution>
+</exercise>
 
 
   <!-- =================================================================== -->

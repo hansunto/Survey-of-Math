@@ -6,8 +6,8 @@ Match each of the quantities on the left with the variable which represents it i
 <p>
 Note all answers must be correct to earn credit!</p>
 <p><ol style="list-style-type:upper-alpha">
-<li> Interest rate</li>
 <li class="nowrap"> Time</li>
+<li> Interest rate</li>
 <li> Future value</li>
 <li class="nowrap"> Principle</li>
 </ol></p>
@@ -20,7 +20,7 @@ Note all answers must be correct to earn credit!</p>
 
 </statement>
 <answer>
-<p><ul><li>a c d b </li></ul></p>
+<p><ul><li>c a d b </li></ul></p>
 </answer>
 
 </myopenmath>

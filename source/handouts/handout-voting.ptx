@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="handout-voting-methods" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Voting Methods Handout</title>
+      
+      <introduction>
+          <ul>
+            <li>The plurality method</li>
+            <li>The plurality-with-elimination method (check Majority)</li>
+            <li>The Borda count method</li>
+            <li>The pairwise comparison method (check Condorcet)</li>
+          </ul>
+      </introduction>
+
+  <p><strong>Exercises and Workspaces</strong></p>
+
+          <!-- Exercise 1: Plurality -->
+          <page>
+            <exercise xml:id="ws-ex-plurality" workspace="1.5in">
+              <statement>
+                <p>
+                  Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the <term>plurality</term> method?
+                </p>
+                <tabular bottom="minor" top="minor" left="minor" right="minor">
+                  <row header="yes">
+                    <cell halign="left">Number of Votes</cell>
+                    <cell halign="center">52</cell>
+                    <cell halign="center">45</cell>
+                    <cell halign="center">13</cell>
+                    <cell halign="center">9</cell>
+                    <cell halign="center">4</cell>
+                  </row>
+                  <row>
+                    <cell halign="left">First choice</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">J</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">H</cell>
+                  </row>
+                  <row>
+                    <cell halign="left">Second choice</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">J</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">J</cell>
+                    <cell halign="center">J</cell>
+                  </row>
+                  <row>
+                    <cell halign="left">Third choice</cell>
+                    <cell halign="center">H</cell>
+                    <cell halign="center">H</cell>
+                    <cell halign="center">H</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">D</cell>
+                  </row>
+                  <row>
+                    <cell halign="left">Fourth choice</cell>
+                    <cell halign="center">J</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">H</cell>
+                    <cell halign="center">F</cell>
+                  </row>
+                </tabular>
+              </statement>
+              <solution>
+                <p>
+                  First-choice totals are D = 52, F = 54, J = 13, and H = 4. The winner by the plurality method is <term>F</term>.
+                </p>
+              </solution>
+            </exercise>
+          </page>
+
+          <!-- Exercise 2: Plurality-with-Elimination -->
+          <page>
+            <exercise xml:id="ws-ex-elimination" workspace="2.5in">
+              <statement>
+                <p>
+                  Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the <term>plurality-with-elimination</term> method?
+                </p>
+                <tabular bottom="minor" top="minor" left="minor" right="minor">
+                  <row header="yes">
+                    <cell halign="left">Number of Votes</cell>
+                    <cell halign="center">52</cell>
+                    <cell halign="center">45</cell>
+                    <cell halign="center">13</cell>
+                    <cell halign="center">9</cell>
+                    <cell halign="center">4</cell>
+                  </row>
+                  <row>
+                    <cell halign="left">First choice</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">J</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">H</cell>
+                  </row>
+                  <row>
+                    <cell halign="left">Second choice</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">J</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">J</cell>
+                    <cell halign="center">J</cell>
+                  </row>
+                  <row>
+                    <cell halign="left">Third choice</cell>
+                    <cell halign="center">H</cell>
+                    <cell halign="center">H</cell>
+                    <cell halign="center">H</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">D</cell>
+                  </row>
+                  <row>
+                    <cell halign="left">Fourth choice</cell>
+                    <cell halign="center">J</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">H</cell>
+                    <cell halign="center">F</cell>
+                  </row>
+                </tabular>
+              </statement>
+              <solution>
+                <p>
+                  Eliminate H first (4 votes), which transfers to J, giving J 17 votes. Then eliminate J; all 17 J ballots transfer to F. Final totals are D = 52 and F = 71, so the plurality-with-elimination winner is <term>F</term>.
+                </p>
+              </solution>
+            </exercise>
+          </page>
+
+          <!-- Exercise 3: Borda Count -->
+          <page>
+            <exercise xml:id="ws-ex-borda" workspace="2.5in">
+              <statement>
+                <p>
+                  Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the <term>Borda count</term> method?
+                </p>
+                <tabular bottom="minor" top="minor" left="minor" right="minor">
+                  <row header="yes">
+                    <cell halign="left">Number of Votes</cell>
+                    <cell halign="center">52</cell>
+                    <cell halign="center">45</cell>
+                    <cell halign="center">13</cell>
+                    <cell halign="center">9</cell>
+                    <cell halign="center">4</cell>
+                  </row>
+                  <row>
+                    <cell halign="left">First choice</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">J</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">H</cell>
+                  </row>
+                  <row>
+                    <cell halign="left">Second choice</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">J</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">J</cell>
+                    <cell halign="center">J</cell>
+                  </row>
+                  <row>
+                    <cell halign="left">Third choice</cell>
+                    <cell halign="center">H</cell>
+                    <cell halign="center">H</cell>
+                    <cell halign="center">H</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">D</cell>
+                  </row>
+                  <row>
+                    <cell halign="left">Fourth choice</cell>
+                    <cell halign="center">J</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">H</cell>
+                    <cell halign="center">F</cell>
+                  </row>
+                </tabular>
+              </statement>
+              <solution>
+                <p>
+                  Using Borda scores 3-2-1-0, the totals are D = 169, F = 292, J = 155, and H = 122. The Borda count winner is <term>F</term>.
+                </p>
+              </solution>
+            </exercise>
+          </page>
+
+          <!-- Exercise 4: Pairwise Comparison -->
+          <page>
+            <exercise xml:id="ws-ex-pairwise" workspace="2.5in">
+              <statement>
+                <p>
+                  Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the <term>pairwise comparison</term> method? Is there a <term>Condorcet</term> winner?
+                </p>
+                <tabular bottom="minor" top="minor" left="minor" right="minor">
+                  <row header="yes">
+                    <cell halign="left">Number of Votes</cell>
+                    <cell halign="center">52</cell>
+                    <cell halign="center">45</cell>
+                    <cell halign="center">13</cell>
+                    <cell halign="center">9</cell>
+                    <cell halign="center">4</cell>
+                  </row>
+                  <row>
+                    <cell halign="left">First choice</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">J</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">H</cell>
+                  </row>
+                  <row>
+                    <cell halign="left">Second choice</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">J</cell>
+                    <cell halign="center">F</cell>
+                    <cell halign="center">J</cell>
+                    <cell halign="center">J</cell>
+                  </row>
+                  <row>
+                    <cell halign="left">Third choice</cell>
+                    <cell halign="center">H</cell>
+                    <cell halign="center">H</cell>
+                    <cell halign="center">H</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">D</cell>
+                  </row>
+                  <row>
+                    <cell halign="left">Fourth choice</cell>
+                    <cell halign="center">J</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">D</cell>
+                    <cell halign="center">H</cell>
+                    <cell halign="center">F</cell>
+                  </row>
+                </tabular>
+              </statement>
+              <solution>
+                <p>
+                  In head-to-head matchups, F beats D, F beats J, and F beats H. Candidate <term>F</term> wins every pairwise comparison and is the Condorcet winner.
+                </p>
+              </solution>
+            </exercise>
+          </page>
+
+          <!-- Exercise 5: Comprehensive Professors Exercise -->
+          <page>
+            <exercise xml:id="ws-ex-professors-election" workspace="6.0in">
+              <statement>
+                <p>
+                  Four professors are running for president of the League of Innovation: Doug (D), Francis (F), Gallagher (G), and Smith (S). The votes of the members in the League of Innovation are summarized in the preference table below.
+              </p>
+              <tabular bottom="minor" top="minor" left="minor" right="minor">
+                <row header="yes">
+                  <cell halign="left">Number of Votes</cell>
+                  <cell halign="center">30</cell>
+                  <cell halign="center">22</cell>
+                  <cell halign="center">18</cell>
+                  <cell halign="center">10</cell>
+                  <cell halign="center">2</cell>
+                </row>
+                <row>
+                  <cell halign="left">First Choice</cell>
+                  <cell halign="center">F</cell>
+                  <cell halign="center">G</cell>
+                  <cell halign="center">S</cell>
+                  <cell halign="center">D</cell>
+                  <cell halign="center">G</cell>
+                </row>
+                <row>
+                  <cell halign="left">Second Choice</cell>
+                  <cell halign="center">D</cell>
+                  <cell halign="center">D</cell>
+                  <cell halign="center">G</cell>
+                  <cell halign="center">S</cell>
+                  <cell halign="center">S</cell>
+                </row>
+                <row>
+                  <cell halign="left">Third Choice</cell>
+                  <cell halign="center">G</cell>
+                  <cell halign="center">S</cell>
+                  <cell halign="center">D</cell>
+                  <cell halign="center">G</cell>
+                  <cell halign="center">D</cell>
+                </row>
+                <row>
+                  <cell halign="left">Fourth Choice</cell>
+                  <cell halign="center">S</cell>
+                  <cell halign="center">F</cell>
+                  <cell halign="center">F</cell>
+                  <cell halign="center">F</cell>
+                  <cell halign="center">F</cell>
+                </row>
+              </tabular>
+              <ol>
+                <li>How many members voted in this election?</li>
+                <li>Using the plurality method, who becomes the new president?</li>
+                <li>Using the plurality-with-elimination method, who becomes the new president?</li>
+                <li>Using the Borda count method, who becomes the new president?</li>
+                <li>Using the pairwise comparison method, who becomes the new president?</li>
+              </ol>
+            </statement>
+            <solution>
+              <p>
+                Total votes = 82. Plurality totals are F = 30, G = 24, S = 18, and D = 10, so <term>F</term> wins by plurality.
+              </p>
+              <p>
+                For plurality-with-elimination, D is eliminated first and its 10 votes transfer to S, then G is eliminated and its votes transfer to S, giving <term>S</term> the win.
+              </p>
+              <p>
+                Using Borda scores 3-2-1-0, the totals are D = 154, G = 148, S = 100, and F = 90. The Borda winner is <term>D</term>.
+              </p>
+              <p>
+                In pairwise comparison, G beats D, G beats F, and G beats S, so the pairwise winner is <term>G</term>.
+              </p>
+            </solution>
+          </exercise>
+          </page>
+
+</worksheet>

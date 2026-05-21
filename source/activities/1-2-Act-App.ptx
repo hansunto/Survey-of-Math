@@ -55,12 +55,37 @@
     <!-- Exercises start here. -->
     <page>
         <exercise workspace="0.2in">
-            <myopenmath problem="1445055" />
+            <statement output="print">
+                <p>Which of the following scenarios illustrates an apportionment problem? Select ALL that apply!</p>
+                <p>
+                    <ol style="list-style-type:upper-alpha">
+                        <li>A daycare must distribute 100 toys among 5 rooms based on the number of children in each room.</li>
+                        <li>The WSU Math Club needs to elect a president and will do so by selecting the candidate with the most votes.</li>
+                        <li>A school system purchases 500 new computers and must distribute them among 8 elementary schools based on the number of students at each school.</li>
+                        <li>Four people pool their money to buy 60 shares of a stock, and the shares are distributed among the four based on the amount each person contributes.</li>
+                    </ol>
+                </p>
+            </statement>
+            <myopenmath problem="1445055" output="course" />
         </exercise>
     </page>
     <page>
         <exercise workspace="0.2in">
-            <myopenmath problem="1445054" />
+            <statement output="print">
+                <p>Which of the following apportionment methods will we discuss in this course? Select all that apply!</p>
+                <p>
+                    <ol style="list-style-type:upper-alpha">
+                        <li>Pairwise comparison method</li>
+                        <li>Plurality with elimination method</li>
+                        <li>Plurality method</li>
+                        <li>Hamilton's method</li>
+                        <li>Jefferson's method</li>
+                        <li>Borda count method</li>
+                        <li>Adam's Method</li>
+                    </ol>
+                </p>
+            </statement>
+            <myopenmath problem="1445054" output="course" />
         </exercise>
     </page>
 
@@ -72,34 +97,58 @@
     </page>-->
     <page>
         <exercise workspace="2in">
-            <statement>
+            <statement output="print">
                 <title>Standard Divisor and Standard Quotas</title>
-                <myopenmath problem="1445060" />
+                <p>An HMO has 40 doctors to be apportioned among four clinics (A, B, C, D). The HMO decides to apportion the doctors based on the average weekly patient load for each clinic, shown in the table below. Find the standard divisor and the standard quota for each clinic. Round all answers, including the standard divisor, to two decimal places.</p>
+                <p>Standard divisor = ____________</p>
+                <p>Standard quota for Clinic A = ____________</p>
+                <p>Standard quota for Clinic B = ____________</p>
+                <p>Standard quota for Clinic C = ____________</p>
+                <p>Standard quota for Clinic D = ____________</p>
             </statement>
+            <myopenmath problem="1445060" output="course" />
         </exercise>
     </page>
     <page>
         <exercise workspace="2in">
-            <statement>
+            <statement output="print">
                 <title>Hamilton's Method</title>
-                <myopenmath problem="1445078" />
+                <p>An HMO has 40 doctors to be apportioned among four clinics (A, B, C, D). The HMO decides to apportion the doctors based on the average weekly patient load for each clinic, shown in the table below. Use Hamilton's method to apportion the doctors to the clinics.</p>
+                <p>Recall the standard divisor for this problem is 50.05.</p>
+                <p>Total doctors for Clinic A = ____________</p>
+                <p>Total doctors for Clinic B = ____________</p>
+                <p>Total doctors for Clinic C = ____________</p>
+                <p>Total doctors for Clinic D = ____________</p>
             </statement>
+            <myopenmath problem="1445078" output="course" />
         </exercise>
     </page>
     <page>
         <exercise workspace="2in">
-            <statement>
+            <statement output="print">
                 <title>Jefferson's Method</title>
-                <myopenmath problem="1445079" />
+                <p>An HMO has 40 doctors to be apportioned among four clinics (A, B, C, D). The HMO decides to apportion the doctors based on the average weekly patient load for each clinic, shown in the table below. Use Jefferson's method to apportion the doctors to the clinics.</p>
+                <p>Recall the standard divisor for this problem is 50.05.</p>
+                <p>Total doctors for Clinic A = ____________</p>
+                <p>Total doctors for Clinic B = ____________</p>
+                <p>Total doctors for Clinic C = ____________</p>
+                <p>Total doctors for Clinic D = ____________</p>
             </statement>
+            <myopenmath problem="1445079" output="course" />
         </exercise>
     </page>
     <page>
         <exercise workspace="2in">
-            <statement>
+            <statement output="print">
                 <title>Adam's Method</title>
-                <myopenmath problem="1445082" />
+                <p>An HMO has 40 doctors to be apportioned among four clinics (A, B, C, D). The HMO decides to apportion the doctors based on the average weekly patient load for each clinic, shown in the table below. Use Adams's method to apportion the doctors to the clinics.</p>
+                <p>Recall the standard divisor for this problem is 50.05.</p>
+                <p>Total doctors for Clinic A = ____________</p>
+                <p>Total doctors for Clinic B = ____________</p>
+                <p>Total doctors for Clinic C = ____________</p>
+                <p>Total doctors for Clinic D = ____________</p>
             </statement>
+            <myopenmath problem="1445082" output="course" />
         </exercise>
     </page>
     <!--<exercise workspace="2in"> <statement> <p> Add MyOpeMath question </p> </statement> </exercise>-->

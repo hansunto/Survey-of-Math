@@ -2392,7 +2392,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "02. Activity Apportionment Methods",
-  "body": " 02. Activity Apportionment Methods     Apportionment is the problem of dividing up a fixed number of things among groups of different sizes. In politics, this takes the form of allocating a limited number of representatives amongst voters. This problem, presumably, is older than the United States, but the best-known ways to solve it have their origins in the problem of assigning each state an appropriate number of representatives in the new Congress when the country was formed. Apportionment theory is also used in many non-political situations, such as staffing a hospital with the appropriate number of nurses per shift and allocating buses to cover a set of bus routes based on the number of passengers.  The goal with any apportionment problem is to find a way to fairly distribute the items (e.g., doctors, buses, instructors) amoung the groups (e.g., clinics, routes, courses).  We face several real-world restrictions in this distribution process:    The things being divided up can exist only in whole numbers.    We must use all of the things being divided up, and we cannot use any more.    Each group must get at least one of the things being divided up.    The number of things assigned to each group should be at least approximately proportional to the population of the group. (Exact proportionality isn't possible because of the whole number requirement, but we should try to be close, and in any case, if Group A is larger than Group B, then Group B shouldn't get more of the things than Group A does.)    In terms of the apportionment of the United States House of Representatives, these rules imply:     We can only have whole representatives. Massachusetts can't have 8.4 representatives.    We can only use the (currently) 435 representatives available. If one state gets another representative, another state has to lose one.    Every state gets at least one representative.    The number of representatives each state gets should be approximately proportional to the state population. This way, the number of constituents each representative has should be approximately equal.     There are many different methods for solving an apportionment problem. In this course, we will discuss three of them: Hamilton's method, Jefferson's method, and Adams method. The first step for each method will be to compute the standard divisor and standard quotas.   See for the apportionment notes.                  Standard Divisor and Standard Quotas         Hamilton's Method         Jefferson's Method         Adam's Method       "
+  "body": " 02. Activity Apportionment Methods     Apportionment is the problem of dividing up a fixed number of things among groups of different sizes. In politics, this takes the form of allocating a limited number of representatives amongst voters. This problem, presumably, is older than the United States, but the best-known ways to solve it have their origins in the problem of assigning each state an appropriate number of representatives in the new Congress when the country was formed. Apportionment theory is also used in many non-political situations, such as staffing a hospital with the appropriate number of nurses per shift and allocating buses to cover a set of bus routes based on the number of passengers.  The goal with any apportionment problem is to find a way to fairly distribute the items (e.g., doctors, buses, instructors) amoung the groups (e.g., clinics, routes, courses).  We face several real-world restrictions in this distribution process:    The things being divided up can exist only in whole numbers.    We must use all of the things being divided up, and we cannot use any more.    Each group must get at least one of the things being divided up.    The number of things assigned to each group should be at least approximately proportional to the population of the group. (Exact proportionality isn't possible because of the whole number requirement, but we should try to be close, and in any case, if Group A is larger than Group B, then Group B shouldn't get more of the things than Group A does.)    In terms of the apportionment of the United States House of Representatives, these rules imply:     We can only have whole representatives. Massachusetts can't have 8.4 representatives.    We can only use the (currently) 435 representatives available. If one state gets another representative, another state has to lose one.    Every state gets at least one representative.    The number of representatives each state gets should be approximately proportional to the state population. This way, the number of constituents each representative has should be approximately equal.     There are many different methods for solving an apportionment problem. In this course, we will discuss three of them: Hamilton's method, Jefferson's method, and Adams method. The first step for each method will be to compute the standard divisor and standard quotas.   See for the apportionment notes.       Which of the following scenarios illustrates an apportionment problem? Select ALL that apply!    A daycare must distribute 100 toys among 5 rooms based on the number of children in each room.  The WSU Math Club needs to elect a president and will do so by selecting the candidate with the most votes.  A school system purchases 500 new computers and must distribute them among 8 elementary schools based on the number of students at each school.  Four people pool their money to buy 60 shares of a stock, and the shares are distributed among the four based on the amount each person contributes.           Which of the following apportionment methods will we discuss in this course? Select all that apply!    Pairwise comparison method  Plurality with elimination method  Plurality method  Hamilton's method  Jefferson's method  Borda count method  Adam's Method            Standard Divisor and Standard Quotas  An HMO has 40 doctors to be apportioned among four clinics (A, B, C, D). The HMO decides to apportion the doctors based on the average weekly patient load for each clinic, shown in the table below. Find the standard divisor and the standard quota for each clinic. Round all answers, including the standard divisor, to two decimal places.  Standard divisor = ____________  Standard quota for Clinic A = ____________  Standard quota for Clinic B = ____________  Standard quota for Clinic C = ____________  Standard quota for Clinic D = ____________         Hamilton's Method  An HMO has 40 doctors to be apportioned among four clinics (A, B, C, D). The HMO decides to apportion the doctors based on the average weekly patient load for each clinic, shown in the table below. Use Hamilton's method to apportion the doctors to the clinics.  Recall the standard divisor for this problem is 50.05.  Total doctors for Clinic A = ____________  Total doctors for Clinic B = ____________  Total doctors for Clinic C = ____________  Total doctors for Clinic D = ____________         Jefferson's Method  An HMO has 40 doctors to be apportioned among four clinics (A, B, C, D). The HMO decides to apportion the doctors based on the average weekly patient load for each clinic, shown in the table below. Use Jefferson's method to apportion the doctors to the clinics.  Recall the standard divisor for this problem is 50.05.  Total doctors for Clinic A = ____________  Total doctors for Clinic B = ____________  Total doctors for Clinic C = ____________  Total doctors for Clinic D = ____________         Adam's Method  An HMO has 40 doctors to be apportioned among four clinics (A, B, C, D). The HMO decides to apportion the doctors based on the average weekly patient load for each clinic, shown in the table below. Use Adams's method to apportion the doctors to the clinics.  Recall the standard divisor for this problem is 50.05.  Total doctors for Clinic A = ____________  Total doctors for Clinic B = ____________  Total doctors for Clinic C = ____________  Total doctors for Clinic D = ____________       "
 },
 {
   "id": "activity-02-intro-activity-3-1",
@@ -2401,7 +2401,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "",
-  "body": "  "
+  "body": "  Which of the following scenarios illustrates an apportionment problem? Select ALL that apply!    A daycare must distribute 100 toys among 5 rooms based on the number of children in each room.  The WSU Math Club needs to elect a president and will do so by selecting the candidate with the most votes.  A school system purchases 500 new computers and must distribute them among 8 elementary schools based on the number of students at each school.  Four people pool their money to buy 60 shares of a stock, and the shares are distributed among the four based on the amount each person contributes.      "
 },
 {
   "id": "activity-02-intro-activity-4-1",
@@ -2410,7 +2410,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
-  "body": "  "
+  "body": "  Which of the following apportionment methods will we discuss in this course? Select all that apply!    Pairwise comparison method  Plurality with elimination method  Plurality method  Hamilton's method  Jefferson's method  Borda count method  Adam's Method      "
 },
 {
   "id": "activity-02-intro-activity-5-1",
@@ -2419,7 +2419,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
-  "body": "  Standard Divisor and Standard Quotas    "
+  "body": "  Standard Divisor and Standard Quotas  An HMO has 40 doctors to be apportioned among four clinics (A, B, C, D). The HMO decides to apportion the doctors based on the average weekly patient load for each clinic, shown in the table below. Find the standard divisor and the standard quota for each clinic. Round all answers, including the standard divisor, to two decimal places.  Standard divisor = ____________  Standard quota for Clinic A = ____________  Standard quota for Clinic B = ____________  Standard quota for Clinic C = ____________  Standard quota for Clinic D = ____________    "
 },
 {
   "id": "activity-02-intro-activity-6-1",
@@ -2428,7 +2428,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
-  "body": "  Hamilton's Method    "
+  "body": "  Hamilton's Method  An HMO has 40 doctors to be apportioned among four clinics (A, B, C, D). The HMO decides to apportion the doctors based on the average weekly patient load for each clinic, shown in the table below. Use Hamilton's method to apportion the doctors to the clinics.  Recall the standard divisor for this problem is 50.05.  Total doctors for Clinic A = ____________  Total doctors for Clinic B = ____________  Total doctors for Clinic C = ____________  Total doctors for Clinic D = ____________    "
 },
 {
   "id": "activity-02-intro-activity-7-1",
@@ -2437,7 +2437,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "5",
   "title": "",
-  "body": "  Jefferson's Method    "
+  "body": "  Jefferson's Method  An HMO has 40 doctors to be apportioned among four clinics (A, B, C, D). The HMO decides to apportion the doctors based on the average weekly patient load for each clinic, shown in the table below. Use Jefferson's method to apportion the doctors to the clinics.  Recall the standard divisor for this problem is 50.05.  Total doctors for Clinic A = ____________  Total doctors for Clinic B = ____________  Total doctors for Clinic C = ____________  Total doctors for Clinic D = ____________    "
 },
 {
   "id": "activity-02-intro-activity-8-1",
@@ -2446,7 +2446,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "6",
   "title": "",
-  "body": "  Adam's Method    "
+  "body": "  Adam's Method  An HMO has 40 doctors to be apportioned among four clinics (A, B, C, D). The HMO decides to apportion the doctors based on the average weekly patient load for each clinic, shown in the table below. Use Adams's method to apportion the doctors to the clinics.  Recall the standard divisor for this problem is 50.05.  Total doctors for Clinic A = ____________  Total doctors for Clinic B = ____________  Total doctors for Clinic C = ____________  Total doctors for Clinic D = ____________    "
 },
 {
   "id": "activity-03-intro-activity",

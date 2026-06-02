@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Visualizing Data Through Graphs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "textmacros",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[tex]/textmacros",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="MA-105 (Survey of Math)">
+<meta property="book:author" content="Professor Hansun To">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.dcab57465a404e85.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.79fbb790b185d712.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">MA-105 (Survey of Math)</span> <span class="subtitle">Worcester State University</span></a></h1>
+<p class="byline">Professor Hansun To</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-measures-of-center-spread.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Intro-Statistics.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="Hands-On-Sessions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Voting-Apportionment.html" class="internal"><span class="codenumber">1</span> <span class="title">Voting and Apportionment</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-Voting.html" class="internal"><span class="title">Voting methods</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-apportionment.html" class="internal"><span class="title">Apportionment</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-voting-ch-ex.html" class="internal"><span class="title">Chapter Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-voting-ch-ex.html#sec-voting-ch-ex-2" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Personal-Finance.html" class="internal"><span class="codenumber">2</span> <span class="title">Personal Finance</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-simple-interest.html" class="internal"><span class="title">Understanding Interest: Simple Interest</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-simple-interest.html#practice-simple-interest" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-compound-interest.html" class="internal"><span class="title">Saving Money: Compound Interest</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-compound-interest.html#practice-compound-interest" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-Annuities.html" class="internal"><span class="title">Saving Money: Annuities</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-Annuities.html#practice-annuity" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-Mortgages.html" class="internal"><span class="title">Borrowing Money: Mortgage</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Identify-Formulas.html" class="internal"><span class="title">Identify Formulas to use: Simple, Compound, Annuity, Loan</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Identify-Formulas.html#exercises-finance-answers" class="internal"><span class="title">Identify the Formula to Use</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-fin-ch-ex.html" class="internal"><span class="title">Chapter Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-fin-ch-ex.html#sec-fin-ch-ex-2" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Probability.html" class="internal"><span class="codenumber">3</span> <span class="title">Probability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Probability-3.html" class="internal"><span class="title">Fundamentals of Probability</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-events-not-or.html" class="internal"><span class="title">Events Involving NOT and OR</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-fcp.html" class="internal"><span class="title">The Fundamental Counting Principle</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-fcp.html#exercises-FCP" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-factorials.html" class="internal"><span class="title">Factorials</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-permutations.html" class="internal"><span class="title">Permutations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-combinations.html" class="internal"><span class="title">Combinations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-probability-fcp-npr-ncr.html" class="internal"><span class="title">Probability with the FCP, nPr and nCr</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-probability-fcp-npr-ncr.html#subsec-nPr-Probability" class="internal"><span class="title">Probability with Fundamental Counting Principle and permutations, nPr</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-probability-fcp-npr-ncr.html#subsec-nCr-Probability" class="internal"><span class="title">Probability with Combinations, nCr</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-prob-ch-ex.html" class="internal"><span class="title">Chapter Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-prob-ch-ex.html#sec-prob-ch-ex-2" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-Intro-Statistics.html" class="internal"><span class="codenumber">4</span> <span class="title">Introduction to Statistics</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-measures-of-center-spread.html" class="internal"><span class="title">Measures of Center and Spread</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-measures-of-center-spread.html#subsec-effect-of-outliers" class="internal"><span class="title">Effect of Outliers</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-measures-of-center-spread.html#sec-measures-of-center-spread-35" class="internal"><span class="title">Practice Questions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-measures-of-center-spread.html#subsec-faq" class="internal"><span class="title">Frequently Asked Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="notes-Visualizing-Data-Through-Graphs.html" class="internal"><span class="title">Visualizing Data Through Graphs</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Hands-On-Sessions.html" class="internal"><span class="codenumber">5</span> <span class="title">Hands-On Sessions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handout-voting-methods.html" class="internal"><span class="title">Voting Methods Handout</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handout-apportionment.html" class="internal"><span class="title">Apportionment Handout</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handout-finance.html" class="internal"><span class="title">Personal Finance Handout</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="codenumber">6</span> <span class="title">Class Activities</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">01. Activity Voting Methods</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-02-intro-activity.html" class="internal"><span class="title">02. Activity Apportionment Methods</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-03-intro-activity.html" class="internal"><span class="title">03. Activity Simple Interest</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-04-intro-activity.html" class="internal"><span class="title">04. Activity Compound Interest</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-05-intro-activity.html" class="internal"><span class="title">05. Activity Annuities</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-06-intro-activity.html" class="internal"><span class="title">06. Activity Loans</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-07-intro-activity.html" class="internal"><span class="title">07. Activity Mortgages</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="codenumber">7</span> <span class="title">Handouts</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="homework.html" class="internal"><span class="codenumber">8</span> <span class="title">Homework</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="codenumber">9</span> <span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ma-150-syllabus.html" class="internal"><span class="title">MA-105-BL: Survey of Math</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#sec-150-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#sec-105-grading" class="internal"><span class="title">Assignments and Grading</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#subsec-105-Course_Policies" class="internal"><span class="title">Course Policies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#subsec-105-StudentLearningOutcomes" class="internal"><span class="title">Student Learning Outcomes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#subsec-105-LASC" class="internal"><span class="title">LASC</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#subsec-105-TentativeSchedule" class="internal"><span class="title">Course Schedule</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="notes-Visualizing-Data-Through-Graphs">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Visualizing Data Through Graphs</span>
+</h2>
+<section class="introduction" id="notes-Visualizing-Data-Through-Graphs-2">
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-2-1">Data alone can be dense and challenging to interpret. To make information accessible, researchers and analysts rely on visual representations. The four most common types of graphs used to present quantitative data are bar graphs, line graphs, pie charts, and scatter plots. Each serves a distinct purpose dictated by the nature of the variables being analyzed.<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<article class="definition definition-like" id="def-bar-graphs"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.32</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Bar graph.</span>
+</h3>
+<div class="para" id="def-bar-graphs-2-1">
+<em class="alert">Bar graphs</em> are best suited for comparing quantities or counts across distinct, independent categories. They utilize horizontal or vertical rectangular bars where the length or height of each bar directly corresponds to the numerical value it represents.<div class="autopermalink" data-description="Paragraph"><a href="#def-bar-graphs-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 4.32: Bar graph"><a href="#def-bar-graphs" title="Copy heading and permalink for Definition 4.32: Bar graph" aria-label="Copy heading and permalink for Definition 4.32: Bar graph">🔗</a></div>
+</article>
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-4">For example, a political analyst would use a bar graph to compare the total number of votes received by different candidates in an election, allowing the reader to instantly identify the frontrunner.<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="notes-Visualizing-Data-Through-Graphs-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.33</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-5-1-1">A small business tracks the number of laptops sold over three months: January (15 units), February (22 units), and March (18 units). Determine which category goes on each axis to construct a vertical bar graph.<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="figure figure-like" id="fig-vertical-bar-graph"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/img-bar-chart.svg" role="img" class="contained" alt="A vertical bar chart displaying laptop units sold over three months. The horizontal axis represents the months, and the vertical axis scales from 0 to 25 to track units sold. January displays a bar reaching 15 units, February shows a bar reaching 22 units, and March shows a bar reaching 18 units."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.34<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Sample structure for a vertical bar graph.<div class="autopermalink" data-description="Figure 4.34"><a href="#fig-vertical-bar-graph" title="Copy heading and permalink for Figure 4.34" aria-label="Copy heading and permalink for Figure 4.34">🔗</a></div></figcaption>
+</figure><div class="solutions">
+<details id="notes-Visualizing-Data-Through-Graphs-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="notes-Visualizing-Data-Through-Graphs-5-2-1">
+<div class="para">To construct a standard vertical bar graph, the independent nominal categories must be placed along the baseline axis, while the numerical quantitative metrics track along the vertical boundary:</div>
+<ul class="disc" id="notes-Visualizing-Data-Through-Graphs-5-2-1-1">
+<li id="notes-Visualizing-Data-Through-Graphs-5-2-1-1-1">
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-5-2-1-1-1-1">Horizontal Axis (x-axis): Contains the <em class="alert">Months</em> (January, February, and March).<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-5-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-Visualizing-Data-Through-Graphs-5-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="notes-Visualizing-Data-Through-Graphs-5-2-1-1-2">
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-5-2-1-1-2-1">Vertical Axis (y-axis): Tracks the quantitative scale for <em class="alert">Units Sold</em> (ranging from 0 up to at least 22).<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-5-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-Visualizing-Data-Through-Graphs-5-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.33.1"><a href="#notes-Visualizing-Data-Through-Graphs-5-2" title="Copy heading and permalink for Solution 4.33.1" aria-label="Copy heading and permalink for Solution 4.33.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 4.33"><a href="#notes-Visualizing-Data-Through-Graphs-5" title="Copy heading and permalink for Example 4.33" aria-label="Copy heading and permalink for Example 4.33">🔗</a></div>
+</article></details>
+<details id="notes-Visualizing-Data-Through-Graphs-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.35</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-6-1-1">A school cafeteria counts the number of fruit items sold in a day: 40 apples, 55 bananas, and 25 oranges. If you create a vertical bar graph, which item will have the tallest bar, and what value will it represent?<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="notes-Visualizing-Data-Through-Graphs-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-6-2-1">The category with the highest count is bananas. Therefore, bananas will have the tallest bar, representing a value of 55.<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-cafeteria-fruit-graph"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/img-cafeteria-fruit.svg" role="img" class="contained" alt="A vertical bar graph tracking cafeteria sales. The horizontal axis represents the fruit types, and the vertical axis scales from 0 to 60. Apples show a bar at 40, bananas show the tallest bar at 55, and oranges show a bar at 25."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.36<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Vertical bar graph tracking daily cafeteria fruit sales.<div class="autopermalink" data-description="Figure 4.36"><a href="#fig-cafeteria-fruit-graph" title="Copy heading and permalink for Figure 4.36" aria-label="Copy heading and permalink for Figure 4.36">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 4.35.1"><a href="#notes-Visualizing-Data-Through-Graphs-6-2" title="Copy heading and permalink for Solution 4.35.1" aria-label="Copy heading and permalink for Solution 4.35.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.35"><a href="#notes-Visualizing-Data-Through-Graphs-6" title="Copy heading and permalink for Checkpoint 4.35" aria-label="Copy heading and permalink for Checkpoint 4.35">🔗</a></div>
+</article></details>
+<article class="definition definition-like" id="def-line-graphs"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.37</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Line graph.</span>
+</h3>
+<div class="para" id="def-line-graphs-2-1">
+<em class="alert">Line graphs</em> are ideal for illustrating trends and demonstrating how numbers fluctuate over a continuous period. This format displays a sequential series of specific data points—frequently referred to as markers—that are connected by straight lines to show a clear trajectory.<div class="autopermalink" data-description="Paragraph"><a href="#def-line-graphs-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 4.37: Line graph"><a href="#def-line-graphs" title="Copy heading and permalink for Definition 4.37: Line graph" aria-label="Copy heading and permalink for Definition 4.37: Line graph">🔗</a></div>
+</article>
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-8">A common application includes tracking macroeconomic variables, such as a city’s average monthly temperature or a company’s fluctuating stock prices throughout a fiscal year.<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="notes-Visualizing-Data-Through-Graphs-9" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.38</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-9-1-1">An analyst records the stock price of a company over four days: Day 1 (<span class="process-math">\(\$10\)</span>), Day 2 (<span class="process-math">\(\$15\)</span>), Day 3 (<span class="process-math">\(\$12\)</span>), and Day 4 (<span class="process-math">\(\$20\)</span>). Describe the overall trend shown by connecting these data points on a line graph.<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="figure figure-like" id="fig-stock-price-trend"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/img-stock-line-graph.svg" role="img" class="contained" alt="A continuous line graph tracking stock prices over 4 days. The horizontal axis tracks days 1 through 4, and the vertical axis spans from \$5 to \$25. A solid blue line connects the markers: rising from \$10 on Day 1 to \$15 on Day 2, dipping down to \$12 on Day 3, and peaking sharply at \$20 on Day 4."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.39<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Sample trajectory for a continuous trend line.<div class="autopermalink" data-description="Figure 4.39"><a href="#fig-stock-price-trend" title="Copy heading and permalink for Figure 4.39" aria-label="Copy heading and permalink for Figure 4.39">🔗</a></div></figcaption>
+</figure><div class="solutions">
+<details id="notes-Visualizing-Data-Through-Graphs-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-9-2-1">The line segments will move upward from Day 1 to Day 2, slope downward from Day 2 to Day 3, and then rise sharply from Day 3 to Day 4. Despite the mid-period dip on Day 3, the overall trend over the four-day period is upward.<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.38.1"><a href="#notes-Visualizing-Data-Through-Graphs-9-2" title="Copy heading and permalink for Solution 4.38.1" aria-label="Copy heading and permalink for Solution 4.38.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 4.38"><a href="#notes-Visualizing-Data-Through-Graphs-9" title="Copy heading and permalink for Example 4.38" aria-label="Copy heading and permalink for Example 4.38">🔗</a></div>
+</article></details>
+<details id="notes-Visualizing-Data-Through-Graphs-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.40</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-10-1-1">A patient’s body temperature is recorded every hour: Hour 1 (<span class="process-math">\(98.6^\circ\text{F}\)</span>), Hour 2 (<span class="process-math">\(100.2^\circ\text{F}\)</span>), Hour 3 (<span class="process-math">\(101.5^\circ\text{F}\)</span>), and Hour 4 (<span class="process-math">\(99.1^\circ\text{F}\)</span>). Between which two hours does the line graph show the sharpest increase?<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="notes-Visualizing-Data-Through-Graphs-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-10-2-1">To find the sharpest increase, we calculate the differences between consecutive hourly measurements:<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="notes-Visualizing-Data-Through-Graphs-10-2-2">
+<div class="para">The increase from Hour 1 to Hour 2 is:</div>
+<div class="displaymath process-math" id="notes-Visualizing-Data-Through-Graphs-10-2-2-1">
+\begin{equation*}
+100.2 - 98.6 = 1.6^\circ\text{F}
+\end{equation*}
+</div>
+<div class="para">The increase from Hour 2 to Hour 3 is:</div>
+<div class="displaymath process-math" id="notes-Visualizing-Data-Through-Graphs-10-2-2-2">
+\begin{equation*}
+101.5 - 100.2 = 1.3^\circ\text{F}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-10-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-10-2-3">Comparing these calculations, the graph shows the sharpest increase between Hour 1 and Hour 2.<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-10-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-patient-temp-trend"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/img-patient-temp-line.svg" role="img" class="contained" alt="A continuous line graph tracking a patient’s temperature over 4 hours. The horizontal axis maps hours 1 to 4, and the vertical axis scales from 97 to 103 degrees Fahrenheit. A solid blue line rises from 98.6 degrees at Hour 1 to 100.2 degrees at Hour 2, climbs further to 101.5 degrees at Hour 3, and then falls down to 99.1 degrees at Hour 4."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.41<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Hourly tracking of patient body temperature.<div class="autopermalink" data-description="Figure 4.41"><a href="#fig-patient-temp-trend" title="Copy heading and permalink for Figure 4.41" aria-label="Copy heading and permalink for Figure 4.41">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 4.40.1"><a href="#notes-Visualizing-Data-Through-Graphs-10-2" title="Copy heading and permalink for Solution 4.40.1" aria-label="Copy heading and permalink for Solution 4.40.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.40"><a href="#notes-Visualizing-Data-Through-Graphs-10" title="Copy heading and permalink for Checkpoint 4.40" aria-label="Copy heading and permalink for Checkpoint 4.40">🔗</a></div>
+</article></details>
+<article class="definition definition-like" id="def-pie-charts"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.42</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Pie Chart.</span>
+</h3>
+<div class="para" id="def-pie-charts-2-1">
+<em class="alert">Pie charts</em> are designed for visualizing proportions and showing how a single, cohesive entity is divided into individual parts. The chart consists of a circle divided into sectors, or slices, where the arc length and central angle of each slice are strictly proportional to the percentage of the total dataset it represents.<div class="autopermalink" data-description="Paragraph"><a href="#def-pie-charts-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 4.42: Pie Chart"><a href="#def-pie-charts" title="Copy heading and permalink for Definition 4.42: Pie Chart" aria-label="Copy heading and permalink for Definition 4.42: Pie Chart">🔗</a></div>
+</article>
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-12">In corporate finance, a pie chart is often deployed to display market share distribution among competing companies within a specific industry.<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-budget-pie-chart" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.43</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-budget-pie-chart-1-1">A budget consists of <span class="process-math">\(\$500\)</span> for Rent, <span class="process-math">\(\$250\)</span> for Food, and <span class="process-math">\(\$250\)</span> for Utilities. Calculate the percentage of the pie chart slice that represents Rent.<div class="autopermalink" data-description="Paragraph"><a href="#ex-budget-pie-chart-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="figure figure-like" id="fig-budget-distribution"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="generated/latex-image/img-budget-pie.svg" role="img" class="contained" alt="A circular pie chart divided into three colored budget sections. The bottom half of the circle is blue and represents Rent at 50 percent. The top right quadrant is green and represents Food at 25 percent. The top left quadrant is orange and represents Utilities at 25 percent."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.44<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Proportional slice distribution in a circular layout.<div class="autopermalink" data-description="Figure 4.44"><a href="#fig-budget-distribution" title="Copy heading and permalink for Figure 4.44" aria-label="Copy heading and permalink for Figure 4.44">🔗</a></div></figcaption>
+</figure><div class="solutions">
+<details id="ex-budget-pie-chart-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-budget-pie-chart-2-1">
+<div class="para">First, find the total budget by summing the individual expenses:</div>
+<div class="displaymath process-math" id="ex-budget-pie-chart-2-1-1">
+\begin{equation*}
+500 + 250 + 250 = 1000
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-budget-pie-chart-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-budget-pie-chart-2-2">
+<div class="para">Next, divide the Rent cost by the total budget to find its proportion:</div>
+<div class="displaymath process-math" id="ex-budget-pie-chart-2-2-1">
+\begin{equation*}
+\frac{500}{1000} = 0.50
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-budget-pie-chart-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-budget-pie-chart-2-3">
+<div class="para">Multiply by 100 to convert the decimal into a percentage:</div>
+<div class="displaymath process-math" id="ex-budget-pie-chart-2-3-1">
+\begin{equation*}
+0.50 \times 100 = 50\%
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-budget-pie-chart-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-budget-pie-chart-2-4">The Rent slice will take up exactly half (50%) of the pie chart.<div class="autopermalink" data-description="Paragraph"><a href="#ex-budget-pie-chart-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.43.1"><a href="#ex-budget-pie-chart-2" title="Copy heading and permalink for Solution 4.43.1" aria-label="Copy heading and permalink for Solution 4.43.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 4.43"><a href="#ex-budget-pie-chart" title="Copy heading and permalink for Example 4.43" aria-label="Copy heading and permalink for Example 4.43">🔗</a></div>
+</article></details>
+<details id="notes-Visualizing-Data-Through-Graphs-14" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.45</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-14-1-1">A survey of 200 people shows that 100 prefer vanilla ice cream, 60 prefer chocolate, and 40 prefer strawberry. What central angle degree should be used to draw the slice for chocolate?<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="notes-Visualizing-Data-Through-Graphs-14-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="notes-Visualizing-Data-Through-Graphs-14-2-1">
+<div class="para">The proportion for chocolate is:</div>
+<div class="displaymath process-math" id="notes-Visualizing-Data-Through-Graphs-14-2-1-1">
+\begin{equation*}
+\frac{60}{200} = 0.30 \quad (30\%)
+\end{equation*}
+</div>
+<div class="para">Since a full circle has <span class="process-math">\(360^\circ\text{,}\)</span> multiply the proportion by 360 to find the central angle:</div>
+<div class="displaymath process-math" id="notes-Visualizing-Data-Through-Graphs-14-2-1-3">
+\begin{equation*}
+0.30 \times 360 = 108
+\end{equation*}
+</div>
+<div class="para">The chocolate slice requires a central angle of <span class="process-math">\(108^\circ\)</span>.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-14-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-ice-cream-preferences"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="generated/latex-image/img-ice-cream-pie.svg" role="img" class="contained" alt="A circular pie chart divided into three distinct sections. The right half of the circle is yellow and represents Vanilla at 50 percent. The bottom-left sector is brown and represents Chocolate with a 108-degree angle at 30 percent. The top-left sector is pink and represents Strawberry at 20 percent."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.46<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Pie chart representing ice cream flavor preferences.<div class="autopermalink" data-description="Figure 4.46"><a href="#fig-ice-cream-preferences" title="Copy heading and permalink for Figure 4.46" aria-label="Copy heading and permalink for Figure 4.46">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 4.45.1"><a href="#notes-Visualizing-Data-Through-Graphs-14-2" title="Copy heading and permalink for Solution 4.45.1" aria-label="Copy heading and permalink for Solution 4.45.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.45"><a href="#notes-Visualizing-Data-Through-Graphs-14" title="Copy heading and permalink for Checkpoint 4.45" aria-label="Copy heading and permalink for Checkpoint 4.45">🔗</a></div>
+</article></details>
+<article class="definition definition-like" id="def-bell-curve"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.47</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Bell-Curve.</span>
+</h3>
+<div class="para" id="def-bell-curve-2-1">
+<em class="alert">A bell curve</em> is used in statistics to represent the continuous probability distribution of a naturally occurring variable. It is perfectly symmetrical, showing that data near the mean occurs more frequently than data far from the mean.<div class="autopermalink" data-description="Paragraph"><a href="#def-bell-curve-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 4.47: Bell-Curve"><a href="#def-bell-curve" title="Copy heading and permalink for Definition 4.47: Bell-Curve" aria-label="Copy heading and permalink for Definition 4.47: Bell-Curve">🔗</a></div>
+</article>
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-16">For example, standardized test scores, human heights, and manufacturing errors typically follow this bell-shaped trajectory when plotted in mass quantities.<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-exam-scores-bell-curve" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.48</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-exam-scores-bell-curve-1-1">An instructor plots final exam grades and notes they follow a normal distribution with a mean score of <span class="process-math">\(75\text{.}\)</span> Describe how the shape of this curve changes if you look at scores moving away from 75 in either direction.<div class="autopermalink" data-description="Paragraph"><a href="#ex-exam-scores-bell-curve-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="figure figure-like" id="fig-normal-distribution-curve"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="generated/latex-image/img-bell-curve.svg" role="img" class="contained" alt="A symmetrical, bell-shaped probability density curve tracking exam scores. The horizontal axis represents exam scores from 45 to 105, with major ticks every 15 units. The peak of the smooth cyan curve sits directly above the mean score of 75, marked by a vertical dashed red line. The curve slopes downward symmetrically as it moves left toward 45 or right toward 105, tapering off near the horizontal axis at the extremes."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.49<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Symmetrical distribution curve centered around a population mean.<div class="autopermalink" data-description="Figure 4.49"><a href="#fig-normal-distribution-curve" title="Copy heading and permalink for Figure 4.49" aria-label="Copy heading and permalink for Figure 4.49">🔗</a></div></figcaption>
+</figure><div class="solutions">
+<details id="ex-exam-scores-bell-curve-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-exam-scores-bell-curve-2-1">The highest point of the curve sits directly above the mean score of 75. As you move outward toward lower scores (left) or higher scores (right), the curve slopes downward symmetrically, flattening out as it approaches the extremes.<div class="autopermalink" data-description="Paragraph"><a href="#ex-exam-scores-bell-curve-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.48.1"><a href="#ex-exam-scores-bell-curve-2" title="Copy heading and permalink for Solution 4.48.1" aria-label="Copy heading and permalink for Solution 4.48.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 4.48"><a href="#ex-exam-scores-bell-curve" title="Copy heading and permalink for Example 4.48" aria-label="Copy heading and permalink for Example 4.48">🔗</a></div>
+</article></details>
+<details id="notes-Visualizing-Data-Through-Graphs-18" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.50</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-18-1-1">If a dataset of adult heights perfectly matches a bell curve layout, what percentage of the population profile falls below the exact center peak value of the distribution?<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-18-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="notes-Visualizing-Data-Through-Graphs-18-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-18-2-1">Because a true normal distribution curve is perfectly symmetrical, the center peak represents both the mean and the median. Therefore, exactly <span class="process-math">\(50\%\)</span> of the population data falls below this center peak line.<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-18-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-bell-curve-half-shade"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="generated/latex-image/img-bell-curve-half.svg" role="img" class="contained" alt="A symmetrical bell curve where the entire left half of the area under the curve—from the far left up to the center peak—is shaded in light blue, visually representing exactly 50 percent of the total distribution population."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.51<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Symmetrical normal distribution curve with the lower half shaded.<div class="autopermalink" data-description="Figure 4.51"><a href="#fig-bell-curve-half-shade" title="Copy heading and permalink for Figure 4.51" aria-label="Copy heading and permalink for Figure 4.51">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 4.50.1"><a href="#notes-Visualizing-Data-Through-Graphs-18-2" title="Copy heading and permalink for Solution 4.50.1" aria-label="Copy heading and permalink for Solution 4.50.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.50"><a href="#notes-Visualizing-Data-Through-Graphs-18" title="Copy heading and permalink for Checkpoint 4.50" aria-label="Copy heading and permalink for Checkpoint 4.50">🔗</a></div>
+</article></details>
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-19">When dealing with large, continuous numerical datasets, organizing the data into distinct ranges helps reveal patterns that might otherwise be hidden.<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-histograms"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.52</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Histogram.</span>
+</h3>
+<div class="para" id="def-histograms-2-1">
+<em class="alert">Histograms</em> display the frequency distribution of a single continuous numerical variable by grouping data into adjacent intervals, known as bins. Unlike categorical bar graphs, the vertical bars in a histogram must touch to demonstrate the continuous progression of the underlying scale.<div class="autopermalink" data-description="Paragraph"><a href="#def-histograms-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 4.52: Histogram"><a href="#def-histograms" title="Copy heading and permalink for Definition 4.52: Histogram" aria-label="Copy heading and permalink for Definition 4.52: Histogram">🔗</a></div>
+</article>
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-21">A logistics manager might use a histogram to view packet delivery times, tracking how many shipments arrive within 0-12 hours, 12-24 hours, and 24-36 hours.<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-workout-durations-histogram" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.53</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Gym Workout Durations.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-workout-durations-histogram-2-1">A gym records the workout durations of its members in minutes. The data is grouped into three continuous intervals: 0–20 minutes (5 people), 20–40 minutes (15 people), and 40–60 minutes (10 people). Determine the total sample size tracked across this histogram layout.<div class="autopermalink" data-description="Paragraph"><a href="#ex-workout-durations-histogram-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="figure figure-like" id="fig-workout-durations-graph"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="generated/latex-image/img-workout-histogram.svg" role="img" class="contained" alt="A frequency histogram tracking gym workout durations. The horizontal axis represents workout duration in minutes, with markers at 0, 20, 40, and 60. The vertical axis represents the number of members from 0 to 20. Three adjacent purple bars touch each other: the first bin from 0 to 20 minutes has a height of 5, the middle bin from 20 to 40 minutes has a height of 15, and the third bin from 40 to 60 minutes has a height of 10."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.54<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Frequency distribution across adjacent numerical bins.<div class="autopermalink" data-description="Figure 4.54"><a href="#fig-workout-durations-graph" title="Copy heading and permalink for Figure 4.54" aria-label="Copy heading and permalink for Figure 4.54">🔗</a></div></figcaption>
+</figure><div class="solutions">
+<details id="ex-workout-durations-histogram-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-workout-durations-histogram-3-1">
+<div class="para">To find the total sample size, sum the frequencies represented by the height of each adjacent bar:</div>
+<div class="displaymath process-math" id="ex-workout-durations-histogram-3-1-1">
+\begin{equation*}
+5 + 15 + 10 = 30
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-workout-durations-histogram-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-workout-durations-histogram-3-2">The histogram tracks a total sample size of 30 gym members.<div class="autopermalink" data-description="Paragraph"><a href="#ex-workout-durations-histogram-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.53.1"><a href="#ex-workout-durations-histogram-3" title="Copy heading and permalink for Solution 4.53.1" aria-label="Copy heading and permalink for Solution 4.53.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 4.53: Gym Workout Durations"><a href="#ex-workout-durations-histogram" title="Copy heading and permalink for Example 4.53: Gym Workout Durations" aria-label="Copy heading and permalink for Example 4.53: Gym Workout Durations">🔗</a></div>
+</article></details>
+<details id="notes-Visualizing-Data-Through-Graphs-23" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.55</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="notes-Visualizing-Data-Through-Graphs-23-1-1">You examine a histogram detailing employee commuter distances with bin intervals structured as 0–5 miles, 5–10 miles, and 10–15 miles. Explain how boundary values like 5.0 and 10.0 miles are categorized, and visualize both the interval notation and the resulting frequency histogram.<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-23-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="notes-Visualizing-Data-Through-Graphs-23-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="notes-Visualizing-Data-Through-Graphs-23-2-1">
+<div class="para">By standard data convention, histogram bins are left-closed and right-open, denoted as <span class="process-math">\([a,b)\text{.}\)</span> This means the lower boundary value is included in the bin, while the upper boundary value is excluded:</div>
+<ul class="disc" id="notes-Visualizing-Data-Through-Graphs-23-2-1-2">
+<li id="notes-Visualizing-Data-Through-Graphs-23-2-1-2-1">
+<div class="para" id="p-derived-notes-Visualizing-Data-Through-Graphs-23-2-1-2-1">A value of exactly 5.0 miles is excluded from the 0–5 mile bin and counted inside the 5–10 miles bin.</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-Visualizing-Data-Through-Graphs-23-2-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="notes-Visualizing-Data-Through-Graphs-23-2-1-2-2">
+<div class="para" id="p-derived-notes-Visualizing-Data-Through-Graphs-23-2-1-2-2">A value of exactly 10.0 miles is excluded from the 5–10 mile bin and counted inside the 10–15 miles bin.</div>
+<div class="autopermalink" data-description="Item"><a href="#notes-Visualizing-Data-Through-Graphs-23-2-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#notes-Visualizing-Data-Through-Graphs-23-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-combined-histogram-module">
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:1%;margin-right:1%;grid-template-columns:48.9795918367347% 48.9795918367347%;column-gap:2%;">
+<div class="sbspanel sbspanel--middle middle" style=""><div class="image-box"><img src="generated/latex-image/img-interval-notation-line.svg" role="img" class="contained" alt="A number line tracking intervals from 0 to 15. The first interval from 0 to 5 is blue with a solid dot at 0 and an open circle at 5. The second interval from 5 to 10 is green with a solid dot at 5 and an open circle at 10. The third interval from 10 to 15 is purple with a solid dot at 10 and an open circle at 15. Vertical red lines point out that exact boundary values land in the right-hand touching bin."></div></div>
+<div class="sbspanel sbspanel--middle middle" style=""><div class="image-box"><img src="generated/latex-image/img-three-bin-histogram.svg" role="img" class="contained" alt="A continuous frequency histogram with three touching bars representing commuter distances. The horizontal axis lists miles from 0 to 15 with ticks at 0, 5, 10, and 15. The vertical axis lists number of employees from 0 to 25. The first bar from 0 to 5 miles has a height of 12. The second bar from 5 to 10 miles has a height of 22. The third bar from 10 to 15 miles has a height of 8."></div></div>
+</div>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.56<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Interval boundary logic alongside its corresponding frequency histogram.<div class="autopermalink" data-description="Figure 4.56"><a href="#fig-combined-histogram-module" title="Copy heading and permalink for Figure 4.56" aria-label="Copy heading and permalink for Figure 4.56">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 4.55.1"><a href="#notes-Visualizing-Data-Through-Graphs-23-2" title="Copy heading and permalink for Solution 4.55.1" aria-label="Copy heading and permalink for Solution 4.55.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.55"><a href="#notes-Visualizing-Data-Through-Graphs-23" title="Copy heading and permalink for Checkpoint 4.55" aria-label="Copy heading and permalink for Checkpoint 4.55">🔗</a></div>
+</article></details>
+<details id="ex-nutrition-weight-histogram-fixed" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.57</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Nutrition Study Weight Distribution.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para logical" id="ex-nutrition-weight-histogram-fixed-2-1">
+<div class="para">Suppose that we have collected weights from 100 male subjects as part of a nutrition study. For our weight data, we have values ranging from a low of 121 pounds to a high of 263 pounds, giving a total span of:</div>
+<div class="displaymath process-math" id="ex-nutrition-weight-histogram-fixed-2-1-1">
+\begin{equation*}
+263 - 121 = 142 \text{ pounds}
+\end{equation*}
+</div>
+<div class="para">We can experiment with different bin allocations to summarize the data. Let us organize the dataset using a uniform interval width of 15, starting at a baseline value of 120.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-nutrition-weight-histogram-fixed-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">Weight Interval (Pounds)</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Frequency (Count)</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">[120, 135)</td>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">[135, 150)</td>
+<td class="c m b1 r1 l0 t0 lines">14</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">[150, 165)</td>
+<td class="c m b1 r1 l0 t0 lines">16</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">[165, 180)</td>
+<td class="c m b1 r1 l0 t0 lines">28</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">[180, 195)</td>
+<td class="c m b1 r1 l0 t0 lines">12</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">[195, 210)</td>
+<td class="c m b1 r1 l0 t0 lines">8</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">[210, 225)</td>
+<td class="c m b1 r1 l0 t0 lines">7</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">[225, 240)</td>
+<td class="c m b1 r1 l0 t0 lines">6</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">[240, 255)</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">[255, 270)</td>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+</tr>
+</table></div>
+<div class="solutions">
+<details id="ex-nutrition-weight-histogram-fixed-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-nutrition-weight-histogram-fixed-3-1">Using the frequency chart, we construct a continuous frequency histogram. Each vertical bar spans an interval of 15 pounds on the horizontal axis, and the height matches the respective category count.<div class="autopermalink" data-description="Paragraph"><a href="#ex-nutrition-weight-histogram-fixed-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-nutrition-weight-histogram-fixed"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/img-nutrition-weight-chart-fixed.svg" role="img" class="contained" alt="A continuous frequency histogram tracking the weights of 100 male subjects. The horizontal axis charts weights from 120 to 270 pounds with main tick labels every 15 units. The vertical axis monitors frequencies from 0 to 30. Ten continuous, touching blue bars represent the frequencies: the first bar at 120 has a height of 4; followed by 14, 16; peaking at a height of 28 for the 165-180 pound bin; then stepping down to 12, 8, 7, 6, 2; and ending with a final bar height of 3 at the 255-270 pound boundary."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.58<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Frequency histogram of male subject weights with an interval width of 15.<div class="autopermalink" data-description="Figure 4.58"><a href="#fig-nutrition-weight-histogram-fixed" title="Copy heading and permalink for Figure 4.58" aria-label="Copy heading and permalink for Figure 4.58">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 4.57.1"><a href="#ex-nutrition-weight-histogram-fixed-3" title="Copy heading and permalink for Solution 4.57.1" aria-label="Copy heading and permalink for Solution 4.57.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.57: Nutrition Study Weight Distribution"><a href="#ex-nutrition-weight-histogram-fixed" title="Copy heading and permalink for Checkpoint 4.57: Nutrition Study Weight Distribution" aria-label="Copy heading and permalink for Checkpoint 4.57: Nutrition Study Weight Distribution">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Section: Visualizing Data Through Graphs"><a href="#notes-Visualizing-Data-Through-Graphs" title="Copy heading and permalink for Section: Visualizing Data Through Graphs" aria-label="Copy heading and permalink for Section: Visualizing Data Through Graphs">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-measures-of-center-spread.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="Hands-On-Sessions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

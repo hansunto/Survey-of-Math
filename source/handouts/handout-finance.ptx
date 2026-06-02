@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="handout-finance" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Personal Finance Handout</title>
+    <introduction>
+    <p>
+      This handout covers essential mathematical principles for evaluating individual savings, 
+      annuities, and debt management strategies:
+    </p>
+    <p>
+      <ul>
+        <li>
+          <title>Basic Interest Calculations</title>
+          Computing and comparing simple interest and compound interest models over 
+          various compounding periods.
+        </li>
+        <li>
+          <title>Savings and Annuities</title>
+          Analyzing regular deposit schedules, future value growth patterns, 
+          and long-term retirement accounts.
+        </li>
+        <li>
+          <title>Loans and Spendings</title>
+          Evaluating fixed-rate installment loans, calculating monthly amortization values, 
+          and managing large debts including home mortgages.
+        </li>
+      </ul>
+    </p>
+  </introduction>
+
+
+  <p><strong>Exercises and Workspaces</strong></p>
+
+          <!-- Exercise 1: Simple Interest -->
+          <page>
+<exercise>
+  <statement>
+    <p>
+      In order to pay for baseball uniforms, a school takes out a <alert>simple interest</alert> loan for $20,000 for 7 months at a rate of 12%. Find the future value of the loan.
+    </p>
+  </statement>
+  
+  <solution>
+    <p>
+      To find the future value of a loan using a simple interest model, we extract our known variables and evaluate using the linear simple interest equation.
+    </p>
+    <p>
+      <strong>Identify Given Variables:</strong>
+      <ul>
+        <li><strong>Principal (<m>P</m>):</strong> <m>\$20,000</m></li>
+        <li><strong>Annual Interest Rate (<m>r</m>):</strong> <m>12\% = 0.12</m></li>
+        <li><strong>Time (<m>t</m>):</strong> <m>7 \text{ months} = \frac{7}{12} \text{ of a year}</m></li>
+      </ul>
+    </p>
+    <p>
+      <strong>Step-by-Step Calculation:</strong>
+      <ol>
+        <li>
+          <p>
+            <strong>Calculate Accumulated Interest (<m>I</m>):</strong> Multiply Principal by Rate by Time.
+            <me>I = P \cdot r \cdot t</me>
+            <me>I = 20000 \cdot 0.12 \cdot \left(\frac{7}{12}\right)</me>
+            <me>I = 20000 \cdot 0.07 = 1400</me>
+            The total accumulated interest generated over the 7 months is <m>\$1,400</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Calculate Future Value (<m>A</m>):</strong> Sum the initial principal amount and the newly accumulated interest.
+            <me>A = P + I</me>
+            <me>A = 20000 + 1400 = 21400</me>
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      The final future value of the loan at maturity is <strong><m>\$21,400</m></strong>.
+    </p>
+  </solution>
+</exercise>
+
+          </page>
+
+          <!-- Exercise 2: Compound Interest -->
+          <page>
+ <exercise>
+  <statement>
+    <p>
+      What is the amount of the deposit needed if your financial goal is to save $24,000 in 3 years with a rate of 7.5% <alert>compounded semiannually</alert>?
+    </p>
+  </statement>
+  
+  <solution>
+    <p>
+      To find the initial deposit (present value) required to meet a future financial goal with compound interest, we rearrange the compound interest formula to solve for the principal <m>P</m>.
+    </p>
+    <p>
+      <strong>Identify Given Variables:</strong>
+      <ul>
+        <li><strong>Future Value Goal (<m>A</m>):</strong> <m>\$24,000</m></li>
+        <li><strong>Annual Interest Rate (<m>r</m>):</strong> <m>7.5\% = 0.075</m></li>
+        <li><strong>Compounding Periods per Year (<m>n</m>):</strong> <m>2</m> (semiannually)</li>
+        <li><strong>Time (<m>t</m>):</strong> <m>3 \text{ years}</m></li>
+      </ul>
+    </p>
+    <p>
+      <strong>Step-by-Step Calculation:</strong>
+      <ol>
+        <li>
+          <p>
+            <strong>State the Present Value Formula:</strong>
+            <me>P = \frac{A}{\left(1 + \frac{r}{n}\right)^{nt}}</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Substitute the Values:</strong> Find the interest rate per period (<m>\frac{r}{n}</m>) and total number of compounding periods (<m>nt</m>).
+            <me>\frac{r}{n} = \frac{0.075}{2} = 0.0375</me>
+            <me>nt = 2 \cdot 3 = 6 \text{ total compounding periods}</me>
+            <me>P = \frac{24000}{(1 + 0.0375)^{6}}</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Evaluate the Denominator:</strong> 
+            <me>P = \frac{24000}{(1.0375)^{6}}</me>
+            <me>P \approx \frac{24000}{1.247179}</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Calculate the Final Principal Amount:</strong> Divide the future goal by the compounding factor and round to the nearest cent.
+            <me>P \approx 19243.44</me>
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      The initial deposit amount needed to meet your financial goal is <strong><m>\$19,243.44</m></strong>.
+    </p>
+  </solution>
+</exercise>
+
+          </page>
+
+          <!-- Exercise 3: Annuity -->
+          <page>
+<exercise>
+  <introduction>
+    <p>
+      Your sister has her first child and you decide to open an annuity for your baby nephew. You deposit $30 <alert>at the end of each month into an annuity</alert> that returns 2.5% annual interest.
+    </p>
+  </introduction>
+
+  <!-- ==================== TASK 1: FUTURE VALUE ==================== -->
+  <task workspace="1in">
+    <statement>
+      <p>
+        How much will your nephew have in his annuity when he goes off to college (18 years from now)?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        To find the future value of regular monthly contributions, we evaluate using the future value formula for an ordinary annuity.
+      </p>
+      <p>
+        <strong>Identify Given Variables:</strong>
+        <ul>
+          <li><strong>Monthly Payment (<m>PMT</m>):</strong> <m>\$30</m></li>
+          <li><strong>Annual Interest Rate (<m>r</m>):</strong> <m>2.5\% = 0.025</m></li>
+          <li><strong>Compounding Periods per Year (<m>n</m>):</strong> <m>12</m> (monthly)</li>
+          <li><strong>Time (<m>t</m>):</strong> <m>18 \text{ years}</m></li>
+        </ul>
+      </p>
+      <p>
+        <strong>Step-by-Step Calculation:</strong>
+        <ol>
+          <li>
+            <p>
+              <strong>State the Annuity Future Value Formula:</strong>
+              <me>A = \dfrac{PMT \cdot \left(\left(1 + \frac{r}{n}\right)^{nt} - 1\right)}{\left(\frac{r}{n}\right)}</me>
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Calculate Intermediate Terms:</strong> Find the monthly interest rate and the total number of deposits.
+              <me>\text{Periodic Rate } \left(\frac{r}{n}\right) = \frac{0.025}{12} \approx 0.0020833</me>
+              <me>\text{Total Periods } (nt) = 12 \cdot 18 = 216 \text{ monthly deposits}</me>
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Substitute and Evaluate:</strong>
+              <me>A = \frac{30 \cdot \left(\left(1 + \frac{0.025}{12}\right)^{216} - 1\right)}{\left(\frac{0.025}{12}\right)}</me>
+              <me>A \approx \frac{30 \cdot ((1.0020833)^{216} - 1)}{0.0020833}</me>
+              <me>A \approx \frac{30 \cdot (1.567431 - 1)}{0.0020833}</me>
+              <me>A \approx 30 \cdot 272.4377</me>
+              <me>A \approx 8173.13</me>
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        When your nephew leaves for college, the account will have accumulated <strong><m>\$8,173.13</m></strong>.
+      </p>
+    </solution>
+  </task>
+
+  <!-- ==================== TASK 2: INTEREST EARNED ==================== -->
+  <task workspace="1in">
+    <statement>
+      <p>
+        How much interest was earned?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        To determine total interest earned, we calculate your total out-of-pocket contributions over the 18 years and subtract that value from the accumulated future value.
+      </p>
+      <p>
+        <strong>Step-by-Step Calculation:</strong>
+        <ol>
+          <li>
+            <p>
+              <strong>Calculate Total Out-of-Pocket Deposits:</strong> Multiply the monthly payment by the total number of compound periods over 18 years.
+              <me>\text{Total Contributions} = PMT \cdot nt</me>
+              <me>\text{Total Contributions} = 30 \cdot 216 = 6480</me>
+              The sum of all out-of-pocket deposits is <m>\$6,480.00</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Calculate Total Interest Earned:</strong> Subtract total out-of-pocket deposits from the accumulated future value found in Task 1.
+              <me>\text{Interest} = A - \text{Total Contributions}</me>
+              <me>\text{Interest} = 8173.13 - 6480.00 = 1693.13</me>
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        The total interest earned by the annuity is <strong><m>\$1,693.13</m></strong>.
+      </p>
+    </solution>
+  </task>
+</exercise>
+
+          </page>
+
+          <!-- Exercise 4: car loan -->
+          <page>
+<exercise>
+  <introduction>
+    <p>
+      The purchase cost of a Camry is $32,500. This vehicle can be financed by providing a $3,000 down payment and committing to monthly installment payments of $680.25 per month for 60 months.
+    </p>
+  </introduction>
+
+  <!-- ==================== TASK 1: AMOUNT FINANCED ==================== -->
+  <task workspace="1in">
+    <statement>
+      <p>
+        Determine the amount financed.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The amount financed is the remaining vehicle balance that must be covered by a loan after subtracting the initial down payment from the base purchase price.
+      </p>
+      <p>
+        <me>\text{Amount Financed} = \text{Purchase Cost} - \text{Down Payment}</me>
+        <me>\text{Amount Financed} = 32500 - 3000 = 29500</me>
+      </p>
+      <p>
+        The base amount financed through the loan is <strong><m>\$29,500.00</m></strong>.
+      </p>
+    </solution>
+  </task>
+
+  <!-- ==================== TASK 2: TOTAL INSTALLMENT PRICE ==================== -->
+  <task workspace="1in">
+    <statement>
+      <p>
+        Determine the total installment charge (total installment price).
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The total installment price represents the absolute total cost of buying the car over time, found by adding the down payment to the sum of all monthly payments.
+      </p>
+      <p>
+        <strong>Step-by-Step Calculation:</strong>
+        <ol>
+          <li>
+            <p>
+              <strong>Calculate Total Monthly Deferred Payments:</strong> Multiply the monthly commitment by the total number of payments.
+              <me>\text{Total Payments} = 680.25 \times 60 = 40815</me>
+              The sum of all monthly installments across 60 months is <m>\$40,815.00</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Calculate Total Out-of-Pocket Cost:</strong> Combine the monthly payments with the initial down payment.
+              <me>\text{Total Installment Price} = \text{Total Payments} + \text{Down Payment}</me>
+              <me>\text{Total Installment Price} = 40815 + 3000 = 43815</me>
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        The total installment cost for purchasing the vehicle is <strong><m>\$43,815.00</m></strong>.
+      </p>
+    </solution>
+  </task>
+
+  <!-- ==================== TASK 3: FINANCE CHARGE ==================== -->
+  <task workspace="1in">
+    <statement>
+      <p>
+        Determine the finance charge.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The finance charge represents the total interest paid for borrowing money, calculated by finding the difference between the total installment price and the original cash purchase cost.
+      </p>
+      <p>
+        <me>\text{Finance Charge} = \text{Total Installment Price} - \text{Purchase Cost}</me>
+        <me>\text{Finance Charge} = 43815 - 32500 = 11315</me>
+      </p>
+      <p>
+        The absolute cost of borrowing (total interest expense) is <strong><m>\$11,315.00</m></strong>.
+      </p>
+    </solution>
+  </task>
+</exercise>
+            
+          </page>
+
+          <!-- Exercise 5: fixed loan -->
+          <page>
+ <exercise>
+  <introduction>
+    <p>
+      A new fax machine costs Worcester State University $2,670. 
+      They are to pay it off in 18 months at a 9% <alert>simple interest rate</alert>.
+    </p>
+  </introduction>
+
+  <!-- ==================== TASK 1: MONTHLY PAYMENT ==================== -->
+  <task workspace="1in">
+    <statement>
+      <p>
+        What will each monthly payment be?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        To find the monthly installment value, we first compute the total future value of the loan (principal plus interest) and then divide it equally by the total number of payments.
+      </p>
+      <p>
+        <strong>Identify Given Variables:</strong>
+        <ul>
+          <li><strong>Principal (<m>P</m>):</strong> <m>\$2,670</m></li>
+          <li><strong>Annual Interest Rate (<m>r</m>):</strong> <m>9\% = 0.09</m></li>
+          <li><strong>Loan Term (<m>t</m>):</strong> <m>18 \text{ months} = \frac{18}{12} = 1.5 \text{ years}</m></li>
+        </ul>
+      </p>
+      <p>
+        <strong>Step-by-Step Calculation:</strong>
+        <ol>
+          <li>
+            <p>
+              <strong>Calculate Total Accumulated Interest (<m>I</m>):</strong>
+              <me>I = P \cdot r \cdot t</me>
+              <me>I = 2670 \cdot 0.09 \cdot 1.5</me>
+              <me>I = 360.45</me>
+              The total interest accrued on the equipment purchase is <m>\$360.45</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Calculate Total Future Value Balance (<m>A</m>):</strong> Combine the principal cost and interest.
+              <me>A = P + I</me>
+              <me>A = 2670 + 360.45 = 3030.45</me>
+              The total amount to be repaid over the loan lifespan is <m>\$3,030.45</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Calculate Periodic Installment Payment (<m>PMT</m>):</strong> Divide total future value by the 18 months.
+              <me>PMT = \frac{A}{18}</me>
+              <me>PMT = \frac{3030.45}{18} = 168.3583</me>
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        Rounding to the nearest cent, each sequential monthly payment will be <strong><m>\$168.36</m></strong>.
+      </p>
+    </solution>
+  </task>
+
+  <!-- ==================== TASK 2: TOTAL INTEREST PAID ==================== -->
+  <task workspace="1in">
+    <statement>
+      <p>
+        How much interest will they pay on the loan?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The absolute cost of credit (total interest expense) was calculated directly in step 1 using the simple interest formula:
+      </p>
+      <p>
+        <me>I = P \cdot r \cdot t</me>
+        <me>I = 2670 \cdot 0.09 \cdot 1.5 = 360.45</me>
+      </p>
+      <p>
+        Worcester State University will pay a total interest amount of <strong><m>\$360.45</m></strong> over the lifespan of the financing agreement.
+      </p>
+    </solution>
+  </task>
+</exercise>
+           
+          </page>
+
+          <!-- Exercise 6: mortgage loan -->
+          <page>
+ <exercise>
+  <introduction>
+    <p>
+      Congratulations! You purchase a sprawling home for $1,000,000. 
+      You make a 15% down payment and agree to a 4.5% interest rate for a 30-year 
+      fixed-rate mortgage. You are also required to pay 3 points at closing.
+    </p>
+  </introduction>
+
+  <!-- ==================== TASK 1: LOAN AMOUNT ==================== -->
+  <task workspace="1in">
+    <statement>
+      <p>
+        What is the amount of your loan?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The loan amount is determined by finding the cash value of the down payment
+         and subtracting it from the total purchase price of the home.
+      </p>
+      <p>
+        <strong>Step-by-Step Calculation:</strong>
+        <ol>
+          <li>
+            <p>
+              <strong>Calculate the Down Payment:</strong> Multiply the purchase price by the down payment percentage.
+              <me>\text{Down Payment} = 1000000 \cdot 0.15 = 150000</me>
+              The upfront cash down payment is <m>\$150,000</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Calculate the Principal Mortgage Amount (<m>P</m>):</strong> 
+              Subtract the down payment from the total home cost.
+              <me>P = 1000000 - 150000 = 850000</me>
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        The total principal amount of your mortgage loan is <strong><m>\$850,000</m></strong>.
+      </p>
+    </solution>
+  </task>
+
+  <!-- ==================== TASK 2: CLOSING POINTS ==================== -->
+  <task points="4" workspace="1in">
+    <statement>
+      <p>
+        You paid 3 points at the closing. How much did you pay?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        In real estate finance, 1 point is equal to 1% of the total amount borrowed (the mortgage loan principal), not the purchase price of the home.
+      </p>
+      <p>
+        <me>\text{Cost of Points} = \text{Loan Amount} \cdot 3\%</me>
+        <me>\text{Cost of Points} = 850000 \cdot 0.03 = 25500</me>
+      </p>
+      <p>
+        The total amount paid for 3 points at closing is <strong><m>\$25,500</m></strong>.
+      </p>
+    </solution>
+  </task>
+
+  <!-- ==================== TASK 3: MONTHLY PAYMENT ==================== -->
+  <task workspace="1in">
+    <statement>
+      <p>
+        What is your monthly mortgage payment?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        To determine the regular monthly installment cost, we apply the standard fixed-rate loan amortization formula.
+      </p>
+      <p>
+        <strong>Identify Given Variables:</strong>
+        <ul>
+          <li><strong>Mortgage Loan Principal (<m>P</m>):</strong> <m>\$850,000</m></li>
+          <li><strong>Annual Interest Rate (<m>r</m>):</strong> <m>4.5\% = 0.045</m></li>
+          <li><strong>Compounding Periods per Year (<m>n</m>):</strong> <m>12</m> (monthly)</li>
+          <li><strong>Total Time (<m>t</m>):</strong> <m>30 \text{ years}</m></li>
+        </ul>
+      </p>
+      <p>
+        <strong>Step-by-Step Calculation:</strong>
+        <ol>
+          <li>
+            <p>
+              <strong>State the Installment Formula:</strong>
+              <me>PMT = \frac{P \cdot \frac{r}{n}}{\left(1-(1+\frac{r}{n})^{nt}\right)}</me>
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Evaluate the Numerator:</strong> Find the periodic monthly rate.
+              <me>\text{Numerator} = 850000 \cdot \frac{0.045}{12} = 850000 \cdot 0.00375 = 3187.5</me>
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Evaluate the Denominator:</strong> Calculate the monthly compounding base over the lifetime total of 360 payments (<m>12 \cdot 30</m>).
+              <me>\text{Denominator} = 1 - \left(1 + 0.00375\right)^{-360}</me>
+              <me>\text{Denominator} = 1 - \left(1.00375\right)^{-360}</me>
+              <me>\text{Denominator} \approx 1 - 0.261596 = 0.738404</me>
+            </p>
+          </li>
+           <li>
+            <p>
+              <strong>Solve for PMT:</strong> Divide the numerator by the denominator.
+              <me>PMT = \frac{3187.5}{0.738404} \approx 4306.85</me>
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        Your base monthly mortgage payment is <strong><m>\$4,306.85</m></strong>.
+      </p>
+    </solution>
+  </task>
+
+  <!-- ==================== TASK 4: TOTAL INTEREST CHARGED ==================== -->
+  <task workspace="1in">
+    <statement>
+      <p>
+        How much are you charged over the course of the mortgage loan, in interest?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The total interest expense is determined by adding up all monthly payments 
+        made over 30 years and subtracting the original amount borrowed.
+      </p>
+      <p>
+        <strong>Step-by-Step Calculation:</strong>
+        <ol>
+          <li>
+            <p>
+              <strong>Calculate Total Lifetime Payments:</strong> Multiply the monthly payment by 360 total months.
+              <me>\text{Total Lifetime Outlay} = 4306.83 \cdot 360 = 1550458.80</me>
+              The aggregate amount paid back to the lender over 30 years is <m>\$1,550,458.80</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong>Subtract the Initial Principal Balance:</strong>
+              <me>\text{Total Interest} = \text{Total Lifetime Outlay} - \text{Loan Principal}</me>
+              <me>\text{Total Interest} = 1550458.80 - 850000 = 700458.80</me>
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        The total interest charged over the standard lifespan of the loan is <strong><m>\$700,458.80</m></strong>.
+      </p>
+    </solution>
+  </task>
+</exercise>
+           
+          </page>
+</worksheet>

@@ -1,0 +1,16 @@
+INFO    : Building target course
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+WARNING : Now generating latex images
+INFO    : converting latex-image pictures from /workspaces/Survey-of-Math/source/main.ptx to svg graphics for placement in /workspaces/Survey-of-Math/generated-assets/latex-image
+INFO    : extracting latex-image pictures from /workspaces/Survey-of-Math/source/main.ptx
+INFO    : string parameters passed to extraction stylesheet: {'cli.version': '2.38', 'publisher': '/workspaces/Survey-of-Math/publication/publication.ptx'}
+INFO    : discovering source file's directory name: /workspaces/Survey-of-Math/source
+INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/assets
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/extract-latex-image.xsl
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/extract-latex-image.xsl
+INFO    : converting img-bell-curve.tex to img-bell-curve.pdf

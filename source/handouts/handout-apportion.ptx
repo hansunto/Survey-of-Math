@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="handout-apportionment" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Apportionment Handout</title>
+  
+  <introduction>
+    <p>
+      This handout covers the core metrics and sequential steps for the major historic apportionment methods:
+    </p>
+    <p>
+      <ul>
+        <li>
+          Calculating the Standard Divisor, Standard Quotas, Lower Quotas, and Upper Quotas.
+        </li>
+        <li>
+          <title>Hamilton's Method</title>
+          Assigning initial seats using the Lower Quota, then distributing surplus seats based on the largest fractional remainders.
+        </li>
+        <li>
+          <title>Jefferson's Method</title>
+          Finding a Modified Divisor that alters the quotas so that the sum of the Lower Quotas exactly matches the total seats.
+        </li>
+        <li>
+          <title>Adams's Method</title>
+          Finding a Modified Divisor that alters the quotas so that the sum of the Upper Quotas exactly matches the total seats.
+        </li>
+      </ul>
+    </p>
+  </introduction>
+
+
+
+  <p><strong>Exercises and Workspaces</strong></p>
+
+          <!-- Exercise 1: Hamilton -->
+          <page>
+<exercise>
+  <statement>
+    <p>
+      A hospital has a nursing staff of 250 nurses working in four shifts:
+      <ul>
+        <li><title>Shift A: 7:00 A.M. to 1:00 P.M.</title> </li>
+        <li><title>Shift B: 1:00 P.M. to 7:00 P.M. </title> </li>
+        <li><title>Shift C: 7:00 P.M. to 1:00 A.M. </title> </li>
+        <li><title>Shift D: 1:00 A.M. to 7:00 A.M. </title> </li>
+      </ul>
+      The number of nurses apportioned to each shift is based on the average number of patients per shift, given in the table below. Use <alert>Hamilton's method</alert> to apportion the 250 nurses among the shifts at the hospital.
+    </p>
+
+    <tabular bottom="minor" top="minor" left="minor" right="minor">
+      <caption>Average Number of Patients per Shift</caption>
+      <col halign="left"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <row header="yes">
+        <cell>Shift</cell>
+        <cell>A</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+        <cell>D</cell>
+      </row>
+      <row>
+        <cell>Average Patients</cell>
+        <cell>453</cell>
+        <cell>650</cell>
+        <cell>547</cell>
+        <cell>350</cell>
+      </row>
+    </tabular>
+  </statement>
+
+  <solution>
+    <p>
+      To complete the apportionment using Hamilton's method, we follow these sequential calculation steps:
+    </p>
+    <p>
+      <ol>
+        <li>
+          <p>
+            <strong>Find the Total Population:</strong> Sum the average number of patients across all shifts.
+            <me>453 + 650 + 547 + 350 = 2000 \text{ total patients}</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Calculate the Standard Divisor (<m>d</m>):</strong> Divide the total population by the total number of items (250 nurses) to be allocated.
+            <me>d = \frac{2000}{250} = 8</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Find Standard and Lower Quotas:</strong> Divide each shift's patient count by the Standard Divisor (<m>8</m>). The Lower Quota is found by rounding down to the nearest whole integer.
+            <ul>
+              <li><strong>Shift A:</strong> <m>\frac{453}{8} = 56.625</m> (Lower Quota = 56)</li>
+              <li><strong>Shift B:</strong> <m>\frac{650}{8} = 81.250</m> (Lower Quota = 81)</li>
+              <li><strong>Shift C:</strong> <m>\frac{547}{8} = 68.375</m> (Lower Quota = 68)</li>
+              <li><strong>Shift D:</strong> <m>\frac{350}{8} = 43.750</m> (Lower Quota = 43)</li>
+            </ul>
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Distribute Surplus Items:</strong> Summing the lower quotas gives <m>56 + 81 + 68 + 43 = 248</m> nurses. Since we must allocate 250 nurses, there is a surplus of <m>250 - 248 = 2</m> nurses. Hamilton's method gives these surplus spots to the shifts with the largest fractional remainder parts:
+            <ul>
+              <li>Shift D has the largest remainder (<m>0.750</m>) and receives <m>+1</m> nurse.</li>
+              <li>Shift A has the second-largest remainder (<m>0.625</m>) and receives <m>+1</m> nurse.</li>
+            </ul>
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      The complete apportionment layout is summarized below:
+    </p>
+
+        <tabular bottom="minor" top="minor" left="minor" right="minor">
+      <caption>Hamilton's Method Apportionment Results (Transposed)</caption>
+      <col halign="left"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <row header="yes">
+        <cell>Metric / Step</cell>
+        <cell>Shift A</cell>
+        <cell>Shift B</cell>
+        <cell>Shift C</cell>
+        <cell>Shift D</cell>
+        <cell>Total</cell>
+      </row>
+      <row>
+        <cell>Patients</cell>
+        <cell>453</cell>
+        <cell>650</cell>
+        <cell>547</cell>
+        <cell>350</cell>
+        <cell><strong>2000</strong></cell>
+      </row>
+      <row>
+        <cell>Standard Quota</cell>
+        <cell>56.625</cell>
+        <cell>81.250</cell>
+        <cell>68.375</cell>
+        <cell>43.750</cell>
+        <cell>-</cell>
+      </row>
+      <row>
+        <cell>Lower Quota</cell>
+        <cell>56</cell>
+        <cell>81</cell>
+        <cell>68</cell>
+        <cell>43</cell>
+        <cell><strong>248</strong></cell>
+      </row>
+      <row>
+        <cell>Surplus Added</cell>
+        <cell>+1</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>+1</cell>
+        <cell><strong>+2</strong></cell>
+      </row>
+      <row>
+        <cell>Final Apportionment</cell>
+        <cell><strong>57</strong></cell>
+        <cell><strong>81</strong></cell>
+        <cell><strong>68</strong></cell>
+        <cell><strong>44</strong></cell>
+        <cell><strong>250</strong></cell>
+      </row>
+    </tabular>
+
+  
+</solution>
+</exercise>
+
+          </page>
+
+          <!-- Exercise 2: Jefferson -->
+          <page>
+ <exercise>
+  <statement>
+    <p>
+      A hospital has a nursing staff of 250 nurses working in four shifts. 
+      The number of nurses apportioned to each shift is based on the average number of patients per shift, given in the table below. Use <alert>Jefferson's method</alert> to apportion the 250 nurses among the shifts at the hospital.
+    </p>
+
+    <tabular bottom="minor" top="minor" left="minor" right="minor">
+      <caption>Average Number of Patients per Shift</caption>
+      <col halign="left"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <row header="yes">
+        <cell>Shift</cell>
+        <cell>A</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+        <cell>D</cell>
+      </row>
+      <row>
+        <cell>Average Patients</cell>
+        <cell>453</cell>
+        <cell>650</cell>
+        <cell>547</cell>
+        <cell>350</cell>
+      </row>
+    </tabular>
+  </statement>
+
+  <solution>
+    <p>
+      To complete the apportionment using Jefferson's method, we apply a modified divisor so that the sum of the lower quotas exactly equals the required total.
+    </p>
+    <p>
+      <ol>
+        <li>
+          <p>
+            <strong>Find Total Population and Standard Divisor (<m>d</m>):</strong>
+            <me>\text{Total Patients} = 453 + 650 + 547 + 350 = 2000</me>
+            <me>d = \frac{2000 \text{ patients}}{250 \text{ nurses}} = 8</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Test the Standard Divisor:</strong> Dividing each population by <m>8</m> and rounding down gives lower quotas of <m>56, 81, 68,</m> and <m>43</m>. The sum of these initial lower quotas is <m>56 + 81 + 68 + 43 = 248</m>. This falls short of the <m>250</m> nurses needed.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Determine a Modified Divisor (<m>d_m</m>):</strong> Because our initial sum is too small, Jefferson's method requires us to choose a smaller divisor to increase the individual quotas. Testing a modified divisor of <m>d_m = 7.93</m> shifts the lower quotas upward to exactly equal <m>250</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      The complete apportionment computations under Jefferson's method are detailed below:
+    </p>
+
+    <tabular bottom="minor" top="minor" left="minor" right="minor">
+  <caption>Jefferson's Method Apportionment Results (Modified Divisor: 7.93)</caption>
+  <col halign="left"/>
+  <col halign="center"/>
+  <col halign="center"/>
+  <col halign="center"/>
+  <col halign="center"/>
+  <col halign="center"/>
+  
+  <!-- Row 1: Explicit Table Headers -->
+  <row header="yes">
+    <cell>Metric / Step</cell>
+    <cell>Shift A</cell>
+    <cell>Shift B</cell>
+    <cell>Shift C</cell>
+    <cell>Shift D</cell>
+    <cell>Total</cell>
+  </row>
+  
+  <!-- Row 2: Patient Population Data -->
+  <row>
+    <cell>Patients</cell>
+    <cell>453</cell>
+    <cell>650</cell>
+    <cell>547</cell>
+    <cell>350</cell>
+    <cell>2000</cell>
+  </row>
+  
+  <!-- Row 3: Initial Calculations -->
+  <row>
+    <cell>Standard Quota (d = 8)</cell>
+    <cell>56.625</cell>
+    <cell>81.250</cell>
+    <cell>68.375</cell>
+    <cell>43.750</cell>
+    <cell>—</cell>
+  </row>
+  
+  <!-- Row 4: Initial Step Result -->
+  <row>
+    <cell>Initial Lower Quota</cell>
+    <cell>56</cell>
+    <cell>81</cell>
+    <cell>68</cell>
+    <cell>43</cell>
+    <cell>248</cell>
+  </row>
+  
+  <!-- Row 5: Modified Calculation -->
+  <row>
+    <cell>Modified Quota (dm = 7.93)</cell>
+    <cell>57.125</cell>
+    <cell>81.967</cell>
+    <cell>68.979</cell>
+    <cell>44.136</cell>
+    <cell>—</cell>
+  </row>
+  
+  <!-- Row 6: Final Modified Target Allocation -->
+  <row>
+    <cell>Final Apportionment</cell>
+    <cell>57</cell>
+    <cell>81</cell>
+    <cell>68</cell>
+    <cell>44</cell>
+    <cell>250</cell>
+  </row>
+</tabular>
+
+  </solution>
+</exercise>
+
+          </page>
+
+          <!-- Exercise 3: Adam -->
+          <page>
+<exercise>
+  <statement>
+    <p>
+      A hospital has a nursing staff of 250 nurses working in four shifts. 
+      The number of nurses apportioned to each shift is based on the average number of patients per shift, given in the table below. Use <alert>Adams's method</alert> to apportion the 250 nurses among the shifts at the hospital.
+    </p>
+
+    <tabular bottom="minor" top="minor" left="minor" right="minor">
+      <caption>Average Number of Patients per Shift</caption>
+      <col halign="left"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <row header="yes">
+        <cell>Shift</cell>
+        <cell>A</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+        <cell>D</cell>
+      </row>
+      <row>
+        <cell>Average Patients</cell>
+        <cell>453</cell>
+        <cell>650</cell>
+        <cell>547</cell>
+        <cell>350</cell>
+      </row>
+    </tabular>
+  </statement>
+
+  <solution>
+    <p>
+      To complete the apportionment using Adams's method, we apply a modified divisor so that the sum of the upper quotas (rounded up) exactly equals the required total.
+    </p>
+    <p>
+      <ol>
+        <li>
+          <p>
+            <strong>Find Total Population and Standard Divisor (<m>d</m>):</strong>
+            <me>\text{Total Patients} = 453 + 650 + 547 + 350 = 2000</me>
+            <me>d = \frac{2000 \text{ patients}}{250 \text{ nurses}} = 8</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Test the Standard Divisor:</strong> Dividing each population by <m>8</m> and rounding up to the next highest integer gives upper quotas of <m>57, 82, 69,</m> and <m>44</m>. The sum of these initial upper quotas is <m>57 + 82 + 69 + 44 = 252</m>. This exceeds the target of <m>250</m> nurses.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Determine a Modified Divisor (<m>d_m</m>):</strong> Because our initial sum is too large, Adams's method requires us to choose a larger divisor to decrease the individual quotas. Testing a modified divisor of <m>d_m = 8.07</m> shifts the upper quotas downward to exactly equal <m>250</m>.
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      The complete apportionment calculations under Adams's method are organized in the accessible data layout below:
+    </p>
+
+    <tabular bottom="minor" top="minor" left="minor" right="minor">
+      <caption>Adams's Method Apportionment Results (Modified Divisor: 8.07)</caption>
+      <col halign="left"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <row header="yes">
+        <cell>Metric / Step</cell>
+        <cell>Shift A</cell>
+        <cell>Shift B</cell>
+        <cell>Shift C</cell>
+        <cell>Shift D</cell>
+        <cell>Total</cell>
+      </row>
+      <row>
+        <cell>Patients</cell>
+        <cell>453</cell>
+        <cell>650</cell>
+        <cell>547</cell>
+        <cell>350</cell>
+        <cell><strong>2000</strong></cell>
+      </row>
+      <row>
+        <cell>Standard Quota (<m>d=8</m>)</cell>
+        <cell>56.625</cell>
+        <cell>81.250</cell>
+        <cell>68.375</cell>
+        <cell>43.750</cell>
+        <cell>—</cell>
+      </row>
+      <row>
+        <cell>Initial Upper Quota</cell>
+        <cell>57</cell>
+        <cell>82</cell>
+        <cell>69</cell>
+        <cell>44</cell>
+        <cell><strong>252</strong></cell>
+      </row>
+      <row>
+        <cell>Modified Quota (<m>d_m=8.07</m>)</cell>
+        <cell>56.134</cell>
+        <cell>80.545</cell>
+        <cell>67.782</cell>
+        <cell>43.371</cell>
+        <cell>—</cell>
+      </row>
+      <row>
+        <cell>Final Apportionment</cell>
+        <cell><strong>57</strong></cell>
+        <cell><strong>81</strong></cell>
+        <cell><strong>68</strong></cell>
+        <cell><strong>44</strong></cell>
+        <cell><strong>250</strong></cell>
+      </row>
+    </tabular>
+  </solution>
+</exercise>
+
+          </page>
+
+          <!-- Exercise 4: all -->
+          <page>
+            <exercise>
+  <introduction>
+    <p>
+      The police department in a large city has 180 new officers to be apportioned among 6 high-crime precincts. The total number of recorded crimes for each respective precinct is documented in the data profile below.
+    </p>
+    
+    <tabular bottom="minor" top="minor" left="minor" right="minor">
+      <caption>Recorded Crimes by Police Precinct</caption>
+      <col halign="left"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <col halign="center"/>
+      <row header="yes">
+        <cell>Precinct</cell>
+        <cell>A</cell>
+        <cell>B</cell>
+        <cell>C</cell>
+        <cell>D</cell>
+        <cell>E</cell>
+        <cell>F</cell>
+      </row>
+      <row>
+        <cell>Crimes</cell>
+        <cell>446</cell>
+        <cell>526</cell>
+        <cell>835</cell>
+        <cell>227</cell>
+        <cell>338</cell>
+        <cell>456</cell>
+      </row>
+    </tabular>
+  </introduction>
+
+  <!-- ==================== TASK 1: HAMILTON ==================== -->
+  <task workspace="1in">
+    <statement>
+      <p>
+        Use <alert>Hamilton's method</alert> to apportion the new officers among the precincts.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <strong>1. Identify Metrics:</strong> Total crimes population equals <m>446 + 526 + 835 + 227 + 338 + 456 = 2828</m>. The Standard Divisor is:
+        <me>d = \frac{2828}{180} \approx 15.7111</me>
+      </p>
+      <p>
+        <strong>2. Distribute Remainders:</strong> Summing the lower whole quotas gives <m>28 + 33 + 53 + 14 + 21 + 29 = 178</m> allocations, leaving a surplus of <m>2</m> seats. Hamilton's method awards these seats to the largest fractional remainders: Precinct B (<m>0.4795</m>) and Precinct E (<m>0.5134</m>).
+      </p>
+      <tabular bottom="minor" top="minor" left="minor" right="minor">
+        <caption>Hamilton's Method Apportionment Results</caption>
+        <col halign="left"/>
+        <col halign="center"/><col halign="center"/><col halign="center"/>
+        <col halign="center"/><col halign="center"/><col halign="center"/>
+        <col halign="center"/>
+        <row header="yes">
+          <cell>Metric / Step</cell>
+          <cell>A</cell>
+          <cell>B</cell>
+          <cell>C</cell>
+          <cell>D</cell>
+          <cell>E</cell>
+          <cell>F</cell>
+          <cell>Total</cell>
+        </row>
+        <row>
+          <cell>Crimes</cell>
+          <cell>446</cell>
+          <cell>526</cell>
+          <cell>835</cell>
+          <cell>227</cell>
+          <cell>338</cell>
+          <cell>456</cell>
+          <cell>2828</cell>
+        </row>
+        <row>
+          <cell>Standard Quota</cell>
+          <cell>28.388</cell>
+          <cell>33.479</cell>
+          <cell>53.147</cell>
+          <cell>14.448</cell>
+          <cell>21.513</cell>
+          <cell>29.024</cell>
+          <cell>—</cell>
+        </row>
+        <row>
+          <cell>Lower Quota</cell>
+          <cell>28</cell>
+          <cell>33</cell>
+          <cell>53</cell>
+          <cell>14</cell>
+          <cell>21</cell>
+          <cell>29</cell>
+          <cell>178</cell>
+        </row>
+        <row>
+          <cell>Surplus Added</cell>
+          <cell>0</cell>
+          <cell>+1</cell>
+          <cell>0</cell>
+          <cell>0</cell>
+          <cell>+1</cell>
+          <cell>0</cell>
+          <cell>+2</cell>
+        </row>
+        <row>
+          <cell>Final Apportionment</cell>
+          <cell><strong>28</strong></cell>
+          <cell><strong>34</strong></cell>
+          <cell><strong>53</strong></cell>
+          <cell><strong>14</strong></cell>
+          <cell><strong>22</strong></cell>
+          <cell><strong>29</strong></cell>
+          <cell><strong>180</strong></cell>
+        </row>
+      </tabular>
+    </solution>
+  </task>
+
+  <!-- ==================== TASK 2: JEFFERSON ==================== -->
+  <task workspace="1in">
+    <statement>
+      <p>
+        Use <alert>Jefferson's method</alert> to apportion the new officers among the precincts.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Because the initial lower quota sum (<m>178</m>) is too small, Jefferson's method requires modifying the divisor downward to raise the quotas. Choosing a smaller modified divisor of <m>d_m = 15.46</m> shifts the lower whole quotas up to hit the targeted total allocation sum of exactly <m>180</m>.
+      </p>
+      <tabular bottom="minor" top="minor" left="minor" right="minor">
+        <caption>Jefferson's Method Apportionment Results (Modified Divisor: 15.46)</caption>
+        <col halign="left"/>
+        <col halign="center"/><col halign="center"/><col halign="center"/>
+        <col halign="center"/><col halign="center"/><col halign="center"/>
+        <col halign="center"/>
+        <row header="yes">
+          <cell>Metric / Step</cell>
+          <cell>A</cell>
+          <cell>B</cell>
+          <cell>C</cell>
+          <cell>D</cell>
+          <cell>E</cell>
+          <cell>F</cell>
+          <cell>Total</cell>
+        </row>
+        <row>
+          <cell>Crimes</cell>
+          <cell>446</cell>
+          <cell>526</cell>
+          <cell>835</cell>
+          <cell>227</cell>
+          <cell>338</cell>
+          <cell>456</cell>
+          <cell>2828</cell>
+        </row>
+        <row>
+          <cell>Modified Quota</cell>
+          <cell>28.849</cell>
+          <cell>34.023</cell>
+          <cell>54.010</cell>
+          <cell>14.683</cell>
+          <cell>21.863</cell>
+          <cell>29.495</cell>
+          <cell>—</cell>
+        </row>
+        <row>
+          <cell>Final Apportionment</cell>
+          <cell><strong>28</strong></cell>
+          <cell><strong>34</strong></cell>
+          <cell><strong>54</strong></cell>
+          <cell><strong>14</strong></cell>
+          <cell><strong>21</strong></cell>
+          <cell><strong>29</strong></cell>
+          <cell><strong>180</strong></cell>
+        </row>
+      </tabular>
+    </solution>
+  </task>
+
+  <!-- ==================== TASK 3: ADAMS ==================== -->
+  <task workspace="1in">
+    <statement>
+      <p>
+        Use <alert>Adams's method</alert> to apportion the new officers among the precincts.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Testing the standard upper quotas (rounding fractions up) gives a sum of <m>29 + 34 + 54 + 15 + 22 + 30 = 184</m>, which exceeds the 180 seats. Adams's method resolves this by increasing the divisor. Choosing a larger modified divisor of <m>d_m = 15.94</m> pushes the quotas downward so that their rounded-up total sums exactly to <m>180</m>.
+      </p>
+      <tabular bottom="minor" top="minor" left="minor" right="minor">
+        <caption>Adams's Method Apportionment Results (Modified Divisor: 15.94)</caption>
+        <col halign="left"/>
+        <col halign="center"/><col halign="center"/><col halign="center"/>
+        <col halign="center"/><col halign="center"/><col halign="center"/>
+        <col halign="center"/>
+        <row header="yes">
+          <cell>Metric / Step</cell>
+          <cell>A</cell>
+          <cell>B</cell>
+          <cell>C</cell>
+          <cell>D</cell>
+          <cell>E</cell>
+          <cell>F</cell>
+          <cell>Total</cell>
+        </row>
+        <row>
+          <cell>Crimes</cell>
+          <cell>446</cell>
+          <cell>526</cell>
+          <cell>835</cell>
+          <cell>227</cell>
+          <cell>338</cell>
+          <cell>456</cell>
+          <cell>2828</cell>
+        </row>
+        <row>
+          <cell>Modified Quota</cell>
+          <cell>27.980</cell>
+          <cell>32.999</cell>
+          <cell>52.384</cell>
+          <cell>14.241</cell>
+          <cell>21.205</cell>
+          <cell>28.607</cell>
+          <cell>—</cell>
+        </row>
+        <row>
+          <cell>Final Apportionment</cell>
+          <cell><strong>28</strong></cell>
+          <cell><strong>33</strong></cell>
+          <cell><strong>53</strong></cell>
+          <cell><strong>15</strong></cell>
+          <cell><strong>22</strong></cell>
+          <cell><strong>29</strong></cell>
+          <cell><strong>180</strong></cell>
+        </row>
+      </tabular>
+    </solution>
+  </task>
+</exercise>
+
+          </page>
+
+</worksheet>

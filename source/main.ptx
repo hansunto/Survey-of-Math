@@ -93,6 +93,7 @@
         </p>
       </introduction>
       <xi:include href="./handouts/handout-voting.ptx" />
+      <xi:include href="./handouts/handout-apportion.ptx" />
       <!-- <xi:include href="./notes/finance.ptx"/> -->
       <!--<xi:include href="./notes/unit01.ptx"/>
       <xi:include href="./notes/week02.ptx"/>-->

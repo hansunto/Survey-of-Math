@@ -1069,7 +1069,7 @@
       \begin{tikzpicture} 
         \begin{axis}[ 
           ybar=10pt, 
-          bar width=23, 
+          bar width=24, 
           bar shift=0pt, 
           ymin=0, ymax=8, 
           xmin=25, xmax=105, 

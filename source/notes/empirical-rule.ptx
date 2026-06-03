@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="notes-empirical-rule">
 <title>The Empirical Rule</title>
 <definition xml:id="def-bell-curve">
@@ -47,7 +48,7 @@ typically follow this bell-shaped trajectory when plotted in mass quantities.
             % Curve plotting
             \addplot[very thick, cyan!80!black] {1/(10*sqrt(2*pi))*exp(-(x-75)^2/(2*10^2))};
             
-            % Center boundary line (FIXED: Changed - to --)
+            % Center boundary line
             \draw[dashed, red, thick] (axis cs:75,0) -- (axis cs:75,0.04);
             
             \end{axis}
@@ -104,7 +105,7 @@ typically follow this bell-shaped trajectory when plotted in mass quantities.
             % Complete outline of the curve
             \addplot[very thick, blue] {1/(sqrt(2*pi))*exp(-x^2/2)};
             
-            % Center boundary line (FIXED: Changed - to --)
+            % Center boundary line
             \draw[dashed, red, thick] (axis cs:0,0) -- (axis cs:0,0.4);
             \end{axis}
             \end{tikzpicture}
@@ -239,20 +240,20 @@ typically follow this bell-shaped trajectory when plotted in mass quantities.
     <statement>
         <p>
             Human height is commonly considered an approximately normally distributed measure. 
-            If the mean height of adult males in the United States is 5′ 10″, with a standard deviation of 1.5″, 
-            how common are men with heights greater than 6′ 1″?
+            If the mean height of adult males in the United States is 5' 10", with a standard deviation of 1.5", 
+            how common are men with heights greater than 6' 1"?
         </p>
     </statement>
     <solution>
         <p>
-            Since the mean is 5′ 10″ and the standard deviation is 1.5″, a height of 6′ 1″ is exactly 3 inches 
+            Since the mean is 5' 10" and the standard deviation is 1.5", a height of 6' 1" is exactly 3 inches 
             above the mean. This places it exactly <m>2</m> standard deviations above the average.
         </p>
         <p>
             According to the empirical rule, about <percent>95</percent> of data falls within <m>2</m> standard 
             deviations of the mean, meaning <percent>5</percent> falls outside this range. Because the distribution 
             is symmetrical, half of that remaining amount (<percent>2.5</percent>) sits in the upper tail. 
-            Therefore, only about <percent>2.5</percent> of men are taller than 6′ 1″, making them quite rare in this population.
+            Therefore, only about <percent>2.5</percent> of men are taller than 6' 1", making them quite rare in this population.
         </p>
     </solution>
 </example>
@@ -262,18 +263,18 @@ typically follow this bell-shaped trajectory when plotted in mass quantities.
     <statement>
         <p>
             If the maximum jumping height of US high school high jumpers is normally distributed with a mean of 
-            5′ 11.5″ and a standard deviation of 2.2″, how unusual is it to see a high school jumper clear 6′ 3.9″?
+            5' 11.5" and a standard deviation of 2.2", how unusual is it to see a high school jumper clear 6' 3.9"?
         </p>
     </statement>
     <solution>
         <p>
-            If the mean is 5′ 11.5″, then <m>1</m> standard deviation above the mean is 6′ 1.7″ and <m>2</m> 
-            standard deviations above the mean is 6′ 3.9″.
+            If the mean is 5' 11.5", then <m>1</m> standard deviation above the mean is 6' 1.7" and <m>2</m> 
+            standard deviations above the mean is 6' 3.9".
         </p>
         <p>
             According to the empirical rule, <percent>95</percent> of all jumpers max out within <m>2</m> standard 
             deviations of the mean. This leaves <percent>5</percent> split equally between the extremely low and 
-            extremely high ends. This means that less than <percent>2.5</percent> of jumpers clear 6′ 3.9″, 
+            extremely high ends. This means that less than <percent>2.5</percent> of jumpers clear 6' 3.9", 
             making it very unusual to see a competitor exceed this height.
         </p>
     </solution>
@@ -306,13 +307,13 @@ typically follow this bell-shaped trajectory when plotted in mass quantities.
 <exercise xml:id="exer-women-height-distribution">
     <statement>
         <p>
-            Suppose the height of adult women in the United States is normally distributed with a mean of 5′ 8″ 
-            and a standard deviation of <m>1.5</m>″. What is the probability that a randomly chosen woman 
-            in the United States is shorter than 5′ 5″?
+            Suppose the height of adult women in the United States is normally distributed with a mean of 5' 8" 
+            and a standard deviation of <m>1.5</m>". What is the probability that a randomly chosen woman 
+            in the United States is shorter than 5' 5"?
         </p>
         
         <figure xml:id="fig-women-height-tail">
-            <caption>Normal distribution curve of women's heights with the lower tail below 5′ 5″ shaded.</caption>
+            <caption>Normal distribution curve of women's heights with the lower tail below 5' 5" shaded.</caption>
             <image xml:id="img-women-height-tail" width="80%">
                 <description>A normal distribution curve centered at 5 feet 8 inches. The area under the curve to the left of 5 feet 5 inches is shaded in blue, representing the lower 2.5 percent of the population.</description>
                 <latex-image>
@@ -356,39 +357,38 @@ typically follow this bell-shaped trajectory when plotted in mass quantities.
     </statement>
     <solution>
         <p>
-            First, determine how many standard deviations 5' 5″ is from the mean of 5'8″. 
-            Since each standard deviation is <m>1.5</m>″, a height of 5' 6.5″ is <m>1</m> standard deviation 
-            below the mean, and 5' 5″ is exactly <m>2</m> standard deviations below the mean.
+            First, determine how many standard deviations 5' 5" is from the mean of 5'8". 
+            Since each standard deviation is <m>1.5</m>", a height of 5' 6.5" is <m>1</m> standard deviation 
+            below the mean, and 5' 5" is exactly <m>2</m> standard deviations below the mean.
         </p>
         <p>
-            We can find the total percentage of women who are 5' 5″ or taller by adding up the known regions 
+            We can find the total percentage of women who are 5' 5" or taller by adding up the known regions 
             of the normal distribution:
         </p>
         <ul>
             <li>
-                <p>50% of women are taller than the mean of 5' 8″.</p>
+                <p>50% of women are taller than the mean of 5' 8".</p>
             </li>
             <li>
-                <p>34% of women are between 5' 6.5″ and 5' 8″ (within <m>1</m> standard deviation below the mean).</p>
+                <p>34% of women are between 5' 6.5" and 5' 8" (within <m>1</m> standard deviation below the mean).</p>
             </li>
             <li>
-                <p>13.5% of women are between 5' 5″ and 5' 6.5″ (between <m>1</m> and <m>2</m> standard deviations below the mean).</p>
+                <p>13.5% of women are between 5' 5" and 5' 6.5" (between <m>1</m> and <m>2</m> standard deviations below the mean).</p>
             </li>
         </ul>
         <p>
             Adding these regions together gives: <m>50\% + 34\% + 13.5\% = 97.5\%</m>. 
-            Since 97.5% of women are 5' 5″ or taller, the remaining portion is 
+            Since 97.5% of women are 5' 5" or taller, the remaining portion is 
             <m>100\% - 97.5\% = 2.5\%</m>.
         </p>
         <p>
             <em>Alternative Method:</em> The empirical rule states that 95% of the data 
             falls within <m>2</m> standard deviations of the mean. This leaves 5% split equally 
             between the two extreme outer tails (<m>5\% \div 2 = 2.5\%</m>). Therefore, the probability that a 
-            randomly chosen woman is shorter than 5' 5″ is 2.5% (or <m>0.025</m>).
+            randomly chosen woman is shorter than 5' 5" is 2.5% (or <m>0.025</m>).
         </p>
     </solution>
 </exercise>
-
 
 
 

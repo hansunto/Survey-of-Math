@@ -1,0 +1,398 @@
+<section xml:id="notes-empirical-rule">
+<title>The Empirical Rule</title>
+<definition xml:id="def-bell-curve">
+  <title>Bell-Curve</title>
+  <statement>
+    <p>
+      <alert>A bell curve</alert> is used in statistics to represent the continuous 
+      probability distribution of a naturally occurring variable. 
+      It is perfectly symmetrical, showing that data near the mean occurs more 
+      frequently than data far from the mean.
+    </p>
+  </statement>
+</definition>
+<p>
+For example, standardized test scores, human heights, and manufacturing errors 
+typically follow this bell-shaped trajectory when plotted in mass quantities.
+</p>
+
+<example xml:id="ex-exam-scores-bell-curve">
+  <statement>
+    <p>
+      An instructor plots final exam grades and notes they follow a normal distribution with a mean score of <m>75</m>. Describe how the shape of this curve changes if you look at scores moving away from 75 in either direction.
+    </p>
+
+    <figure xml:id="fig-normal-distribution-curve">
+    <caption>Symmetrical distribution curve centered around a population mean.</caption>
+    <image xml:id="img-bellcurve" width="60%">
+        <description>A symmetrical, bell-shaped probability density curve tracking exam scores. The horizontal axis represents exam scores from 45 to 105, with major ticks every 15 units. The peak of the smooth cyan curve sits directly above the mean score of 75, marked by a vertical dashed red line. The curve slopes downward symmetrically as it moves left toward 45 or right toward 105, tapering off near the horizontal axis at the extremes.</description>
+        <latex-image>
+            \begin{tikzpicture}
+            \begin{axis}[
+                no markers, 
+                domain=45:105, 
+                samples=100, 
+                ymin=0, 
+                ymax=0.07, 
+                axis lines=left, 
+                xlabel={Exam Scores}, 
+                ylabel={Probability Density}, 
+                height=5cm, 
+                width=6cm, 
+                xtick={45,60,75,90,105}, 
+                grid=major, 
+                grid style={dashed, gray!30}
+            ]
+            
+            % Curve plotting
+            \addplot[very thick, cyan!80!black] {1/(10*sqrt(2*pi))*exp(-(x-75)^2/(2*10^2))};
+            
+            % Center boundary line (FIXED: Changed - to --)
+            \draw[dashed, red, thick] (axis cs:75,0) -- (axis cs:75,0.04);
+            
+            \end{axis}
+            \end{tikzpicture}
+        </latex-image>
+    </image>
+</figure>
+
+  </statement>
+
+  <solution>
+    <p>
+      The highest point of the curve sits directly above the mean score of 75. As you move outward toward lower scores (left) or higher scores (right), the curve slopes downward symmetrically, flattening out as it approaches the extremes.
+    </p>
+  </solution>
+</example>
+
+<exercise>
+  <statement>
+    <p>
+      If a dataset of adult heights perfectly matches a bell curve layout, what percentage of the population profile falls below the exact center peak value of the distribution?
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      Because a true normal distribution curve is perfectly symmetrical, the center peak represents both the mean and the median. Therefore, exactly <strong><m>50\%</m></strong> of the population data falls below this center peak line.
+    </p>
+
+    <figure xml:id="fig-bell-curve-half-shade">
+    <caption>Symmetrical normal distribution curve with the lower half shaded.</caption>
+    <image xml:id="img-bell-curve-half" width="60%">
+        <description>A symmetrical bell curve where the entire left half of the area under the curve—from the far left up to the center peak—is shaded in light blue, visually representing exactly 50 percent of the total distribution population.</description>
+        <latex-image>
+            \begin{tikzpicture}
+            \begin{axis}[
+                no markers, 
+                domain=-3:3, 
+                samples=100, 
+                ymin=0, 
+                ymax=0.5, 
+                axis lines=left, 
+                xlabel={Median Center}, 
+                ylabel={Probability Density}, 
+                height=6cm, 
+                width=6cm, 
+                xtick={0}, 
+                xticklabels={Center Peak}, 
+                grid=none
+            ]
+            % Shaded area for the lower 50%
+            \addplot[fill=blue!20, draw=none, domain=-3:0, samples=50] {1/(sqrt(2*pi))*exp(-x^2/2)} \closedcycle;
+            
+            % Complete outline of the curve
+            \addplot[very thick, blue] {1/(sqrt(2*pi))*exp(-x^2/2)};
+            
+            % Center boundary line (FIXED: Changed - to --)
+            \draw[dashed, red, thick] (axis cs:0,0) -- (axis cs:0,0.4);
+            \end{axis}
+            \end{tikzpicture}
+        </latex-image>
+    </image>
+</figure>
+
+  </solution>
+</exercise>
+
+<p>
+    Note that the <xref ref="standard-deviation">standard deviation</xref> is a measure 
+    of how spread out data points are from their mean, calculated as the square root of the variance. 
+    To determine if a specific data value is far from the center, you calculate exactly how many 
+    standard deviations it sits away from that mean.
+</p>
+<p>
+    A data distribution shows how data points cluster or spread across their range of values. 
+    <alert>A normal distribution </alert> is a specific, symmetrical bell-shaped curve with predictable patterns. 
+    Exactly half (50%) of the data lies below the mean, and half lies above it, as illustrated in 
+    <xref ref="fig-bell-curve-half-shade" />.
+</p>
+
+<definition xml:id="def-empirical-rule">
+    <title>The empirical rule</title>
+    <statement>
+        <p>
+            The <term>empirical rule</term> (or 68-95-99.7 rule) states that for any data set 
+            following a symmetrical, bell-shaped normal distribution, almost all data 
+            points lie within three standard deviations of the mean:
+        </p>
+        <p>
+         <ul>
+            <li>
+            <p>Approximately 68% of the data points fall within one standard deviation of the mean.</p>
+            </li>
+            <li>
+            <p>Approximately 95% of the data points fall within two standard deviations of the mean.</p>
+            </li>
+            <li>
+            <p>Approximately 99.7% of the data points fall within three standard deviations of the mean.</p>
+            </li>
+        </ul>   
+        </p>
+    </statement>
+</definition>
+
+<figure xml:id="fig-empirical-rule">
+    <caption>The 68-95-99.7 empirical rule for a normal distribution.</caption>
+    <image xml:id="img-empirical-rule" width="80%">
+        <description>A symmetrical normal distribution curve with three horizontal brackets underneath showing percentages. The innermost bracket spans from minus 1 to plus 1 standard deviations and is labeled 68 percent. The middle bracket spans from minus 2 to plus 2 standard deviations and is labeled 95 percent. The outermost bracket spans from minus 3 to plus 3 standard deviations and is labeled 99.7 percent.</description>
+        <latex-image>
+            \begin{tikzpicture}[x=1.2cm, y=10cm]
+            
+            % Draw the standard normal distribution curve using native TikZ math
+            \draw[very thick, black] plot[domain=-3.5:3.5, samples=50] (\x, {1/(sqrt(2*3.14159))*exp(-\x*\x/2)});
+            
+            % Vertical thick standard deviation lines
+            \draw[red!80!black, thick] (-3, 0) -- (-3, 0.0044);
+            \draw[purple!80!black, thick] (-2, 0) -- (-2, 0.054);
+            \draw[blue!80!black, thick] (-1, 0) -- (-1, 0.242);
+            \draw[gray!80!black, thick] (0, 0)  -- (0, 0.398);
+            \draw[blue!80!black, thick] (1, 0)  -- (1, 0.242);
+            \draw[purple!80!black, thick] (2, 0)  -- (2, 0.054);
+            \draw[red!80!black, thick] (3, 0)  -- (3, 0.0044);
+            
+            % Simple flat horizontal base axis line
+            \draw[thick] (-3.5, 0) -- (3.5, 0);
+            
+            % Standard Deviation Labels on Axis
+            \node[below=2pt] at (0, 0)  {mean};
+            \node[below=2pt] at (0.5, 0.15)  {$34\%$};
+            \node[below=2pt] at (-0.5, 0.15) {$34\%$};
+            \node[below=2pt] at (1.5, 0.15)  {$13.5\%$};
+            \node[below=2pt] at (-1.5, 0.15) {$13.5\%$};
+            \node[below=2pt] at (2.5, 0.15)  {$2.35\%$};
+            \node[below=2pt] at (-2.5, 0.15) {$2.35\%$};
+            
+            % Standard Deviation Labels on Axis
+            \node[below=2pt] at (0.5, 0.1)  {1 SD};
+            \node[below=2pt] at (-0.5, 0.1) {1 SD};
+            \node[below=2pt] at (1.5, 0.1)  {2 SD};
+            \node[below=2pt] at (-1.5, 0.1) {2 SD};
+            \node[below=2pt] at (2.5, 0.1)  {3 SD};
+            \node[below=2pt] at (-2.5, 0.1) {3 SD};
+            
+            % 68 percent Capped Range Bracket (No arrow symbols or % signs)
+            \draw[thick, blue!80!black] (-1, -0.04) -- (-1, -0.06) -- (1, -0.06) -- (1, -0.04);
+            \node[fill=white, text=blue!80!black, font=\small] at (0, -0.06) {$68\%$};
+            
+            % 95 percent Capped Range Bracket
+            \draw[thick, purple!80!black] (-2, -0.09) -- (-2, -0.11) -- (2, -0.11) -- (2, -0.09);
+            \node[fill=white, text=purple!80!black, font=\small] at (0, -0.11) {$95\%$};
+            
+            % 99.7 percent Capped Range Bracket
+            \draw[thick, red!80!black] (-3, -0.14) -- (-3, -0.16) -- (3, -0.16) -- (3, -0.14);
+            \node[fill=white, text=red!80!black, font=\small] at (0, -0.16) {$99.7\%$};
+            
+            \end{tikzpicture}
+        </latex-image>
+    </image>
+</figure>
+
+<p>
+    This graphic provides a concise summary of the vital statistics of a normal distribution. 
+    Because the graph resembles a bell, the normal distribution is also widely known as a <q>bell curve.</q> 
+    It possesses unique, predictable probability properties:
+</p>
+
+<ul>
+    <li>
+        <p>Exactly 50% of the data lies above the mean, and 50% lies below it.</p>
+    </li>
+    <li>
+        <p>Approximately 68% of the data occurs within <m>1</m> standard deviation of the mean.</p>
+    </li>
+    <li>
+        <p>Approximately 95% of the data occurs within <m>2</m> standard deviations of the mean.</p>
+    </li>
+    <li>
+        <p>Approximately 99.7% of the data occurs within <m>3</m> standard deviations of the mean.</p>
+    </li>
+</ul>
+
+<p>
+    Because of these distinct probability ranges, the empirical rule is also frequently 
+    called the 68-95-99.7 rule.
+</p>
+
+<example xml:id="exam-height-distribution">
+    <title>Human Height Distribution</title>
+    <statement>
+        <p>
+            Human height is commonly considered an approximately normally distributed measure. 
+            If the mean height of adult males in the United States is 5′ 10″, with a standard deviation of 1.5″, 
+            how common are men with heights greater than 6′ 1″?
+        </p>
+    </statement>
+    <solution>
+        <p>
+            Since the mean is 5′ 10″ and the standard deviation is 1.5″, a height of 6′ 1″ is exactly 3 inches 
+            above the mean. This places it exactly <m>2</m> standard deviations above the average.
+        </p>
+        <p>
+            According to the empirical rule, about <percent>95</percent> of data falls within <m>2</m> standard 
+            deviations of the mean, meaning <percent>5</percent> falls outside this range. Because the distribution 
+            is symmetrical, half of that remaining amount (<percent>2.5</percent>) sits in the upper tail. 
+            Therefore, only about <percent>2.5</percent> of men are taller than 6′ 1″, making them quite rare in this population.
+        </p>
+    </solution>
+</example>
+
+<example xml:id="exam-high-jump-distribution">
+    <title>High School High Jumpers</title>
+    <statement>
+        <p>
+            If the maximum jumping height of US high school high jumpers is normally distributed with a mean of 
+            5′ 11.5″ and a standard deviation of 2.2″, how unusual is it to see a high school jumper clear 6′ 3.9″?
+        </p>
+    </statement>
+    <solution>
+        <p>
+            If the mean is 5′ 11.5″, then <m>1</m> standard deviation above the mean is 6′ 1.7″ and <m>2</m> 
+            standard deviations above the mean is 6′ 3.9″.
+        </p>
+        <p>
+            According to the empirical rule, <percent>95</percent> of all jumpers max out within <m>2</m> standard 
+            deviations of the mean. This leaves <percent>5</percent> split equally between the extremely low and 
+            extremely high ends. This means that less than <percent>2.5</percent> of jumpers clear 6′ 3.9″, 
+            making it very unusual to see a competitor exceed this height.
+        </p>
+    </solution>
+</example>
+
+<example xml:id="exam-snow-depth-distribution">
+    <title>Yard Snow Depth Distribution</title>
+    <statement>
+        <p>
+            Suppose the depth of the snow in a yard is normally distributed with a mean of <m>2.5</m> inches 
+            and a standard deviation of <m>0.25</m> inches. What is the probability that a randomly chosen 
+            location in the yard has a snow depth between <m>2.25</m> and <m>2.75</m> inches?
+        </p>
+    </statement>
+    <solution>
+        <p>
+            First, find how many standard deviations the given depths sit away from the center. 
+            A depth of <m>2.25</m> inches is exactly one standard deviation below the mean (<m>2.5 - 0.25</m>). 
+            A depth of <m>2.75</m> inches is exactly one standard deviation above the mean (<m>2.5 + 0.25</m>).
+        </p>
+        <p>
+            According to the empirical rule, approximately 68% of the data in a normal distribution 
+            falls within one standard deviation of the mean. Therefore, the probability that a randomly chosen 
+            location has a snow depth between <m>2.25</m> and <m>2.75</m> inches is approximately 68%
+            (or <m>0.68</m>).
+        </p>
+    </solution>
+</example>
+
+<exercise xml:id="exer-women-height-distribution">
+    <statement>
+        <p>
+            Suppose the height of adult women in the United States is normally distributed with a mean of 5′ 8″ 
+            and a standard deviation of <m>1.5</m>″. What is the probability that a randomly chosen woman 
+            in the United States is shorter than 5′ 5″?
+        </p>
+        
+        <figure xml:id="fig-women-height-tail">
+            <caption>Normal distribution curve of women's heights with the lower tail below 5′ 5″ shaded.</caption>
+            <image xml:id="img-women-height-tail" width="80%">
+                <description>A normal distribution curve centered at 5 feet 8 inches. The area under the curve to the left of 5 feet 5 inches is shaded in blue, representing the lower 2.5 percent of the population.</description>
+                <latex-image>
+                    \begin{tikzpicture}[x=1.2cm, y=10cm]
+                    
+                    % Shaded lower tail region (below -2 standard deviations)
+                    \fill[blue!30] plot[domain=-3.5:-2, samples=20] (\x, {1/(sqrt(2*3.14159))*exp(-\x*\x/2)}) -- (-2,0) -- (-3.5,0) -- cycle;
+                    
+                    % Draw the normal distribution curve
+                    \draw[very thick, black] plot[domain=-3.5:3.5, samples=50] (\x, {1/(sqrt(2*3.14159))*exp(-\x*\x/2)});
+                    
+                    % Vertical dashed standard deviation lines
+                    \draw[gray!40, dashed] (-3, 0) -- (-3, 0.0044);
+                    \draw[gray!40, dashed] (-2, 0) -- (-2, 0.054);
+                    \draw[gray!40, dashed] (-1, 0) -- (-1, 0.242);
+                    \draw[gray!40, dashed] (0, 0)  -- (0, 0.398);
+                    \draw[gray!40, dashed] (1, 0)  -- (1, 0.242);
+                    \draw[gray!40, dashed] (2, 0)  -- (2, 0.054);
+                    \draw[gray!40, dashed] (3, 0)  -- (3, 0.0044);
+                    
+                    % Simple flat horizontal base axis line
+                    \draw[thick] (-3.5, 0) -- (3.5, 0);
+                    
+                    % Height Labels on Axis
+                    \node[below=2pt] at (0, 0)  {5'8''};
+                    \node[below=2pt] at (1, 0)  {5'9.5''};
+                    \node[below=2pt] at (-1, 0) {5'6.5''};
+                    \node[below=2pt] at (2, 0)  {5'11''};
+                    \node[below=2pt] at (-2, 0) {5'5''};
+                    \node[below=2pt] at (3, 0)  {6'0.5''};
+                    \node[below=2pt] at (-3, 0) {5'3.5''};
+                    
+                    % Label pointing out the shaded 2.5% area
+                    \node[text=blue!80!black, font=\small] at (-2.6, 0.06) {2.5\%};
+                    \draw[thick, blue!80!black] (-2.5, 0.04) -- (-2.2, 0.01);
+                    
+                    \end{tikzpicture}
+                </latex-image>
+            </image>
+        </figure>
+    </statement>
+    <solution>
+        <p>
+            First, determine how many standard deviations 5' 5″ is from the mean of 5'8″. 
+            Since each standard deviation is <m>1.5</m>″, a height of 5' 6.5″ is <m>1</m> standard deviation 
+            below the mean, and 5' 5″ is exactly <m>2</m> standard deviations below the mean.
+        </p>
+        <p>
+            We can find the total percentage of women who are 5' 5″ or taller by adding up the known regions 
+            of the normal distribution:
+        </p>
+        <ul>
+            <li>
+                <p>50% of women are taller than the mean of 5' 8″.</p>
+            </li>
+            <li>
+                <p>34% of women are between 5' 6.5″ and 5' 8″ (within <m>1</m> standard deviation below the mean).</p>
+            </li>
+            <li>
+                <p>13.5% of women are between 5' 5″ and 5' 6.5″ (between <m>1</m> and <m>2</m> standard deviations below the mean).</p>
+            </li>
+        </ul>
+        <p>
+            Adding these regions together gives: <m>50\% + 34\% + 13.5\% = 97.5\%</m>. 
+            Since 97.5% of women are 5' 5″ or taller, the remaining portion is 
+            <m>100\% - 97.5\% = 2.5\%</m>.
+        </p>
+        <p>
+            <em>Alternative Method:</em> The empirical rule states that 95% of the data 
+            falls within <m>2</m> standard deviations of the mean. This leaves 5% split equally 
+            between the two extreme outer tails (<m>5\% \div 2 = 2.5\%</m>). Therefore, the probability that a 
+            randomly chosen woman is shorter than 5' 5″ is 2.5% (or <m>0.025</m>).
+        </p>
+    </solution>
+</exercise>
+
+
+
+
+
+
+
+</section>

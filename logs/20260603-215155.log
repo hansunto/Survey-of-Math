@@ -1,0 +1,58 @@
+INFO    : Building target course
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /workspaces/Survey-of-Math/output/course.
+INFO    : discovering source file's directory name: /workspaces/Survey-of-Math/source
+INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/assets
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 8.1.1
+INFO    : Downloading Runestone Services, version 8.1.1
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-denver
+INFO    : converting /workspaces/Survey-of-Math/source/main.ptx to HTML in /tmp/ptx-786jzmw5
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "sec-measures-of-center-spread" (xml:id), "Measures of Center and Spread" (title)
+INFO    : * PTX:INFO:   checking all deprecated elements.
+WARNING : * PTX:DEPRECATE: (2019-02-06) the "percent" element is no longer necessary, simply replace with a bare "%" character (9 times)
+INFO    : *              located within: "exam-height-distribution" (xml:id), "Human Height Distribution" (title)
+INFO    : *              located within: "exam-high-jump-distribution" (xml:id), "High School High Jumpers" (title)
+INFO    : *              located within: "exam-snow-depth-distribution" (xml:id), "Yard Snow Depth Distribution" (title)
+INFO    : * --------------
+WARNING : * PTX:DEPRECATE: (2022-04-25) a "@label" attribute (on a "ul" or "ol" element) has been deprecated and should be replaced by the functionally equivalent "@marker".  We will attempt to honor your request (10 times)
+INFO    : *              located within: "Probability of Performers" (title)
+INFO    : *              located within: "Probability of Club Committee Selection" (title)
+INFO    : *              located within: "Probability of Defective Transistors" (title)
+INFO    : *              located within: "Probability of Marbles Without Replacement" (title)
+INFO    : *              located within: "activity-02-intro-activity" (xml:id), "02. Activity Apportionment Methods" (title)
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "notes-Voting") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located within: "activity-01-intro-activity" (xml:id), "01. Activity Voting Methods" (title)
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "section-apportionment") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "notes-simple-interest") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located within: "activity-03-intro-activity" (xml:id), "03. Activity Simple Interest" (title)
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "notes-compound-interest") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located within: "activity-04-intro-activity" (xml:id), "04. Activity Compound Interest" (title)
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "notes-Annuities") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located within: "activity-05-intro-activity" (xml:id), "05. Activity Annuities" (title)
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "notes-Mortgages") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located within: "activity-06-intro-activity" (xml:id), "06. Activity Loans" (title)
+INFO    : *              located within: "activity-07-intro-activity" (xml:id), "07. Activity Mortgages" (title)
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /tmp/ptx-786jzmw5
+INFO    : Removing temporary directory /tmp/ptx-y3mvuxcw
+INFO    : 
+Finished build for target course. Run `pretext view course` to see the results.
+
+INFO    : 
+Success!  Built requested target(s) without errors.
+
+INFO    : 

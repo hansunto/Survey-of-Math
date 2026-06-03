@@ -533,7 +533,7 @@ values; <m>\bar{x}= \dfrac{\sum x}{n} </m>.
 </example>
 
 
-<definition>
+<definition xml:id="standard-deviation">
     <title>Standard Deviation</title>
     <p>The standard deviation is a measure of variation based on measuring how 
       far each data value deviates, or is different, from the mean.</p>

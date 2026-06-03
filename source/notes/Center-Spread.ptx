@@ -534,10 +534,10 @@ values; <m>\bar{x}= \dfrac{\sum x}{n} </m>.
 
 
 <definition>
-    <concept>Standard Deviation</concept>
-    <description>The standard deviation is a measure of variation based on measuring how far each data value deviates, or is different, from the mean.</description>
+    <title>Standard Deviation</title>
+    <p>The standard deviation is a measure of variation based on measuring how 
+      far each data value deviates, or is different, from the mean.</p>
 <ul>
-    <li>The standard deviation is a measure of variation based on measuring how far each data value deviates, or is different, from the mean.</li>
     <li>Standard deviation is always positive.</li>
     <li>Standard deviation will be zero if all the data values are equal, and will get larger as the data spreads out.</li>
     <li>Standard deviation has the same units as the original data.</li>

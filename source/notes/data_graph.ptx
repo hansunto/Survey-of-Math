@@ -1,29 +1,50 @@
 <section xml:id="notes-Visualizing-Data-Through-Graphs">
 
-  <title>Visualizing Data Through Graphs </title>  
+  <title>Visualizing Data Through Graphs</title>
+
 <introduction>
-    <p>
-      Data alone can be dense and challenging to interpret. To make information accessible, researchers and analysts rely on visual representations. The four most common types of graphs used to present quantitative data are bar graphs, line graphs, pie charts, and scatter plots. Each serves a distinct purpose dictated by the nature of the variables being analyzed.
-    </p>
-  </introduction>
+  <p>
+    After collecting survey or experimental data, we must summarize and present it meaningfully for our audience. 
+    We will start with graphical data presentations before moving on to numerical summaries.
+  </p>
+  <p>
+    Raw information can often feel overwhelming and difficult to interpret. 
+    To reveal clear insights, researchers and data analysts rely heavily on visual graphics. 
+    The four primary tools used to display quantitative variables are bar graphs, line graphs, pie charts and histogram. 
+    The specific choice among them depends entirely on the characteristics of the data being evaluated.
+  </p>
+  <p>
+    Categorical (or qualitative) data helps us sort individual subjects into distinct groups. 
+    To make sense of this information, we usually begin by constructing a two-column <alert>frequency table</alert>. 
+    The first column lists out the available categories, while the parallel column captures the corresponding frequency—meaning the absolute count of observations belonging to each classification.
+  </p>
+</introduction>
+
 
 <definition xml:id="def-bar-graphs">
   <title>Bar graph</title>
   <statement>
     <p>
-      <alert>Bar graphs</alert> are best suited for comparing quantities or counts across distinct, independent categories. They utilize horizontal or vertical rectangular bars where the length or height of each bar directly corresponds to the numerical value it represents.
+      <alert>Bar graphs</alert> are best suited for comparing quantities or counts 
+      across distinct, independent categories. They utilize horizontal or vertical 
+      rectangular bars where the length or height of each bar directly corresponds 
+      to the numerical value it represents.
     </p>
   </statement>
 </definition>
 
 <p>
-  For example, a political analyst would use a bar graph to compare the total number of votes received by different candidates in an election, allowing the reader to instantly identify the frontrunner.
+  For example, a political analyst would use a bar graph to compare the total number of
+   votes received by different candidates in an election, allowing the reader to 
+   instantly identify the frontrunner.
 </p>
 
 <example>
   <statement>
     <p>
-      A small business tracks the number of laptops sold over three months: January (15 units), February (22 units), and March (18 units). Determine which category goes on each axis to construct a vertical bar graph.
+      A small business tracks the number of laptops sold over three months: 
+      January (15 units), February (22 units), and March (18 units). 
+      Determine which category goes on each axis to construct a vertical bar graph.
     </p>
 
     <figure xml:id="fig-vertical-bar-graph">
@@ -82,16 +103,157 @@
   </solution>
 </example>
 
+    <p>
+      An insurance provider calculates policy premiums by analyzing established risk variables. 
+      Drivers classified under higher-risk brackets are subject to increased premium rates. 
+      One variable often evaluated is vehicle color, under the assumption that certain car colors are linked to a higher probability of accidents.
+    </p>
+    <p>
+      To investigate this theory, the company reviewed local law enforcement records detailing recent total-loss traffic collisions. 
+      The gathered information is organized into the frequency distribution table below.
+    </p>
+
+    <table xml:id="table-car-color-frequencies">
+      <title>Frequency of Total-Loss Collisions by Vehicle Color</title>
+      <tabular top="minor" bottom="minor" left="minor" right="minor">
+        <row header="yes" bottom="minor">
+          <cell halign="left">Vehicle Color</cell>
+          <cell halign="right">Frequency (Accidents)</cell>
+        </row>
+        <row>
+          <cell halign="left">Blue</cell>
+          <cell halign="right">25</cell>
+        </row>
+        <row>
+          <cell halign="left">Green</cell>
+          <cell halign="right">52</cell>
+        </row>
+        <row>
+          <cell halign="left">Red</cell>
+          <cell halign="right">41</cell>
+        </row>
+        <row>
+          <cell halign="left">White</cell>
+          <cell halign="right">36</cell>
+        </row>
+        <row>
+          <cell halign="left">Black</cell>
+          <cell halign="right">39</cell>
+        </row>
+        <row bottom="minor">
+          <cell halign="left">Grey</cell>
+          <cell halign="right">23</cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      To draw meaningful conclusions from this categorical data, we must first find the total sample size (<m>n</m>) by summing all frequencies:
+    </p>
+    <p>
+      <me>n = 25 + 52 + 41 + 36 + 39 + 23 = 216</me>
+    </p>
+    <p>
+      Next, we calculate the relative frequency (percentage) for each color category using the formula <m>\text{Relative Frequency} = \frac{\text{Frequency}}{n} \times 100\%</m>. Rounding to two decimal places, we find:
+    </p>
+    <p>
+      <ul>
+        <li><p><alert>Blue:</alert> <m>\frac{25}{216} \approx 11.57\%</m></p></li>
+        <li><p><alert>Green:</alert> <m>\frac{52}{216} \approx 24.07\%</m></p></li>
+        <li><p><alert>Red:</alert> <m>\frac{41}{216} \approx 18.98\%</m></p></li>
+        <li><p><alert>White:</alert> <m>\frac{36}{216} \approx 16.67\%</m></p></li>
+        <li><p><alert>Black:</alert> <m>\frac{39}{216} \approx 18.06\%</m></p></li>
+        <li><p><alert>Grey:</alert> <m>\frac{23}{216} \approx 10.65\%</m></p></li>
+      </ul>
+    </p>
+    <p>
+      The data suggests that <alert>Green</alert> vehicles accounted for the largest share of total-loss collisions (<m>24.07\%</m>), while <alert>Grey</alert> vehicles accounted for the lowest share (<m>10.65\%</m>).
+    </p>
+
+<example xml:id="ex-car-color-bar-graph">
+  <statement>
+    <p>
+      Using the total-loss collision dataset compiled by the insurance provider 
+      in <xref ref="table-car-color-frequencies" />, construct a bar graph to visually 
+      model the distribution of vehicle colors.
+    </p>
+
+<figure xml:id="fig-car-color-bar-graph">
+  <caption>Bar Graph of Total-Loss Collisions by Vehicle Color</caption>
+  <image xml:id="img-car-color-bar-chart" width="80%">
+    <description>A vertical bar chart plotting car colors on the horizontal axis against collision frequencies on the vertical axis. The vertical axis scales from 0 to 60. Blue shows a bar reaching 25, Green reaches 52, Red reaches 41, White reaches 36, Black reaches 39, and Grey reaches 23.</description>
+    <latex-image>
+      \begin{tikzpicture}
+        \begin{axis}[
+          ybar,
+          bar width=20pt,
+          % We add dummy space elements at the start and end of our symbolic array
+          symbolic x coords={space1, Blue, Green, Red, White, Black, Grey, space2},
+          % We explicitly set the limits to our padding markers instead of numbers
+          xmin=space1,
+          xmax=space2,
+          % We only print ticks for the real data columns
+          xtick={Blue, Green, Red, White, Black, Grey},
+          ylabel={Frequency (Accidents)},
+          xlabel={Vehicle Color},
+          nodes near coords,
+          nodes near coords align={vertical},
+          grid=major,
+          grid style={dashed, gray!30},
+          axis lines=left,
+          ymin=0,
+          ymax=60
+        ]
+          \addplot[fill=blue!40, draw=blue] coordinates {
+            (Blue,25)
+            (Green,52)
+            (Red,41)
+            (White,36)
+            (Black,39)
+            (Grey,23)
+          };
+        \end{axis}
+      \end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+
+  </statement>
+  <solution>
+    <p>
+      To construct the bar graph, we map each vehicle color category along the horizontal axis (x-axis) and place the frequency counts along the vertical axis (y-axis). 
+      The height of each rectangular column corresponds exactly to its recorded category frequency:
+    </p>
+    <p>
+      <ul>
+        <li><p><alert>Blue:</alert> 25 units high</p></li>
+        <li><p><alert>Green:</alert> 52 units high</p></li>
+        <li><p><alert>Red:</alert> 41 units high</p></li>
+        <li><p><alert>White:</alert> 36 units high</p></li>
+        <li><p><alert>Black:</alert> 39 units high</p></li>
+        <li><p><alert>Grey:</alert> 23 units high</p></li>
+      </ul>
+    </p>
+    <p>
+      This layout provides an immediate visual hierarchy, showing that green cars are involved in more total-loss accidents than any other color in this sample group.
+    </p>
+  </solution>
+</example>
+
 <exercise>
   <statement>
     <p>
-      A school cafeteria counts the number of fruit items sold in a day: 40 apples, 55 bananas, and 25 oranges. If you create a vertical bar graph, which item will have the tallest bar, and what value will it represent?
+      A school cafeteria counts the number of fruit items sold in a day: 40 apples, 
+      55 bananas, and 25 oranges. If you create a vertical bar graph, 
+      which item will have the tallest bar, and what value will it represent?
     </p>
   </statement>
 
   <solution>
     <p>
-      The category with the highest count is bananas. Therefore, bananas will have the tallest bar, representing a value of 55.
+      The category with the highest count is bananas. Therefore, bananas will 
+      have the tallest bar, representing a value of 55.
     </p>
 
     <figure xml:id="fig-cafeteria-fruit-graph">
@@ -143,6 +305,7 @@
   such as a city's average monthly temperature or a company's fluctuating stock 
   prices throughout a fiscal year.
 </p>
+
 <example>
   <statement>
     <p>
@@ -188,6 +351,73 @@
       The line segments will move upward from Day 1 to Day 2, slope downward from Day 2 to Day 3, and then rise sharply from Day 3 to Day 4. Despite the mid-period dip on Day 3, the overall trend over the four-day period is upward.
     </p>
   </solution>
+</example>
+
+<example xml:id="ex-car-color-line-graph">
+  <statement>
+    <p>
+      Using the total-loss collision dataset compiled by the insurance provider in 
+      <xref ref="table-car-color-frequencies" />, construct a line graph to visually 
+      model the distribution of vehicle colors.
+    </p>
+    <figure xml:id="fig-car-color-line-graph">
+    <caption>Line Graph of Total-Loss Collisions by Vehicle Color</caption>
+    <image xml:id="img-car-color-line-chart" width="80%">
+      <description>A line graph plotting car colors on the horizontal axis against collision frequencies on the vertical axis. The vertical axis scales from 0 to 60. A line connects data markers starting at Blue (25), rising sharply to Green (52), dropping to Red (41) and White (36), rising slightly to Black (39), and falling to its lowest point at Grey (23).</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \begin{axis} [
+            xlabel={Vehicle Color},
+            ylabel={Frequency (Accidents)},
+            xtick={1,2,3,4,5,6},
+            xticklabels={Blue, Green, Red, White, Black, Grey},
+            xmin=0.5,
+            xmax=6.5,
+            ymin=0,
+            ymax=60,
+            grid=major,
+            grid style={dashed, gray!30},
+            axis lines=left
+          ]
+            \addplot[
+              color=blue,
+              mark=*,
+              thick,
+              mark size=3pt
+            ] coordinates {
+              (1,25)
+              (2,52)
+              (3,41)
+              (4,36)
+              (5,39)
+              (6,23)
+            };
+          \end{axis}
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+  </statement>
+  
+  <solution>
+    <p>
+      To construct a line graph for this dataset, we plot the vehicle color categories along the horizontal axis and the collision frequencies on the vertical axis. Instead of drawing columns, we plot a single coordinate point for each category and connect them sequentially with straight line segments:
+    </p>
+    <p>
+      <ul>
+        <li><p><alert>Blue:</alert> Point at 25</p></li>
+        <li><p><alert>Green:</alert> Point at 52</p></li>
+        <li><p><alert>Red:</alert> Point at 41</p></li>
+        <li><p><alert>White:</alert> Point at 36</p></li>
+        <li><p><alert>Black:</alert> Point at 39</p></li>
+        <li><p><alert>Grey:</alert> Point at 23</p></li>
+      </ul>
+    </p>
+    <p>
+      This visualization allows us to trace the ups and downs across categories, showing a sharp peak at Green and a drop at Grey.
+    </p>
+  </solution>
+
 </example>
 
 <exercise>
@@ -308,6 +538,76 @@
   </solution>
 </example>
 
+<example xml:id="ex-car-color-pie-chart">
+  <statement>
+    <p>
+      Using the total-loss collision dataset compiled by the insurance provider in 
+      <xref ref="table-car-color-frequencies" />, construct a pie chart to visually 
+      model the distribution of vehicle colors.
+    </p>
+
+  <figure xml:id="fig-car-color-pie-chart">
+    <caption>Pie Chart of Total-Loss Collisions by Vehicle Color</caption>
+    <image xml:id="img-car-color-pie-chart" width="70%">
+      <description>A circular pie chart divided into six colored sectors representing the proportion of vehicle collisions. Green is the largest slice at 24.1 percent, followed by Red at 19 percent, Black at 18.1 percent, White at 16.7 percent, Blue at 11.6 percent, and Grey as the smallest slice at 10.6 percent.</description>
+      <latex-image>
+        \begin{tikzpicture}[scale=1.5]
+          % Blue slice: 0 to 41.7
+          \draw[fill=blue!30, draw=black] (0,0) -- (0:2) arc (0:41.7:2) -- cycle;
+          \node at (20.85:1.4) {\small 11.6\%};
+          \node at (20.85:2.4) {Blue};
+
+          % Green slice: 41.7 to 128.4 (41.7 + 86.7)
+          \draw[fill=green!40!gray, draw=black] (0,0) -- (41.7:2) arc (41.7:128.4:2) -- cycle;
+          \node at (85.05:1.4) {\small 24.1\%};
+          \node at (85.05:2.4) {Green};
+
+          % Red slice: 128.4 to 196.7 (128.4 + 68.3)
+          \draw[fill=red!40, draw=black] (0,0) -- (128.4:2) arc (128.4:196.7:2) -- cycle;
+          \node at (162.55:1.4) {\small 19.0\%};
+          \node at (162.55:2.4) {Red};
+
+          % White slice: 196.7 to 256.7 (196.7 + 60.0)
+          \draw[fill=white!90!gray, draw=black] (0,0) -- (196.7:2) arc (196.7:256.7:2) -- cycle;
+          \node at (226.7:1.4) {\small 16.7\%};
+          \node at (226.7:2.4) {White};
+
+          % Black slice: 256.7 to 321.7 (256.7 + 65.0)
+          \draw[fill=black!40, draw=black] (0,0) -- (256.7:2) arc (256.7:321.7:2) -- cycle;
+          \node at (289.2:1.4) {\small 18.1\%};
+          \node at (289.2:2.4) {Black};
+
+          % Grey slice: 321.7 to 360.0 (321.7 + 38.3)
+          \draw[fill=gray!60, draw=black] (0,0) -- (321.7:2) arc (321.7:360:2) -- cycle;
+          \node at (340.85:1.4) {\small 10.6\%};
+          \node at (340.85:2.4) {Grey};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+  </statement>
+  
+  <solution>
+    <p>
+      To construct a pie chart, we convert each category's frequency into a proportional central angle of a circle (<m>360^{\circ}</m>). Using the total sample size (<m>n = 216</m>), the angle for each slice is calculated using the formula <m>\text{Angle} = \frac{\text{Frequency}}{216} \times 360^{\circ}</m>:
+    </p>
+    <p>
+      <ul>
+        <li><p><alert>Blue:</alert> <m>\frac{25}{216} \times 360^{\circ} \approx 41.7^{\circ}</m> (<m>11.57\%</m>)</p></li>
+        <li><p><alert>Green:</alert> <m>\frac{52}{216} \times 360^{\circ} \approx 86.7^{\circ}</m> (<m>24.07\%</m>)</p></li>
+        <li><p><alert>Red:</alert> <m>\frac{41}{216} \times 360^{\circ} \approx 68.3^{\circ}</m> (<m>18.98\%</m>)</p></li>
+        <li><p><alert>White:</alert> <m>\frac{36}{216} \times 360^{\circ} \approx 60.0^{\circ}</m> (<m>16.67\%</m>)</p></li>
+        <li><p><alert>Black:</alert> <m>\frac{39}{216} \times 360^{\circ} \approx 65.0^{\circ}</m> (<m>18.06\%</m>)</p></li>
+        <li><p><alert>Grey:</alert> <m>\frac{23}{216} \times 360^{\circ} \approx 38.3^{\circ}</m> (<m>10.65\%</m>)</p></li>
+      </ul>
+    </p>
+    <p>
+      Each sector is drawn sequentially around the center of the circle to construct the final visual proportion.
+    </p>
+  </solution>
+
+</example>
+
 <exercise>
   <statement>
     <p>
@@ -348,7 +648,576 @@
   </solution>
 </exercise>
 
-<definition xml:id="def-bell-curve">
+<p>
+  After establishing class intervals and a corresponding frequency table for a quantitative dataset, we can construct a visual graph similar to a standard bar chart. 
+  However, because quantitative data is numerical and continuous, the horizontal axis must be treated as an unbroken number line with no spacing between adjacent bars. 
+  This specialized graphical representation is known as a <alert>histogram</alert>.
+</p>
+
+  <definition xml:id="def-histograms">
+    <title>Histogram</title>
+    <statement>
+<p>
+  A <alert>histogram</alert> is a graphical tool used to display the frequency distribution 
+  of a single continuous numerical variable. 
+  Similar to a bar graph, it represents frequencies using the height of rectangular bars; 
+  however, its horizontal axis functions as a continuous number line. 
+  The data values are grouped into specific intervals, known as classes or bins. 
+  Unlike categorical bar charts, the vertical bars in a histogram must touch directly 
+  to accurately reflect the unbroken, sequential nature of the underlying scale.
+</p>
+
+    </statement>
+  </definition>
+
+<example xml:id="ex-workout-durations-histogram">
+  <title>Gym Workout Durations</title>
+  <statement>
+    <p>
+      A gym records the workout durations of its members in minutes. The data is grouped into three continuous intervals: 0–20 minutes (5 people), 20–40 minutes (15 people), and 40–60 minutes (10 people). Determine the total sample size tracked across this histogram layout.
+    </p>
+
+    <figure xml:id="fig-workout-durations-graph">
+      <caption>Frequency distribution across adjacent numerical bins.</caption>
+      <image xml:id="img-workout-histogram" width="60%">
+        <description>A frequency histogram tracking gym workout durations. The horizontal axis represents workout duration in minutes, with markers at 0, 20, 40, and 60. The vertical axis represents the number of members from 0 to 20. Three adjacent purple bars touch each other: the first bin from 0 to 20 minutes has a height of 5, the middle bin from 20 to 40 minutes has a height of 15, and the third bin from 40 to 60 minutes has a height of 10.</description>
+        <latex-image>
+          \begin{tikzpicture}
+          \begin{axis}[
+              ybar interval,
+              ymin=0, ymax=20,
+              xmin=0, xmax=60,
+              ylabel={Number of Members},
+              xlabel={Workout Duration (Minutes)},
+              xtick={0,20,40,60},
+              grid=major,
+              grid style={dashed, gray!30},
+              axis lines=left
+          ]
+          \addplot[ fill=purple!40, draw=purple ] coordinates {
+              (0,5)
+              (20,15)
+              (40,10)
+              (60,0)
+          };
+          \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+  
+  </statement>
+
+  <solution>
+    <p>
+      To find the total sample size, sum the frequencies represented by the height of each adjacent bar:
+      <me>5 + 15 + 10 = 30</me>
+    </p>
+    <p>
+      The histogram tracks a total sample size of <strong>30</strong> gym members.
+    </p>
+  </solution>
+</example>
+
+<example xml:id="ex-car-color-histogram-style">
+  <statement>
+    <p>
+      Using the total-loss collision dataset compiled by the insurance provider in 
+      <xref ref="table-car-color-frequencies" />, construct a histogram-style bar 
+      chart to visually model the distribution of vehicle colors.
+    </p>
+ <figure xml:id="fig-car-color-touching-bars">
+  <caption>Histogram-Style Visual Distribution of Vehicle Colors</caption>
+  <image xml:id="img-car-color-touching-chart" width="70%">
+    <description>A vertical bar chart plotting car colors on the horizontal axis against frequencies on the vertical axis. The bars touch each other directly using a histogram style layout. Blue reaches 25, Green reaches 52, Red reaches 41, White reaches 36, Black reaches 39, and Grey reaches 23.</description>
+    <latex-image>
+      \begin{tikzpicture}
+        \begin{axis}[
+          ybar=20pt,
+          bar width=32,
+          bar shift=0pt,
+          ymin=0, ymax=60,
+          xmin=0.5, xmax=6.5,
+          ylabel={Frequency (Accidents)},
+          xlabel={Vehicle Color},
+          xtick={1,2,3,4,5,6},
+          xticklabels={Blue, Green, Red, White, Black, Grey},
+          nodes near coords,
+          nodes near coords align={vertical},
+          grid=major,
+          grid style={dashed, gray!30},
+          axis lines=left
+        ]
+          \addplot[
+            fill=blue!40, 
+            draw=blue
+          ] coordinates {
+            (1,25)
+            (2,52)
+            (3,41)
+            (4,36)
+            (5,39)
+            (6,23)
+          };
+        \end{axis}
+      \end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+
+  </statement>
+
+  <solution>
+    <p>
+      To present this categorical data in a touching-bar format, we plot the vehicle color categories along the horizontal axis and the collision frequencies on the vertical axis. By adjusting our bar spacing properties, we can configure the rectangles to touch side-by-side:
+    </p>
+    <p>
+      <ul>
+        <li><p><alert>Blue:</alert> Bar height is 25</p></li>
+        <li><p><alert>Green:</alert> Bar height is 52</p></li>
+        <li><p><alert>Red:</alert> Bar height is 41</p></li>
+        <li><p><alert>White:</alert> Bar height is 36</p></li>
+        <li><p><alert>Black:</alert> Bar height is 39</p></li>
+        <li><p><alert>Grey:</alert> Bar height is 23</p></li>
+      </ul>
+    </p>
+  </solution>
+</example>
+
+<exercise xml:id="ex-nutrition-weight-histogram-fixed">
+  <title>Nutrition Study Weight Distribution</title>
+  <statement>
+    <p>
+      Suppose that we have collected weights from 100 male subjects as part of a nutrition study. For our weight data, we have values ranging from a low of 121 pounds to a high of 263 pounds, giving a total span of:
+      <me>263 - 121 = 142 \text{ pounds}</me>
+      We can experiment with different bin allocations to summarize the data. Let us organize the dataset using a uniform interval width of 15, starting at a baseline value of 120. 
+    </p>
+
+    <tabular bottom="minor" top="minor" left="minor" right="minor">
+      <caption>Interval Frequency Distribution Table</caption>
+      <col halign="center"/>
+      <col halign="center"/>
+      <row header="yes">
+        <cell>Weight Interval (Pounds)</cell>
+        <cell>Frequency (Count)</cell>
+      </row>
+      <row>
+        <cell>120-134</cell>
+        <cell>4</cell>
+      </row>
+      <row>
+        <cell>135-149</cell>
+        <cell>14</cell>
+      </row>
+      <row>
+        <cell>150-164</cell>
+        <cell>16</cell>
+      </row>
+      <row>
+        <cell>165-179</cell>
+        <cell>28</cell>
+      </row>
+      <row>
+        <cell>180-194</cell>
+        <cell>12</cell>
+      </row>
+      <row>
+        <cell>195-209</cell>
+        <cell>8</cell>
+      </row>
+      <row>
+        <cell>210-224</cell>
+        <cell>7</cell>
+      </row>
+      <row>
+        <cell>225-239</cell>
+        <cell>6</cell>
+      </row>
+      <row>
+        <cell>240-254</cell>
+        <cell>2</cell>
+      </row>
+      <row>
+        <cell>255-269</cell>
+        <cell>3</cell>
+      </row>
+    </tabular>
+  </statement>
+
+  <solution>
+    <p>
+      Using the frequency chart, we construct a continuous frequency histogram. Each vertical bar spans an interval of 15 pounds on the horizontal axis, and the height matches the respective category count.
+    </p>
+
+    <figure xml:id="fig-nutrition-weight-histogram-fixed">
+      <caption>Frequency histogram of male subject weights with an interval width of 15.</caption>
+      <image xml:id="img-nutrition-weight-chart-fixed">
+        <description>A continuous frequency histogram tracking the weights of 100 male subjects. The horizontal axis charts weights from 120 to 270 pounds with main tick labels every 15 units. The vertical axis monitors frequencies from 0 to 30. Ten continuous, touching blue bars represent the frequencies: the first bar at 120 has a height of 4; followed by 14, 16; peaking at a height of 28 for the 165-180 pound bin; then stepping down to 12, 8, 7, 6, 2; and ending with a final bar height of 3 at the 255-270 pound boundary.</description>
+        <latex-image>
+          \begin{tikzpicture}
+          \begin{axis}[
+              ybar interval,
+              ymin=0, ymax=30,
+              xmin=120, xmax=270,
+              ylabel={Frequency (Number of Subjects)},
+              xlabel={Weight (Pounds)},
+              xtick={120,135,150,165,180,195,210,225,240,255,270},
+              xticklabel style={anchor=north, font=\small}, % Removed the 45-degree rotation to prevent boundary text clipping errors
+              scaled x ticks=false,
+              grid=major,
+              grid style={dashed, gray!30},
+              axis lines=left,
+              width=11cm, height=6cm
+          ]
+          \addplot[ fill=blue!40, draw=blue!80!black ] coordinates {
+              (120,4)
+              (135,14)
+              (150,16)
+              (165,28)
+              (180,12)
+              (195,8)
+              (210,7)
+              (225,6)
+              (240,2)
+              (255,3)
+              (270,0)
+          };
+          \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+  </solution>
+</exercise>
+
+<exercise xml:id="exercise-history-test-scores">
+  <statement>
+    <p>
+      The following dataset represents the scores of <m>24</m> students on a recent history test:
+    </p>
+    <p>
+      80, 50, 50, 90, 70, 70, 100, 60, 70, 80, 70, 50, 
+      90, 100, 80, 70, 30, 80, 80, 70, 100, 60, 60, 50
+    </p>
+    <p>
+      <ol marker="a">
+        <li><p>Complete a frequency table for the test scores.</p></li>
+        <li><p>Construct a bar graph of the data.</p></li>
+        <li><p>Construct a line graph of the data.</p></li>
+        <li><p>Construct a pie chart of the data.</p></li>
+        <li><p>Construct a histogram of the data.</p></li>
+      </ol>
+    </p>
+  </statement>
+
+  <solution>
+    <!-- Part A -->
+    <p>
+      <alert>(a) Frequency Table:</alert> Sorting and counting each distinct score yields the following frequency distribution:
+    </p>
+    <table xml:id="table-test-score-frequencies">
+      <title>Frequency Distribution of History Test Scores</title>
+      <tabular top="minor" bottom="minor" left="minor" right="minor">
+        <row header="yes" bottom="minor">
+          <cell halign="center">Test Score</cell>
+          <cell halign="center">Frequency (Students)</cell>
+        </row>
+        <row><cell halign="center">30</cell><cell halign="center">1</cell></row>
+        <row><cell halign="center">50</cell><cell halign="center">4</cell></row>
+        <row><cell halign="center">60</cell><cell halign="center">3</cell></row>
+        <row><cell halign="center">70</cell><cell halign="center">6</cell></row>
+        <row><cell halign="center">80</cell><cell halign="center">5</cell></row>
+        <row><cell halign="center">90</cell><cell halign="center">2</cell></row>
+        <row bottom="minor"><cell halign="center">100</cell><cell halign="center">3</cell></row>
+      </tabular>
+    </table>
+
+    <!-- Part B -->
+    <p>
+      <alert>(b) Bar Graph:</alert> We represent each distinct score on the horizontal axis and its frequency count on the vertical axis using separated vertical columns:
+    </p>
+    <figure xml:id="fig-scores-bar-graph">
+      <caption>Bar Graph of Test Scores</caption>
+      <image xml:id="img-scores-bar-chart" width="80%">
+        <description>A vertical bar chart showing test scores on the horizontal axis and student frequency on the vertical axis. Bars are at 30 with height 1, 50 with height 4, 60 with height 3, 70 with height 6, 80 with height 5, 90 with height 2, and 100 with height 3.</description>
+        <latex-image>
+          \begin{tikzpicture}
+            \begin{axis}[
+              ybar,
+              bar width=15pt,
+              symbolic x coords={space1, 30, 50, 60, 70, 80, 90, 100, space2},
+              xmin=space1, xmax=space2,
+              xtick={30, 50, 60, 70, 80, 90, 100},
+              ylabel={Number of Students},
+              xlabel={Test Scores},
+              nodes near coords,
+              nodes near coords align={vertical},
+              grid=major,
+              grid style={dashed, gray!30},
+              axis lines=left,
+              ymin=0, ymax=8
+            ]
+              \addplot[fill=blue!40, draw=blue] coordinates {
+                (30,1) (50,4) (60,3) (70,6) (80,5) (90,2) (100,3)
+              };
+            \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+
+    <!-- Part C -->
+    <p>
+      <alert>(c) Line Graph:</alert> Using the same axes as the bar chart, coordinate markers are plotted at each data junction and linked sequentially using line tracks:
+    </p>
+    <figure xml:id="fig-scores-line-graph">
+      <caption>Line Graph of Test Scores</caption>
+      <image xml:id="img-scores-line-chart" width="80%">
+        <description>A line graph mapping test scores to the number of students. Circles show points at score 30 with frequency 1, 50 with 4, 60 with 3, 70 with 6, 80 with 5, 90 with 2, and 100 with 3, connected by a trendline.</description>
+        <latex-image>
+          \begin{tikzpicture}
+            \begin{axis}[
+              xlabel={Test Scores},
+              ylabel={Number of Students},
+              xtick={1,2,3,4,5,6,7},
+              xticklabels={30, 50, 60, 70, 80, 90, 100},
+              xmin=0.5, xmax=7.5,
+              ymin=0, ymax=8,
+              grid=major,
+              grid style={dashed, gray!30},
+              axis lines=left
+            ]
+              \addplot[color=blue, mark=*, thick, mark size=3pt] coordinates {
+                (1,1) (2,4) (3,3) (4,6) (5,5) (6,2) (7,3)
+              };
+            \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+
+    <!-- Part D -->
+    <p>
+      <alert>(d) Pie Chart:</alert> To map out global proportions, we compute percentage shares based on the total sample of <m>n = 24</m> students (<m>\text{Angle} = \frac{\text{Freq}}{24} \times 360^{\circ}</m>):
+    </p>
+    <p>
+      <ul>
+        <li><p><alert>Score 30:</alert> <m>4.17\%</m> (<m>15^{\circ}</m>)</p></li>
+        <li><p><alert>Score 50:</alert> <m>16.67\%</m> (<m>60^{\circ}</m>)</p></li>
+        <li><p><alert>Score 60:</alert> <m>12.50\%</m> (<m>45^{\circ}</m>)</p></li>
+        <li><p><alert>Score 70:</alert> <m>25.00\%</m> (<m>90^{\circ}</m>)</p></li>
+        <li><p><alert>Score 80:</alert> <m>20.83\%</m> (<m>75^{\circ}</m>)</p></li>
+        <li><p><alert>Score 90:</alert> <m>8.33\%</m> (<m>30^{\circ}</m>)</p></li>
+        <li><p><alert>Score 100:</alert> <m>12.50\%</m> (<m>45^{\circ}</m>)</p></li>
+      </ul>
+    </p>
+    <figure xml:id="fig-scores-pie-chart">
+  <caption>Pie Chart of Test Score Distributions</caption>
+  <image xml:id="img-scores-pie-chart" width="65%">
+    <description>A pie chart dividing the student distribution among scores. Slices represent Score 30 at 4.2 percent, Score 50 at 16.7 percent, Score 60 at 12.5 percent, Score 70 at 25 percent, Score 80 at 20.8 percent, Score 90 at 8.3 percent, and Score 100 at 12.5 percent.</description>
+    <latex-image>
+      \begin{tikzpicture}[scale=1.3]
+        \draw[fill=blue!20, draw=black] (0,0) -- (0:2) arc (0:15:2) -- cycle;
+        \node at (7.5:2.4) {\small 30};
+        
+        \draw[fill=green!20, draw=black] (0,0) -- (15:2) arc (15:75:2) -- cycle;
+        \node at (45:1.4) {\small 16.7\%}; \node at (45:2.4) {\small 50};
+        
+        \draw[fill=orange!20, draw=black] (0,0) -- (75:2) arc (75:120:2) -- cycle;
+        \node at (97.5:1.4) {\small 12.5\%}; \node at (97.5:2.4) {\small 60};
+        
+        \draw[fill=purple!20, draw=black] (0,0) -- (120:2) arc (120:210:2) -- cycle;
+        \node at (165:1.4) {\small 25\%}; \node at (165:2.4) {\small 70};
+        
+        \draw[fill=cyan!20, draw=black] (0,0) -- (210:2) arc (210:285:2) -- cycle;
+        \node at (247.5:1.4) {\small 20.8\%}; \node at (247.5:2.4) {\small 80};
+        
+        \draw[fill=yellow!20, draw=black] (0,0) -- (285:2) arc (285:315:2) -- cycle;
+        \node at (300:2.4) {\small 90};
+        
+        \draw[fill=red!20, draw=black] (0,0) -- (315:2) arc (315:360:2) -- cycle;
+        \node at (337.5:1.4) {\small 12.5\%}; \node at (337.5:2.4) {\small 100};
+      \end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+<!-- Part E --> 
+<p>
+  <alert>(e) Histogram:</alert> We group the scores into 10-point bins along a continuous 
+  horizontal axis causing the bars to lock tightly side-by-side:
+</p>
+<p>
+  <ul>
+    <li><p><alert>[25, 35):</alert> 1 student (score 30)</p></li>
+    <li><p><alert>[35, 45):</alert> 0 students</p></li>
+    <li><p><alert>[45, 55):</alert> 4 students (scores of 50)</p></li>
+    <li><p><alert>[55, 65):</alert> 3 students (scores of 60)</p></li>
+    <li><p><alert>[65, 75):</alert> 6 students (scores of 70)</p></li>
+    <li><p><alert>[75, 85):</alert> 5 students (scores of 80)</p></li>
+    <li><p><alert>[85, 95):</alert> 2 students (scores of 90)</p></li>
+    <li><p><alert>[95, 105]:</alert> 3 students (scores of 100)</p></li>
+  </ul>
+</p> 
+
+<figure xml:id="fig-histogram"> 
+  <caption>Histogram of Test Score Distributions</caption> 
+  <image xml:id="img-score-histogram" width="80%"> 
+    <description>A histogram displaying the continuous interval distribution of test scores. The bars touch each other directly: the bin from 25 to 35 has a height of 1, 45 to 55 has a height of 4, 55 to 65 has a height of 3, 65 to 75 reaches the peak at 6, 75 to 85 has a height of 5, 85 to 95 has a height of 2, and 95 to 105 has a height of 3.</description> 
+    <latex-image> 
+      \begin{tikzpicture} 
+        \begin{axis}[ 
+          ybar=10pt, 
+          bar width=23, 
+          bar shift=0pt, 
+          ymin=0, ymax=8, 
+          xmin=25, xmax=105, 
+          ylabel={Number of Students}, 
+          xlabel={Test Score Intervals}, 
+          xtick={25,35,45,55,65,75,85,95,105}, 
+          nodes near coords, 
+          nodes near coords align={vertical}, 
+          grid=major, 
+          grid style={dashed, gray!30}, 
+          axis lines=left 
+        ] 
+          \addplot[ 
+            fill=blue!40, 
+            draw=blue 
+          ] coordinates { 
+            (30,1) 
+            (40,0) 
+            (50,4) 
+            (60,3) 
+            (70,6) 
+            (80,5) 
+            (90,2) 
+            (100,3) 
+          }; 
+        \end{axis} 
+      \end{tikzpicture} 
+    </latex-image> 
+  </image> 
+</figure>
+
+<!-- Part E --> 
+<p>
+  <alert>(e) Histogram:</alert> Unlike the categorical charts above, 
+  a true histogram tracks quantitative continuous intervals. 
+  We group the scores into 20-point bins along a continuous horizontal 
+  axis causing the bars to lock tightly side-by-side:
+</p>
+<p>
+  <ul>
+    <li><p><alert>[20, 40):</alert> 1 student (score 30)</p></li>
+    <li><p><alert>[40, 60):</alert> 4 students (scores of 50)</p></li>
+    <li><p><alert>[60, 80):</alert> 9 students (scores of 60 and 70)</p></li>
+    <li><p><alert>[80, 100):</alert> 7 students (scores of 80 and 90)</p></li>
+    <li><p><alert>[100, 120):</alert> 3 students (scores of 100)</p></li>
+  </ul>
+</p>
+
+<figure xml:id="fig-scores-histogram"> 
+  <caption>Histogram of Test Score Distributions</caption> 
+  <image xml:id="img-scores-histogram-chart" width="80%"> 
+    <description>A histogram displaying the continuous 20-point interval distribution of test scores. The bars touch each other directly: the bin from 20 to 40 has a height of 1, 40 to 60 has a height of 4, 60 to 80 reaches the peak at 9, 80 to 100 has a height of 7, and 100 to 120 has a height of 3.</description> 
+    <latex-image> 
+      \begin{tikzpicture} 
+        \begin{axis}[ 
+          ybar=10pt, 
+          bar width=39, 
+          bar shift=0pt, 
+          ymin=0, ymax=10, 
+          xmin=20, xmax=120, 
+          ylabel={Number of Students}, 
+          xlabel={Test Score Intervals}, 
+          xtick={20,40,60,80,100,120}, 
+          nodes near coords, 
+          nodes near coords align={vertical}, 
+          grid=major, 
+          grid style={dashed, gray!30}, 
+          axis lines=left 
+        ] 
+          \addplot[ 
+            fill=blue!40, 
+            draw=blue 
+          ] coordinates { 
+            (30,1) 
+            (50,4) 
+            (70,9) 
+            (90,7) 
+            (110,3) 
+          }; 
+        \end{axis} 
+      \end{tikzpicture} 
+    </latex-image> 
+  </image> 
+</figure>
+  </solution>
+</exercise>
+
+<exercise xml:id="exercise-kori-monthly-budget">
+  <statement>
+    <p>
+      Kori categorized her spending for this month into four categories: food, rent, fun, and other. 
+      The percentage she spent in each category is displayed in the chart below.
+    </p>
+
+    <figure xml:id="fig-kori-budget-pie-chart">
+      <caption>Pie Chart of Kori's Monthly Spending Shares</caption>
+      <image xml:id="img-kori-budget-chart" width="65%">
+        <description>A pie chart dividing Kori's monthly budget proportions into four sectors: Rent accounts for 31 percent, Other accounts for 29 percent, Food accounts for 24 percent, and Fun accounts for 16 percent.</description>
+        <latex-image>
+          \begin{tikzpicture}[scale=1.3]
+            % Rent slice: 0 to 111.6 degrees (31%)
+            \draw[fill=blue!20, draw=black] (0,0) -- (0:2) arc (0:111.6:2) -- cycle;
+            \node at (55.8:1.4) {\small 31\%};
+            \node at (55.8:2.4) {\small Rent};
+
+            % Other slice: 111.6 to 216.0 degrees (111.6 + 104.4 = 29%)
+            \draw[fill=gray!20, draw=black] (0,0) -- (111.6:2) arc (111.6:216.0:2) -- cycle;
+            \node at (163.8:1.4) {\small 29\%};
+            \node at (163.8:2.4) {\small Other};
+
+            % Food slice: 216.0 to 302.4 degrees (216.0 + 86.4 = 24%)
+            \draw[fill=green!20, draw=black] (0,0) -- (216.0:2) arc (216.0:302.4:2) -- cycle;
+            \node at (259.2:1.4) {\small 24\%};
+            \node at (259.2:2.4) {\small Food};
+
+            % Fun slice: 302.4 to 360.0 degrees (302.4 + 57.6 = 16%)
+            \draw[fill=orange!20, draw=black] (0,0) -- (302.4:2) arc (302.4:360.0:2) -- cycle;
+            \node at (331.2:1.4) {\small 16\%};
+            \node at (331.2:2.4) {\small Fun};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+
+    <p>
+      If she spent a total of <m>\$2600</m> this month, how much money did she allocate to rent?
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      To find the exact dollar amount spent on rent, we convert the percentage share from the pie chart into a decimal and multiply it by the total monthly expenditures:
+    </p>
+    <p>
+      <me>\text{Rent Share} = 31\% = 0.31</me>
+    </p>
+    <p>
+      <me>\text{Rent Expenditures} = 0.31 \times \$2600 = \$806</me>
+    </p>
+    <p>
+      Therefore, Kori spent exactly <alert><m>\$806</m></alert> on rent this month.
+    </p>
+  </solution>
+</exercise>
+
+
+</section>
+<!--<definition xml:id="def-bell-curve">
   <title>Bell-Curve</title>
   <statement>
     <p>
@@ -390,7 +1259,7 @@ typically follow this bell-shaped trajectory when plotted in mass quantities.
               grid style={dashed, gray!30}
           ]
           \addplot[ very thick, cyan!80!black ] {1/(10*sqrt(2*pi))*exp(-(x-75)^2/(2*10^2))};
-          \draw[dashed, red, thick] (axis cs:75,0) -- (axis cs:75,0.04);
+          \draw[dashed, red, thick] (axis cs:75,0)- (axis cs:75,0.04);
           \end{axis}
           \end{tikzpicture}
         </latex-image>
@@ -443,285 +1312,13 @@ typically follow this bell-shaped trajectory when plotted in mass quantities.
           \addplot[very thick, blue] {1/(sqrt(2*pi))*exp(-x^2/2)};
           
           % Center boundary line
-          \draw[dashed, red, thick] (axis cs:0,0) -- (axis cs:0,0.4);
+          \draw[dashed, red, thick] (axis cs:0,0) -(axis cs:0,0.4);
           \end{axis}
           \end{tikzpicture}
         </latex-image>
       </image>
     </figure>
   </solution>
-</exercise>
-
-<p>
- When dealing with large, continuous numerical datasets, organizing the data into 
- distinct ranges helps reveal patterns that might otherwise be hidden.
-</p>
+</exercise>-->
 
 
-  <definition xml:id="def-histograms">
-    <title>Histogram</title>
-    <statement>
-      <p>
-        <alert>Histograms</alert> display the frequency distribution of a single 
-        continuous numerical variable by grouping data into adjacent intervals, 
-        known as bins. Unlike categorical bar graphs, the vertical bars in a histogram 
-        must touch to demonstrate the continuous progression of the underlying scale.
-      </p>
-    </statement>
-  </definition>
-
-  <p>
-    A logistics manager might use a histogram to view packet delivery times, 
-    tracking how many shipments arrive within 0-12 hours, 12-24 hours, and 24-36 hours.
-  </p>
-
-<example xml:id="ex-workout-durations-histogram">
-  <title>Gym Workout Durations</title>
-  <statement>
-    <p>
-      A gym records the workout durations of its members in minutes. The data is grouped into three continuous intervals: 0–20 minutes (5 people), 20–40 minutes (15 people), and 40–60 minutes (10 people). Determine the total sample size tracked across this histogram layout.
-    </p>
-
-    <figure xml:id="fig-workout-durations-graph">
-      <caption>Frequency distribution across adjacent numerical bins.</caption>
-      <image xml:id="img-workout-histogram" width="60%">
-        <description>A frequency histogram tracking gym workout durations. The horizontal axis represents workout duration in minutes, with markers at 0, 20, 40, and 60. The vertical axis represents the number of members from 0 to 20. Three adjacent purple bars touch each other: the first bin from 0 to 20 minutes has a height of 5, the middle bin from 20 to 40 minutes has a height of 15, and the third bin from 40 to 60 minutes has a height of 10.</description>
-        <latex-image>
-          \begin{tikzpicture}
-          \begin{axis}[
-              ybar interval,
-              ymin=0, ymax=20,
-              xmin=0, xmax=60,
-              ylabel={Number of Members},
-              xlabel={Workout Duration (Minutes)},
-              xtick={0,20,40,60},
-              grid=major,
-              grid style={dashed, gray!30},
-              axis lines=left
-          ]
-          \addplot[ fill=purple!40, draw=purple ] coordinates {
-              (0,5)
-              (20,15)
-              (40,10)
-              (60,0)
-          };
-          \end{axis}
-          \end{tikzpicture}
-        </latex-image>
-      </image>
-    </figure>
-  </statement>
-
-  <solution>
-    <p>
-      To find the total sample size, sum the frequencies represented by the height of each adjacent bar:
-      <me>5 + 15 + 10 = 30</me>
-    </p>
-    <p>
-      The histogram tracks a total sample size of <strong>30</strong> gym members.
-    </p>
-  </solution>
-</example>
-
-<exercise>
-  <statement>
-    <p>
-      You examine a histogram detailing employee commuter distances with bin intervals structured as 0–5 miles, 5–10 miles, and 10–15 miles. Explain how boundary values like 5.0 and 10.0 miles are categorized, and visualize both the interval notation and the resulting frequency histogram.
-    </p>
-  </statement>
-
-  <solution>
-    <p>
-      By standard data convention, histogram bins are left-closed and right-open, denoted as <m>[a,b)</m>. This means the lower boundary value is included in the bin, while the upper boundary value is excluded:
-      <ul>
-        <li>A value of exactly 5.0 miles is excluded from the 0–5 mile bin and counted inside the <strong>5–10 miles</strong> bin.</li>
-        <li>A value of exactly 10.0 miles is excluded from the 5–10 mile bin and counted inside the <strong>10–15 miles</strong> bin.</li>
-      </ul>
-    </p>
-
-    <figure xml:id="fig-combined-histogram-module">
-      <caption>Interval boundary logic alongside its corresponding frequency histogram.</caption>
-      
-      <!-- Part 1: The Boundary Number Line Diagram -->
-      <sidebyside widths="48% 48%" valigns="middle middle">
-        <image xml:id="img-interval-notation-line">
-          <description>A number line tracking intervals from 0 to 15. The first interval from 0 to 5 is blue with a solid dot at 0 and an open circle at 5. The second interval from 5 to 10 is green with a solid dot at 5 and an open circle at 10. The third interval from 10 to 15 is purple with a solid dot at 10 and an open circle at 15. Vertical red lines point out that exact boundary values land in the right-hand touching bin.</description>
-          <latex-image>
-            \begin{tikzpicture}[scale=0.75]
-            % Axis line
-            \draw[thick, -&gt;] (-0.5,0) -- (16,0) node[right] {Miles};
-            
-            % Tick marks
-            \foreach \x in {0,5,10,15}
-              \draw[thick] (\x,0.1) -- (\x,-0.1) node[below] {\x};
-              
-            % Interval 1: 0 to 5 [0,5)
-            \draw[very thick, blue] (0,0.5) -- (4.82,0.5);
-            \fill[blue] (0,0.5) circle (3pt);
-            \draw[thick, blue, fill=white] (5,0.5) circle (3pt);
-            \node[above, blue] at (2.5,0.6) {[0, 5)};
-            
-            % Interval 2: 5 to 10 [5,10)
-            \draw[very thick, green!60!black] (5,1.3) -- (9.82,1.3);
-            \fill[green!60!black] (5,1.3) circle (3pt);
-            \draw[thick, green!60!black, fill=white] (10,1.3) circle (3pt);
-            \node[above, green!60!black] at (7.5,1.4) {[5, 10)};
-            
-            % Interval 3: 10 to 15 [10,15)
-            \draw[very thick, purple] (10,2.1) -- (14.82,2.1);
-            \fill[purple] (10,2.1) circle (3pt);
-            \draw[thick, purple, fill=white] (15,2.1) circle (3pt);
-            \node[above, purple] at (12.5,2.2) {[10, 15)};
-            
-            % Boundary markers pointing out alignment
-            \draw[dashed, red, thin] (5, -0.2) -- (5, 1.3);
-            \draw[dashed, red, thin] (10, -0.2) -- (10, 2.1);
-            \end{tikzpicture}
-          </latex-image>
-        </image>
-
-        <!-- Part 2: The Actual Frequency Histogram -->
-        <image xml:id="img-three-bin-histogram">
-          <description>A continuous frequency histogram with three touching bars representing commuter distances. The horizontal axis lists miles from 0 to 15 with ticks at 0, 5, 10, and 15. The vertical axis lists number of employees from 0 to 25. The first bar from 0 to 5 miles has a height of 12. The second bar from 5 to 10 miles has a height of 22. The third bar from 10 to 15 miles has a height of 8.</description>
-          <latex-image>
-            \begin{tikzpicture}[scale=0.75]
-            \begin{axis}[
-                ybar interval,
-                ymin=0, ymax=25,
-                xmin=0, xmax=15,
-                ylabel={Number of Employees},
-                xlabel={Commuter Distance (Miles)},
-                xtick={0,5,10,15},
-                grid=major,
-                grid style={dashed, gray!30},
-                axis lines=left
-            ]
-            \addplot[ fill=blue!30, draw=blue!80!black ] coordinates {
-                (0,12)
-                (5,22)
-                (10,8)
-                (15,0)
-            };
-            \end{axis}
-            \end{tikzpicture}
-          </latex-image>
-        </image>
-      </sidebyside>
-    </figure>
-  </solution>
-</exercise>
-
-<exercise xml:id="ex-nutrition-weight-histogram-fixed">
-  <title>Nutrition Study Weight Distribution</title>
-  <statement>
-    <p>
-      Suppose that we have collected weights from 100 male subjects as part of a nutrition study. For our weight data, we have values ranging from a low of 121 pounds to a high of 263 pounds, giving a total span of:
-      <me>263 - 121 = 142 \text{ pounds}</me>
-      We can experiment with different bin allocations to summarize the data. Let us organize the dataset using a uniform interval width of 15, starting at a baseline value of 120. 
-    </p>
-
-    <tabular bottom="minor" top="minor" left="minor" right="minor">
-      <caption>Interval Frequency Distribution Table</caption>
-      <col halign="center"/>
-      <col halign="center"/>
-      <row header="yes">
-        <cell>Weight Interval (Pounds)</cell>
-        <cell>Frequency (Count)</cell>
-      </row>
-      <row>
-        <cell>[120, 135)</cell>
-        <cell>4</cell>
-      </row>
-      <row>
-        <cell>[135, 150)</cell>
-        <cell>14</cell>
-      </row>
-      <row>
-        <cell>[150, 165)</cell>
-        <cell>16</cell>
-      </row>
-      <row>
-        <cell>[165, 180)</cell>
-        <cell>28</cell>
-      </row>
-      <row>
-        <cell>[180, 195)</cell>
-        <cell>12</cell>
-      </row>
-      <row>
-        <cell>[195, 210)</cell>
-        <cell>8</cell>
-      </row>
-      <row>
-        <cell>[210, 225)</cell>
-        <cell>7</cell>
-      </row>
-      <row>
-        <cell>[225, 240)</cell>
-        <cell>6</cell>
-      </row>
-      <row>
-        <cell>[240, 255)</cell>
-        <cell>2</cell>
-      </row>
-      <row>
-        <cell>[255, 270)</cell>
-        <cell>3</cell>
-      </row>
-    </tabular>
-  </statement>
-
-  <solution>
-    <p>
-      Using the frequency chart, we construct a continuous frequency histogram. Each vertical bar spans an interval of 15 pounds on the horizontal axis, and the height matches the respective category count.
-    </p>
-
-    <figure xml:id="fig-nutrition-weight-histogram-fixed">
-      <caption>Frequency histogram of male subject weights with an interval width of 15.</caption>
-      <image xml:id="img-nutrition-weight-chart-fixed">
-        <description>A continuous frequency histogram tracking the weights of 100 male subjects. The horizontal axis charts weights from 120 to 270 pounds with main tick labels every 15 units. The vertical axis monitors frequencies from 0 to 30. Ten continuous, touching blue bars represent the frequencies: the first bar at 120 has a height of 4; followed by 14, 16; peaking at a height of 28 for the 165-180 pound bin; then stepping down to 12, 8, 7, 6, 2; and ending with a final bar height of 3 at the 255-270 pound boundary.</description>
-        <latex-image>
-          \begin{tikzpicture}
-          \begin{axis}[
-              ybar interval,
-              ymin=0, ymax=30,
-              xmin=120, xmax=270,
-              ylabel={Frequency (Number of Subjects)},
-              xlabel={Weight (Pounds)},
-              xtick={120,135,150,165,180,195,210,225,240,255,270},
-              xticklabel style={anchor=north, font=\small}, % Removed the 45-degree rotation to prevent boundary text clipping errors
-              scaled x ticks=false,
-              grid=major,
-              grid style={dashed, gray!30},
-              axis lines=left,
-              width=11cm, height=6cm
-          ]
-          \addplot[ fill=blue!40, draw=blue!80!black ] coordinates {
-              (120,4)
-              (135,14)
-              (150,16)
-              (165,28)
-              (180,12)
-              (195,8)
-              (210,7)
-              (225,6)
-              (240,2)
-              (255,3)
-              (270,0)
-          };
-          \end{axis}
-          \end{tikzpicture}
-        </latex-image>
-      </image>
-    </figure>
-  </solution>
-</exercise>
-
-
-
-
-
-
-
-
-</section>

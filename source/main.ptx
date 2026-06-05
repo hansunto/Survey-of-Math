@@ -80,6 +80,8 @@
       <xi:include href="./notes/Center-Spread.ptx" />
       <xi:include href="./notes/data_graph.ptx" />
       <xi:include href="./notes/empirical-rule.ptx" />
+      <xi:include href="./notes/zscores.ptx" />
+      <xi:include href="./notes/Statchex.ptx" />
     </chapter>    
 
 

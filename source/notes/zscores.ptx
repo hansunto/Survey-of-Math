@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<section xml:id="sec-z-scores">
+  <title>Z-Scores and Probability </title>
+
+  <introduction>
+    <p>
+      We will learn how z-scores can be used to evaluate how extreme a given value is within a particular set or population. 
+      By connecting these standard values to probability density distributions, you will develop the skills necessary to calculate the probability of a data point falling between two specified z-scores, as well as the ability to work backward to determine an exact z-score when given a target probability threshold.
+    </p>
+    <p>
+      Using the Empirical Rule can give you a good idea of the probability of occurrence of a value that happens to be exactly one, two, or three standard deviations to either side of the mean.
+      But how do you compare the probabilities of values that are in between those standard deviations?
+    </p>
+    <p>
+      Z-scores are closely related to the Empirical Rule; both offer methods for evaluating how extreme a particular value is within a given dataset.
+      You can think of a z-score as the exact number of standard deviations there are between a given value and the mean of the set.
+      While the Empirical Rule only allows you to associate the first three integer standard deviations with fixed percentages (<m>68\%</m>, <m>95\%</m>, and <m>99.7\%</m>), the z-score allows you to state, with arbitrary precision, exactly how many standard deviations a value lies above or below the mean.
+    </p>
+    <p>
+      Conceptually, the calculation is straightforward.
+      To find the number of standard deviations between a value and the mean, first calculate the difference between your specific data point and the population mean.
+      Then, divide that difference by the standard deviation of the dataset.
+    </p>
+  </introduction>
+
+  <definition xml:id="def-z-score-formula">
+    <title>Z-Score Formula</title>
+    <statement>
+      <p>
+        The mathematical formula to calculate a standard z-score is:
+        <me>z = \frac{\text{value} - \text{mean}}{\text{standard deviation}} = \frac{x - \mu}{\sigma}</me>
+        Where <m>x</m> is the data value, <m>\mu</m> is the population mean, and <m>\sigma</m> is the standard deviation.
+      </p>
+    </statement>
+  </definition>
+
+  <p>
+    For example, with <m>\mu = 65</m> and <m>\sigma = 3</m>, a score of <m>59</m> gives:
+    <me>z = \frac{59 - 65}{3} = -2</me>
+    This means the value is 2 standard deviations <em>below</em> the mean.
+  </p>
+
+    <example xml:id="ex-pos-z">
+      <title>Positive Z-score</title>
+      <statement>
+        <p>
+          Let <m>\mu = 24</m> and <m>\sigma = 2</m>. Find the z-score for <m>x = 27</m>.
+          <me>z = \frac{27 - 24}{2} = 1.5</me>
+          The value is <m>1.5</m> standard deviations <em>above</em> the mean.
+        </p>
+      </statement>
+    </example>
+
+    <example xml:id="ex-neg-z">
+      <title>Negative Z-score</title>
+      <statement>
+        <p>
+          Let <m>\mu = 125</m> and <m>\sigma = 6.2</m>. Find the z-score for <m>x = 104.5</m>.
+          <me>z = \frac{104.5 - 125}{6.2} \approx -3.31</me>
+          The resulting value is approximately <m>3.31</m> standard deviations <em>below</em> the mean.
+        </p>
+      </statement>
+    </example>
+
+    <example xml:id="ex-reverse-z">
+      <title>Finding a Value Given a Z-score</title>
+      <statement>
+        <p>
+          Find the original raw data value <m>x</m> if the mean is <m>63</m>, the standard deviation is <m>4.25</m>, and the given z-score is <m>2.403</m>.
+          <me>2.403 = \frac{x - 63}{4.25}</me>
+          Multiplying both sides by <m>4.25</m> and adding <m>63</m> yields:
+          <me>x = 63 + (2.403)(4.25) \approx 73.21</me>
+        </p>
+      </statement>
+    </example>
+
+
+  <exercises xml:id="exercises-z-scores">
+    <title>Practice Exercises</title>
+
+    <exercise>
+      <statement>
+        <p>
+          A retail store calculates that the mean price for a specific model of skis is <m>\mu = \$279</m> with a standard deviation of <m>\sigma = \$16</m>. 
+          Find the z-score for a pair of skis priced at <m>\$247</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>z = \frac{247 - 279}{16} = -2</me>
+          The price is exactly <m>2</m> standard deviations below the mean.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          The mean number of ice cream scoops served per order at a shop is <m>3</m> scoops with a standard deviation of <m>1</m> scoop.
+          Find the z-score for an order containing <m>5</m> scoops.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>z = \frac{5 - 3}{1} = 2</me>
+          The order size is <m>2</m> standard deviations above the mean.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          The mean weight of a specific cattle breed population is <m>\mu = 1150</m> lbs with a standard deviation of <m>\sigma = 77</m> lbs.
+          Calculate the z-score for a cow that weighs <m>825</m> lbs.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>z = \frac{825 - 1150}{77} \approx -4.22</me>
+          The cow's weight is approximately <m>4.22</m> standard deviations below the mean.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Compute the z-score for a sample measurement of <m>x = 0.0034</m> taken from a population where <m>\mu = 0.0041</m> and <m>\sigma = 0.0008</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>z = \frac{0.0034 - 0.0041}{0.0008} = -0.875</me>
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          On a standardized certification exam, the mean score is <m>76</m> with a standard deviation of <m>5</m>.
+          Determine the z-score for an examinee who scored an <m>88</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>z = \frac{88 - 76}{5} = 2.4</me>
+          This student scored <m>2.4</m> standard deviations above the population average.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          A track-and-field sprint group has a mean race completion time of <m>24.5</m> seconds with a standard deviation of <m>3.2</m> seconds.
+          What is the z-score for a runner who completes the race in <m>19.1</m> seconds?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>z = \frac{19.1 - 24.5}{3.2} \approx -1.69</me>
+          The runner's time is <m>1.69</m> standard deviations faster (below) than the group average.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          An industrial lighting brand has a mean runtime life of <m>15,000</m> hours with a standard deviation of <m>850</m> hours.
+          Find the specific operational lifespan <m>x</m> that corresponds to a z-score of <m>-1.40</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>x = \mu + z\sigma</me>
+          <me>x = 15000 + (-1.40)(850) = 13810\text{ hours}</me>
+        </p>
+      </solution>
+    </exercise>
+  </exercises>
+
+<insight xml:id="insight-2-14-34-rule">
+  <title>The 2-14-34 Rule</title>
+  <p>
+    A helpful tool for quick mental approximations of these probabilities is the <term>2-14-34 Rule</term>. 
+    Because a normal distribution curve is completely symmetric, either half of the bell curve extending outward from the center mean (<m>z=0</m>) can be broken down into specific operational percentage blocks:
+  </p>
+  <ul>
+    <li><p><m>34\%</m> of the population data falls between <m>z=0</m> and <m>z=1</m> (or between <m>z=0</m> and <m>z=-1</m>).</p></li>
+    <li><p><m>14\%</m> of the population data falls between <m>z=1</m> and <m>z=2</m> (or between <m>z=-1</m> and <m>z=-2</m>).</p></li>
+    <li><p><m>2\%</m> of the population data falls between <m>z=2</m> and <m>z=3</m> (or between <m>z=-2</m> and <m>z=-3</m>).</p></li>
+  </ul>
+</insight>
+
+<figure xml:id="fig-normal-d-curve">
+  <caption>The 2-14-34 Rule Area Distribution under a Standard Normal Curve</caption>
+  <image xml:id="img-norm-curve" width="85%">
+    <description>A bell-shaped normal distribution curve divided into symmetric shaded segments labeled 0.02, 0.14, and 0.34 extending outward from the center z equals 0 to z equals 3.</description>
+    <latex-image>
+      \begin{tikzpicture}[xscale=1.6, yscale=1.2]
+        % Base Shading Zones using static coordinates to protect the parser
+        % Zone -3 to -2 (2%)
+        \fill[blue!10] (-3,0) -- (-3,0.05) to[out=5,in=170] (-2,0.2) -- (-2,0) -- cycle;
+        % Zone -2 to -1 (14%)
+        \fill[blue!20] (-2,0) -- (-2,0.2) to[out=10,in=240] (-1,0.9) -- (-1,0) -- cycle;
+        % Zone -1 to 0 (34%)
+        \fill[blue!30] (-1,0) -- (-1,0.9) to[out=60,in=180] (0,2.3) -- (0,0) -- cycle;
+        % Zone 0 to 1 (34%)
+        \fill[blue!30] (0,0) -- (0,2.3) to[out=0,in=120] (1,0.9) -- (1,0) -- cycle;
+        % Zone 1 to 2 (14%)
+        \fill[blue!20] (1,0) -- (1,0.9) to[out=300,in=170] (2,0.2) -- (2,0) -- cycle;
+        % Zone 2 to 3 (2%)
+        \fill[blue!10] (2,0) -- (2,0.2) to[out=350,in=175] (3,0.05) -- (3,0) -- cycle;
+
+        % Outer Frame and Smooth Boundary Curve
+        \draw[line width=1.5pt] (-3.5,0) -- (3.5,0);
+        \draw[line width=1.5pt] (-3.5,0.01) to[out=0,in=175] (-3,0.05) to[out=5,in=170] (-2,0.2) to[out=10,in=240] (-1,0.9) to[out=60,in=180] (0,2.3) to[out=0,in=120] (1,0.9) to[out=300,in=170] (2,0.2) to[out=350,in=175] (3,0.05) to[out=355,in=180] (3.5,0.01);
+
+        % Vertical Boundary Gridlines
+        \draw[dashed, opacity=0.6] (-3,0) -- (-3,0.05);
+        \draw[dashed, opacity=0.6] (-2,0) -- (-2,0.2);
+        \draw[dashed, opacity=0.6] (-1,0) -- (-1,0.9);
+        \draw[dashed, opacity=0.6] (0,0) -- (0,2.3);
+        \draw[dashed, opacity=0.6] (1,0) -- (1,0.9);
+        \draw[dashed, opacity=0.6] (2,0) -- (2,0.2);
+        \draw[dashed, opacity=0.6] (3,0) -- (3,0.05);
+
+        % Z-Score X-Axis Ticks
+        \node[below] at (-3,-0.1) {$z=-3$};
+        \node[below] at (-2,-0.1) {$z=-2$};
+        \node[below] at (-1,-0.1) {$z=-1$};
+        \node[below] at (0,-0.1) {$z=0$};
+        \node[below] at (1,-0.1) {$z=1$};
+        \node[below] at (2,-0.1) {$z=2$};
+        \node[below] at (3,-0.1) {$z=3$};
+
+        % Probability Labels
+        \node at (-2.5,0.3) {\small 0.02};
+        \node at (-1.5,0.5) {\small 0.14};
+        \node at (-0.5,1.1) {\small 0.34};
+        \node at (0.5,1.1)  {\small 0.34};
+        \node at (1.5,0.5)  {\small 0.14};
+        \node at (2.5,0.3)  {\small 0.02};
+      \end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+
+
+
+
+
+
+
+
+
+</section>

@@ -2584,6 +2584,141 @@ var ptx_lunr_docs = [
   "body": "  Suppose the height of adult women in the United States is normally distributed with a mean of 5' 8\" and a standard deviation of \". What is the probability that a randomly chosen woman in the United States is shorter than 5' 5\"?   Normal distribution curve of women's heights with the lower tail below 5' 5\" shaded.   A normal distribution curve centered at 5 feet 8 inches. The area under the curve to the left of 5 feet 5 inches is shaded in blue, representing the lower 2.5 percent of the population.       First, determine how many standard deviations 5' 5\" is from the mean of 5'8\". Since each standard deviation is \", a height of 5' 6.5\" is standard deviation below the mean, and 5' 5\" is exactly standard deviations below the mean.  We can find the total percentage of women who are 5' 5\" or taller by adding up the known regions of the normal distribution:    50% of women are taller than the mean of 5' 8\".    34% of women are between 5' 6.5\" and 5' 8\" (within standard deviation below the mean).    13.5% of women are between 5' 5\" and 5' 6.5\" (between and standard deviations below the mean).    Adding these regions together gives: . Since 97.5% of women are 5' 5\" or taller, the remaining portion is .   Alternative Method: The empirical rule states that 95% of the data falls within standard deviations of the mean. This leaves 5% split equally between the two extreme outer tails ( ). Therefore, the probability that a randomly chosen woman is shorter than 5' 5\" is 2.5% (or ).   "
 },
 {
+  "id": "sec-z-scores",
+  "level": "1",
+  "url": "sec-z-scores.html",
+  "type": "Section",
+  "number": "",
+  "title": "Z-Scores and Probability",
+  "body": " Z-Scores and Probability   We will learn how z-scores can be used to evaluate how extreme a given value is within a particular set or population. By connecting these standard values to probability density distributions, you will develop the skills necessary to calculate the probability of a data point falling between two specified z-scores, as well as the ability to work backward to determine an exact z-score when given a target probability threshold.  Using the Empirical Rule can give you a good idea of the probability of occurrence of a value that happens to be exactly one, two, or three standard deviations to either side of the mean. But how do you compare the probabilities of values that are in between those standard deviations?  Z-scores are closely related to the Empirical Rule; both offer methods for evaluating how extreme a particular value is within a given dataset. You can think of a z-score as the exact number of standard deviations there are between a given value and the mean of the set. While the Empirical Rule only allows you to associate the first three integer standard deviations with fixed percentages ( , , and ), the z-score allows you to state, with arbitrary precision, exactly how many standard deviations a value lies above or below the mean.  Conceptually, the calculation is straightforward. To find the number of standard deviations between a value and the mean, first calculate the difference between your specific data point and the population mean. Then, divide that difference by the standard deviation of the dataset.    Z-Score Formula   The mathematical formula to calculate a standard z-score is: Where is the data value, is the population mean, and is the standard deviation.    For example, with and , a score of gives: This means the value is 2 standard deviations below the mean.   Positive Z-score   Let and . Find the z-score for . The value is standard deviations above the mean.     Negative Z-score   Let and . Find the z-score for . The resulting value is approximately standard deviations below the mean.     Finding a Value Given a Z-score   Find the original raw data value if the mean is , the standard deviation is , and the given z-score is . Multiplying both sides by and adding yields:      Practice Exercises    A retail store calculates that the mean price for a specific model of skis is with a standard deviation of . Find the z-score for a pair of skis priced at .     The price is exactly standard deviations below the mean.      The mean number of ice cream scoops served per order at a shop is scoops with a standard deviation of scoop. Find the z-score for an order containing scoops.     The order size is standard deviations above the mean.      The mean weight of a specific cattle breed population is lbs with a standard deviation of lbs. Calculate the z-score for a cow that weighs lbs.     The cow's weight is approximately standard deviations below the mean.      Compute the z-score for a sample measurement of taken from a population where and .           On a standardized certification exam, the mean score is with a standard deviation of . Determine the z-score for an examinee who scored an .     This student scored standard deviations above the population average.      A track-and-field sprint group has a mean race completion time of seconds with a standard deviation of seconds. What is the z-score for a runner who completes the race in seconds?     The runner's time is standard deviations faster (below) than the group average.      An industrial lighting brand has a mean runtime life of hours with a standard deviation of hours. Find the specific operational lifespan that corresponds to a z-score of .            The 2-14-34 Rule  A helpful tool for quick mental approximations of these probabilities is the 2-14-34 Rule . Because a normal distribution curve is completely symmetric, either half of the bell curve extending outward from the center mean ( ) can be broken down into specific operational percentage blocks:   of the population data falls between and (or between and ).  of the population data falls between and (or between and ).  of the population data falls between and (or between and ).     The 2-14-34 Rule Area Distribution under a Standard Normal Curve   A bell-shaped normal distribution curve divided into symmetric shaded segments labeled 0.02, 0.14, and 0.34 extending outward from the center z equals 0 to z equals 3.     "
+},
+{
+  "id": "def-z-score-formula",
+  "level": "2",
+  "url": "sec-z-scores.html#def-z-score-formula",
+  "type": "Definition",
+  "number": "4.82",
+  "title": "Z-Score Formula.",
+  "body": " Z-Score Formula   The mathematical formula to calculate a standard z-score is: Where is the data value, is the population mean, and is the standard deviation.   "
+},
+{
+  "id": "ex-pos-z",
+  "level": "2",
+  "url": "sec-z-scores.html#ex-pos-z",
+  "type": "Example",
+  "number": "4.83",
+  "title": "Positive Z-score.",
+  "body": " Positive Z-score   Let and . Find the z-score for . The value is standard deviations above the mean.   "
+},
+{
+  "id": "ex-neg-z",
+  "level": "2",
+  "url": "sec-z-scores.html#ex-neg-z",
+  "type": "Example",
+  "number": "4.84",
+  "title": "Negative Z-score.",
+  "body": " Negative Z-score   Let and . Find the z-score for . The resulting value is approximately standard deviations below the mean.   "
+},
+{
+  "id": "ex-reverse-z",
+  "level": "2",
+  "url": "sec-z-scores.html#ex-reverse-z",
+  "type": "Example",
+  "number": "4.85",
+  "title": "Finding a Value Given a Z-score.",
+  "body": " Finding a Value Given a Z-score   Find the original raw data value if the mean is , the standard deviation is , and the given z-score is . Multiplying both sides by and adding yields:    "
+},
+{
+  "id": "exercises-z-scores-2",
+  "level": "2",
+  "url": "sec-z-scores.html#exercises-z-scores-2",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  A retail store calculates that the mean price for a specific model of skis is with a standard deviation of . Find the z-score for a pair of skis priced at .     The price is exactly standard deviations below the mean.   "
+},
+{
+  "id": "exercises-z-scores-3",
+  "level": "2",
+  "url": "sec-z-scores.html#exercises-z-scores-3",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  The mean number of ice cream scoops served per order at a shop is scoops with a standard deviation of scoop. Find the z-score for an order containing scoops.     The order size is standard deviations above the mean.   "
+},
+{
+  "id": "exercises-z-scores-4",
+  "level": "2",
+  "url": "sec-z-scores.html#exercises-z-scores-4",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  The mean weight of a specific cattle breed population is lbs with a standard deviation of lbs. Calculate the z-score for a cow that weighs lbs.     The cow's weight is approximately standard deviations below the mean.   "
+},
+{
+  "id": "exercises-z-scores-5",
+  "level": "2",
+  "url": "sec-z-scores.html#exercises-z-scores-5",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Compute the z-score for a sample measurement of taken from a population where and .        "
+},
+{
+  "id": "exercises-z-scores-6",
+  "level": "2",
+  "url": "sec-z-scores.html#exercises-z-scores-6",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  On a standardized certification exam, the mean score is with a standard deviation of . Determine the z-score for an examinee who scored an .     This student scored standard deviations above the population average.   "
+},
+{
+  "id": "exercises-z-scores-7",
+  "level": "2",
+  "url": "sec-z-scores.html#exercises-z-scores-7",
+  "type": "Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  A track-and-field sprint group has a mean race completion time of seconds with a standard deviation of seconds. What is the z-score for a runner who completes the race in seconds?     The runner's time is standard deviations faster (below) than the group average.   "
+},
+{
+  "id": "exercises-z-scores-8",
+  "level": "2",
+  "url": "sec-z-scores.html#exercises-z-scores-8",
+  "type": "Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  An industrial lighting brand has a mean runtime life of hours with a standard deviation of hours. Find the specific operational lifespan that corresponds to a z-score of .         "
+},
+{
+  "id": "insight-2-14-34-rule",
+  "level": "2",
+  "url": "sec-z-scores.html#insight-2-14-34-rule",
+  "type": "Insight",
+  "number": "4.86",
+  "title": "The 2-14-34 Rule.",
+  "body": " The 2-14-34 Rule  A helpful tool for quick mental approximations of these probabilities is the 2-14-34 Rule . Because a normal distribution curve is completely symmetric, either half of the bell curve extending outward from the center mean ( ) can be broken down into specific operational percentage blocks:   of the population data falls between and (or between and ).  of the population data falls between and (or between and ).  of the population data falls between and (or between and ).   "
+},
+{
+  "id": "fig-normal-d-curve",
+  "level": "2",
+  "url": "sec-z-scores.html#fig-normal-d-curve",
+  "type": "Figure",
+  "number": "4.87",
+  "title": "",
+  "body": " The 2-14-34 Rule Area Distribution under a Standard Normal Curve   A bell-shaped normal distribution curve divided into symmetric shaded segments labeled 0.02, 0.14, and 0.34 extending outward from the center z equals 0 to z equals 3.    "
+},
+{
+  "id": "sec-stat-ch-ex",
+  "level": "1",
+  "url": "sec-stat-ch-ex.html",
+  "type": "Section",
+  "number": "",
+  "title": "Chapter Exercises",
+  "body": " Chapter Exercises    "
+},
+{
   "id": "handout-voting-methods",
   "level": "1",
   "url": "handout-voting-methods.html",

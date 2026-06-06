@@ -136,7 +136,7 @@ eBookConfig.enable_chatcodes =  false;
 <textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
 </div>
 </div>
-<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="notes-empirical-rule.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Intro-Statistics.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-stat-ch-ex.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="notes-empirical-rule.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Intro-Statistics.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-Regression.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\usepackage{textcomp}
 \usepackage{newunicodechar}
 \newunicodechar{′}{\textprime}
@@ -233,6 +233,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec-z-scores.html" class="internal"><span class="title">Z-Scores and Probability</span></a></div>
 <ul class="structural toc-item-list active"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-z-scores.html#exercises-z-scores" class="internal"><span class="title">Practice Exercises</span></a></div></li></ul>
 </li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Regression.html" class="internal"><span class="title">Regression</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-stat-ch-ex.html" class="internal"><span class="title">Chapter Exercises</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-stat-ch-ex.html#sec-stat-ch-ex-2" class="internal"><span class="title">Exercises</span></a></div></li></ul>
@@ -370,6 +371,119 @@ x = 63 + (2.403)(4.25) \approx 73.21
 <div class="autopermalink" data-description="Paragraph"><a href="#ex-reverse-z-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Example 4.85: Finding a Value Given a Z-score"><a href="#ex-reverse-z" title="Copy heading and permalink for Example 4.85: Finding a Value Given a Z-score" aria-label="Copy heading and permalink for Example 4.85: Finding a Value Given a Z-score">🔗</a></div>
+</article></details>
+<article class="insight remark-like" id="insight-2-14-34-rule"><h3 class="heading">
+<span class="type">Insight</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.86</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The 2-14-34 Rule.</span>
+</h3>
+<div class="para" id="insight-2-14-34-rule-2">A helpful tool for quick mental approximations of these probabilities is the <dfn class="terminology">2-14-34 Rule</dfn>. Because a normal distribution curve is completely symmetric, either half of the bell curve extending outward from the center mean (<span class="process-math">\(z=0\)</span>) can be broken down into specific operational percentage blocks:<div class="autopermalink" data-description="Paragraph"><a href="#insight-2-14-34-rule-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="insight-2-14-34-rule-3">
+<li id="insight-2-14-34-rule-3-1">
+<div class="para" id="insight-2-14-34-rule-3-1-1">
+<span class="process-math">\(34\%\)</span> of the population data falls between <span class="process-math">\(z=0\)</span> and <span class="process-math">\(z=1\)</span> (or between <span class="process-math">\(z=0\)</span> and <span class="process-math">\(z=-1\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#insight-2-14-34-rule-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#insight-2-14-34-rule-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="insight-2-14-34-rule-3-2">
+<div class="para" id="insight-2-14-34-rule-3-2-1">
+<span class="process-math">\(14\%\)</span> of the population data falls between <span class="process-math">\(z=1\)</span> and <span class="process-math">\(z=2\)</span> (or between <span class="process-math">\(z=-1\)</span> and <span class="process-math">\(z=-2\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#insight-2-14-34-rule-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#insight-2-14-34-rule-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="insight-2-14-34-rule-3-3">
+<div class="para" id="insight-2-14-34-rule-3-3-1">
+<span class="process-math">\(2\%\)</span> of the population data falls between <span class="process-math">\(z=2\)</span> and <span class="process-math">\(z=3\)</span> (or between <span class="process-math">\(z=-2\)</span> and <span class="process-math">\(z=-3\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#insight-2-14-34-rule-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#insight-2-14-34-rule-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Insight 4.86: The 2-14-34 Rule"><a href="#insight-2-14-34-rule" title="Copy heading and permalink for Insight 4.86: The 2-14-34 Rule" aria-label="Copy heading and permalink for Insight 4.86: The 2-14-34 Rule">🔗</a></div>
+</article>
+<figure class="figure figure-like" id="fig-normal-d-curve"><div class="image-box" style="width: 85%; margin-left: 7.5%; margin-right: 7.5%;"><img src="generated/latex-image/img-norm-curve.svg" role="img" class="contained" alt="A bell-shaped normal distribution curve divided into symmetric shaded segments labeled 0.02, 0.14, and 0.34 extending outward from the center z equals 0 to z equals 3."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.87<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The 2-14-34 Rule Area Distribution under a Standard Normal Curve<div class="autopermalink" data-description="Figure 4.87"><a href="#fig-normal-d-curve" title="Copy heading and permalink for Figure 4.87" aria-label="Copy heading and permalink for Figure 4.87">🔗</a></div></figcaption>
+</figure>
+<details id="ex-rule-between" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.88</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding Area Between Specific Bounds.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-rule-between-2-1">Using the 2-14-34 Rule, determine the approximate percentage of data that falls between a z-score of <span class="process-math">\(z = -1\)</span> and a z-score of <span class="process-math">\(z = 2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-rule-between-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-rule-between-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex-rule-between-3-1">We break the region down into its individual standardized blocks from left to right:<div class="autopermalink" data-description="Paragraph"><a href="#ex-rule-between-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="ex-rule-between-3-2">
+<li id="ex-rule-between-3-2-1">
+<div class="para" id="ex-rule-between-3-2-1-1">The area between <span class="process-math">\(z = -1\)</span> and <span class="process-math">\(z = 0\)</span> contains <span class="process-math">\(34\%\)</span> of the data.<div class="autopermalink" data-description="Paragraph"><a href="#ex-rule-between-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-rule-between-3-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-rule-between-3-2-2">
+<div class="para" id="ex-rule-between-3-2-2-1">The area between <span class="process-math">\(z = 0\)</span> and <span class="process-math">\(z = 1\)</span> contains <span class="process-math">\(34\%\)</span> of the data.<div class="autopermalink" data-description="Paragraph"><a href="#ex-rule-between-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-rule-between-3-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex-rule-between-3-2-3">
+<div class="para" id="ex-rule-between-3-2-3-1">The area between <span class="process-math">\(z = 1\)</span> and <span class="process-math">\(z = 2\)</span> contains <span class="process-math">\(14\%\)</span> of the data.<div class="autopermalink" data-description="Paragraph"><a href="#ex-rule-between-3-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ex-rule-between-3-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para logical" id="ex-rule-between-3-3">
+<div class="para">Summing these continuous regions together gives us:</div>
+<div class="displaymath process-math" id="ex-rule-between-3-3-1">
+\begin{equation*}
+\text{Total Area} = 34\% + 34\% + 14\% = 82\%
+\end{equation*}
+</div>
+<div class="para">Therefore, approximately <span class="process-math">\(82\%\)</span> of the population values fall within this score boundary.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-rule-between-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.88.1"><a href="#ex-rule-between-3" title="Copy heading and permalink for Solution 4.88.1" aria-label="Copy heading and permalink for Solution 4.88.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 4.88: Finding Area Between Specific Bounds"><a href="#ex-rule-between" title="Copy heading and permalink for Example 4.88: Finding Area Between Specific Bounds" aria-label="Copy heading and permalink for Example 4.88: Finding Area Between Specific Bounds">🔗</a></div>
+</article></details>
+<details id="ex-rule-greater-than" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.89</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculating Tail Probabilities.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-rule-greater-than-2-1">A standardized industrial process yield results in a normal curve distribution. Using the 2-14-34 Rule, approximate the probability that a randomly chosen sample yields a z-score greater than <span class="process-math">\(z = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-rule-greater-than-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-rule-greater-than-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-rule-greater-than-3-1">
+<div class="para">Because the normal curve is perfectly symmetric, exactly <span class="process-math">\(50\%\)</span> of all data lies above the center mean (<span class="process-math">\(z = 0\)</span>). To find the portion greater than <span class="process-math">\(z = 1\text{,}\)</span> we subtract the region we do not want from the total right half:</div>
+<div class="displaymath process-math" id="ex-rule-greater-than-3-1-4">
+\begin{equation*}
+P(z \gt 1) = 50\% - \text{Area}(z=0 \text{ to } z=1)
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="ex-rule-greater-than-3-1-5">
+\begin{equation*}
+P(z \gt 1) = 50\% - 34\% = 16\%
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-rule-greater-than-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-rule-greater-than-3-2">
+<div class="para">Alternatively, you can get the exact same answer by summing the individual blocks extending to the right of <span class="process-math">\(z = 1\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="ex-rule-greater-than-3-2-2">
+\begin{equation*}
+\text{Area}(z=1 \text{ to } z=2) + \text{Area}(z=2 \text{ to } z=3) = 14\% + 2\% = 16\%
+\end{equation*}
+</div>
+<div class="para">Thus, there is roughly a <span class="process-math">\(16\%\)</span> probability that a random value has a z-score greater than <span class="process-math">\(1\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-rule-greater-than-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.89.1"><a href="#ex-rule-greater-than-3" title="Copy heading and permalink for Solution 4.89.1" aria-label="Copy heading and permalink for Solution 4.89.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 4.89: Calculating Tail Probabilities"><a href="#ex-rule-greater-than" title="Copy heading and permalink for Example 4.89: Calculating Tail Probabilities" aria-label="Copy heading and permalink for Example 4.89: Calculating Tail Probabilities">🔗</a></div>
 </article></details>
 <section class="exercises" id="exercises-z-scores">
 <h3 class="heading hide-type">
@@ -518,41 +632,11 @@ x = 15000 + (-1.40)(850) = 13810\text{ hours}
 </div>
 <div class="autopermalink" data-description="Exercise 7"><a href="#exercises-z-scores-8" title="Copy heading and permalink for Exercise 7" aria-label="Copy heading and permalink for Exercise 7">🔗</a></div>
 </article><div class="autopermalink" data-description="Exercises: Practice Exercises"><a href="#exercises-z-scores" title="Copy heading and permalink for Exercises: Practice Exercises" aria-label="Copy heading and permalink for Exercises: Practice Exercises">🔗</a></div>
-</section>
-<article class="insight remark-like" id="insight-2-14-34-rule"><h3 class="heading">
-<span class="type">Insight</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.86</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The 2-14-34 Rule.</span>
-</h3>
-<div class="para" id="insight-2-14-34-rule-2">A helpful tool for quick mental approximations of these probabilities is the <dfn class="terminology">2-14-34 Rule</dfn>. Because a normal distribution curve is completely symmetric, either half of the bell curve extending outward from the center mean (<span class="process-math">\(z=0\)</span>) can be broken down into specific operational percentage blocks:<div class="autopermalink" data-description="Paragraph"><a href="#insight-2-14-34-rule-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<ul class="disc" id="insight-2-14-34-rule-3">
-<li id="insight-2-14-34-rule-3-1">
-<div class="para" id="insight-2-14-34-rule-3-1-1">
-<span class="process-math">\(34\%\)</span> of the population data falls between <span class="process-math">\(z=0\)</span> and <span class="process-math">\(z=1\)</span> (or between <span class="process-math">\(z=0\)</span> and <span class="process-math">\(z=-1\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#insight-2-14-34-rule-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#insight-2-14-34-rule-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="insight-2-14-34-rule-3-2">
-<div class="para" id="insight-2-14-34-rule-3-2-1">
-<span class="process-math">\(14\%\)</span> of the population data falls between <span class="process-math">\(z=1\)</span> and <span class="process-math">\(z=2\)</span> (or between <span class="process-math">\(z=-1\)</span> and <span class="process-math">\(z=-2\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#insight-2-14-34-rule-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#insight-2-14-34-rule-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="insight-2-14-34-rule-3-3">
-<div class="para" id="insight-2-14-34-rule-3-3-1">
-<span class="process-math">\(2\%\)</span> of the population data falls between <span class="process-math">\(z=2\)</span> and <span class="process-math">\(z=3\)</span> (or between <span class="process-math">\(z=-2\)</span> and <span class="process-math">\(z=-3\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#insight-2-14-34-rule-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#insight-2-14-34-rule-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="autopermalink" data-description="Insight 4.86: The 2-14-34 Rule"><a href="#insight-2-14-34-rule" title="Copy heading and permalink for Insight 4.86: The 2-14-34 Rule" aria-label="Copy heading and permalink for Insight 4.86: The 2-14-34 Rule">🔗</a></div>
-</article>
-<figure class="figure figure-like" id="fig-normal-d-curve"><div class="image-box" style="width: 85%; margin-left: 7.5%; margin-right: 7.5%;"><img src="generated/latex-image/img-norm-curve.svg" role="img" class="contained" alt="A bell-shaped normal distribution curve divided into symmetric shaded segments labeled 0.02, 0.14, and 0.34 extending outward from the center z equals 0 to z equals 3."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.87<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The 2-14-34 Rule Area Distribution under a Standard Normal Curve<div class="autopermalink" data-description="Figure 4.87"><a href="#fig-normal-d-curve" title="Copy heading and permalink for Figure 4.87" aria-label="Copy heading and permalink for Figure 4.87">🔗</a></div></figcaption>
-</figure><div class="autopermalink" data-description="Section: Z-Scores and Probability"><a href="#sec-z-scores" title="Copy heading and permalink for Section: Z-Scores and Probability" aria-label="Copy heading and permalink for Section: Z-Scores and Probability">🔗</a></div>
+</section><div class="autopermalink" data-description="Section: Z-Scores and Probability"><a href="#sec-z-scores" title="Copy heading and permalink for Section: Z-Scores and Probability" aria-label="Copy heading and permalink for Section: Z-Scores and Probability">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="notes-empirical-rule.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-stat-ch-ex.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="notes-empirical-rule.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Regression.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

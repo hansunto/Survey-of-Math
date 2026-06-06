@@ -1,0 +1,507 @@
+<section xml:id="sec-Regression">
+    <title>Regression</title>
+    <introduction>
+<p> Regression in statistics is a modeling technique used to estimate the relationship 
+    between a dependent variable (the outcome) and one or more independent variables 
+    (the predictors). 
+</p>
+<p>
+    It allows you to understand how changes in the predictors are associated with 
+    the outcome, which is highly useful for forecasting, making predictions, 
+    and identifying trends. 
+</p>
+<p>
+    Depending on the nature of your data and the relationship you are trying to analyze, 
+    there are several standard regression models:
+</p>
+</introduction>
+<assemblage xml:id="assemblage-linear-regression">
+    <title>Simple Linear Regression</title>
+    <p>
+            <alert>Simple linear regression</alert> is a statistical method that models the relationship 
+            between a single independent variable and a continuous dependent variable by 
+            fitting a linear equation to observed data. It plots a straight line of best fit. The equation of the line is typically 
+            expressed as:
+            <me> y = mx + b </me>
+            where:
+            <ul>
+                <li><m>y</m> is the dependent variable (the outcome).</li>
+                <li><m>x</m> is the independent variable (the predictor).</li>
+                <li><m>m</m> is the slope of    the line, representing the change in <m>y</m> for a one-unit change in <m>x</m>.</li>
+                <li><m>b</m> is the y-intercept, representing the value of <m>y</m> when <m>x</m> is zero.</li>
+            </ul>
+    </p>
+</assemblage>
+
+<example xml:id="ex-ice-cream">
+      <statement>
+        <p>
+          Think of ice cream sales based on the outside temperature:
+          <ul>
+            <li>
+              <p>Temperature (<m>x</m>): The independent variable.</p>
+            </li>
+            <li>
+              <p>Ice Cream Sales (<m>y</m>): The dependent variable.</p>
+            </li>
+          </ul>
+        </p>
+        <p>
+          As temperature (<m>x</m>) goes up, ice cream sales (<m>y</m>) go up. 
+          A simple linear regression draws a straight line through your past data 
+          to help you predict exactly how many ice creams you will sell on a hot 90°F 
+          day versus a cool 60°F day.
+        </p>
+      </statement>
+      <solution xml:id="sol-ice-cream-prediction">
+        <p>
+          By establishing the linear equation from historical data, the business can accurately input the predicted weather temperature (<m>x</m>) to yield an expected inventory target (<m>y</m>).
+        </p>
+      </solution>
+ </example>
+
+  <exercise xml:id="ex-widget-package">
+    <statement>
+      <p>
+        The relationship between the number of widgets in a package and the length of the package, in inches, is given in the table below.
+      </p>
+
+      <table xml:id="table-widget-data">
+        <caption>Widget Packaging Dimensions</caption>
+        <tabular top="minor" bottom="minor">
+          <row header="true">
+            <cell halign="center"><term>Number of Widgets (<m>x</m>)</term></cell>
+            <cell halign="center"><term>Length of Package in. (<m>y</m>)</term></cell>
+          </row>
+          <row>
+            <cell halign="center">3</cell>
+            <cell halign="center">9.00</cell>
+          </row>
+          <row>
+            <cell halign="center">4</cell>
+            <cell halign="center">9.25</cell>
+          </row>
+          <row>
+            <cell halign="center">5</cell>
+            <cell halign="center">9.50</cell>
+          </row>
+          <row>
+            <cell halign="center">6</cell>
+            <cell halign="center">9.75</cell>
+          </row>
+        </tabular>
+      </table>
+
+      <p>
+        <ol marker="a)">
+          <li>
+            <p>
+              What is the slope of the line of best fit (linear regression)? (Widgets on <m>x</m>-axis, Length on <m>y</m>-axis)
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the value of the y-intercept of the linear regression?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        <term>Part a) Slope Calculation:</term>
+        The formula for the slope (<m>m</m>) of a line passing through coordinates <m>(x_1, y_1)</m> and <m>(x_2, y_2)</m> is:
+        <me>m = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}</me>
+      </p>
+      <p>
+        Using sequential points from the data table like <m>(3, 9.00)</m> and <m>(4, 9.25)</m>:
+        <me>m = \frac{9.25 - 9.00}{4 - 3} = \frac{0.25}{1} = 0.25</me>
+        Because the data is perfectly linear, the slope of the line of best fit is exactly <term>0.25</term>.
+      </p>
+
+      <p>
+        <term>Part b) Y-Intercept Calculation:</term>
+        The slope-intercept form of a linear equation is given by:
+        <me>y = mx + b</me>
+      </p>
+      <p>
+        Substituting our known slope <m>m = 0.25</m> and the first data coordinate point <m>(3, 9.00)</m> allows us to solve for <m>b</m>:
+        <md>
+          <mrow>9.00 \amp = 0.25(3) + b</mrow>
+          <mrow>9.00 \amp = 0.75 + b</mrow>
+          <mrow>b \amp = 9.00 - 0.75 = 8.25</mrow>
+        </md>
+        Thus, the value of the y-intercept is <term>8.25</term>, which corresponds to a complete formula of <m>y = 0.25x + 8.25</m>.
+      </p>
+
+      <!-- Fully Accessible Figure Integration -->
+      <figure xml:id="fig-widget-regression">
+        <caption>Linear Regression Trend for Widget Packaging</caption>
+        <image width="60%">
+          <description>
+            A scatter plot displaying four blue data points aligned upward on a Cartesian coordinate plane. The horizontal axis represents the Number of Widgets from 2 to 7, and the vertical axis represents the Length of the Package in inches from 8 to 11. The four data points are located at coordinates (3, 9.00), (4, 9.25), (5, 9.50), and (6, 9.75). A solid red regression line trends upward through all four points, crossing the vertical axis at a y-intercept value of 8.25, demonstrating a positive linear correlation described by the equation y equals 0.25x plus 8.25.
+          </description>
+          <latex-image>
+            \begin{tikzpicture}
+              \begin{axis}[
+                xlabel={Number of Widgets ($x$)},
+                ylabel={Length of Package in. ($y$)},
+                xmin=2, xmax=7,
+                ymin=8, ymax=11,
+                grid=both,
+                grid style={dashed, gray!30}
+              ]
+                \addplot[only marks, blue, mark=*] coordinates {(3,9.00) (4,9.25) (5,9.50) (6,9.75)};
+                \addplot[red, thick, domain=2:7] {0.25*x + 8.25};
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+    </solution>
+  </exercise>
+
+    <p>
+      Standard least-squares linear regression is a statistical method used to find 
+      the best-fitting straight line through a set of data points. It is the most 
+      common technique for modeling the relationship between a dependent variable 
+      (<m>y</m>) and one or more independent variables (<m>x</m>).
+    </p>
+    <p>
+    The least-squares method is a mathematical approach that minimizes the sum of 
+    the squares of the residuals (the differences between observed and predicted 
+    values). This method ensures that the line of best fit is as close as possible 
+    to all data points, providing the most accurate representation of the relationship 
+    between the variables.
+    </p>
+  <assemblage xml:id="asm-least-squares-regression">
+    <title>Standard Least-Squares Linear Regression</title>
+    <p>
+      <term>The Linear Equation</term>
+      The definition models the data using the equation of a straight line:
+      <me>y = mx + b</me>
+        where <m>m</m> is the slope and <m>b</m> is the y-intercept. 
+    </p>
+
+    <p>
+      <term>Formulas for Coefficients</term>
+      The parameters <m>m</m> and <m>b</m> are calculated directly using the following least-squares formulas:
+      <me>m = \frac{n\sum(xy) - \sum x \sum y}{n\sum(x^2) - (\sum x)^2}</me>
+      <me>b = \frac{\sum y - m\sum x}{n}</me>
+    
+    <ul>
+        <li>
+          <p><m>\sum x</m> is the sum of all <m>x</m>-variables.</p>
+        </li>
+        <li>
+          <p><m>\sum y</m> is the sum of all <m>y</m>-variables.</p>
+        </li>
+        <li>
+          <p><m>\sum(xy)</m> is the sum of the product of each paired <m>x</m> and <m>y</m> value.</p>
+        </li>
+        <li>
+          <p><m>\sum(x^2)</m> is the sum of the squares of all <m>x</m>-variables.</p>
+        </li>
+        <li>
+          <p><m>n</m> is the total number of data points.</p>
+        </li>
+        </ul>
+        </p>
+  </assemblage>
+    <p>
+        This method provides a powerful tool for understanding and predicting relationships 
+        in data, making it a fundamental technique in statistics and data analysis.
+    </p>
+
+  <example xml:id="example-fat-calories-regression">
+    <statement>
+      <p>
+        The table below shows the relationship between total fat grams and the total calories in a selection of fast food sandwiches. Find the linear regression equation that models this data. Round all values to the nearest integer.
+      </p>
+
+      <table xml:id="table-sandwich-nutrition">
+        <caption>Fast Food Sandwich Nutritional Data</caption>
+        <tabular top="minor" bottom="minor">
+          <col halign="center" />
+          <col halign="center" />
+          <row header="yes" bottom="minor">
+            <cell><term>Total Fat g (<m>x</m>)</term></cell>
+            <cell><term>Total Calories (<m>y</m>)</term></cell>
+          </row>
+          <row><cell>9</cell><cell>260</cell></row>
+          <row><cell>13</cell><cell>320</cell></row>
+          <row><cell>21</cell><cell>420</cell></row>
+          <row><cell>30</cell><cell>530</cell></row>
+          <row><cell>31</cell><cell>560</cell></row>
+          <row><cell>32</cell><cell>580</cell></row>
+          <row><cell>34</cell><cell>590</cell></row>
+        </tabular>
+      </table>
+    </statement>
+
+    <!-- Accessible Multiple Choice Structure -->
+    <choices>
+      <choice>
+        <statement><p><m>y = 14x + 99</m></p></statement>
+      </choice>
+      <choice>
+        <statement><p><m>y = 14x + 98</m></p></statement>
+      </choice>
+      <choice correct="yes">
+        <statement><p><m>y = 13x + 143</m></p></statement>
+        <feedback><p>Correct! The calculated slope rounds to 13 and the y-intercept rounds to 143.</p></feedback>
+      </choice>
+      <choice>
+        <statement><p><m>y = 13x + 142</m></p></statement>
+      </choice>
+    </choices>
+
+    <solution>
+      <p>
+        To find the line of best fit <m>y = mx + b</m>, we apply the standard least-squares linear regression formulas for the slope (<m>m</m>) and the y-intercept (<m>b</m>):
+        <me>m = \frac{n\sum(xy) - \sum x \sum y}{n\sum(x^2) - (\sum x)^2}</me>
+        <me>b = \frac{\sum y - m\sum x}{n}</me>
+      </p>
+      <p>
+        Using the <m>n = 7</m> data points from the table, we sum the component variables:
+        <ul>
+          <li><p><m>\sum x = 170</m></p></li>
+          <li><p><m>\sum y = 3260</m></p></li>
+          <li><p><m>\sum (x^2) = 4752</m></p></li>
+          <li><p><m>\sum (xy) = 87830</m></p></li>
+        </ul>
+      </p>
+      <p>
+        Substituting these values into our slope equation yields:
+        <me>m = \frac{7(87830) - (170)(3260)}{7(4752) - (170)^2} = \frac{614810 - 554200}{33264 - 28900} = \frac{60610}{4364} \approx 13.305</me>
+        Rounding to the nearest integer gives a slope of <term>13</term>.
+      </p>
+      <p>
+        Next, we calculate the precise y-intercept using the unrounded slope value:
+        <me>b = \frac{3260 - (13.30492)(170)}{7} \approx 142.595</me>
+        Rounding to the nearest integer gives a y-intercept of <term>143</term>.
+      </p>
+      <p>
+        Therefore, the final linear regression model is:
+        <me>y = 13x + 143</me>
+      </p>
+
+      <figure xml:id="fig-sandwich-regression">
+        <caption>Linear Fit of Fat Content to Total Calories</caption>
+        <image width="60%">
+          <description>
+            A scatter plot tracking sandwich fat content versus total calories on a Cartesian grid. The horizontal x-axis measures Total Fat from 0 to 40 grams, and the vertical y-axis measures Total Calories from 200 to 700. Seven data points align in an upward trajectory. A straight red trendline originates at a y-intercept of 143 and climbs with a slope of 13, showing a strong positive correlation.
+          </description>
+          <latex-image>
+            \begin{tikzpicture}
+              \begin{axis}[
+                xlabel={Total Fat g ($x$)},
+                ylabel={Total Calories ($y$)},
+                xmin=0, xmax=40,
+                ymin=200, ymax=700,
+                grid=both,
+                grid style={dashed, gray!30}
+              ]
+                \addplot[only marks, blue, mark=*] coordinates {
+                  (9,260) (13,320) (21,420) (30,530) (31,560) (32,580) (34,590)
+                };
+                \addplot[red, thick, domain=0:40] {13.305*x + 142.595};
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+    </solution>
+  </example>
+
+  <example xml:id="example-eclipse-temperature">
+    <statement>
+      <p>
+        During a solar eclipse, the temperature begins to drop as the Moon comes between the Earth and the Sun. The cooling temperatures, up through totality, of the eclipse are shown in the table below. Using a linear regression equation, predict the temperature at the 4 minute mark during the cooling, to the nearest degree.
+      </p>
+
+      <table xml:id="table-eclipse-data">
+        <caption>Eclipse Temperature Drop</caption>
+        <tabular top="minor" bottom="minor">
+          <col halign="center" />
+          <col halign="center" />
+          <row header="yes" bottom="minor">
+            <cell><term>Time minutes (<m>x</m>)</term></cell>
+            <cell><term>Temp. <m>^\circ</m>F (<m>y</m>)</term></cell>
+          </row>
+          <row><cell>0</cell><cell>75</cell></row>
+          <row><cell>1</cell><cell>71</cell></row>
+          <row><cell>2</cell><cell>66</cell></row>
+          <row><cell>3</cell><cell>62</cell></row>
+          <row><cell>4</cell><cell>?</cell></row>
+        </tabular>
+      </table>
+
+      <p>
+        Select the predicted temperature at the 4 minute mark.
+      </p>
+    </statement>
+
+    <!-- Accessible Multiple Choice Options -->
+    <choices>
+      <choice>
+        <statement><p>60<m>^\circ</m></p></statement>
+      </choice>
+      <choice>
+        <statement><p>59<m>^\circ</m></p></statement>
+      </choice>
+      <choice correct="yes">
+        <statement><p>58<m>^\circ</m></p></statement>
+        <feedback>
+          <p>Correct! The regression equation outputs 57.5<m>^\circ</m>F at 4 minutes, which rounds to 58<m>^\circ</m>.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement><p>57<m>^\circ</m></p></statement>
+      </choice>
+    </choices>
+
+    <solution>
+      <p>
+        <term>Step 1: Calculate the Regression Equation</term>
+        Using the standard least-squares formulas with <m>n = 4</m> data coordinates, we find the required summary metrics:
+        <ul>
+          <li><p><m>\sum x = 6</m></p></li>
+          <li><p><m>\sum y = 274</m></p></li>
+          <li><p><m>\sum(x^2) = 14</m></p></li>
+          <li><p><m>\sum(xy) = 389</m></p></li>
+        </ul>
+      </p>
+      <p>
+        Substitute these totals into the slope (<m>m</m>) and y-intercept (<m>b</m>) formulas:
+        <me>m = \frac{4(389) - (6)(274)}{4(14) - (6)^2} = \frac{1556 - 1644}{56 - 36} = \frac{-88}{20} = -4.4</me>
+        <me>b = \frac{274 - (-4.4)(6)}{4} = \frac{274 + 26.4}{4} = \frac{300.4}{4} = 75.1</me>
+        This yields the linear modeling equation: <m>y = -4.4x + 75.1</m>.
+      </p>
+
+      <p>
+        <term>Step 2: Evaluate at 4 Minutes</term>
+        Substitute <m>x = 4</m> directly into our regression model to find the expected cooling value:
+        <md>
+          <mrow>y \amp = -4.4(4) + 75.1</mrow>
+          <mrow>y \amp = -17.6 + 75.1 = 57.5</mrow>
+        </md>
+        Rounding <m>57.5^\circ\text{F}</m> to the nearest whole integer gives our target choice of <term>58<m>^\circ</m></term>.
+      </p>
+
+      <!-- Fully Accessible Figure Layout -->
+      <figure xml:id="fig-eclipse-regression">
+        <caption>Linear Regression Line for Eclipse Cooling Pattern</caption>
+        <image width="60%">
+          <description>
+            A scatter plot displaying historical temperature drops during a solar eclipse on a coordinate plane. The horizontal axis represents elapsed time in minutes from negative 0.5 to 4.5. The vertical axis measures temperature in degrees Fahrenheit from 55 to 80. Four blue circular data points are plotted at coordinates (0, 75), (1, 71), (2, 66), and (3, 62). A solid red regression line passes downward through the points. A green 'X' mark highlights the target prediction location on the red line at coordinate point (4, 57.5), demonstrating an overall negative linear correlation.
+          </description>
+          <latex-image>
+            \begin{tikzpicture}
+              \begin{axis}[
+                xlabel={Time in minutes ($x$)},
+                ylabel={Temperature $^\circ$F ($y$)},
+                xmin=-0.5, xmax=4.5,
+                ymin=55, ymax=80,
+                grid=both,
+                grid style={dashed, gray!30}
+              ]
+                \addplot[only marks, blue, mark=*] coordinates {(0,75) (1,71) (2,66) (3,62)};
+                \addplot[red, thick, domain=-0.5:4.5] {-4.4*x + 75.1};
+                \addplot[only marks, green, mark=x, mark size=4pt, thick] coordinates {(4,57.5)};
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+    </solution>
+  </example>
+
+  <exercise xml:id="ex-coat-campaign">
+    <statement>
+      <p>
+        A morning radio talk show is running a <q>Winter Coat Campaign</q> to collect and deliver coats to local shelters. They are storing the coats until they reach their goal of 2100 coats. The table below shows the number of coats in storage at the end of each day of the campaign.
+      </p>
+
+      <table xml:id="table-coat-data">
+        <caption>Winter Coat Collection Progress</caption>
+        <tabular top="minor" bottom="minor">
+          <col halign="center" />
+          <col halign="center" />
+          <row header="yes" bottom="minor">
+            <cell><term>Day of Campaign (<m>x</m>)</term></cell>
+            <cell><term>Number of Coats Stored (<m>y</m>)</term></cell>
+          </row>
+          <row><cell>1</cell><cell>860</cell></row>
+          <row><cell>2</cell><cell>930</cell></row>
+          <row><cell>3</cell><cell>1000</cell></row>
+          <row><cell>4</cell><cell>1150</cell></row>
+          <row><cell>5</cell><cell>1200</cell></row>
+          <row><cell>6</cell><cell>1360</cell></row>
+        </tabular>
+      </table>
+
+      <p>
+        Find the linear regression equation rounded to the nearest hundredths, and predict the day the campaign will meet its goal.
+      </p>
+    </statement>
+
+    <solution>
+      <p>
+        <term>Part a) Linear Regression Equation:</term>
+        By applying the least-squares formulas for a data pool where <m>n = 6</m>, we get the summary metrics: <m>\sum x = 21</m>, <m>\sum y = 6500</m>, <m>\sum(x^2) = 91</m>, and <m>\sum(xy) = 24810</m>.
+      </p>
+      <p>
+        Evaluating our slope and intercept formulas returns:
+        <me>m = \frac{6(24810) - (21)(6500)}{6(91) - (21)^2} = \frac{148860 - 136500}{546 - 441} = \frac{12360}{105} \approx 98.86</me>
+        <me>b = \frac{6500 - (117.714)(21)}{6} \approx 737.33</me>
+        Thus, the linear modeling line of best fit is <me>y = 98.86x + 737.33</me>
+      </p>
+
+      <p>
+        <term>Part b) Goal Prediction:</term>
+        To compute the target milestone, substitute <m>y = 2100</m> into the verified equation:
+        <md>
+          <mrow>2100 \amp = 98.86x + 737.33</mrow>
+          <mrow>1362.67 \amp = 98.86x</mrow>
+          <mrow>x \amp \approx 13.78</mrow>
+        </md>
+        Because the data tracks totals at the end of each day, reaching <m>13.78</m> means the campaign will successfully complete its goal on <term>Day 14</term>.
+      </p>
+
+      <figure xml:id="fig-coat-regression">
+        <caption>Linear Path Tracking Coat Collection Goal Delivery</caption>
+        <image width="60%">
+          <description>
+            A scatter plot mapping the progress of a winter coat collection drive on a Cartesian grid. The horizontal axis outlines the Day of the Campaign from 0 to 15, and the vertical axis measures the Number of Coats Stored from 600 to 2300. Six blue data markers crawl steadily upward from day 1 to day 6. A solid red trendline launches from a y-intercept of 737.33 and scales upward, crossing a dotted horizontal threshold lines at y equals 2100 on Day 14, where a green X marks the goal resolution.
+          </description>
+          <latex-image>
+            <![CDATA[
+            \begin{tikzpicture}
+              \begin{axis} [
+                xlabel={Day of Campaign ($x$)},
+                ylabel={Number of Coats Stored ($y$)},
+                xmin=0, xmax=15,
+                ymin=600, ymax=2300,
+                grid=both,
+                grid style={dashed, gray!30}
+              ]
+                \addplot[only marks, blue, mark=*] coordinates {
+                  (1,860) (2,930) (3,1000) (4,1150) (5,1200) (6,1360)
+                };
+                \addplot[red, thick, domain=0:15] {98.857*x + 737.333};
+                \addplot[gray, dashed, domain=0:15] {2100};
+                \addplot[only marks, green, mark=x, mark size=4pt, thick] coordinates {(13.78,2100)};
+              \end{axis}
+            \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+    </solution>
+  </exercise>
+
+
+
+</section>

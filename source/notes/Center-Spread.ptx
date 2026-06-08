@@ -23,17 +23,19 @@
       It represents a central point in the data. 
       The mean is a measure of center that is sensitive to every value in the data set, making it particularly useful when the values are relatively close to each other.
     </p>
-    <p>
+        <p> The Greek letter sigma, <m> \sum </m>, called a symbol of summation, is used to indicate the sum
+of data items. The notation <m>\sum x</m>, read ``the sum of x,'' means to add all the data items
+in a given data set. We can use this symbol to give a formula for calculating the mean.
+</p>
       To calculate the mean, add up all the values in the data set and then divide by the number of values. 
       This gives an average value that can be used to represent the entire data set.
-    </p>
     <p>
     The <term> mean </term> of a set of data is the sum of the data values divided by the number of
-values; <m>\bar{x}= \dfrac{\sum x}{n} </m>.
+values; <me> \text{mean}= \bar{x}= \dfrac{\sum x}{n} </me>
     </p>
     </definition>
 
-    <example xml:id="example-mean">
+<example xml:id="example-mean">
       <statement>
         <p>
           Find the mean of the data set <m>\{2, 4, 6, 8, 10\}</m>.
@@ -45,8 +47,8 @@ values; <m>\bar{x}= \dfrac{\sum x}{n} </m>.
           The mean is <m>\bar{x} = \dfrac{30}{5} = 6</m>.
         </p>
       </solution>
-    </example>
-    <example xml:id="example-rounding-mean">
+</example>
+<example xml:id="example-rounding-mean">
   <statement>
     <p>
       Marci's exam scores for her last math class were: <m>79, 86, 82, 94</m>. 
@@ -66,7 +68,7 @@ values; <m>\bar{x}= \dfrac{\sum x}{n} </m>.
   </solution>
 </example>
 
-<example xml:id="example-nfl-touchdowns-mean">
+<exercise xml:id="ex-nfl-touchdowns-mean">
   <statement>
     <p>
       The number of touchdown (TD) passes thrown by each of the 31 teams in the National Football League in the 2000 season are shown below:
@@ -84,28 +86,26 @@ values; <m>\bar{x}= \dfrac{\sum x}{n} </m>.
           <cell>28</cell>
           <cell>28</cell>
           <cell>23</cell>
+          <cell>22</cell>
+          <cell>22</cell>
+          <cell>22</cell>
         </row>
         <row>
-          <cell>22</cell>
-          <cell>22</cell>
-          <cell>22</cell>
           <cell>21</cell>
           <cell>21</cell>
           <cell>21</cell>
           <cell>20</cell>
           <cell>20</cell>
-        </row>
-        <row>
           <cell>19</cell>
           <cell>19</cell>
           <cell>18</cell>
           <cell>18</cell>
           <cell>18</cell>
           <cell>18</cell>
+        </row>
+        <row>
           <cell>16</cell>
           <cell>15</cell>
-        </row>
-        <row>
           <cell>14</cell>
           <cell>14</cell>
           <cell>14</cell>
@@ -113,6 +113,7 @@ values; <m>\bar{x}= \dfrac{\sum x}{n} </m>.
           <cell>12</cell>
           <cell>9</cell>
           <cell>6</cell>
+          <cell Edvard="none"></cell>
           <cell Edvard="none"></cell>
         </row>
       </tabular>
@@ -125,7 +126,9 @@ values; <m>\bar{x}= \dfrac{\sum x}{n} </m>.
   <solution>
     <p>
       First, find the sum of all the values in the data set:
-      <me>37 + 33 + 33 + 32 + 29 + 28 + 28 + 23 + 22 + 22 + 22 + 21 + 21 + 21 + 20 + 20 + 19 + 19 + 18 + 18 + 18 + 18 + 16 + 15 + 14 + 14 + 14 + 12 + 12 + 9 + 6 = 634 \text{ total TDs}</me>
+      <me>37 + 33 + 33 + 32 + 29 + 28 + 28 + 23 + 22 + 22 + 22 + 21 + 21 + </me>
+      <me>21 + 20 + 20 + 19 + 19 + 18 + 18 + 18 + 18 + 16 + 15 + 14 + 14 + </me>
+      <me>14 + 12 + 12 + 9 + 6 = 634 \text{ total TDs}</me>
     </p>
     <p>
       Next, divide by <m>31</m>, which is the total number of data values:
@@ -139,7 +142,7 @@ values; <m>\bar{x}= \dfrac{\sum x}{n} </m>.
       It is most correct to report that <q>The mean number of touchdown passes thrown in the NFL in the 2000 season was 20.5 passes,</q> though it is common to see the more casual term <q>average</q> used in place of <q>mean.</q>
     </p>
   </solution>
-</example>
+</exercise>
 
  <exercise xml:id="exercise-peanut-butter-mean">
   <statement>
@@ -167,24 +170,34 @@ values; <m>\bar{x}= \dfrac{\sum x}{n} </m>.
   <!-- =================================================================== -->
   <!-- SUBSECTION: MEDIAN                                                  -->
   <!-- =================================================================== -->
-  <definition xml:id="def-median">
-    <title>Median</title>
-    <p>
-      The <term>median </term>  is the middle value of a data set when the values are arranged in ascending order. 
-      If there is an odd number of values, the median is the middle value. 
-      If there is an even number of values, the median is the average of the two middle values.
-    </p>
+  <definition xml:id="def-median"> 
+  <title>Median</title> 
+  <p> 
+    The <term>median</term> is the middle value of a data set when the values are arranged in ascending order. 
+  </p> 
+  <p> 
+    To find the median of a dataset:
+  </p>
+  <p>
+    <ol>
+      <li>Arrange the data in order from smallest to largest.</li> 
+      <li>If the number of items in the dataset is <alert>odd</alert>, 
+        the median is the exact middle number in the ordered dataset.</li> 
+      <li>If the number of items in the dataset is <alert>even</alert>, 
+        the median is the mean of the two middle numbers in the ordered dataset.</li> 
+    </ol>
+  </p>
+</definition>
+
     <p>
       The median is a useful measure of center because it is not affected by extremely high or low values (outliers). 
       This makes it a better representative of the data set when there are outliers present.
     </p>
-    </definition>
-
-    <example xml:id="example-median-odd">
+  <example xml:id="example-median-odd">
       <title>Odd Number of Values</title>
       <statement>
         <p>
-          Find the median of <m>\{3, 5, 7, 9, 11\}</m>.
+          Find the median of <m>\{3,5,7,9,11\}</m>.
         </p>
       </statement>
       <solution>
@@ -193,13 +206,13 @@ values; <m>\bar{x}= \dfrac{\sum x}{n} </m>.
           The median is <m>7</m>.
         </p>
       </solution>
-    </example>
+  </example>
 
-    <example xml:id="example-median-even">
+  <example xml:id="example-median-even">
       <title>Even Number of Values</title>
       <statement>
         <p>
-          Find the median of <m>\{1, 3, 5, 7, 9, 11\}</m>.
+          Find the median of <m>\{5, 3, 1, 7, 11, 9\}</m>.
         </p>
       </statement>
       <solution>
@@ -208,11 +221,12 @@ values; <m>\bar{x}= \dfrac{\sum x}{n} </m>.
           The median is <m>(5 + 7)/2 = 6</m>.
         </p>
       </solution>
-    </example>
-  <example xml:id="example-nfl-touchdowns-median">
+  </example>
+
+<exercise xml:id="ex-nfl-touchdowns-median">
   <statement>
     <p>
-      Returning to the football touchdown data from <xref ref="example-nfl-touchdowns-mean" />, find the median number of touchdown passes thrown in the NFL during the 2000 season.
+      Returning to the football touchdown data from <xref ref="ex-nfl-touchdowns-mean" />, find the median number of touchdown passes thrown in the NFL during the 2000 season.
     </p>
   </statement>
   <solution>
@@ -227,12 +241,12 @@ values; <m>\bar{x}= \dfrac{\sum x}{n} </m>.
     <p>
       Counting to the 16th data value in the ordered list yields <m>20</m>. 
       Therefore, the median number of touchdown passes in the 2000 season was <m>20</m> passes. 
-      Notice that for this data, the median is fairly close to the mean of <m>20.5</m> that we calculated earlier in <xref ref="example-nfl-touchdowns-mean" />.
+      Notice that for this data, the median is fairly close to the mean of <m>20.5</m> that we calculated earlier in <xref ref="ex-nfl-touchdowns-mean" />.
     </p>
   </solution>
-</example>
+</exercise>
 
-<example xml:id="example-quiz-scores-median">
+<exercise xml:id="exercise-quiz-scores-median">
   <statement>
     <p>
       Find the median of these quiz scores:
@@ -254,7 +268,8 @@ values; <m>\bar{x}= \dfrac{\sum x}{n} </m>.
       Therefore, the median quiz score was <m>6.5</m>.
     </p>
   </solution>
-</example>
+</exercise>
+
 <exercise xml:id="exercise-peanut-butter-median">
   <statement>
     <p>
@@ -282,9 +297,9 @@ values; <m>\bar{x}= \dfrac{\sum x}{n} </m>.
   <!-- =================================================================== -->
 <definition xml:id="def-mode">
     <title>Mode</title>
+    <p> The <term>mode </term>  is the value that appears most frequently (often) in a data set. </p>
+    <p> A data set can have no mode, one mode, or multiple modes. </p>
     <p>
-      The <term>mode </term>  is the value that appears most frequently in a data set. 
-      A data set can have no mode, one mode, or multiple modes. 
       The mode is useful for understanding which values are most common in the data set. 
       The mode is particularly useful for categorical data, where we are interested in knowing the most frequent category.
     </p>
@@ -303,6 +318,9 @@ values; <m>\bar{x}= \dfrac{\sum x}{n} </m>.
       </solution>
 </example>
   
+
+
+
 <example xml:id="example-vehicle-color-mode">
   <statement>
     <p>

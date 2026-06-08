@@ -2017,29 +2017,227 @@ var ptx_lunr_docs = [
   "body": " Distinct Arrangements (IMMUNOLOGY)   In how many distinct ways can the letters in IMMUNOLOGY be arranged?    There are 10 letters total. We identify the repeats: M (2), O (2). The formula for distinguishable permutations is:    TI-30XIIS:  10  PRB ( ! ) ÷  (  2  PRB  !  ×  2  PRB  !  )  ENTER .   "
 },
 {
+  "id": "notes-Visualizing-Data-Through-Graphs",
+  "level": "1",
+  "url": "notes-Visualizing-Data-Through-Graphs.html",
+  "type": "Section",
+  "number": "",
+  "title": "Visualizing Data Through Graphs",
+  "body": " Visualizing Data Through Graphs   After collecting survey or experimental data, we must summarize and present it meaningfully for our audience. We will start with graphical data presentations before moving on to numerical summaries.  Raw information can often feel overwhelming and difficult to interpret. To reveal clear insights, researchers and data analysts rely heavily on visual graphics. The four primary tools used to display quantitative variables are bar graphs, line graphs, pie charts and histogram. The specific choice among them depends entirely on the characteristics of the data being evaluated.  Categorical (or qualitative) data helps us sort individual subjects into distinct groups. To make sense of this information, we usually begin by constructing a two-column frequency table . The first column lists out the available categories, while the parallel column captures the corresponding frequency—meaning the absolute count of observations belonging to each classification.    Frequency Table  A frequency table consists of two columns. The first column lists the data values and if the values are numeric, then they are listed from smallest to largest. The second column is the frequency, which indicates the number of times each value occurs.     The number of touchdown (TD) passes thrown by each of the 31 teams in the National Football League in the 2000 season are shown below:   NFL Touchdown Passes (2000 Season)    37  33  33  32  29  28  28  23  22  22  22    21  21  21  20  20  19  19  18  18  18  18    16  15  14  14  14  12  12  9  6       Construct a frequency table for the data of the number of touchdown passes thrown by each NFL team in the 2000 season.    To construct a frequency table, we first identify the unique values in the dataset and count how many times each value occurs. The frequency table for the NFL touchdown passes is as follows:   Frequency Table for NFL Touchdown Passes (2000 Season)    Value  Frequency    6  1    9  1    12  2    14  3    15  1    16  1    18  4    19  2    20  2        Bar graph    Bar graphs are best suited for comparing quantities or counts across distinct, independent categories. They utilize horizontal or vertical rectangular bars where the length or height of each bar directly corresponds to the numerical value it represents.    For example, a political analyst would use a bar graph to compare the total number of votes received by different candidates in an election, allowing the reader to instantly identify the frontrunner.    We return to the example of the NFL touchdown passes data to demonstrate how a bar graph can be constructed.    Using the frequency table , we constructed earlier, we can create a bar graph where the x-axis represents the number of touchdown passes and the y-axis represents the frequency of each value. This will visually display how often each number of touchdown passes occurred across the 31 teams. Each bar's height will correspond to the frequency of that particular number of touchdown passes, allowing us to quickly see which values were most common and which were rare.   Touchdown Passes Frequency Bar Graph   A vertical bar graph displaying the frequency of touchdown passes thrown by NFL teams in the 2000 season. The horizontal axis represents the number of touchdown passes, and the vertical axis represents the frequency of teams. Bars of varying heights correspond to each touchdown pass value, with the tallest bar at 18 touchdown passes representing a frequency of 4 teams.         A small business tracks the number of laptops sold over three months: January (15 units), February (22 units), and March (18 units). Determine which category goes on each axis to construct a vertical bar graph.   Sample structure for a vertical bar graph.   A vertical bar chart displaying laptop units sold over three months. The horizontal axis represents the months, and the vertical axis scales from 0 to 25 to track units sold. January displays a bar reaching 15 units, February shows a bar reaching 22 units, and March shows a bar reaching 18 units.       To construct a standard vertical bar graph, the independent nominal categories must be placed along the baseline axis, while the numerical quantitative metrics track along the vertical boundary:    Horizontal Axis (x-axis): Contains the Months (January, February, and March).     Vertical Axis (y-axis): Tracks the quantitative scale for Units Sold (ranging from 0 up to at least 22).       An insurance provider calculates policy premiums by analyzing established risk variables. Drivers classified under higher-risk brackets are subject to increased premium rates. One variable often evaluated is vehicle color, under the assumption that certain car colors are linked to a higher probability of accidents.  To investigate this theory, the company reviewed local law enforcement records detailing recent total-loss traffic collisions. The gathered information is organized into the frequency distribution table below.   Frequency of Total-Loss Collisions by Vehicle Color    Vehicle Color  Frequency (Accidents)    Blue  25    Green  52    Red  41    White  36    Black  39    Grey  23     To draw meaningful conclusions from this categorical data, we must first find the total sample size ( ) by summing all frequencies:     Next, we calculate the relative frequency (percentage) for each color category using the formula . Rounding to two decimal places, we find:    Blue:   Green:   Red:   White:   Black:   Grey:     The data suggests that Green vehicles accounted for the largest share of total-loss collisions ( ), while Grey vehicles accounted for the lowest share ( ).    Using the total-loss collision dataset compiled by the insurance provider in , construct a bar graph to visually model the distribution of vehicle colors.   Bar Graph of Total-Loss Collisions by Vehicle Color   A vertical bar chart plotting car colors on the horizontal axis against collision frequencies on the vertical axis. The vertical axis scales from 0 to 60. Blue shows a bar reaching 25, Green reaches 52, Red reaches 41, White reaches 36, Black reaches 39, and Grey reaches 23.       To construct the bar graph, we map each vehicle color category along the horizontal axis (x-axis) and place the frequency counts along the vertical axis (y-axis). The height of each rectangular column corresponds exactly to its recorded category frequency:    Blue: 25 units high  Green: 52 units high  Red: 41 units high  White: 36 units high  Black: 39 units high  Grey: 23 units high    This layout provides an immediate visual hierarchy, showing that green cars are involved in more total-loss accidents than any other color in this sample group.      A school cafeteria counts the number of fruit items sold in a day: 40 apples, 55 bananas, and 25 oranges. If you create a vertical bar graph, which item will have the tallest bar, and what value will it represent?    The category with the highest count is bananas. Therefore, bananas will have the tallest bar, representing a value of 55.   Vertical bar graph tracking daily cafeteria fruit sales.   A vertical bar graph tracking cafeteria sales. The horizontal axis represents the fruit types, and the vertical axis scales from 0 to 60. Apples show a bar at 40, bananas show the tallest bar at 55, and oranges show a bar at 25.        Line graph    Line graphs are ideal for illustrating trends and demonstrating how numbers fluctuate over a continuous period. This format displays a sequential series of specific data points—frequently referred to as markers—that are connected by straight lines to show a clear trajectory.    A common application includes tracking macroeconomic variables, such as a city's average monthly temperature or a company's fluctuating stock prices throughout a fiscal year.    An analyst records the stock price of a company over four days: Day 1 ( ), Day 2 ( ), Day 3 ( ), and Day 4 ( ). Describe the overall trend shown by connecting these data points on a line graph.   Sample trajectory for a continuous trend line.   A continuous line graph tracking stock prices over 4 days. The horizontal axis tracks days 1 through 4, and the vertical axis spans from \\$5 to \\$25. A solid blue line connects the markers: rising from \\$10 on Day 1 to \\$15 on Day 2, dipping down to \\$12 on Day 3, and peaking sharply at \\$20 on Day 4.       The line segments will move upward from Day 1 to Day 2, slope downward from Day 2 to Day 3, and then rise sharply from Day 3 to Day 4. Despite the mid-period dip on Day 3, the overall trend over the four-day period is upward.      Using the total-loss collision dataset compiled by the insurance provider in , construct a line graph to visually model the distribution of vehicle colors.   Line Graph of Total-Loss Collisions by Vehicle Color   A line graph plotting car colors on the horizontal axis against collision frequencies on the vertical axis. The vertical axis scales from 0 to 60. A line connects data markers starting at Blue (25), rising sharply to Green (52), dropping to Red (41) and White (36), rising slightly to Black (39), and falling to its lowest point at Grey (23).       To construct a line graph for this dataset, we plot the vehicle color categories along the horizontal axis and the collision frequencies on the vertical axis. Instead of drawing columns, we plot a single coordinate point for each category and connect them sequentially with straight line segments:    Blue: Point at 25  Green: Point at 52  Red: Point at 41  White: Point at 36  Black: Point at 39  Grey: Point at 23    This visualization allows us to trace the ups and downs across categories, showing a sharp peak at Green and a drop at Grey.      A patient's body temperature is recorded every hour: Hour 1 ( ), Hour 2 ( ), Hour 3 ( ), and Hour 4 ( ). Between which two hours does the line graph show the sharpest increase?    To find the sharpest increase, we calculate the differences between consecutive hourly measurements:  The increase from Hour 1 to Hour 2 is: The increase from Hour 2 to Hour 3 is:   Comparing these calculations, the graph shows the sharpest increase between Hour 1 and Hour 2 .   Hourly tracking of patient body temperature.   A continuous line graph tracking a patient's temperature over 4 hours. The horizontal axis maps hours 1 to 4, and the vertical axis scales from 97 to 103 degrees Fahrenheit. A solid blue line rises from 98.6 degrees at Hour 1 to 100.2 degrees at Hour 2, climbs further to 101.5 degrees at Hour 3, and then falls down to 99.1 degrees at Hour 4.        Pie Chart    Pie charts are designed for visualizing proportions and showing how a single, cohesive entity is divided into individual parts. The chart consists of a circle divided into sectors, or slices, where the arc length and central angle of each slice are strictly proportional to the percentage of the total dataset it represents.    In corporate finance, a pie chart is often deployed to display market share distribution among competing companies within a specific industry.    A budget consists of for Rent, for Food, and for Utilities. Calculate the percentage of the pie chart slice that represents Rent.   Proportional slice distribution in a circular layout.   A circular pie chart divided into three colored budget sections. The bottom half of the circle is blue and represents Rent at 50 percent. The top right quadrant is green and represents Food at 25 percent. The top left quadrant is orange and represents Utilities at 25 percent.       First, find the total budget by summing the individual expenses:   Next, divide the Rent cost by the total budget to find its proportion:   Multiply by 100 to convert the decimal into a percentage:   The Rent slice will take up exactly half ( 50% ) of the pie chart.      Using the total-loss collision dataset compiled by the insurance provider in , construct a pie chart to visually model the distribution of vehicle colors.   Pie Chart of Total-Loss Collisions by Vehicle Color   A circular pie chart divided into six colored sectors representing the proportion of vehicle collisions. Green is the largest slice at 24.1 percent, followed by Red at 19 percent, Black at 18.1 percent, White at 16.7 percent, Blue at 11.6 percent, and Grey as the smallest slice at 10.6 percent.       To construct a pie chart, we convert each category's frequency into a proportional central angle of a circle ( ). Using the total sample size ( ), the angle for each slice is calculated using the formula :    Blue:  ( )  Green:  ( )  Red:  ( )  White:  ( )  Black:  ( )  Grey:  ( )    Each sector is drawn sequentially around the center of the circle to construct the final visual proportion.      A survey of 200 people shows that 100 prefer vanilla ice cream, 60 prefer chocolate, and 40 prefer strawberry. What central angle degree should be used to draw the slice for chocolate?    The proportion for chocolate is: Since a full circle has , multiply the proportion by 360 to find the central angle: The chocolate slice requires a central angle of .   Pie chart representing ice cream flavor preferences.   A circular pie chart divided into three distinct sections. The right half of the circle is yellow and represents Vanilla at 50 percent. The bottom-left sector is brown and represents Chocolate with a 108-degree angle at 30 percent. The top-left sector is pink and represents Strawberry at 20 percent.       After establishing class intervals and a corresponding frequency table for a quantitative dataset, we can construct a visual graph similar to a standard bar chart. However, because quantitative data is numerical and continuous, the horizontal axis must be treated as an unbroken number line with no spacing between adjacent bars. This specialized graphical representation is known as a histogram .   Histogram   A histogram is a graphical tool used to display the frequency distribution of a single continuous numerical variable. Similar to a bar graph, it represents frequencies using the height of rectangular bars; however, its horizontal axis functions as a continuous number line. The data values are grouped into specific intervals, known as classes or bins. Unlike categorical bar charts, the vertical bars in a histogram must touch directly to accurately reflect the unbroken, sequential nature of the underlying scale.     Gym Workout Durations   A gym records the workout durations of its members in minutes. The data is grouped into three continuous intervals: 0–20 minutes (5 people), 20–40 minutes (15 people), and 40–60 minutes (10 people). Determine the total sample size tracked across this histogram layout.   Frequency distribution across adjacent numerical bins.   A frequency histogram tracking gym workout durations. The horizontal axis represents workout duration in minutes, with markers at 0, 20, 40, and 60. The vertical axis represents the number of members from 0 to 20. Three adjacent purple bars touch each other: the first bin from 0 to 20 minutes has a height of 5, the middle bin from 20 to 40 minutes has a height of 15, and the third bin from 40 to 60 minutes has a height of 10.       To find the total sample size, sum the frequencies represented by the height of each adjacent bar:   The histogram tracks a total sample size of 30 gym members.      Using the total-loss collision dataset compiled by the insurance provider in , construct a histogram-style bar chart to visually model the distribution of vehicle colors.   Histogram-Style Visual Distribution of Vehicle Colors   A vertical bar chart plotting car colors on the horizontal axis against frequencies on the vertical axis. The bars touch each other directly using a histogram style layout. Blue reaches 25, Green reaches 52, Red reaches 41, White reaches 36, Black reaches 39, and Grey reaches 23.       To present this categorical data in a touching-bar format, we plot the vehicle color categories along the horizontal axis and the collision frequencies on the vertical axis. By adjusting our bar spacing properties, we can configure the rectangles to touch side-by-side:    Blue: Bar height is 25  Green: Bar height is 52  Red: Bar height is 41  White: Bar height is 36  Black: Bar height is 39  Grey: Bar height is 23       Nutrition Study Weight Distribution   Suppose that we have collected weights from 100 male subjects as part of a nutrition study. For our weight data, we have values ranging from a low of 121 pounds to a high of 263 pounds, giving a total span of: We can experiment with different bin allocations to summarize the data. Let us organize the dataset using a uniform interval width of 15, starting at a baseline value of 120.   Interval Frequency Distribution Table     Weight Interval (Pounds)  Frequency (Count)    120-134  4    135-149  14    150-164  16    165-179  28    180-194  12    195-209  8    210-224  7    225-239  6    240-254  2    255-269  3      Using the frequency chart, we construct a continuous frequency histogram. Each vertical bar spans an interval of 15 pounds on the horizontal axis, and the height matches the respective category count.   Frequency histogram of male subject weights with an interval width of 15.   A continuous frequency histogram tracking the weights of 100 male subjects. The horizontal axis charts weights from 120 to 270 pounds with main tick labels every 15 units. The vertical axis monitors frequencies from 0 to 30. Ten continuous, touching blue bars represent the frequencies: the first bar at 120 has a height of 4; followed by 14, 16; peaking at a height of 28 for the 165-180 pound bin; then stepping down to 12, 8, 7, 6, 2; and ending with a final bar height of 3 at the 255-270 pound boundary.         The following dataset represents the scores of students on a recent history test:  80, 50, 50, 90, 70, 70, 100, 60, 70, 80, 70, 50, 90, 100, 80, 70, 30, 80, 80, 70, 100, 60, 60, 50    Complete a frequency table for the test scores.  Construct a bar graph of the data.  Construct a line graph of the data.  Construct a pie chart of the data.  Construct a histogram of the data.        (a) Frequency Table: Sorting and counting each distinct score yields the following frequency distribution:   Frequency Distribution of History Test Scores    Test Score  Frequency (Students)   30 1  50 4  60 3  70 6  80 5  90 2  100 3      (b) Bar Graph: We represent each distinct score on the horizontal axis and its frequency count on the vertical axis using separated vertical columns:   Bar Graph of Test Scores   A vertical bar chart showing test scores on the horizontal axis and student frequency on the vertical axis. Bars are at 30 with height 1, 50 with height 4, 60 with height 3, 70 with height 6, 80 with height 5, 90 with height 2, and 100 with height 3.       (c) Line Graph: Using the same axes as the bar chart, coordinate markers are plotted at each data junction and linked sequentially using line tracks:   Line Graph of Test Scores   A line graph mapping test scores to the number of students. Circles show points at score 30 with frequency 1, 50 with 4, 60 with 3, 70 with 6, 80 with 5, 90 with 2, and 100 with 3, connected by a trendline.       (d) Pie Chart: To map out global proportions, we compute percentage shares based on the total sample of students ( ):    Score 30:  ( )  Score 50:  ( )  Score 60:  ( )  Score 70:  ( )  Score 80:  ( )  Score 90:  ( )  Score 100:  ( )     Pie Chart of Test Score Distributions   A pie chart dividing the student distribution among scores. Slices represent Score 30 at 4.2 percent, Score 50 at 16.7 percent, Score 60 at 12.5 percent, Score 70 at 25 percent, Score 80 at 20.8 percent, Score 90 at 8.3 percent, and Score 100 at 12.5 percent.       (e) Histogram: We group the scores into 10-point bins along a continuous horizontal axis causing the bars to lock tightly side-by-side:    [25, 35): 1 student (score 30)  [35, 45): 0 students  [45, 55): 4 students (scores of 50)  [55, 65): 3 students (scores of 60)  [65, 75): 6 students (scores of 70)  [75, 85): 5 students (scores of 80)  [85, 95): 2 students (scores of 90)  [95, 105]: 3 students (scores of 100)     Histogram of Test Score Distributions   A histogram displaying the continuous interval distribution of test scores. The bars touch each other directly: the bin from 25 to 35 has a height of 1, 45 to 55 has a height of 4, 55 to 65 has a height of 3, 65 to 75 reaches the peak at 6, 75 to 85 has a height of 5, 85 to 95 has a height of 2, and 95 to 105 has a height of 3.       (e) Histogram: Unlike the categorical charts above, a true histogram tracks quantitative continuous intervals. We group the scores into 20-point bins along a continuous horizontal axis causing the bars to lock tightly side-by-side:    [20, 40): 1 student (score 30)  [40, 60): 4 students (scores of 50)  [60, 80): 9 students (scores of 60 and 70)  [80, 100): 7 students (scores of 80 and 90)  [100, 120): 3 students (scores of 100)     Histogram of Test Score Distributions   A histogram displaying the continuous 20-point interval distribution of test scores. The bars touch each other directly: the bin from 20 to 40 has a height of 1, 40 to 60 has a height of 4, 60 to 80 reaches the peak at 9, 80 to 100 has a height of 7, and 100 to 120 has a height of 3.         Kori categorized her spending for this month into four categories: food, rent, fun, and other. The percentage she spent in each category is displayed in the chart below.   Pie Chart of Kori's Monthly Spending Shares   A pie chart dividing Kori's monthly budget proportions into four sectors: Rent accounts for 31 percent, Other accounts for 29 percent, Food accounts for 24 percent, and Fun accounts for 16 percent.     If she spent a total of this month, how much money did she allocate to rent?    To find the exact dollar amount spent on rent, we convert the percentage share from the pie chart into a decimal and multiply it by the total monthly expenditures:        Therefore, Kori spent exactly on rent this month.    "
+},
+{
+  "id": "example-nfl-touchdowns-table",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#example-nfl-touchdowns-table",
+  "type": "Example",
+  "number": "4.1",
+  "title": "",
+  "body": "  The number of touchdown (TD) passes thrown by each of the 31 teams in the National Football League in the 2000 season are shown below:   NFL Touchdown Passes (2000 Season)    37  33  33  32  29  28  28  23  22  22  22    21  21  21  20  20  19  19  18  18  18  18    16  15  14  14  14  12  12  9  6       Construct a frequency table for the data of the number of touchdown passes thrown by each NFL team in the 2000 season.    To construct a frequency table, we first identify the unique values in the dataset and count how many times each value occurs. The frequency table for the NFL touchdown passes is as follows:   Frequency Table for NFL Touchdown Passes (2000 Season)    Value  Frequency    6  1    9  1    12  2    14  3    15  1    16  1    18  4    19  2    20  2      "
+},
+{
+  "id": "def-bar-graphs",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#def-bar-graphs",
+  "type": "Definition",
+  "number": "4.4",
+  "title": "Bar graph.",
+  "body": " Bar graph    Bar graphs are best suited for comparing quantities or counts across distinct, independent categories. They utilize horizontal or vertical rectangular bars where the length or height of each bar directly corresponds to the numerical value it represents.   "
+},
+{
+  "id": "notes-Visualizing-Data-Through-Graphs-7",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#notes-Visualizing-Data-Through-Graphs-7",
+  "type": "Example",
+  "number": "4.5",
+  "title": "",
+  "body": "  We return to the example of the NFL touchdown passes data to demonstrate how a bar graph can be constructed.    Using the frequency table , we constructed earlier, we can create a bar graph where the x-axis represents the number of touchdown passes and the y-axis represents the frequency of each value. This will visually display how often each number of touchdown passes occurred across the 31 teams. Each bar's height will correspond to the frequency of that particular number of touchdown passes, allowing us to quickly see which values were most common and which were rare.   Touchdown Passes Frequency Bar Graph   A vertical bar graph displaying the frequency of touchdown passes thrown by NFL teams in the 2000 season. The horizontal axis represents the number of touchdown passes, and the vertical axis represents the frequency of teams. Bars of varying heights correspond to each touchdown pass value, with the tallest bar at 18 touchdown passes representing a frequency of 4 teams.      "
+},
+{
+  "id": "notes-Visualizing-Data-Through-Graphs-8",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#notes-Visualizing-Data-Through-Graphs-8",
+  "type": "Example",
+  "number": "4.7",
+  "title": "",
+  "body": "  A small business tracks the number of laptops sold over three months: January (15 units), February (22 units), and March (18 units). Determine which category goes on each axis to construct a vertical bar graph.   Sample structure for a vertical bar graph.   A vertical bar chart displaying laptop units sold over three months. The horizontal axis represents the months, and the vertical axis scales from 0 to 25 to track units sold. January displays a bar reaching 15 units, February shows a bar reaching 22 units, and March shows a bar reaching 18 units.       To construct a standard vertical bar graph, the independent nominal categories must be placed along the baseline axis, while the numerical quantitative metrics track along the vertical boundary:    Horizontal Axis (x-axis): Contains the Months (January, February, and March).     Vertical Axis (y-axis): Tracks the quantitative scale for Units Sold (ranging from 0 up to at least 22).      "
+},
+{
+  "id": "table-car-color-frequencies",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#table-car-color-frequencies",
+  "type": "Table",
+  "number": "4.9",
+  "title": "Frequency of Total-Loss Collisions by Vehicle Color",
+  "body": " Frequency of Total-Loss Collisions by Vehicle Color    Vehicle Color  Frequency (Accidents)    Blue  25    Green  52    Red  41    White  36    Black  39    Grey  23    "
+},
+{
+  "id": "ex-car-color-bar-graph",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#ex-car-color-bar-graph",
+  "type": "Example",
+  "number": "4.10",
+  "title": "",
+  "body": "  Using the total-loss collision dataset compiled by the insurance provider in , construct a bar graph to visually model the distribution of vehicle colors.   Bar Graph of Total-Loss Collisions by Vehicle Color   A vertical bar chart plotting car colors on the horizontal axis against collision frequencies on the vertical axis. The vertical axis scales from 0 to 60. Blue shows a bar reaching 25, Green reaches 52, Red reaches 41, White reaches 36, Black reaches 39, and Grey reaches 23.       To construct the bar graph, we map each vehicle color category along the horizontal axis (x-axis) and place the frequency counts along the vertical axis (y-axis). The height of each rectangular column corresponds exactly to its recorded category frequency:    Blue: 25 units high  Green: 52 units high  Red: 41 units high  White: 36 units high  Black: 39 units high  Grey: 23 units high    This layout provides an immediate visual hierarchy, showing that green cars are involved in more total-loss accidents than any other color in this sample group.   "
+},
+{
+  "id": "notes-Visualizing-Data-Through-Graphs-18",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#notes-Visualizing-Data-Through-Graphs-18",
+  "type": "Checkpoint",
+  "number": "4.12",
+  "title": "",
+  "body": "  A school cafeteria counts the number of fruit items sold in a day: 40 apples, 55 bananas, and 25 oranges. If you create a vertical bar graph, which item will have the tallest bar, and what value will it represent?    The category with the highest count is bananas. Therefore, bananas will have the tallest bar, representing a value of 55.   Vertical bar graph tracking daily cafeteria fruit sales.   A vertical bar graph tracking cafeteria sales. The horizontal axis represents the fruit types, and the vertical axis scales from 0 to 60. Apples show a bar at 40, bananas show the tallest bar at 55, and oranges show a bar at 25.      "
+},
+{
+  "id": "def-line-graphs",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#def-line-graphs",
+  "type": "Definition",
+  "number": "4.14",
+  "title": "Line graph.",
+  "body": " Line graph    Line graphs are ideal for illustrating trends and demonstrating how numbers fluctuate over a continuous period. This format displays a sequential series of specific data points—frequently referred to as markers—that are connected by straight lines to show a clear trajectory.   "
+},
+{
+  "id": "notes-Visualizing-Data-Through-Graphs-21",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#notes-Visualizing-Data-Through-Graphs-21",
+  "type": "Example",
+  "number": "4.15",
+  "title": "",
+  "body": "  An analyst records the stock price of a company over four days: Day 1 ( ), Day 2 ( ), Day 3 ( ), and Day 4 ( ). Describe the overall trend shown by connecting these data points on a line graph.   Sample trajectory for a continuous trend line.   A continuous line graph tracking stock prices over 4 days. The horizontal axis tracks days 1 through 4, and the vertical axis spans from \\$5 to \\$25. A solid blue line connects the markers: rising from \\$10 on Day 1 to \\$15 on Day 2, dipping down to \\$12 on Day 3, and peaking sharply at \\$20 on Day 4.       The line segments will move upward from Day 1 to Day 2, slope downward from Day 2 to Day 3, and then rise sharply from Day 3 to Day 4. Despite the mid-period dip on Day 3, the overall trend over the four-day period is upward.   "
+},
+{
+  "id": "ex-car-color-line-graph",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#ex-car-color-line-graph",
+  "type": "Example",
+  "number": "4.17",
+  "title": "",
+  "body": "  Using the total-loss collision dataset compiled by the insurance provider in , construct a line graph to visually model the distribution of vehicle colors.   Line Graph of Total-Loss Collisions by Vehicle Color   A line graph plotting car colors on the horizontal axis against collision frequencies on the vertical axis. The vertical axis scales from 0 to 60. A line connects data markers starting at Blue (25), rising sharply to Green (52), dropping to Red (41) and White (36), rising slightly to Black (39), and falling to its lowest point at Grey (23).       To construct a line graph for this dataset, we plot the vehicle color categories along the horizontal axis and the collision frequencies on the vertical axis. Instead of drawing columns, we plot a single coordinate point for each category and connect them sequentially with straight line segments:    Blue: Point at 25  Green: Point at 52  Red: Point at 41  White: Point at 36  Black: Point at 39  Grey: Point at 23    This visualization allows us to trace the ups and downs across categories, showing a sharp peak at Green and a drop at Grey.   "
+},
+{
+  "id": "notes-Visualizing-Data-Through-Graphs-23",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#notes-Visualizing-Data-Through-Graphs-23",
+  "type": "Checkpoint",
+  "number": "4.19",
+  "title": "",
+  "body": "  A patient's body temperature is recorded every hour: Hour 1 ( ), Hour 2 ( ), Hour 3 ( ), and Hour 4 ( ). Between which two hours does the line graph show the sharpest increase?    To find the sharpest increase, we calculate the differences between consecutive hourly measurements:  The increase from Hour 1 to Hour 2 is: The increase from Hour 2 to Hour 3 is:   Comparing these calculations, the graph shows the sharpest increase between Hour 1 and Hour 2 .   Hourly tracking of patient body temperature.   A continuous line graph tracking a patient's temperature over 4 hours. The horizontal axis maps hours 1 to 4, and the vertical axis scales from 97 to 103 degrees Fahrenheit. A solid blue line rises from 98.6 degrees at Hour 1 to 100.2 degrees at Hour 2, climbs further to 101.5 degrees at Hour 3, and then falls down to 99.1 degrees at Hour 4.      "
+},
+{
+  "id": "def-pie-charts",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#def-pie-charts",
+  "type": "Definition",
+  "number": "4.21",
+  "title": "Pie Chart.",
+  "body": " Pie Chart    Pie charts are designed for visualizing proportions and showing how a single, cohesive entity is divided into individual parts. The chart consists of a circle divided into sectors, or slices, where the arc length and central angle of each slice are strictly proportional to the percentage of the total dataset it represents.   "
+},
+{
+  "id": "ex-budget-pie-chart",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#ex-budget-pie-chart",
+  "type": "Example",
+  "number": "4.22",
+  "title": "",
+  "body": "  A budget consists of for Rent, for Food, and for Utilities. Calculate the percentage of the pie chart slice that represents Rent.   Proportional slice distribution in a circular layout.   A circular pie chart divided into three colored budget sections. The bottom half of the circle is blue and represents Rent at 50 percent. The top right quadrant is green and represents Food at 25 percent. The top left quadrant is orange and represents Utilities at 25 percent.       First, find the total budget by summing the individual expenses:   Next, divide the Rent cost by the total budget to find its proportion:   Multiply by 100 to convert the decimal into a percentage:   The Rent slice will take up exactly half ( 50% ) of the pie chart.   "
+},
+{
+  "id": "ex-car-color-pie-chart",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#ex-car-color-pie-chart",
+  "type": "Example",
+  "number": "4.24",
+  "title": "",
+  "body": "  Using the total-loss collision dataset compiled by the insurance provider in , construct a pie chart to visually model the distribution of vehicle colors.   Pie Chart of Total-Loss Collisions by Vehicle Color   A circular pie chart divided into six colored sectors representing the proportion of vehicle collisions. Green is the largest slice at 24.1 percent, followed by Red at 19 percent, Black at 18.1 percent, White at 16.7 percent, Blue at 11.6 percent, and Grey as the smallest slice at 10.6 percent.       To construct a pie chart, we convert each category's frequency into a proportional central angle of a circle ( ). Using the total sample size ( ), the angle for each slice is calculated using the formula :    Blue:  ( )  Green:  ( )  Red:  ( )  White:  ( )  Black:  ( )  Grey:  ( )    Each sector is drawn sequentially around the center of the circle to construct the final visual proportion.   "
+},
+{
+  "id": "notes-Visualizing-Data-Through-Graphs-28",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#notes-Visualizing-Data-Through-Graphs-28",
+  "type": "Checkpoint",
+  "number": "4.26",
+  "title": "",
+  "body": "  A survey of 200 people shows that 100 prefer vanilla ice cream, 60 prefer chocolate, and 40 prefer strawberry. What central angle degree should be used to draw the slice for chocolate?    The proportion for chocolate is: Since a full circle has , multiply the proportion by 360 to find the central angle: The chocolate slice requires a central angle of .   Pie chart representing ice cream flavor preferences.   A circular pie chart divided into three distinct sections. The right half of the circle is yellow and represents Vanilla at 50 percent. The bottom-left sector is brown and represents Chocolate with a 108-degree angle at 30 percent. The top-left sector is pink and represents Strawberry at 20 percent.      "
+},
+{
+  "id": "def-histograms",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#def-histograms",
+  "type": "Definition",
+  "number": "4.28",
+  "title": "Histogram.",
+  "body": " Histogram   A histogram is a graphical tool used to display the frequency distribution of a single continuous numerical variable. Similar to a bar graph, it represents frequencies using the height of rectangular bars; however, its horizontal axis functions as a continuous number line. The data values are grouped into specific intervals, known as classes or bins. Unlike categorical bar charts, the vertical bars in a histogram must touch directly to accurately reflect the unbroken, sequential nature of the underlying scale.   "
+},
+{
+  "id": "ex-workout-durations-histogram",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#ex-workout-durations-histogram",
+  "type": "Example",
+  "number": "4.29",
+  "title": "Gym Workout Durations.",
+  "body": " Gym Workout Durations   A gym records the workout durations of its members in minutes. The data is grouped into three continuous intervals: 0–20 minutes (5 people), 20–40 minutes (15 people), and 40–60 minutes (10 people). Determine the total sample size tracked across this histogram layout.   Frequency distribution across adjacent numerical bins.   A frequency histogram tracking gym workout durations. The horizontal axis represents workout duration in minutes, with markers at 0, 20, 40, and 60. The vertical axis represents the number of members from 0 to 20. Three adjacent purple bars touch each other: the first bin from 0 to 20 minutes has a height of 5, the middle bin from 20 to 40 minutes has a height of 15, and the third bin from 40 to 60 minutes has a height of 10.       To find the total sample size, sum the frequencies represented by the height of each adjacent bar:   The histogram tracks a total sample size of 30 gym members.   "
+},
+{
+  "id": "ex-car-color-histogram-style",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#ex-car-color-histogram-style",
+  "type": "Example",
+  "number": "4.31",
+  "title": "",
+  "body": "  Using the total-loss collision dataset compiled by the insurance provider in , construct a histogram-style bar chart to visually model the distribution of vehicle colors.   Histogram-Style Visual Distribution of Vehicle Colors   A vertical bar chart plotting car colors on the horizontal axis against frequencies on the vertical axis. The bars touch each other directly using a histogram style layout. Blue reaches 25, Green reaches 52, Red reaches 41, White reaches 36, Black reaches 39, and Grey reaches 23.       To present this categorical data in a touching-bar format, we plot the vehicle color categories along the horizontal axis and the collision frequencies on the vertical axis. By adjusting our bar spacing properties, we can configure the rectangles to touch side-by-side:    Blue: Bar height is 25  Green: Bar height is 52  Red: Bar height is 41  White: Bar height is 36  Black: Bar height is 39  Grey: Bar height is 23     "
+},
+{
+  "id": "ex-nutrition-weight-histogram-fixed",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#ex-nutrition-weight-histogram-fixed",
+  "type": "Checkpoint",
+  "number": "4.33",
+  "title": "Nutrition Study Weight Distribution.",
+  "body": " Nutrition Study Weight Distribution   Suppose that we have collected weights from 100 male subjects as part of a nutrition study. For our weight data, we have values ranging from a low of 121 pounds to a high of 263 pounds, giving a total span of: We can experiment with different bin allocations to summarize the data. Let us organize the dataset using a uniform interval width of 15, starting at a baseline value of 120.   Interval Frequency Distribution Table     Weight Interval (Pounds)  Frequency (Count)    120-134  4    135-149  14    150-164  16    165-179  28    180-194  12    195-209  8    210-224  7    225-239  6    240-254  2    255-269  3      Using the frequency chart, we construct a continuous frequency histogram. Each vertical bar spans an interval of 15 pounds on the horizontal axis, and the height matches the respective category count.   Frequency histogram of male subject weights with an interval width of 15.   A continuous frequency histogram tracking the weights of 100 male subjects. The horizontal axis charts weights from 120 to 270 pounds with main tick labels every 15 units. The vertical axis monitors frequencies from 0 to 30. Ten continuous, touching blue bars represent the frequencies: the first bar at 120 has a height of 4; followed by 14, 16; peaking at a height of 28 for the 165-180 pound bin; then stepping down to 12, 8, 7, 6, 2; and ending with a final bar height of 3 at the 255-270 pound boundary.      "
+},
+{
+  "id": "exercise-history-test-scores",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#exercise-history-test-scores",
+  "type": "Checkpoint",
+  "number": "4.35",
+  "title": "",
+  "body": "  The following dataset represents the scores of students on a recent history test:  80, 50, 50, 90, 70, 70, 100, 60, 70, 80, 70, 50, 90, 100, 80, 70, 30, 80, 80, 70, 100, 60, 60, 50    Complete a frequency table for the test scores.  Construct a bar graph of the data.  Construct a line graph of the data.  Construct a pie chart of the data.  Construct a histogram of the data.        (a) Frequency Table: Sorting and counting each distinct score yields the following frequency distribution:   Frequency Distribution of History Test Scores    Test Score  Frequency (Students)   30 1  50 4  60 3  70 6  80 5  90 2  100 3      (b) Bar Graph: We represent each distinct score on the horizontal axis and its frequency count on the vertical axis using separated vertical columns:   Bar Graph of Test Scores   A vertical bar chart showing test scores on the horizontal axis and student frequency on the vertical axis. Bars are at 30 with height 1, 50 with height 4, 60 with height 3, 70 with height 6, 80 with height 5, 90 with height 2, and 100 with height 3.       (c) Line Graph: Using the same axes as the bar chart, coordinate markers are plotted at each data junction and linked sequentially using line tracks:   Line Graph of Test Scores   A line graph mapping test scores to the number of students. Circles show points at score 30 with frequency 1, 50 with 4, 60 with 3, 70 with 6, 80 with 5, 90 with 2, and 100 with 3, connected by a trendline.       (d) Pie Chart: To map out global proportions, we compute percentage shares based on the total sample of students ( ):    Score 30:  ( )  Score 50:  ( )  Score 60:  ( )  Score 70:  ( )  Score 80:  ( )  Score 90:  ( )  Score 100:  ( )     Pie Chart of Test Score Distributions   A pie chart dividing the student distribution among scores. Slices represent Score 30 at 4.2 percent, Score 50 at 16.7 percent, Score 60 at 12.5 percent, Score 70 at 25 percent, Score 80 at 20.8 percent, Score 90 at 8.3 percent, and Score 100 at 12.5 percent.       (e) Histogram: We group the scores into 10-point bins along a continuous horizontal axis causing the bars to lock tightly side-by-side:    [25, 35): 1 student (score 30)  [35, 45): 0 students  [45, 55): 4 students (scores of 50)  [55, 65): 3 students (scores of 60)  [65, 75): 6 students (scores of 70)  [75, 85): 5 students (scores of 80)  [85, 95): 2 students (scores of 90)  [95, 105]: 3 students (scores of 100)     Histogram of Test Score Distributions   A histogram displaying the continuous interval distribution of test scores. The bars touch each other directly: the bin from 25 to 35 has a height of 1, 45 to 55 has a height of 4, 55 to 65 has a height of 3, 65 to 75 reaches the peak at 6, 75 to 85 has a height of 5, 85 to 95 has a height of 2, and 95 to 105 has a height of 3.       (e) Histogram: Unlike the categorical charts above, a true histogram tracks quantitative continuous intervals. We group the scores into 20-point bins along a continuous horizontal axis causing the bars to lock tightly side-by-side:    [20, 40): 1 student (score 30)  [40, 60): 4 students (scores of 50)  [60, 80): 9 students (scores of 60 and 70)  [80, 100): 7 students (scores of 80 and 90)  [100, 120): 3 students (scores of 100)     Histogram of Test Score Distributions   A histogram displaying the continuous 20-point interval distribution of test scores. The bars touch each other directly: the bin from 20 to 40 has a height of 1, 40 to 60 has a height of 4, 60 to 80 reaches the peak at 9, 80 to 100 has a height of 7, and 100 to 120 has a height of 3.      "
+},
+{
+  "id": "exercise-kori-monthly-budget",
+  "level": "2",
+  "url": "notes-Visualizing-Data-Through-Graphs.html#exercise-kori-monthly-budget",
+  "type": "Checkpoint",
+  "number": "4.42",
+  "title": "",
+  "body": "  Kori categorized her spending for this month into four categories: food, rent, fun, and other. The percentage she spent in each category is displayed in the chart below.   Pie Chart of Kori's Monthly Spending Shares   A pie chart dividing Kori's monthly budget proportions into four sectors: Rent accounts for 31 percent, Other accounts for 29 percent, Food accounts for 24 percent, and Fun accounts for 16 percent.     If she spent a total of this month, how much money did she allocate to rent?    To find the exact dollar amount spent on rent, we convert the percentage share from the pie chart into a decimal and multiply it by the total monthly expenditures:        Therefore, Kori spent exactly on rent this month.   "
+},
+{
   "id": "sec-measures-of-center-spread",
   "level": "1",
   "url": "sec-measures-of-center-spread.html",
   "type": "Section",
   "number": "",
   "title": "Measures of Center and Spread",
-  "body": " Measures of Center and Spread  Understanding distributions and their measures of center and spread is crucial for solving many statistics problems on the math practice. These concepts help summarize data sets concisely and allow for easier comparison and interpretation.  The center of a distribution describes a typical value of the data set and can be represented by the mean, median, or mode. The spread of a distribution indicates how much the data varies and can be measured using the range and standard deviation.      Mean  The mean, or average, is calculated by summing all values in a data set and dividing by the number of values. It represents a central point in the data. The mean is a measure of center that is sensitive to every value in the data set, making it particularly useful when the values are relatively close to each other.  To calculate the mean, add up all the values in the data set and then divide by the number of values. This gives an average value that can be used to represent the entire data set.  The mean of a set of data is the sum of the data values divided by the number of values; .     Find the mean of the data set .    Sum the values ( ) and divide by the number of values ( ). The mean is .      Marci's exam scores for her last math class were: . Find the mean of these exam scores and round it appropriately.    To find the mean, sum the scores and divide by the total number of exams:   Typically, we round means to one more decimal place than the original data had. Since the original scores are whole numbers, we round our final answer to one decimal place. Therefore, we round to .      The number of touchdown (TD) passes thrown by each of the 31 teams in the National Football League in the 2000 season are shown below:   NFL Touchdown Passes (2000 Season)    37  33  33  32  29  28  28  23    22  22  22  21  21  21  20  20    19  19  18  18  18  18  16  15    14  14  14  12  12  9  6      Find the mean number of touchdown passes thrown during this season.    First, find the sum of all the values in the data set:   Next, divide by , which is the total number of data values:   Following the standard rounding convention, we round the mean to one more decimal place than the original data. Since the raw touchdown counts are whole numbers, we round our final answer to one decimal place, giving .  It is most correct to report that The mean number of touchdown passes thrown in the NFL in the 2000 season was 20.5 passes, though it is common to see the more casual term average used in place of mean.       The price of a jar of peanut butter at 5 stores was: , , , , and . Find the mean price.    First, find the sum of the prices across all 5 stores:   Next, divide the total sum by the number of stores ( ):   Following the standard rounding rule for the mean (rounding to one more decimal place than the original data), we round from two decimal places to three decimal places. The exact mean price is (or approximately when rounded to the nearest standard cent).        Median  The median is the middle value of a data set when the values are arranged in ascending order. If there is an odd number of values, the median is the middle value. If there is an even number of values, the median is the average of the two middle values.  The median is a useful measure of center because it is not affected by extremely high or low values (outliers). This makes it a better representative of the data set when there are outliers present.    Odd Number of Values   Find the median of .    The data set is already in order. The median is .     Even Number of Values   Find the median of .    The middle values are and . The median is .      Returning to the football touchdown data from , find the median number of touchdown passes thrown in the NFL during the 2000 season.    To find the median, we start by listing the data in order. As seen in , the data is already in decreasing order, so we can work with it without needing to reorder it first.  Since there are data values (an odd number), the median will be the middle number, which is the 16th data value. We can compute its position by evaluating and rounding up to , which leaves exactly values below it and values above it.  Counting to the 16th data value in the ordered list yields . Therefore, the median number of touchdown passes in the 2000 season was passes. Notice that for this data, the median is fairly close to the mean of that we calculated earlier in .      Find the median of these quiz scores:     We start by listing the data in ascending order:   Since there are data values (an even number), there is no single middle number. Instead, we find the mean of the two middle numbers, which are the 5th and 6th values: and .  Calculating their average gives: Therefore, the median quiz score was .      The price of a jar of peanut butter at 5 stores was: , , , , and . Find the median price.    First, arrange the prices in ascending order:   Since there is an odd number of data values ( ), the median is the exact middle number, which is the 3rd value in our ordered list.  The middle value is . Therefore, the median price for a jar of peanut butter is .        Mode  The mode is the value that appears most frequently in a data set. A data set can have no mode, one mode, or multiple modes. The mode is useful for understanding which values are most common in the data set. The mode is particularly useful for categorical data, where we are interested in knowing the most frequent category.     Find the mode of the data set .    The mode is because it appears most frequently.      In a vehicle color survey, the following frequency data was collected:   Vehicle Color Survey Frequencies    Color  Frequency    Blue  3    Green  5    Red  4    White  3    Black  2    Grey  3     Find the mode of this data set.    For this data, Green is the mode, since it is the data value that occurred most frequently with a count of .  It is possible for a data set to have more than one mode if several categories share the same highest frequency, or no modes if every single category occurs only once.      Reviewers were asked to rate a product on a scale of 1 to 5. The results are shown in the frequency table below:   Product Rating Frequencies    Rating  Frequency    1  4    2  8    3  7    4  3    5  1     Find:  The mean rating  The median rating  The mode rating      First, determine the total number of reviewers ( ) by summing the frequencies:      To find the mean rating, calculate the weighted sum of the ratings and divide by the total number of reviewers:   Rounding to one more decimal place than the original data gives a mean rating of .    Since there are data values (an odd number), the median is the middle value, located at position . Accumulating frequencies from the lowest rating up to the 12th value:  Ratings of 1 account for the first values (positions 1–4).  Ratings of 2 account for the next values (positions 5–12).  The 12th value falls exactly at the end of the 2-rating group, so the median rating is .    The mode is the value with the highest frequency. A rating of has the highest frequency with reviews, so the mode rating is .           Measures of Spread  Measures of spread describe how much the data varies. Two common measures are range and standard deviation. These measures help to understand the variability within the data set.   Consider these three sets of quiz scores:      Section A:       Section B:       Section C:       All three of these sets of data have a mean of and a median of , yet the sets of scores are clearly quite different. In Section A, everyone had the same score. In Section B, half the class got no points and the other half got a perfect score, assuming this was a 10-point quiz. Section C was not as consistent as Section A, but not as widely varied as Section B.  In addition to the mean and median, which are measures of the typical or middle value, we also need a measure of how spread out or varied each data set is. There are several ways to measure this spread of the data. The first is the simplest and is called the range .   Range  The range is the difference between the maximum and minimum values in a data set. It gives a quick sense of the spread of the data. A larger range indicates greater variability, while a smaller range indicates less variability.     Find the range of the data set .    The range is .      Using the quiz scores from above, find the range for Section A, Section B, and Section C.    The range is calculated by subtracting the minimum score from the maximum score in each data set:     For Section A, the maximum value is and the minimum value is . The range is .    For Section B, the maximum value is and the minimum value is . The range is .    For Section C, the maximum value is and the minimum value is . The range is .        Standard Deviation  The standard deviation is a measure of variation based on measuring how far each data value deviates, or is different, from the mean.   Standard deviation is always positive.  Standard deviation will be zero if all the data values are equal, and will get larger as the data spreads out.  Standard deviation has the same units as the original data.  Standard deviation, like the mean, can be highly influenced by outliers.     Standard Deviation  The standard deviation measures the typical spread from the mean; it is the average distance between the mean and a value in the data set. Larger standard deviations indicate greater spread. Standard deviation is a more complex measure of spread, but it provides a more detailed picture of variability within the data set than the range.    To compute standard deviation:    Find the mean; .  Subtract the mean from each individual data value;  Square each individual deviation result;   Sum all of the squared deviations together;   Divide the sum by N for populations, or by n - 1 for samples;  for samples  Calculate the square root of the variance;        A group of diners were asked how much they would pay for a meal. Their responses were: $7.50, $8.25, $9.00, $8.00, $7.25, $7.50, $8.00, $7.00.     Find the mean    Find the median    Find the standard deviation of this data        (a) Find the Mean     Sum all values:  Count total values:  Divide sum by total count:     (b) Find the Median     Arrange the data values in order: $7.00, $7.25, $7.50, $7.50, $8.00, $8.00, $8.25, $9.00  Locate the two middle values at positions 4 and 5: $7.50 and $8.00  Calculate the average of the two middle values:     (c) Find the Standard Deviation   We construct a table to find the deviation of each value from the mean ( ) and square those results.   Standard Deviation Calculations for Meal Prices        7.50  8.25  9.00  8.00  7.25  7.50  8.00  7.00           Sum all the squared deviations together from the table:  Divide by since this represents a sample:  Calculate the square root of the variance:       The price of a jar of peanut butter at 5 stores were: $3.29, $3.59, $3.79, $3.75, and $3.99.    Find the standard deviation of the prices.     Find the Standard Deviation   Find the mean price: (3.29 + 3.59 + 3.79 + 3.75 + 3.99) \/ 5 = 18.41 \/ 5 = $3.682  Find the deviation of each value from the mean ($3.682): -0.392, -0.092, 0.108, 0.068, 0.308  Square each individual deviation: 0.153664, 0.008464, 0.011664, 0.004624, 0.094864  Sum all the squared deviations together: 0.27328  Divide by n - 1 since this represents a sample: 0.27328 \/ 4 = 0.06832  Calculate the square root of the variance: sqrt(0.06832) = 0.26138 = $0.26      Baseball Team Ages   On a baseball team, the ages of each of the players are as follows:      Find the mean and standard deviation. Then find the value that is two standard deviations above the mean.    First, we find the sample mean ( ) by adding all the ages together and dividing by the total number of players ( ):   Next, we build a table to find the deviations from the mean ( ) and their squares ( ) to compute the sample standard deviation ( ).   Standard Deviation Calculations for Player Ages        21  21  22  23  24  24  25  25  28  29  29  31  32  33  33  34  35  36  36  36  36  38  38  38  40         Using the sum of squared deviations, we find the sample standard deviation ( ):   Finally, we calculate the value that is two standard deviations above the mean:      Puzzle Solving Times   You recorded the time in seconds it took for 8 participants to solve a puzzle. The times were: 15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4.     Find the mean    Find the median    Find the standard deviation of this data        Find the mean   Sum all values: 15.2 + 18.8 + 19.3 + 19.7 + 20.2 + 21.8 + 22.1 + 29.4 = 166.5  Count total values: n = 8  Divide sum by total count: 166.5 \/ 8 = 20.8125 seconds     Find the median   Arrange the data values in order: 15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4  Locate the two middle values at positions 4 and 5: 19.7 and 20.2  Calculate the average of the two middle values: (19.7 + 20.2) \/ 2 = 19.95 seconds     Find the standard deviation of this data   Find the deviation of each value from the mean (20.8125): -5.6125, -2.0125, -1.5125, -1.1125, -0.6125, 0.9875, 1.2875, 8.5875  Square each individual deviation: 31.500156, 4.050156, 2.287656, 1.237656, 0.375156, 0.975156, 1.657656, 73.745156  Sum all the squared deviations together: 115.82875  Divide by n - 1 since this represents a sample: 115.82875 \/ 7 = 16.546964  Calculate the square root of the variance: sqrt(16.546964) = 4.067796 = 4.07 seconds          Effect of Outliers  Outliers are values significantly different from other values in a data set. They can greatly affect summary statistics like the mean, median, mode, range, and standard deviation.  Consider the baseline data set where the outlier is . The sections below highlight how this outlier impacts each statistic:    Effect on Mean  Outliers can significantly skew the mean of a data set. Including it, the mean is skewed higher. Removing it, the mean is more representative of the majority of the data.    Effect on Median  The median is less affected by outliers because it is based on the middle values of the data set. In the data set , the median remains regardless of the outlier.    Effect on Mode  Outliers have little to no effect on the mode since the mode is determined by the most frequently occurring values. In the data set , the mode is still .    Effect on Range  Outliers can drastically increase the range of a data set since the range is the difference between the maximum and minimum values. In the data set , the range is , which is significantly affected by the outlier.    Effect on Standard Deviation  Outliers increase the standard deviation because they increase the average distance from the mean. The standard deviation is much larger when the outlier is included compared to when it is excluded.         Practice Questions    Find the mean of the data set .    First, sum all the values in the data set: Next, divide the sum by the total number of values ( ):       Find the median of the data set .    First, arrange the data set in ascending order: . Since there is an odd number of values ( ), the median is the exact middle value. The middle value is .      Find the mode of the data set .    Count the frequency of each value in the set:  appears time  appears times  appears times  appears time  The value appears most frequently, so the mode is .      Find the range of the data set .    Identify the maximum and minimum values in the data set: Subtract the minimum value from the maximum value:       If the mean of is , what is ?    The formula for the mean of values is: Simplify the numerator by adding the known constants: Multiply both sides by to isolate the numerator: Subtract from both sides to find :       What is the sample standard deviation of the following data set?       First, find the sample mean ( ) by adding all the values together and dividing by the total number of items ( ):   Next, build a table to compute the deviations from the mean ( ) and their squares ( ).   Standard Deviation Calculations        5  6  6  8  8  9  10  12         Using the sum of squared deviations, calculate the sample standard deviation ( ):          Frequently Asked Questions    What is the difference between mean, median, and mode?  The mean is the average (sum of values divided by count), the median is the middle value when data is ordered, and the mode is the most frequently occurring value. The median is less affected by outliers than the mean.    What is standard deviation?  Standard deviation measures the typical spread from the mean—it is the average distance between each data point and the mean. A larger standard deviation indicates greater variability in the data set.    How do I find the median of an even number of values?  When there is an even number of values, the median is the average of the two middle values. First arrange the data in order, then identify the two middle values and calculate their average.     "
+  "body": " Measures of Center and Spread  Understanding distributions and their measures of center and spread is crucial for solving many statistics problems on the math practice. These concepts help summarize data sets concisely and allow for easier comparison and interpretation.  The center of a distribution describes a typical value of the data set and can be represented by the mean, median, or mode. The spread of a distribution indicates how much the data varies and can be measured using the range and standard deviation.      Mean  The mean, or average, is calculated by summing all values in a data set and dividing by the number of values. It represents a central point in the data. The mean is a measure of center that is sensitive to every value in the data set, making it particularly useful when the values are relatively close to each other.  The Greek letter sigma, , called a symbol of summation, is used to indicate the sum of data items. The notation , read ``the sum of x,'' means to add all the data items in a given data set. We can use this symbol to give a formula for calculating the mean. To calculate the mean, add up all the values in the data set and then divide by the number of values. This gives an average value that can be used to represent the entire data set. The mean of a set of data is the sum of the data values divided by the number of values;      Find the mean of the data set .    Sum the values ( ) and divide by the number of values ( ). The mean is .      Marci's exam scores for her last math class were: . Find the mean of these exam scores and round it appropriately.    To find the mean, sum the scores and divide by the total number of exams:   Typically, we round means to one more decimal place than the original data had. Since the original scores are whole numbers, we round our final answer to one decimal place. Therefore, we round to .      The number of touchdown (TD) passes thrown by each of the 31 teams in the National Football League in the 2000 season are shown below:   NFL Touchdown Passes (2000 Season)    37  33  33  32  29  28  28  23  22  22  22    21  21  21  20  20  19  19  18  18  18  18    16  15  14  14  14  12  12  9  6       Find the mean number of touchdown passes thrown during this season.    First, find the sum of all the values in the data set:     Next, divide by , which is the total number of data values:   Following the standard rounding convention, we round the mean to one more decimal place than the original data. Since the raw touchdown counts are whole numbers, we round our final answer to one decimal place, giving .  It is most correct to report that The mean number of touchdown passes thrown in the NFL in the 2000 season was 20.5 passes, though it is common to see the more casual term average used in place of mean.       The price of a jar of peanut butter at 5 stores was: , , , , and . Find the mean price.    First, find the sum of the prices across all 5 stores:   Next, divide the total sum by the number of stores ( ):   Following the standard rounding rule for the mean (rounding to one more decimal place than the original data), we round from two decimal places to three decimal places. The exact mean price is (or approximately when rounded to the nearest standard cent).        Median  The median is the middle value of a data set when the values are arranged in ascending order.  To find the median of a dataset:    Arrange the data in order from smallest to largest.  If the number of items in the dataset is odd , the median is the exact middle number in the ordered dataset.  If the number of items in the dataset is even , the median is the mean of the two middle numbers in the ordered dataset.     The median is a useful measure of center because it is not affected by extremely high or low values (outliers). This makes it a better representative of the data set when there are outliers present.   Odd Number of Values   Find the median of .    The data set is already in order. The median is .     Even Number of Values   Find the median of .    The middle values are and . The median is .      Returning to the football touchdown data from , find the median number of touchdown passes thrown in the NFL during the 2000 season.    To find the median, we start by listing the data in order. As seen in , the data is already in decreasing order, so we can work with it without needing to reorder it first.  Since there are data values (an odd number), the median will be the middle number, which is the 16th data value. We can compute its position by evaluating and rounding up to , which leaves exactly values below it and values above it.  Counting to the 16th data value in the ordered list yields . Therefore, the median number of touchdown passes in the 2000 season was passes. Notice that for this data, the median is fairly close to the mean of that we calculated earlier in .      Find the median of these quiz scores:     We start by listing the data in ascending order:   Since there are data values (an even number), there is no single middle number. Instead, we find the mean of the two middle numbers, which are the 5th and 6th values: and .  Calculating their average gives: Therefore, the median quiz score was .      The price of a jar of peanut butter at 5 stores was: , , , , and . Find the median price.    First, arrange the prices in ascending order:   Since there is an odd number of data values ( ), the median is the exact middle number, which is the 3rd value in our ordered list.  The middle value is . Therefore, the median price for a jar of peanut butter is .        Mode  The mode is the value that appears most frequently (often) in a data set.  A data set can have no mode, one mode, or multiple modes.  The mode is useful for understanding which values are most common in the data set. The mode is particularly useful for categorical data, where we are interested in knowing the most frequent category.     Find the mode of the data set .    The mode is because it appears most frequently.      In a vehicle color survey, the following frequency data was collected:   Vehicle Color Survey Frequencies    Color  Frequency    Blue  3    Green  5    Red  4    White  3    Black  2    Grey  3     Find the mode of this data set.    For this data, Green is the mode, since it is the data value that occurred most frequently with a count of .  It is possible for a data set to have more than one mode if several categories share the same highest frequency, or no modes if every single category occurs only once.      Reviewers were asked to rate a product on a scale of 1 to 5. The results are shown in the frequency table below:   Product Rating Frequencies    Rating  Frequency    1  4    2  8    3  7    4  3    5  1     Find:  The mean rating  The median rating  The mode rating      First, determine the total number of reviewers ( ) by summing the frequencies:      To find the mean rating, calculate the weighted sum of the ratings and divide by the total number of reviewers:   Rounding to one more decimal place than the original data gives a mean rating of .    Since there are data values (an odd number), the median is the middle value, located at position . Accumulating frequencies from the lowest rating up to the 12th value:  Ratings of 1 account for the first values (positions 1–4).  Ratings of 2 account for the next values (positions 5–12).  The 12th value falls exactly at the end of the 2-rating group, so the median rating is .    The mode is the value with the highest frequency. A rating of has the highest frequency with reviews, so the mode rating is .           Measures of Spread  Measures of spread describe how much the data varies. Two common measures are range and standard deviation. These measures help to understand the variability within the data set.   Consider these three sets of quiz scores:      Section A:       Section B:       Section C:       All three of these sets of data have a mean of and a median of , yet the sets of scores are clearly quite different. In Section A, everyone had the same score. In Section B, half the class got no points and the other half got a perfect score, assuming this was a 10-point quiz. Section C was not as consistent as Section A, but not as widely varied as Section B.  In addition to the mean and median, which are measures of the typical or middle value, we also need a measure of how spread out or varied each data set is. There are several ways to measure this spread of the data. The first is the simplest and is called the range .   Range  The range is the difference between the maximum and minimum values in a data set. It gives a quick sense of the spread of the data. A larger range indicates greater variability, while a smaller range indicates less variability.     Find the range of the data set .    The range is .      Using the quiz scores from above, find the range for Section A, Section B, and Section C.    The range is calculated by subtracting the minimum score from the maximum score in each data set:     For Section A, the maximum value is and the minimum value is . The range is .    For Section B, the maximum value is and the minimum value is . The range is .    For Section C, the maximum value is and the minimum value is . The range is .        Standard Deviation  The standard deviation is a measure of variation based on measuring how far each data value deviates, or is different, from the mean.   Standard deviation is always positive.  Standard deviation will be zero if all the data values are equal, and will get larger as the data spreads out.  Standard deviation has the same units as the original data.  Standard deviation, like the mean, can be highly influenced by outliers.     Standard Deviation  The standard deviation measures the typical spread from the mean; it is the average distance between the mean and a value in the data set. Larger standard deviations indicate greater spread. Standard deviation is a more complex measure of spread, but it provides a more detailed picture of variability within the data set than the range.    To compute standard deviation:    Find the mean; .  Subtract the mean from each individual data value;  Square each individual deviation result;   Sum all of the squared deviations together;   Divide the sum by N for populations, or by n - 1 for samples;  for samples  Calculate the square root of the variance;        A group of diners were asked how much they would pay for a meal. Their responses were: $7.50, $8.25, $9.00, $8.00, $7.25, $7.50, $8.00, $7.00.     Find the mean    Find the median    Find the standard deviation of this data        (a) Find the Mean     Sum all values:  Count total values:  Divide sum by total count:     (b) Find the Median     Arrange the data values in order: $7.00, $7.25, $7.50, $7.50, $8.00, $8.00, $8.25, $9.00  Locate the two middle values at positions 4 and 5: $7.50 and $8.00  Calculate the average of the two middle values:     (c) Find the Standard Deviation   We construct a table to find the deviation of each value from the mean ( ) and square those results.   Standard Deviation Calculations for Meal Prices        7.50  8.25  9.00  8.00  7.25  7.50  8.00  7.00           Sum all the squared deviations together from the table:  Divide by since this represents a sample:  Calculate the square root of the variance:       The price of a jar of peanut butter at 5 stores were: $3.29, $3.59, $3.79, $3.75, and $3.99.    Find the standard deviation of the prices.     Find the Standard Deviation   Find the mean price: (3.29 + 3.59 + 3.79 + 3.75 + 3.99) \/ 5 = 18.41 \/ 5 = $3.682  Find the deviation of each value from the mean ($3.682): -0.392, -0.092, 0.108, 0.068, 0.308  Square each individual deviation: 0.153664, 0.008464, 0.011664, 0.004624, 0.094864  Sum all the squared deviations together: 0.27328  Divide by n - 1 since this represents a sample: 0.27328 \/ 4 = 0.06832  Calculate the square root of the variance: sqrt(0.06832) = 0.26138 = $0.26      Baseball Team Ages   On a baseball team, the ages of each of the players are as follows:      Find the mean and standard deviation. Then find the value that is two standard deviations above the mean.    First, we find the sample mean ( ) by adding all the ages together and dividing by the total number of players ( ):   Next, we build a table to find the deviations from the mean ( ) and their squares ( ) to compute the sample standard deviation ( ).   Standard Deviation Calculations for Player Ages        21  21  22  23  24  24  25  25  28  29  29  31  32  33  33  34  35  36  36  36  36  38  38  38  40         Using the sum of squared deviations, we find the sample standard deviation ( ):   Finally, we calculate the value that is two standard deviations above the mean:      Puzzle Solving Times   You recorded the time in seconds it took for 8 participants to solve a puzzle. The times were: 15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4.     Find the mean    Find the median    Find the standard deviation of this data        Find the mean   Sum all values: 15.2 + 18.8 + 19.3 + 19.7 + 20.2 + 21.8 + 22.1 + 29.4 = 166.5  Count total values: n = 8  Divide sum by total count: 166.5 \/ 8 = 20.8125 seconds     Find the median   Arrange the data values in order: 15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4  Locate the two middle values at positions 4 and 5: 19.7 and 20.2  Calculate the average of the two middle values: (19.7 + 20.2) \/ 2 = 19.95 seconds     Find the standard deviation of this data   Find the deviation of each value from the mean (20.8125): -5.6125, -2.0125, -1.5125, -1.1125, -0.6125, 0.9875, 1.2875, 8.5875  Square each individual deviation: 31.500156, 4.050156, 2.287656, 1.237656, 0.375156, 0.975156, 1.657656, 73.745156  Sum all the squared deviations together: 115.82875  Divide by n - 1 since this represents a sample: 115.82875 \/ 7 = 16.546964  Calculate the square root of the variance: sqrt(16.546964) = 4.067796 = 4.07 seconds          Effect of Outliers  Outliers are values significantly different from other values in a data set. They can greatly affect summary statistics like the mean, median, mode, range, and standard deviation.  Consider the baseline data set where the outlier is . The sections below highlight how this outlier impacts each statistic:    Effect on Mean  Outliers can significantly skew the mean of a data set. Including it, the mean is skewed higher. Removing it, the mean is more representative of the majority of the data.    Effect on Median  The median is less affected by outliers because it is based on the middle values of the data set. In the data set , the median remains regardless of the outlier.    Effect on Mode  Outliers have little to no effect on the mode since the mode is determined by the most frequently occurring values. In the data set , the mode is still .    Effect on Range  Outliers can drastically increase the range of a data set since the range is the difference between the maximum and minimum values. In the data set , the range is , which is significantly affected by the outlier.    Effect on Standard Deviation  Outliers increase the standard deviation because they increase the average distance from the mean. The standard deviation is much larger when the outlier is included compared to when it is excluded.         Practice Questions    Find the mean of the data set .    First, sum all the values in the data set: Next, divide the sum by the total number of values ( ):       Find the median of the data set .    First, arrange the data set in ascending order: . Since there is an odd number of values ( ), the median is the exact middle value. The middle value is .      Find the mode of the data set .    Count the frequency of each value in the set:  appears time  appears times  appears times  appears time  The value appears most frequently, so the mode is .      Find the range of the data set .    Identify the maximum and minimum values in the data set: Subtract the minimum value from the maximum value:       If the mean of is , what is ?    The formula for the mean of values is: Simplify the numerator by adding the known constants: Multiply both sides by to isolate the numerator: Subtract from both sides to find :       What is the sample standard deviation of the following data set?       First, find the sample mean ( ) by adding all the values together and dividing by the total number of items ( ):   Next, build a table to compute the deviations from the mean ( ) and their squares ( ).   Standard Deviation Calculations        5  6  6  8  8  9  10  12         Using the sum of squared deviations, calculate the sample standard deviation ( ):          Frequently Asked Questions    What is the difference between mean, median, and mode?  The mean is the average (sum of values divided by count), the median is the middle value when data is ordered, and the mode is the most frequently occurring value. The median is less affected by outliers than the mean.    What is standard deviation?  Standard deviation measures the typical spread from the mean—it is the average distance between each data point and the mean. A larger standard deviation indicates greater variability in the data set.    How do I find the median of an even number of values?  When there is an even number of values, the median is the average of the two middle values. First arrange the data in order, then identify the two middle values and calculate their average.     "
 },
 {
   "id": "def-mean",
   "level": "2",
   "url": "sec-measures-of-center-spread.html#def-mean",
   "type": "Definition",
-  "number": "4.1",
+  "number": "4.44",
   "title": "Mean.",
-  "body": " Mean  The mean, or average, is calculated by summing all values in a data set and dividing by the number of values. It represents a central point in the data. The mean is a measure of center that is sensitive to every value in the data set, making it particularly useful when the values are relatively close to each other.  To calculate the mean, add up all the values in the data set and then divide by the number of values. This gives an average value that can be used to represent the entire data set.  The mean of a set of data is the sum of the data values divided by the number of values; .  "
+  "body": " Mean  The mean, or average, is calculated by summing all values in a data set and dividing by the number of values. It represents a central point in the data. The mean is a measure of center that is sensitive to every value in the data set, making it particularly useful when the values are relatively close to each other.  The Greek letter sigma, , called a symbol of summation, is used to indicate the sum of data items. The notation , read ``the sum of x,'' means to add all the data items in a given data set. We can use this symbol to give a formula for calculating the mean. To calculate the mean, add up all the values in the data set and then divide by the number of values. This gives an average value that can be used to represent the entire data set. The mean of a set of data is the sum of the data values divided by the number of values;   "
 },
 {
   "id": "example-mean",
   "level": "2",
   "url": "sec-measures-of-center-spread.html#example-mean",
   "type": "Example",
-  "number": "4.2",
+  "number": "4.45",
   "title": "",
   "body": "  Find the mean of the data set .    Sum the values ( ) and divide by the number of values ( ). The mean is .   "
 },
@@ -2048,25 +2246,25 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-measures-of-center-spread.html#example-rounding-mean",
   "type": "Example",
-  "number": "4.3",
+  "number": "4.46",
   "title": "",
   "body": "  Marci's exam scores for her last math class were: . Find the mean of these exam scores and round it appropriately.    To find the mean, sum the scores and divide by the total number of exams:   Typically, we round means to one more decimal place than the original data had. Since the original scores are whole numbers, we round our final answer to one decimal place. Therefore, we round to .   "
 },
 {
-  "id": "example-nfl-touchdowns-mean",
+  "id": "ex-nfl-touchdowns-mean",
   "level": "2",
-  "url": "sec-measures-of-center-spread.html#example-nfl-touchdowns-mean",
-  "type": "Example",
-  "number": "4.4",
+  "url": "sec-measures-of-center-spread.html#ex-nfl-touchdowns-mean",
+  "type": "Checkpoint",
+  "number": "4.47",
   "title": "",
-  "body": "  The number of touchdown (TD) passes thrown by each of the 31 teams in the National Football League in the 2000 season are shown below:   NFL Touchdown Passes (2000 Season)    37  33  33  32  29  28  28  23    22  22  22  21  21  21  20  20    19  19  18  18  18  18  16  15    14  14  14  12  12  9  6      Find the mean number of touchdown passes thrown during this season.    First, find the sum of all the values in the data set:   Next, divide by , which is the total number of data values:   Following the standard rounding convention, we round the mean to one more decimal place than the original data. Since the raw touchdown counts are whole numbers, we round our final answer to one decimal place, giving .  It is most correct to report that The mean number of touchdown passes thrown in the NFL in the 2000 season was 20.5 passes, though it is common to see the more casual term average used in place of mean.    "
+  "body": "  The number of touchdown (TD) passes thrown by each of the 31 teams in the National Football League in the 2000 season are shown below:   NFL Touchdown Passes (2000 Season)    37  33  33  32  29  28  28  23  22  22  22    21  21  21  20  20  19  19  18  18  18  18    16  15  14  14  14  12  12  9  6       Find the mean number of touchdown passes thrown during this season.    First, find the sum of all the values in the data set:     Next, divide by , which is the total number of data values:   Following the standard rounding convention, we round the mean to one more decimal place than the original data. Since the raw touchdown counts are whole numbers, we round our final answer to one decimal place, giving .  It is most correct to report that The mean number of touchdown passes thrown in the NFL in the 2000 season was 20.5 passes, though it is common to see the more casual term average used in place of mean.    "
 },
 {
   "id": "exercise-peanut-butter-mean",
   "level": "2",
   "url": "sec-measures-of-center-spread.html#exercise-peanut-butter-mean",
   "type": "Checkpoint",
-  "number": "4.6",
+  "number": "4.49",
   "title": "",
   "body": "  The price of a jar of peanut butter at 5 stores was: , , , , and . Find the mean price.    First, find the sum of the prices across all 5 stores:   Next, divide the total sum by the number of stores ( ):   Following the standard rounding rule for the mean (rounding to one more decimal place than the original data), we round from two decimal places to three decimal places. The exact mean price is (or approximately when rounded to the nearest standard cent).   "
 },
@@ -2075,16 +2273,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-measures-of-center-spread.html#def-median",
   "type": "Definition",
-  "number": "4.7",
+  "number": "4.50",
   "title": "Median.",
-  "body": " Median  The median is the middle value of a data set when the values are arranged in ascending order. If there is an odd number of values, the median is the middle value. If there is an even number of values, the median is the average of the two middle values.  The median is a useful measure of center because it is not affected by extremely high or low values (outliers). This makes it a better representative of the data set when there are outliers present.  "
+  "body": " Median  The median is the middle value of a data set when the values are arranged in ascending order.  To find the median of a dataset:    Arrange the data in order from smallest to largest.  If the number of items in the dataset is odd , the median is the exact middle number in the ordered dataset.  If the number of items in the dataset is even , the median is the mean of the two middle numbers in the ordered dataset.    "
 },
 {
   "id": "example-median-odd",
   "level": "2",
   "url": "sec-measures-of-center-spread.html#example-median-odd",
   "type": "Example",
-  "number": "4.8",
+  "number": "4.51",
   "title": "Odd Number of Values.",
   "body": " Odd Number of Values   Find the median of .    The data set is already in order. The median is .   "
 },
@@ -2093,25 +2291,25 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-measures-of-center-spread.html#example-median-even",
   "type": "Example",
-  "number": "4.9",
+  "number": "4.52",
   "title": "Even Number of Values.",
   "body": " Even Number of Values   Find the median of .    The middle values are and . The median is .   "
 },
 {
-  "id": "example-nfl-touchdowns-median",
+  "id": "ex-nfl-touchdowns-median",
   "level": "2",
-  "url": "sec-measures-of-center-spread.html#example-nfl-touchdowns-median",
-  "type": "Example",
-  "number": "4.10",
+  "url": "sec-measures-of-center-spread.html#ex-nfl-touchdowns-median",
+  "type": "Checkpoint",
+  "number": "4.53",
   "title": "",
   "body": "  Returning to the football touchdown data from , find the median number of touchdown passes thrown in the NFL during the 2000 season.    To find the median, we start by listing the data in order. As seen in , the data is already in decreasing order, so we can work with it without needing to reorder it first.  Since there are data values (an odd number), the median will be the middle number, which is the 16th data value. We can compute its position by evaluating and rounding up to , which leaves exactly values below it and values above it.  Counting to the 16th data value in the ordered list yields . Therefore, the median number of touchdown passes in the 2000 season was passes. Notice that for this data, the median is fairly close to the mean of that we calculated earlier in .   "
 },
 {
-  "id": "example-quiz-scores-median",
+  "id": "exercise-quiz-scores-median",
   "level": "2",
-  "url": "sec-measures-of-center-spread.html#example-quiz-scores-median",
-  "type": "Example",
-  "number": "4.11",
+  "url": "sec-measures-of-center-spread.html#exercise-quiz-scores-median",
+  "type": "Checkpoint",
+  "number": "4.54",
   "title": "",
   "body": "  Find the median of these quiz scores:     We start by listing the data in ascending order:   Since there are data values (an even number), there is no single middle number. Instead, we find the mean of the two middle numbers, which are the 5th and 6th values: and .  Calculating their average gives: Therefore, the median quiz score was .   "
 },
@@ -2120,7 +2318,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-measures-of-center-spread.html#exercise-peanut-butter-median",
   "type": "Checkpoint",
-  "number": "4.12",
+  "number": "4.55",
   "title": "",
   "body": "  The price of a jar of peanut butter at 5 stores was: , , , , and . Find the median price.    First, arrange the prices in ascending order:   Since there is an odd number of data values ( ), the median is the exact middle number, which is the 3rd value in our ordered list.  The middle value is . Therefore, the median price for a jar of peanut butter is .   "
 },
@@ -2129,16 +2327,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-measures-of-center-spread.html#def-mode",
   "type": "Definition",
-  "number": "4.13",
+  "number": "4.56",
   "title": "Mode.",
-  "body": " Mode  The mode is the value that appears most frequently in a data set. A data set can have no mode, one mode, or multiple modes. The mode is useful for understanding which values are most common in the data set. The mode is particularly useful for categorical data, where we are interested in knowing the most frequent category.  "
+  "body": " Mode  The mode is the value that appears most frequently (often) in a data set.  A data set can have no mode, one mode, or multiple modes.  The mode is useful for understanding which values are most common in the data set. The mode is particularly useful for categorical data, where we are interested in knowing the most frequent category.  "
 },
 {
   "id": "example-mode",
   "level": "2",
   "url": "sec-measures-of-center-spread.html#example-mode",
   "type": "Example",
-  "number": "4.14",
+  "number": "4.57",
   "title": "",
   "body": "  Find the mode of the data set .    The mode is because it appears most frequently.   "
 },
@@ -2147,7 +2345,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-measures-of-center-spread.html#example-vehicle-color-mode",
   "type": "Example",
-  "number": "4.15",
+  "number": "4.58",
   "title": "",
   "body": "  In a vehicle color survey, the following frequency data was collected:   Vehicle Color Survey Frequencies    Color  Frequency    Blue  3    Green  5    Red  4    White  3    Black  2    Grey  3     Find the mode of this data set.    For this data, Green is the mode, since it is the data value that occurred most frequently with a count of .  It is possible for a data set to have more than one mode if several categories share the same highest frequency, or no modes if every single category occurs only once.   "
 },
@@ -2156,7 +2354,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-measures-of-center-spread.html#exercise-product-ratings",
   "type": "Checkpoint",
-  "number": "4.17",
+  "number": "4.60",
   "title": "",
   "body": "  Reviewers were asked to rate a product on a scale of 1 to 5. The results are shown in the frequency table below:   Product Rating Frequencies    Rating  Frequency    1  4    2  8    3  7    4  3    5  1     Find:  The mean rating  The median rating  The mode rating      First, determine the total number of reviewers ( ) by summing the frequencies:      To find the mean rating, calculate the weighted sum of the ratings and divide by the total number of reviewers:   Rounding to one more decimal place than the original data gives a mean rating of .    Since there are data values (an odd number), the median is the middle value, located at position . Accumulating frequencies from the lowest rating up to the 12th value:  Ratings of 1 account for the first values (positions 1–4).  Ratings of 2 account for the next values (positions 5–12).  The 12th value falls exactly at the end of the 2-rating group, so the median rating is .    The mode is the value with the highest frequency. A rating of has the highest frequency with reviews, so the mode rating is .      "
 },
@@ -2165,25 +2363,25 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-measures-of-center-spread.html#def-measures-of-spread",
   "type": "Definition",
-  "number": "4.19",
+  "number": "4.62",
   "title": "Measures of Spread.",
   "body": " Measures of Spread  Measures of spread describe how much the data varies. Two common measures are range and standard deviation. These measures help to understand the variability within the data set.  "
 },
 {
-  "id": "sec-measures-of-center-spread-23",
+  "id": "sec-measures-of-center-spread-24",
   "level": "2",
-  "url": "sec-measures-of-center-spread.html#sec-measures-of-center-spread-23",
+  "url": "sec-measures-of-center-spread.html#sec-measures-of-center-spread-24",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "range "
 },
 {
-  "id": "sec-measures-of-center-spread-24",
+  "id": "sec-measures-of-center-spread-25",
   "level": "2",
-  "url": "sec-measures-of-center-spread.html#sec-measures-of-center-spread-24",
+  "url": "sec-measures-of-center-spread.html#sec-measures-of-center-spread-25",
   "type": "Note",
-  "number": "4.20",
+  "number": "4.63",
   "title": "Range.",
   "body": " Range  The range is the difference between the maximum and minimum values in a data set. It gives a quick sense of the spread of the data. A larger range indicates greater variability, while a smaller range indicates less variability.  "
 },
@@ -2192,7 +2390,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-measures-of-center-spread.html#example-range",
   "type": "Example",
-  "number": "4.21",
+  "number": "4.64",
   "title": "",
   "body": "  Find the range of the data set .    The range is .   "
 },
@@ -2201,7 +2399,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-measures-of-center-spread.html#example-quiz-scores-range",
   "type": "Example",
-  "number": "4.22",
+  "number": "4.65",
   "title": "",
   "body": "  Using the quiz scores from above, find the range for Section A, Section B, and Section C.    The range is calculated by subtracting the minimum score from the maximum score in each data set:     For Section A, the maximum value is and the minimum value is . The range is .    For Section B, the maximum value is and the minimum value is . The range is .    For Section C, the maximum value is and the minimum value is . The range is .      "
 },
@@ -2210,16 +2408,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-measures-of-center-spread.html#standard-deviation",
   "type": "Definition",
-  "number": "4.23",
+  "number": "4.66",
   "title": "Standard Deviation.",
   "body": " Standard Deviation  The standard deviation is a measure of variation based on measuring how far each data value deviates, or is different, from the mean.   Standard deviation is always positive.  Standard deviation will be zero if all the data values are equal, and will get larger as the data spreads out.  Standard deviation has the same units as the original data.  Standard deviation, like the mean, can be highly influenced by outliers.   "
 },
 {
-  "id": "sec-measures-of-center-spread-28",
+  "id": "sec-measures-of-center-spread-29",
   "level": "2",
-  "url": "sec-measures-of-center-spread.html#sec-measures-of-center-spread-28",
+  "url": "sec-measures-of-center-spread.html#sec-measures-of-center-spread-29",
   "type": "Note",
-  "number": "4.24",
+  "number": "4.67",
   "title": "Standard Deviation.",
   "body": " Standard Deviation  The standard deviation measures the typical spread from the mean; it is the average distance between the mean and a value in the data set. Larger standard deviations indicate greater spread. Standard deviation is a more complex measure of spread, but it provides a more detailed picture of variability within the data set than the range.  "
 },
@@ -2228,16 +2426,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-measures-of-center-spread.html#example-diner-meals",
   "type": "Example",
-  "number": "4.25",
+  "number": "4.68",
   "title": "",
   "body": "  A group of diners were asked how much they would pay for a meal. Their responses were: $7.50, $8.25, $9.00, $8.00, $7.25, $7.50, $8.00, $7.00.     Find the mean    Find the median    Find the standard deviation of this data        (a) Find the Mean     Sum all values:  Count total values:  Divide sum by total count:     (b) Find the Median     Arrange the data values in order: $7.00, $7.25, $7.50, $7.50, $8.00, $8.00, $8.25, $9.00  Locate the two middle values at positions 4 and 5: $7.50 and $8.00  Calculate the average of the two middle values:     (c) Find the Standard Deviation   We construct a table to find the deviation of each value from the mean ( ) and square those results.   Standard Deviation Calculations for Meal Prices        7.50  8.25  9.00  8.00  7.25  7.50  8.00  7.00           Sum all the squared deviations together from the table:  Divide by since this represents a sample:  Calculate the square root of the variance:     "
 },
 {
-  "id": "sec-measures-of-center-spread-31",
+  "id": "sec-measures-of-center-spread-32",
   "level": "2",
-  "url": "sec-measures-of-center-spread.html#sec-measures-of-center-spread-31",
+  "url": "sec-measures-of-center-spread.html#sec-measures-of-center-spread-32",
   "type": "Checkpoint",
-  "number": "4.27",
+  "number": "4.70",
   "title": "",
   "body": " The price of a jar of peanut butter at 5 stores were: $3.29, $3.59, $3.79, $3.75, and $3.99.    Find the standard deviation of the prices.     Find the Standard Deviation   Find the mean price: (3.29 + 3.59 + 3.79 + 3.75 + 3.99) \/ 5 = 18.41 \/ 5 = $3.682  Find the deviation of each value from the mean ($3.682): -0.392, -0.092, 0.108, 0.068, 0.308  Square each individual deviation: 0.153664, 0.008464, 0.011664, 0.004624, 0.094864  Sum all the squared deviations together: 0.27328  Divide by n - 1 since this represents a sample: 0.27328 \/ 4 = 0.06832  Calculate the square root of the variance: sqrt(0.06832) = 0.26138 = $0.26    "
 },
@@ -2246,16 +2444,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-measures-of-center-spread.html#example-baseball-ages",
   "type": "Example",
-  "number": "4.28",
+  "number": "4.71",
   "title": "Baseball Team Ages.",
   "body": " Baseball Team Ages   On a baseball team, the ages of each of the players are as follows:      Find the mean and standard deviation. Then find the value that is two standard deviations above the mean.    First, we find the sample mean ( ) by adding all the ages together and dividing by the total number of players ( ):   Next, we build a table to find the deviations from the mean ( ) and their squares ( ) to compute the sample standard deviation ( ).   Standard Deviation Calculations for Player Ages        21  21  22  23  24  24  25  25  28  29  29  31  32  33  33  34  35  36  36  36  36  38  38  38  40         Using the sum of squared deviations, we find the sample standard deviation ( ):   Finally, we calculate the value that is two standard deviations above the mean:    "
 },
 {
-  "id": "sec-measures-of-center-spread-33",
+  "id": "sec-measures-of-center-spread-34",
   "level": "2",
-  "url": "sec-measures-of-center-spread.html#sec-measures-of-center-spread-33",
+  "url": "sec-measures-of-center-spread.html#sec-measures-of-center-spread-34",
   "type": "Checkpoint",
-  "number": "4.30",
+  "number": "4.73",
   "title": "Puzzle Solving Times.",
   "body": " Puzzle Solving Times   You recorded the time in seconds it took for 8 participants to solve a puzzle. The times were: 15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4.     Find the mean    Find the median    Find the standard deviation of this data        Find the mean   Sum all values: 15.2 + 18.8 + 19.3 + 19.7 + 20.2 + 21.8 + 22.1 + 29.4 = 166.5  Count total values: n = 8  Divide sum by total count: 166.5 \/ 8 = 20.8125 seconds     Find the median   Arrange the data values in order: 15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4  Locate the two middle values at positions 4 and 5: 19.7 and 20.2  Calculate the average of the two middle values: (19.7 + 20.2) \/ 2 = 19.95 seconds     Find the standard deviation of this data   Find the deviation of each value from the mean (20.8125): -5.6125, -2.0125, -1.5125, -1.1125, -0.6125, 0.9875, 1.2875, 8.5875  Square each individual deviation: 31.500156, 4.050156, 2.287656, 1.237656, 0.375156, 0.975156, 1.657656, 73.745156  Sum all the squared deviations together: 115.82875  Divide by n - 1 since this represents a sample: 115.82875 \/ 7 = 16.546964  Calculate the square root of the variance: sqrt(16.546964) = 4.067796 = 4.07 seconds     "
 },
@@ -2314,186 +2512,6 @@ var ptx_lunr_docs = [
   "body": "  What is the sample standard deviation of the following data set?       First, find the sample mean ( ) by adding all the values together and dividing by the total number of items ( ):   Next, build a table to compute the deviations from the mean ( ) and their squares ( ).   Standard Deviation Calculations        5  6  6  8  8  9  10  12         Using the sum of squared deviations, calculate the sample standard deviation ( ):    "
 },
 {
-  "id": "notes-Visualizing-Data-Through-Graphs",
-  "level": "1",
-  "url": "notes-Visualizing-Data-Through-Graphs.html",
-  "type": "Section",
-  "number": "",
-  "title": "Visualizing Data Through Graphs",
-  "body": " Visualizing Data Through Graphs   After collecting survey or experimental data, we must summarize and present it meaningfully for our audience. We will start with graphical data presentations before moving on to numerical summaries.  Raw information can often feel overwhelming and difficult to interpret. To reveal clear insights, researchers and data analysts rely heavily on visual graphics. The four primary tools used to display quantitative variables are bar graphs, line graphs, pie charts and histogram. The specific choice among them depends entirely on the characteristics of the data being evaluated.  Categorical (or qualitative) data helps us sort individual subjects into distinct groups. To make sense of this information, we usually begin by constructing a two-column frequency table . The first column lists out the available categories, while the parallel column captures the corresponding frequency—meaning the absolute count of observations belonging to each classification.    Bar graph    Bar graphs are best suited for comparing quantities or counts across distinct, independent categories. They utilize horizontal or vertical rectangular bars where the length or height of each bar directly corresponds to the numerical value it represents.    For example, a political analyst would use a bar graph to compare the total number of votes received by different candidates in an election, allowing the reader to instantly identify the frontrunner.    A small business tracks the number of laptops sold over three months: January (15 units), February (22 units), and March (18 units). Determine which category goes on each axis to construct a vertical bar graph.   Sample structure for a vertical bar graph.   A vertical bar chart displaying laptop units sold over three months. The horizontal axis represents the months, and the vertical axis scales from 0 to 25 to track units sold. January displays a bar reaching 15 units, February shows a bar reaching 22 units, and March shows a bar reaching 18 units.       To construct a standard vertical bar graph, the independent nominal categories must be placed along the baseline axis, while the numerical quantitative metrics track along the vertical boundary:    Horizontal Axis (x-axis): Contains the Months (January, February, and March).     Vertical Axis (y-axis): Tracks the quantitative scale for Units Sold (ranging from 0 up to at least 22).       An insurance provider calculates policy premiums by analyzing established risk variables. Drivers classified under higher-risk brackets are subject to increased premium rates. One variable often evaluated is vehicle color, under the assumption that certain car colors are linked to a higher probability of accidents.  To investigate this theory, the company reviewed local law enforcement records detailing recent total-loss traffic collisions. The gathered information is organized into the frequency distribution table below.   Frequency of Total-Loss Collisions by Vehicle Color    Vehicle Color  Frequency (Accidents)    Blue  25    Green  52    Red  41    White  36    Black  39    Grey  23     To draw meaningful conclusions from this categorical data, we must first find the total sample size ( ) by summing all frequencies:     Next, we calculate the relative frequency (percentage) for each color category using the formula . Rounding to two decimal places, we find:    Blue:   Green:   Red:   White:   Black:   Grey:     The data suggests that Green vehicles accounted for the largest share of total-loss collisions ( ), while Grey vehicles accounted for the lowest share ( ).    Using the total-loss collision dataset compiled by the insurance provider in , construct a bar graph to visually model the distribution of vehicle colors.   Bar Graph of Total-Loss Collisions by Vehicle Color   A vertical bar chart plotting car colors on the horizontal axis against collision frequencies on the vertical axis. The vertical axis scales from 0 to 60. Blue shows a bar reaching 25, Green reaches 52, Red reaches 41, White reaches 36, Black reaches 39, and Grey reaches 23.       To construct the bar graph, we map each vehicle color category along the horizontal axis (x-axis) and place the frequency counts along the vertical axis (y-axis). The height of each rectangular column corresponds exactly to its recorded category frequency:    Blue: 25 units high  Green: 52 units high  Red: 41 units high  White: 36 units high  Black: 39 units high  Grey: 23 units high    This layout provides an immediate visual hierarchy, showing that green cars are involved in more total-loss accidents than any other color in this sample group.      A school cafeteria counts the number of fruit items sold in a day: 40 apples, 55 bananas, and 25 oranges. If you create a vertical bar graph, which item will have the tallest bar, and what value will it represent?    The category with the highest count is bananas. Therefore, bananas will have the tallest bar, representing a value of 55.   Vertical bar graph tracking daily cafeteria fruit sales.   A vertical bar graph tracking cafeteria sales. The horizontal axis represents the fruit types, and the vertical axis scales from 0 to 60. Apples show a bar at 40, bananas show the tallest bar at 55, and oranges show a bar at 25.        Line graph    Line graphs are ideal for illustrating trends and demonstrating how numbers fluctuate over a continuous period. This format displays a sequential series of specific data points—frequently referred to as markers—that are connected by straight lines to show a clear trajectory.    A common application includes tracking macroeconomic variables, such as a city's average monthly temperature or a company's fluctuating stock prices throughout a fiscal year.    An analyst records the stock price of a company over four days: Day 1 ( ), Day 2 ( ), Day 3 ( ), and Day 4 ( ). Describe the overall trend shown by connecting these data points on a line graph.   Sample trajectory for a continuous trend line.   A continuous line graph tracking stock prices over 4 days. The horizontal axis tracks days 1 through 4, and the vertical axis spans from \\$5 to \\$25. A solid blue line connects the markers: rising from \\$10 on Day 1 to \\$15 on Day 2, dipping down to \\$12 on Day 3, and peaking sharply at \\$20 on Day 4.       The line segments will move upward from Day 1 to Day 2, slope downward from Day 2 to Day 3, and then rise sharply from Day 3 to Day 4. Despite the mid-period dip on Day 3, the overall trend over the four-day period is upward.      Using the total-loss collision dataset compiled by the insurance provider in , construct a line graph to visually model the distribution of vehicle colors.   Line Graph of Total-Loss Collisions by Vehicle Color   A line graph plotting car colors on the horizontal axis against collision frequencies on the vertical axis. The vertical axis scales from 0 to 60. A line connects data markers starting at Blue (25), rising sharply to Green (52), dropping to Red (41) and White (36), rising slightly to Black (39), and falling to its lowest point at Grey (23).       To construct a line graph for this dataset, we plot the vehicle color categories along the horizontal axis and the collision frequencies on the vertical axis. Instead of drawing columns, we plot a single coordinate point for each category and connect them sequentially with straight line segments:    Blue: Point at 25  Green: Point at 52  Red: Point at 41  White: Point at 36  Black: Point at 39  Grey: Point at 23    This visualization allows us to trace the ups and downs across categories, showing a sharp peak at Green and a drop at Grey.      A patient's body temperature is recorded every hour: Hour 1 ( ), Hour 2 ( ), Hour 3 ( ), and Hour 4 ( ). Between which two hours does the line graph show the sharpest increase?    To find the sharpest increase, we calculate the differences between consecutive hourly measurements:  The increase from Hour 1 to Hour 2 is: The increase from Hour 2 to Hour 3 is:   Comparing these calculations, the graph shows the sharpest increase between Hour 1 and Hour 2 .   Hourly tracking of patient body temperature.   A continuous line graph tracking a patient's temperature over 4 hours. The horizontal axis maps hours 1 to 4, and the vertical axis scales from 97 to 103 degrees Fahrenheit. A solid blue line rises from 98.6 degrees at Hour 1 to 100.2 degrees at Hour 2, climbs further to 101.5 degrees at Hour 3, and then falls down to 99.1 degrees at Hour 4.        Pie Chart    Pie charts are designed for visualizing proportions and showing how a single, cohesive entity is divided into individual parts. The chart consists of a circle divided into sectors, or slices, where the arc length and central angle of each slice are strictly proportional to the percentage of the total dataset it represents.    In corporate finance, a pie chart is often deployed to display market share distribution among competing companies within a specific industry.    A budget consists of for Rent, for Food, and for Utilities. Calculate the percentage of the pie chart slice that represents Rent.   Proportional slice distribution in a circular layout.   A circular pie chart divided into three colored budget sections. The bottom half of the circle is blue and represents Rent at 50 percent. The top right quadrant is green and represents Food at 25 percent. The top left quadrant is orange and represents Utilities at 25 percent.       First, find the total budget by summing the individual expenses:   Next, divide the Rent cost by the total budget to find its proportion:   Multiply by 100 to convert the decimal into a percentage:   The Rent slice will take up exactly half ( 50% ) of the pie chart.      Using the total-loss collision dataset compiled by the insurance provider in , construct a pie chart to visually model the distribution of vehicle colors.   Pie Chart of Total-Loss Collisions by Vehicle Color   A circular pie chart divided into six colored sectors representing the proportion of vehicle collisions. Green is the largest slice at 24.1 percent, followed by Red at 19 percent, Black at 18.1 percent, White at 16.7 percent, Blue at 11.6 percent, and Grey as the smallest slice at 10.6 percent.       To construct a pie chart, we convert each category's frequency into a proportional central angle of a circle ( ). Using the total sample size ( ), the angle for each slice is calculated using the formula :    Blue:  ( )  Green:  ( )  Red:  ( )  White:  ( )  Black:  ( )  Grey:  ( )    Each sector is drawn sequentially around the center of the circle to construct the final visual proportion.      A survey of 200 people shows that 100 prefer vanilla ice cream, 60 prefer chocolate, and 40 prefer strawberry. What central angle degree should be used to draw the slice for chocolate?    The proportion for chocolate is: Since a full circle has , multiply the proportion by 360 to find the central angle: The chocolate slice requires a central angle of .   Pie chart representing ice cream flavor preferences.   A circular pie chart divided into three distinct sections. The right half of the circle is yellow and represents Vanilla at 50 percent. The bottom-left sector is brown and represents Chocolate with a 108-degree angle at 30 percent. The top-left sector is pink and represents Strawberry at 20 percent.       After establishing class intervals and a corresponding frequency table for a quantitative dataset, we can construct a visual graph similar to a standard bar chart. However, because quantitative data is numerical and continuous, the horizontal axis must be treated as an unbroken number line with no spacing between adjacent bars. This specialized graphical representation is known as a histogram .   Histogram   A histogram is a graphical tool used to display the frequency distribution of a single continuous numerical variable. Similar to a bar graph, it represents frequencies using the height of rectangular bars; however, its horizontal axis functions as a continuous number line. The data values are grouped into specific intervals, known as classes or bins. Unlike categorical bar charts, the vertical bars in a histogram must touch directly to accurately reflect the unbroken, sequential nature of the underlying scale.     Gym Workout Durations   A gym records the workout durations of its members in minutes. The data is grouped into three continuous intervals: 0–20 minutes (5 people), 20–40 minutes (15 people), and 40–60 minutes (10 people). Determine the total sample size tracked across this histogram layout.   Frequency distribution across adjacent numerical bins.   A frequency histogram tracking gym workout durations. The horizontal axis represents workout duration in minutes, with markers at 0, 20, 40, and 60. The vertical axis represents the number of members from 0 to 20. Three adjacent purple bars touch each other: the first bin from 0 to 20 minutes has a height of 5, the middle bin from 20 to 40 minutes has a height of 15, and the third bin from 40 to 60 minutes has a height of 10.       To find the total sample size, sum the frequencies represented by the height of each adjacent bar:   The histogram tracks a total sample size of 30 gym members.      Using the total-loss collision dataset compiled by the insurance provider in , construct a histogram-style bar chart to visually model the distribution of vehicle colors.   Histogram-Style Visual Distribution of Vehicle Colors   A vertical bar chart plotting car colors on the horizontal axis against frequencies on the vertical axis. The bars touch each other directly using a histogram style layout. Blue reaches 25, Green reaches 52, Red reaches 41, White reaches 36, Black reaches 39, and Grey reaches 23.       To present this categorical data in a touching-bar format, we plot the vehicle color categories along the horizontal axis and the collision frequencies on the vertical axis. By adjusting our bar spacing properties, we can configure the rectangles to touch side-by-side:    Blue: Bar height is 25  Green: Bar height is 52  Red: Bar height is 41  White: Bar height is 36  Black: Bar height is 39  Grey: Bar height is 23       Nutrition Study Weight Distribution   Suppose that we have collected weights from 100 male subjects as part of a nutrition study. For our weight data, we have values ranging from a low of 121 pounds to a high of 263 pounds, giving a total span of: We can experiment with different bin allocations to summarize the data. Let us organize the dataset using a uniform interval width of 15, starting at a baseline value of 120.   Interval Frequency Distribution Table     Weight Interval (Pounds)  Frequency (Count)    120-134  4    135-149  14    150-164  16    165-179  28    180-194  12    195-209  8    210-224  7    225-239  6    240-254  2    255-269  3      Using the frequency chart, we construct a continuous frequency histogram. Each vertical bar spans an interval of 15 pounds on the horizontal axis, and the height matches the respective category count.   Frequency histogram of male subject weights with an interval width of 15.   A continuous frequency histogram tracking the weights of 100 male subjects. The horizontal axis charts weights from 120 to 270 pounds with main tick labels every 15 units. The vertical axis monitors frequencies from 0 to 30. Ten continuous, touching blue bars represent the frequencies: the first bar at 120 has a height of 4; followed by 14, 16; peaking at a height of 28 for the 165-180 pound bin; then stepping down to 12, 8, 7, 6, 2; and ending with a final bar height of 3 at the 255-270 pound boundary.         The following dataset represents the scores of students on a recent history test:  80, 50, 50, 90, 70, 70, 100, 60, 70, 80, 70, 50, 90, 100, 80, 70, 30, 80, 80, 70, 100, 60, 60, 50    Complete a frequency table for the test scores.  Construct a bar graph of the data.  Construct a line graph of the data.  Construct a pie chart of the data.  Construct a histogram of the data.        (a) Frequency Table: Sorting and counting each distinct score yields the following frequency distribution:   Frequency Distribution of History Test Scores    Test Score  Frequency (Students)   30 1  50 4  60 3  70 6  80 5  90 2  100 3      (b) Bar Graph: We represent each distinct score on the horizontal axis and its frequency count on the vertical axis using separated vertical columns:   Bar Graph of Test Scores   A vertical bar chart showing test scores on the horizontal axis and student frequency on the vertical axis. Bars are at 30 with height 1, 50 with height 4, 60 with height 3, 70 with height 6, 80 with height 5, 90 with height 2, and 100 with height 3.       (c) Line Graph: Using the same axes as the bar chart, coordinate markers are plotted at each data junction and linked sequentially using line tracks:   Line Graph of Test Scores   A line graph mapping test scores to the number of students. Circles show points at score 30 with frequency 1, 50 with 4, 60 with 3, 70 with 6, 80 with 5, 90 with 2, and 100 with 3, connected by a trendline.       (d) Pie Chart: To map out global proportions, we compute percentage shares based on the total sample of students ( ):    Score 30:  ( )  Score 50:  ( )  Score 60:  ( )  Score 70:  ( )  Score 80:  ( )  Score 90:  ( )  Score 100:  ( )     Pie Chart of Test Score Distributions   A pie chart dividing the student distribution among scores. Slices represent Score 30 at 4.2 percent, Score 50 at 16.7 percent, Score 60 at 12.5 percent, Score 70 at 25 percent, Score 80 at 20.8 percent, Score 90 at 8.3 percent, and Score 100 at 12.5 percent.       (e) Histogram: We group the scores into 10-point bins along a continuous horizontal axis causing the bars to lock tightly side-by-side:    [25, 35): 1 student (score 30)  [35, 45): 0 students  [45, 55): 4 students (scores of 50)  [55, 65): 3 students (scores of 60)  [65, 75): 6 students (scores of 70)  [75, 85): 5 students (scores of 80)  [85, 95): 2 students (scores of 90)  [95, 105]: 3 students (scores of 100)     Histogram of Test Score Distributions   A histogram displaying the continuous interval distribution of test scores. The bars touch each other directly: the bin from 25 to 35 has a height of 1, 45 to 55 has a height of 4, 55 to 65 has a height of 3, 65 to 75 reaches the peak at 6, 75 to 85 has a height of 5, 85 to 95 has a height of 2, and 95 to 105 has a height of 3.       (e) Histogram: Unlike the categorical charts above, a true histogram tracks quantitative continuous intervals. We group the scores into 20-point bins along a continuous horizontal axis causing the bars to lock tightly side-by-side:    [20, 40): 1 student (score 30)  [40, 60): 4 students (scores of 50)  [60, 80): 9 students (scores of 60 and 70)  [80, 100): 7 students (scores of 80 and 90)  [100, 120): 3 students (scores of 100)     Histogram of Test Score Distributions   A histogram displaying the continuous 20-point interval distribution of test scores. The bars touch each other directly: the bin from 20 to 40 has a height of 1, 40 to 60 has a height of 4, 60 to 80 reaches the peak at 9, 80 to 100 has a height of 7, and 100 to 120 has a height of 3.         Kori categorized her spending for this month into four categories: food, rent, fun, and other. The percentage she spent in each category is displayed in the chart below.   Pie Chart of Kori's Monthly Spending Shares   A pie chart dividing Kori's monthly budget proportions into four sectors: Rent accounts for 31 percent, Other accounts for 29 percent, Food accounts for 24 percent, and Fun accounts for 16 percent.     If she spent a total of this month, how much money did she allocate to rent?    To find the exact dollar amount spent on rent, we convert the percentage share from the pie chart into a decimal and multiply it by the total monthly expenditures:        Therefore, Kori spent exactly on rent this month.    "
-},
-{
-  "id": "def-bar-graphs",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#def-bar-graphs",
-  "type": "Definition",
-  "number": "4.32",
-  "title": "Bar graph.",
-  "body": " Bar graph    Bar graphs are best suited for comparing quantities or counts across distinct, independent categories. They utilize horizontal or vertical rectangular bars where the length or height of each bar directly corresponds to the numerical value it represents.   "
-},
-{
-  "id": "notes-Visualizing-Data-Through-Graphs-5",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#notes-Visualizing-Data-Through-Graphs-5",
-  "type": "Example",
-  "number": "4.33",
-  "title": "",
-  "body": "  A small business tracks the number of laptops sold over three months: January (15 units), February (22 units), and March (18 units). Determine which category goes on each axis to construct a vertical bar graph.   Sample structure for a vertical bar graph.   A vertical bar chart displaying laptop units sold over three months. The horizontal axis represents the months, and the vertical axis scales from 0 to 25 to track units sold. January displays a bar reaching 15 units, February shows a bar reaching 22 units, and March shows a bar reaching 18 units.       To construct a standard vertical bar graph, the independent nominal categories must be placed along the baseline axis, while the numerical quantitative metrics track along the vertical boundary:    Horizontal Axis (x-axis): Contains the Months (January, February, and March).     Vertical Axis (y-axis): Tracks the quantitative scale for Units Sold (ranging from 0 up to at least 22).      "
-},
-{
-  "id": "table-car-color-frequencies",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#table-car-color-frequencies",
-  "type": "Table",
-  "number": "4.35",
-  "title": "Frequency of Total-Loss Collisions by Vehicle Color",
-  "body": " Frequency of Total-Loss Collisions by Vehicle Color    Vehicle Color  Frequency (Accidents)    Blue  25    Green  52    Red  41    White  36    Black  39    Grey  23    "
-},
-{
-  "id": "ex-car-color-bar-graph",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#ex-car-color-bar-graph",
-  "type": "Example",
-  "number": "4.36",
-  "title": "",
-  "body": "  Using the total-loss collision dataset compiled by the insurance provider in , construct a bar graph to visually model the distribution of vehicle colors.   Bar Graph of Total-Loss Collisions by Vehicle Color   A vertical bar chart plotting car colors on the horizontal axis against collision frequencies on the vertical axis. The vertical axis scales from 0 to 60. Blue shows a bar reaching 25, Green reaches 52, Red reaches 41, White reaches 36, Black reaches 39, and Grey reaches 23.       To construct the bar graph, we map each vehicle color category along the horizontal axis (x-axis) and place the frequency counts along the vertical axis (y-axis). The height of each rectangular column corresponds exactly to its recorded category frequency:    Blue: 25 units high  Green: 52 units high  Red: 41 units high  White: 36 units high  Black: 39 units high  Grey: 23 units high    This layout provides an immediate visual hierarchy, showing that green cars are involved in more total-loss accidents than any other color in this sample group.   "
-},
-{
-  "id": "notes-Visualizing-Data-Through-Graphs-15",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#notes-Visualizing-Data-Through-Graphs-15",
-  "type": "Checkpoint",
-  "number": "4.38",
-  "title": "",
-  "body": "  A school cafeteria counts the number of fruit items sold in a day: 40 apples, 55 bananas, and 25 oranges. If you create a vertical bar graph, which item will have the tallest bar, and what value will it represent?    The category with the highest count is bananas. Therefore, bananas will have the tallest bar, representing a value of 55.   Vertical bar graph tracking daily cafeteria fruit sales.   A vertical bar graph tracking cafeteria sales. The horizontal axis represents the fruit types, and the vertical axis scales from 0 to 60. Apples show a bar at 40, bananas show the tallest bar at 55, and oranges show a bar at 25.      "
-},
-{
-  "id": "def-line-graphs",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#def-line-graphs",
-  "type": "Definition",
-  "number": "4.40",
-  "title": "Line graph.",
-  "body": " Line graph    Line graphs are ideal for illustrating trends and demonstrating how numbers fluctuate over a continuous period. This format displays a sequential series of specific data points—frequently referred to as markers—that are connected by straight lines to show a clear trajectory.   "
-},
-{
-  "id": "notes-Visualizing-Data-Through-Graphs-18",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#notes-Visualizing-Data-Through-Graphs-18",
-  "type": "Example",
-  "number": "4.41",
-  "title": "",
-  "body": "  An analyst records the stock price of a company over four days: Day 1 ( ), Day 2 ( ), Day 3 ( ), and Day 4 ( ). Describe the overall trend shown by connecting these data points on a line graph.   Sample trajectory for a continuous trend line.   A continuous line graph tracking stock prices over 4 days. The horizontal axis tracks days 1 through 4, and the vertical axis spans from \\$5 to \\$25. A solid blue line connects the markers: rising from \\$10 on Day 1 to \\$15 on Day 2, dipping down to \\$12 on Day 3, and peaking sharply at \\$20 on Day 4.       The line segments will move upward from Day 1 to Day 2, slope downward from Day 2 to Day 3, and then rise sharply from Day 3 to Day 4. Despite the mid-period dip on Day 3, the overall trend over the four-day period is upward.   "
-},
-{
-  "id": "ex-car-color-line-graph",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#ex-car-color-line-graph",
-  "type": "Example",
-  "number": "4.43",
-  "title": "",
-  "body": "  Using the total-loss collision dataset compiled by the insurance provider in , construct a line graph to visually model the distribution of vehicle colors.   Line Graph of Total-Loss Collisions by Vehicle Color   A line graph plotting car colors on the horizontal axis against collision frequencies on the vertical axis. The vertical axis scales from 0 to 60. A line connects data markers starting at Blue (25), rising sharply to Green (52), dropping to Red (41) and White (36), rising slightly to Black (39), and falling to its lowest point at Grey (23).       To construct a line graph for this dataset, we plot the vehicle color categories along the horizontal axis and the collision frequencies on the vertical axis. Instead of drawing columns, we plot a single coordinate point for each category and connect them sequentially with straight line segments:    Blue: Point at 25  Green: Point at 52  Red: Point at 41  White: Point at 36  Black: Point at 39  Grey: Point at 23    This visualization allows us to trace the ups and downs across categories, showing a sharp peak at Green and a drop at Grey.   "
-},
-{
-  "id": "notes-Visualizing-Data-Through-Graphs-20",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#notes-Visualizing-Data-Through-Graphs-20",
-  "type": "Checkpoint",
-  "number": "4.45",
-  "title": "",
-  "body": "  A patient's body temperature is recorded every hour: Hour 1 ( ), Hour 2 ( ), Hour 3 ( ), and Hour 4 ( ). Between which two hours does the line graph show the sharpest increase?    To find the sharpest increase, we calculate the differences between consecutive hourly measurements:  The increase from Hour 1 to Hour 2 is: The increase from Hour 2 to Hour 3 is:   Comparing these calculations, the graph shows the sharpest increase between Hour 1 and Hour 2 .   Hourly tracking of patient body temperature.   A continuous line graph tracking a patient's temperature over 4 hours. The horizontal axis maps hours 1 to 4, and the vertical axis scales from 97 to 103 degrees Fahrenheit. A solid blue line rises from 98.6 degrees at Hour 1 to 100.2 degrees at Hour 2, climbs further to 101.5 degrees at Hour 3, and then falls down to 99.1 degrees at Hour 4.      "
-},
-{
-  "id": "def-pie-charts",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#def-pie-charts",
-  "type": "Definition",
-  "number": "4.47",
-  "title": "Pie Chart.",
-  "body": " Pie Chart    Pie charts are designed for visualizing proportions and showing how a single, cohesive entity is divided into individual parts. The chart consists of a circle divided into sectors, or slices, where the arc length and central angle of each slice are strictly proportional to the percentage of the total dataset it represents.   "
-},
-{
-  "id": "ex-budget-pie-chart",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#ex-budget-pie-chart",
-  "type": "Example",
-  "number": "4.48",
-  "title": "",
-  "body": "  A budget consists of for Rent, for Food, and for Utilities. Calculate the percentage of the pie chart slice that represents Rent.   Proportional slice distribution in a circular layout.   A circular pie chart divided into three colored budget sections. The bottom half of the circle is blue and represents Rent at 50 percent. The top right quadrant is green and represents Food at 25 percent. The top left quadrant is orange and represents Utilities at 25 percent.       First, find the total budget by summing the individual expenses:   Next, divide the Rent cost by the total budget to find its proportion:   Multiply by 100 to convert the decimal into a percentage:   The Rent slice will take up exactly half ( 50% ) of the pie chart.   "
-},
-{
-  "id": "ex-car-color-pie-chart",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#ex-car-color-pie-chart",
-  "type": "Example",
-  "number": "4.50",
-  "title": "",
-  "body": "  Using the total-loss collision dataset compiled by the insurance provider in , construct a pie chart to visually model the distribution of vehicle colors.   Pie Chart of Total-Loss Collisions by Vehicle Color   A circular pie chart divided into six colored sectors representing the proportion of vehicle collisions. Green is the largest slice at 24.1 percent, followed by Red at 19 percent, Black at 18.1 percent, White at 16.7 percent, Blue at 11.6 percent, and Grey as the smallest slice at 10.6 percent.       To construct a pie chart, we convert each category's frequency into a proportional central angle of a circle ( ). Using the total sample size ( ), the angle for each slice is calculated using the formula :    Blue:  ( )  Green:  ( )  Red:  ( )  White:  ( )  Black:  ( )  Grey:  ( )    Each sector is drawn sequentially around the center of the circle to construct the final visual proportion.   "
-},
-{
-  "id": "notes-Visualizing-Data-Through-Graphs-25",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#notes-Visualizing-Data-Through-Graphs-25",
-  "type": "Checkpoint",
-  "number": "4.52",
-  "title": "",
-  "body": "  A survey of 200 people shows that 100 prefer vanilla ice cream, 60 prefer chocolate, and 40 prefer strawberry. What central angle degree should be used to draw the slice for chocolate?    The proportion for chocolate is: Since a full circle has , multiply the proportion by 360 to find the central angle: The chocolate slice requires a central angle of .   Pie chart representing ice cream flavor preferences.   A circular pie chart divided into three distinct sections. The right half of the circle is yellow and represents Vanilla at 50 percent. The bottom-left sector is brown and represents Chocolate with a 108-degree angle at 30 percent. The top-left sector is pink and represents Strawberry at 20 percent.      "
-},
-{
-  "id": "def-histograms",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#def-histograms",
-  "type": "Definition",
-  "number": "4.54",
-  "title": "Histogram.",
-  "body": " Histogram   A histogram is a graphical tool used to display the frequency distribution of a single continuous numerical variable. Similar to a bar graph, it represents frequencies using the height of rectangular bars; however, its horizontal axis functions as a continuous number line. The data values are grouped into specific intervals, known as classes or bins. Unlike categorical bar charts, the vertical bars in a histogram must touch directly to accurately reflect the unbroken, sequential nature of the underlying scale.   "
-},
-{
-  "id": "ex-workout-durations-histogram",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#ex-workout-durations-histogram",
-  "type": "Example",
-  "number": "4.55",
-  "title": "Gym Workout Durations.",
-  "body": " Gym Workout Durations   A gym records the workout durations of its members in minutes. The data is grouped into three continuous intervals: 0–20 minutes (5 people), 20–40 minutes (15 people), and 40–60 minutes (10 people). Determine the total sample size tracked across this histogram layout.   Frequency distribution across adjacent numerical bins.   A frequency histogram tracking gym workout durations. The horizontal axis represents workout duration in minutes, with markers at 0, 20, 40, and 60. The vertical axis represents the number of members from 0 to 20. Three adjacent purple bars touch each other: the first bin from 0 to 20 minutes has a height of 5, the middle bin from 20 to 40 minutes has a height of 15, and the third bin from 40 to 60 minutes has a height of 10.       To find the total sample size, sum the frequencies represented by the height of each adjacent bar:   The histogram tracks a total sample size of 30 gym members.   "
-},
-{
-  "id": "ex-car-color-histogram-style",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#ex-car-color-histogram-style",
-  "type": "Example",
-  "number": "4.57",
-  "title": "",
-  "body": "  Using the total-loss collision dataset compiled by the insurance provider in , construct a histogram-style bar chart to visually model the distribution of vehicle colors.   Histogram-Style Visual Distribution of Vehicle Colors   A vertical bar chart plotting car colors on the horizontal axis against frequencies on the vertical axis. The bars touch each other directly using a histogram style layout. Blue reaches 25, Green reaches 52, Red reaches 41, White reaches 36, Black reaches 39, and Grey reaches 23.       To present this categorical data in a touching-bar format, we plot the vehicle color categories along the horizontal axis and the collision frequencies on the vertical axis. By adjusting our bar spacing properties, we can configure the rectangles to touch side-by-side:    Blue: Bar height is 25  Green: Bar height is 52  Red: Bar height is 41  White: Bar height is 36  Black: Bar height is 39  Grey: Bar height is 23     "
-},
-{
-  "id": "ex-nutrition-weight-histogram-fixed",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#ex-nutrition-weight-histogram-fixed",
-  "type": "Checkpoint",
-  "number": "4.59",
-  "title": "Nutrition Study Weight Distribution.",
-  "body": " Nutrition Study Weight Distribution   Suppose that we have collected weights from 100 male subjects as part of a nutrition study. For our weight data, we have values ranging from a low of 121 pounds to a high of 263 pounds, giving a total span of: We can experiment with different bin allocations to summarize the data. Let us organize the dataset using a uniform interval width of 15, starting at a baseline value of 120.   Interval Frequency Distribution Table     Weight Interval (Pounds)  Frequency (Count)    120-134  4    135-149  14    150-164  16    165-179  28    180-194  12    195-209  8    210-224  7    225-239  6    240-254  2    255-269  3      Using the frequency chart, we construct a continuous frequency histogram. Each vertical bar spans an interval of 15 pounds on the horizontal axis, and the height matches the respective category count.   Frequency histogram of male subject weights with an interval width of 15.   A continuous frequency histogram tracking the weights of 100 male subjects. The horizontal axis charts weights from 120 to 270 pounds with main tick labels every 15 units. The vertical axis monitors frequencies from 0 to 30. Ten continuous, touching blue bars represent the frequencies: the first bar at 120 has a height of 4; followed by 14, 16; peaking at a height of 28 for the 165-180 pound bin; then stepping down to 12, 8, 7, 6, 2; and ending with a final bar height of 3 at the 255-270 pound boundary.      "
-},
-{
-  "id": "exercise-history-test-scores",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#exercise-history-test-scores",
-  "type": "Checkpoint",
-  "number": "4.61",
-  "title": "",
-  "body": "  The following dataset represents the scores of students on a recent history test:  80, 50, 50, 90, 70, 70, 100, 60, 70, 80, 70, 50, 90, 100, 80, 70, 30, 80, 80, 70, 100, 60, 60, 50    Complete a frequency table for the test scores.  Construct a bar graph of the data.  Construct a line graph of the data.  Construct a pie chart of the data.  Construct a histogram of the data.        (a) Frequency Table: Sorting and counting each distinct score yields the following frequency distribution:   Frequency Distribution of History Test Scores    Test Score  Frequency (Students)   30 1  50 4  60 3  70 6  80 5  90 2  100 3      (b) Bar Graph: We represent each distinct score on the horizontal axis and its frequency count on the vertical axis using separated vertical columns:   Bar Graph of Test Scores   A vertical bar chart showing test scores on the horizontal axis and student frequency on the vertical axis. Bars are at 30 with height 1, 50 with height 4, 60 with height 3, 70 with height 6, 80 with height 5, 90 with height 2, and 100 with height 3.       (c) Line Graph: Using the same axes as the bar chart, coordinate markers are plotted at each data junction and linked sequentially using line tracks:   Line Graph of Test Scores   A line graph mapping test scores to the number of students. Circles show points at score 30 with frequency 1, 50 with 4, 60 with 3, 70 with 6, 80 with 5, 90 with 2, and 100 with 3, connected by a trendline.       (d) Pie Chart: To map out global proportions, we compute percentage shares based on the total sample of students ( ):    Score 30:  ( )  Score 50:  ( )  Score 60:  ( )  Score 70:  ( )  Score 80:  ( )  Score 90:  ( )  Score 100:  ( )     Pie Chart of Test Score Distributions   A pie chart dividing the student distribution among scores. Slices represent Score 30 at 4.2 percent, Score 50 at 16.7 percent, Score 60 at 12.5 percent, Score 70 at 25 percent, Score 80 at 20.8 percent, Score 90 at 8.3 percent, and Score 100 at 12.5 percent.       (e) Histogram: We group the scores into 10-point bins along a continuous horizontal axis causing the bars to lock tightly side-by-side:    [25, 35): 1 student (score 30)  [35, 45): 0 students  [45, 55): 4 students (scores of 50)  [55, 65): 3 students (scores of 60)  [65, 75): 6 students (scores of 70)  [75, 85): 5 students (scores of 80)  [85, 95): 2 students (scores of 90)  [95, 105]: 3 students (scores of 100)     Histogram of Test Score Distributions   A histogram displaying the continuous interval distribution of test scores. The bars touch each other directly: the bin from 25 to 35 has a height of 1, 45 to 55 has a height of 4, 55 to 65 has a height of 3, 65 to 75 reaches the peak at 6, 75 to 85 has a height of 5, 85 to 95 has a height of 2, and 95 to 105 has a height of 3.       (e) Histogram: Unlike the categorical charts above, a true histogram tracks quantitative continuous intervals. We group the scores into 20-point bins along a continuous horizontal axis causing the bars to lock tightly side-by-side:    [20, 40): 1 student (score 30)  [40, 60): 4 students (scores of 50)  [60, 80): 9 students (scores of 60 and 70)  [80, 100): 7 students (scores of 80 and 90)  [100, 120): 3 students (scores of 100)     Histogram of Test Score Distributions   A histogram displaying the continuous 20-point interval distribution of test scores. The bars touch each other directly: the bin from 20 to 40 has a height of 1, 40 to 60 has a height of 4, 60 to 80 reaches the peak at 9, 80 to 100 has a height of 7, and 100 to 120 has a height of 3.      "
-},
-{
-  "id": "exercise-kori-monthly-budget",
-  "level": "2",
-  "url": "notes-Visualizing-Data-Through-Graphs.html#exercise-kori-monthly-budget",
-  "type": "Checkpoint",
-  "number": "4.68",
-  "title": "",
-  "body": "  Kori categorized her spending for this month into four categories: food, rent, fun, and other. The percentage she spent in each category is displayed in the chart below.   Pie Chart of Kori's Monthly Spending Shares   A pie chart dividing Kori's monthly budget proportions into four sectors: Rent accounts for 31 percent, Other accounts for 29 percent, Food accounts for 24 percent, and Fun accounts for 16 percent.     If she spent a total of this month, how much money did she allocate to rent?    To find the exact dollar amount spent on rent, we convert the percentage share from the pie chart into a decimal and multiply it by the total monthly expenditures:        Therefore, Kori spent exactly on rent this month.   "
-},
-{
   "id": "notes-empirical-rule",
   "level": "1",
   "url": "notes-empirical-rule.html",
@@ -2507,7 +2525,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-empirical-rule.html#def-bell-curve",
   "type": "Definition",
-  "number": "4.70",
+  "number": "4.75",
   "title": "Bell-Curve.",
   "body": " Bell-Curve    A bell curve is used in statistics to represent the continuous probability distribution of a naturally occurring variable. It is perfectly symmetrical, showing that data near the mean occurs more frequently than data far from the mean.   "
 },
@@ -2516,7 +2534,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-empirical-rule.html#ex-exam-scores-bell-curve",
   "type": "Example",
-  "number": "4.71",
+  "number": "4.76",
   "title": "",
   "body": "  An instructor plots final exam grades and notes they follow a normal distribution with a mean score of . Describe how the shape of this curve changes if you look at scores moving away from 75 in either direction.   Symmetrical distribution curve centered around a population mean.   A symmetrical, bell-shaped probability density curve tracking exam scores. The horizontal axis represents exam scores from 45 to 105, with major ticks every 15 units. The peak of the smooth cyan curve sits directly above the mean score of 75, marked by a vertical dashed red line. The curve slopes downward symmetrically as it moves left toward 45 or right toward 105, tapering off near the horizontal axis at the extremes.       The highest point of the curve sits directly above the mean score of 75. As you move outward toward lower scores (left) or higher scores (right), the curve slopes downward symmetrically, flattening out as it approaches the extremes.   "
 },
@@ -2525,7 +2543,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-empirical-rule.html#notes-empirical-rule-5",
   "type": "Checkpoint",
-  "number": "4.73",
+  "number": "4.78",
   "title": "",
   "body": "  If a dataset of adult heights perfectly matches a bell curve layout, what percentage of the population profile falls below the exact center peak value of the distribution?    Because a true normal distribution curve is perfectly symmetrical, the center peak represents both the mean and the median. Therefore, exactly of the population data falls below this center peak line.   Symmetrical normal distribution curve with the lower half shaded.   A symmetrical bell curve where the entire left half of the area under the curve—from the far left up to the center peak—is shaded in light blue, visually representing exactly 50 percent of the total distribution population.      "
 },
@@ -2534,7 +2552,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-empirical-rule.html#def-empirical-rule",
   "type": "Definition",
-  "number": "4.75",
+  "number": "4.80",
   "title": "The empirical rule.",
   "body": " The empirical rule   The empirical rule (or 68-95-99.7 rule) states that for any data set following a symmetrical, bell-shaped normal distribution, almost all data points lie within three standard deviations of the mean:     Approximately 68% of the data points fall within one standard deviation of the mean.    Approximately 95% of the data points fall within two standard deviations of the mean.    Approximately 99.7% of the data points fall within three standard deviations of the mean.      "
 },
@@ -2543,7 +2561,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-empirical-rule.html#fig-empirical-rule",
   "type": "Figure",
-  "number": "4.76",
+  "number": "4.81",
   "title": "",
   "body": " The 68-95-99.7 empirical rule for a normal distribution.   A symmetrical normal distribution curve with three horizontal brackets underneath showing percentages. The innermost bracket spans from minus 1 to plus 1 standard deviations and is labeled 68 percent. The middle bracket spans from minus 2 to plus 2 standard deviations and is labeled 95 percent. The outermost bracket spans from minus 3 to plus 3 standard deviations and is labeled 99.7 percent.    "
 },
@@ -2552,7 +2570,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-empirical-rule.html#exam-height-distribution",
   "type": "Example",
-  "number": "4.77",
+  "number": "4.82",
   "title": "Human Height Distribution.",
   "body": " Human Height Distribution   Human height is commonly considered an approximately normally distributed measure. If the mean height of adult males in the United States is 5' 10\", with a standard deviation of 1.5\", how common are men with heights greater than 6' 1\"?    Since the mean is 5' 10\" and the standard deviation is 1.5\", a height of 6' 1\" is exactly 3 inches above the mean. This places it exactly standard deviations above the average.  According to the empirical rule, about % of data falls within standard deviations of the mean, meaning % falls outside this range. Because the distribution is symmetrical, half of that remaining amount (%) sits in the upper tail. Therefore, only about % of men are taller than 6' 1\", making them quite rare in this population.   "
 },
@@ -2561,7 +2579,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-empirical-rule.html#exam-high-jump-distribution",
   "type": "Example",
-  "number": "4.78",
+  "number": "4.83",
   "title": "High School High Jumpers.",
   "body": " High School High Jumpers   If the maximum jumping height of US high school high jumpers is normally distributed with a mean of 5' 11.5\" and a standard deviation of 2.2\", how unusual is it to see a high school jumper clear 6' 3.9\"?    If the mean is 5' 11.5\", then standard deviation above the mean is 6' 1.7\" and standard deviations above the mean is 6' 3.9\".  According to the empirical rule, % of all jumpers max out within standard deviations of the mean. This leaves % split equally between the extremely low and extremely high ends. This means that less than % of jumpers clear 6' 3.9\", making it very unusual to see a competitor exceed this height.   "
 },
@@ -2570,7 +2588,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-empirical-rule.html#exam-snow-depth-distribution",
   "type": "Example",
-  "number": "4.79",
+  "number": "4.84",
   "title": "Yard Snow Depth Distribution.",
   "body": " Yard Snow Depth Distribution   Suppose the depth of the snow in a yard is normally distributed with a mean of inches and a standard deviation of inches. What is the probability that a randomly chosen location in the yard has a snow depth between and inches?    First, find how many standard deviations the given depths sit away from the center. A depth of inches is exactly one standard deviation below the mean ( ). A depth of inches is exactly one standard deviation above the mean ( ).  According to the empirical rule, approximately 68% of the data in a normal distribution falls within one standard deviation of the mean. Therefore, the probability that a randomly chosen location has a snow depth between and inches is approximately 68% (or ).   "
 },
@@ -2579,7 +2597,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "notes-empirical-rule.html#exer-women-height-distribution",
   "type": "Checkpoint",
-  "number": "4.80",
+  "number": "4.85",
   "title": "",
   "body": "  Suppose the height of adult women in the United States is normally distributed with a mean of 5' 8\" and a standard deviation of \". What is the probability that a randomly chosen woman in the United States is shorter than 5' 5\"?   Normal distribution curve of women's heights with the lower tail below 5' 5\" shaded.   A normal distribution curve centered at 5 feet 8 inches. The area under the curve to the left of 5 feet 5 inches is shaded in blue, representing the lower 2.5 percent of the population.       First, determine how many standard deviations 5' 5\" is from the mean of 5'8\". Since each standard deviation is \", a height of 5' 6.5\" is standard deviation below the mean, and 5' 5\" is exactly standard deviations below the mean.  We can find the total percentage of women who are 5' 5\" or taller by adding up the known regions of the normal distribution:    50% of women are taller than the mean of 5' 8\".    34% of women are between 5' 6.5\" and 5' 8\" (within standard deviation below the mean).    13.5% of women are between 5' 5\" and 5' 6.5\" (between and standard deviations below the mean).    Adding these regions together gives: . Since 97.5% of women are 5' 5\" or taller, the remaining portion is .   Alternative Method: The empirical rule states that 95% of the data falls within standard deviations of the mean. This leaves 5% split equally between the two extreme outer tails ( ). Therefore, the probability that a randomly chosen woman is shorter than 5' 5\" is 2.5% (or ).   "
 },
@@ -2597,7 +2615,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-z-scores.html#def-z-score-formula",
   "type": "Definition",
-  "number": "4.82",
+  "number": "4.87",
   "title": "Z-Score Formula.",
   "body": " Z-Score Formula   The mathematical formula to calculate a standard z-score is: Where is the data value, is the population mean, and is the standard deviation.   "
 },
@@ -2606,7 +2624,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-z-scores.html#ex-pos-z",
   "type": "Example",
-  "number": "4.83",
+  "number": "4.88",
   "title": "Positive Z-score.",
   "body": " Positive Z-score   Let and . Find the z-score for . The value is standard deviations above the mean.   "
 },
@@ -2615,7 +2633,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-z-scores.html#ex-neg-z",
   "type": "Example",
-  "number": "4.84",
+  "number": "4.89",
   "title": "Negative Z-score.",
   "body": " Negative Z-score   Let and . Find the z-score for . The resulting value is approximately standard deviations below the mean.   "
 },
@@ -2624,7 +2642,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-z-scores.html#ex-reverse-z",
   "type": "Example",
-  "number": "4.85",
+  "number": "4.90",
   "title": "Finding a Value Given a Z-score.",
   "body": " Finding a Value Given a Z-score   Find the original raw data value if the mean is , the standard deviation is , and the given z-score is . Multiplying both sides by and adding yields:    "
 },
@@ -2633,7 +2651,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-z-scores.html#insight-2-14-34-rule",
   "type": "Insight",
-  "number": "4.86",
+  "number": "4.91",
   "title": "The 2-14-34 Rule.",
   "body": " The 2-14-34 Rule  A helpful tool for quick mental approximations of these probabilities is the 2-14-34 Rule . Because a normal distribution curve is completely symmetric, either half of the bell curve extending outward from the center mean ( ) can be broken down into specific operational percentage blocks:   of the population data falls between and (or between and ).  of the population data falls between and (or between and ).  of the population data falls between and (or between and ).   "
 },
@@ -2642,7 +2660,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-z-scores.html#fig-normal-d-curve",
   "type": "Figure",
-  "number": "4.87",
+  "number": "4.92",
   "title": "",
   "body": " The 2-14-34 Rule Area Distribution under a Standard Normal Curve   A bell-shaped normal distribution curve divided into symmetric shaded segments labeled 0.02, 0.14, and 0.34 extending outward from the center z equals 0 to z equals 3.    "
 },
@@ -2651,7 +2669,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-z-scores.html#ex-rule-between",
   "type": "Example",
-  "number": "4.88",
+  "number": "4.93",
   "title": "Finding Area Between Specific Bounds.",
   "body": " Finding Area Between Specific Bounds   Using the 2-14-34 Rule, determine the approximate percentage of data that falls between a z-score of and a z-score of .    We break the region down into its individual standardized blocks from left to right:   The area between and contains of the data.  The area between and contains of the data.  The area between and contains of the data.   Summing these continuous regions together gives us: Therefore, approximately of the population values fall within this score boundary.   "
 },
@@ -2660,7 +2678,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-z-scores.html#ex-rule-greater-than",
   "type": "Example",
-  "number": "4.89",
+  "number": "4.94",
   "title": "Calculating Tail Probabilities.",
   "body": " Calculating Tail Probabilities   A standardized industrial process yield results in a normal curve distribution. Using the 2-14-34 Rule, approximate the probability that a randomly chosen sample yields a z-score greater than .    Because the normal curve is perfectly symmetric, exactly of all data lies above the center mean ( ). To find the portion greater than , we subtract the region we do not want from the total right half:    Alternatively, you can get the exact same answer by summing the individual blocks extending to the right of : Thus, there is roughly a probability that a random value has a z-score greater than .   "
 },
@@ -2741,7 +2759,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Regression.html#ex-ice-cream",
   "type": "Example",
-  "number": "4.90",
+  "number": "4.95",
   "title": "",
   "body": "  Think of ice cream sales based on the outside temperature:   Temperature ( ): The independent variable.    Ice Cream Sales ( ): The dependent variable.     As temperature ( ) goes up, ice cream sales ( ) go up. A simple linear regression draws a straight line through your past data to help you predict exactly how many ice creams you will sell on a hot 90°F day versus a cool 60°F day.    By establishing the linear equation from historical data, the business can accurately input the predicted weather temperature ( ) to yield an expected inventory target ( ).   "
 },
@@ -2750,7 +2768,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Regression.html#ex-widget-package",
   "type": "Checkpoint",
-  "number": "4.91",
+  "number": "4.96",
   "title": "",
   "body": "  The relationship between the number of widgets in a package and the length of the package, in inches, is given in the table below.   Widget Packaging Dimensions    Number of Widgets ( )  Length of Package in. ( )    3  9.00    4  9.25    5  9.50    6  9.75        What is the slope of the line of best fit (linear regression)? (Widgets on -axis, Length on -axis)    What is the value of the y-intercept of the linear regression?        Part a) Slope Calculation: The formula for the slope ( ) of a line passing through coordinates and is:   Using sequential points from the data table like and : Because the data is perfectly linear, the slope of the line of best fit is exactly 0.25 .   Part b) Y-Intercept Calculation: The slope-intercept form of a linear equation is given by:   Substituting our known slope and the first data coordinate point allows us to solve for : Thus, the value of the y-intercept is 8.25 , which corresponds to a complete formula of .    Linear Regression Trend for Widget Packaging   A scatter plot displaying four blue data points aligned upward on a Cartesian coordinate plane. The horizontal axis represents the Number of Widgets from 2 to 7, and the vertical axis represents the Length of the Package in inches from 8 to 11. The four data points are located at coordinates (3, 9.00), (4, 9.25), (5, 9.50), and (6, 9.75). A solid red regression line trends upward through all four points, crossing the vertical axis at a y-intercept value of 8.25, demonstrating a positive linear correlation described by the equation y equals 0.25x plus 8.25.      "
 },
@@ -2777,7 +2795,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Regression.html#example-fat-calories-regression",
   "type": "Example",
-  "number": "4.94",
+  "number": "4.99",
   "title": "",
   "body": "  The table below shows the relationship between total fat grams and the total calories in a selection of fast food sandwiches. Find the linear regression equation that models this data. Round all values to the nearest integer.   Fast Food Sandwich Nutritional Data      Total Fat g ( )  Total Calories ( )   9 260  13 320  21 420  30 530  31 560  32 580  34 590               Correct! The calculated slope rounds to 13 and the y-intercept rounds to 143.        To find the line of best fit , we apply the standard least-squares linear regression formulas for the slope ( ) and the y-intercept ( ):    Using the data points from the table, we sum the component variables:        Substituting these values into our slope equation yields: Rounding to the nearest integer gives a slope of 13 .  Next, we calculate the precise y-intercept using the unrounded slope value: Rounding to the nearest integer gives a y-intercept of 143 .  Therefore, the final linear regression model is:    Linear Fit of Fat Content to Total Calories   A scatter plot tracking sandwich fat content versus total calories on a Cartesian grid. The horizontal x-axis measures Total Fat from 0 to 40 grams, and the vertical y-axis measures Total Calories from 200 to 700. Seven data points align in an upward trajectory. A straight red trendline originates at a y-intercept of 143 and climbs with a slope of 13, showing a strong positive correlation.      "
 },
@@ -2786,7 +2804,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Regression.html#example-eclipse-temperature",
   "type": "Example",
-  "number": "4.97",
+  "number": "4.102",
   "title": "",
   "body": "  During a solar eclipse, the temperature begins to drop as the Moon comes between the Earth and the Sun. The cooling temperatures, up through totality, of the eclipse are shown in the table below. Using a linear regression equation, predict the temperature at the 4 minute mark during the cooling, to the nearest degree.   Eclipse Temperature Drop      Time minutes ( )  Temp. F ( )   0 75  1 71  2 66  3 62  4 ?    Select the predicted temperature at the 4 minute mark.      60    59    58   Correct! The regression equation outputs 57.5 F at 4 minutes, which rounds to 58 .     57      Step 1: Calculate the Regression Equation Using the standard least-squares formulas with data coordinates, we find the required summary metrics:        Substitute these totals into the slope ( ) and y-intercept ( ) formulas:  This yields the linear modeling equation: .   Step 2: Evaluate at 4 Minutes Substitute directly into our regression model to find the expected cooling value: Rounding to the nearest whole integer gives our target choice of 58 .    Linear Regression Line for Eclipse Cooling Pattern   A scatter plot displaying historical temperature drops during a solar eclipse on a coordinate plane. The horizontal axis represents elapsed time in minutes from negative 0.5 to 4.5. The vertical axis measures temperature in degrees Fahrenheit from 55 to 80. Four blue circular data points are plotted at coordinates (0, 75), (1, 71), (2, 66), and (3, 62). A solid red regression line passes downward through the points. A green 'X' mark highlights the target prediction location on the red line at coordinate point (4, 57.5), demonstrating an overall negative linear correlation.      "
 },
@@ -2795,7 +2813,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Regression.html#ex-coat-campaign",
   "type": "Checkpoint",
-  "number": "4.100",
+  "number": "4.105",
   "title": "",
   "body": "  A morning radio talk show is running a Winter Coat Campaign to collect and deliver coats to local shelters. They are storing the coats until they reach their goal of 2100 coats. The table below shows the number of coats in storage at the end of each day of the campaign.   Winter Coat Collection Progress      Day of Campaign ( )  Number of Coats Stored ( )   1 860  2 930  3 1000  4 1150  5 1200  6 1360    Find the linear regression equation rounded to the nearest hundredths, and predict the day the campaign will meet its goal.     Part a) Linear Regression Equation: By applying the least-squares formulas for a data pool where , we get the summary metrics: , , , and .  Evaluating our slope and intercept formulas returns:  Thus, the linear modeling line of best fit is    Part b) Goal Prediction: To compute the target milestone, substitute into the verified equation: Because the data tracks totals at the end of each day, reaching means the campaign will successfully complete its goal on Day 14 .   Linear Path Tracking Coat Collection Goal Delivery   A scatter plot mapping the progress of a winter coat collection drive on a Cartesian grid. The horizontal axis outlines the Day of the Campaign from 0 to 15, and the vertical axis measures the Number of Coats Stored from 600 to 2300. Six blue data markers crawl steadily upward from day 1 to day 6. A solid red trendline launches from a y-intercept of 737.33 and scales upward, crossing a dotted horizontal threshold lines at y equals 2100 on Day 14, where a green X marks the goal resolution.      "
 },

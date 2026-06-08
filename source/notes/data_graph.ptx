@@ -20,6 +20,127 @@
   </p>
 </introduction>
 
+<assemblage xml:id="assemblage-">
+  <title>Frequency Table</title>
+  <p> A frequency table consists of two columns. The first column
+lists the data values and if the values are numeric, then they are listed from smallest
+to largest. The second column is the frequency, which indicates the number of times
+each value occurs.
+</p>
+</assemblage>
+
+
+<example xml:id="example-nfl-touchdowns-table">
+  <statement>
+    <p>
+      The number of touchdown (TD) passes thrown by each of the 31 teams in the National Football League in the 2000 season are shown below:
+    </p>
+    
+    <table xml:id="table-nfl-td">
+      <title>NFL Touchdown Passes (2000 Season)</title>
+      <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+        <row>
+          <cell>37</cell>
+          <cell>33</cell>
+          <cell>33</cell>
+          <cell>32</cell>
+          <cell>29</cell>
+          <cell>28</cell>
+          <cell>28</cell>
+          <cell>23</cell>
+          <cell>22</cell>
+          <cell>22</cell>
+          <cell>22</cell>
+        </row>
+        <row>
+          <cell>21</cell>
+          <cell>21</cell>
+          <cell>21</cell>
+          <cell>20</cell>
+          <cell>20</cell>
+          <cell>19</cell>
+          <cell>19</cell>
+          <cell>18</cell>
+          <cell>18</cell>
+          <cell>18</cell>
+          <cell>18</cell>
+        </row>
+        <row>
+          <cell>16</cell>
+          <cell>15</cell>
+          <cell>14</cell>
+          <cell>14</cell>
+          <cell>14</cell>
+          <cell>12</cell>
+          <cell>12</cell>
+          <cell>9</cell>
+          <cell>6</cell>
+          <cell Edvard="none"></cell>
+          <cell Edvard="none"></cell>
+        </row>
+      </tabular>
+    </table>
+
+    <p>
+      Construct a frequency table for the data of the number of touchdown passes thrown by each NFL team in the 2000 season. 
+    </p>
+  </statement>
+  <solution>
+    <p>
+      To construct a frequency table, we first identify the unique values in the dataset and count how many times each value occurs. 
+      The frequency table for the NFL touchdown passes is as follows:
+    </p>
+    <table xml:id="table-nfl-tds-frequency">
+      <title>Frequency Table for NFL Touchdown Passes (2000 Season)</title>
+      <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+        <row>
+          <cell>Value</cell>
+          <cell>Frequency</cell>
+        </row>
+        <row>
+          <cell>6</cell>
+          <cell>1</cell>
+        </row>
+        <row>
+          <cell>9</cell>
+          <cell>1</cell>
+        </row>
+        <row>
+          <cell>12</cell>
+          <cell>2</cell>
+        </row>
+        <row>
+          <cell>14</cell>
+          <cell>3</cell>
+        </row>
+        <row>
+          <cell>15</cell>
+          <cell>1</cell>
+        </row>
+        <row>
+          <cell>16</cell>
+          <cell>1</cell>
+        </row>
+        <row>
+          <cell>18</cell>
+          <cell>4</cell>
+        </row>
+        <row>
+          <cell>19</cell>
+          <cell>2</cell>
+        </row>
+        <row>
+          <cell>20</cell>
+          <cell>2</cell>
+        </row>
+
+      </tabular>
+
+    </table>
+
+  </solution>
+</example>
+
 
 <definition xml:id="def-bar-graphs">
   <title>Bar graph</title>
@@ -38,6 +159,67 @@
    votes received by different candidates in an election, allowing the reader to 
    instantly identify the frontrunner.
 </p>
+
+<example>
+  <statement>
+    <p>
+      We return to the example <xref ref="example-nfl-touchdowns-table"/> of the NFL 
+      touchdown passes data to demonstrate how a bar graph can be constructed.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Using the frequency table <xref ref="table-nfl-tds-frequency"/>, we constructed earlier, 
+      we can create a bar graph where the x-axis 
+      represents the number of touchdown passes and the y-axis represents the frequency 
+      of each value. This will visually display how often each number of touchdown passes 
+      occurred across the 31 teams. Each bar's height will correspond to the frequency of 
+      that particular number of touchdown passes, allowing us to quickly see which values 
+      were most common and which were rare.   
+    </p>
+
+<figure xml:id="fig-nfl-bar-graph"> 
+  <caption>Touchdown Passes Frequency Bar Graph</caption> 
+  <image xml:id="img-touchdown-bar-chart" width="80%"> 
+    <description>A vertical bar graph displaying the frequency of touchdown passes 
+      thrown by NFL teams in the 2000 season. The horizontal axis represents the number 
+      of touchdown passes, and the vertical axis represents the frequency of teams. 
+      Bars of varying heights correspond to each touchdown pass value, with the tallest 
+      bar at 18 touchdown passes representing a frequency of 4 teams.</description> 
+    <latex-image> 
+      \begin{tikzpicture} 
+        \begin{axis}[ 
+          width=\linewidth,
+          height=7cm,
+          ybar, 
+          bar width=14pt, 
+          enlarge x limits={abs=18pt},
+          symbolic x coords={space1, 6,9,12,14,15,16,18,19,20, space2},
+              % We explicitly set the limits to our padding markers instead of numbers
+              xmin=space1,
+              xmax=space2,
+          xtick={6,9,12,14,15,16,18,19,20}, 
+          ylabel={Frequency}, 
+          xlabel={Number of Touchdown Passes}, 
+          nodes near coords, 
+          nodes near coords align={vertical}, 
+          grid=major, 
+          grid style={dashed, gray!30}, 
+          axis lines=left, 
+          ymin=0, 
+          ymax=5 
+        ] 
+          \addplot[fill=blue!40, draw=blue] coordinates { 
+            (6,1) (9,1) (12,2) (14,3) (15,1) (16,1) (18,4) (19,2) (20,2) 
+          }; 
+        \end{axis} 
+      \end{tikzpicture} 
+    </latex-image> 
+  </image> 
+</figure>
+
+  </solution>
+</example>
 
 <example>
   <statement>

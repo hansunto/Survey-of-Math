@@ -1,6 +1,186 @@
 <section xml:id="sec-Regression">
-    <title>Regression</title>
+    <title>Scatter Plot and Regression Lines</title>
     <introduction>
+      <p> When two data items are collected for every person or object in a sample, the data
+items can be visually displayed using a scatter plot.
+      </p>
+      </introduction>
+      <definition xml:id="def-Scatter-plot">
+          <title>Scatter Plot</title>
+        <statement>
+          <p>
+            A scatter plot is a type of plot that displays the relationship between 
+            two numerical variables. Each point on the plot represents a single observation, 
+            with its position determined by the values of the two variables.
+          </p>
+        </statement>
+      </definition>
+
+<example xml:id="example-scatter-plot">
+    <statement>
+        <p>
+            Consider the relationship between the number of hours studied and the test scores of students. A scatter plot would display each student as a point, with the x-axis representing hours studied and the y-axis representing test scores.
+        </p>
+        <table xml:id="table-scatter-plot-example">
+            <title>Student Study Hours versus Test Scores</title>
+            <tabular top="major" bottom="major" left="major" right="major">
+                <row header="yes" bottom="medium">
+                    <cell><bold>Student</bold></cell>
+                    <cell><bold>Hours Studied (<m>x</m>)</bold></cell>
+                    <cell><bold>Test Score (<m>y</m>)</bold></cell>
+                </row>
+                <row><cell>A</cell><cell>1.5</cell><cell>65</cell></row>
+                <row><cell>B</cell><cell>2.0</cell><cell>72</cell></row>
+                <row><cell>C</cell><cell>3.5</cell><cell>80</cell></row>
+                <row><cell>D</cell><cell>4.0</cell><cell>78</cell></row>
+                <row><cell>E</cell><cell>5.5</cell><cell>88</cell></row>
+                <row><cell>F</cell><cell>6.0</cell><cell>95</cell></row>
+                <row><cell>G</cell><cell>6.5</cell><cell>90</cell></row>
+                <row bottom="major"><cell>H</cell><cell>7.0</cell><cell>98</cell></row>
+            </tabular>
+        </table>
+    </statement>
+    <solution>
+    <!-- Move the figure out of the solution element into the main example layout -->
+    <figure xml:id="fig-scatter-plot-example">
+        <caption>Scatter Plot of Student Study Hours versus Test Scores</caption>
+        <image xml:id="img-scatter-plot" width="80%">
+            <description>A scatter plot showing a positive linear relationship between study hours on the horizontal axis and test scores on the vertical axis.</description>
+            <latex-image>
+                \begin{tikzpicture}
+                \begin{axis}[
+                    axis lines=left,
+                    xlabel={Hours Studied ($x$)},
+                    ylabel={Test Score ($y$)},
+                    xmin=0, xmax=8,
+                    ymin=50, ymax=105,
+                    xtick={0,1,2,3,4,5,6,7,8},
+                    ytick={50,60,70,80,90,100},
+                    grid=both,
+                    grid style={dashed, gray!20},
+                    height=7cm, width=10cm
+                ]
+                % Scatter data points from the preceding table
+                \addplot[
+                    only marks,
+                    mark=*,
+                    mark size=3pt,
+                    color=blue!70!black,
+                    nodes near coords,
+                    point meta=explicit symbolic,
+                    every node near coord/.style={anchor=south, font=\footnotesize, text=black, yshift=3pt}
+                ] coordinates {
+                    (1.5, 65) [A]
+                    (2.0, 72) [B]
+                    (3.5, 80) [C]
+                    (4.0, 78) [D]
+                    (5.5, 88) [E]
+                    (6.0, 95) [F]
+                    (6.5, 90) [G]
+                    (7.0, 98) [H]
+                };
+                \end{axis}
+                \end{tikzpicture}
+            </latex-image>
+        </image>
+    </figure>
+        <p>
+            By plotting the data points on a scatter plot, we can visually inspect the relationship between the two variables. The resulting chart displays a clear upward trend from left to right, showing a positive linear association.
+        </p>
+    </solution>
+</example>
+
+<exercise xml:id="exercise-generic-scatter-plot">
+    <statement>
+        <p>
+            Make a scatter plot for the given data provided in <xref ref="table-relationship-data"/>. Use the scatter plot to describe whether or not the variables appear to be related.
+        </p>
+        
+        <table xml:id="table-relationship-data">
+            <title>Dataset of Variables <m>x</m> and <m>y</m></title>
+            <tabular top="major" bottom="major" left="major" right="major">
+                <row header="yes" bottom="medium">
+                    <cell><bold>Observation</bold></cell>
+                    <cell><bold>Variable <m>x</m></bold></cell>
+                    <cell><bold>Variable <m>y</m></bold></cell>
+                </row>
+                <row><cell>1</cell><cell>1</cell><cell>12</cell></row>
+                <row><cell>2</cell><cell>2</cell><cell>18</cell></row>
+                <row><cell>3</cell><cell>3</cell><cell>22</cell></row>
+                <row><cell>4</cell><cell>4</cell><cell>35</cell></row>
+                <row><cell>5</cell><cell>5</cell><cell>31</cell></row>
+                <row><cell>6</cell><cell>6</cell><cell>48</cell></row>
+                <row bottom="major"><cell>7</cell><cell>7</cell><cell>52</cell></row>
+            </tabular>
+        </table>
+
+        <!-- Nest the figure safely inside the statement block alongside your text prompt -->
+        <figure xml:id="fig-relationship-scatter-plot">
+            <caption>Scatter plot modeling the relationship between variables <m>x</m> and <m>y</m>.</caption>
+            <image xml:id="img-relationship-scatter" width="80%">
+                <description>A scatter plot on a grid where points consistently rise from left to right as variable x increases from 1 to 7. Each point is labeled with its corresponding observation number from 1 to 7.</description>
+                <latex-image>
+                    \begin{tikzpicture}
+                    \begin{axis}[
+                        axis lines=left,
+                        xlabel={$x$},
+                        ylabel={$y$},
+                        xmin=0, xmax=8,
+                        ymin=0, ymax=60,
+                        xtick={0,1,2,3,4,5,6,7,8},
+                        ytick={0,10,20,30,40,50,60},
+                        grid=both,
+                        grid style={dashed, gray!20},
+                        height=6cm, width=10cm,
+                        nodes near coords,
+                        point meta=explicit symbolic,
+                        every node near coord/.style={anchor=south, font=\footnotesize, text=black, yshift=3pt}
+                    ]
+                    % Plotting data entries labeled 1 through 7
+                    \addplot[
+                        only marks,
+                        mark=*,
+                        mark size=3pt,
+                        color=blue!70!black,
+                    ] coordinates {
+                        (1, 12) [1]
+                        (2, 18) [2]
+                        (3, 22) [3]
+                        (4, 35) [4]
+                        (5, 31) [5]
+                        (6, 48) [6]
+                        (7, 52) [7]
+                    };
+                    \end{axis}
+                    \end{tikzpicture}
+                </latex-image>
+            </image>
+        </figure>
+    </statement>
+
+    <solution>
+        <p>
+            By examining the scatter plot in <xref ref="fig-relationship-scatter-plot"/>, we can visually interpret the relationship between the two variables.
+        </p>
+        <p>
+            As we look from left to right along the horizontal axis, the data points show a clear upward pattern. This tells us that as variable <m>x</m> increases, variable <m>y</m> generally increases as well. Because the points follow a relatively straight, rising path, the variables appear to have a strong, positive linear <bold>correlation</bold>.
+        </p>
+    </solution>
+</exercise>
+
+  <p>
+    A scatter plot can be used to determine whether two quantities are related. 
+    If there is a clear relationship, the quantities are said to be <term>correlated</term>. 
+    <term>Correlations</term> can often be seen when data items are displayed on a scatter plot. 
+    Although the scatter plot in <xref ref="example-scatter-plot"/> indicates a <term>correlation</term> 
+    between education and prejudice, we cannot conclude that increased education causes a person's 
+    level of prejudice to decrease.
+</p>
+
+
+    
+
+
 <p> Regression in statistics is a modeling technique used to estimate the relationship 
     between a dependent variable (the outcome) and one or more independent variables 
     (the predictors). 
@@ -14,7 +194,7 @@
     Depending on the nature of your data and the relationship you are trying to analyze, 
     there are several standard regression models:
 </p>
-</introduction>
+
 <assemblage xml:id="assemblage-linear-regression">
     <title>Simple Linear Regression</title>
     <p>

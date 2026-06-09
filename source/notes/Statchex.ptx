@@ -42,93 +42,95 @@
       </p>
       </solution>
 </exercise>
-<!-- Exercise Mean, Median, Mode, Outliers -->
-  <exercise xml:id="ex-temperature-outliers">
-    <statement>
-      <p>
-        The following temperatures were recorded (in <m>^\circ</m>F) each day for two weeks:
-        <me>\{82, 72, 83, 75, 80, 78, 82, 73, 60, 79, 80, 78, 83, 81\}</me>
-        <ol marker="a)">
-          <li><p>What is the outlier in this data, if one exists?</p></li>
-          <li><p>What is the mean for this set of data?</p></li>
-          <li><p>What is the mean for this set of data, if the outlier is removed?</p></li>
-        </ol>
-      </p>
-    </statement>
 
-    <solution>
-      <p>
-        To perform our analysis, we first arrange the <m>n = 14</m> recorded data entries in ascending order:
-        <me>\{60, 72, 73, 75, 78, 78, 79, 80, 80, 81, 82, 82, 83, 83\}</me>
-      </p>
-
-      <p>
-        <term>Part a) Outlier Evaluation:</term>
-        Using the standard Interquartile Range (<m>\text{IQR}</m>) method, we identify the middle parameters of our distributions:
-        <ul>
-          <li><p>First Quartile (<m>Q_1</m>) at position 4 is <m>75</m>.</p></li>
-          <li><p>Third Quartile (<m>Q_3</m>) at position 11 is <m>82</m>.</p></li>
-          <li><p><m>\text{IQR} = Q_3 - Q_1 = 82 - 75 = 7</m>.</p></li>
-        </ul>
-        The lower cutoff threshold for anomalies is defined by:
-        <me>\text{Lower Bound} = Q_1 - 1.5(\text{IQR}) = 75 - 1.5(7) = 64.5</me>
-        Because the data value <m>60</m> falls below the <m>64.5</m> bound, <term>60<m>^\circ</m></term> is a confirmed outlier.
-      </p>
-
-      <p>
-        <term>Part b) Original Mean Calculation:</term>
-        Summing all 14 data entries gives a total value of <m>1086</m>:
-        <me>\text{Mean} = \frac{1086}{14} \approx 77.57^\circ\text{F}</me>
-      </p>
-
-      <p>
-        <term>Part c) Cleaned Mean Calculation:</term>
-        Subtracting the outlier score of 60 leaves <m>n = 13</m> entries with a total combined value of <m>1026</m>:
-        <me>\text{Cleaned Mean} = \frac{1026}{13} \approx 78.92^\circ\text{F}</me>
-        Removing the low outlier slightly shifts the average higher by roughly <m>1.35^\circ</m>.
-      </p>
-</solution>
-  </exercise>
 <!-- Exercise standard deviation -->
-  <exercise xml:id="ex-rainfall-variance">
+ <exercise xml:id="exercise-approx-sd-twenties" label="exercise-approx-sd-twenties">
     <statement>
-      <p>
-        The rainfall in a small town is recorded daily for two weeks, in inches:
-        <me>\{1.2, 2.3, 0.8, 2.3, 1.0, 3.1, 4.2, 1.4, 2.1, 0.4, 1.3, 2.0, 1.8, 3.2\}</me>
-        What are the mean and the sample standard deviation for this data set, rounded to the nearest hundredths?
-      </p>
+        <p>
+            Use the data 20, 24, 34, 38. Without actually computing the standard deviation, which of the following best approximates the standard deviation?
+        </p>
     </statement>
+    <choices>
+        <choice>
+            <statement>
+                <p>2</p>
+            </statement>
+            <feedback>
+                <p>
+                    Incorrect. The data points span a total range of 18 units (from 20 to 38), so they sit much further than 2 units away from the center.
+                </p>
+            </feedback>
+        </choice>
+        <choice>
+            <statement>
+                <p>4</p>
+            </statement>
+            <feedback>
+                <p>
+                    Incorrect. While 4 is a factor, the data points are spread out further from the mean of 29 than this value suggests.
+                </p>
+            </feedback>
+        </choice>
+        <choice correct="yes">
+            <statement>
+                <p>8</p>
+            </statement>
+            <feedback>
+                <p>
+                    Correct. The mean is 29. The data points sit 5 and 9 units away from this mean. An average distance of roughly 7-8 units is the most accurate estimate.
+                </p>
+            </feedback>
+        </choice>
+        <choice>
+            <statement>
+                <p>10</p>
+            </statement>
+            <feedback>
+                <p>
+                    Incorrect. This value overestimates the standard deviation, as most points are closer to the mean than 10 units.
+                </p>
+            </feedback>
+        </choice>
+    </choices>
+</exercise>
 
+<exercise xml:id="exercise-rainfall-approx-sd">
+    <statement>
+        <p>
+            The rainfall in a small town is recorded daily for two weeks, in inches:
+            <me>\{1.2, 2.3, 0.8, 2.3, 1.0, 3.1, 4.2, 1.4, 2.1, 0.4, 1.3, 2.0, 1.8, 3.2\}</me>
+            What are the mean and the approximate sample standard deviation for this data set?
+        </p>
+    </statement>
     <solution>
-      <p>
-        To compute our summary metrics, we analyze the complete data pool containing <m>n = 14</m> entries.
-      </p>
-
-      <p>
-        <term>Step 1: Calculate the Mean (<m>\bar{x}</m>):</term>
-        Summing all 14 precipitation values yields a total of <m>27.1</m> inches:
-        <me>\bar{x} = \frac{27.1}{14} \approx 1.94</me>
-        The mean rainfall over the two-week period is <term>1.94 inches</term>.
-      </p>
-
-      <p>
-        <term>Step 2: Calculate the Sample Standard Deviation (<m>s</m>):</term>
-        Using the sample standard deviation expression with a denominator of <m>n - 1 = 13</m>:
-        <me>s = \sqrt{\frac{\sum (x_i - \bar{x})^2}{n - 1}}</me>
-      </p>
-      <p>
-        Summing the squared deviances from the actual calculated mean results in an accumulated value of approximately <m>14.1521</m>:
-        <me>s = \sqrt{\frac{14.1521}{13}} = \sqrt{1.0886} \approx 1.04</me>
-        Thus, the sample standard deviation is <term>1.04 inches</term>.
-      </p>
+        <p>
+            <bold>Step 1: Calculate the Mean.</bold>
+            Sum all 14 data entries and divide by the count:
+            <me>Mean = \frac{27.1}{14} \approx 1.94\text{ inches}</me>
+        </p>
+        <p>
+            <bold>Step 2: Find individual distances.</bold>
+            Find the absolute difference between each entry and the mean of <m>1.94</m>. Summing these 14 positive distances gives <m>11.3</m>.
+        </p>
+        <p>
+            <bold>Step 3: Average the distances.</bold>
+            Divide the sum of distances by the number of values:
+            <me>\text{Average Distance} = \frac{11.3}{14} \approx 0.81</me>
+        </p>
+        <p>
+            <bold>Step 4: Approximate Standard Deviation.</bold>
+            Because the geometric process of squaring numbers shifts standard deviation upwards, the true standard deviation value will sit slightly higher than our baseline average distance. We can approximate the sample standard deviation to be <term>just above 0.81</term> (approximately <m>0.9</m> to <m>1.0</m>).
+        </p>
     </solution>
-  </exercise>
+</exercise>
 
   <!--Exercise Empirical rule-->
   <exercise xml:id="ex-empirical-rule-heights">
     <statement>
       <p>
-        The heights of adult men in a certain city are normally distributed with a mean (<m>\mu</m>) of 70 inches and a standard deviation (<m>\text{SD}</m>) of 3 inches. Use the Empirical Rule to answer the following questions:
+        The heights of adult men in a certain city are normally distributed with a mean 
+       of 70 inches and a standard deviation (<m>\text{SD}</m>) of 3 inches. 
+       Use the Empirical Rule to answer the following questions:
         <ol marker="a)">
           <li><p>What percentage of men are between 67 and 73 inches tall?</p></li>
           <li><p>What percentage of men are between 61 and 79 inches tall?</p></li>
@@ -141,34 +143,39 @@
       <p>
         The <term>Empirical Rule</term> (also known as the 68-95-99.7 rule) states that for a perfectly normal distribution:
         <ul>
-          <li><p>Approximately <m>68\%</m> of the data falls within <m>1</m> standard deviation of the mean (<m>\mu \pm 1\text{SD}</m>).</p></li>
-          <li><p>Approximately <m>95\%</m> of the data falls within <m>2</m> standard deviations of the mean (<m>\mu \pm 2\text{SD}</m>).</p></li>
-          <li><p>Approximately <m>99.7\%</m> of the data falls within <m>3</m> standard deviations of the mean (<m>\mu \pm 3\text{SD}</m>).</p></li>
+          <li><p>Approximately <m>68\%</m> of the data falls within <m>1</m> 
+            standard deviation of the mean (<m>\pm 1\text{SD}</m>).</p></li>
+          <li><p>Approximately <m>95\%</m> of the data falls within <m>2</m> 
+            standard deviations of the mean (<m>\pm 2\text{SD}</m>).</p></li>
+          <li><p>Approximately <m>99.7\%</m> of the data falls within <m>3</m> 
+            standard deviations of the mean (<m>\pm 3\text{SD}</m>).</p></li>
         </ul>
       </p>
 
       <p>
-        Given parameters: Mean <m>\mu = 70</m> inches and Standard Deviation <m>\text{SD} = 3</m> inches. Let us map out the standard deviation markers:
+        Given parameters: <m>Mean = 70</m> inches and Standard Deviation <m>\text{SD} = 3</m> inches. Let us map out the standard deviation markers:
         <ul>
-          <li><p><m>\mu \pm 1\text{SD} = 70 \pm 3 = [67, 73]</m></p></li>
-          <li><p><m>\mu \pm 2\text{SD} = 70 \pm 6 = [64, 76]</m></p></li>
-          <li><p><m>\mu \pm 3\text{SD} = 70 \pm 9 = [61, 79]</m></p></li>
+          <li><p>mean<m>\pm 1\text{SD} = 70 \pm 3 = [67, 73]</m></p></li>
+          <li><p>mean<m>\pm 2\text{SD} = 70 \pm 6 = [64, 76]</m></p></li>
+          <li><p>mean<m>\pm 3\text{SD} = 70 \pm 9 = [61, 79]</m></p></li>
         </ul>
       </p>
 
       <p>
         <term>Part a) Interval [67, 73]:</term>
-        These values correspond exactly to <m>\mu - 1\text{SD}</m> and <m>\mu + 1\text{SD}</m>. According to the rule, approximately <term>68%</term> of the men fall within this height range.
+        These values correspond exactly to mean<m> - 1\text{SD}</m> and mean<m> + 1\text{SD}</m>. 
+        According to the rule, approximately <term>68%</term> of the men fall within this height range.
       </p>
 
       <p>
         <term>Part b) Interval [61, 79]:</term>
-        These values correspond exactly to <m>\mu - 3\text{SD}</m> and <m>\mu + 3\text{SD}</m>. According to the rule, approximately <term>99.7%</term> of the men fall within this height range.
+        These values correspond exactly to mean <m> - 3\text{SD}</m> and mean <m> + 3\text{SD}</m>. 
+        According to the rule, approximately <term>99.7%</term> of the men fall within this height range.
       </p>
 
       <p>
         <term>Part c) Heights above 76 inches:</term>
-        A height of 76 inches corresponds exactly to <m>\mu + 2\text{SD}</m>. 
+        A height of 76 inches corresponds exactly to mean<m> + 2\text{SD}</m>. 
         Since a normal curve is perfectly symmetrical, <m>50\%</m> of the data falls above the mean of 70. 
         The region between the mean (70) and 2 standard deviations above the mean (76) contains exactly half of the <m>95\%</m> range, which is <m>47.5\%</m>.
         To find the tail value remaining above 76:
@@ -233,8 +240,8 @@
         </statement>
         <solution>
           <p>
-            Identify the given parameters: value <m>x = 247</m>, mean <m>\mu = 279</m>, 
-            and standard deviation <m>\sigma = 16</m>.
+            Identify the given parameters: value <m>x = 247</m>, mean <m>= 279</m>, 
+            and standard deviation <m>sd = 16</m>.
           </p>
           <p>
             Substitute these values into the z-score formula:
@@ -293,7 +300,7 @@
         </statement>
         <solution>
           <p>
-            Identify the given parameters: value <m>x = 5</m>, mean <m>\mu = 3</m>, and standard deviation <m>\sigma = 1</m>.
+            Identify the given parameters: value <m>x = 5</m>, mean <m> = 3</m>, and standard deviation <m>sd = 1</m>.
           </p>
           <p>
             Substitute these values into the z-score formula:
@@ -348,7 +355,7 @@
         </statement>
         <solution>
           <p>
-            Identify the given parameters: value <m>x = 825</m>, mean <m>\mu = 1150</m>, and standard deviation <m>\sigma = 77</m>.
+            Identify the given parameters: value <m>x = 825</m>, mean <m> = 1150</m>, and standard deviation <m>sd = 77</m>.
           </p>
           <p>
             Substitute these values into the z-score formula and round to two decimal places:
@@ -398,16 +405,17 @@
     <exercise xml:id="ex-decimal-measurement">
         <statement>
           <p>
-          What is the z-score of a measured value of 0.0034, given <m>\mu = 0.0041</m> and <m>\sigma = 0.0008</m>?
+          What is the z-score of a measured value of 0.0034, given mean <m> = 0.0041</m> and <m>sd = 0.0008</m>?
           </p>
         </statement>
         <solution>
           <p>
-            Identify the given parameters: value <m>x = 0.0034</m>, mean <m>\mu = 0.0041</m>, and standard deviation <m>\sigma = 0.0008</m>.
+            Identify the given parameters: value <m>x = 0.0034</m>, mean <m>= 0.0041</m>, 
+            and standard deviation <m>sd = 0.0008</m>.
           </p>
           <p>
             Substitute these values into the standard z-score formula:
-            <me>z = \frac{x - \mu}{\sigma} = \frac{0.0034 - 0.0041}{0.0008} = \frac{-0.0007}{0.0008} = -0.875</me>
+            <me>z = \frac{x - mean}{sd} = \frac{0.0034 - 0.0041}{0.0008} = \frac{-0.0007}{0.0008} = -0.875</me>
           </p>
           <p>
             The measured value is exactly <term>0.875 standard deviations below</term> the population mean.
@@ -458,11 +466,11 @@
         </statement>
         <solution>
           <p>
-            Identify the given parameters: raw score <m>x = 89</m>, class mean <m>\mu = 80</m>, and standard deviation <m>\sigma = 4</m>.
+            Identify the given parameters: raw score <m>x = 89</m>, class mean <m> = 80</m>, and standard deviation <m>sd = 4</m>.
           </p>
           <p>
             Substitute these values into the z-score expression:
-            <me>z = \frac{x - \mu}{\sigma} = \frac{89 - 80}{4} = \frac{9}{4} = 2.25</me>
+            <me>z = \frac{x - mean}{sd} = \frac{89 - 80}{4} = \frac{9}{4} = 2.25</me>
           </p>
           <p>
             The student's test performance translates to a z-score of <term>2.25</term>, meaning it is <term>2.25 standard deviations above</term> the classroom average.
@@ -503,6 +511,152 @@
           </figure>
         </solution>
       </exercise>
+
+
+<exercise xml:id="exercise-kori-monthly-budget">
+  <statement>
+    <p>
+      Kori categorized her spending for this month into four categories: food, rent, fun, and other. 
+      The percentage she spent in each category is displayed in the chart below.
+    </p>
+
+    <figure xml:id="fig-kori-budget-pie-chart">
+      <caption>Pie Chart of Kori's Monthly Spending Shares</caption>
+      <image xml:id="img-kori-budget-chart" width="65%">
+        <description>A pie chart dividing Kori's monthly budget proportions into four sectors: Rent accounts for 31 percent, Other accounts for 29 percent, Food accounts for 24 percent, and Fun accounts for 16 percent.</description>
+        <latex-image>
+          \begin{tikzpicture}[scale=1.3]
+            % Rent slice: 0 to 111.6 degrees (31%)
+            \draw[fill=blue!20, draw=black] (0,0) -- (0:2) arc (0:111.6:2) -- cycle;
+            \node at (55.8:1.4) {\small 31\%};
+            \node at (55.8:2.4) {\small Rent};
+
+            % Other slice: 111.6 to 216.0 degrees (111.6 + 104.4 = 29%)
+            \draw[fill=gray!20, draw=black] (0,0) -- (111.6:2) arc (111.6:216.0:2) -- cycle;
+            \node at (163.8:1.4) {\small 29\%};
+            \node at (163.8:2.4) {\small Other};
+
+            % Food slice: 216.0 to 302.4 degrees (216.0 + 86.4 = 24%)
+            \draw[fill=green!20, draw=black] (0,0) -- (216.0:2) arc (216.0:302.4:2) -- cycle;
+            \node at (259.2:1.4) {\small 24\%};
+            \node at (259.2:2.4) {\small Food};
+
+            % Fun slice: 302.4 to 360.0 degrees (302.4 + 57.6 = 16%)
+            \draw[fill=orange!20, draw=black] (0,0) -- (302.4:2) arc (302.4:360.0:2) -- cycle;
+            \node at (331.2:1.4) {\small 16\%};
+            \node at (331.2:2.4) {\small Fun};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+
+    <p>
+      If she spent a total of <m>\$2600</m> this month, how much money did she allocate to rent?
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      To find the exact dollar amount spent on rent, we convert the percentage share from the pie chart into a decimal and multiply it by the total monthly expenditures:
+    </p>
+    <p>
+      <me>\text{Rent Share} = 31\% = 0.31</me>
+    </p>
+    <p>
+      <me>\text{Rent Expenditures} = 0.31 \times \$2600 = \$806</me>
+    </p>
+    <p>
+      Therefore, Kori spent exactly <alert><m>\$806</m></alert> on rent this month.
+    </p>
+  </solution>
+</exercise>
+
+
+<exercise xml:id="exer-women-height-distribution">
+    <statement>
+        <p>
+            Suppose the height of adult women in the United States is normally distributed with a mean of 5' 8" 
+            and a standard deviation of <m>1.5</m>". What is the probability that a randomly chosen woman 
+            in the United States is shorter than 5' 5"?
+        </p>
+        
+        <figure xml:id="fig-women-height-tail">
+            <caption>Normal distribution curve of women's heights with the lower tail below 5' 5" shaded.</caption>
+            <image xml:id="img-women-height-tail" width="80%">
+                <description>A normal distribution curve centered at 5 feet 8 inches. The area under the curve to the left of 5 feet 5 inches is shaded in blue, representing the lower 2.5 percent of the population.</description>
+                <latex-image>
+                    \begin{tikzpicture}[x=1.2cm, y=10cm]
+                    
+                    % Shaded lower tail region (below -2 standard deviations)
+                    \fill[blue!30] plot[domain=-3.5:-2, samples=20] (\x, {1/(sqrt(2*3.14159))*exp(-\x*\x/2)}) -- (-2,0) -- (-3.5,0) -- cycle;
+                    
+                    % Draw the normal distribution curve
+                    \draw[very thick, black] plot[domain=-3.5:3.5, samples=50] (\x, {1/(sqrt(2*3.14159))*exp(-\x*\x/2)});
+                    
+                    % Vertical dashed standard deviation lines
+                    \draw[gray!40, dashed] (-3, 0) -- (-3, 0.0044);
+                    \draw[gray!40, dashed] (-2, 0) -- (-2, 0.054);
+                    \draw[gray!40, dashed] (-1, 0) -- (-1, 0.242);
+                    \draw[gray!40, dashed] (0, 0)  -- (0, 0.398);
+                    \draw[gray!40, dashed] (1, 0)  -- (1, 0.242);
+                    \draw[gray!40, dashed] (2, 0)  -- (2, 0.054);
+                    \draw[gray!40, dashed] (3, 0)  -- (3, 0.0044);
+                    
+                    % Simple flat horizontal base axis line
+                    \draw[thick] (-3.5, 0) -- (3.5, 0);
+                    
+                    % Height Labels on Axis
+                    \node[below=2pt] at (0, 0)  {5'8''};
+                    \node[below=2pt] at (1, 0)  {5'9.5''};
+                    \node[below=2pt] at (-1, 0) {5'6.5''};
+                    \node[below=2pt] at (2, 0)  {5'11''};
+                    \node[below=2pt] at (-2, 0) {5'5''};
+                    \node[below=2pt] at (3, 0)  {6'0.5''};
+                    \node[below=2pt] at (-3, 0) {5'3.5''};
+                    
+                    % Label pointing out the shaded 2.5% area
+                    \node[text=blue!80!black, font=\small] at (-2.6, 0.06) {2.5\%};
+                    \draw[thick, blue!80!black] (-2.5, 0.04) -- (-2.2, 0.01);
+                    
+                    \end{tikzpicture}
+                </latex-image>
+            </image>
+        </figure>
+    </statement>
+    <solution>
+        <p>
+            First, determine how many standard deviations 5' 5" is from the mean of 5'8". 
+            Since each standard deviation is <m>1.5</m>", a height of 5' 6.5" is <m>1</m> standard deviation 
+            below the mean, and 5' 5" is exactly <m>2</m> standard deviations below the mean.
+        </p>
+        <p>
+            We can find the total percentage of women who are 5' 5" or taller by adding up the known regions 
+            of the normal distribution:
+        </p>
+        <ul>
+            <li>
+                <p>50% of women are taller than the mean of 5' 8".</p>
+            </li>
+            <li>
+                <p>34% of women are between 5' 6.5" and 5' 8" (within <m>1</m> standard deviation below the mean).</p>
+            </li>
+            <li>
+                <p>13.5% of women are between 5' 5" and 5' 6.5" (between <m>1</m> and <m>2</m> standard deviations below the mean).</p>
+            </li>
+        </ul>
+        <p>
+            Adding these regions together gives: <m>50\% + 34\% + 13.5\% = 97.5\%</m>. 
+            Since 97.5% of women are 5' 5" or taller, the remaining portion is 
+            <m>100\% - 97.5\% = 2.5\%</m>.
+        </p>
+        <p>
+            <em>Alternative Method:</em> The empirical rule states that 95% of the data 
+            falls within <m>2</m> standard deviations of the mean. This leaves 5% split equally 
+            between the two extreme outer tails (<m>5\% \div 2 = 2.5\%</m>). Therefore, the probability that a 
+            randomly chosen woman is shorter than 5' 5" is 2.5% (or <m>0.025</m>).
+        </p>
+    </solution>
+</exercise>
 
 
 

@@ -317,9 +317,6 @@ values; <me> \text{mean}= \bar{x}= \dfrac{\sum x}{n} </me>
         </p>
       </solution>
 </example>
-  
-
-
 
 <example xml:id="example-vehicle-color-mode">
   <statement>
@@ -463,11 +460,13 @@ values; <me> \text{mean}= \bar{x}= \dfrac{\sum x}{n} </me>
   <!-- =================================================================== -->
   <definition xml:id="def-measures-of-spread">
     <title>Measures of Spread</title>
-    <p>
-      Measures of spread describe how much the data varies. 
-      Two common measures are range and standard deviation. 
-      These measures help to understand the variability within the data set.
-    </p>
+    <statement>
+      <p>
+        Measures of spread describe how much the data varies. 
+        Two common measures are <alert>range</alert> and <alert>standard deviation</alert>. 
+        These measures help to understand the variability within the data set.
+      </p>
+    </statement>
   </definition>
 <p>
   Consider these three sets of quiz scores:
@@ -550,261 +549,134 @@ values; <me> \text{mean}= \bar{x}= \dfrac{\sum x}{n} </me>
   </solution>
 </example>
 
-
-<definition xml:id="standard-deviation">
-    <title>Standard Deviation</title>
-    <p>The standard deviation is a measure of variation based on measuring how 
-      far each data value deviates, or is different, from the mean.</p>
-<ul>
-    <li>Standard deviation is always positive.</li>
-    <li>Standard deviation will be zero if all the data values are equal, and will get larger as the data spreads out.</li>
-    <li>Standard deviation has the same units as the original data.</li>
-    <li>Standard deviation, like the mean, can be highly influenced by outliers.</li>
-</ul>
-</definition>
-
+<p>
+  A second measure of spread, and one that is dependent on all of the data items, is
+called the <alert>standard deviation</alert>.
+</p>
     <note>
       <title>Standard Deviation</title>
       <p>
-        The <term>standard deviation </term>  measures the typical spread from the mean; it is the average distance between the mean and a value in the data set. 
-        Larger standard deviations indicate greater spread. 
-        Standard deviation is a more complex measure of spread, but it provides a more detailed picture of variability within the data set than the range.
+        The <term>standard deviation </term>  is a number that summarizes
+how far each data item differs from the mean. In comparing datasets, a dataset with
+a smaller standard deviation shows that the data are less spread out around the mean.
+A dataset with a larger standard deviation shows that the data are more spread out
+around the mean.
       </p>
     </note>
 
-<assemblage>
-    <title>To compute standard deviation:</title>
-    <p> <ol>
-        <li>Find the mean; <m>\bar{x}= \dfrac{\sum x}{n} </m>.</li>
-        <li>Subtract the mean from each individual data value; <m>x - \bar{x}</m></li>
-        <li>Square each individual deviation result; <m>(x - \bar{x})^2</m> </li>
-        <li>Sum all of the squared deviations together; <m>\sum (x - \bar{x})^2</m> </li>
-        <li>Divide the sum by N for populations, or by n - 1 for samples; 
-          <!--<m>\dfrac{\sum (x - \bar{x})^2}{N}</m> for populations or--> 
-          <m>\dfrac{\sum (x - \bar{x})^2}{n - 1}</m> for samples</li>
-        <li>Calculate the square root of the variance; 
-          <m>\sqrt{\dfrac{\sum (x - \bar{x})^2}{n - 1}}</m> </li>
-    </ol> </p>
-</assemblage>
-
-<example xml:id="example-diner-meals">
-  <statement>
-    <p>
-      A group of diners were asked how much they would pay for a meal. Their responses were: $7.50, $8.25, $9.00, $8.00, $7.25, $7.50, $8.00, $7.00.
-    </p>
-    <p>
-      <ol marker="a">
-        <li> <p>Find the mean</p> </li>
-        <li> <p>Find the median</p> </li>
-        <li> <p>Find the standard deviation of this data</p> </li>
-      </ol>
-    </p>
-  </statement>
-  <solution>
-    <p>
-      <strong>(a) Find the Mean</strong>
-    </p>
-    <p>
-      <ol marker="1">
-        <li><p>Sum all values: <m>7.50 + 8.25 + 9.00 + 8.00 + 7.25 + 7.50 + 8.00 + 7.00 = 62.50</m></p></li>
-        <li><p>Count total values: <m>n = 8</m></p></li>
-        <li><p>Divide sum by total count: <m>62.50 / 8 = 7.8125</m></p></li>
-      </ol>
-    </p>
-    <p>
-      <strong>(b) Find the Median</strong>
-    </p>
-    <p>
-      <ol marker="1">
-        <li><p>Arrange the data values in order: $7.00, $7.25, $7.50, $7.50, $8.00, $8.00, $8.25, $9.00</p></li>
-        <li><p>Locate the two middle values at positions 4 and 5: $7.50 and $8.00</p></li>
-        <li><p>Calculate the average of the two middle values: <m>(7.50 + 8.00) / 2 = \$7.75</m></p></li>
-      </ol>
-    </p>
-    <p>
-      <strong>(c) Find the Standard Deviation</strong>
-    </p>
-    <p>
-      We construct a table to find the deviation of each value from the mean (<m>\bar{x} = 7.8125</m>) and square those results.
-    </p>
-
-    <table xml:id="table-meal-deviations">
-      <title>Standard Deviation Calculations for Meal Prices</title>
-      <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
-        <row header="yes">
-          <cell><m>x</m></cell>
-          <cell><m>x - \bar{x}</m></cell>
-          <cell><m>(x - \bar{x})^2</m></cell>
-        </row>
-        <row><cell>7.50</cell><cell><m>-0.3125</m></cell><cell><m>0.097656</m></cell></row>
-        <row><cell>8.25</cell><cell><m>0.4375</m></cell><cell><m>0.191406</m></cell></row>
-        <row><cell>9.00</cell><cell><m>1.1875</m></cell><cell><m>1.410156</m></cell></row>
-        <row><cell>8.00</cell><cell><m>0.1875</m></cell><cell><m>0.035156</m></cell></row>
-        <row><cell>7.25</cell><cell><m>-0.5625</m></cell><cell><m>0.316406</m></cell></row>
-        <row><cell>7.50</cell><cell><m>-0.3125</m></cell><cell><m>0.097656</m></cell></row>
-        <row><cell>8.00</cell><cell><m>0.1875</m></cell><cell><m>0.035156</m></cell></row>
-        <row><cell>7.00</cell><cell><m>-0.8125</m></cell><cell><m>0.660156</m></cell></row>
-        <row bottom="minor">
-          <cell><m>\sum x = 62.50</m></cell>
-          <cell></cell>
-          <cell><m>\sum (x - \bar{x})^2 = 3.40625</m></cell>
-        </row>
-      </tabular>
-    </table>
-
-    <p>
-      <ol marker="1">
-        <li><p>Sum all the squared deviations together from the table: <m>3.40625</m></p></li>
-        <li><p>Divide by <m>n - 1</m> since this represents a sample: <m>3.40625 / 7 = 0.486607</m></p></li>
-        <li><p>Calculate the square root of the variance: <m>\sqrt{0.486607} = 0.637577 \approx \$0.64</m></p></li>
-      </ol>
-    </p>
-  </solution>
-</example>
-
-<exercise>
+    <example xml:id="example-quiz-scores-sd">
     <statement>
-        The price of a jar of peanut butter at 5 stores were: $3.29, $3.59, $3.79, $3.75, and $3.99.
+        <p>
+            Using the quiz scores from <xref ref="example-quiz-scores-range"/>, Section A, Section B, and Section C all have the same mean of 5. However, they have very different spreads. Which sample do you think has the largest standard deviation? What does this measure tell us when comparing the spread of the three samples?
+        </p>
     </statement>
-    <ol id="a">
+    <solution>
+        <p>
+            Section B has the largest standard deviation because its scores are the most spread out from the mean. The standard deviation is a more precise measure of spread than the range because it accounts for how every individual data point differs from the mean, rather than just looking at the extremes.
+        </p>
+    </solution>
+</example>
+<assemblage xml:id="assemblage-approx-sd-rule">
+    <title>Approximating Standard Deviation Without Computation</title>
+    <p>
+        To estimate the standard deviation of a small dataset, follow these steps:
+    </p>
+ <p>   <ol>
         <li>
-            <p>Find the standard deviation of the prices.</p>
+            <p>
+                <bold>Find the Mean:</bold> Calculate the average of your data points to establish the central point.
+            </p>
+        </li>
+        <li>
+            <p>
+                <bold>Find individual distances:</bold> Determine how far each data point sits from that mean value. Disregard negative signs.
+            </p>
+        </li>
+        <li>
+            <p>
+                <bold>Average the distances:</bold> Sum the distances and divide by the number of values to get a baseline average deviation.
+            </p>
+        </li>
+        <li>
+            <p>
+                <bold>Adjust upward:</bold> Select an estimate slightly higher than your average distance, as squaring the deviations shifts the geometric mean upward.
+            </p>
         </li>
     </ol>
-    <solution>
-        <p>Find the Standard Deviation</p>
-        <ol marker="1">
-            <li>Find the mean price: (3.29 + 3.59 + 3.79 + 3.75 + 3.99) / 5 = 18.41 / 5 = $3.682</li>
-            <li>Find the deviation of each value from the mean ($3.682): -0.392, -0.092, 0.108, 0.068, 0.308</li>
-            <li>Square each individual deviation: 0.153664, 0.008464, 0.011664, 0.004624, 0.094864</li>
-            <li>Sum all the squared deviations together: 0.27328</li>
-            <li>Divide by n - 1 since this represents a sample: 0.27328 / 4 = 0.06832</li>
-            <li>Calculate the square root of the variance: sqrt(0.06832) = 0.26138 = $0.26</li>
-        </ol>
-    </solution>
-</exercise>
-
-<example xml:id="example-baseball-ages">
-  <title>Baseball Team Ages</title>
-  <statement>
-    <p>
-      On a baseball team, the ages of each of the players are as follows:
-    </p>
-    <p>
-      <me>21; 21; 22; 23; 24; 24; 25; 25; 28; 29; 29; 31; 32;</me>
-      <me> 33; 33; 34; 35; 36; 36; 36; 36; 38; 38; 38; 40</me>
-    </p>
-    <p>
-      Find the mean and standard deviation. Then find the value that is two standard deviations 
-      above the mean.
-    </p>
-  </statement>
-  <solution>
-    <p>
-      First, we find the sample mean (<m>\bar{x}</m>) by adding all the ages together and 
-      dividing by the total number of players (<m>n = 25</m>):
-      <me>\bar{x} = \frac{\sum x}{n} = \frac{767}{25} = 30.68</me>
-    </p>
-    <p>
-      Next, we build a table to find the deviations from the mean (<m>x - \bar{x}</m>) and their squares (<m>(x - \bar{x})^2</m>) to compute the sample standard deviation (<m>s</m>).
-    </p>
-    <table xml:id="table-age-deviations">
-      <title>Standard Deviation Calculations for Player Ages</title>
-      <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
-        <row header="yes">
-          <cell><m>x</m></cell>
-          <cell><m>x - \bar{x}</m></cell>
-          <cell><m>(x - \bar{x})^2</m></cell>
-        </row>
-        <row><cell>21</cell><cell><m>-9.68</m></cell><cell><m>93.7024</m></cell></row>
-        <row><cell>21</cell><cell><m>-9.68</m></cell><cell><m>93.7024</m></cell></row>
-        <row><cell>22</cell><cell><m>-8.68</m></cell><cell><m>75.3424</m></cell></row>
-        <row><cell>23</cell><cell><m>-7.68</m></cell><cell><m>58.9824</m></cell></row>
-        <row><cell>24</cell><cell><m>-6.68</m></cell><cell><m>44.6224</m></cell></row>
-        <row><cell>24</cell><cell><m>-6.68</m></cell><cell><m>44.6224</m></cell></row>
-        <row><cell>25</cell><cell><m>-5.68</m></cell><cell><m>32.2624</m></cell></row>
-        <row><cell>25</cell><cell><m>-5.68</m></cell><cell><m>32.2624</m></cell></row>
-        <row><cell>28</cell><cell><m>-2.68</m></cell><cell><m>7.1824</m></cell></row>
-        <row><cell>29</cell><cell><m>-1.68</m></cell><cell><m>2.8224</m></cell></row>
-        <row><cell>29</cell><cell><m>-1.68</m></cell><cell><m>2.8224</m></cell></row>
-        <row><cell>31</cell><cell><m>0.32</m></cell><cell><m>0.1024</m></cell></row>
-        <row><cell>32</cell><cell><m>1.32</m></cell><cell><m>1.7424</m></cell></row>
-        <row><cell>33</cell><cell><m>2.32</m></cell><cell><m>5.3824</m></cell></row>
-        <row><cell>33</cell><cell><m>2.32</m></cell><cell><m>5.3824</m></cell></row>
-        <row><cell>34</cell><cell><m>3.32</m></cell><cell><m>11.0224</m></cell></row>
-        <row><cell>35</cell><cell><m>4.32</m></cell><cell><m>18.6624</m></cell></row>
-        <row><cell>36</cell><cell><m>5.32</m></cell><cell><m>28.3024</m></cell></row>
-        <row><cell>36</cell><cell><m>5.32</m></cell><cell><m>28.3024</m></cell></row>
-        <row><cell>36</cell><cell><m>5.32</m></cell><cell><m>28.3024</m></cell></row>
-        <row><cell>36</cell><cell><m>5.32</m></cell><cell><m>28.3024</m></cell></row>
-        <row><cell>38</cell><cell><m>7.32</m></cell><cell><m>53.5824</m></cell></row>
-        <row><cell>38</cell><cell><m>7.32</m></cell><cell><m>53.5824</m></cell></row>
-        <row><cell>38</cell><cell><m>7.32</m></cell><cell><m>53.5824</m></cell></row>
-        <row><cell>40</cell><cell><m>9.32</m></cell><cell><m>86.8624</m></cell></row>
-        <row bottom="minor">
-          <cell><m>\sum x = 767</m></cell>
-          <cell></cell>
-          <cell><m>\sum (x - \bar{x})^2 = 891.44</m></cell>
-        </row>
-      </tabular>
-    </table>
-    <p>
-      Using the sum of squared deviations, we find the sample standard deviation (<m>s</m>):
-      <me>s = \sqrt{\frac{\sum(x - \bar{x})^2}{n - 1}} = \sqrt{\frac{891.44}{24}} = \sqrt{37.1433} \approx 6.09</me>
-    </p>
-    <p>
-      Finally, we calculate the value that is two standard deviations above the mean:
-      <me>\text{Value} = \bar{x} + 2s = 30.68 + 2(6.09) = 30.68 + 12.18 = 42.86</me>
-    </p>
-  </solution>
-</example>
-
-<exercise>
-    <title>Puzzle Solving Times</title>
-    <statement>
-      <p>
-        You recorded the time in seconds it took for 8 participants to solve a puzzle. 
-        The times were: 15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4.
-      </p>
-      <p>
-    <ol marker="a">
-        <li> <p>Find the mean</p> </li>
-        <li> <p>Find the median</p> </li>
-       <li> <p>Find the standard deviation of this data</p> </li>
-    </ol>
   </p>
+</assemblage>
+
+<exercise xml:id="exercise-approx-sd" label="exercise-approx-sd">
+    <statement>
+        <p>
+            Use the data 1, 2, 3, 5, 6, 7. Without actually computing the standard deviation, which of the following best approximates the standard deviation?
+        </p>
     </statement>
+    <choices>
+        <choice correct="yes">
+            <statement>
+                <p>2</p>
+            </statement>
+            <feedback>
+                <p>
+                    Correct. The mean is 4 and the range is 6. The standard deviation represents the typical distance from the mean, so 2 is the best estimate.
+                </p>
+            </feedback>
+        </choice>
+        <choice>
+            <statement>
+                <p>6</p>
+            </statement>
+            <feedback>
+                <p>
+                    Incorrect. A standard deviation of 6 would imply the data points span much further from the mean than they actually do.
+                </p>
+            </feedback>
+        </choice>
+        <choice>
+            <statement>
+                <p>10</p>
+            </statement>
+            <feedback>
+                <p>
+                    Incorrect. The standard deviation cannot be larger than the total range of the dataset.
+                </p>
+            </feedback>
+        </choice>
+        <choice>
+            <statement>
+                <p>20</p>
+            </statement>
+            <feedback>
+                <p>
+                    Incorrect. This value is much too large for a small dataset spanning from 1 to 7.
+                </p>
+            </feedback>
+        </choice>
+    </choices>
     <solution>
-        <task id="a">
-            <p>Find the mean</p>
-            <ol marker="1">
-                <li>Sum all values: 15.2 + 18.8 + 19.3 + 19.7 + 20.2 + 21.8 + 22.1 + 29.4 = 166.5</li>
-                <li>Count total values: n = 8</li>
-                <li>Divide sum by total count: 166.5 / 8 = 20.8125 seconds</li>
-            </ol>
-           
-        </task>
-        <task id="b">
-            <p>Find the median</p>
-            <ol>
-                <li>Arrange the data values in order: 15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4</li>
-                <li>Locate the two middle values at positions 4 and 5: 19.7 and 20.2</li>
-                <li>Calculate the average of the two middle values: (19.7 + 20.2) / 2 = 19.95 seconds</li>
-            </ol>
-            
-        </task>
-        <task id="c">
-            <p>Find the standard deviation of this data</p>
-            <ol marker="1">
-                <li>Find the deviation of each value from the mean (20.8125): -5.6125, -2.0125, -1.5125, -1.1125, -0.6125, 0.9875, 1.2875, 8.5875</li>
-                <li>Square each individual deviation: 31.500156, 4.050156, 2.287656, 1.237656, 0.375156, 0.975156, 1.657656, 73.745156</li>
-                <li>Sum all the squared deviations together: 115.82875</li>
-                <li>Divide by n - 1 since this represents a sample: 115.82875 / 7 = 16.546964</li>
-                <li>Calculate the square root of the variance: sqrt(16.546964) = 4.067796 = 4.07 seconds</li>
-            </ol>
-        </task>
+        <p>
+            <bold>Step 1: Find the Mean.</bold> 
+            Find the central balance point of the data:
+            <me>\text{Mean} = \frac{1 + 2 + 3 + 5 + 6 + 7}{6} = 4</me>
+        </p>
+        <p>
+            <bold>Step 2: Find the Absolute Distances.</bold> 
+            Calculate how far each value is from the mean of <m>4</m>:
+            <me>|1-4|=3, \quad |2-4|=2, \quad |3-4|=1, \quad |5-4|=1, \quad |6-4|=2, \quad |7-4|=3</me>
+        </p>
+        <p>
+            <bold>Step 3: Average the Distances.</bold> 
+            Find the average of these absolute deviations:
+            <me>\text{Average Distance} = \frac{3 + 2 + 1 + 1 + 2 + 3}{6} = \frac{12}{6} = 2</me>
+        </p>
+        <p>
+            <bold>Step 4: Approximate.</bold> 
+            The true standard deviation is always slightly higher than the simple average distance. Therefore, we approximate the standard deviation to be a value <term>just above 2</term>.
+        </p>
     </solution>
 </exercise>
+
 
   <!-- =================================================================== -->
   <!-- SUBSECTION: EFFECT OF OUTLIERS                                      -->
@@ -953,52 +825,30 @@ values; <me> \text{mean}= \bar{x}= \dfrac{\sum x}{n} </me>
           </p>
         </solution>
       </exercise>
-
-      <exercise xml:id="exercise-practice-6"> 
-  <statement>
-    <p>
-      What is the sample standard deviation of the following data set?
-    </p>
-    <p>
-      <me>\{5, 9, 8, 12, 6, 10, 6, 8\}</me>
-    </p>
-  </statement>
-  <solution>
-    <p>
-      First, find the sample mean (<m>\bar{x}</m>) by adding all the values together and dividing by the total number of items (<m>n = 8</m>):
-      <me>\bar{x} = \frac{\sum x}{n} = \frac{5 + 9 + 8 + 12 + 6 + 10 + 6 + 8}{8} = \frac{64}{8} = 8</me>
-    </p>
-    <p>
-      Next, build a table to compute the deviations from the mean (<m>x - \bar{x}</m>) and their squares (<m>(x - \bar{x})^2</m>).
-    </p>
-    <table xml:id="table-exe-deviation">
-      <title>Standard Deviation Calculations</title>
-      <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
-        <row header="yes">
-          <cell><m>x</m></cell>
-          <cell><m>x - \bar{x}</m></cell>
-          <cell><m>(x - \bar{x})^2</m></cell>
-        </row>
-        <row><cell>5</cell><cell><m>-3</m></cell><cell><m>9</m></cell></row>
-        <row><cell>6</cell><cell><m>-2</m></cell><cell><m>4</m></cell></row>
-        <row><cell>6</cell><cell><m>-2</m></cell><cell><m>4</m></cell></row>
-        <row><cell>8</cell><cell><m>0</m></cell><cell><m>0</m></cell></row>
-        <row><cell>8</cell><cell><m>0</m></cell><cell><m>0</m></cell></row>
-        <row><cell>9</cell><cell><m>1</m></cell><cell><m>1</m></cell></row>
-        <row><cell>10</cell><cell><m>2</m></cell><cell><m>4</m></cell></row>
-        <row><cell>12</cell><cell><m>4</m></cell><cell><m>16</m></cell></row>
-        <row bottom="minor">
-          <cell><m>\sum x = 64</m></cell>
-          <cell></cell>
-          <cell><m>\sum (x - \bar{x})^2 = 38</m></cell>
-        </row>
-      </tabular>
-    </table>
-    <p>
-      Using the sum of squared deviations, calculate the sample standard deviation (<m>s</m>):
-      <me>s = \sqrt{\frac{\sum(x - \bar{x})^2}{n - 1}} = \sqrt{\frac{38}{7}} = \sqrt{5.4286} \approx 2.33</me>
-    </p>
-  </solution>
+<exercise xml:id="exercise-compare-sd-spread">
+    <statement>
+        <p>
+            Compute the mean for each of the following data sets:
+            <ul>
+                <li><p>Set A: <m>80, 80, 80, 80</m></p></li>
+                <li><p>Set B: <m>70, 70, 90, 90</m></p></li>
+            </ul>
+            Using these means and without actually computing the standard deviation, can you tell which dataset has a lower standard deviation? Does a lower standard deviation imply that the dataset is less spread out or more spread out than the other dataset?
+        </p>
+    </statement>
+    <solution>
+        <p>
+            Both datasets have a mean of <m>80</m>. We calculate this by summing the values and dividing by <m>4</m>:
+            <me>\text{Mean}_A = \frac{80+80+80+80}{4} = 80</me>
+            <me>\text{Mean}_B = \frac{70+70+90+90}{4} = 80</me>
+        </p>
+        <p>
+            Without calculating the exact standard deviation, we can determine that Set A has the lower standard deviation. Every data point in Set A is identical to the mean, resulting in a standard deviation of exactly <m>0</m>. 
+        </p>
+        <p>
+            A lower standard deviation implies that the dataset is <term>less spread out</term> than the other dataset. It indicates that the individual data entries cluster tightly around the center point rather than deviating far from it.
+        </p>
+    </solution>
 </exercise>
 
 

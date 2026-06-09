@@ -20,37 +20,35 @@ typically follow this bell-shaped trajectory when plotted in mass quantities.
 <example xml:id="ex-exam-scores-bell-curve">
   <statement>
     <p>
-      An instructor plots final exam grades and notes they follow a normal distribution with a mean score of <m>75</m>. Describe how the shape of this curve changes if you look at scores moving away from 75 in either direction.
+      An instructor plots final exam grades and notes they follow a normal distribution with a mean score of <m>75</m>. 
+      Describe how the shape of this curve changes if you look at scores moving away from 75 in either direction.
     </p>
 
-    <figure xml:id="fig-normal-distribution-curve">
+ <figure xml:id="fig-normal-distribution-curve">
     <caption>Symmetrical distribution curve centered around a population mean.</caption>
-    <image xml:id="img-bellcurve" width="60%">
-        <description>A symmetrical, bell-shaped probability density curve tracking exam scores. The horizontal axis represents exam scores from 45 to 105, with major ticks every 15 units. The peak of the smooth cyan curve sits directly above the mean score of 75, marked by a vertical dashed red line. The curve slopes downward symmetrically as it moves left toward 45 or right toward 105, tapering off near the horizontal axis at the extremes.</description>
+    <image xml:id="img-bellcurve" width="80%">
+        <description>A symmetrical, bell-shaped probability density curve tracking exam scores. The horizontal axis represents exam scores from 40 to 110. The peak of the smooth cyan curve sits directly above the mean score of 75, marked by a vertical dashed red line. The curve slopes downward symmetrically as it moves left toward 45 or right toward 105, tapering off cleanly near the horizontal axis at the extremes.</description>
         <latex-image>
             \begin{tikzpicture}
             \begin{axis}[
                 no markers, 
-                domain=45:105, 
+                domain=40:110, 
                 samples=100, 
-                ymin=0, 
-                ymax=0.07, 
+                ymin=0, ymax=0.045,
                 axis lines=left, 
                 xlabel={Exam Scores}, 
                 ylabel={Probability Density}, 
-                height=5cm, 
-                width=6cm, 
-                xtick={45,60,75,90,105}, 
-                grid=major, 
-                grid style={dashed, gray!30}
+                height=6cm, width=10cm, 
+                xtick={45,60,75,90,105},
+                xticklabels={45\\(-3sd), 60\\(-2sd), 75\\(M), 90\\(+1sd), 105\\(+2sd)},
+                xticklabel style={align=center, font=\small},
+                grid=none
             ]
+            % Plotted with direct numbers to avoid math engine validation conflicts
+            \addplot[very thick, cyan!80!black] {1/(10*sqrt(2*pi))*exp(-(x-75)^2/200)};
             
-            % Curve plotting
-            \addplot[very thick, cyan!80!black] {1/(10*sqrt(2*pi))*exp(-(x-75)^2/(2*10^2))};
-            
-            % Center boundary line
-            \draw[dashed, red, thick] (axis cs:75,0) -- (axis cs:75,0.04);
-            
+            % Center boundary line pointing exactly to the mathematical peak (y = 0.0398)
+            \draw[dashed, red, thick] (axis cs:75,0) -- (axis cs:75,0.03989);
             \end{axis}
             \end{tikzpicture}
         </latex-image>
@@ -61,9 +59,14 @@ typically follow this bell-shaped trajectory when plotted in mass quantities.
 
   <solution>
     <p>
-      The highest point of the curve sits directly above the mean score of 75. As you move outward toward lower scores (left) or higher scores (right), the curve slopes downward symmetrically, flattening out as it approaches the extremes.
+        The highest point of the curve sits directly above the mean score of 75. 
+        As you move outward toward lower scores (left) or higher scores (right) 
+        standard deviations 15 away from the mean, the curve slopes downward symmetrically. 
+        The frequency of scores decreases as you move further from the mean, flattening out 
+        as it approaches the extremes of 45 and 105 where very few students scored.
     </p>
-  </solution>
+</solution>
+
 </example>
 
 <exercise>
@@ -117,8 +120,7 @@ typically follow this bell-shaped trajectory when plotted in mass quantities.
 </exercise>
 
 <p>
-    Note that the <xref ref="standard-deviation">standard deviation</xref> is a measure 
-    of how spread out data points are from their mean, calculated as the square root of the variance. 
+    Note that the standard deviation is a measure of how spread out data points are from their mean. 
     To determine if a specific data value is far from the center, you calculate exactly how many 
     standard deviations it sits away from that mean.
 </p>
@@ -128,6 +130,74 @@ typically follow this bell-shaped trajectory when plotted in mass quantities.
     Exactly half (50%) of the data lies below the mean, and half lies above it, as illustrated in 
     <xref ref="fig-bell-curve-half-shade" />.
 </p>
+
+<definition xml:id="def-normal-distribution">
+    <title>Normal Distribution</title>
+    <statement>
+        <p>
+            A <term>normal distribution</term> is a symmetrical, bell-shaped probability distribution 
+            where the mean, median, and mode are all equal.
+        </p>
+    </statement>
+</definition>
+
+<example xml:id="example-iq-normal-curve">
+    <title>Normal Distribution to IQ Scores</title>
+    <statement>
+        <p> 
+        IQ scores follow a normal distribution with a mean of 100 and
+a standard deviation of 16. Sketch the normal curve for this example and be sure to
+denote one, two, and three standard deviations from the mean.
+        </p>
+    </statement>    
+    <solution>
+        <p>
+            The normal curve for IQ scores would be centered at 100, with the highest point of the bell curve directly above this mean. 
+            One standard deviation from the mean would be at 84 (100 - 16) and 116 (100 + 16). 
+            Two standard deviations from the mean would be at 68 (100 - 32) and 132 (100 + 32). 
+            Three standard deviations from the mean would be at 52 (100 - 48) and 148 (100 + 48). 
+            The curve would slope downward symmetrically as it moves away from the center, tapering off near the horizontal axis at the extremes.
+        </p>
+        
+   <figure xml:id="fig-iq-normal-curve">
+    <caption>Normal distribution curve for IQ scores (<m>Mean = 100</m>, <m>sd = 16</m>).</caption>
+    <image xml:id="img-iq-curve" width="80%">
+        <description>A bell-shaped normal curve centered at 100, showing standard deviation intervals at 52, 68, 84, 116, 132, and 148.</description>
+        <latex-image>
+            \begin{tikzpicture}
+            \begin{axis}[
+                axis lines=left,
+                xlabel={IQ Score},
+                ylabel={Probability Density},
+                xtick={52, 68, 84, 100, 116, 132, 148},
+                xticklabels={52\\(-3sd), 68\\(-2sd), 84\\(-1sd), 100\\(M), 116\\(+1sd), 132\\ (+2sd), 148\\ (+3sd)},
+                xticklabel style={align=center, font=\small},
+                ytick=\empty,
+                domain=45:155,
+                samples=100,
+                height=6cm, width=10cm,
+                clip=false
+            ]
+            % Mathematically graph the normal density function directly without macro declarations
+            \addplot [very thick, cyan!70!black] {1/(16*sqrt(2*pi))*exp(-(x-100)^2/(2*16^2))};
+            
+            % Draw a clear vertical dashed center axis line for the sample mean
+            \draw [dashed, gray] (axis cs:100,0) -- (axis cs:100,0.024);
+            \draw [dashed, gray] (axis cs:116,0) -- (axis cs:116,0.014);
+            \draw [dashed, gray] (axis cs:132,0) -- (axis cs:132,0.0044);
+            \draw [dashed, gray] (axis cs:148,0) -- (axis cs:148,0.0008);
+            \draw [dashed, gray] (axis cs:84,0) -- (axis cs:84,0.014);
+            \draw [dashed, gray] (axis cs:68,0) -- (axis cs:68,0.0044);
+            \draw [dashed, gray] (axis cs:52,0) -- (axis cs:52,0.0008);
+            \end{axis}
+            \end{tikzpicture}
+        </latex-image>
+    </image>
+</figure>
+
+
+    </solution>
+</example>
 
 <definition xml:id="def-empirical-rule">
     <title>The empirical rule</title>
@@ -235,6 +305,76 @@ typically follow this bell-shaped trajectory when plotted in mass quantities.
     called the 68-95-99.7 rule.
 </p>
 
+<example xml:id="example-iq-empirical-rule">
+    <title>Applying the Empirical Rule to IQ Scores</title>
+    <statement>
+        <p>
+            Return to the distribution of IQ scores from <xref ref="example-iq-normal-curve" />. 
+            Recall that IQ scores follow a normal distribution with a mean of 100 and 
+            a standard deviation of 16 (see <xref ref="fig-iq-normal-curve" />).
+        </p>
+        <p>
+            <ol label="1">
+                <li>
+                    <p>According to the Empirical Rule, approximately 
+                        what percentage of people have IQ scores between 68 and 132?</p>
+                </li>
+                <li>
+                    <p>According to the Empirical Rule, approximately 99.7% of people 
+                        have IQ scores between what two values?</p>
+                </li>
+                <li>
+                    <p>According to the Empirical Rule, approximately 
+                        what percentage of people have an IQ score greater than 116?</p>
+                </li>
+                <li>
+                    <p>According to the Empirical Rule, approximately 
+                        what percentage of people have an IQ score less than 68?</p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            The Empirical Rule (or 68-95-99.7 Rule) states that for a normally distributed dataset, 
+            approximately 68% of the data falls within 1 standard deviation of the mean, 
+            95% falls within 2 standard deviations, and 99.7% falls within 3 standard deviations. Given <m>Mean = 100</m> and <m>sd = 16</m>:
+        </p>
+        <p>
+            <ol label="1">
+                <li>
+                    <p>
+                        The scores <m>68</m> and <m>132</m> represent exactly two standard deviations below and above the mean, respectively:
+                        <me>100 - 2(16) = 68 \quad \text{and} \quad 100 + 2(16) = 132</me>
+                        According to the Empirical Rule, approximately <bold>95%</bold> of people have IQ scores within this range.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The rule states that 99.7% of data falls within 3 standard deviations of the mean (<m>\pm 3s</m>):
+                        <me>100 - 3(16) = 52 \quad \text{and} \quad 100 + 3(16) = 148</me>
+                        Therefore, 99.7% of people have IQ scores between <bold>52 and 148</bold>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        An IQ score of 116 is exactly 1 standard deviation above the mean (<m>100 + 16 = 116</m>). Since 68% of people fall within 1 standard deviation (<m>84</m> to <m>116</m>), the remaining 32% are split equally between both outer tails. 
+                        <me>\frac{100\% - 68\%}{2} = 16\%</me>
+                        Thus, approximately <bold>16%</bold> of people have an IQ score greater than 116.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        A score of 68 is exactly 2 standard deviations below the mean. Since 95% of people fall within 2 standard deviations (<m>68</m> to <m>132</m>), the remaining 5% are distributed evenly across the outer left and right tails.
+                        <me>\frac{100\% - 95\%}{2} = 2.5\%</me>
+                        Thus, approximately <bold>2.5%</bold> of people have an IQ score less than 68.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </solution>
+</example>
+
 <example xml:id="exam-height-distribution">
     <title>Human Height Distribution</title>
     <statement>
@@ -249,16 +389,59 @@ typically follow this bell-shaped trajectory when plotted in mass quantities.
             Since the mean is 5' 10" and the standard deviation is 1.5", a height of 6' 1" is exactly 3 inches 
             above the mean. This places it exactly <m>2</m> standard deviations above the average.
         </p>
+        <figure xml:id="fig-male-height-normal-curve">
+    <caption>Normal distribution curve for U.S. adult male height (<m>Mean = 70</m>, <m>sd = 1.5</m>).</caption>
+    <image xml:id="img-male-height-curve" width="80%">
+        <description>A bell-shaped normal curve centered at 70 inches (5 foot 10), showing standard deviation intervals from 65.5 to 74.5 inches.</description>
+        <latex-image>
+            \begin{tikzpicture}
+            \begin{axis} [
+                no markers,
+                domain=64.5:75.5,
+                samples=100,
+                ymin=0, ymax=0.3,
+                axis lines=left,
+                xlabel={Height (Inches)},
+                ylabel={Probability Density},
+                height=6cm, width=10cm,
+                xtick={65.5, 67, 68.5, 70, 71.5, 73, 74.5},
+                xticklabels={65.5, 67, 68.5, 70(Mean), 71.5, 73, 74.5},
+                xticklabel style={align=center, font=\small},
+                ytick=\empty,
+                grid=none
+            ]
+            % Mathematically graph the normal density function for mean=70, sd=1.5
+            \addplot [very thick, cyan!70!black] {1/(1.5*sqrt(2*pi))*exp(-(x-70)^2/4.5)};
+            
+            % Draw a dashed vertical line for the mean height (70 inches)
+            \draw [dashed, red, thick] (axis cs:70,0) -- (axis cs:70,0.266);
+            \draw [dashed, red, thick] (axis cs:71.5,0) -- (axis cs:71.5,0.15);
+            \draw [dashed, red, thick] (axis cs:73,0) -- (axis cs:73,0.044);
+            \draw [dashed, red, thick] (axis cs:74.5,0) -- (axis cs:74.5,0.01);
+            \draw [dashed, red, thick] (axis cs:68.5,0) -- (axis cs:68.5,0.15);
+            \draw [dashed, red, thick] (axis cs:67,0) -- (axis cs:67,0.044);
+            \draw [dashed, red, thick] (axis cs:65.5,0) -- (axis cs:65.5,0.01);
+            \end{axis}
+            \end{tikzpicture}
+        </latex-image>
+    </image>
+</figure>
+
         <p>
-            According to the empirical rule, about <percent>95</percent> of data falls within <m>2</m> standard 
-            deviations of the mean, meaning <percent>5</percent> falls outside this range. Because the distribution 
-            is symmetrical, half of that remaining amount (<percent>2.5</percent>) sits in the upper tail. 
-            Therefore, only about <percent>2.5</percent> of men are taller than 6' 1", making them quite rare in this population.
+            Since the mean is 5' 10" (70") and the standard deviation is 1.5", a height of 6' 1" (73") is exactly 3 inches 
+            above the mean. This places it exactly <m>2</m> standard deviations above the average.
+        </p>
+        <p>
+            According to the empirical rule, about 95% of data falls within <m>2</m> standard 
+            deviations of the mean, meaning 5% falls outside this range. Because the distribution 
+            is symmetrical, half of that remaining amount (2.5%) sits in the upper tail. 
+            Therefore, only about 2.5% of men are taller than 6' 1", making them quite rare 
+            in this population.
         </p>
     </solution>
 </example>
 
-<example xml:id="exam-high-jump-distribution">
+<exercise xml:id="exercise-high-jump-distribution">
     <title>High School High Jumpers</title>
     <statement>
         <p>
@@ -272,15 +455,15 @@ typically follow this bell-shaped trajectory when plotted in mass quantities.
             standard deviations above the mean is 6' 3.9".
         </p>
         <p>
-            According to the empirical rule, <percent>95</percent> of all jumpers max out within <m>2</m> standard 
-            deviations of the mean. This leaves <percent>5</percent> split equally between the extremely low and 
-            extremely high ends. This means that less than <percent>2.5</percent> of jumpers clear 6' 3.9", 
+            According to the empirical rule, 95% of all jumpers max out within <m>2</m> standard 
+            deviations of the mean. This leaves 5% split equally between the extremely low and 
+            extremely high ends. This means that less than 2.5% of jumpers clear 6' 3.9", 
             making it very unusual to see a competitor exceed this height.
         </p>
     </solution>
-</example>
+</exercise>
 
-<example xml:id="exam-snow-depth-distribution">
+<exercise xml:id="exercise-snow-depth-distribution">
     <title>Yard Snow Depth Distribution</title>
     <statement>
         <p>
@@ -302,94 +485,7 @@ typically follow this bell-shaped trajectory when plotted in mass quantities.
             (or <m>0.68</m>).
         </p>
     </solution>
-</example>
-
-<exercise xml:id="exer-women-height-distribution">
-    <statement>
-        <p>
-            Suppose the height of adult women in the United States is normally distributed with a mean of 5' 8" 
-            and a standard deviation of <m>1.5</m>". What is the probability that a randomly chosen woman 
-            in the United States is shorter than 5' 5"?
-        </p>
-        
-        <figure xml:id="fig-women-height-tail">
-            <caption>Normal distribution curve of women's heights with the lower tail below 5' 5" shaded.</caption>
-            <image xml:id="img-women-height-tail" width="80%">
-                <description>A normal distribution curve centered at 5 feet 8 inches. The area under the curve to the left of 5 feet 5 inches is shaded in blue, representing the lower 2.5 percent of the population.</description>
-                <latex-image>
-                    \begin{tikzpicture}[x=1.2cm, y=10cm]
-                    
-                    % Shaded lower tail region (below -2 standard deviations)
-                    \fill[blue!30] plot[domain=-3.5:-2, samples=20] (\x, {1/(sqrt(2*3.14159))*exp(-\x*\x/2)}) -- (-2,0) -- (-3.5,0) -- cycle;
-                    
-                    % Draw the normal distribution curve
-                    \draw[very thick, black] plot[domain=-3.5:3.5, samples=50] (\x, {1/(sqrt(2*3.14159))*exp(-\x*\x/2)});
-                    
-                    % Vertical dashed standard deviation lines
-                    \draw[gray!40, dashed] (-3, 0) -- (-3, 0.0044);
-                    \draw[gray!40, dashed] (-2, 0) -- (-2, 0.054);
-                    \draw[gray!40, dashed] (-1, 0) -- (-1, 0.242);
-                    \draw[gray!40, dashed] (0, 0)  -- (0, 0.398);
-                    \draw[gray!40, dashed] (1, 0)  -- (1, 0.242);
-                    \draw[gray!40, dashed] (2, 0)  -- (2, 0.054);
-                    \draw[gray!40, dashed] (3, 0)  -- (3, 0.0044);
-                    
-                    % Simple flat horizontal base axis line
-                    \draw[thick] (-3.5, 0) -- (3.5, 0);
-                    
-                    % Height Labels on Axis
-                    \node[below=2pt] at (0, 0)  {5'8''};
-                    \node[below=2pt] at (1, 0)  {5'9.5''};
-                    \node[below=2pt] at (-1, 0) {5'6.5''};
-                    \node[below=2pt] at (2, 0)  {5'11''};
-                    \node[below=2pt] at (-2, 0) {5'5''};
-                    \node[below=2pt] at (3, 0)  {6'0.5''};
-                    \node[below=2pt] at (-3, 0) {5'3.5''};
-                    
-                    % Label pointing out the shaded 2.5% area
-                    \node[text=blue!80!black, font=\small] at (-2.6, 0.06) {2.5\%};
-                    \draw[thick, blue!80!black] (-2.5, 0.04) -- (-2.2, 0.01);
-                    
-                    \end{tikzpicture}
-                </latex-image>
-            </image>
-        </figure>
-    </statement>
-    <solution>
-        <p>
-            First, determine how many standard deviations 5' 5" is from the mean of 5'8". 
-            Since each standard deviation is <m>1.5</m>", a height of 5' 6.5" is <m>1</m> standard deviation 
-            below the mean, and 5' 5" is exactly <m>2</m> standard deviations below the mean.
-        </p>
-        <p>
-            We can find the total percentage of women who are 5' 5" or taller by adding up the known regions 
-            of the normal distribution:
-        </p>
-        <ul>
-            <li>
-                <p>50% of women are taller than the mean of 5' 8".</p>
-            </li>
-            <li>
-                <p>34% of women are between 5' 6.5" and 5' 8" (within <m>1</m> standard deviation below the mean).</p>
-            </li>
-            <li>
-                <p>13.5% of women are between 5' 5" and 5' 6.5" (between <m>1</m> and <m>2</m> standard deviations below the mean).</p>
-            </li>
-        </ul>
-        <p>
-            Adding these regions together gives: <m>50\% + 34\% + 13.5\% = 97.5\%</m>. 
-            Since 97.5% of women are 5' 5" or taller, the remaining portion is 
-            <m>100\% - 97.5\% = 2.5\%</m>.
-        </p>
-        <p>
-            <em>Alternative Method:</em> The empirical rule states that 95% of the data 
-            falls within <m>2</m> standard deviations of the mean. This leaves 5% split equally 
-            between the two extreme outer tails (<m>5\% \div 2 = 2.5\%</m>). Therefore, the probability that a 
-            randomly chosen woman is shorter than 5' 5" is 2.5% (or <m>0.025</m>).
-        </p>
-    </solution>
 </exercise>
-
 
 
 

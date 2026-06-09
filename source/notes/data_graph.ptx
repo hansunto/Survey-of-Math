@@ -20,6 +20,10 @@
   </p>
 </introduction>
 
+  <!-- =================================================================== -->
+  <!-- SUBSECTION: frequency table                                                 -->
+  <!-- =================================================================== -->
+ 
 <assemblage xml:id="assemblage-">
   <title>Frequency Table</title>
   <p> A frequency table consists of two columns. The first column
@@ -29,6 +33,90 @@ each value occurs.
 </p>
 </assemblage>
 
+<example xml:id="example-stress-levels">
+  <statement>
+<p> A questionnaire was given to students in an introductory statistics
+class during the first week of the course. One question asked, ``How stressed have you
+been in the last 2 1/2 weeks, on a scale of 0 to 10, with 0 being not at all stressed and
+10 being as stressed as possible?” The students' responses are shown in the frequency
+table. Use this frequency table to answer the following questions.  
+</p>
+<table xml:id="table-stress-levels">
+  <title>Stress Levels of Students</title>
+  <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+    <row header="yes">
+      <cell>Stress Level</cell>
+      <cell>Frequency</cell>
+    </row>
+    <row>
+      <cell>0</cell>
+      <cell>2</cell>
+    </row>
+    <row>
+      <cell>1</cell>
+      <cell>3</cell>
+    </row>
+    <row>
+      <cell>2</cell>
+      <cell>5</cell>
+    </row>
+    <row>
+      <cell>3</cell>
+      <cell>8</cell>
+    </row>
+    <row>
+      <cell>4</cell>
+      <cell>12</cell>
+    </row>
+    <row>
+      <cell>5</cell>
+      <cell>10</cell>
+    </row>
+    <row>
+      <cell>6</cell>
+      <cell>13</cell>
+    </row>
+    <row>
+      <cell>7</cell>
+      <cell>31</cell>
+    </row>
+    <row>
+      <cell>8</cell>
+      <cell>26</cell>
+    </row>
+    <row>
+      <cell>9</cell>
+      <cell>11</cell>
+    </row>
+    <row bottom="minor">
+      <cell>10</cell>
+      <cell>9</cell>
+    </row>
+  </tabular>
+</table>
+<p>
+  <ol> 
+<li> Which stress rating describes the greatest number of students? How many students
+responded with this rating? </li>
+<li> Which stress rating describes the least number of students? How many students
+responded with this rating? </li>
+<li> How many students were involved in this study? </li>
+<li> How many students had a stress rating of 8 or more? </li>  
+  </ol>
+</p>
+  </statement>
+  <solution>
+    <ol>
+      <li> The most common stress level is 7, with 31 students responding with this rating. </li>
+      <li> The least common stress level is 0, with 2 students responding with this rating. </li>
+      <li> A total of 140 students were involved in this study. 
+        <me>2 + 3 + 5 + 8 + 12 + 10 + 13 + 31 + 26 + 11 + 9 = 140</me>
+      </li>
+      <li> The number of students who had a stress rating of 8 or more is:
+      <me>26 + 11 + 9 = 46</me> </li>
+    </ol>
+  </solution>
+</example>
 
 <example xml:id="example-nfl-touchdowns-table">
   <statement>
@@ -141,7 +229,10 @@ each value occurs.
   </solution>
 </example>
 
-
+  <!-- =================================================================== -->
+  <!-- SUBSECTION: Bar Graphs                                                  -->
+  <!-- =================================================================== -->
+ 
 <definition xml:id="def-bar-graphs">
   <title>Bar graph</title>
   <statement>
@@ -228,6 +319,27 @@ each value occurs.
       January (15 units), February (22 units), and March (18 units). 
       Determine which category goes on each axis to construct a vertical bar graph.
     </p>
+</statement>
+  
+  <solution>
+  <p>
+      To construct a standard vertical bar graph, the independent nominal categories must be placed along the baseline axis, while the numerical quantitative metrics track along the vertical boundary:
+      <ul>
+        <li>
+          <p>
+            <strong>Horizontal Axis (x-axis):</strong> Contains the <alert>Months</alert> (January, February, and March).
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Vertical Axis (y-axis):</strong> Tracks the quantitative scale for <alert>Units Sold</alert> (ranging from 0 up to at least 22).
+          </p>
+        </li>
+      </ul>
+    </p>
+     <p>
+      Each bar's height will correspond to the number of laptops sold in that month, allowing for an immediate visual comparison across the three categories.
+    </p>
 
     <figure xml:id="fig-vertical-bar-graph">
       <caption>Sample structure for a vertical bar graph.</caption>
@@ -264,24 +376,6 @@ each value occurs.
         </latex-image>
       </image>
     </figure>
-  </statement>
-  
-  <solution>
-    <p>
-      To construct a standard vertical bar graph, the independent nominal categories must be placed along the baseline axis, while the numerical quantitative metrics track along the vertical boundary:
-      <ul>
-        <li>
-          <p>
-            <strong>Horizontal Axis (x-axis):</strong> Contains the <alert>Months</alert> (January, February, and March).
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Vertical Axis (y-axis):</strong> Tracks the quantitative scale for <alert>Units Sold</alert> (ranging from 0 up to at least 22).
-          </p>
-        </li>
-      </ul>
-    </p>
   </solution>
 </example>
 
@@ -336,7 +430,9 @@ each value occurs.
       <me>n = 25 + 52 + 41 + 36 + 39 + 23 = 216</me>
     </p>
     <p>
-      Next, we calculate the relative frequency (percentage) for each color category using the formula <m>\text{Relative Frequency} = \frac{\text{Frequency}}{n} \times 100\%</m>. Rounding to two decimal places, we find:
+      Next, we calculate the relative frequency (percentage) for each color category 
+      using the formula <m>\text{Relative Frequency} = \dfrac{\text{Frequency}}{n} \times 100\%</m>. 
+      Rounding to two decimal places, we find:
     </p>
     <p>
       <ul>
@@ -349,7 +445,9 @@ each value occurs.
       </ul>
     </p>
     <p>
-      The data suggests that <alert>Green</alert> vehicles accounted for the largest share of total-loss collisions (<m>24.07\%</m>), while <alert>Grey</alert> vehicles accounted for the lowest share (<m>10.65\%</m>).
+      The data suggests that <alert>Green</alert> vehicles accounted for the largest share 
+      of total-loss collisions (<m>24.07\%</m>), while <alert>Grey</alert> vehicles accounted 
+      for the lowest share (<m>10.65\%</m>).
     </p>
 
 <example xml:id="ex-car-color-bar-graph">
@@ -358,6 +456,25 @@ each value occurs.
       Using the total-loss collision dataset compiled by the insurance provider 
       in <xref ref="table-car-color-frequencies" />, construct a bar graph to visually 
       model the distribution of vehicle colors.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      To construct the bar graph, we map each vehicle color category along the horizontal axis (x-axis) and place the frequency counts along the vertical axis (y-axis). 
+      The height of each rectangular column corresponds exactly to its recorded category frequency:
+    </p>
+    <p>
+      <ul>
+        <li><p><alert>Blue:</alert> 25 units high</p></li>
+        <li><p><alert>Green:</alert> 52 units high</p></li>
+        <li><p><alert>Red:</alert> 41 units high</p></li>
+        <li><p><alert>White:</alert> 36 units high</p></li>
+        <li><p><alert>Black:</alert> 39 units high</p></li>
+        <li><p><alert>Grey:</alert> 23 units high</p></li>
+      </ul>
+    </p>
+    <p>
+      This layout provides an immediate visual hierarchy, showing that green cars are involved in more total-loss accidents than any other color in this sample group.
     </p>
 
 <figure xml:id="fig-car-color-bar-graph">
@@ -399,27 +516,6 @@ each value occurs.
     </latex-image>
   </image>
 </figure>
-
-
-  </statement>
-  <solution>
-    <p>
-      To construct the bar graph, we map each vehicle color category along the horizontal axis (x-axis) and place the frequency counts along the vertical axis (y-axis). 
-      The height of each rectangular column corresponds exactly to its recorded category frequency:
-    </p>
-    <p>
-      <ul>
-        <li><p><alert>Blue:</alert> 25 units high</p></li>
-        <li><p><alert>Green:</alert> 52 units high</p></li>
-        <li><p><alert>Red:</alert> 41 units high</p></li>
-        <li><p><alert>White:</alert> 36 units high</p></li>
-        <li><p><alert>Black:</alert> 39 units high</p></li>
-        <li><p><alert>Grey:</alert> 23 units high</p></li>
-      </ul>
-    </p>
-    <p>
-      This layout provides an immediate visual hierarchy, showing that green cars are involved in more total-loss accidents than any other color in this sample group.
-    </p>
   </solution>
 </example>
 
@@ -473,369 +569,17 @@ each value occurs.
   </solution>
 </exercise>
 
-<definition xml:id="def-line-graphs">
-  <title>Line graph</title>
-  <statement>
-    <p>
-      <alert>Line graphs</alert> are ideal for illustrating trends and demonstrating how numbers fluctuate over a continuous period. This format displays a sequential series of specific data points—frequently referred to as markers—that are connected by straight lines to show a clear trajectory.
-    </p>
-  </statement>
-</definition>
-
-<p>
-  A common application includes tracking macroeconomic variables, 
-  such as a city's average monthly temperature or a company's fluctuating stock 
-  prices throughout a fiscal year.
-</p>
-
-<example>
-  <statement>
-    <p>
-      An analyst records the stock price of a company over four days: Day 1 (<m>\$10</m>), Day 2 (<m>\$15</m>), Day 3 (<m>\$12</m>), and Day 4 (<m>\$20</m>). Describe the overall trend shown by connecting these data points on a line graph.
-    </p>
-
-    <figure xml:id="fig-stock-price-trend">
-      <caption>Sample trajectory for a continuous trend line.</caption>
-      <image xml:id="img-stock-line-graph" width="80%">
-        <description>A continuous line graph tracking stock prices over 4 days. The horizontal axis tracks days 1 through 4, and the vertical axis spans from \$5 to \$25. A solid blue line connects the markers: rising from \$10 on Day 1 to \$15 on Day 2, dipping down to \$12 on Day 3, and peaking sharply at \$20 on Day 4.</description>
-        <latex-image>
-          \begin{tikzpicture}
-          \begin{axis}[
-              xlabel={Day},
-              ylabel={Stock Price (\$)},
-              xtick={1,2,3,4},
-              xmin=0.5, xmax=4.5,
-              ymin=5, ymax=25,
-              grid=major,
-              grid style={dashed, gray!30},
-              axis lines=left
-          ]
-          \addplot[
-              color=blue,
-              mark=*,
-              thick,
-              mark size=3pt
-          ] coordinates {
-              (1,10)
-              (2,15)
-              (3,12)
-              (4,20)
-          };
-          \end{axis}
-          \end{tikzpicture}
-        </latex-image>
-      </image>
-    </figure>
-  </statement>
-
-  <solution>
-    <p>
-      The line segments will move upward from Day 1 to Day 2, slope downward from Day 2 to Day 3, and then rise sharply from Day 3 to Day 4. Despite the mid-period dip on Day 3, the overall trend over the four-day period is upward.
-    </p>
-  </solution>
-</example>
-
-<example xml:id="ex-car-color-line-graph">
-  <statement>
-    <p>
-      Using the total-loss collision dataset compiled by the insurance provider in 
-      <xref ref="table-car-color-frequencies" />, construct a line graph to visually 
-      model the distribution of vehicle colors.
-    </p>
-    <figure xml:id="fig-car-color-line-graph">
-    <caption>Line Graph of Total-Loss Collisions by Vehicle Color</caption>
-    <image xml:id="img-car-color-line-chart" width="80%">
-      <description>A line graph plotting car colors on the horizontal axis against collision frequencies on the vertical axis. The vertical axis scales from 0 to 60. A line connects data markers starting at Blue (25), rising sharply to Green (52), dropping to Red (41) and White (36), rising slightly to Black (39), and falling to its lowest point at Grey (23).</description>
-      <latex-image>
-        \begin{tikzpicture}
-          \begin{axis} [
-            xlabel={Vehicle Color},
-            ylabel={Frequency (Accidents)},
-            xtick={1,2,3,4,5,6},
-            xticklabels={Blue, Green, Red, White, Black, Grey},
-            xmin=0.5,
-            xmax=6.5,
-            ymin=0,
-            ymax=60,
-            grid=major,
-            grid style={dashed, gray!30},
-            axis lines=left
-          ]
-            \addplot[
-              color=blue,
-              mark=*,
-              thick,
-              mark size=3pt
-            ] coordinates {
-              (1,25)
-              (2,52)
-              (3,41)
-              (4,36)
-              (5,39)
-              (6,23)
-            };
-          \end{axis}
-        \end{tikzpicture}
-      </latex-image>
-    </image>
-  </figure>
-  </statement>
-  
-  <solution>
-    <p>
-      To construct a line graph for this dataset, we plot the vehicle color categories along the horizontal axis and the collision frequencies on the vertical axis. Instead of drawing columns, we plot a single coordinate point for each category and connect them sequentially with straight line segments:
-    </p>
-    <p>
-      <ul>
-        <li><p><alert>Blue:</alert> Point at 25</p></li>
-        <li><p><alert>Green:</alert> Point at 52</p></li>
-        <li><p><alert>Red:</alert> Point at 41</p></li>
-        <li><p><alert>White:</alert> Point at 36</p></li>
-        <li><p><alert>Black:</alert> Point at 39</p></li>
-        <li><p><alert>Grey:</alert> Point at 23</p></li>
-      </ul>
-    </p>
-    <p>
-      This visualization allows us to trace the ups and downs across categories, showing a sharp peak at Green and a drop at Grey.
-    </p>
-  </solution>
-
-</example>
-
-<exercise>
-  <statement>
-    <p>
-      A patient's body temperature is recorded every hour: Hour 1 (<m>98.6^\circ\text{F}</m>), Hour 2 (<m>100.2^\circ\text{F}</m>), Hour 3 (<m>101.5^\circ\text{F}</m>), and Hour 4 (<m>99.1^\circ\text{F}</m>). Between which two hours does the line graph show the sharpest increase?
-    </p>
-  </statement>
-
-  <solution>
-    <p>
-      To find the sharpest increase, we calculate the differences between consecutive hourly measurements:
-    </p>
-    <p>
-      The increase from Hour 1 to Hour 2 is:
-      <me>100.2 - 98.6 = 1.6^\circ\text{F}</me>
-      The increase from Hour 2 to Hour 3 is:
-      <me>101.5 - 100.2 = 1.3^\circ\text{F}</me>
-    </p>
-    <p>
-      Comparing these calculations, the graph shows the sharpest increase between <strong>Hour 1 and Hour 2</strong>.
-    </p>
-
-    <figure xml:id="fig-patient-temp-trend">
-      <caption>Hourly tracking of patient body temperature.</caption>
-      <image xml:id="img-patient-temp-line" width="80%">
-        <description>A continuous line graph tracking a patient's temperature over 4 hours. The horizontal axis maps hours 1 to 4, and the vertical axis scales from 97 to 103 degrees Fahrenheit. A solid blue line rises from 98.6 degrees at Hour 1 to 100.2 degrees at Hour 2, climbs further to 101.5 degrees at Hour 3, and then falls down to 99.1 degrees at Hour 4.</description>
-        <latex-image>
-          \begin{tikzpicture}
-          \begin{axis}[
-              xlabel={Hour},
-              ylabel={Temperature ($^\circ$F)},
-              xtick={1,2,3,4},
-              xmin=0.5, xmax=4.5,
-              ymin=97, ymax=103,
-              grid=major,
-              grid style={dashed, gray!30},
-              axis lines=left
-          ]
-          \addplot[
-              color=blue,
-              mark=*,
-              thick,
-              mark size=3pt
-          ] coordinates {
-              (1,98.6)
-              (2,100.2)
-              (3,101.5)
-              (4,99.1)
-          };
-          \end{axis}
-          \end{tikzpicture}
-        </latex-image>
-      </image>
-    </figure>
-  </solution>
-</exercise>
-
-<definition xml:id="def-pie-charts">
-  <title>Pie Chart</title>
-  <statement>
-    <p>
-      <alert>Pie charts</alert> are designed for visualizing proportions and 
-      showing how a single, cohesive entity is divided into individual parts. 
-      The chart consists of a circle divided into sectors, or slices, where the 
-      arc length and central angle of each slice are strictly proportional to the 
-      percentage of the total dataset it represents.
-    </p>
-  </statement>
-</definition>
-
-<p>
-  In corporate finance, a pie chart is often deployed to display market share 
-  distribution among competing companies within a specific industry.
-</p>
-
-<example xml:id="ex-budget-pie-chart">
-  <statement>
-    <p>
-      A budget consists of <m>\$500</m> for Rent, <m>\$250</m> for Food, and <m>\$250</m> for Utilities. Calculate the percentage of the pie chart slice that represents Rent.
-    </p>
-
-    <figure xml:id="fig-budget-distribution">
-      <caption>Proportional slice distribution in a circular layout.</caption>
-      <image xml:id="img-budget-pie" width="60%">
-        <description>A circular pie chart divided into three colored budget sections. The bottom half of the circle is blue and represents Rent at 50 percent. The top right quadrant is green and represents Food at 25 percent. The top left quadrant is orange and represents Utilities at 25 percent.</description>
-        <latex-image>
-          \begin{tikzpicture}
-          \draw[thick, fill=gray!10] (0,0) circle (2cm);
-          \draw[thick, fill=blue!30] (0,0) -- (180:2cm) arc (180:360:2cm) -- cycle;
-          \draw[thick, fill=green!30] (0,0) -- (0:2cm) arc (0:90:2cm) -- cycle;
-          \draw[thick, fill=orange!30] (0,0) -- (90:2cm) arc (90:180:2cm) -- cycle;
-          \node at (45:1.6cm) {\small Food (25\%)};
-          \node at (135:0.9cm) {\small Utilities (25\%)};
-          \node at (270:1.0cm) {\small Rent (50\%)};
-          \end{tikzpicture}
-        </latex-image>
-      </image>
-    </figure>
-  </statement>
-
-  <solution>
-    <p>
-      First, find the total budget by summing the individual expenses:
-      <me>500 + 250 + 250 = 1000</me>
-    </p>
-    <p>
-      Next, divide the Rent cost by the total budget to find its proportion:
-      <me>\frac{500}{1000} = 0.50</me>
-    </p>
-    <p>
-      Multiply by 100 to convert the decimal into a percentage:
-      <me>0.50 \times 100 = 50\%</me>
-    </p>
-    <p>
-      The Rent slice will take up exactly half (<strong>50%</strong>) of the pie chart.
-    </p>
-  </solution>
-</example>
-
-<example xml:id="ex-car-color-pie-chart">
-  <statement>
-    <p>
-      Using the total-loss collision dataset compiled by the insurance provider in 
-      <xref ref="table-car-color-frequencies" />, construct a pie chart to visually 
-      model the distribution of vehicle colors.
-    </p>
-
-  <figure xml:id="fig-car-color-pie-chart">
-    <caption>Pie Chart of Total-Loss Collisions by Vehicle Color</caption>
-    <image xml:id="img-car-color-pie-chart" width="70%">
-      <description>A circular pie chart divided into six colored sectors representing the proportion of vehicle collisions. Green is the largest slice at 24.1 percent, followed by Red at 19 percent, Black at 18.1 percent, White at 16.7 percent, Blue at 11.6 percent, and Grey as the smallest slice at 10.6 percent.</description>
-      <latex-image>
-        \begin{tikzpicture}[scale=1.5]
-          % Blue slice: 0 to 41.7
-          \draw[fill=blue!30, draw=black] (0,0) -- (0:2) arc (0:41.7:2) -- cycle;
-          \node at (20.85:1.4) {\small 11.6\%};
-          \node at (20.85:2.4) {Blue};
-
-          % Green slice: 41.7 to 128.4 (41.7 + 86.7)
-          \draw[fill=green!40!gray, draw=black] (0,0) -- (41.7:2) arc (41.7:128.4:2) -- cycle;
-          \node at (85.05:1.4) {\small 24.1\%};
-          \node at (85.05:2.4) {Green};
-
-          % Red slice: 128.4 to 196.7 (128.4 + 68.3)
-          \draw[fill=red!40, draw=black] (0,0) -- (128.4:2) arc (128.4:196.7:2) -- cycle;
-          \node at (162.55:1.4) {\small 19.0\%};
-          \node at (162.55:2.4) {Red};
-
-          % White slice: 196.7 to 256.7 (196.7 + 60.0)
-          \draw[fill=white!90!gray, draw=black] (0,0) -- (196.7:2) arc (196.7:256.7:2) -- cycle;
-          \node at (226.7:1.4) {\small 16.7\%};
-          \node at (226.7:2.4) {White};
-
-          % Black slice: 256.7 to 321.7 (256.7 + 65.0)
-          \draw[fill=black!40, draw=black] (0,0) -- (256.7:2) arc (256.7:321.7:2) -- cycle;
-          \node at (289.2:1.4) {\small 18.1\%};
-          \node at (289.2:2.4) {Black};
-
-          % Grey slice: 321.7 to 360.0 (321.7 + 38.3)
-          \draw[fill=gray!60, draw=black] (0,0) -- (321.7:2) arc (321.7:360:2) -- cycle;
-          \node at (340.85:1.4) {\small 10.6\%};
-          \node at (340.85:2.4) {Grey};
-        \end{tikzpicture}
-      </latex-image>
-    </image>
-  </figure>
-  </statement>
-  
-  <solution>
-    <p>
-      To construct a pie chart, we convert each category's frequency into a proportional central angle of a circle (<m>360^{\circ}</m>). Using the total sample size (<m>n = 216</m>), the angle for each slice is calculated using the formula <m>\text{Angle} = \frac{\text{Frequency}}{216} \times 360^{\circ}</m>:
-    </p>
-    <p>
-      <ul>
-        <li><p><alert>Blue:</alert> <m>\frac{25}{216} \times 360^{\circ} \approx 41.7^{\circ}</m> (<m>11.57\%</m>)</p></li>
-        <li><p><alert>Green:</alert> <m>\frac{52}{216} \times 360^{\circ} \approx 86.7^{\circ}</m> (<m>24.07\%</m>)</p></li>
-        <li><p><alert>Red:</alert> <m>\frac{41}{216} \times 360^{\circ} \approx 68.3^{\circ}</m> (<m>18.98\%</m>)</p></li>
-        <li><p><alert>White:</alert> <m>\frac{36}{216} \times 360^{\circ} \approx 60.0^{\circ}</m> (<m>16.67\%</m>)</p></li>
-        <li><p><alert>Black:</alert> <m>\frac{39}{216} \times 360^{\circ} \approx 65.0^{\circ}</m> (<m>18.06\%</m>)</p></li>
-        <li><p><alert>Grey:</alert> <m>\frac{23}{216} \times 360^{\circ} \approx 38.3^{\circ}</m> (<m>10.65\%</m>)</p></li>
-      </ul>
-    </p>
-    <p>
-      Each sector is drawn sequentially around the center of the circle to construct the final visual proportion.
-    </p>
-  </solution>
-
-</example>
-
-<exercise>
-  <statement>
-    <p>
-      A survey of 200 people shows that 100 prefer vanilla ice cream, 60 prefer chocolate, and 40 prefer strawberry. What central angle degree should be used to draw the slice for chocolate?
-    </p>
-  </statement>
-
-  <solution>
-    <p>
-      The proportion for chocolate is:
-      <me>\frac{60}{200} = 0.30 \quad (30\%)</me>
-      Since a full circle has <m>360^\circ</m>, multiply the proportion by 360 to find the central angle:
-      <me>0.30 \times 360 = 108</me>
-      The chocolate slice requires a central angle of <strong><m>108^\circ</m></strong>.
-    </p>
-
-    <figure xml:id="fig-ice-cream-preferences">
-      <caption>Pie chart representing ice cream flavor preferences.</caption>
-      <image xml:id="img-ice-cream-pie" width="60%">
-        <description>A circular pie chart divided into three distinct sections. The right half of the circle is yellow and represents Vanilla at 50 percent. The bottom-left sector is brown and represents Chocolate with a 108-degree angle at 30 percent. The top-left sector is pink and represents Strawberry at 20 percent.</description>
-        <latex-image>
-          \begin{tikzpicture}
-          \draw[thick, fill=gray!10] (0,0) circle (2cm);
-          % Vanilla: 50% (180 degrees from -90 to 90)
-          \draw[thick, fill=yellow!30] (0,0) -- (-90:2cm) arc (-90:90:2cm) -- cycle;
-          % Strawberry: 20% (72 degrees from 90 to 162)
-          \draw[thick, fill=pink!40] (0,0) -- (90:2cm) arc (90:162:2cm) -- cycle;
-          % Chocolate: 30% (108 degrees from 162 to 270)
-          \draw[thick, fill=brown!40] (0,0) -- (162:2cm) arc (162:270:2cm) -- cycle;
-          
-          \node at (0:1.0cm) {\small Vanilla (50\%)};
-          \node at (130:1.3cm) {\small Straw. (20\%)};
-          \node at (230:1.3cm) {\small Choc. (30\%)};
-          \end{tikzpicture}
-        </latex-image>
-      </image>
-    </figure>
-  </solution>
-</exercise>
-
 <p>
   After establishing class intervals and a corresponding frequency table for a quantitative dataset, we can construct a visual graph similar to a standard bar chart. 
   However, because quantitative data is numerical and continuous, the horizontal axis must be treated as an unbroken number line with no spacing between adjacent bars. 
   This specialized graphical representation is known as a <alert>histogram</alert>.
 </p>
 
+
+  <!-- =================================================================== -->
+  <!-- SUBSECTION: Histograms                                               -->
+  <!-- =================================================================== -->
+ 
   <definition xml:id="def-histograms">
     <title>Histogram</title>
     <statement>
@@ -857,6 +601,16 @@ each value occurs.
   <statement>
     <p>
       A gym records the workout durations of its members in minutes. The data is grouped into three continuous intervals: 0–20 minutes (5 people), 20–40 minutes (15 people), and 40–60 minutes (10 people). Determine the total sample size tracked across this histogram layout.
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      To find the total sample size, sum the frequencies represented by the height of each adjacent bar:
+      <me>5 + 15 + 10 = 30</me>
+    </p>
+    <p>
+      The histogram tracks a total sample size of <strong>30</strong> gym members.
     </p>
 
     <figure xml:id="fig-workout-durations-graph">
@@ -888,16 +642,6 @@ each value occurs.
       </image>
     </figure>
   
-  </statement>
-
-  <solution>
-    <p>
-      To find the total sample size, sum the frequencies represented by the height of each adjacent bar:
-      <me>5 + 15 + 10 = 30</me>
-    </p>
-    <p>
-      The histogram tracks a total sample size of <strong>30</strong> gym members.
-    </p>
   </solution>
 </example>
 
@@ -908,7 +652,23 @@ each value occurs.
       <xref ref="table-car-color-frequencies" />, construct a histogram-style bar 
       chart to visually model the distribution of vehicle colors.
     </p>
- <figure xml:id="fig-car-color-touching-bars">
+  </statement>
+
+  <solution>
+    <p>
+      To present this categorical data in a touching-bar format, we plot the vehicle color categories along the horizontal axis and the collision frequencies on the vertical axis. By adjusting our bar spacing properties, we can configure the rectangles to touch side-by-side:
+    </p>
+    <p>
+      <ul>
+        <li><p><alert>Blue:</alert> Bar height is 25</p></li>
+        <li><p><alert>Green:</alert> Bar height is 52</p></li>
+        <li><p><alert>Red:</alert> Bar height is 41</p></li>
+        <li><p><alert>White:</alert> Bar height is 36</p></li>
+        <li><p><alert>Black:</alert> Bar height is 39</p></li>
+        <li><p><alert>Grey:</alert> Bar height is 23</p></li>
+      </ul>
+    </p>
+    <figure xml:id="fig-car-color-touching-bars">
   <caption>Histogram-Style Visual Distribution of Vehicle Colors</caption>
   <image xml:id="img-car-color-touching-chart" width="70%">
     <description>A vertical bar chart plotting car colors on the horizontal axis against frequencies on the vertical axis. The bars touch each other directly using a histogram style layout. Blue reaches 25, Green reaches 52, Red reaches 41, White reaches 36, Black reaches 39, and Grey reaches 23.</description>
@@ -946,24 +706,6 @@ each value occurs.
     </latex-image>
   </image>
 </figure>
-
-
-  </statement>
-
-  <solution>
-    <p>
-      To present this categorical data in a touching-bar format, we plot the vehicle color categories along the horizontal axis and the collision frequencies on the vertical axis. By adjusting our bar spacing properties, we can configure the rectangles to touch side-by-side:
-    </p>
-    <p>
-      <ul>
-        <li><p><alert>Blue:</alert> Bar height is 25</p></li>
-        <li><p><alert>Green:</alert> Bar height is 52</p></li>
-        <li><p><alert>Red:</alert> Bar height is 41</p></li>
-        <li><p><alert>White:</alert> Bar height is 36</p></li>
-        <li><p><alert>Black:</alert> Bar height is 39</p></li>
-        <li><p><alert>Grey:</alert> Bar height is 23</p></li>
-      </ul>
-    </p>
   </solution>
 </example>
 
@@ -1066,6 +808,373 @@ each value occurs.
               (270,0)
           };
           \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+  </solution>
+</exercise>
+
+  <!-- =================================================================== -->
+  <!-- SUBSECTION: Line Graphs                                                 -->
+  <!-- =================================================================== -->
+ 
+<definition xml:id="def-line-graphs">
+  <title>Line graph</title>
+  <statement>
+    <p>
+      <alert>Line graphs</alert> are ideal for illustrating trends and demonstrating how numbers fluctuate over a continuous period. This format displays a sequential series of specific data points—frequently referred to as markers—that are connected by straight lines to show a clear trajectory.
+    </p>
+  </statement>
+</definition>
+
+<p>
+  A common application includes tracking macroeconomic variables, 
+  such as a city's average monthly temperature or a company's fluctuating stock 
+  prices throughout a fiscal year.
+</p>
+
+<example>
+  <statement>
+    <p>
+      An analyst records the stock price of a company over four days: 
+      Day 1 (<m>\$10</m>), Day 2 (<m>\$15</m>), Day 3 (<m>\$12</m>), 
+      and Day 4 (<m>\$20</m>). Describe the overall trend shown by connecting these data 
+      points on a line graph.
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      The line segments will move upward from Day 1 to Day 2, slope downward from Day 2 to Day 3, and then rise sharply from Day 3 to Day 4. Despite the mid-period dip on Day 3, the overall trend over the four-day period is upward.
+    </p>
+
+    <figure xml:id="fig-stock-price-trend">
+      <caption>Sample trajectory for a continuous trend line.</caption>
+      <image xml:id="img-stock-line-graph" width="80%">
+        <description>A continuous line graph tracking stock prices over 4 days. The horizontal axis tracks days 1 through 4, and the vertical axis spans from \$5 to \$25. A solid blue line connects the markers: rising from \$10 on Day 1 to \$15 on Day 2, dipping down to \$12 on Day 3, and peaking sharply at \$20 on Day 4.</description>
+        <latex-image>
+          \begin{tikzpicture}
+          \begin{axis}[
+              xlabel={Day},
+              ylabel={Stock Price (\$)},
+              xtick={1,2,3,4},
+              xmin=0.5, xmax=4.5,
+              ymin=5, ymax=25,
+              grid=major,
+              grid style={dashed, gray!30},
+              axis lines=left
+          ]
+          \addplot[
+              color=blue,
+              mark=*,
+              thick,
+              mark size=3pt
+          ] coordinates {
+              (1,10)
+              (2,15)
+              (3,12)
+              (4,20)
+          };
+          \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+
+  </solution>
+</example>
+
+<example xml:id="ex-car-color-line-graph">
+  <statement>
+    <p>
+      Using the total-loss collision dataset compiled by the insurance provider in 
+      <xref ref="table-car-color-frequencies" />, construct a line graph to visually 
+      model the distribution of vehicle colors.
+    </p>
+  </statement>
+  
+  <solution>
+    <p>
+      To construct a line graph for this dataset, we plot the vehicle color categories along the horizontal axis and the collision frequencies on the vertical axis. Instead of drawing columns, we plot a single coordinate point for each category and connect them sequentially with straight line segments:
+    </p>
+    <p>
+      <ul>
+        <li><p><alert>Blue:</alert> Point at 25</p></li>
+        <li><p><alert>Green:</alert> Point at 52</p></li>
+        <li><p><alert>Red:</alert> Point at 41</p></li>
+        <li><p><alert>White:</alert> Point at 36</p></li>
+        <li><p><alert>Black:</alert> Point at 39</p></li>
+        <li><p><alert>Grey:</alert> Point at 23</p></li>
+      </ul>
+    </p>
+    <p>
+      This visualization allows us to trace the ups and downs across categories, showing a sharp peak at Green and a drop at Grey.
+    </p>
+
+    <figure xml:id="fig-car-color-line-graph">
+    <caption>Line Graph of Total-Loss Collisions by Vehicle Color</caption>
+    <image xml:id="img-car-color-line-chart" width="80%">
+      <description>A line graph plotting car colors on the horizontal axis against collision frequencies on the vertical axis. The vertical axis scales from 0 to 60. A line connects data markers starting at Blue (25), rising sharply to Green (52), dropping to Red (41) and White (36), rising slightly to Black (39), and falling to its lowest point at Grey (23).</description>
+      <latex-image>
+        \begin{tikzpicture}
+          \begin{axis} [
+            xlabel={Vehicle Color},
+            ylabel={Frequency (Accidents)},
+            xtick={1,2,3,4,5,6},
+            xticklabels={Blue, Green, Red, White, Black, Grey},
+            xmin=0.5,
+            xmax=6.5,
+            ymin=0,
+            ymax=60,
+            grid=major,
+            grid style={dashed, gray!30},
+            axis lines=left
+          ]
+            \addplot[
+              color=blue,
+              mark=*,
+              thick,
+              mark size=3pt
+            ] coordinates {
+              (1,25)
+              (2,52)
+              (3,41)
+              (4,36)
+              (5,39)
+              (6,23)
+            };
+          \end{axis}
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+  </solution>
+</example>
+
+<exercise>
+  <statement>
+    <p>
+      A patient's body temperature is recorded every hour: Hour 1 (<m>98.6^\circ\text{F}</m>), Hour 2 (<m>100.2^\circ\text{F}</m>), Hour 3 (<m>101.5^\circ\text{F}</m>), and Hour 4 (<m>99.1^\circ\text{F}</m>). Between which two hours does the line graph show the sharpest increase?
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      To find the sharpest increase, we calculate the differences between consecutive hourly measurements:
+    </p>
+    <p>
+      The increase from Hour 1 to Hour 2 is:
+      <me>100.2 - 98.6 = 1.6^\circ\text{F}</me>
+      The increase from Hour 2 to Hour 3 is:
+      <me>101.5 - 100.2 = 1.3^\circ\text{F}</me>
+    </p>
+    <p>
+      Comparing these calculations, the graph shows the sharpest increase between <strong>Hour 1 and Hour 2</strong>.
+    </p>
+
+    <figure xml:id="fig-patient-temp-trend">
+      <caption>Hourly tracking of patient body temperature.</caption>
+      <image xml:id="img-patient-temp-line" width="80%">
+        <description>A continuous line graph tracking a patient's temperature over 4 hours. The horizontal axis maps hours 1 to 4, and the vertical axis scales from 97 to 103 degrees Fahrenheit. A solid blue line rises from 98.6 degrees at Hour 1 to 100.2 degrees at Hour 2, climbs further to 101.5 degrees at Hour 3, and then falls down to 99.1 degrees at Hour 4.</description>
+        <latex-image>
+          \begin{tikzpicture}
+          \begin{axis}[
+              xlabel={Hour},
+              ylabel={Temperature ($^\circ$F)},
+              xtick={1,2,3,4},
+              xmin=0.5, xmax=4.5,
+              ymin=97, ymax=103,
+              grid=major,
+              grid style={dashed, gray!30},
+              axis lines=left
+          ]
+          \addplot[
+              color=blue,
+              mark=*,
+              thick,
+              mark size=3pt
+          ] coordinates {
+              (1,98.6)
+              (2,100.2)
+              (3,101.5)
+              (4,99.1)
+          };
+          \end{axis}
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+  </solution>
+</exercise>
+
+  <!-- =================================================================== -->
+  <!-- SUBSECTION: Pie Charts                                                  -->
+  <!-- =================================================================== -->
+ 
+<definition xml:id="def-pie-charts">
+  <title>Pie Chart</title>
+  <statement>
+    <p>
+      <alert>Pie charts</alert> are designed for visualizing proportions and 
+      showing how a single, cohesive entity is divided into individual parts. 
+      The chart consists of a circle divided into sectors, or slices, where the 
+      arc length and central angle of each slice are strictly proportional to the 
+      percentage of the total dataset it represents.
+    </p>
+  </statement>
+</definition>
+<p>
+  This format is particularly effective for illustrating the relative sizes of categories 
+  within a whole, such as market share distribution among companies or the breakdown 
+  of a budget into different expense categories.
+</p>
+<example xml:id="ex-budget-pie-chart">
+  <statement>
+    <p>
+      A budget consists of <m>\$500</m> for Rent, <m>\$250</m> for Food, and <m>\$250</m> for Utilities. Calculate the percentage of the pie chart slice that represents Rent.
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      First, find the total budget by summing the individual expenses:
+      <me>500 + 250 + 250 = 1000</me>
+    </p>
+    <p>
+      Next, divide the Rent cost by the total budget to find its proportion:
+      <me>\frac{500}{1000} = 0.50</me>
+    </p>
+    <p>
+      Multiply by 100 to convert the decimal into a percentage:
+      <me>0.50 \times 100 = 50\%</me>
+    </p>
+    <p>
+      The Rent slice will take up exactly half (<strong>50%</strong>) of the pie chart.
+    </p>
+    <figure xml:id="fig-budget-distribution">
+      <caption>Proportional slice distribution in a circular layout.</caption>
+      <image xml:id="img-budget-pie" width="60%">
+        <description>A circular pie chart divided into three colored budget sections. The bottom half of the circle is blue and represents Rent at 50 percent. The top right quadrant is green and represents Food at 25 percent. The top left quadrant is orange and represents Utilities at 25 percent.</description>
+        <latex-image>
+          \begin{tikzpicture}
+          \draw[thick, fill=gray!10] (0,0) circle (2cm);
+          \draw[thick, fill=blue!30] (0,0) -- (180:2cm) arc (180:360:2cm) -- cycle;
+          \draw[thick, fill=green!30] (0,0) -- (0:2cm) arc (0:90:2cm) -- cycle;
+          \draw[thick, fill=orange!30] (0,0) -- (90:2cm) arc (90:180:2cm) -- cycle;
+          \node at (45:1.6cm) {\small Food (25\%)};
+          \node at (135:0.9cm) {\small Utilities (25\%)};
+          \node at (270:1.0cm) {\small Rent (50\%)};
+          \end{tikzpicture}
+        </latex-image>
+      </image>
+    </figure>
+  </solution>
+</example>
+
+<example xml:id="ex-car-color-pie-chart">
+  <statement>
+    <p>
+      Using the total-loss collision dataset compiled by the insurance provider in 
+      <xref ref="table-car-color-frequencies" />, construct a pie chart to visually 
+      model the distribution of vehicle colors.
+    </p>
+
+  </statement>
+  
+  <solution>
+    <p>
+      To construct a pie chart, we convert each category's frequency into a proportional central angle of a circle (<m>360^{\circ}</m>). Using the total sample size (<m>n = 216</m>), the angle for each slice is calculated using the formula <m>\text{Angle} = \frac{\text{Frequency}}{216} \times 360^{\circ}</m>:
+    </p>
+    <p>
+      <ul>
+        <li><p><alert>Blue:</alert> <m>\frac{25}{216} \times 360^{\circ} \approx 41.7^{\circ}</m> (<m>11.57\%</m>)</p></li>
+        <li><p><alert>Green:</alert> <m>\frac{52}{216} \times 360^{\circ} \approx 86.7^{\circ}</m> (<m>24.07\%</m>)</p></li>
+        <li><p><alert>Red:</alert> <m>\frac{41}{216} \times 360^{\circ} \approx 68.3^{\circ}</m> (<m>18.98\%</m>)</p></li>
+        <li><p><alert>White:</alert> <m>\frac{36}{216} \times 360^{\circ} \approx 60.0^{\circ}</m> (<m>16.67\%</m>)</p></li>
+        <li><p><alert>Black:</alert> <m>\frac{39}{216} \times 360^{\circ} \approx 65.0^{\circ}</m> (<m>18.06\%</m>)</p></li>
+        <li><p><alert>Grey:</alert> <m>\frac{23}{216} \times 360^{\circ} \approx 38.3^{\circ}</m> (<m>10.65\%</m>)</p></li>
+      </ul>
+    </p>
+    <p>
+      Each sector is drawn sequentially around the center of the circle to construct the final visual proportion.
+    </p>
+
+  <figure xml:id="fig-car-color-pie-chart">
+    <caption>Pie Chart of Total-Loss Collisions by Vehicle Color</caption>
+    <image xml:id="img-car-color-pie-chart" width="70%">
+      <description>A circular pie chart divided into six colored sectors representing the proportion of vehicle collisions. Green is the largest slice at 24.1 percent, followed by Red at 19 percent, Black at 18.1 percent, White at 16.7 percent, Blue at 11.6 percent, and Grey as the smallest slice at 10.6 percent.</description>
+      <latex-image>
+        \begin{tikzpicture}[scale=1.5]
+          % Blue slice: 0 to 41.7
+          \draw[fill=blue!30, draw=black] (0,0) -- (0:2) arc (0:41.7:2) -- cycle;
+          \node at (20.85:1.4) {\small 11.6\%};
+          \node at (20.85:2.4) {Blue};
+
+          % Green slice: 41.7 to 128.4 (41.7 + 86.7)
+          \draw[fill=green!40!gray, draw=black] (0,0) -- (41.7:2) arc (41.7:128.4:2) -- cycle;
+          \node at (85.05:1.4) {\small 24.1\%};
+          \node at (85.05:2.4) {Green};
+
+          % Red slice: 128.4 to 196.7 (128.4 + 68.3)
+          \draw[fill=red!40, draw=black] (0,0) -- (128.4:2) arc (128.4:196.7:2) -- cycle;
+          \node at (162.55:1.4) {\small 19.0\%};
+          \node at (162.55:2.4) {Red};
+
+          % White slice: 196.7 to 256.7 (196.7 + 60.0)
+          \draw[fill=white!90!gray, draw=black] (0,0) -- (196.7:2) arc (196.7:256.7:2) -- cycle;
+          \node at (226.7:1.4) {\small 16.7\%};
+          \node at (226.7:2.4) {White};
+
+          % Black slice: 256.7 to 321.7 (256.7 + 65.0)
+          \draw[fill=black!40, draw=black] (0,0) -- (256.7:2) arc (256.7:321.7:2) -- cycle;
+          \node at (289.2:1.4) {\small 18.1\%};
+          \node at (289.2:2.4) {Black};
+
+          % Grey slice: 321.7 to 360.0 (321.7 + 38.3)
+          \draw[fill=gray!60, draw=black] (0,0) -- (321.7:2) arc (321.7:360:2) -- cycle;
+          \node at (340.85:1.4) {\small 10.6\%};
+          \node at (340.85:2.4) {Grey};
+        \end{tikzpicture}
+      </latex-image>
+    </image>
+  </figure>
+  </solution>
+</example>
+
+<exercise>
+  <statement>
+    <p>
+      A survey of 200 people shows that 100 prefer vanilla ice cream, 60 prefer chocolate, and 40 prefer strawberry. What central angle degree should be used to draw the slice for chocolate?
+    </p>
+  </statement>
+
+  <solution>
+    <p>
+      The proportion for chocolate is:
+      <me>\frac{60}{200} = 0.30 \quad (30\%)</me>
+      Since a full circle has <m>360^\circ</m>, multiply the proportion by 360 to find the central angle:
+      <me>0.30 \times 360 = 108</me>
+      The chocolate slice requires a central angle of <strong><m>108^\circ</m></strong>.
+    </p>
+
+    <figure xml:id="fig-ice-cream-preferences">
+      <caption>Pie chart representing ice cream flavor preferences.</caption>
+      <image xml:id="img-ice-cream-pie" width="60%">
+        <description>A circular pie chart divided into three distinct sections. The right half of the circle is yellow and represents Vanilla at 50 percent. The bottom-left sector is brown and represents Chocolate with a 108-degree angle at 30 percent. The top-left sector is pink and represents Strawberry at 20 percent.</description>
+        <latex-image>
+          \begin{tikzpicture}
+          \draw[thick, fill=gray!10] (0,0) circle (2cm);
+          % Vanilla: 50% (180 degrees from -90 to 90)
+          \draw[thick, fill=yellow!30] (0,0) -- (-90:2cm) arc (-90:90:2cm) -- cycle;
+          % Strawberry: 20% (72 degrees from 90 to 162)
+          \draw[thick, fill=pink!40] (0,0) -- (90:2cm) arc (90:162:2cm) -- cycle;
+          % Chocolate: 30% (108 degrees from 162 to 270)
+          \draw[thick, fill=brown!40] (0,0) -- (162:2cm) arc (162:270:2cm) -- cycle;
+          
+          \node at (0:1.0cm) {\small Vanilla (50\%)};
+          \node at (130:1.3cm) {\small Straw. (20\%)};
+          \node at (230:1.3cm) {\small Choc. (30\%)};
           \end{tikzpicture}
         </latex-image>
       </image>
@@ -1338,64 +1447,5 @@ each value occurs.
 </figure>
   </solution>
 </exercise>
-
-<exercise xml:id="exercise-kori-monthly-budget">
-  <statement>
-    <p>
-      Kori categorized her spending for this month into four categories: food, rent, fun, and other. 
-      The percentage she spent in each category is displayed in the chart below.
-    </p>
-
-    <figure xml:id="fig-kori-budget-pie-chart">
-      <caption>Pie Chart of Kori's Monthly Spending Shares</caption>
-      <image xml:id="img-kori-budget-chart" width="65%">
-        <description>A pie chart dividing Kori's monthly budget proportions into four sectors: Rent accounts for 31 percent, Other accounts for 29 percent, Food accounts for 24 percent, and Fun accounts for 16 percent.</description>
-        <latex-image>
-          \begin{tikzpicture}[scale=1.3]
-            % Rent slice: 0 to 111.6 degrees (31%)
-            \draw[fill=blue!20, draw=black] (0,0) -- (0:2) arc (0:111.6:2) -- cycle;
-            \node at (55.8:1.4) {\small 31\%};
-            \node at (55.8:2.4) {\small Rent};
-
-            % Other slice: 111.6 to 216.0 degrees (111.6 + 104.4 = 29%)
-            \draw[fill=gray!20, draw=black] (0,0) -- (111.6:2) arc (111.6:216.0:2) -- cycle;
-            \node at (163.8:1.4) {\small 29\%};
-            \node at (163.8:2.4) {\small Other};
-
-            % Food slice: 216.0 to 302.4 degrees (216.0 + 86.4 = 24%)
-            \draw[fill=green!20, draw=black] (0,0) -- (216.0:2) arc (216.0:302.4:2) -- cycle;
-            \node at (259.2:1.4) {\small 24\%};
-            \node at (259.2:2.4) {\small Food};
-
-            % Fun slice: 302.4 to 360.0 degrees (302.4 + 57.6 = 16%)
-            \draw[fill=orange!20, draw=black] (0,0) -- (302.4:2) arc (302.4:360.0:2) -- cycle;
-            \node at (331.2:1.4) {\small 16\%};
-            \node at (331.2:2.4) {\small Fun};
-          \end{tikzpicture}
-        </latex-image>
-      </image>
-    </figure>
-
-    <p>
-      If she spent a total of <m>\$2600</m> this month, how much money did she allocate to rent?
-    </p>
-  </statement>
-
-  <solution>
-    <p>
-      To find the exact dollar amount spent on rent, we convert the percentage share from the pie chart into a decimal and multiply it by the total monthly expenditures:
-    </p>
-    <p>
-      <me>\text{Rent Share} = 31\% = 0.31</me>
-    </p>
-    <p>
-      <me>\text{Rent Expenditures} = 0.31 \times \$2600 = \$806</me>
-    </p>
-    <p>
-      Therefore, Kori spent exactly <alert><m>\$806</m></alert> on rent this month.
-    </p>
-  </solution>
-</exercise>
-
 
 </section>

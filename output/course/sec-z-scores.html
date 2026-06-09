@@ -224,7 +224,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec-measures-of-center-spread.html" class="internal"><span class="title">Measures of Center and Spread</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-measures-of-center-spread.html#subsec-effect-of-outliers" class="internal"><span class="title">Effect of Outliers</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-measures-of-center-spread.html#sec-measures-of-center-spread-36" class="internal"><span class="title">Practice Questions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-measures-of-center-spread.html#sec-measures-of-center-spread-34" class="internal"><span class="title">Practice Questions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-measures-of-center-spread.html#subsec-faq" class="internal"><span class="title">Frequently Asked Questions</span></a></div></li>
 </ul>
 </li>
@@ -233,7 +233,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec-z-scores.html" class="internal"><span class="title">Z-Scores and Probability</span></a></div>
 <ul class="structural toc-item-list active"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-z-scores.html#exercises-z-scores" class="internal"><span class="title">Practice Exercises</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Regression.html" class="internal"><span class="title">Regression</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Regression.html" class="internal"><span class="title">Scatter Plot and Regression Lines</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-stat-ch-ex.html" class="internal"><span class="title">Chapter Exercises</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-stat-ch-ex.html#sec-stat-ch-ex-2" class="internal"><span class="title">Exercises</span></a></div></li></ul>
@@ -292,22 +292,21 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="sec-z-scores-2-4">Conceptually, the calculation is straightforward. To find the number of standard deviations between a value and the mean, first calculate the difference between your specific data point and the population mean. Then, divide that difference by the standard deviation of the dataset.<div class="autopermalink" data-description="Paragraph"><a href="#sec-z-scores-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section>
 <article class="definition definition-like" id="def-z-score-formula"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.87</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Z-Score Formula.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.84</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Z-Score Formula.</span>
 </h3>
 <div class="para logical" id="def-z-score-formula-2-1">
 <div class="para">The mathematical formula to calculate a standard z-score is:</div>
 <div class="displaymath process-math" id="def-z-score-formula-2-1-1">
 \begin{equation*}
-z = \frac{\text{value} - \text{mean}}{\text{standard deviation}} = \frac{x - \mu}{\sigma}
+z = \frac{\text{item value} - \text{mean}}{\text{standard deviation}} 
 \end{equation*}
 </div>
-<div class="para">Where <span class="process-math">\(x\)</span> is the data value, <span class="process-math">\(\mu\)</span> is the population mean, and <span class="process-math">\(\sigma\)</span> is the standard deviation.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#def-z-score-formula-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 4.87: Z-Score Formula"><a href="#def-z-score-formula" title="Copy heading and permalink for Definition 4.87: Z-Score Formula" aria-label="Copy heading and permalink for Definition 4.87: Z-Score Formula">🔗</a></div>
+<div class="autopermalink" data-description="Definition 4.84: Z-Score Formula"><a href="#def-z-score-formula" title="Copy heading and permalink for Definition 4.84: Z-Score Formula" aria-label="Copy heading and permalink for Definition 4.84: Z-Score Formula">🔗</a></div>
 </article>
 <div class="para logical" id="sec-z-scores-4">
-<div class="para">For example, with <span class="process-math">\(\mu = 65\)</span> and <span class="process-math">\(\sigma = 3\text{,}\)</span> a score of <span class="process-math">\(59\)</span> gives:</div>
+<div class="para">For example, with mean<span class="process-math">\(= 65\)</span> and standard deviation<span class="process-math">\(= 3\text{,}\)</span> a score of <span class="process-math">\(59\)</span> gives:</div>
 <div class="displaymath process-math" id="sec-z-scores-4-4">
 \begin{equation*}
 z = \frac{59 - 65}{3} = -2
@@ -317,11 +316,11 @@ z = \frac{59 - 65}{3} = -2
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-z-scores-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="ex-pos-z" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.88</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Positive Z-score.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.85</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Positive Z-score.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
 <div class="para logical" id="ex-pos-z-2-1">
-<div class="para">Let <span class="process-math">\(\mu = 24\)</span> and <span class="process-math">\(\sigma = 2\text{.}\)</span> Find the z-score for <span class="process-math">\(x = 27\text{.}\)</span>
+<div class="para">Let mean<span class="process-math">\(= 24\)</span> and standard deviation<span class="process-math">\(= 2\text{.}\)</span> Find the z-score for <span class="process-math">\(x = 27\text{.}\)</span>
 </div>
 <div class="displaymath process-math" id="ex-pos-z-2-1-4">
 \begin{equation*}
@@ -331,14 +330,14 @@ z = \frac{27 - 24}{2} = 1.5
 <div class="para">The value is <span class="process-math">\(1.5\)</span> standard deviations <em class="emphasis">above</em> the mean.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ex-pos-z-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 4.88: Positive Z-score"><a href="#ex-pos-z" title="Copy heading and permalink for Example 4.88: Positive Z-score" aria-label="Copy heading and permalink for Example 4.88: Positive Z-score">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.85: Positive Z-score"><a href="#ex-pos-z" title="Copy heading and permalink for Example 4.85: Positive Z-score" aria-label="Copy heading and permalink for Example 4.85: Positive Z-score">🔗</a></div>
 </article></details>
 <details id="ex-neg-z" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.89</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Negative Z-score.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.86</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Negative Z-score.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
 <div class="para logical" id="ex-neg-z-2-1">
-<div class="para">Let <span class="process-math">\(\mu = 125\)</span> and <span class="process-math">\(\sigma = 6.2\text{.}\)</span> Find the z-score for <span class="process-math">\(x = 104.5\text{.}\)</span>
+<div class="para">Let mean<span class="process-math">\(= 125\)</span> and standard deviation<span class="process-math">\(= 6.2\text{.}\)</span> Find the z-score for <span class="process-math">\(x = 104.5\text{.}\)</span>
 </div>
 <div class="displaymath process-math" id="ex-neg-z-2-1-4">
 \begin{equation*}
@@ -348,10 +347,10 @@ z = \frac{104.5 - 125}{6.2} \approx -3.31
 <div class="para">The resulting value is approximately <span class="process-math">\(3.31\)</span> standard deviations <em class="emphasis">below</em> the mean.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ex-neg-z-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 4.89: Negative Z-score"><a href="#ex-neg-z" title="Copy heading and permalink for Example 4.89: Negative Z-score" aria-label="Copy heading and permalink for Example 4.89: Negative Z-score">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.86: Negative Z-score"><a href="#ex-neg-z" title="Copy heading and permalink for Example 4.86: Negative Z-score" aria-label="Copy heading and permalink for Example 4.86: Negative Z-score">🔗</a></div>
 </article></details>
 <details id="ex-reverse-z" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.90</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding a Value Given a Z-score.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.87</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding a Value Given a Z-score.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
 <div class="para logical" id="ex-reverse-z-2-1">
@@ -370,127 +369,120 @@ x = 63 + (2.403)(4.25) \approx 73.21
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ex-reverse-z-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 4.90: Finding a Value Given a Z-score"><a href="#ex-reverse-z" title="Copy heading and permalink for Example 4.90: Finding a Value Given a Z-score" aria-label="Copy heading and permalink for Example 4.90: Finding a Value Given a Z-score">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.87: Finding a Value Given a Z-score"><a href="#ex-reverse-z" title="Copy heading and permalink for Example 4.87: Finding a Value Given a Z-score" aria-label="Copy heading and permalink for Example 4.87: Finding a Value Given a Z-score">🔗</a></div>
 </article></details>
-<article class="insight remark-like" id="insight-2-14-34-rule"><h3 class="heading">
-<span class="type">Insight</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.91</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The 2-14-34 Rule.</span>
-</h3>
-<div class="para" id="insight-2-14-34-rule-2">A helpful tool for quick mental approximations of these probabilities is the <dfn class="terminology">2-14-34 Rule</dfn>. Because a normal distribution curve is completely symmetric, either half of the bell curve extending outward from the center mean (<span class="process-math">\(z=0\)</span>) can be broken down into specific operational percentage blocks:<div class="autopermalink" data-description="Paragraph"><a href="#insight-2-14-34-rule-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<ul class="disc" id="insight-2-14-34-rule-3">
-<li id="insight-2-14-34-rule-3-1">
-<div class="para" id="insight-2-14-34-rule-3-1-1">
-<span class="process-math">\(34\%\)</span> of the population data falls between <span class="process-math">\(z=0\)</span> and <span class="process-math">\(z=1\)</span> (or between <span class="process-math">\(z=0\)</span> and <span class="process-math">\(z=-1\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#insight-2-14-34-rule-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#insight-2-14-34-rule-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="insight-2-14-34-rule-3-2">
-<div class="para" id="insight-2-14-34-rule-3-2-1">
-<span class="process-math">\(14\%\)</span> of the population data falls between <span class="process-math">\(z=1\)</span> and <span class="process-math">\(z=2\)</span> (or between <span class="process-math">\(z=-1\)</span> and <span class="process-math">\(z=-2\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#insight-2-14-34-rule-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#insight-2-14-34-rule-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="insight-2-14-34-rule-3-3">
-<div class="para" id="insight-2-14-34-rule-3-3-1">
-<span class="process-math">\(2\%\)</span> of the population data falls between <span class="process-math">\(z=2\)</span> and <span class="process-math">\(z=3\)</span> (or between <span class="process-math">\(z=-2\)</span> and <span class="process-math">\(z=-3\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#insight-2-14-34-rule-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#insight-2-14-34-rule-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="autopermalink" data-description="Insight 4.91: The 2-14-34 Rule"><a href="#insight-2-14-34-rule" title="Copy heading and permalink for Insight 4.91: The 2-14-34 Rule" aria-label="Copy heading and permalink for Insight 4.91: The 2-14-34 Rule">🔗</a></div>
-</article>
-<figure class="figure figure-like" id="fig-normal-d-curve"><div class="image-box" style="width: 85%; margin-left: 7.5%; margin-right: 7.5%;"><img src="generated/latex-image/img-norm-curve.svg" role="img" class="contained" alt="A bell-shaped normal distribution curve divided into symmetric shaded segments labeled 0.02, 0.14, and 0.34 extending outward from the center z equals 0 to z equals 3."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.92<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The 2-14-34 Rule Area Distribution under a Standard Normal Curve<div class="autopermalink" data-description="Figure 4.92"><a href="#fig-normal-d-curve" title="Copy heading and permalink for Figure 4.92" aria-label="Copy heading and permalink for Figure 4.92">🔗</a></div></figcaption>
-</figure>
-<details id="ex-rule-between" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.93</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding Area Between Specific Bounds.</span>
+<details id="example-utility-bill-zscore" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.88</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
-<div class="para" id="ex-rule-between-2-1">Using the 2-14-34 Rule, determine the approximate percentage of data that falls between a z-score of <span class="process-math">\(z = -1\)</span> and a z-score of <span class="process-math">\(z = 2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-rule-between-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="example-utility-bill-zscore-1-1">
+<div class="para">Which monthly utility bill is better with respect to relative standing?</div>
+<ul class="disc" id="example-utility-bill-zscore-1-1-1">
+<li id="example-utility-bill-zscore-1-1-1-1">
+<div class="para" id="example-utility-bill-zscore-1-1-1-1-1">A monthly utility bill of <span class="process-math">\(\$120\)</span> with a mean of <span class="process-math">\(\$130\)</span> and a standard deviation of <span class="process-math">\(\$10\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-utility-bill-zscore-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions">
-<details id="ex-rule-between-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
-<div class="para" id="ex-rule-between-3-1">We break the region down into its individual standardized blocks from left to right:<div class="autopermalink" data-description="Paragraph"><a href="#ex-rule-between-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<ul class="disc" id="ex-rule-between-3-2">
-<li id="ex-rule-between-3-2-1">
-<div class="para" id="ex-rule-between-3-2-1-1">The area between <span class="process-math">\(z = -1\)</span> and <span class="process-math">\(z = 0\)</span> contains <span class="process-math">\(34\%\)</span> of the data.<div class="autopermalink" data-description="Paragraph"><a href="#ex-rule-between-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#ex-rule-between-3-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#example-utility-bill-zscore-1-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="ex-rule-between-3-2-2">
-<div class="para" id="ex-rule-between-3-2-2-1">The area between <span class="process-math">\(z = 0\)</span> and <span class="process-math">\(z = 1\)</span> contains <span class="process-math">\(34\%\)</span> of the data.<div class="autopermalink" data-description="Paragraph"><a href="#ex-rule-between-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="example-utility-bill-zscore-1-1-1-2">
+<div class="para" id="example-utility-bill-zscore-1-1-1-2-1">A monthly utility bill of <span class="process-math">\(\$150\)</span> with a mean of <span class="process-math">\(\$170\)</span> and a standard deviation of <span class="process-math">\(\$5\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-utility-bill-zscore-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#ex-rule-between-3-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="ex-rule-between-3-2-3">
-<div class="para" id="ex-rule-between-3-2-3-1">The area between <span class="process-math">\(z = 1\)</span> and <span class="process-math">\(z = 2\)</span> contains <span class="process-math">\(14\%\)</span> of the data.<div class="autopermalink" data-description="Paragraph"><a href="#ex-rule-between-3-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#ex-rule-between-3-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#example-utility-bill-zscore-1-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="para logical" id="ex-rule-between-3-3">
-<div class="para">Summing these continuous regions together gives us:</div>
-<div class="displaymath process-math" id="ex-rule-between-3-3-1">
-\begin{equation*}
-\text{Total Area} = 34\% + 34\% + 14\% = 82\%
-\end{equation*}
-</div>
-<div class="para">Therefore, approximately <span class="process-math">\(82\%\)</span> of the population values fall within this score boundary.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-rule-between-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 4.93.1"><a href="#ex-rule-between-3" title="Copy heading and permalink for Solution 4.93.1" aria-label="Copy heading and permalink for Solution 4.93.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Example 4.93: Finding Area Between Specific Bounds"><a href="#ex-rule-between" title="Copy heading and permalink for Example 4.93: Finding Area Between Specific Bounds" aria-label="Copy heading and permalink for Example 4.93: Finding Area Between Specific Bounds">🔗</a></div>
-</article></details>
-<details id="ex-rule-greater-than" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.94</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculating Tail Probabilities.</span>
-</h3></summary>
-<article class="example example-like knowl__content">
-<div class="para" id="ex-rule-greater-than-2-1">A standardized industrial process yield results in a normal curve distribution. Using the 2-14-34 Rule, approximate the probability that a randomly chosen sample yields a z-score greater than <span class="process-math">\(z = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-rule-greater-than-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">Both distributions are approximately bell-shaped and symmetric.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-utility-bill-zscore-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex-rule-greater-than-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="example-utility-bill-zscore-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para logical" id="ex-rule-greater-than-3-1">
-<div class="para">Because the normal curve is perfectly symmetric, exactly <span class="process-math">\(50\%\)</span> of all data lies above the center mean (<span class="process-math">\(z = 0\)</span>). To find the portion greater than <span class="process-math">\(z = 1\text{,}\)</span> we subtract the region we do not want from the total right half:</div>
-<div class="displaymath process-math" id="ex-rule-greater-than-3-1-4">
+<div class="para" id="example-utility-bill-zscore-2-1">To evaluate relative standing for financial costs, we calculate the <dfn class="terminology"><span class="process-math">\(Z\)</span>-score</dfn> for each scenario. Because utility bills represent an expense, a more negative <span class="process-math">\(Z\)</span>-score is preferable as it indicates a cost further below the group average.<div class="autopermalink" data-description="Paragraph"><a href="#example-utility-bill-zscore-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="example-utility-bill-zscore-2-2">
+<div class="para">For the first utility bill:</div>
+<div class="displaymath process-math" id="example-utility-bill-zscore-2-2-1">
 \begin{equation*}
-P(z \gt 1) = 50\% - \text{Area}(z=0 \text{ to } z=1)
+Z_1 = \frac{120 - 130}{10} = \frac{-10}{10} = -1.0
 \end{equation*}
 </div>
-<div class="displaymath process-math" id="ex-rule-greater-than-3-1-5">
+<div class="para">This indicates the cost is exactly <span class="process-math">\(1\)</span> standard deviation below its baseline mean.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-utility-bill-zscore-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="example-utility-bill-zscore-2-3">
+<div class="para">For the second utility bill:</div>
+<div class="displaymath process-math" id="example-utility-bill-zscore-2-3-1">
 \begin{equation*}
-P(z \gt 1) = 50\% - 34\% = 16\%
+Z_2 = \frac{150 - 170}{5} = \frac{-20}{5} = -4.0
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-rule-greater-than-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">This indicates the cost is an exceptional <span class="process-math">\(4\)</span> standard deviations below its baseline mean.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-utility-bill-zscore-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="ex-rule-greater-than-3-2">
-<div class="para">Alternatively, you can get the exact same answer by summing the individual blocks extending to the right of <span class="process-math">\(z = 1\text{:}\)</span>
+<div class="para" id="example-utility-bill-zscore-2-4">Comparing the two relative standing positions, <span class="process-math">\(-4.0 \lt -1.0\text{.}\)</span> Therefore, the <span class="process-math">\(\$150\)</span> utility bill is significantly better with respect to relative standing.<div class="autopermalink" data-description="Paragraph"><a href="#example-utility-bill-zscore-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math" id="ex-rule-greater-than-3-2-2">
-\begin{equation*}
-\text{Area}(z=1 \text{ to } z=2) + \text{Area}(z=2 \text{ to } z=3) = 14\% + 2\% = 16\%
-\end{equation*}
-</div>
-<div class="para">Thus, there is roughly a <span class="process-math">\(16\%\)</span> probability that a random value has a z-score greater than <span class="process-math">\(1\text{.}\)</span>
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-rule-greater-than-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 4.94.1"><a href="#ex-rule-greater-than-3" title="Copy heading and permalink for Solution 4.94.1" aria-label="Copy heading and permalink for Solution 4.94.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.88.1"><a href="#example-utility-bill-zscore-2" title="Copy heading and permalink for Solution 4.88.1" aria-label="Copy heading and permalink for Solution 4.88.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.94: Calculating Tail Probabilities"><a href="#ex-rule-greater-than" title="Copy heading and permalink for Example 4.94: Calculating Tail Probabilities" aria-label="Copy heading and permalink for Example 4.94: Calculating Tail Probabilities">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.88"><a href="#example-utility-bill-zscore" title="Copy heading and permalink for Example 4.88" aria-label="Copy heading and permalink for Example 4.88">🔗</a></div>
+</article></details>
+<details id="exercise-test-scores-zscore" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.89</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para logical" id="exercise-test-scores-zscore-1-1">
+<div class="para">A student scores <span class="process-math">\(70\)</span> on an arithmetic test and <span class="process-math">\(66\)</span> on a vocabulary test. The scores for both tests are normally distributed.</div>
+<ul class="disc" id="exercise-test-scores-zscore-1-1-3">
+<li id="exercise-test-scores-zscore-1-1-3-1">
+<div class="para" id="exercise-test-scores-zscore-1-1-3-1-1">The arithmetic test has a mean of <span class="process-math">\(60\)</span> and a standard deviation of <span class="process-math">\(20\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-test-scores-zscore-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-test-scores-zscore-1-1-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-test-scores-zscore-1-1-3-2">
+<div class="para" id="exercise-test-scores-zscore-1-1-3-2-1">The vocabulary test has a mean of <span class="process-math">\(60\)</span> and a standard deviation of <span class="process-math">\(2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-test-scores-zscore-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-test-scores-zscore-1-1-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">On which test did the student have the better score relative to the class?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-test-scores-zscore-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise-test-scores-zscore-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exercise-test-scores-zscore-2-1">To compare academic performances across distributions with different spreads, we calculate the <dfn class="terminology"><span class="process-math">\(Z\)</span>-score</dfn> for each exam. A larger positive value indicates a score further above the classroom average.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-test-scores-zscore-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercise-test-scores-zscore-2-2">
+<div class="para">For the arithmetic test:</div>
+<div class="displaymath process-math" id="exercise-test-scores-zscore-2-2-1">
+\begin{equation*}
+Z_{\text{arithmetic}} = \frac{70 - 60}{20} = \frac{10}{20} = +0.5
+\end{equation*}
+</div>
+<div class="para">This indicates the student scored <span class="process-math">\(0.5\)</span> standard deviations above the arithmetic class mean.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-test-scores-zscore-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercise-test-scores-zscore-2-3">
+<div class="para">For the vocabulary test:</div>
+<div class="displaymath process-math" id="exercise-test-scores-zscore-2-3-1">
+\begin{equation*}
+Z_{\text{vocabulary}} = \frac{66 - 60}{2} = \frac{6}{2} = +3.0
+\end{equation*}
+</div>
+<div class="para">This indicates the student scored an exceptional <span class="process-math">\(3.0\)</span> standard deviations above the vocabulary class mean.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-test-scores-zscore-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercise-test-scores-zscore-2-4">Comparing the two positions of relative standing, <span class="process-math">\(+3.0 \gt +0.5\text{.}\)</span> Therefore, the student performed significantly better on the vocabulary test relative to the class.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-test-scores-zscore-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.89.1"><a href="#exercise-test-scores-zscore-2" title="Copy heading and permalink for Solution 4.89.1" aria-label="Copy heading and permalink for Solution 4.89.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 4.89"><a href="#exercise-test-scores-zscore" title="Copy heading and permalink for Checkpoint 4.89" aria-label="Copy heading and permalink for Checkpoint 4.89">🔗</a></div>
 </article></details>
 <section class="exercises" id="exercises-z-scores">
 <h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Practice Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="exercises-z-scores-2"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="exercises-z-scores-2-1-1">A retail store calculates that the mean price for a specific model of skis is <span class="process-math">\(\mu = \$279\)</span> with a standard deviation of <span class="process-math">\(\sigma = \$16\text{.}\)</span> Find the z-score for a pair of skis priced at <span class="process-math">\(\$247\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-z-scores-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercises-z-scores-2-1-1">A retail store calculates that the mean price for a specific model of skis is mean<span class="process-math">\(= \$279\)</span> with a standard deviation of <span class="process-math">\(= \$16\text{.}\)</span> Find the z-score for a pair of skis priced at <span class="process-math">\(\$247\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-z-scores-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
 <details id="exercises-z-scores-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
@@ -530,7 +522,7 @@ z = \frac{5 - 3}{1} = 2
 <div class="autopermalink" data-description="Exercise 2"><a href="#exercises-z-scores-3" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="exercises-z-scores-4"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="exercises-z-scores-4-1-1">The mean weight of a specific cattle breed population is <span class="process-math">\(\mu = 1150\)</span> lbs with a standard deviation of <span class="process-math">\(\sigma = 77\)</span> lbs. Calculate the z-score for a cow that weighs <span class="process-math">\(825\)</span> lbs.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-z-scores-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercises-z-scores-4-1-1">The mean weight of a specific cattle breed population is mean<span class="process-math">\(= 1150\)</span> lbs with a standard deviation of <span class="process-math">\(= 77\)</span> lbs. Calculate the z-score for a cow that weighs <span class="process-math">\(825\)</span> lbs.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-z-scores-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
 <details id="exercises-z-scores-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
@@ -550,7 +542,7 @@ z = \frac{825 - 1150}{77} \approx -4.22
 <div class="autopermalink" data-description="Exercise 3"><a href="#exercises-z-scores-4" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="exercises-z-scores-5"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="exercises-z-scores-5-1-1">Compute the z-score for a sample measurement of <span class="process-math">\(x = 0.0034\)</span> taken from a population where <span class="process-math">\(\mu = 0.0041\)</span> and <span class="process-math">\(\sigma = 0.0008\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-z-scores-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercises-z-scores-5-1-1">Compute the z-score for a sample measurement of <span class="process-math">\(x = 0.0034\)</span> taken from a population where mean<span class="process-math">\(= 0.0041\)</span> and standard deviation<span class="process-math">\(= 0.0008\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-z-scores-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
 <details id="exercises-z-scores-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
@@ -617,7 +609,7 @@ z = \frac{19.1 - 24.5}{3.2} \approx -1.69
 <div class="para logical" id="exercises-z-scores-8-2-1">
 <div class="displaymath process-math" id="exercises-z-scores-8-2-1-1">
 \begin{equation*}
-x = \mu + z\sigma
+x = mean + z(standard deviation)
 \end{equation*}
 </div>
 <div class="displaymath process-math" id="exercises-z-scores-8-2-1-2">

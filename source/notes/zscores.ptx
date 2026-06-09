@@ -28,14 +28,13 @@
     <statement>
       <p>
         The mathematical formula to calculate a standard z-score is:
-        <me>z = \frac{\text{value} - \text{mean}}{\text{standard deviation}} = \frac{x - \mu}{\sigma}</me>
-        Where <m>x</m> is the data value, <m>\mu</m> is the population mean, and <m>\sigma</m> is the standard deviation.
+        <me>z = \frac{\text{item value} - \text{mean}}{\text{standard deviation}} </me>
       </p>
     </statement>
   </definition>
 
   <p>
-    For example, with <m>\mu = 65</m> and <m>\sigma = 3</m>, a score of <m>59</m> gives:
+    For example, with mean<m> = 65</m> and standard deviation<m> = 3</m>, a score of <m>59</m> gives:
     <me>z = \frac{59 - 65}{3} = -2</me>
     This means the value is 2 standard deviations <em>below</em> the mean.
   </p>
@@ -44,7 +43,8 @@
       <title>Positive Z-score</title>
       <statement>
         <p>
-          Let <m>\mu = 24</m> and <m>\sigma = 2</m>. Find the z-score for <m>x = 27</m>.
+          Let mean<m> = 24</m> and standard deviation<m> = 2</m>. 
+          Find the z-score for <m>x = 27</m>.
           <me>z = \frac{27 - 24}{2} = 1.5</me>
           The value is <m>1.5</m> standard deviations <em>above</em> the mean.
         </p>
@@ -55,7 +55,8 @@
       <title>Negative Z-score</title>
       <statement>
         <p>
-          Let <m>\mu = 125</m> and <m>\sigma = 6.2</m>. Find the z-score for <m>x = 104.5</m>.
+          Let mean<m> = 125</m> and standard deviation<m> = 6.2</m>. 
+          Find the z-score for <m>x = 104.5</m>.
           <me>z = \frac{104.5 - 125}{6.2} \approx -3.31</me>
           The resulting value is approximately <m>3.31</m> standard deviations <em>below</em> the mean.
         </p>
@@ -74,128 +75,67 @@
       </statement>
     </example>
 
-<insight xml:id="insight-2-14-34-rule">
-  <title>The 2-14-34 Rule</title>
-  <p>
-    A helpful tool for quick mental approximations of these probabilities is the <term>2-14-34 Rule</term>. 
-    Because a normal distribution curve is completely symmetric, either half of the bell curve extending outward from the center mean (<m>z=0</m>) can be broken down into specific operational percentage blocks:
-  </p>
-  <ul>
-    <li><p><m>34\%</m> of the population data falls between <m>z=0</m> and <m>z=1</m> (or between <m>z=0</m> and <m>z=-1</m>).</p></li>
-    <li><p><m>14\%</m> of the population data falls between <m>z=1</m> and <m>z=2</m> (or between <m>z=-1</m> and <m>z=-2</m>).</p></li>
-    <li><p><m>2\%</m> of the population data falls between <m>z=2</m> and <m>z=3</m> (or between <m>z=-2</m> and <m>z=-3</m>).</p></li>
-  </ul>
-</insight>
-
-<figure xml:id="fig-normal-d-curve">
-  <caption>The 2-14-34 Rule Area Distribution under a Standard Normal Curve</caption>
-  <image xml:id="img-norm-curve" width="85%">
-    <description>A bell-shaped normal distribution curve divided into symmetric shaded segments labeled 0.02, 0.14, and 0.34 extending outward from the center z equals 0 to z equals 3.</description>
-    <latex-image>
-      \begin{tikzpicture}[xscale=1.6, yscale=1.7]
-        % Base Shading Zones using static coordinates to protect the parser
-        % Zone -3 to -2 (2%)
-        \fill[blue!10] (-3,0) -- (-3,0.05) to[out=5,in=170] (-2,0.2) -- (-2,0) -- cycle;
-        % Zone -2 to -1 (14%)
-        \fill[blue!20] (-2,0) -- (-2,0.2) to[out=10,in=240] (-1,0.9) -- (-1,0) -- cycle;
-        % Zone -1 to 0 (34%)
-        \fill[blue!30] (-1,0) -- (-1,0.9) to[out=60,in=180] (0,2.3) -- (0,0) -- cycle;
-        % Zone 0 to 1 (34%)
-        \fill[blue!30] (0,0) -- (0,2.3) to[out=0,in=120] (1,0.9) -- (1,0) -- cycle;
-        % Zone 1 to 2 (14%)
-        \fill[blue!20] (1,0) -- (1,0.9) to[out=300,in=170] (2,0.2) -- (2,0) -- cycle;
-        % Zone 2 to 3 (2%)
-        \fill[blue!10] (2,0) -- (2,0.2) to[out=350,in=175] (3,0.05) -- (3,0) -- cycle;
-
-        % Outer Frame and Smooth Boundary Curve
-        \draw[line width=1.5pt] (-3.5,0) -- (3.5,0);
-        \draw[line width=1.5pt] (-3.5,0.01) 
-        to[out=0,in=180] (-3,0.05) 
-        to[out=5,in=190] (-2,0.2) 
-        to[out=10,in=240] (-1,0.9) 
-        to[out=60,in=180] (0,2.3) 
-        to[out=0,in=120] (1,0.9) 
-        to[out=300,in=170] (2,0.2) 
-        to[out=350,in=175] (3,0.05) 
-        to[out=355,in=180] (3.5,0.01);
-
-        % Vertical Boundary Gridlines
-        \draw[dashed, opacity=0.6] (-3,0) -- (-3,0.05);
-        \draw[dashed, opacity=0.6] (-2,0) -- (-2,0.2);
-        \draw[dashed, opacity=0.6] (-1,0) -- (-1,0.9);
-        \draw[dashed, opacity=0.6] (0,0) -- (0,2.3);
-        \draw[dashed, opacity=0.6] (1,0) -- (1,0.9);
-        \draw[dashed, opacity=0.6] (2,0) -- (2,0.2);
-        \draw[dashed, opacity=0.6] (3,0) -- (3,0.05);
-
-        % Z-Score X-Axis Ticks
-        \node[below] at (-3,-0.1) {$z=-3$};
-        \node[below] at (-2,-0.1) {$z=-2$};
-        \node[below] at (-1,-0.1) {$z=-1$};
-        \node[below] at (0,-0.1) {$z=0$};
-        \node[below] at (1,-0.1) {$z=1$};
-        \node[below] at (2,-0.1) {$z=2$};
-        \node[below] at (3,-0.1) {$z=3$};
-
-        % Probability Labels
-        \node at (-2.5,0.3) {\small 0.02};
-        \node at (-1.5,0.5) {\small 0.14};
-        \node at (-0.5,1.1) {\small 0.34};
-        \node at (0.5,1.1)  {\small 0.34};
-        \node at (1.5,0.5)  {\small 0.14};
-        \node at (2.5,0.3)  {\small 0.02};
-      \end{tikzpicture}
-    </latex-image>
-  </image>
-</figure>
-
-
-    <example xml:id="ex-rule-between">
-      <title>Finding Area Between Specific Bounds</title>
-      <statement>
+    <example xml:id="example-utility-bill-zscore">
+    <statement>
         <p>
-          Using the 2-14-34 Rule, determine the approximate percentage of data that falls between a z-score of <m>z = -1</m> and a z-score of <m>z = 2</m>.
+            Which monthly utility bill is better with respect to relative standing? 
+            <ul>
+                <li><p>A monthly utility bill of <m>\$120</m> with a mean of <m>\$130</m> and a standard deviation of <m>\$10</m>.</p></li>
+                <li><p>A monthly utility bill of <m>\$150</m> with a mean of <m>\$170</m> and a standard deviation of <m>\$5</m>.</p></li>
+            </ul>
+            Both distributions are approximately bell-shaped and symmetric.
         </p>
-      </statement>
-      <solution>
+    </statement>
+    <solution>
         <p>
-          We break the region down into its individual standardized blocks from left to right:
-        </p>
-        <ul>
-          <li><p>The area between <m>z = -1</m> and <m>z = 0</m> contains <m>34\%</m> of the data.</p></li>
-          <li><p>The area between <m>z = 0</m> and <m>z = 1</m> contains <m>34\%</m> of the data.</p></li>
-          <li><p>The area between <m>z = 1</m> and <m>z = 2</m> contains <m>14\%</m> of the data.</p></li>
-        </ul>
-        <p>
-          Summing these continuous regions together gives us:
-          <me>\text{Total Area} = 34\% + 34\% + 14\% = 82\%</me>
-          Therefore, approximately <m>82\%</m> of the population values fall within this score boundary.
-        </p>
-      </solution>
-    </example>
-
-<example xml:id="ex-rule-greater-than">
-      <title>Calculating Tail Probabilities</title>
-      <statement>
-        <p>
-          A standardized industrial process yield results in a normal curve distribution. 
-          Using the 2-14-34 Rule, approximate the probability that a randomly chosen sample yields a z-score greater than <m>z = 1</m>.
-        </p>
-      </statement>
-      <solution>
-        <p>
-          Because the normal curve is perfectly symmetric, exactly <m>50\%</m> of all data lies above the center mean (<m>z = 0</m>).
-          To find the portion greater than <m>z = 1</m>, we subtract the region we do not want from the total right half:
-          <me>P(z \gt 1) = 50\% - \text{Area}(z=0 \text{ to } z=1)</me>
-          <me>P(z \gt 1) = 50\% - 34\% = 16\%</me>
+            To evaluate relative standing for financial costs, we calculate the <term><m>Z</m>-score</term> for each scenario. Because utility bills represent an expense, a more negative <m>Z</m>-score is preferable as it indicates a cost further below the group average.
         </p>
         <p>
-          Alternatively, you can get the exact same answer by summing the individual blocks extending to the right of <m>z = 1</m>:
-          <me>\text{Area}(z=1 \text{ to } z=2) + \text{Area}(z=2 \text{ to } z=3) = 14\% + 2\% = 16\%</me>
-          Thus, there is roughly a <m>16\%</m> probability that a random value has a z-score greater than <m>1</m>.
+            For the first utility bill:
+            <me>Z_1 = \frac{120 - 130}{10} = \frac{-10}{10} = -1.0</me>
+            This indicates the cost is exactly <m>1</m> standard deviation below its baseline mean.
         </p>
-      </solution>
-    </example>
+        <p>
+            For the second utility bill:
+            <me>Z_2 = \frac{150 - 170}{5} = \frac{-20}{5} = -4.0</me>
+            This indicates the cost is an exceptional <m>4</m> standard deviations below its baseline mean.
+        </p>
+        <p>
+            Comparing the two relative standing positions, <m>-4.0 \lt -1.0</m>. Therefore, the <bold><m>\$150</m> utility bill</bold> is significantly better with respect to relative standing.
+        </p>
+    </solution>
+</example>
+
+<exercise xml:id="exercise-test-scores-zscore">
+    <statement>
+        <p>
+            A student scores <m>70</m> on an arithmetic test and <m>66</m> on a vocabulary test. The scores for both tests are normally distributed. 
+            <ul>
+                <li><p>The arithmetic test has a mean of <m>60</m> and a standard deviation of <m>20</m>.</p></li>
+                <li><p>The vocabulary test has a mean of <m>60</m> and a standard deviation of <m>2</m>.</p></li>
+            </ul>
+            On which test did the student have the better score relative to the class?
+        </p>
+    </statement>
+    <solution>
+        <p>
+            To compare academic performances across distributions with different spreads, we calculate the <term><m>Z</m>-score</term> for each exam. A larger positive value indicates a score further above the classroom average.
+        </p>
+        <p>
+            For the arithmetic test:
+            <me>Z_{\text{arithmetic}} = \frac{70 - 60}{20} = \frac{10}{20} = +0.5</me>
+            This indicates the student scored <m>0.5</m> standard deviations above the arithmetic class mean.
+        </p>
+        <p>
+            For the vocabulary test:
+            <me>Z_{\text{vocabulary}} = \frac{66 - 60}{2} = \frac{6}{2} = +3.0</me>
+            This indicates the student scored an exceptional <m>3.0</m> standard deviations above the vocabulary class mean.
+        </p>
+        <p>
+            Comparing the two positions of relative standing, <m>+3.0 \gt +0.5</m>. Therefore, the student performed significantly better on the <bold>vocabulary test</bold> relative to the class.
+        </p>
+    </solution>
+</exercise>
 
 
 
@@ -205,7 +145,8 @@
     <exercise>
       <statement>
         <p>
-          A retail store calculates that the mean price for a specific model of skis is <m>\mu = \$279</m> with a standard deviation of <m>\sigma = \$16</m>. 
+          A retail store calculates that the mean price for a specific model of skis is 
+          mean<m>= \$279</m> with a standard deviation of <m>= \$16</m>. 
           Find the z-score for a pair of skis priced at <m>\$247</m>.
         </p>
       </statement>
@@ -235,7 +176,8 @@
     <exercise>
       <statement>
         <p>
-          The mean weight of a specific cattle breed population is <m>\mu = 1150</m> lbs with a standard deviation of <m>\sigma = 77</m> lbs.
+          The mean weight of a specific cattle breed population is 
+          mean<m>= 1150</m> lbs with a standard deviation of <m>= 77</m> lbs.
           Calculate the z-score for a cow that weighs <m>825</m> lbs.
         </p>
       </statement>
@@ -250,7 +192,8 @@
     <exercise>
       <statement>
         <p>
-          Compute the z-score for a sample measurement of <m>x = 0.0034</m> taken from a population where <m>\mu = 0.0041</m> and <m>\sigma = 0.0008</m>.
+          Compute the z-score for a sample measurement of <m>x = 0.0034</m> taken from 
+          a population where mean<m> = 0.0041</m> and standard deviation<m> = 0.0008</m>.
         </p>
       </statement>
       <solution>
@@ -299,7 +242,7 @@
       </statement>
       <solution>
         <p>
-          <me>x = \mu + z\sigma</me>
+          <me>x = mean + z(standard deviation)</me>
           <me>x = 15000 + (-1.40)(850) = 13810\text{ hours}</me>
         </p>
       </solution>

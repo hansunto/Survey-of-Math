@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Statistics Handout</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "textmacros",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[tex]/textmacros",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="MA-105 (Survey of Math)">
+<meta property="book:author" content="Professor Hansun To, Ph. D.">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.dcab57465a404e85.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.79fbb790b185d712.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">MA-105 (Survey of Math)</span> <span class="subtitle">Worcester State University</span></a></h1>
+<p class="byline">Professor Hansun To, Ph. D.</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="handout-finance.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="Hands-On-Sessions.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="activities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\usepackage{textcomp}
+\usepackage{newunicodechar}
+\newunicodechar{′}{\textprime}
+\newunicodechar{″}{\textdoubleprime}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Voting-Apportionment.html" class="internal"><span class="codenumber">1</span> <span class="title">Voting and Apportionment</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-Voting.html" class="internal"><span class="title">Voting methods</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-apportionment.html" class="internal"><span class="title">Apportionment</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-voting-ch-ex.html" class="internal"><span class="title">Chapter Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-voting-ch-ex.html#sec-voting-ch-ex-2" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Personal-Finance.html" class="internal"><span class="codenumber">2</span> <span class="title">Personal Finance</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-simple-interest.html" class="internal"><span class="title">Understanding Interest: Simple Interest</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-simple-interest.html#practice-simple-interest" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-compound-interest.html" class="internal"><span class="title">Saving Money: Compound Interest</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-compound-interest.html#practice-compound-interest" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-Annuities.html" class="internal"><span class="title">Saving Money: Annuities</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-Annuities.html#practice-annuity" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-Mortgages.html" class="internal"><span class="title">Borrowing Money: Mortgage</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Identify-Formulas.html" class="internal"><span class="title">Identify Formulas to use: Simple, Compound, Annuity, Loan</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Identify-Formulas.html#exercises-finance-answers" class="internal"><span class="title">Identify the Formula to Use</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-fin-ch-ex.html" class="internal"><span class="title">Chapter Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-fin-ch-ex.html#sec-fin-ch-ex-2" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Probability.html" class="internal"><span class="codenumber">3</span> <span class="title">Probability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Probability-3.html" class="internal"><span class="title">Fundamentals of Probability</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-events-not-or.html" class="internal"><span class="title">Events Involving NOT and OR</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-fcp.html" class="internal"><span class="title">The Fundamental Counting Principle</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-fcp.html#exercises-FCP" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-factorials.html" class="internal"><span class="title">Factorials</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-permutations.html" class="internal"><span class="title">Permutations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-combinations.html" class="internal"><span class="title">Combinations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-probability-fcp-npr-ncr.html" class="internal"><span class="title">Probability with the FCP, nPr and nCr</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-probability-fcp-npr-ncr.html#subsec-nPr-Probability" class="internal"><span class="title">Probability with Fundamental Counting Principle and permutations, nPr</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-probability-fcp-npr-ncr.html#subsec-nCr-Probability" class="internal"><span class="title">Probability with Combinations, nCr</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-prob-ch-ex.html" class="internal"><span class="title">Chapter Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-prob-ch-ex.html#sec-prob-ch-ex-2" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Intro-Statistics.html" class="internal"><span class="codenumber">4</span> <span class="title">Introduction to Statistics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-Visualizing-Data-Through-Graphs.html" class="internal"><span class="title">Visualizing Data Through Graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-measures-of-center-spread.html" class="internal"><span class="title">Measures of Center and Spread</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-measures-of-center-spread.html#subsec-effect-of-outliers" class="internal"><span class="title">Effect of Outliers</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-measures-of-center-spread.html#sec-measures-of-center-spread-34" class="internal"><span class="title">Practice Questions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-measures-of-center-spread.html#subsec-faq" class="internal"><span class="title">Frequently Asked Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-empirical-rule.html" class="internal"><span class="title">The Empirical Rule</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-z-scores.html" class="internal"><span class="title">Z-Scores</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-z-scores.html#exercises-z-scores" class="internal"><span class="title">Practice Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Regression.html" class="internal"><span class="title">Scatter Plots and Regression Lines</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-stat-ch-ex.html" class="internal"><span class="title">Chapter Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-stat-ch-ex.html#sec-stat-ch-ex-2" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="Hands-On-Sessions.html" class="internal"><span class="codenumber">5</span> <span class="title">Hands-On Sessions</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handout-voting-methods.html" class="internal"><span class="title">Voting Methods Handout</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handout-apportionment.html" class="internal"><span class="title">Apportionment Handout</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handout-finance.html" class="internal"><span class="title">Personal Finance Handout</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="handout-Statistics.html" class="internal"><span class="title">Statistics Handout</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="codenumber">6</span> <span class="title">Class Activities</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">01. Activity Voting Methods</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-02-intro-activity.html" class="internal"><span class="title">02. Activity Apportionment Methods</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-03-intro-activity.html" class="internal"><span class="title">03. Activity Simple Interest</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-04-intro-activity.html" class="internal"><span class="title">04. Activity Compound Interest</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-05-intro-activity.html" class="internal"><span class="title">05. Activity Annuities</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-06-intro-activity.html" class="internal"><span class="title">06. Activity Loans</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-07-intro-activity.html" class="internal"><span class="title">07. Activity Mortgages</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="codenumber">7</span> <span class="title">Handouts</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="homework.html" class="internal"><span class="codenumber">8</span> <span class="title">Homework</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="codenumber">9</span> <span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ma-150-syllabus.html" class="internal"><span class="title">MA-105-BL: Survey of Math</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#sec-150-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#sec-105-grading" class="internal"><span class="title">Assignments and Grading</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#subsec-105-Course_Policies" class="internal"><span class="title">Course Policies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#subsec-105-StudentLearningOutcomes" class="internal"><span class="title">Student Learning Outcomes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#subsec-105-LASC" class="internal"><span class="title">LASC</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#subsec-105-TentativeSchedule" class="internal"><span class="title">Course Schedule</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="worksheet" id="handout-Statistics" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h2 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Statistics Handout</span><div class="print-links"><a href="?printpreview=handout-Statistics" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h2>
+<section class="introduction" id="handout-Statistics-2">
+<div class="para" id="handout-Statistics-2-1">This handout provides an overview of different voting methods, including the plurality method, plurality-with-elimination method, Borda count method, and pairwise comparison method. It also includes exercises to practice applying these methods to election scenarios.<div class="autopermalink" data-description="Paragraph"><a href="#handout-Statistics-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="handout-Statistics-2-2">The handout is designed to help students understand the strengths and weaknesses of each voting method and how they can lead to different outcomes in elections. By working through the exercises, students will gain a deeper understanding of how these methods work and their implications for democratic decision-making.<div class="autopermalink" data-description="Paragraph"><a href="#handout-Statistics-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="handout-Statistics-2-3">
+<ul class="disc" id="handout-Statistics-2-3-1">
+<li id="handout-Statistics-2-3-1-1">
+<span class="heading li--heading"><span class="title li--heading-title">Data through Graphs.</span></span><div class="para" id="p-derived-handout-Statistics-2-3-1-1"> An introduction to interpreting and creating various types of graphs, such as bar graphs, histograms, pie charts, and scatter plots, to visualize data effectively.</div>
+<div class="autopermalink" data-description="Item: Data through Graphs"><a href="#handout-Statistics-2-3-1-1" title="Copy heading and permalink for Item: Data through Graphs" aria-label="Copy heading and permalink for Item: Data through Graphs">🔗</a></div>
+</li>
+<li id="handout-Statistics-2-3-1-2">
+<span class="heading li--heading"><span class="title li--heading-title">Measures of Center and Spread.</span></span><div class="para" id="p-derived-handout-Statistics-2-3-1-2"> mean, median, mode, range, variance, and standard deviation are all measures that help us understand the central tendency and variability of a dataset.</div>
+<div class="autopermalink" data-description="Item: Measures of Center and Spread"><a href="#handout-Statistics-2-3-1-2" title="Copy heading and permalink for Item: Measures of Center and Spread" aria-label="Copy heading and permalink for Item: Measures of Center and Spread">🔗</a></div>
+</li>
+<li id="handout-Statistics-2-3-1-3">
+<span class="heading li--heading"><span class="title li--heading-title">The Empirical Rule.</span></span><div class="para" id="p-derived-handout-Statistics-2-3-1-3"> A rule that describes the distribution of data in a normal distribution, stating that approximately 68% of the data falls within one standard deviation of the mean, 95% within two standard deviations, and 99.7% within three standard deviations.</div>
+<div class="autopermalink" data-description="Item: The Empirical Rule"><a href="#handout-Statistics-2-3-1-3" title="Copy heading and permalink for Item: The Empirical Rule" aria-label="Copy heading and permalink for Item: The Empirical Rule">🔗</a></div>
+</li>
+<li id="handout-Statistics-2-3-1-4">
+<span class="heading li--heading"><span class="title li--heading-title">z-scores.</span></span><div class="para" id="p-derived-handout-Statistics-2-3-1-4"> Standardized scores that indicate how many standard deviations a data point is from the mean.</div>
+<div class="autopermalink" data-description="Item: z-scores"><a href="#handout-Statistics-2-3-1-4" title="Copy heading and permalink for Item: z-scores" aria-label="Copy heading and permalink for Item: z-scores">🔗</a></div>
+</li>
+<li id="handout-Statistics-2-3-1-5">
+<span class="heading li--heading"><span class="title li--heading-title">Regression.</span></span><div class="para" id="p-derived-handout-Statistics-2-3-1-5"> A statistical method for modeling the relationship between a dependent variable and one or more independent variables, often used for prediction and understanding the strength of relationships between variables.</div>
+<div class="autopermalink" data-description="Item: Regression"><a href="#handout-Statistics-2-3-1-5" title="Copy heading and permalink for Item: Regression" aria-label="Copy heading and permalink for Item: Regression">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#handout-Statistics-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<div class="para" id="handout-Statistics-3">Exercises and Workspaces: Real-World Applications<div class="autopermalink" data-description="Paragraph"><a href="#handout-Statistics-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="onepage" id="handout-Statistics-4">
+<article class="exercise exercise-like" id="exercise-text-message-counts"><h3 class="heading">
+<span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Data Representation: Daily Text Messages Sent.</span>
+</h3>
+<div class="para" id="exercise-text-message-counts-2-1">The following dataset represents the number of text messages sent by <span class="process-math">\(25\)</span> high school students during a single day:<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="exercise-text-message-counts-2-2">40, 20, 20, 50, 30, 30, 60, 20, 30, 40, 30, 10, 40, 50, 40, 30, 30, 40, 40, 50, 60, 20, 50, 60, 10<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="exercise-text-message-counts-2-3">
+<ol class="lower-alpha ol-marker-2" id="exercise-text-message-counts-2-3-1">
+<li id="exercise-text-message-counts-2-3-1-1">
+<div class="para" id="exercise-text-message-counts-2-3-1-1-1">Complete a frequency table for the text message counts.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-2-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.a"><a href="#exercise-text-message-counts-2-3-1-1" title="Copy heading and permalink for Item 1.a" aria-label="Copy heading and permalink for Item 1.a">🔗</a></div>
+</li>
+<li id="exercise-text-message-counts-2-3-1-2">
+<div class="para" id="exercise-text-message-counts-2-3-1-2-1">Construct a bar graph of the data.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-2-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.b"><a href="#exercise-text-message-counts-2-3-1-2" title="Copy heading and permalink for Item 1.b" aria-label="Copy heading and permalink for Item 1.b">🔗</a></div>
+</li>
+<li id="exercise-text-message-counts-2-3-1-3">
+<div class="para" id="exercise-text-message-counts-2-3-1-3-1">Construct a line graph of the data.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-2-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.c"><a href="#exercise-text-message-counts-2-3-1-3" title="Copy heading and permalink for Item 1.c" aria-label="Copy heading and permalink for Item 1.c">🔗</a></div>
+</li>
+<li id="exercise-text-message-counts-2-3-1-4">
+<div class="para" id="exercise-text-message-counts-2-3-1-4-1">Construct a pie chart of the data.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-2-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.d"><a href="#exercise-text-message-counts-2-3-1-4" title="Copy heading and permalink for Item 1.d" aria-label="Copy heading and permalink for Item 1.d">🔗</a></div>
+</li>
+<li id="exercise-text-message-counts-2-3-1-5">
+<div class="para" id="exercise-text-message-counts-2-3-1-5-1">Construct a histogram of the data using 10-point class intervals.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-2-3-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1.e"><a href="#exercise-text-message-counts-2-3-1-5" title="Copy heading and permalink for Item 1.e" aria-label="Copy heading and permalink for Item 1.e">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise-text-message-counts-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exercise-text-message-counts-3-1">
+<em class="alert">(a) Frequency Table:</em> Sorting and counting each distinct message count yields the following frequency distribution:<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="table-message-frequencies"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Frequency Distribution of Daily Text Messages<div class="autopermalink" data-description="Table 5.1: Frequency Distribution of Daily Text Messages"><a href="#table-message-frequencies" title="Copy heading and permalink for Table 5.1: Frequency Distribution of Daily Text Messages" aria-label="Copy heading and permalink for Table 5.1: Frequency Distribution of Daily Text Messages">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">Texts Sent</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Frequency (Students)</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">10</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">20</td>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">30</td>
+<td class="c m b1 r1 l0 t0 lines">6</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">40</td>
+<td class="c m b1 r1 l0 t0 lines">6</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">50</td>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">60</td>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="exercise-text-message-counts-3-3">
+<em class="alert">(b) Bar Graph:</em> We represent each distinct count value on the horizontal axis and its corresponding frequency on the vertical axis using separated columns:<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-messages-bar-graph"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/img-messages-bar-chart.svg" role="img" class="contained" alt="A vertical bar chart showing text message totals on the horizontal axis and student frequency counts on the vertical axis."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 5.2: Bar Graph of Daily Texts Sent"><a href="#fig-messages-bar-graph" title="Copy heading and permalink for Figure 5.2: Bar Graph of Daily Texts Sent" aria-label="Copy heading and permalink for Figure 5.2: Bar Graph of Daily Texts Sent">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="exercise-text-message-counts-3-5">
+<em class="alert">(c) Line Graph:</em> Using coordinates, data markers are mapped out across consecutive value junctions and tied together using path lines:<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-messages-line-graph"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/img-messages-line-chart.svg" role="img" class="contained" alt="A line graph mapping distinct text count marks to the final number of tracking students."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 5.3: Line Graph of Daily Texts Sent"><a href="#fig-messages-line-graph" title="Copy heading and permalink for Figure 5.3: Line Graph of Daily Texts Sent" aria-label="Copy heading and permalink for Figure 5.3: Line Graph of Daily Texts Sent">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="exercise-text-message-counts-3-7">
+<em class="alert">(d) Pie Chart:</em> Proportional distributions are evaluated based on a complete baseline of <span class="process-math">\(n = 25\)</span> students using degree equations:<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercise-text-message-counts-3-8">
+<ul class="disc" id="exercise-text-message-counts-3-8-1">
+<li id="exercise-text-message-counts-3-8-1-1">
+<div class="para" id="exercise-text-message-counts-3-8-1-1-1">
+<em class="alert">10 Texts:</em> 8.00 percent (28.8 degrees)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-8-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-text-message-counts-3-8-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-text-message-counts-3-8-1-2">
+<div class="para" id="exercise-text-message-counts-3-8-1-2-1">
+<em class="alert">20 Texts:</em> 16.00 percent (57.6 degrees)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-8-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-text-message-counts-3-8-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-text-message-counts-3-8-1-3">
+<div class="para" id="exercise-text-message-counts-3-8-1-3-1">
+<em class="alert">30 Texts:</em> 24.00 percent (86.4 degrees)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-8-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-text-message-counts-3-8-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-text-message-counts-3-8-1-4">
+<div class="para" id="exercise-text-message-counts-3-8-1-4-1">
+<em class="alert">40 Texts:</em> 24.00 percent (86.4 degrees)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-8-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-text-message-counts-3-8-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-text-message-counts-3-8-1-5">
+<div class="para" id="exercise-text-message-counts-3-8-1-5-1">
+<em class="alert">50 Texts:</em> 16.00 percent (57.6 degrees)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-8-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-text-message-counts-3-8-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-text-message-counts-3-8-1-6">
+<div class="para" id="exercise-text-message-counts-3-8-1-6-1">
+<em class="alert">60 Texts:</em> 12.00 percent (43.2 degrees)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-8-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-text-message-counts-3-8-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-messages-pie-chart"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/latex-image/img-messages-pie-chart.svg" role="img" class="contained" alt="A pie chart dividing the student text distribution into categorical value sectors."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 5.4: Pie Chart of Text Message Distributions"><a href="#fig-messages-pie-chart" title="Copy heading and permalink for Figure 5.4: Pie Chart of Text Message Distributions" aria-label="Copy heading and permalink for Figure 5.4: Pie Chart of Text Message Distributions">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="exercise-text-message-counts-3-10">
+<em class="alert">(e) Histogram:</em> Grouping values into 10-point bins maps the dataset across continuous quantitative intervals, which forces columns to display directly side-by-side:<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercise-text-message-counts-3-11">
+<ul class="disc" id="exercise-text-message-counts-3-11-1">
+<li id="exercise-text-message-counts-3-11-1-1">
+<div class="para" id="exercise-text-message-counts-3-11-1-1-1">
+<em class="alert">[5, 15):</em> 2 students (values of 10)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-11-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-text-message-counts-3-11-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-text-message-counts-3-11-1-2">
+<div class="para" id="exercise-text-message-counts-3-11-1-2-1">
+<em class="alert">[15, 25):</em> 4 students (values of 20)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-11-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-text-message-counts-3-11-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-text-message-counts-3-11-1-3">
+<div class="para" id="exercise-text-message-counts-3-11-1-3-1">
+<em class="alert">[25, 35):</em> 6 students (values of 30)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-11-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-text-message-counts-3-11-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-text-message-counts-3-11-1-4">
+<div class="para" id="exercise-text-message-counts-3-11-1-4-1">
+<em class="alert">[35, 45):</em> 6 students (values of 40)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-11-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-text-message-counts-3-11-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-text-message-counts-3-11-1-5">
+<div class="para" id="exercise-text-message-counts-3-11-1-5-1">
+<em class="alert">[45, 55):</em> 4 students (values of 50)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-11-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-text-message-counts-3-11-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exercise-text-message-counts-3-11-1-6">
+<div class="para" id="exercise-text-message-counts-3-11-1-6-1">
+<em class="alert">[55, 65]:</em> 3 students (values of 60)<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-11-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-text-message-counts-3-11-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-text-message-counts-3-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-messages-histogram"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/img-messages-histogram-chart.svg" role="img" class="contained" alt="A histogram displaying the continuous interval distribution of text message frequencies."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 5.5: Histogram of Text Message Distributions"><a href="#fig-messages-histogram" title="Copy heading and permalink for Figure 5.5: Histogram of Text Message Distributions" aria-label="Copy heading and permalink for Figure 5.5: Histogram of Text Message Distributions">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 1.1"><a href="#exercise-text-message-counts-3" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Worksheet Exercise 1: Data Representation: Daily Text Messages Sent"><a href="#exercise-text-message-counts" title="Copy heading and permalink for Worksheet Exercise 1: Data Representation: Daily Text Messages Sent" aria-label="Copy heading and permalink for Worksheet Exercise 1: Data Representation: Daily Text Messages Sent">🔗</a></div>
+</article></section><section class="onepage" id="handout-Statistics-5">
+<article class="exercise exercise-like" id="exercise-central-tendency-quiz"><h3 class="heading">
+<span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Employee Commute Times.</span>
+</h3>
+<div class="para" id="exercise-central-tendency-quiz-2-1">A small company tracks the daily one-way commute times (measured in minutes) for a random sample of <span class="process-math">\(9\)</span> employees. The collected data values are listed below:<div class="autopermalink" data-description="Paragraph"><a href="#exercise-central-tendency-quiz-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="exercise-central-tendency-quiz-2-2">25, 40, 15, 30, 25, 20, 45, 25, 60<div class="autopermalink" data-description="Paragraph"><a href="#exercise-central-tendency-quiz-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="exercise-central-tendency-quiz-2-3">
+<div class="para">Calculate the following four summary metrics for this data set:</div>
+<ol class="lower-alpha ol-marker-2" id="exercise-central-tendency-quiz-2-3-1">
+<li id="exercise-central-tendency-quiz-2-3-1-1">
+<div class="para" id="exercise-central-tendency-quiz-2-3-1-1-1">The arithmetic mean commute time.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-central-tendency-quiz-2-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.a"><a href="#exercise-central-tendency-quiz-2-3-1-1" title="Copy heading and permalink for Item 2.a" aria-label="Copy heading and permalink for Item 2.a">🔗</a></div>
+</li>
+<li id="exercise-central-tendency-quiz-2-3-1-2">
+<div class="para" id="exercise-central-tendency-quiz-2-3-1-2-1">The median commute time.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-central-tendency-quiz-2-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.b"><a href="#exercise-central-tendency-quiz-2-3-1-2" title="Copy heading and permalink for Item 2.b" aria-label="Copy heading and permalink for Item 2.b">🔗</a></div>
+</li>
+<li id="exercise-central-tendency-quiz-2-3-1-3">
+<div class="para" id="exercise-central-tendency-quiz-2-3-1-3-1">The mode of the dataset.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-central-tendency-quiz-2-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.c"><a href="#exercise-central-tendency-quiz-2-3-1-3" title="Copy heading and permalink for Item 2.c" aria-label="Copy heading and permalink for Item 2.c">🔗</a></div>
+</li>
+<li id="exercise-central-tendency-quiz-2-3-1-4">
+<div class="para" id="exercise-central-tendency-quiz-2-3-1-4-1">The total range of the commute times.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-central-tendency-quiz-2-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2.d"><a href="#exercise-central-tendency-quiz-2-3-1-4" title="Copy heading and permalink for Item 2.d" aria-label="Copy heading and permalink for Item 2.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-central-tendency-quiz-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise-central-tendency-quiz-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exercise-central-tendency-quiz-3-1">
+<em class="alert">(a) Mean:</em> To find the mean, sum all the data points together and divide by the total number of observations (<span class="process-math">\(n = 9\)</span>):<div class="autopermalink" data-description="Paragraph"><a href="#exercise-central-tendency-quiz-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercise-central-tendency-quiz-3-2">
+<div class="displaymath process-math" id="exercise-central-tendency-quiz-3-2-1">
+\begin{equation*}
+\text{Mean} = \frac{25 + 40 + 15 + 30 + 25 + 20 + 45 + 25 + 60}{9} = \frac{285}{9} \approx 31.67 \text{ minutes}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-central-tendency-quiz-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercise-central-tendency-quiz-3-3">
+<em class="alert">(b) Median:</em> To determine the median, first arrange the data points in ascending numerical order:<div class="autopermalink" data-description="Paragraph"><a href="#exercise-central-tendency-quiz-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercise-central-tendency-quiz-3-4">15, 20, 25, 25, <em class="alert">25</em>, 30, 40, 45, 60<div class="autopermalink" data-description="Paragraph"><a href="#exercise-central-tendency-quiz-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercise-central-tendency-quiz-3-5">Since there is an odd number of scores (<span class="process-math">\(9\)</span>), the median is the exact middle element located at position <span class="process-math">\(\frac{9+1}{2} = 5\text{.}\)</span> The fifth value is <span class="process-math">\(25\)</span> minutes.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-central-tendency-quiz-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercise-central-tendency-quiz-3-6">
+<em class="alert">(c) Mode:</em> The mode is the specific data value that shows up most frequently in the sample. In this ordered list, the value <span class="process-math">\(25\)</span> appears three times, while every other number appears only once. Therefore, the mode is <span class="process-math">\(25\)</span> minutes.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-central-tendency-quiz-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercise-central-tendency-quiz-3-7">
+<em class="alert">(d) Range:</em> The range is the absolute difference between the absolute highest value (maximum) and the lowest value (minimum) in the dataset:<div class="autopermalink" data-description="Paragraph"><a href="#exercise-central-tendency-quiz-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercise-central-tendency-quiz-3-8">
+<div class="displaymath process-math" id="exercise-central-tendency-quiz-3-8-1">
+\begin{equation*}
+\text{Range} = \text{Maximum} - \text{Minimum} = 60 - 15 = 45 \text{ minutes}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-central-tendency-quiz-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="figure-commute-dot-plot"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/plot-commute-dots.svg" role="img" class="contained" alt="A simple dot plot showing employee commute times on the horizontal axis with repeated stacked dots showing the high frequency at 25 minutes."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Dot Plot of Employee Commute Times<div class="autopermalink" data-description="Figure 5.6"><a href="#figure-commute-dot-plot" title="Copy heading and permalink for Figure 5.6" aria-label="Copy heading and permalink for Figure 5.6">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 2.1"><a href="#exercise-central-tendency-quiz-3" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Worksheet Exercise 2: Employee Commute Times"><a href="#exercise-central-tendency-quiz" title="Copy heading and permalink for Worksheet Exercise 2: Employee Commute Times" aria-label="Copy heading and permalink for Worksheet Exercise 2: Employee Commute Times">🔗</a></div>
+</article></section><section class="onepage" id="handout-Statistics-6">
+<article class="exercise exercise-like" id="exercise-female-height-empirical-rule"><h3 class="heading">
+<span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Female Height Distribution.</span>
+</h3>
+<div class="para" id="exercise-female-height-empirical-rule-2-1">Adult female heights in North America are approximately normally distributed with a mean of <span class="process-math">\(65\)</span> inches and a standard deviation of <span class="process-math">\(3.5\)</span> inches.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-female-height-empirical-rule-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="exercise-female-height-empirical-rule-2-2">
+<div class="para">Use the Empirical Rule (68-95-99.7 Rule) to answer the following questions:</div>
+<ol class="decimal ol-marker-1" id="exercise-female-height-empirical-rule-2-2-1">
+<li id="exercise-female-height-empirical-rule-2-2-1-1">
+<div class="para" id="exercise-female-height-empirical-rule-2-2-1-1-1">Approximately what percentage of women have heights between 61.5 inches and 68.5 inches?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-female-height-empirical-rule-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.1"><a href="#exercise-female-height-empirical-rule-2-2-1-1" title="Copy heading and permalink for Item 3.1" aria-label="Copy heading and permalink for Item 3.1">🔗</a></div>
+</li>
+<li id="exercise-female-height-empirical-rule-2-2-1-2">
+<div class="para" id="exercise-female-height-empirical-rule-2-2-1-2-1">Approximately 95 percent of women have heights between what two values?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-female-height-empirical-rule-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.2"><a href="#exercise-female-height-empirical-rule-2-2-1-2" title="Copy heading and permalink for Item 3.2" aria-label="Copy heading and permalink for Item 3.2">🔗</a></div>
+</li>
+<li id="exercise-female-height-empirical-rule-2-2-1-3">
+<div class="para" id="exercise-female-height-empirical-rule-2-2-1-3-1">Approximately what percentage of women have heights greater than 72 inches?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-female-height-empirical-rule-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.3"><a href="#exercise-female-height-empirical-rule-2-2-1-3" title="Copy heading and permalink for Item 3.3" aria-label="Copy heading and permalink for Item 3.3">🔗</a></div>
+</li>
+<li id="exercise-female-height-empirical-rule-2-2-1-4">
+<div class="para" id="exercise-female-height-empirical-rule-2-2-1-4-1">Approximately what percentage of women have heights between 58 inches and 65 inches?<div class="autopermalink" data-description="Paragraph"><a href="#exercise-female-height-empirical-rule-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3.4"><a href="#exercise-female-height-empirical-rule-2-2-1-4" title="Copy heading and permalink for Item 3.4" aria-label="Copy heading and permalink for Item 3.4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-female-height-empirical-rule-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise-female-height-empirical-rule-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exercise-female-height-empirical-rule-3-1">
+<em class="alert">1. Heights between 61.5 and 68.5 inches:</em> The values 61.5 and 68.5 are found by subtracting and adding one standard deviation to the mean: <span class="process-math">\(65 - 3.5 = 61.5\)</span> and <span class="process-math">\(65 + 3.5 = 68.5\text{.}\)</span> This range represents exactly 1 standard deviation from the mean (<span class="process-math">\(\pm 1\)</span>) standard deviations. According to the Empirical Rule, approximately <em class="alert">68 percent</em> of the distribution falls within this range.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-female-height-empirical-rule-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercise-female-height-empirical-rule-3-2">
+<div class="para">
+<em class="alert">2. Range covering 95 percent of women:</em> The Empirical Rule states that approximately 95 percent of data falls within 2 standard deviations of the (mean <span class="process-math">\(\pm 2\)</span> sd). Calculating these boundaries:</div>
+<div class="displaymath process-math" id="exercise-female-height-empirical-rule-3-2-3">
+\begin{equation*}
+\text{Lower Value} = 65 - 2(3.5) = 65 - 7 = 58 \text{ inches}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="exercise-female-height-empirical-rule-3-2-4">
+\begin{equation*}
+\text{Upper Value} = 65 + 2(3.5) = 65 + 7 = 72 \text{ inches}
+\end{equation*}
+</div>
+<div class="para">Therefore, 95 percent of women have heights between <em class="alert">58 inches and 72 inches</em>.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-female-height-empirical-rule-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercise-female-height-empirical-rule-3-3">
+<em class="alert">3. Percentage greater than 72 inches:</em> A height of 72 inches sits exactly 2 standard deviations above the mean. Since 95 percent of women fall within 2 standard deviations (between 58 and 72 inches), the remaining 5 percent falls outside this span. Because the normal curve is perfectly symmetrical, half of that remainder is in the lower tail and half is in the upper tail. Dividing this gives <span class="process-math">\(5 \div 2 = \)</span> <em class="alert">2.5 percent</em>.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-female-height-empirical-rule-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercise-female-height-empirical-rule-3-4">
+<em class="alert">4. Percentage between 58 and 65 inches:</em> The value of 58 inches is exactly 2 standard deviations below the mean, while 65 inches is the mean itself. Since 95 percent of the data falls symmetrically within 2 standard deviations of the mean, the section from the lower boundary up to the center mean point represents exactly half of that cluster. Calculating this gives <span class="process-math">\(95 \div 2 = \)</span> <em class="alert">47.5 percent</em>.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-female-height-empirical-rule-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-female-height-normal-curve"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/img-female-height-curve.svg" role="img" class="contained" alt="A bell-shaped normal distribution curve centered at 65 inches, showing standard deviation marking lines at 54.5, 58, 61.5, 65, 68.5, 72, and 75.5 inches."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Normal Distribution Curve for Female Heights<div class="autopermalink" data-description="Figure 5.7"><a href="#fig-female-height-normal-curve" title="Copy heading and permalink for Figure 5.7" aria-label="Copy heading and permalink for Figure 5.7">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 3.1"><a href="#exercise-female-height-empirical-rule-3" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Worksheet Exercise 3: Female Height Distribution"><a href="#exercise-female-height-empirical-rule" title="Copy heading and permalink for Worksheet Exercise 3: Female Height Distribution" aria-label="Copy heading and permalink for Worksheet Exercise 3: Female Height Distribution">🔗</a></div>
+</article></section><section class="onepage" id="handout-Statistics-7">
+<article class="exercise exercise-like" id="handout-Statistics-7-1"><h3 class="heading">
+<span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculating Z-Scores-1.</span>
+</h3>
+<div class="para" id="handout-Statistics-7-1-2-1">On a standardized certification exam, the mean score is <span class="process-math">\(76\)</span> with a standard deviation of <span class="process-math">\(5\text{.}\)</span> Determine the z-score for an examinee who scored an <span class="process-math">\(88\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handout-Statistics-7-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="handout-Statistics-7-1-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="handout-Statistics-7-1-3-1">
+<div class="displaymath process-math" id="handout-Statistics-7-1-3-1-1">
+\begin{equation*}
+z = \frac{88 - 76}{5} = 2.4
+\end{equation*}
+</div>
+<div class="para">This student scored <span class="process-math">\(2.4\)</span> standard deviations above the population average.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#handout-Statistics-7-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.1"><a href="#handout-Statistics-7-1-3" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Worksheet Exercise 4: Calculating Z-Scores-1"><a href="#handout-Statistics-7-1" title="Copy heading and permalink for Worksheet Exercise 4: Calculating Z-Scores-1" aria-label="Copy heading and permalink for Worksheet Exercise 4: Calculating Z-Scores-1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="handout-Statistics-7-2"><h3 class="heading">
+<span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculating Z-Scores-2.</span>
+</h3>
+<div class="para" id="handout-Statistics-7-2-2-1">A track-and-field sprint group has a mean race completion time of <span class="process-math">\(24.5\)</span> seconds with a standard deviation of <span class="process-math">\(3.2\)</span> seconds. What is the z-score for a runner who completes the race in <span class="process-math">\(19.1\)</span> seconds?<div class="autopermalink" data-description="Paragraph"><a href="#handout-Statistics-7-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="handout-Statistics-7-2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="handout-Statistics-7-2-3-1">
+<div class="displaymath process-math" id="handout-Statistics-7-2-3-1-1">
+\begin{equation*}
+z = \frac{19.1 - 24.5}{3.2} \approx -1.69
+\end{equation*}
+</div>
+<div class="para">The runner’s time is <span class="process-math">\(1.69\)</span> standard deviations faster (below) than the group average.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#handout-Statistics-7-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.1"><a href="#handout-Statistics-7-2-3" title="Copy heading and permalink for Solution 5.1" aria-label="Copy heading and permalink for Solution 5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Worksheet Exercise 5: Calculating Z-Scores-2"><a href="#handout-Statistics-7-2" title="Copy heading and permalink for Worksheet Exercise 5: Calculating Z-Scores-2" aria-label="Copy heading and permalink for Worksheet Exercise 5: Calculating Z-Scores-2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="handout-Statistics-7-3"><h3 class="heading">
+<span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Comparing Z-Scores-3.</span>
+</h3>
+<div class="para" id="handout-Statistics-7-3-2-1">An industrial lighting brand has a mean runtime life of <span class="process-math">\(15,000\)</span> hours with a standard deviation of <span class="process-math">\(850\)</span> hours. Find the specific operational lifespan <span class="process-math">\(x\)</span> that corresponds to a z-score of <span class="process-math">\(-1.40\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#handout-Statistics-7-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="handout-Statistics-7-3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="handout-Statistics-7-3-3-1">
+<div class="displaymath process-math" id="handout-Statistics-7-3-3-1-1">
+\begin{equation*}
+x = mean + z(standard~ deviation)
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="handout-Statistics-7-3-3-1-2">
+\begin{equation*}
+x = 15000 + (-1.40)(850) = 13810\text{ hours}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#handout-Statistics-7-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.1"><a href="#handout-Statistics-7-3-3" title="Copy heading and permalink for Solution 6.1" aria-label="Copy heading and permalink for Solution 6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Worksheet Exercise 6: Comparing Z-Scores-3"><a href="#handout-Statistics-7-3" title="Copy heading and permalink for Worksheet Exercise 6: Comparing Z-Scores-3" aria-label="Copy heading and permalink for Worksheet Exercise 6: Comparing Z-Scores-3">🔗</a></div>
+</article></section><section class="onepage" id="handout-Statistics-8">
+<article class="exercise exercise-like" id="exercise-car-mileage-prediction"><h3 class="heading">
+<span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Negative Correlation: Car Mileage and Resale Value.</span>
+</h3>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement">
+<div class="para" id="exercise-car-mileage-prediction-2-1">A used car dealership wants to examine the relationship between a specific sedan’s odometer mileage (<span class="process-math">\(X\text{,}\)</span> measured in thousands of miles) and its current market resale value (<span class="process-math">\(Y\text{,}\)</span> measured in thousands of dollars). The data collected from a sample of five vehicles is presented below.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-car-mileage-prediction-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  
+<figure class="table table-like" id="table-car-mileage-data"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Vehicle Mileage vs. Resale Value<div class="autopermalink" data-description="Table 5.8: Vehicle Mileage vs. Resale Value"><a href="#table-car-mileage-data" title="Copy heading and permalink for Table 5.8: Vehicle Mileage vs. Resale Value" aria-label="Copy heading and permalink for Table 5.8: Vehicle Mileage vs. Resale Value">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b2 r1 l1 t1 lines">Vehicle</th>
+<th scope="col" class="c m b2 r1 l0 t1 lines">Mileage (<span class="process-math">\(X\)</span> in thousands of miles)</th>
+<th scope="col" class="c m b2 r1 l0 t1 lines">Resale Value (<span class="process-math">\(Y\)</span> in thousands of dollars)</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1</td>
+<td class="c m b1 r1 l0 t0 lines">10</td>
+<td class="c m b1 r1 l0 t0 lines">35</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">20</td>
+<td class="c m b1 r1 l0 t0 lines">29</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">30</td>
+<td class="c m b1 r1 l0 t0 lines">26</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">4</td>
+<td class="c m b1 r1 l0 t0 lines">40</td>
+<td class="c m b1 r1 l0 t0 lines">20</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">5</td>
+<td class="c m b1 r1 l0 t0 lines">50</td>
+<td class="c m b1 r1 l0 t0 lines">14</td>
+</tr>
+</table></div>
+</figure> 
+<div class="para" id="exercise-car-mileage-prediction-2-3">Using the simple linear regression model calculated from the observed data table above, predict the total market resale value of a sedan if its odometer reaches <span class="process-math">\(60\)</span> thousand miles (i.e., <span class="process-math">\(X = 60\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#exercise-car-mileage-prediction-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ul data-component="multiplechoice" class="exercise-interactives" id="rs-exercise-car-mileage-prediction" data-multipleanswers="false">
+<li data-component="answer" id="rs-exercise-car-mileage-prediction_opt_a">
+<div class="para" id="exercise-car-mileage-prediction-3-1-1-1">$15.5 thousand dollars</div>
+</li>
+<li data-component="feedback" id="rs-exercise-car-mileage-prediction_opt_a">
+<div class="para" id="exercise-car-mileage-prediction-3-1-2-1">Incorrect. This value fails to capture the continuous decline in value, overestimating how much the car is worth at 60 thousand miles.</div>
+</li>
+<li data-component="answer" id="rs-exercise-car-mileage-prediction_opt_b" data-correct="">
+<div class="para" id="exercise-car-mileage-prediction-3-2-1-1">$9.5 thousand dollars</div>
+</li>
+<li data-component="feedback" id="rs-exercise-car-mileage-prediction_opt_b">
+<div class="para" id="exercise-car-mileage-prediction-3-2-2-1">Correct! Observe the downward trend in the data points and plug the value directly into the line equation to find <span class="process-math">\(9.5\text{.}\)</span>
+</div>
+</li>
+<li data-component="answer" id="rs-exercise-car-mileage-prediction_opt_c">
+<div class="para" id="exercise-car-mileage-prediction-3-3-1-1">$5.0 thousand dollars</div>
+</li>
+<li data-component="feedback" id="rs-exercise-car-mileage-prediction_opt_c">
+<div class="para" id="exercise-car-mileage-prediction-3-3-2-1">Incorrect. While the vehicle loses value consistently, it has not depreciated this drastically according to the linear model.</div>
+</li>
+<li data-component="answer" id="rs-exercise-car-mileage-prediction_opt_d">
+<div class="para" id="exercise-car-mileage-prediction-3-4-1-1">$2.1 thousand dollars</div>
+</li>
+<li data-component="feedback" id="rs-exercise-car-mileage-prediction_opt_d">
+<div class="para" id="exercise-car-mileage-prediction-3-4-2-1">Incorrect. This underestimation assumes an exponential drop-off rather than a steady simple linear progression rate.</div>
+</li>
+</ul>
+</div></div>
+<div class="solutions">
+<details id="exercise-car-mileage-prediction-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exercise-car-mileage-prediction-4-1">To predict the resale value of the vehicle at 60 thousand miles, we first graph the data points from the table and calculate the line of best fit using linear regression.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-car-mileage-prediction-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercise-car-mileage-prediction-4-2"> 
+<figure class="figure figure-like" id="figure-car-mileage-scatter"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/plot-car-mileage.svg" role="img" class="contained" alt="A scatter plot showing a downward trend of resale value as mileage increases, with a red regression line and labeled data points."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Scatter Plot of Mileage vs. Resale Value<div class="autopermalink" data-description="Figure 5.9"><a href="#figure-car-mileage-scatter" title="Copy heading and permalink for Figure 5.9" aria-label="Copy heading and permalink for Figure 5.9">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Paragraph"><a href="#exercise-car-mileage-prediction-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 7.1"><a href="#exercise-car-mileage-prediction-4" title="Copy heading and permalink for Solution 7.1" aria-label="Copy heading and permalink for Solution 7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Worksheet Exercise 7: Negative Correlation: Car Mileage and Resale Value"><a href="#exercise-car-mileage-prediction" title="Copy heading and permalink for Worksheet Exercise 7: Negative Correlation: Car Mileage and Resale Value" aria-label="Copy heading and permalink for Worksheet Exercise 7: Negative Correlation: Car Mileage and Resale Value">🔗</a></div>
+</article></section><div class="autopermalink" data-description="Worksheet: Statistics Handout"><a href="#handout-Statistics" title="Copy heading and permalink for Worksheet: Statistics Handout" aria-label="Copy heading and permalink for Worksheet: Statistics Handout">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="handout-finance.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="activities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="handout-Statistics" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Statistics Handout</title>
+    <introduction>
+         <p>
+          This handout provides an overview of different voting methods, including the plurality method, plurality-with-elimination method, Borda count method, and pairwise comparison method. 
+          It also includes exercises to practice applying these methods to election scenarios.
+        </p>
+         <p>
+          The handout is designed to help students understand the strengths and weaknesses of each voting method and how they can lead to different outcomes in elections. 
+          By working through the exercises, students will gain a deeper understanding of how these methods work and their implications for democratic decision-making.
+        </p>    
+          <p>
+      <ul>
+        <li>
+          <title> Data through Graphs</title>
+            An introduction to interpreting and creating various types of graphs, such as bar graphs, histograms, pie charts, and scatter plots, to visualize data effectively.
+        </li>
+        <li>
+          <title>Measures of Center and Spread </title>
+           mean, median, mode, range, variance, and standard deviation are all measures that help us understand the central tendency and variability of a dataset.
+        </li>
+        <li>
+          <title>The Empirical Rule</title>
+          A rule that describes the distribution of data in a normal distribution, stating that approximately 68% of the data falls within one standard deviation of the mean, 95% within two standard deviations, and 99.7% within three standard deviations.
+        </li>
+        <li>
+          <title>z-scores</title>
+          Standardized scores that indicate how many standard deviations a data point is from the mean.
+        </li>
+        <li>
+          <title>Regression</title>
+          A statistical method for modeling the relationship between a dependent variable and one or more independent variables, often used for prediction and understanding the strength of relationships between variables.
+        </li>
+      </ul>
+    </p>
+      </introduction>
+
+  <p><strong>Exercises and Workspaces: Real-World Applications</strong></p>
+
+          <!-- Exercise 1: graphs -->
+        <page>
+        <exercise xml:id="exercise-text-message-counts">
+    <title>Data Representation: Daily Text Messages Sent</title>
+    <statement>
+        <p>
+            The following dataset represents the number of text messages sent by <m>25</m> high school students during a single day:
+        </p>
+        <p>
+            40, 20, 20, 50, 30, 30, 60, 20, 30, 40, 30, 10, 40, 50, 40, 30, 30, 40, 40, 50, 60, 20, 50, 60, 10
+        </p>
+        <p>
+            <ol marker="a">
+                <li><p>Complete a frequency table for the text message counts.</p></li>
+                <li><p>Construct a bar graph of the data.</p></li>
+                <li><p>Construct a line graph of the data.</p></li>
+                <li><p>Construct a pie chart of the data.</p></li>
+                <li><p>Construct a histogram of the data using 10-point class intervals.</p></li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <!-- Part A -->
+        <p>
+            <alert>(a) Frequency Table:</alert> Sorting and counting each distinct message count yields the following frequency distribution:
+        </p>
+        <table xml:id="table-message-frequencies">
+            <title>Frequency Distribution of Daily Text Messages</title>
+            <tabular top="minor" bottom="minor" left="minor" right="minor">
+                <row header="yes" bottom="minor">
+                    <cell halign="center">Texts Sent</cell>
+                    <cell halign="center">Frequency (Students)</cell>
+                </row>
+                <row><cell halign="center">10</cell><cell halign="center">2</cell></row>
+                <row><cell halign="center">20</cell><cell halign="center">4</cell></row>
+                <row><cell halign="center">30</cell><cell halign="center">6</cell></row>
+                <row><cell halign="center">40</cell><cell halign="center">6</cell></row>
+                <row><cell halign="center">50</cell><cell halign="center">4</cell></row>
+                <row bottom="minor"><cell halign="center">60</cell><cell halign="center">3</cell></row>
+            </tabular>
+        </table>
+
+        <!-- Part B -->
+        <p>
+            <alert>(b) Bar Graph:</alert> We represent each distinct count value on the horizontal axis and its corresponding frequency on the vertical axis using separated columns:
+        </p>
+        <figure xml:id="fig-messages-bar-graph">
+            <title>Bar Graph of Daily Texts Sent</title>
+            <image xml:id="img-messages-bar-chart" width="80%">
+                <description>A vertical bar chart showing text message totals on the horizontal axis and student frequency counts on the vertical axis.</description>
+                <latex-image>
+                    \begin{tikzpicture}
+                    \begin{axis}[
+                        ybar,
+                        bar width=15pt,
+                        symbolic x coords={space1, 10, 20, 30, 40, 50, 60, space2},
+                        xmin=space1, xmax=space2,
+                        xtick={10, 20, 30, 40, 50, 60},
+                        ylabel={Number of Students},
+                        xlabel={Texts Sent},
+                        nodes near coords,
+                        nodes near coords align={vertical},
+                        grid=major,
+                        grid style={dashed, gray!30},
+                        axis lines=left,
+                        ymin=0, ymax=8
+                    ]
+                    \addplot[fill=blue!40, draw=blue] coordinates {
+                        (10,2) (20,4) (30,6) (40,6) (50,4) (60,3)
+                    };
+                    \end{axis}
+                    \end{tikzpicture}
+                </latex-image>
+            </image>
+        </figure>
+
+        <!-- Part C -->
+        <p>
+            <alert>(c) Line Graph:</alert> Using coordinates, data markers are mapped out across consecutive value junctions and tied together using path lines:
+        </p>
+        <figure xml:id="fig-messages-line-graph">
+            <title>Line Graph of Daily Texts Sent</title>
+            <image xml:id="img-messages-line-chart" width="80%">
+                <description>A line graph mapping distinct text count marks to the final number of tracking students.</description>
+                <latex-image>
+                    \begin{tikzpicture}
+                    \begin{axis}[
+                        xlabel={Texts Sent},
+                        ylabel={Number of Students},
+                        xtick={1,2,3,4,5,6},
+                        xticklabels={10, 20, 30, 40, 50, 60},
+                        xmin=0.5, xmax=6.5,
+                        ymin=0, ymax=8,
+                        grid=major,
+                        grid style={dashed, gray!30},
+                        axis lines=left
+                    ]
+                    \addplot[color=blue, mark=*, thick, mark size=3pt] coordinates {
+                        (1,2) (2,4) (3,6) (4,6) (5,4) (6,3)
+                    };
+                    \end{axis}
+                    \end{tikzpicture}
+                </latex-image>
+            </image>
+        </figure>
+
+        <!-- Part D -->
+        <p>
+            <alert>(d) Pie Chart:</alert> Proportional distributions are evaluated based on a complete baseline of <m>n = 25</m> students using degree equations:
+        </p>
+        <p>
+            <ul>
+                <li><p><alert>10 Texts:</alert> 8.00 percent (28.8 degrees)</p></li>
+                <li><p><alert>20 Texts:</alert> 16.00 percent (57.6 degrees)</p></li>
+                <li><p><alert>30 Texts:</alert> 24.00 percent (86.4 degrees)</p></li>
+                <li><p><alert>40 Texts:</alert> 24.00 percent (86.4 degrees)</p></li>
+                <li><p><alert>50 Texts:</alert> 16.00 percent (57.6 degrees)</p></li>
+                <li><p><alert>60 Texts:</alert> 12.00 percent (43.2 degrees)</p></li>
+            </ul>
+        </p>
+        <figure xml:id="fig-messages-pie-chart">
+            <title>Pie Chart of Text Message Distributions</title>
+            <image xml:id="img-messages-pie-chart" width="65%">
+                <description>A pie chart dividing the student text distribution into categorical value sectors.</description>
+                <latex-image>
+                    \begin{tikzpicture}[scale=1.3]
+                    \draw[fill=blue!20, draw=black] (0,0) -- (0:2) arc (0:28.8:2) -- cycle;
+                    \node at (14.4:2.4) {\small 10};
+                    \draw[fill=green!20, draw=black] (0,0) -- (28.8:2) arc (28.8:86.4:2) -- cycle;
+                    \node at (57.6:1.4) {\small 16.0 Percent};
+                    \node at (57.6:2.4) {\small 20};
+                    \draw[fill=orange!20, draw=black] (0,0) -- (86.4:2) arc (86.4:172.8:2) -- cycle;
+                    \node at (129.6:1.4) {\small 24.0 Percent};
+                    \node at (129.6:2.4) {\small 30};
+                    \draw[fill=purple!20, draw=black] (0,0) -- (172.8:2) arc (172.8:259.2:2) -- cycle;
+                    \node at (216.0:1.4) {\small 24.0 Percent};
+                    \node at (216.0:2.4) {\small 40};
+                    \draw[fill=cyan!20, draw=black] (0,0) -- (259.2:2) arc (259.2:316.8:2) -- cycle;
+                    \node at (288.0:1.4) {\small 16.0 Percent};
+                    \node at (288.0:2.4) {\small 50};
+                    \draw[fill=yellow!20, draw=black] (0,0) -- (316.8:2) arc (316.8:360:2) -- cycle;
+                    \node at (338.4:2.4) {\small 60};
+                    \end{tikzpicture}
+                </latex-image>
+            </image>
+        </figure>
+
+        <!-- Part E -->
+        <p>
+            <alert>(e) Histogram:</alert> Grouping values into 10-point bins maps the dataset across continuous quantitative intervals, which forces columns to display directly side-by-side:
+        </p>
+        <p>
+            <ul>
+                <li><p><alert>[5, 15):</alert> 2 students (values of 10)</p></li>
+                <li><p><alert>[15, 25):</alert> 4 students (values of 20)</p></li>
+                <li><p><alert>[25, 35):</alert> 6 students (values of 30)</p></li>
+                <li><p><alert>[35, 45):</alert> 6 students (values of 40)</p></li>
+                <li><p><alert>[45, 55):</alert> 4 students (values of 50)</p></li>
+                <li><p><alert>[55, 65]:</alert> 3 students (values of 60)</p></li>
+            </ul>
+        </p>
+        <figure xml:id="fig-messages-histogram">
+            <title>Histogram of Text Message Distributions</title>
+            <image xml:id="img-messages-histogram-chart" width="80%">
+                <description>A histogram displaying the continuous interval distribution of text message frequencies.</description>
+                <latex-image>
+                    \begin{tikzpicture}
+                    \begin{axis}[
+                        ybar=10pt,
+                        bar width=33,
+                        bar shift=0pt,
+                        ymin=0, ymax=8,
+                        xmin=5, xmax=65,
+                        ylabel={Number of Students},
+                        xlabel={Text Message Intervals},
+                        xtick={5,15,25,35,45,55,65},
+                        nodes near coords,
+                        nodes near coords align={vertical},
+                        grid=major,
+                        grid style={dashed, gray!30},
+                        axis lines=left
+                    ]
+                    \addplot[fill=blue!40, draw=blue] coordinates {
+                        (10,2) (20,4) (30,6) (40,6) (50,4) (60,3)
+                    };
+                    \end{axis}
+                    \end{tikzpicture}
+                </latex-image>
+            </image>
+        </figure>
+    </solution>
+        </exercise>
+        </page>
+        
+        <!-- Exercise 2: mean, median, mode -->
+        <page>  
+        <exercise xml:id="exercise-central-tendency-quiz">
+    <title>Employee Commute Times</title>
+    <statement>
+        <p>
+            A small company tracks the daily one-way commute times (measured in minutes) for a random sample of <m>9</m> employees. The collected data values are listed below:
+        </p>
+        <p>
+            25, 40, 15, 30, 25, 20, 45, 25, 60
+        </p>
+        <p>
+            Calculate the following four summary metrics for this data set:
+            <ol marker="a">
+                <li><p>The arithmetic mean commute time.</p></li>
+                <li><p>The median commute time.</p></li>
+                <li><p>The mode of the dataset.</p></li>
+                <li><p>The total range of the commute times.</p></li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <!-- Part A -->
+        <p>
+            <alert>(a) Mean:</alert> To find the mean, sum all the data points together and divide by the total number of observations (<m>n = 9</m>):
+        </p>
+        <p>
+            <me>\text{Mean} = \frac{25 + 40 + 15 + 30 + 25 + 20 + 45 + 25 + 60}{9} = \frac{285}{9} \approx 31.67 \text{ minutes}</me>
+        </p>
+
+        <!-- Part B -->
+        <p>
+            <alert>(b) Median:</alert> To determine the median, first arrange the data points in ascending numerical order:
+        </p>
+        <p>
+            15, 20, 25, 25, <alert>25</alert>, 30, 40, 45, 60
+        </p>
+        <p>
+            Since there is an odd number of scores (<m>9</m>), the median is the exact middle element located at position <m>\frac{9+1}{2} = 5</m>. The fifth value is <m>25</m> minutes.
+        </p>
+
+        <!-- Part C -->
+        <p>
+            <alert>(c) Mode:</alert> The mode is the specific data value that shows up most frequently in the sample. In this ordered list, the value <m>25</m> appears three times, while every other number appears only once. Therefore, the mode is <m>25</m> minutes.
+        </p>
+
+        <!-- Part D -->
+        <p>
+            <alert>(d) Range:</alert> The range is the absolute difference between the absolute highest value (maximum) and the lowest value (minimum) in the dataset:
+        </p>
+        <p>
+            <me>\text{Range} = \text{Maximum} - \text{Minimum} = 60 - 15 = 45 \text{ minutes}</me>
+        </p>
+
+        <!-- Optional Dot Plot Visualization for Student Feedback -->
+        <figure xml:id="figure-commute-dot-plot">
+            <caption>Dot Plot of Employee Commute Times</caption>
+            <image xml:id="plot-commute-dots">
+                <description>A simple dot plot showing employee commute times on the horizontal axis with repeated stacked dots showing the high frequency at 25 minutes.</description>
+                <latex-image>
+                    \begin{tikzpicture}
+                        \begin{axis}[
+                            xlabel={Commute Time (Minutes)},
+                            ylabel={Frequency},
+                            xmin=10, xmax=65,
+                            ymin=0, ymax=4,
+                            xtick={15,20,25,30,35,40,45,50,55,60},
+                            ytick={1,2,3},
+                            grid=none,
+                            axis lines=left,
+                            axis line style={-},
+                            height=4cm,
+                            width=10cm
+                        ]
+                        \addplot[
+                            only marks,
+                            mark=*,
+                            color=blue,
+                            mark size=4pt
+                        ] coordinates {
+                            (15,1)
+                            (20,1)
+                            (25,1) (25,2) (25,3)
+                            (30,1)
+                            (40,1)
+                            (45,1)
+                            (60,1)
+                        };
+                        \end{axis}
+                    \end{tikzpicture}
+                </latex-image>
+            </image>
+        </figure>
+    </solution>
+        </exercise>
+        </page>
+
+        <!-- Exercise 3: Empirical Rule -->
+    <page>
+    <exercise xml:id="exercise-female-height-empirical-rule">
+    <title>Female Height Distribution</title>
+    <statement>
+        <p>
+            Adult female heights in North America are approximately normally distributed with a 
+            mean of <m>65</m> inches and a standard deviation of <m>3.5</m> inches. 
+        </p>
+        <p>
+            Use the Empirical Rule (68-95-99.7 Rule) to answer the following questions:
+            <ol marker="1">
+                <li><p>Approximately what percentage of women have heights between 61.5 inches and 68.5 inches?</p></li>
+                <li><p>Approximately 95 percent of women have heights between what two values?</p></li>
+                <li><p>Approximately what percentage of women have heights greater than 72 inches?</p></li>
+                <li><p>Approximately what percentage of women have heights between 58 inches and 65 inches?</p></li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            <alert>1. Heights between 61.5 and 68.5 inches:</alert>
+            The values 61.5 and 68.5 are found by subtracting and adding one standard deviation 
+            to the mean: <m>65 - 3.5 = 61.5</m> and <m>65 + 3.5 = 68.5</m>. 
+            This range represents exactly 1 standard deviation from the mean 
+            (<m>\pm 1</m>) standard deviations. 
+            According to the Empirical Rule, approximately <alert>68 percent</alert> 
+            of the distribution falls within this range.
+        </p>
+        <p>
+            <alert>2. Range covering 95 percent of women:</alert>
+            The Empirical Rule states that approximately 95 percent of data falls within 2 
+            standard deviations of the (mean <m> \pm 2</m> sd). Calculating these boundaries:
+            <me>\text{Lower Value} = 65 - 2(3.5) = 65 - 7 = 58 \text{ inches}</me>
+            <me>\text{Upper Value} = 65 + 2(3.5) = 65 + 7 = 72 \text{ inches}</me>
+            Therefore, 95 percent of women have heights between 
+            <alert>58 inches and 72 inches </alert>.
+        </p>
+        <p>
+            <alert>3. Percentage greater than 72 inches:</alert>
+            A height of 72 inches sits exactly 2 standard deviations above the mean. 
+            Since 95 percent of women fall within 2 standard deviations (between 58 and 72 inches), 
+            the remaining 5 percent falls outside this span. Because the normal curve is perfectly 
+            symmetrical, half of that remainder is in the lower tail and half is in the upper tail. 
+            Dividing this gives <m>5 \div 2 = </m> <alert>2.5 percent</alert>.
+        </p>
+        <p>
+            <alert>4. Percentage between 58 and 65 inches:</alert>
+            The value of 58 inches is exactly 2 standard deviations below the mean, while 65 inches 
+            is the mean itself. Since 95 percent of the data falls symmetrically within 2 standard 
+            deviations of the mean, the section from the lower boundary up to the center mean point 
+            represents exactly half of that cluster. Calculating this gives <m>95 \div 2 = </m> 
+            <alert>47.5 percent</alert>.
+        </p>
+
+        <figure xml:id="fig-female-height-normal-curve">
+            <caption>Normal Distribution Curve for Female Heights</caption>
+            <image xml:id="img-female-height-curve" width="80%">
+                <description>A bell-shaped normal distribution curve centered at 65 inches, showing standard deviation marking lines at 54.5, 58, 61.5, 65, 68.5, 72, and 75.5 inches.</description>
+                <latex-image>
+                    \begin{tikzpicture}
+                    \begin{axis} [
+                        no markers,
+                        domain=53.5:76.5,
+                        samples=100,
+                        ymin=0, ymax=0.13,
+                        axis lines=left,
+                        xlabel={Height (Inches)},
+                        ylabel={Probability Density},
+                        height=6cm,
+                        width=10cm,
+                        xtick={54.5, 58, 61.5, 65, 68.5, 72, 74.5},
+                        xticklabels={54.5, 58, 61.5, 65(Mean), 68.5, 72, 75.5},
+                        xticklabel style={align=center, font=\small},
+                        ytick=\empty,
+                        grid=none
+                    ]
+                    \addplot [very thick, cyan!70!black] {1/(3.5*sqrt(2*pi))*exp(-(x-65)^2/(2*3.5^2))};
+                    \draw [dashed, red, thick] (axis cs:65,0) -- (axis cs:65,0.114);
+                    \draw [dashed, red, thick] (axis cs:68.5,0) -- (axis cs:68.5,0.109);
+                    \draw [dashed, red, thick] (axis cs:72,0) -- (axis cs:72,0.027);
+                    \draw [dashed, red, thick] (axis cs:75.5,0) -- (axis cs:75.5,0.003);
+                    \draw [dashed, red, thick] (axis cs:61.5,0) -- (axis cs:61.5,0.109);
+                    \draw [dashed, red, thick] (axis cs:58,0) -- (axis cs:58,0.027);
+                    \draw [dashed, red, thick] (axis cs:54.5,0) -- (axis cs:54.5,0.003);
+                    \end{axis}
+                    \end{tikzpicture}
+                </latex-image>
+            </image>
+        </figure>
+    </solution>
+    </exercise>
+    </page>
+    <!-- Exercise 4: z-scores -->
+    <page>
+        
+    <exercise>
+    <title>Calculating Z-Scores-1</title>
+      <statement>
+        <p>
+          On a standardized certification exam, the mean score is <m>76</m> with a standard deviation of <m>5</m>.
+          Determine the z-score for an examinee who scored an <m>88</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>z = \frac{88 - 76}{5} = 2.4</me>
+          This student scored <m>2.4</m> standard deviations above the population average.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+        <title>Calculating Z-Scores-2</title>
+      <statement>
+        <p>
+          A track-and-field sprint group has a mean race completion time of <m>24.5</m> seconds with a standard deviation of <m>3.2</m> seconds.
+          What is the z-score for a runner who completes the race in <m>19.1</m> seconds?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>z = \frac{19.1 - 24.5}{3.2} \approx -1.69</me>
+          The runner's time is <m>1.69</m> standard deviations faster (below) than the group average.
+        </p>
+      </solution>
+    </exercise>
+
+    <exercise>
+        <title>Comparing Z-Scores-3</title>
+      <statement>
+        <p>
+          An industrial lighting brand has a mean runtime life of <m>15,000</m> hours with a standard deviation of <m>850</m> hours.
+          Find the specific operational lifespan <m>x</m> that corresponds to a z-score of <m>-1.40</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>x = mean + z(standard~ deviation)</me>
+          <me>x = 15000 + (-1.40)(850) = 13810\text{ hours}</me>
+        </p>
+      </solution>
+    </exercise>
+    </page>
+
+    <!-- Exercise 5:scatter plots  -->
+     <page>
+        
+<exercise xml:id="exercise-car-mileage-prediction">
+    <title>Negative Correlation: Car Mileage and Resale Value</title>
+    <statement>
+        <p>
+        A used car dealership wants to examine the relationship between a specific sedan's 
+        odometer mileage (<m>X</m>, measured in thousands of miles) and its current market 
+        resale value (<m>Y</m>, measured in thousands of dollars). The data collected from 
+        a sample of five vehicles is presented below.
+        </p>
+
+        <!-- Data Table Section -->
+        <table xml:id="table-car-mileage-data">
+            <title>Vehicle Mileage vs. Resale Value</title>
+            <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+                <row header="yes" bottom="medium">
+                    <cell>Vehicle</cell>
+                    <cell>Mileage (<m>X</m> in thousands of miles)</cell>
+                    <cell>Resale Value (<m>Y</m> in thousands of dollars)</cell>
+                </row>
+                <row><cell>1</cell><cell>10</cell><cell>35</cell></row>
+                <row><cell>2</cell><cell>20</cell><cell>29</cell></row>
+                <row><cell>3</cell><cell>30</cell><cell>26</cell></row>
+                <row><cell>4</cell><cell>40</cell><cell>20</cell></row>
+                <row><cell>5</cell><cell>50</cell><cell>14</cell></row>
+            </tabular>
+        </table>
+
+        <p>
+        Using the simple linear regression model calculated from the observed data table 
+        above, predict the total market resale value of a sedan if its odometer reaches 
+        <m>60</m> thousand miles (i.e., <m>X = 60</m>).
+        </p>
+    </statement>
+
+    <!-- Multiple Choice Structure -->
+    <choices>
+        <choice>
+            <statement><p>$15.5 thousand dollars</p></statement>
+            <feedback>
+                <p>Incorrect. This value fails to capture the continuous decline in value, overestimating how much the car is worth at 60 thousand miles.</p>
+            </feedback>
+        </choice>
+        <choice correct="yes">
+            <statement><p>$9.5 thousand dollars</p></statement>
+            <feedback>
+                <p>Correct! Observe the downward trend in the data points and plug the value directly into the line equation to find <m>9.5</m>.</p>
+            </feedback>
+        </choice>
+        <choice>
+            <statement><p>$5.0 thousand dollars</p></statement>
+            <feedback>
+                <p>Incorrect. While the vehicle loses value consistently, it has not depreciated this drastically according to the linear model.</p>
+            </feedback>
+        </choice>
+        <choice>
+            <statement><p>$2.1 thousand dollars</p></statement>
+            <feedback>
+                <p>Incorrect. This underestimation assumes an exponential drop-off rather than a steady simple linear progression rate.</p>
+            </feedback>
+        </choice>
+    </choices>
+<solution>
+  <p>
+  To predict the resale value of the vehicle at 60 thousand miles, we first graph 
+  the data points from the table and calculate the line of best fit using linear 
+  regression.
+  </p>
+<p>
+    <!-- Visual Scatter Plot Section with Regression Line & Labels -->
+    <figure xml:id="figure-car-mileage-scatter">
+        <caption>Scatter Plot of Mileage vs. Resale Value</caption>
+        <image xml:id="plot-car-mileage">
+            <description>A scatter plot showing a downward trend of resale value as mileage increases, 
+              with a red regression line and labeled data points.</description>
+            <latex-image>
+                \begin{tikzpicture}
+                    \begin{axis}[
+                        xlabel={Mileage (thousands of miles)},
+                        ylabel={Resale Value (thousands of dollars)},
+                        xmin=0, xmax=70,
+                        ymin=0, ymax=40,
+                        xtick={0,10,20,30,40,50,60,70},
+                        ytick={0,5,10,15,20,25,30,35,40},
+                        grid=both,
+                        grid style={line width=.1pt, color=gray!10},
+                        major grid style={line width=.2pt, color=gray!50},
+                        legend pos=north east
+                    ]
+                    
+                    % The Red Linear Regression Line Plot
+                    \addplot[
+                        domain=0:70,
+                        color=red,
+                        thick,
+                        samples=2
+                    ] {36 - 0.44*x};
+                    \addlegendentry{Regression Line}
+
+                    % Scatter Plot Points with Text Labels (Vehicle 1, Vehicle 2, etc.)
+                    \addplot[
+                        only marks,
+                        mark=*,
+                        color=blue,
+                        mark size=3pt,
+                        nodes near coords,
+                        point meta=explicit symbolic,
+                        every node near coord/.style={anchor=south east, font=\footnotesize, color=black}
+                    ] coordinates {
+                        (10, 35) [Vehicle 1]
+                        (20, 29) [Vehicle 2]
+                        (30, 26) [Vehicle 3]
+                        (40, 20) [Vehicle 4]
+                        (50, 14) [Vehicle 5]
+                    };
+                    \addlegendentry{Observed Data Points}
+
+                    \end{axis}
+                \end{tikzpicture}
+            </latex-image>
+        </image>
+    </figure>
+</p>
+</solution>
+</exercise>
+
+     </page>
+</worksheet>

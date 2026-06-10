@@ -571,7 +571,6 @@
   </solution>
 </exercise>
 
-
 <exercise xml:id="exer-women-height-distribution">
     <statement>
         <p>
@@ -658,18 +657,143 @@
     </solution>
 </exercise>
 
+<exercise xml:id="exercise-ice-cream-prediction">
+    <title>Positive Correlation: Summer Heatwaves and Ice Cream Sales</title>
+    
+    <statement>
+        <p>
+            A beachside shop owner wants to examine the relationship between the daily afternoon temperature 
+            (<m>X</m>, measured in degrees Fahrenheit) and the number of ice cream cones sold daily 
+            (<m>Y</m>). The data collected over a five-day period is presented below.
+        </p>
 
+        <!-- Data Table Section -->
+        <table xml:id="table-ice-cream-data">
+            <title>Daily Temperature vs. Ice Cream Sales</title>
+            <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+                <row header="yes" bottom="medium">
+                    <cell>Day</cell>
+                    <cell>Temperature (<m>X</m> in <m>^\circ\text{F}</m>)</cell>
+                    <cell>Ice Cream Cones Sold (<m>Y</m>)</cell>
+                </row>
+                <row><cell>1</cell><cell>70</cell><cell>100</cell></row>
+                <row><cell>2</cell><cell>75</cell><cell>150</cell></row>
+                <row><cell>3</cell><cell>80</cell><cell>190</cell></row>
+                <row><cell>4</cell><cell>85</cell><cell>260</cell></row>
+                <row><cell>5</cell><cell>90</cell><cell>300</cell></row>
+            </tabular>
+        </table>
+<p>
+Using the simple linear regression model calculated from the observed data table above, 
+predict the total number of ice cream cones sold if the afternoon temperature reaches
+<m>100^\circ\text{F}</m>.
+</p>
+    </statement>
 
+    <!-- Multiple Choice Structure -->
+    <choices>
+        <choice>
+            <statement><p>340 cones</p></statement>
+            <feedback>
+                <p>Incorrect. This value underestimates the strong upward trend observed as the temperature steps up to 
+                  100 degrees.</p>
+            </feedback>
+        </choice>
+        <choice correct="yes">
+            <statement><p>404 cones</p></statement>
+            <feedback>
+                <p>Correct! Observe the data points and plug directly into the line: <m>404</m>.</p>
+            </feedback>
+        </choice>
+        <choice>
+            <statement><p>450 cones</p></statement>
+            <feedback>
+                <p>Incorrect. While sales are rising fast, this estimate is slightly higher than 
+                  what the mathematical trend line predicts.</p>
+            </feedback>
+        </choice>
+        <choice>
+            <statement><p>512 cones</p></statement>
+            <feedback>
+                <p>Incorrect. This value assumes exponential growth rather than a steady 
+                  simple linear progression rate.</p>
+            </feedback>
+        </choice>
+    </choices>
+    
+    <solution>
+<p>
+To predict the number of ice cream cones sold at 100°F, we first need to graph the data points from the table 
+and calculate the line of best fit using linear regression. 
+</p>
+    <p>      
+        <!-- Visual Scatter Plot Section with Regression Line & Labels -->
+        <figure xml:id="figure-ice-cream-scatter">
+            <caption>Scatter Plot of Temperature vs. Ice Cream Cones Sold</caption>
+            <image xml:id="plot-ice-cream">
+                <description>A scatter plot showing an upward trend of daily sales as temperature rises, 
+                  with a red regression line and labeled data points.</description>
+                <latex-image>
+                    \begin{tikzpicture}
+                        \begin{axis}[
+                            xlabel={Temperature ($^\circ$F)},
+                            ylabel={Cones Sold},
+                            xmin=65, xmax=105,
+                            ymin=50, ymax=450,
+                            xtick={70,75,80,85,90,95,100},
+                            ytick={100,150,200,250,300,350,400},
+                            grid=both,
+                            grid style={line width=.1pt, color=gray!10},
+                            major grid style={line width=.2pt, color=gray!50},
+                            legend pos=north west
+                        ]
+                        
+                        <!-- 1. The Red Linear Regression Line Plot -->
+                        \addplot[
+                            domain=65:105,
+                            color=red,
+                            thick,
+                            samples=2
+                        ] {-616 + 10.2*x};
+                        \addlegendentry{Regression Line}
 
+                        <!-- 2. Scatter Plot Points with Text Labels (Day 1, Day 2, etc.) -->
+                        \addplot[
+                            only marks,
+                            mark=*,
+                            color=blue,
+                            mark size=3pt,
+                            nodes near coords,
+                            point meta=explicit symbolic,
+                            every node near coord/.style={anchor=south east, font=\footnotesize, color=black}
+                        ] coordinates {
+                            (70,100) [Day 1]
+                            (75,150) [Day 2]
+                            (80,190) [Day 3]
+                            (85,260) [Day 4]
+                            (90,300) [Day 5]
+                        };
+                        \addlegendentry{Observed Data Points}
 
+                        \end{axis}
+                    \end{tikzpicture}
+                </latex-image>
+            </image>
+        </figure>
+    </p>
+    </solution>
+</exercise>
 
-  
 
 
   <exercise xml:id="ex-product-popularity">
     <statement>
       <p>
-        A store is doing inventory for one week to determine the popularity of a new product. The table below shows the number of items sold each day. Find the linear regression equation that models this data, rounding coefficients to the nearest integer. Then, predict the number of items sold on the 10th day if the pattern of growth continues.
+        A store is doing inventory for one week to determine the popularity of a 
+        new product. The table below shows the number of items sold each day. 
+        Find the linear regression equation that models this data with the slope 8.66 and y-intercept 14.57, 
+        rounding coefficients to the nearest integer. Then, predict the number of items sold on the 10th day 
+         if the pattern of growth continues.
       </p>
 
       <table xml:id="table-sales-data">
@@ -695,30 +819,21 @@
     <solution>
       <p>
         <term>Step 1: Calculate the Regression Equation</term>
-        Using the standard least-squares regression formulas with <m>n = 7</m> data entries, we calculate our foundational statistical summations:
-        <ul>
-          <li><p><m>\sum x = 28</m></p></li>
-          <li><p><m>\sum y = 352</m></p></li>
-          <li><p><m>\sum(x^2) = 140</m></p></li>
-          <li><p><m>\sum(xy) = 1654</m></p></li>
-        </ul>
+        The linear regression equation is given by <m>y = mx + b</m>, where <m>m</m> 
+        is the slope and <m>b</m> is the y-intercept.
+        Substituting the provided values, we have:
+        <me>Y = 8.66x + 14.57</me>
+        Rounding the coefficients to the nearest integer gives us the simplified regression equation:
+        <me>Y = 9x + 15</me>
       </p>
-      <p>
-        Substituting these value totals into the slope and intercept expressions:
-        <me>m = \frac{7(1654) - (28)(352)}{7(140) - (28)^2} = \frac{11578 - 9856}{980 - 784} = \frac{1722}{196} \approx 8.86</me>
-        <me>b = \frac{352 - (8.85714)(28)}{7} \approx 14.57</me>
-        Rounding both factors to the nearest integer values fields our linear modeling line equation: 
-        <me>y = 9x + 14</me>
-      </p>
-
       <p>
         <term>Step 2: Predict for Day 10</term>
         To estimate item performance on the tenth day, we evaluate our regression equation at <m>x = 10</m>:
         <md>
-          <mrow>y \amp = 8.8571(10) + 14.5714</mrow>
-          <mrow>y \amp = 88.5714 + 14.5714 = 103.14</mrow>
+          <mrow>Y \amp = 9(10) + 15</mrow>
+          <mrow>Y \amp = 90 + 15 = 105</mrow>
         </md>
-        Rounding to the nearest whole item integer yields a final estimate of <term>104</term> items sold.
+        Rounding to the nearest whole item integer yields a final estimate of <term>105</term> items sold.
       </p>
 
       <figure xml:id="fig-sales-regression">

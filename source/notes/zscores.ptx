@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <section xml:id="sec-z-scores">
-  <title>Z-Scores and Probability </title>
+  <title>Z-Scores </title>
 
   <introduction>
     <p>
@@ -203,50 +203,6 @@
       </solution>
     </exercise>
 
-    <exercise>
-      <statement>
-        <p>
-          On a standardized certification exam, the mean score is <m>76</m> with a standard deviation of <m>5</m>.
-          Determine the z-score for an examinee who scored an <m>88</m>.
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <me>z = \frac{88 - 76}{5} = 2.4</me>
-          This student scored <m>2.4</m> standard deviations above the population average.
-        </p>
-      </solution>
-    </exercise>
-
-    <exercise>
-      <statement>
-        <p>
-          A track-and-field sprint group has a mean race completion time of <m>24.5</m> seconds with a standard deviation of <m>3.2</m> seconds.
-          What is the z-score for a runner who completes the race in <m>19.1</m> seconds?
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <me>z = \frac{19.1 - 24.5}{3.2} \approx -1.69</me>
-          The runner's time is <m>1.69</m> standard deviations faster (below) than the group average.
-        </p>
-      </solution>
-    </exercise>
-
-    <exercise>
-      <statement>
-        <p>
-          An industrial lighting brand has a mean runtime life of <m>15,000</m> hours with a standard deviation of <m>850</m> hours.
-          Find the specific operational lifespan <m>x</m> that corresponds to a z-score of <m>-1.40</m>.
-        </p>
-      </statement>
-      <solution>
-        <p>
-          <me>x = mean + z(standard deviation)</me>
-          <me>x = 15000 + (-1.40)(850) = 13810\text{ hours}</me>
-        </p>
-      </solution>
-    </exercise>
   </exercises>
 
 

@@ -230,7 +230,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-empirical-rule.html" class="internal"><span class="title">The Empirical Rule</span></a></div></li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-z-scores.html" class="internal"><span class="title">Z-Scores and Probability</span></a></div>
+<div class="toc-title-box"><a href="sec-z-scores.html" class="internal"><span class="title">Z-Scores</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-z-scores.html#exercises-z-scores" class="internal"><span class="title">Practice Exercises</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-Regression.html" class="internal"><span class="title">Scatter Plots and Regression Lines</span></a></div></li>
@@ -246,6 +246,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handout-voting-methods.html" class="internal"><span class="title">Voting Methods Handout</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handout-apportionment.html" class="internal"><span class="title">Apportionment Handout</span></a></div></li>
 <li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handout-finance.html" class="internal"><span class="title">Personal Finance Handout</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handout-Statistics.html" class="internal"><span class="title">Statistics Handout</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -430,254 +431,220 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="autopermalink" data-description="Note 4.97"><a href="#sec-Regression-6" title="Copy heading and permalink for Note 4.97" aria-label="Copy heading and permalink for Note 4.97">🔗</a></div>
 </article>
-<div class="para" id="sec-Regression-7">Regression in statistics is a modeling technique used to estimate the relationship between a dependent variable (the outcome) and one or more independent variables (the predictors).<div class="autopermalink" data-description="Paragraph"><a href="#sec-Regression-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="definition definition-like" id="def-Correlation-Coefficient"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.98</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Correlation Coefficient.</span>
+</h3>
+<div class="para" id="def-Correlation-Coefficient-2-1">
+<dfn class="terminology">correlation coefficient</dfn>: A measure used to describe the strength and direction of a relationship between variables whose data points lie on or near a line is called the correlation coefficient, designated by <span class="process-math">\(r\text{.}\)</span> A correlation coefficient, <span class="process-math">\(r\text{,}\)</span> is a number between -1 and 1, inclusive.<div class="autopermalink" data-description="Paragraph"><a href="#def-Correlation-Coefficient-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-Regression-8">It allows you to understand how changes in the predictors are associated with the outcome, which is highly useful for forecasting, making predictions, and identifying trends.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Regression-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<details id="example-ice-cream-prediction" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.98</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Summer Heatwaves and Ice Cream Sales.</span>
+<div class="autopermalink" data-description="Definition 4.98: Correlation Coefficient"><a href="#def-Correlation-Coefficient" title="Copy heading and permalink for Definition 4.98: Correlation Coefficient" aria-label="Copy heading and permalink for Definition 4.98: Correlation Coefficient">🔗</a></div>
+</article>
+<details id="exercise-correlation-coefficient-scenarios" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.99</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Classifying Correlation Types and Strengths.</span>
 </h3></summary>
-<article class="example example-like knowl__content">
-<div class="para" id="example-ice-cream-prediction-2-1">A beachside shop owner wants to examine the relationship between the daily afternoon temperature (<span class="process-math">\(X\text{,}\)</span> measured in degrees Fahrenheit) and the number of ice cream cones sold daily (<span class="process-math">\(Y\)</span>). The data collected over a five-day period is presented below.<div class="autopermalink" data-description="Paragraph"><a href="#example-ice-cream-prediction-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>  
-<figure class="table table-like" id="table-ice-cream-data"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.99<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Daily Temperature vs. Ice Cream Sales<div class="autopermalink" data-description="Table 4.99: Daily Temperature vs. Ice Cream Sales"><a href="#table-ice-cream-data" title="Copy heading and permalink for Table 4.99: Daily Temperature vs. Ice Cream Sales" aria-label="Copy heading and permalink for Table 4.99: Daily Temperature vs. Ice Cream Sales">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
-<tr class="header-horizontal">
-<th scope="col" class="c m b2 r1 l1 t1 lines">Day</th>
-<th scope="col" class="c m b2 r1 l0 t1 lines">Temperature (<span class="process-math">\(X\)</span> in <span class="process-math">\(^\circ\text{F}\)</span>)</th>
-<th scope="col" class="c m b2 r1 l0 t1 lines">Ice Cream Cones Sold (<span class="process-math">\(Y\)</span>)</th>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines">1</td>
-<td class="c m b1 r1 l0 t0 lines">70</td>
-<td class="c m b1 r1 l0 t0 lines">100</td>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines">2</td>
-<td class="c m b1 r1 l0 t0 lines">75</td>
-<td class="c m b1 r1 l0 t0 lines">150</td>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines">3</td>
-<td class="c m b1 r1 l0 t0 lines">80</td>
-<td class="c m b1 r1 l0 t0 lines">190</td>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines">4</td>
-<td class="c m b1 r1 l0 t0 lines">85</td>
-<td class="c m b1 r1 l0 t0 lines">260</td>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines">5</td>
-<td class="c m b1 r1 l0 t0 lines">90</td>
-<td class="c m b1 r1 l0 t0 lines">300</td>
-</tr>
-</table></div>
-</figure> 
-<div class="para" id="example-ice-cream-prediction-2-3">Using the simple linear regression model calculated from the observed data table above, predict the total number of ice cream cones sold if the afternoon temperature reaches <span class="process-math">\(100^\circ\text{F}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-ice-cream-prediction-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="exercise-correlation-coefficient-scenarios-2-1">The linear correlation coefficient (<span class="process-math">\(r\)</span>) details both the direction (positive or negative) and strength (perfect, strong, weak, or zero) of the linear relationship between two variables. Match each of the following real-world study results with its correct statistical description:<div class="autopermalink" data-description="Paragraph"><a href="#exercise-correlation-coefficient-scenarios-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="exercise-correlation-coefficient-scenarios-2-2">
+<ol class="decimal ol-marker-1" id="exercise-correlation-coefficient-scenarios-2-2-1">
+<li id="exercise-correlation-coefficient-scenarios-2-2-1-1">
+<div class="para" id="exercise-correlation-coefficient-scenarios-2-2-1-1-1">A study on employee training hours and production errors yields <span class="process-math">\(r = -0.85\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-correlation-coefficient-scenarios-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.99.1"><a href="#exercise-correlation-coefficient-scenarios-2-2-1-1" title="Copy heading and permalink for Item 4.99.1" aria-label="Copy heading and permalink for Item 4.99.1">🔗</a></div>
+</li>
+<li id="exercise-correlation-coefficient-scenarios-2-2-1-2">
+<div class="para" id="exercise-correlation-coefficient-scenarios-2-2-1-2-1">An analysis of weekly grocery spending and family hair length yields <span class="process-math">\(r = 0.02\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-correlation-coefficient-scenarios-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.99.2"><a href="#exercise-correlation-coefficient-scenarios-2-2-1-2" title="Copy heading and permalink for Item 4.99.2" aria-label="Copy heading and permalink for Item 4.99.2">🔗</a></div>
+</li>
+<li id="exercise-correlation-coefficient-scenarios-2-2-1-3">
+<div class="para" id="exercise-correlation-coefficient-scenarios-2-2-1-3-1">A dataset comparing daily steps taken and body fat percentage yields <span class="process-math">\(r = -0.25\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-correlation-coefficient-scenarios-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.99.3"><a href="#exercise-correlation-coefficient-scenarios-2-2-1-3" title="Copy heading and permalink for Item 4.99.3" aria-label="Copy heading and permalink for Item 4.99.3">🔗</a></div>
+</li>
+<li id="exercise-correlation-coefficient-scenarios-2-2-1-4">
+<div class="para" id="exercise-correlation-coefficient-scenarios-2-2-1-4-1">An observation of local temperature and outdoor swimming pool attendance yields <span class="process-math">\(r = 0.88\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-correlation-coefficient-scenarios-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.99.4"><a href="#exercise-correlation-coefficient-scenarios-2-2-1-4" title="Copy heading and permalink for Item 4.99.4" aria-label="Copy heading and permalink for Item 4.99.4">🔗</a></div>
+</li>
+<li id="exercise-correlation-coefficient-scenarios-2-2-1-5">
+<div class="para" id="exercise-correlation-coefficient-scenarios-2-2-1-5-1">A report correlating a person’s age with their vocabulary size yields <span class="process-math">\(r = 0.31\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-correlation-coefficient-scenarios-2-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.99.5"><a href="#exercise-correlation-coefficient-scenarios-2-2-1-5" title="Copy heading and permalink for Item 4.99.5" aria-label="Copy heading and permalink for Item 4.99.5">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-correlation-coefficient-scenarios-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="example-ice-cream-prediction-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise-correlation-coefficient-scenarios-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="example-ice-cream-prediction-4-1">To predict the number of ice cream cones sold at 100°F, we first need to graph the data points from the table and calculate the line of best fit using linear regression.<div class="autopermalink" data-description="Paragraph"><a href="#example-ice-cream-prediction-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise-correlation-coefficient-scenarios-3-1">Here is the correct classification for each scenario using standard interpretation boundaries for the correlation coefficient:<div class="autopermalink" data-description="Paragraph"><a href="#exercise-correlation-coefficient-scenarios-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="example-ice-cream-prediction-4-2"> 
-<figure class="figure figure-like" id="figure-ice-cream-scatter"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/plot-ice-cream.svg" role="img" class="contained" alt="A scatter plot showing an upward trend of daily sales as temperature rises, with a red regression line and labeled data points."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.100<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Scatter Plot of Temperature vs. Ice Cream Cones Sold<div class="autopermalink" data-description="Figure 4.100"><a href="#figure-ice-cream-scatter" title="Copy heading and permalink for Figure 4.100" aria-label="Copy heading and permalink for Figure 4.100">🔗</a></div></figcaption>
-</figure><div class="autopermalink" data-description="Paragraph"><a href="#example-ice-cream-prediction-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="exercise-correlation-coefficient-scenarios-3-2">
+<ul class="disc" id="exercise-correlation-coefficient-scenarios-3-2-1">
+<li id="exercise-correlation-coefficient-scenarios-3-2-1-1">
+<div class="para" id="exercise-correlation-coefficient-scenarios-3-2-1-1-1">
+<em class="alert">Scenario 1 (<span class="process-math">\(r = -0.85\)</span>): Strong Negative Correlation.</em> The value is negative, meaning errors drop as training increases. Because <span class="process-math">\(|-0.85|\)</span> is close to <span class="process-math">\(1.0\text{,}\)</span> the data points form a tightly clustered downward trend line.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-correlation-coefficient-scenarios-3-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.98.1"><a href="#example-ice-cream-prediction-4" title="Copy heading and permalink for Solution 4.98.1" aria-label="Copy heading and permalink for Solution 4.98.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Example 4.98: Summer Heatwaves and Ice Cream Sales"><a href="#example-ice-cream-prediction" title="Copy heading and permalink for Example 4.98: Summer Heatwaves and Ice Cream Sales" aria-label="Copy heading and permalink for Example 4.98: Summer Heatwaves and Ice Cream Sales">🔗</a></div>
-</article></details>
-<details id="example-car-mileage-prediction" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.101</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Car Mileage and Resale Value.</span>
-</h3></summary>
-<article class="example example-like knowl__content">
-<div class="para" id="example-car-mileage-prediction-2-1">A used car dealership wants to examine the relationship between a specific sedan’s odometer mileage (<span class="process-math">\(X\text{,}\)</span> measured in thousands of miles) and its current market resale value (<span class="process-math">\(Y\text{,}\)</span> measured in thousands of dollars). The data collected from a sample of five vehicles is presented below.<div class="autopermalink" data-description="Paragraph"><a href="#example-car-mileage-prediction-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>  
-<figure class="table table-like" id="table-car-mileage-data"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.102<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Vehicle Mileage vs. Resale Value<div class="autopermalink" data-description="Table 4.102: Vehicle Mileage vs. Resale Value"><a href="#table-car-mileage-data" title="Copy heading and permalink for Table 4.102: Vehicle Mileage vs. Resale Value" aria-label="Copy heading and permalink for Table 4.102: Vehicle Mileage vs. Resale Value">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
-<tr class="header-horizontal">
-<th scope="col" class="c m b2 r1 l1 t1 lines">Vehicle</th>
-<th scope="col" class="c m b2 r1 l0 t1 lines">Mileage (<span class="process-math">\(X\)</span> in thousands of miles)</th>
-<th scope="col" class="c m b2 r1 l0 t1 lines">Resale Value (<span class="process-math">\(Y\)</span> in thousands of dollars)</th>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines">1</td>
-<td class="c m b1 r1 l0 t0 lines">10</td>
-<td class="c m b1 r1 l0 t0 lines">35</td>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines">2</td>
-<td class="c m b1 r1 l0 t0 lines">20</td>
-<td class="c m b1 r1 l0 t0 lines">29</td>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines">3</td>
-<td class="c m b1 r1 l0 t0 lines">30</td>
-<td class="c m b1 r1 l0 t0 lines">26</td>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines">4</td>
-<td class="c m b1 r1 l0 t0 lines">40</td>
-<td class="c m b1 r1 l0 t0 lines">20</td>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines">5</td>
-<td class="c m b1 r1 l0 t0 lines">50</td>
-<td class="c m b1 r1 l0 t0 lines">14</td>
-</tr>
-</table></div>
-</figure> 
-<div class="para" id="example-car-mileage-prediction-2-3">Using the simple linear regression model calculated from the observed data table above, predict the total market resale value of a sedan if its odometer reaches <span class="process-math">\(60\)</span> thousand miles (i.e., <span class="process-math">\(X = 60\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#example-car-mileage-prediction-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="solutions">
-<details id="example-car-mileage-prediction-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
-<div class="para" id="example-car-mileage-prediction-4-1">To predict the resale value of the vehicle at 60 thousand miles, we first graph the data points from the table and calculate the line of best fit using linear regression.<div class="autopermalink" data-description="Paragraph"><a href="#example-car-mileage-prediction-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="example-car-mileage-prediction-4-2"> 
-<figure class="figure figure-like" id="figure-car-mileage-scatter"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/plot-car-mileage.svg" role="img" class="contained" alt="A scatter plot showing a downward trend of resale value as mileage increases, with a red regression line and labeled data points."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.103<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Scatter Plot of Mileage vs. Resale Value<div class="autopermalink" data-description="Figure 4.103"><a href="#figure-car-mileage-scatter" title="Copy heading and permalink for Figure 4.103" aria-label="Copy heading and permalink for Figure 4.103">🔗</a></div></figcaption>
-</figure><div class="autopermalink" data-description="Paragraph"><a href="#example-car-mileage-prediction-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 4.101.1"><a href="#example-car-mileage-prediction-4" title="Copy heading and permalink for Solution 4.101.1" aria-label="Copy heading and permalink for Solution 4.101.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Example 4.101: Car Mileage and Resale Value"><a href="#example-car-mileage-prediction" title="Copy heading and permalink for Example 4.101: Car Mileage and Resale Value" aria-label="Copy heading and permalink for Example 4.101: Car Mileage and Resale Value">🔗</a></div>
-</article></details>
-<details id="exercise-shoe-size-prediction" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.104</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Shoe Size and Exam Scores.</span>
-</h3></summary>
-<article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
-<div class="exercise-statement">
-<div class="para" id="exercise-shoe-size-prediction-2-1">A statistics professor wants to examine the relationship between a student’s shoe size (<span class="process-math">\(X\)</span>) and their score on the final exam (<span class="process-math">\(Y\text{,}\)</span> measured as a percentage). The data collected from a random sample of five students is presented below.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-shoe-size-prediction-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>  
-<figure class="table table-like" id="table-shoe-size-data"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.105<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Student Shoe Size vs. Exam Score<div class="autopermalink" data-description="Table 4.105: Student Shoe Size vs. Exam Score"><a href="#table-shoe-size-data" title="Copy heading and permalink for Table 4.105: Student Shoe Size vs. Exam Score" aria-label="Copy heading and permalink for Table 4.105: Student Shoe Size vs. Exam Score">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
-<tr class="header-horizontal">
-<th scope="col" class="c m b2 r1 l1 t1 lines">Student</th>
-<th scope="col" class="c m b2 r1 l0 t1 lines">Shoe Size (<span class="process-math">\(X\)</span>)</th>
-<th scope="col" class="c m b2 r1 l0 t1 lines">Exam Score (<span class="process-math">\(Y\)</span> in %)</th>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines">1</td>
-<td class="c m b1 r1 l0 t0 lines">6</td>
-<td class="c m b1 r1 l0 t0 lines">85</td>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines">2</td>
-<td class="c m b1 r1 l0 t0 lines">8</td>
-<td class="c m b1 r1 l0 t0 lines">62</td>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines">3</td>
-<td class="c m b1 r1 l0 t0 lines">9</td>
-<td class="c m b1 r1 l0 t0 lines">94</td>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines">4</td>
-<td class="c m b1 r1 l0 t0 lines">11</td>
-<td class="c m b1 r1 l0 t0 lines">73</td>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines">5</td>
-<td class="c m b1 r1 l0 t0 lines">12</td>
-<td class="c m b1 r1 l0 t0 lines">81</td>
-</tr>
-</table></div>
-</figure> 
-<div class="para" id="exercise-shoe-size-prediction-2-3">Using the simple linear regression model calculated from the observed data table above, predict the expected final exam score of a student who wears a shoe size of <span class="process-math">\(10\)</span> (i.e., <span class="process-math">\(X = 10\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#exercise-shoe-size-prediction-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</div>
-<ul data-component="multiplechoice" class="exercise-interactives" id="rs-exercise-shoe-size-prediction" data-multipleanswers="false">
-<li data-component="answer" id="rs-exercise-shoe-size-prediction_opt_a">
-<div class="para" id="exercise-shoe-size-prediction-3-1-1-1">65%</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-correlation-coefficient-scenarios-3-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li data-component="feedback" id="rs-exercise-shoe-size-prediction_opt_a">
-<div class="para" id="exercise-shoe-size-prediction-3-1-2-1">Incorrect. While some individual students score near this range, this value deviates from the baseline sample average predicted by a zero-correlation model.</div>
+<li id="exercise-correlation-coefficient-scenarios-3-2-1-2">
+<div class="para" id="exercise-correlation-coefficient-scenarios-3-2-1-2-1">
+<em class="alert">Scenario 2 (<span class="process-math">\(r = 0.02\)</span>): No Correlation.</em> The value is approximately <span class="process-math">\(0\text{.}\)</span> Changes in grocery spending show a completely random distribution when plotted against hair length, indicating no linear link.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-correlation-coefficient-scenarios-3-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-correlation-coefficient-scenarios-3-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li data-component="answer" id="rs-exercise-shoe-size-prediction_opt_b" data-correct="">
-<div class="para" id="exercise-shoe-size-prediction-3-2-1-1">79%</div>
+<li id="exercise-correlation-coefficient-scenarios-3-2-1-3">
+<div class="para" id="exercise-correlation-coefficient-scenarios-3-2-1-3-1">
+<em class="alert">Scenario 3 (<span class="process-math">\(r = -0.25\)</span>): Weak Negative Correlation.</em> The negative sign shows an inverse direction (more steps link to lower body fat). However, being close to <span class="process-math">\(0\)</span> means the data forms a highly dispersed, scattered downward cloud.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-correlation-coefficient-scenarios-3-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-correlation-coefficient-scenarios-3-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li data-component="feedback" id="rs-exercise-shoe-size-prediction_opt_b">
-<div class="para" id="exercise-shoe-size-prediction-3-2-2-1">Correct! Because there is no linear relationship between shoe size and exam scores, the slope is approximately 0, meaning the best prediction for any shoe size is simply the mean of the observed scores (<span class="process-math">\(\bar{Y} = 79\)</span>).</div>
+<li id="exercise-correlation-coefficient-scenarios-3-2-1-4">
+<div class="para" id="exercise-correlation-coefficient-scenarios-3-2-1-4-1">
+<em class="alert">Scenario 4 (<span class="process-math">\(r = 0.88\)</span>): Strong Positive Correlation.</em> The positive sign indicates both variables rise together. The high value shows the data pairs cluster tightly along an upward-sloping trend line.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-correlation-coefficient-scenarios-3-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-correlation-coefficient-scenarios-3-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li data-component="answer" id="rs-exercise-shoe-size-prediction_opt_c">
-<div class="para" id="exercise-shoe-size-prediction-3-3-1-1">95%</div>
-</li>
-<li data-component="feedback" id="rs-exercise-shoe-size-prediction_opt_c">
-<div class="para" id="exercise-shoe-size-prediction-3-3-2-1">Incorrect. This prediction assumes a positive correlation where larger shoe sizes guarantee higher test scores, which is not supported by the data pattern.</div>
-</li>
-<li data-component="answer" id="rs-exercise-shoe-size-prediction_opt_d">
-<div class="para" id="exercise-shoe-size-prediction-3-4-1-1">50%</div>
-</li>
-<li data-component="feedback" id="rs-exercise-shoe-size-prediction_opt_d">
-<div class="para" id="exercise-shoe-size-prediction-3-4-2-1">Incorrect. This assumes an artificial downward trend that does not match the random distribution of the data sample.</div>
+<li id="exercise-correlation-coefficient-scenarios-3-2-1-5">
+<div class="para" id="exercise-correlation-coefficient-scenarios-3-2-1-5-1">
+<em class="alert">Scenario 5 (<span class="process-math">\(r = 0.31\)</span>): Weak Positive Correlation.</em> The relationship is positive (older age links to larger vocabulary), but the low decimal value indicates a loosely scattered upward trend with significant variance.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-correlation-coefficient-scenarios-3-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exercise-correlation-coefficient-scenarios-3-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-</div></div>
-<div class="solutions">
-<details id="exercise-shoe-size-prediction-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
-<div class="para" id="exercise-shoe-size-prediction-4-1">To predict the exam score for a student with a shoe size of 10, we graph the data points from the table and calculate the line of best fit using linear regression.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-shoe-size-prediction-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-correlation-coefficient-scenarios-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="exercise-shoe-size-prediction-4-2">
-<figure class="figure figure-like" id="figure-shoe-size-scatter"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/plot-shoe-size.svg" role="img" class="contained" alt="A scatter plot showing a random distribution of exam scores across different shoe sizes, featuring a flat horizontal regression line and labeled data points."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.106<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Scatter Plot of Shoe Size vs. Exam Score<div class="autopermalink" data-description="Figure 4.106"><a href="#figure-shoe-size-scatter" title="Copy heading and permalink for Figure 4.106" aria-label="Copy heading and permalink for Figure 4.106">🔗</a></div></figcaption>
-</figure><div class="autopermalink" data-description="Paragraph"><a href="#exercise-shoe-size-prediction-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 4.104.1"><a href="#exercise-shoe-size-prediction-4" title="Copy heading and permalink for Solution 4.104.1" aria-label="Copy heading and permalink for Solution 4.104.1">🔗</a></div>
+<figure class="figure figure-like" id="figure-five-correlation-types"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/plot-five-correlations.svg" role="img" class="contained" alt="A multi-panel layout showing strong positive, weak positive, no correlation, weak negative, and strong negative scatter plots side by side."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.100<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 4.100: Grid Visualization of the Five Correlation Profiles"><a href="#figure-five-correlation-types" title="Copy heading and permalink for Figure 4.100: Grid Visualization of the Five Correlation Profiles" aria-label="Copy heading and permalink for Figure 4.100: Grid Visualization of the Five Correlation Profiles">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 4.99.1"><a href="#exercise-correlation-coefficient-scenarios-3" title="Copy heading and permalink for Solution 4.99.1" aria-label="Copy heading and permalink for Solution 4.99.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 4.104: Shoe Size and Exam Scores"><a href="#exercise-shoe-size-prediction" title="Copy heading and permalink for Checkpoint 4.104: Shoe Size and Exam Scores" aria-label="Copy heading and permalink for Checkpoint 4.104: Shoe Size and Exam Scores">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 4.99: Classifying Correlation Types and Strengths"><a href="#exercise-correlation-coefficient-scenarios" title="Copy heading and permalink for Checkpoint 4.99: Classifying Correlation Types and Strengths" aria-label="Copy heading and permalink for Checkpoint 4.99: Classifying Correlation Types and Strengths">🔗</a></div>
 </article></details>
-<div class="para" id="sec-Regression-12">Depending on the nature of your data and the relationship you are trying to analyze, there are several standard regression models:<div class="autopermalink" data-description="Paragraph"><a href="#sec-Regression-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<details id="example-stress-illness-correlation" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.101</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Stress and Illness Analysis.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="example-stress-illness-correlation-2-1">In a 1971 study involving <span class="process-math">\(232\)</span> subjects, researchers found a relationship between the subjects’ level of stress and how often they became ill. The correlation coefficient in this study was <span class="process-math">\(r = 0.22\text{.}\)</span> What does this indicate about the relationship between stress and illness?<div class="autopermalink" data-description="Paragraph"><a href="#example-stress-illness-correlation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="example-stress-illness-correlation-2-2">Stress and illness have a <span class="fillin underline" role="img" aria-label="8-character blank" style="width: 3.636363636363636em;"></span> and <span class="fillin underline" role="img" aria-label="8-character blank" style="width: 3.636363636363636em;"></span> relationship.<div class="autopermalink" data-description="Paragraph"><a href="#example-stress-illness-correlation-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
+<div class="solutions">
+<details id="example-stress-illness-correlation-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="example-stress-illness-correlation-4-1">The value <span class="process-math">\(r = 0.22\)</span> provides two key pieces of information about the linear trend:<div class="autopermalink" data-description="Paragraph"><a href="#example-stress-illness-correlation-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="example-stress-illness-correlation-4-2">
+<ul class="disc" id="example-stress-illness-correlation-4-2-1">
+<li id="example-stress-illness-correlation-4-2-1-1">
+<div class="para" id="example-stress-illness-correlation-4-2-1-1-1">
+<em class="alert">Direction:</em> The value is positive (<span class="process-math">\(r \gt 0\)</span>). This means the two variables move in the same direction: as a person’s recorded stress levels increase, their frequency of falling ill also tends to increase.<div class="autopermalink" data-description="Paragraph"><a href="#example-stress-illness-correlation-4-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#example-stress-illness-correlation-4-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="example-stress-illness-correlation-4-2-1-2">
+<div class="para" id="example-stress-illness-correlation-4-2-1-2-1">
+<em class="alert">Strength:</em> The absolute value is low (<span class="process-math">\(|0.22| \lt 0.30\)</span>). This means that while a pattern exists, the data points are highly scattered around a line of best fit, making it a weak predictable link.<div class="autopermalink" data-description="Paragraph"><a href="#example-stress-illness-correlation-4-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#example-stress-illness-correlation-4-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-stress-illness-correlation-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-stress-illness-correlation-4-3">Therefore, stress and illness have a <em class="alert">weak</em> and <em class="alert">positive</em> relationship.<div class="autopermalink" data-description="Paragraph"><a href="#example-stress-illness-correlation-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="figure-stress-illness-visual"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/plot-stress-illness.svg" role="img" class="contained" alt="A scatter plot displaying a highly dispersed, loosely upward-sloping cloud of data points representing a weak positive correlation."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.102<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 4.102: Conceptual Visualization of r = 0.22"><a href="#figure-stress-illness-visual" title="Copy heading and permalink for Figure 4.102: Conceptual Visualization of r = 0.22" aria-label="Copy heading and permalink for Figure 4.102: Conceptual Visualization of r = 0.22">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 4.101.1"><a href="#example-stress-illness-correlation-4" title="Copy heading and permalink for Solution 4.101.1" aria-label="Copy heading and permalink for Solution 4.101.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 4.101: Stress and Illness Analysis"><a href="#example-stress-illness-correlation" title="Copy heading and permalink for Example 4.101: Stress and Illness Analysis" aria-label="Copy heading and permalink for Example 4.101: Stress and Illness Analysis">🔗</a></div>
+</article></details>
+<details id="example-literacy-child-mortality" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.103</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Real-World Analysis: Literacy and Child Mortality.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="example-literacy-child-mortality-2-1">The scatter plot below shows the relationship between the percentage of adult females in a country who are literate (<span class="process-math">\(X\)</span>) and the mortality rate of children under five per thousand (<span class="process-math">\(Y\)</span>), alongside its linear regression line.<div class="autopermalink" data-description="Paragraph"><a href="#example-literacy-child-mortality-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>  
+<figure class="figure figure-like" id="figure-literacy-mortality-scatter"><div class="image-box" style="width: 85%; margin-left: 7.5%; margin-right: 7.5%;"><img src="external/img-literacy-mortality.png" class="contained" alt="A scatter plot showing a clear downward trend where under-five child mortality decreases as the percentage of adult female literacy increases."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.104<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Scatter Plot of Female Literacy vs. Under-Five Mortality<div class="autopermalink" data-description="Figure 4.104"><a href="#figure-literacy-mortality-scatter" title="Copy heading and permalink for Figure 4.104" aria-label="Copy heading and permalink for Figure 4.104">🔗</a></div></figcaption>
+</figure> 
+<div class="para logical" id="example-literacy-child-mortality-2-3">
+<div class="para">Use the provided chart to determine whether each of the following statements is <em class="alert">True</em> or <em class="alert">False</em>:</div>
+<ol class="decimal ol-marker-1" id="example-literacy-child-mortality-2-3-3">
+<li id="example-literacy-child-mortality-2-3-3-1">
+<div class="para" id="example-literacy-child-mortality-2-3-3-1-1">There is a perfect negative correlation between the percentage of adult females who are literate and under-five mortality.<div class="autopermalink" data-description="Paragraph"><a href="#example-literacy-child-mortality-2-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#example-literacy-child-mortality-2-3-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="example-literacy-child-mortality-2-3-3-2">
+<div class="para" id="example-literacy-child-mortality-2-3-3-2-1">As the percentage of adult females who are literate increases, under-five mortality tends to decrease.<div class="autopermalink" data-description="Paragraph"><a href="#example-literacy-child-mortality-2-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#example-literacy-child-mortality-2-3-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="example-literacy-child-mortality-2-3-3-3">
+<div class="para" id="example-literacy-child-mortality-2-3-3-3-1">There is no correlation between the percentage of adult females who are literate and under-five mortality.<div class="autopermalink" data-description="Paragraph"><a href="#example-literacy-child-mortality-2-3-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#example-literacy-child-mortality-2-3-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-literacy-child-mortality-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="example-literacy-child-mortality-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="example-literacy-child-mortality-3-1">By evaluating the direction and spatial dispersion of the data clusters on the graph, we find the following solutions:<div class="autopermalink" data-description="Paragraph"><a href="#example-literacy-child-mortality-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="example-literacy-child-mortality-3-2">
+<ul class="disc" id="example-literacy-child-mortality-3-2-1">
+<li id="example-literacy-child-mortality-3-2-1-1">
+<div class="para" id="example-literacy-child-mortality-3-2-1-1-1">
+<em class="alert">Statement 1 is False.</em> A <dfn class="terminology">perfect negative correlation</dfn> (<span class="process-math">\(r = -1.0\)</span>) requires every observed country node to land exactly on the blue trajectory pathway line. Because data nodes are spread out in a loose cloud formation above and below the trendline, the pairing represents a strong, imperfect negative correlation.<div class="autopermalink" data-description="Paragraph"><a href="#example-literacy-child-mortality-3-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#example-literacy-child-mortality-3-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="example-literacy-child-mortality-3-2-1-2">
+<div class="para" id="example-literacy-child-mortality-3-2-1-2-1">
+<em class="alert">Statement 2 is True.</em> The simple linear regression model features a distinct downward slope tracking from left to right. This confirms that as female literacy coordinates increase along the horizontal axis, the corresponding under-five mortality index shows a consistent, predictable decline.<div class="autopermalink" data-description="Paragraph"><a href="#example-literacy-child-mortality-3-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#example-literacy-child-mortality-3-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="example-literacy-child-mortality-3-2-1-3">
+<div class="para" id="example-literacy-child-mortality-3-2-1-3-1">
+<em class="alert">Statement 3 is False.</em> A condition of <dfn class="terminology">no correlation</dfn> (<span class="process-math">\(r = 0\)</span>) generates a completely unstructured cloud of circular nodes accompanied by a flat, zero-slope horizontal regression bar. This graph shows a clear linear pattern, proving a strong statistical relationship between the two metrics.<div class="autopermalink" data-description="Paragraph"><a href="#example-literacy-child-mortality-3-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#example-literacy-child-mortality-3-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-literacy-child-mortality-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.103.1"><a href="#example-literacy-child-mortality-3" title="Copy heading and permalink for Solution 4.103.1" aria-label="Copy heading and permalink for Solution 4.103.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 4.103: Real-World Analysis: Literacy and Child Mortality"><a href="#example-literacy-child-mortality" title="Copy heading and permalink for Example 4.103: Real-World Analysis: Literacy and Child Mortality" aria-label="Copy heading and permalink for Example 4.103: Real-World Analysis: Literacy and Child Mortality">🔗</a></div>
+</article></details>
 <article class="assemblage assemblage-like" id="assemblage-linear-regression"><h3 class="heading"><span class="title">Simple Linear Regression.</span></h3>
-<div class="para" id="assemblage-linear-regression-2">
-<em class="alert">Simple linear regression</em> is a statistical method that models the relationship between a single independent variable and a continuous dependent variable by fitting a linear equation to observed data. It plots a straight line of best fit. The equation of the line is typically expressed as a linear function of the form <span class="process-math">\(y = mx + b\text{,}\)</span> where <span class="process-math">\(m\)</span> represents the slope of the line and <span class="process-math">\(b\)</span> represents the y-intercept.<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-linear-regression-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="assemblage-linear-regression-2">
+<div class="para">
+<em class="alert">Simple linear regression</em> is a statistical method that models the relationship between a single independent variable and a continuous dependent variable by fitting a linear equation to observed data. It plots a straight line of best fit. The equation of the line is typically expressed as a linear function of the form</div>
+<div class="displaymath process-math" id="assemblage-linear-regression-2-2">
+\begin{equation*}
+Y = mx + b\text{,}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(m\)</span> represents the slope of the line and <span class="process-math">\(b\)</span> represents the y-intercept.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#assemblage-linear-regression-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Assemblage: Simple Linear Regression"><a href="#assemblage-linear-regression" title="Copy heading and permalink for Assemblage: Simple Linear Regression" aria-label="Copy heading and permalink for Assemblage: Simple Linear Regression">🔗</a></div>
 </article>
-<details id="ex-ice-cream" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.107</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<details id="example-widget-package" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.105</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
-<div class="para logical" id="ex-ice-cream-1-1">
-<div class="para">Think of ice cream sales based on the outside temperature:</div>
-<ul class="disc" id="ex-ice-cream-1-1-1">
-<li id="ex-ice-cream-1-1-1-1">
-<div class="para" id="ex-ice-cream-1-1-1-1-1">Temperature (<span class="process-math">\(x\)</span>): The independent variable.<div class="autopermalink" data-description="Paragraph"><a href="#ex-ice-cream-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#ex-ice-cream-1-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="ex-ice-cream-1-1-1-2">
-<div class="para" id="ex-ice-cream-1-1-1-2-1">Ice Cream Sales (<span class="process-math">\(y\)</span>): The dependent variable.<div class="autopermalink" data-description="Paragraph"><a href="#ex-ice-cream-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#ex-ice-cream-1-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-ice-cream-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-widget-package-1-1">A linear model calculated from the dataset below yields a slope of 0.25 and a y-intercept of 8.25. The table details the relationship between the number of widgets in a package and the total length of the package, measured in inches.<div class="autopermalink" data-description="Paragraph"><a href="#example-widget-package-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
-<div class="para" id="ex-ice-cream-1-2">As temperature (<span class="process-math">\(x\)</span>) goes up, ice cream sales (<span class="process-math">\(y\)</span>) go up. A simple linear regression draws a straight line through your past data to help you predict exactly how many ice creams you will sell on a hot 90°F day versus a cool 60°F day.<div class="autopermalink" data-description="Paragraph"><a href="#ex-ice-cream-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="solutions">
-<details id="sol-ice-cream-prediction" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
-<div class="para" id="sol-ice-cream-prediction-1">By establishing the linear equation from historical data, the business can accurately input the predicted weather temperature (<span class="process-math">\(x\)</span>) to yield an expected inventory target (<span class="process-math">\(y\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#sol-ice-cream-prediction-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 4.107.1"><a href="#sol-ice-cream-prediction" title="Copy heading and permalink for Solution 4.107.1" aria-label="Copy heading and permalink for Solution 4.107.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Example 4.107"><a href="#ex-ice-cream" title="Copy heading and permalink for Example 4.107" aria-label="Copy heading and permalink for Example 4.107">🔗</a></div>
-</article></details>
-<details id="ex-widget-package" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.108</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h3></summary>
-<article class="exercise exercise-like knowl__content">
-<div class="para" id="ex-widget-package-1-1">The relationship between the number of widgets in a package and the length of the package, in inches, is given in the table below.<div class="autopermalink" data-description="Paragraph"><a href="#ex-widget-package-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<figure class="table table-like" id="table-widget-data"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.109<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.109"><a href="#table-widget-data" title="Copy heading and permalink for Table 4.109" aria-label="Copy heading and permalink for Table 4.109">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="table-widget-data"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.106<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.106"><a href="#table-widget-data" title="Copy heading and permalink for Table 4.106" aria-label="Copy heading and permalink for Table 4.106">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t1 lines"><dfn class="terminology">Number of Widgets (<span class="process-math">\(x\)</span>)</dfn></td>
 <td class="c m b1 r0 l0 t1 lines"><dfn class="terminology">Length of Package in. (<span class="process-math">\(y\)</span>)</dfn></td>
@@ -700,150 +667,91 @@ eBookConfig.enable_chatcodes =  false;
 </tr>
 </table></div>
 </figure> 
-<div class="para logical" id="ex-widget-package-1-3">
-<ol class="lower-alpha ol-marker-4" id="ex-widget-package-1-3-1">
-<li id="ex-widget-package-1-3-1-1">
-<div class="para" id="ex-widget-package-1-3-1-1-1">What is the slope of the line of best fit (linear regression)? (Widgets on <span class="process-math">\(x\)</span>-axis, Length on <span class="process-math">\(y\)</span>-axis)<div class="autopermalink" data-description="Paragraph"><a href="#ex-widget-package-1-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="example-widget-package-1-3">
+<ol class="lower-alpha ol-marker-4" id="example-widget-package-1-3-1">
+<li id="example-widget-package-1-3-1-1">
+<div class="para" id="example-widget-package-1-3-1-1-1">Form the equation of the regression line and interpret the slope and y-intercept in the context of the problem.<div class="autopermalink" data-description="Paragraph"><a href="#example-widget-package-1-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.108.a"><a href="#ex-widget-package-1-3-1-1" title="Copy heading and permalink for Item 4.108.a" aria-label="Copy heading and permalink for Item 4.108.a">🔗</a></div>
+<div class="autopermalink" data-description="Item a"><a href="#example-widget-package-1-3-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
-<li id="ex-widget-package-1-3-1-2">
-<div class="para" id="ex-widget-package-1-3-1-2-1">What is the value of the y-intercept of the linear regression?<div class="autopermalink" data-description="Paragraph"><a href="#ex-widget-package-1-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="example-widget-package-1-3-1-2">
+<div class="para" id="example-widget-package-1-3-1-2-1">Using the regression line, predict the length of a package that contains 7 widgets.<div class="autopermalink" data-description="Paragraph"><a href="#example-widget-package-1-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.108.b"><a href="#ex-widget-package-1-3-1-2" title="Copy heading and permalink for Item 4.108.b" aria-label="Copy heading and permalink for Item 4.108.b">🔗</a></div>
+<div class="autopermalink" data-description="Item b"><a href="#example-widget-package-1-3-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-widget-package-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-widget-package-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex-widget-package-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="example-widget-package-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para logical" id="ex-widget-package-2-1">
-<div class="para">
-<dfn class="terminology">Part a) Slope Calculation:</dfn> The formula for the slope (<span class="process-math">\(m\)</span>) of a line passing through coordinates <span class="process-math">\((x_1, y_1)\)</span> and <span class="process-math">\((x_2, y_2)\)</span> is:</div>
-<div class="displaymath process-math" id="ex-widget-package-2-1-5">
+<div class="para logical" id="example-widget-package-2-1">
+<ol class="lower-alpha ol-marker-2" id="example-widget-package-2-1-1">
+<li id="example-widget-package-2-1-1-1">
+<div class="para logical" id="example-widget-package-2-1-1-1-1">
+<div class="para">Using the slope (<span class="process-math">\(m = 0.25\)</span>) and the <span class="process-math">\(y\)</span>_-intercept (<span class="process-math">\(b = 8.25\)</span>), the simple linear regression equation is:</div>
+<div class="displaymath process-math" id="example-widget-package-2-1-1-1-1-4">
 \begin{equation*}
-m = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}
+Y = 8.25 + 0.25X
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-widget-package-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-widget-package-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="ex-widget-package-2-2">
-<div class="para">Using sequential points from the data table like <span class="process-math">\((3, 9.00)\)</span> and <span class="process-math">\((4, 9.25)\text{:}\)</span>
+<div class="para" id="example-widget-package-2-1-1-1-2">
+<em class="alert">Interpretation of the Slope:</em> For each additional widget added to the package (<span class="process-math">\(\Delta X = 1\)</span>), the total length of the package increases by exactly <em class="alert">0.25 inches</em>.<div class="autopermalink" data-description="Paragraph"><a href="#example-widget-package-2-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="displaymath process-math" id="ex-widget-package-2-2-3">
-\begin{equation*}
-m = \frac{9.25 - 9.00}{4 - 3} = \frac{0.25}{1} = 0.25
-\end{equation*}
+<div class="para" id="example-widget-package-2-1-1-1-3">
+<em class="alert">Interpretation of the y-Intercept:</em> When there are zero widgets in the package (<span class="process-math">\(X = 0\)</span>), the baseline length of the packaging material itself is <em class="alert">8.25 inches</em>.<div class="autopermalink" data-description="Paragraph"><a href="#example-widget-package-2-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para">Because the data is perfectly linear, the slope of the line of best fit is exactly <dfn class="terminology">0.25</dfn>.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-widget-package-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="ex-widget-package-2-3">
-<div class="para">
-<dfn class="terminology">Part b) Y-Intercept Calculation:</dfn> The slope-intercept form of a linear equation is given by:</div>
-<div class="displaymath process-math" id="ex-widget-package-2-3-2">
-\begin{equation*}
-y = mx + b
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-widget-package-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="ex-widget-package-2-4">
-<div class="para">Substituting our known slope <span class="process-math">\(m = 0.25\)</span> and the first data coordinate point <span class="process-math">\((3, 9.00)\)</span> allows us to solve for <span class="process-math">\(b\text{:}\)</span>
-</div>
-<div class="displaymath process-math" id="ex-widget-package-2-4-4">
+<div class="autopermalink" data-description="Item a"><a href="#example-widget-package-2-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="example-widget-package-2-1-1-2">
+<div class="para logical" id="example-widget-package-2-1-1-2-1">
+<div class="para">To predict the total packaging length for a shipment containing <span class="process-math">\(7\)</span> widgets, substitute <span class="process-math">\(X = 7\)</span> into our linear regression model:</div>
+<div class="displaymath process-math" id="example-widget-package-2-1-1-2-1-3">
 \begin{align*}
-9.00 \amp = 0.25(3) + b\\
-9.00 \amp = 0.75 + b\\
-b \amp = 9.00 - 0.75 = 8.25
+Y \amp= 8.25 + 0.25(7)\\
+Y \amp= 8.25 + 1.75\\
+Y \amp= 10.00 \text{ inches}
 \end{align*}
 </div>
-<div class="para">Thus, the value of the y-intercept is <dfn class="terminology">8.25</dfn>, which corresponds to a complete formula of <span class="process-math">\(y = 0.25x + 8.25\text{.}\)</span>
+<div class="para">A package holding 7 widgets is predicted to be exactly <em class="alert">10.00 inches</em> long.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-widget-package-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-widget-package-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Item b"><a href="#example-widget-package-2-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-widget-package-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="fig-widget-regression"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="generated/latex-image/fig-widget-regression-2.svg" role="img" class="contained" alt="A scatter plot displaying four blue data points aligned upward on a Cartesian coordinate plane. The horizontal axis represents the Number of Widgets from 2 to 7, and the vertical axis represents the Length of the Package in inches from 8 to 11. The four data points are located at coordinates (3, 9.00), (4, 9.25), (5, 9.50), and (6, 9.75). A solid red regression line trends upward through all four points, crossing the vertical axis at a y-intercept value of 8.25, demonstrating a positive linear correlation described by the equation y equals 0.25x plus 8.25."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.110<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Linear Regression Trend for Widget Packaging<div class="autopermalink" data-description="Figure 4.110"><a href="#fig-widget-regression" title="Copy heading and permalink for Figure 4.110" aria-label="Copy heading and permalink for Figure 4.110">🔗</a></div></figcaption>
-</figure><div class="autopermalink" data-description="Solution 4.108.1"><a href="#ex-widget-package-2" title="Copy heading and permalink for Solution 4.108.1" aria-label="Copy heading and permalink for Solution 4.108.1">🔗</a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.107<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Linear Regression Trend for Widget Packaging<div class="autopermalink" data-description="Figure 4.107"><a href="#fig-widget-regression" title="Copy heading and permalink for Figure 4.107" aria-label="Copy heading and permalink for Figure 4.107">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 4.105.1"><a href="#example-widget-package-2" title="Copy heading and permalink for Solution 4.105.1" aria-label="Copy heading and permalink for Solution 4.105.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 4.108"><a href="#ex-widget-package" title="Copy heading and permalink for Checkpoint 4.108" aria-label="Copy heading and permalink for Checkpoint 4.108">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.105"><a href="#example-widget-package" title="Copy heading and permalink for Example 4.105" aria-label="Copy heading and permalink for Example 4.105">🔗</a></div>
 </article></details>
-<div class="para" id="sec-Regression-16">Standard least-squares linear regression is a statistical method used to find the best-fitting straight line through a set of data points. It is the most common technique for modeling the relationship between a dependent variable (<span class="process-math">\(y\)</span>) and one or more independent variables (<span class="process-math">\(x\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#sec-Regression-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="sec-Regression-17">The least-squares method is a mathematical approach that minimizes the sum of the squares of the residuals (the differences between observed and predicted values). This method ensures that the line of best fit is as close as possible to all data points, providing the most accurate representation of the relationship between the variables.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Regression-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<article class="assemblage assemblage-like" id="asm-least-squares-regression"><h3 class="heading"><span class="title">Standard Least-Squares Linear Regression.</span></h3>
-<div class="para logical" id="asm-least-squares-regression-2">
-<div class="para">
-<dfn class="terminology">The Linear Equation</dfn> The definition models the data using the equation of a straight line:</div>
-<div class="displaymath process-math" id="asm-least-squares-regression-2-2">
-\begin{equation*}
-y = mx + b
-\end{equation*}
-</div>
-<div class="para">where <span class="process-math">\(m\)</span> is the slope and <span class="process-math">\(b\)</span> is the y-intercept.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#asm-least-squares-regression-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="asm-least-squares-regression-3">
-<div class="para">
-<dfn class="terminology">Formulas for Coefficients</dfn> The parameters <span class="process-math">\(m\)</span> and <span class="process-math">\(b\)</span> are calculated directly using the following least-squares formulas:</div>
-<div class="displaymath process-math" id="asm-least-squares-regression-3-4">
-\begin{equation*}
-m = \frac{n\sum(xy) - \sum x \sum y}{n\sum(x^2) - (\sum x)^2}
-\end{equation*}
-</div>
-<div class="displaymath process-math" id="asm-least-squares-regression-3-5">
-\begin{equation*}
-b = \frac{\sum y - m\sum x}{n}
-\end{equation*}
-</div>
-<ul class="disc" id="asm-least-squares-regression-3-6">
-<li id="asm-least-squares-regression-3-6-1">
-<div class="para" id="asm-least-squares-regression-3-6-1-1">
-<span class="process-math">\(\sum x\)</span> is the sum of all <span class="process-math">\(x\)</span>-variables.<div class="autopermalink" data-description="Paragraph"><a href="#asm-least-squares-regression-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#asm-least-squares-regression-3-6-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="asm-least-squares-regression-3-6-2">
-<div class="para" id="asm-least-squares-regression-3-6-2-1">
-<span class="process-math">\(\sum y\)</span> is the sum of all <span class="process-math">\(y\)</span>-variables.<div class="autopermalink" data-description="Paragraph"><a href="#asm-least-squares-regression-3-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#asm-least-squares-regression-3-6-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="asm-least-squares-regression-3-6-3">
-<div class="para" id="asm-least-squares-regression-3-6-3-1">
-<span class="process-math">\(\sum(xy)\)</span> is the sum of the product of each paired <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> value.<div class="autopermalink" data-description="Paragraph"><a href="#asm-least-squares-regression-3-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#asm-least-squares-regression-3-6-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="asm-least-squares-regression-3-6-4">
-<div class="para" id="asm-least-squares-regression-3-6-4-1">
-<span class="process-math">\(\sum(x^2)\)</span> is the sum of the squares of all <span class="process-math">\(x\)</span>-variables.<div class="autopermalink" data-description="Paragraph"><a href="#asm-least-squares-regression-3-6-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#asm-least-squares-regression-3-6-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="asm-least-squares-regression-3-6-5">
-<div class="para" id="asm-least-squares-regression-3-6-5-1">
-<span class="process-math">\(n\)</span> is the total number of data points.<div class="autopermalink" data-description="Paragraph"><a href="#asm-least-squares-regression-3-6-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#asm-least-squares-regression-3-6-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#asm-least-squares-regression-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Assemblage: Standard Least-Squares Linear Regression"><a href="#asm-least-squares-regression" title="Copy heading and permalink for Assemblage: Standard Least-Squares Linear Regression" aria-label="Copy heading and permalink for Assemblage: Standard Least-Squares Linear Regression">🔗</a></div>
-</article>
-<div class="para" id="sec-Regression-19">This method provides a powerful tool for understanding and predicting relationships in data, making it a fundamental technique in statistics and data analysis.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Regression-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
 <details id="example-fat-calories-regression" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.111</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.108</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="example example-like knowl__content">
-<div class="para" id="example-fat-calories-regression-1-1">The table below shows the relationship between total fat grams and the total calories in a selection of fast food sandwiches. Find the linear regression equation that models this data. Round all values to the nearest integer.<div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-fat-calories-regression-1-1">A linear model calculated from a dataset yields a slope of 13.3 and a y-intercept of 142.6 when modeling the relationship between total fat grams (<span class="process-math">\(x\)</span>) and total calories (<span class="process-math">\(y\)</span>) in a selection of fast food sandwiches.<div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
-<figure class="table table-like" id="table-sandwich-nutrition"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.112<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.112"><a href="#table-sandwich-nutrition" title="Copy heading and permalink for Table 4.112" aria-label="Copy heading and permalink for Table 4.112">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para logical" id="example-fat-calories-regression-1-2">
+<ol class="lower-alpha ol-marker-2" id="example-fat-calories-regression-1-2-1">
+<li id="example-fat-calories-regression-1-2-1-1">
+<div class="para" id="example-fat-calories-regression-1-2-1-1-1">Form the linear regression equation that models this data, rounding all baseline parameters to the nearest integer, and interpret the slope and y-intercept in the context of the problem.<div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#example-fat-calories-regression-1-2-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="example-fat-calories-regression-1-2-1-2">
+<div class="para" id="example-fat-calories-regression-1-2-1-2-1">Using the regression model, predict the total number of calories in a menu item that contains 25 grams of fat. Round your final prediction to the nearest whole integer.<div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#example-fat-calories-regression-1-2-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="table table-like" id="table-sandwich-nutrition"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.109<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.109"><a href="#table-sandwich-nutrition" title="Copy heading and permalink for Table 4.109" aria-label="Copy heading and permalink for Table 4.109">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t1 lines"><dfn class="terminology">Total Fat g (<span class="process-math">\(x\)</span>)</dfn></th>
 <th scope="col" class="c m b1 r0 l0 t1 lines"><dfn class="terminology">Total Calories (<span class="process-math">\(y\)</span>)</dfn></th>
@@ -878,95 +786,59 @@ b = \frac{\sum y - m\sum x}{n}
 </tr>
 </table></div>
 </figure><div class="solutions">
-<details id="example-fat-calories-regression-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="example-fat-calories-regression-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para logical" id="example-fat-calories-regression-3-1">
-<div class="para">To find the line of best fit <span class="process-math">\(y = mx + b\text{,}\)</span> we apply the standard least-squares linear regression formulas for the slope (<span class="process-math">\(m\)</span>) and the y-intercept (<span class="process-math">\(b\)</span>):</div>
-<div class="displaymath process-math" id="example-fat-calories-regression-3-1-4">
+<div class="para logical" id="example-fat-calories-regression-2-1">
+<ol class="lower-alpha ol-marker-2" id="example-fat-calories-regression-2-1-1">
+<li id="example-fat-calories-regression-2-1-1-1">
+<div class="para logical" id="example-fat-calories-regression-2-1-1-1-1">
+<div class="para">Rounding the y-intercept (<span class="process-math">\(142.6 \approx 143\)</span>) and the slope (<span class="process-math">\(13.3 \approx 13\)</span>), the linear regression equation is:</div>
+<div class="displaymath process-math" id="example-fat-calories-regression-2-1-1-1-1-3">
 \begin{equation*}
-m = \frac{n\sum(xy) - \sum x \sum y}{n\sum(x^2) - (\sum x)^2}
+Y = 143 + 13X
 \end{equation*}
 </div>
-<div class="displaymath process-math" id="example-fat-calories-regression-3-1-5">
-\begin{equation*}
-b = \frac{\sum y - m\sum x}{n}
-\end{equation*}
+<div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-fat-calories-regression-2-1-1-1-2">
+<em class="alert">Slope Interpretation:</em> For each additional 1 gram of fat in a sandwich, the energy content is predicted to increase by approximately <em class="alert">13 calories</em>.<div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-2-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="example-fat-calories-regression-3-2">
-<div class="para">Using the <span class="process-math">\(n = 7\)</span> data points from the table, we sum the component variables:</div>
-<ul class="disc" id="example-fat-calories-regression-3-2-2">
-<li id="example-fat-calories-regression-3-2-2-1">
-<div class="para" id="example-fat-calories-regression-3-2-2-1-1">
-<span class="process-math">\(\displaystyle \sum x = 170\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-3-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-fat-calories-regression-2-1-1-1-3">
+<em class="alert">y-Intercept Interpretation:</em> If a sandwich contains 0 grams of fat, its predicted baseline energy value from non-fat ingredients is <em class="alert">143 calories</em>.<div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-2-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#example-fat-calories-regression-3-2-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item a"><a href="#example-fat-calories-regression-2-1-1-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
-<li id="example-fat-calories-regression-3-2-2-2">
-<div class="para" id="example-fat-calories-regression-3-2-2-2-1">
-<span class="process-math">\(\displaystyle \sum y = 3260\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-3-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="example-fat-calories-regression-2-1-1-2">
+<div class="para logical" id="example-fat-calories-regression-2-1-1-2-1">
+<div class="para">Substitute <span class="process-math">\(X = 25\)</span> into the unrounded regression line equation to find the precise calorie projection:</div>
+<div class="displaymath process-math" id="example-fat-calories-regression-2-1-1-2-1-2">
+\begin{align*}
+Y \amp= 142.6 + 13.3(25)\\
+Y \amp= 475.1 \approx 475 \text{ calories}
+\end{align*}
 </div>
-<div class="autopermalink" data-description="Item"><a href="#example-fat-calories-regression-3-2-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="para">An item with 25 grams of fat is estimated to contain <em class="alert">475 calories</em>.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#example-fat-calories-regression-2-1-1-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
-<li id="example-fat-calories-regression-3-2-2-3">
-<div class="para" id="example-fat-calories-regression-3-2-2-3-1">
-<span class="process-math">\(\displaystyle \sum (x^2) = 4752\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-3-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#example-fat-calories-regression-3-2-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="example-fat-calories-regression-3-2-2-4">
-<div class="para" id="example-fat-calories-regression-3-2-2-4-1">
-<span class="process-math">\(\displaystyle \sum (xy) = 87830\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-3-2-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#example-fat-calories-regression-3-2-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="example-fat-calories-regression-3-3">
-<div class="para">Substituting these values into our slope equation yields:</div>
-<div class="displaymath process-math" id="example-fat-calories-regression-3-3-1">
-\begin{equation*}
-m = \frac{7(87830) - (170)(3260)}{7(4752) - (170)^2} = \frac{614810 - 554200}{33264 - 28900} = \frac{60610}{4364} \approx 13.305
-\end{equation*}
-</div>
-<div class="para">Rounding to the nearest integer gives a slope of <dfn class="terminology">13</dfn>.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="example-fat-calories-regression-3-4">
-<div class="para">Next, we calculate the precise y-intercept using the unrounded slope value:</div>
-<div class="displaymath process-math" id="example-fat-calories-regression-3-4-1">
-\begin{equation*}
-b = \frac{3260 - (13.30492)(170)}{7} \approx 142.595
-\end{equation*}
-</div>
-<div class="para">Rounding to the nearest integer gives a y-intercept of <dfn class="terminology">143</dfn>.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="example-fat-calories-regression-3-5">
-<div class="para">Therefore, the final linear regression model is:</div>
-<div class="displaymath process-math" id="example-fat-calories-regression-3-5-1">
-\begin{equation*}
-y = 13x + 143
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-fat-calories-regression-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="fig-sandwich-regression"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="generated/latex-image/fig-sandwich-regression-2.svg" role="img" class="contained" alt="A scatter plot tracking sandwich fat content versus total calories on a Cartesian grid. The horizontal x-axis measures Total Fat from 0 to 40 grams, and the vertical y-axis measures Total Calories from 200 to 700. Seven data points align in an upward trajectory. A straight red trendline originates at a y-intercept of 143 and climbs with a slope of 13, showing a strong positive correlation."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.113<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Linear Fit of Fat Content to Total Calories<div class="autopermalink" data-description="Figure 4.113"><a href="#fig-sandwich-regression" title="Copy heading and permalink for Figure 4.113" aria-label="Copy heading and permalink for Figure 4.113">🔗</a></div></figcaption>
-</figure><div class="autopermalink" data-description="Solution 4.111.1"><a href="#example-fat-calories-regression-3" title="Copy heading and permalink for Solution 4.111.1" aria-label="Copy heading and permalink for Solution 4.111.1">🔗</a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.110<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Linear Fit of Fat Content to Total Calories<div class="autopermalink" data-description="Figure 4.110"><a href="#fig-sandwich-regression" title="Copy heading and permalink for Figure 4.110" aria-label="Copy heading and permalink for Figure 4.110">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 4.108.1"><a href="#example-fat-calories-regression-2" title="Copy heading and permalink for Solution 4.108.1" aria-label="Copy heading and permalink for Solution 4.108.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.111"><a href="#example-fat-calories-regression" title="Copy heading and permalink for Example 4.111" aria-label="Copy heading and permalink for Example 4.111">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.108"><a href="#example-fat-calories-regression" title="Copy heading and permalink for Example 4.108" aria-label="Copy heading and permalink for Example 4.108">🔗</a></div>
 </article></details>
-<details id="example-eclipse-temperature" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.114</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<details id="exercise-eclipse-temperature" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.111</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
-<article class="example example-like knowl__content">
-<div class="para" id="example-eclipse-temperature-1-1">During a solar eclipse, the temperature begins to drop as the Moon comes between the Earth and the Sun. The cooling temperatures, up through totality, of the eclipse are shown in the table below. Using a linear regression equation, predict the temperature at the 4 minute mark during the cooling, to the nearest degree.<div class="autopermalink" data-description="Paragraph"><a href="#example-eclipse-temperature-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="exercise-eclipse-temperature-1-1">During a solar eclipse, the temperature begins to drop as the Moon comes between the Earth and the Sun. The cooling temperatures, up through totality, of the eclipse are shown in the table below. Using a linear regression equation with the slope -4.4 and y-intercept 75.1, predict the temperature at the 4 minute mark during the cooling, to the nearest degree.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-eclipse-temperature-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
-<figure class="table table-like" id="table-eclipse-data"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.115<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.115"><a href="#table-eclipse-data" title="Copy heading and permalink for Table 4.115" aria-label="Copy heading and permalink for Table 4.115">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="table-eclipse-data"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.112<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.112"><a href="#table-eclipse-data" title="Copy heading and permalink for Table 4.112" aria-label="Copy heading and permalink for Table 4.112">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t1 lines"><dfn class="terminology">Time minutes (<span class="process-math">\(x\)</span>)</dfn></th>
 <th scope="col" class="c m b1 r0 l0 t1 lines"><dfn class="terminology">Temp. <span class="process-math">\(^\circ\)</span>F (<span class="process-math">\(y\)</span>)</dfn></th>
@@ -993,84 +865,40 @@ y = 13x + 143
 </tr>
 </table></div>
 </figure> 
-<div class="para" id="example-eclipse-temperature-1-3">Select the predicted temperature at the 4 minute mark.<div class="autopermalink" data-description="Paragraph"><a href="#example-eclipse-temperature-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise-eclipse-temperature-1-3">Select the predicted temperature at the 4 minute mark.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-eclipse-temperature-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="example-eclipse-temperature-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise-eclipse-temperature-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para logical" id="example-eclipse-temperature-3-1">
-<div class="para">
-<dfn class="terminology">Step 1: Calculate the Regression Equation</dfn> Using the standard least-squares formulas with <span class="process-math">\(n = 4\)</span> data coordinates, we find the required summary metrics:</div>
-<ul class="disc" id="example-eclipse-temperature-3-1-3">
-<li id="example-eclipse-temperature-3-1-3-1">
-<div class="para" id="example-eclipse-temperature-3-1-3-1-1">
-<span class="process-math">\(\displaystyle \sum x = 6\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-eclipse-temperature-3-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise-eclipse-temperature-2-1">
+<dfn class="terminology">Step 1: Calculate the Regression Equation</dfn> <span class="process-math">\(Y = -4.4x + 75.1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercise-eclipse-temperature-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#example-eclipse-temperature-3-1-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="example-eclipse-temperature-3-1-3-2">
-<div class="para" id="example-eclipse-temperature-3-1-3-2-1">
-<span class="process-math">\(\displaystyle \sum y = 274\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-eclipse-temperature-3-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#example-eclipse-temperature-3-1-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="example-eclipse-temperature-3-1-3-3">
-<div class="para" id="example-eclipse-temperature-3-1-3-3-1">
-<span class="process-math">\(\displaystyle \sum(x^2) = 14\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-eclipse-temperature-3-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#example-eclipse-temperature-3-1-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="example-eclipse-temperature-3-1-3-4">
-<div class="para" id="example-eclipse-temperature-3-1-3-4-1">
-<span class="process-math">\(\displaystyle \sum(xy) = 389\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-eclipse-temperature-3-1-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#example-eclipse-temperature-3-1-3-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-eclipse-temperature-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="example-eclipse-temperature-3-2">
-<div class="para">Substitute these totals into the slope (<span class="process-math">\(m\)</span>) and y-intercept (<span class="process-math">\(b\)</span>) formulas:</div>
-<div class="displaymath process-math" id="example-eclipse-temperature-3-2-3">
-\begin{equation*}
-m = \frac{4(389) - (6)(274)}{4(14) - (6)^2} = \frac{1556 - 1644}{56 - 36} = \frac{-88}{20} = -4.4
-\end{equation*}
-</div>
-<div class="displaymath process-math" id="example-eclipse-temperature-3-2-4">
-\begin{equation*}
-b = \frac{274 - (-4.4)(6)}{4} = \frac{274 + 26.4}{4} = \frac{300.4}{4} = 75.1
-\end{equation*}
-</div>
-<div class="para">This yields the linear modeling equation: <span class="process-math">\(y = -4.4x + 75.1\text{.}\)</span>
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-eclipse-temperature-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="example-eclipse-temperature-3-3">
+<div class="para logical" id="exercise-eclipse-temperature-2-2">
 <div class="para">
 <dfn class="terminology">Step 2: Evaluate at 4 Minutes</dfn> Substitute <span class="process-math">\(x = 4\)</span> directly into our regression model to find the expected cooling value:</div>
-<div class="displaymath process-math" id="example-eclipse-temperature-3-3-3">
+<div class="displaymath process-math" id="exercise-eclipse-temperature-2-2-3">
 \begin{align*}
-y \amp = -4.4(4) + 75.1\\
-y \amp = -17.6 + 75.1 = 57.5
+Y \amp = -4.4(4) + 75.1\\
+Y \amp = -17.6 + 75.1 = 57.5
 \end{align*}
 </div>
 <div class="para">Rounding <span class="process-math">\(57.5^\circ\text{F}\)</span> to the nearest whole integer gives our target choice of <dfn class="terminology">58<span class="process-math">\(^\circ\)</span></dfn>.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#example-eclipse-temperature-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-eclipse-temperature-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="fig-eclipse-regression"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="generated/latex-image/fig-eclipse-regression-2.svg" role="img" class="contained" alt="A scatter plot displaying historical temperature drops during a solar eclipse on a coordinate plane. The horizontal axis represents elapsed time in minutes from negative 0.5 to 4.5. The vertical axis measures temperature in degrees Fahrenheit from 55 to 80. Four blue circular data points are plotted at coordinates (0, 75), (1, 71), (2, 66), and (3, 62). A solid red regression line passes downward through the points. A green ’X’ mark highlights the target prediction location on the red line at coordinate point (4, 57.5), demonstrating an overall negative linear correlation."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.116<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Linear Regression Line for Eclipse Cooling Pattern<div class="autopermalink" data-description="Figure 4.116"><a href="#fig-eclipse-regression" title="Copy heading and permalink for Figure 4.116" aria-label="Copy heading and permalink for Figure 4.116">🔗</a></div></figcaption>
-</figure><div class="autopermalink" data-description="Solution 4.114.1"><a href="#example-eclipse-temperature-3" title="Copy heading and permalink for Solution 4.114.1" aria-label="Copy heading and permalink for Solution 4.114.1">🔗</a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.113<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Linear Regression Line for Eclipse Cooling Pattern<div class="autopermalink" data-description="Figure 4.113"><a href="#fig-eclipse-regression" title="Copy heading and permalink for Figure 4.113" aria-label="Copy heading and permalink for Figure 4.113">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 4.111.1"><a href="#exercise-eclipse-temperature-2" title="Copy heading and permalink for Solution 4.111.1" aria-label="Copy heading and permalink for Solution 4.111.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.114"><a href="#example-eclipse-temperature" title="Copy heading and permalink for Example 4.114" aria-label="Copy heading and permalink for Example 4.114">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 4.111"><a href="#exercise-eclipse-temperature" title="Copy heading and permalink for Checkpoint 4.111" aria-label="Copy heading and permalink for Checkpoint 4.111">🔗</a></div>
 </article></details>
-<details id="ex-coat-campaign" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.117</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<details id="exercise-coat-campaign" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.114</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3></summary>
 <article class="exercise exercise-like knowl__content">
-<div class="para" id="ex-coat-campaign-1-1">A morning radio talk show is running a “Winter Coat Campaign” to collect and deliver coats to local shelters. They are storing the coats until they reach their goal of 2100 coats. The table below shows the number of coats in storage at the end of each day of the campaign.<div class="autopermalink" data-description="Paragraph"><a href="#ex-coat-campaign-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise-coat-campaign-1-1">A morning radio talk show is running a “Winter Coat Campaign” to collect and deliver coats to local shelters. They are storing the coats until they reach their goal of 2100 coats. The table below shows the number of coats in storage at the end of each day of the campaign.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-coat-campaign-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
-<figure class="table table-like" id="table-coat-data"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.118<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.118"><a href="#table-coat-data" title="Copy heading and permalink for Table 4.118" aria-label="Copy heading and permalink for Table 4.118">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="table-coat-data"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.115<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Table 4.115"><a href="#table-coat-data" title="Copy heading and permalink for Table 4.115" aria-label="Copy heading and permalink for Table 4.115">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r0 l0 t1 lines"><dfn class="terminology">Day of Campaign (<span class="process-math">\(x\)</span>)</dfn></th>
 <th scope="col" class="c m b1 r0 l0 t1 lines"><dfn class="terminology">Number of Coats Stored (<span class="process-math">\(y\)</span>)</dfn></th>
@@ -1101,38 +929,25 @@ y \amp = -17.6 + 75.1 = 57.5
 </tr>
 </table></div>
 </figure> 
-<div class="para" id="ex-coat-campaign-1-3">Find the linear regression equation rounded to the nearest hundredths, and predict the day the campaign will meet its goal.<div class="autopermalink" data-description="Paragraph"><a href="#ex-coat-campaign-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise-coat-campaign-1-3">Find the linear regression equation with the slope 98.86 and y-intercept 737.33 rounded to the nearest hundredths, and predict the day the campaign will meet its goal.<div class="autopermalink" data-description="Paragraph"><a href="#exercise-coat-campaign-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex-coat-campaign-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise-coat-campaign-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex-coat-campaign-2-1">
-<dfn class="terminology">Part a) Linear Regression Equation:</dfn> By applying the least-squares formulas for a data pool where <span class="process-math">\(n = 6\text{,}\)</span> we get the summary metrics: <span class="process-math">\(\sum x = 21\text{,}\)</span> <span class="process-math">\(\sum y = 6500\text{,}\)</span> <span class="process-math">\(\sum(x^2) = 91\text{,}\)</span> and <span class="process-math">\(\sum(xy) = 24810\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ex-coat-campaign-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="ex-coat-campaign-2-2">
-<div class="para">Evaluating our slope and intercept formulas returns:</div>
-<div class="displaymath process-math" id="ex-coat-campaign-2-2-1">
-\begin{equation*}
-m = \frac{6(24810) - (21)(6500)}{6(91) - (21)^2} = \frac{148860 - 136500}{546 - 441} = \frac{12360}{105} \approx 98.86
-\end{equation*}
-</div>
-<div class="displaymath process-math" id="ex-coat-campaign-2-2-2">
-\begin{equation*}
-b = \frac{6500 - (117.714)(21)}{6} \approx 737.33
-\end{equation*}
-</div>
-<div class="para">Thus, the linear modeling line of best fit is</div>
-<div class="displaymath process-math" id="ex-coat-campaign-2-2-3">
-\begin{equation*}
-y = 98.86x + 737.33
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-coat-campaign-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="ex-coat-campaign-2-3">
+<div class="para logical" id="exercise-coat-campaign-2-1">
 <div class="para">
-<dfn class="terminology">Part b) Goal Prediction:</dfn> To compute the target milestone, substitute <span class="process-math">\(y = 2100\)</span> into the verified equation:</div>
-<div class="displaymath process-math" id="ex-coat-campaign-2-3-3">
+<dfn class="terminology">Part a) Linear Regression Equation:</dfn> Thus, the linear modeling line of best fit is</div>
+<div class="displaymath process-math" id="exercise-coat-campaign-2-1-2">
+\begin{equation*}
+Y = 98.86x + 737.33
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-coat-campaign-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercise-coat-campaign-2-2">
+<div class="para">
+<dfn class="terminology">Part b) Goal Prediction:</dfn> To compute the target milestone, substitute <span class="process-math">\(Y = 2100\)</span> into the verified equation:</div>
+<div class="displaymath process-math" id="exercise-coat-campaign-2-2-3">
 \begin{align*}
 2100 \amp = 98.86x + 737.33\\
 1362.67 \amp = 98.86x\\
@@ -1140,14 +955,14 @@ x \amp \approx 13.78
 \end{align*}
 </div>
 <div class="para">Because the data tracks totals at the end of each day, reaching <span class="process-math">\(13.78\)</span> means the campaign will successfully complete its goal on <dfn class="terminology">Day 14</dfn>.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ex-coat-campaign-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#exercise-coat-campaign-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="fig-coat-regression"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="generated/latex-image/fig-coat-regression-2.svg" role="img" class="contained" alt="A scatter plot mapping the progress of a winter coat collection drive on a Cartesian grid. The horizontal axis outlines the Day of the Campaign from 0 to 15, and the vertical axis measures the Number of Coats Stored from 600 to 2300. Six blue data markers crawl steadily upward from day 1 to day 6. A solid red trendline launches from a y-intercept of 737.33 and scales upward, crossing a dotted horizontal threshold lines at y equals 2100 on Day 14, where a green X marks the goal resolution."></div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.119<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Linear Path Tracking Coat Collection Goal Delivery<div class="autopermalink" data-description="Figure 4.119"><a href="#fig-coat-regression" title="Copy heading and permalink for Figure 4.119" aria-label="Copy heading and permalink for Figure 4.119">🔗</a></div></figcaption>
-</figure><div class="autopermalink" data-description="Solution 4.117.1"><a href="#ex-coat-campaign-2" title="Copy heading and permalink for Solution 4.117.1" aria-label="Copy heading and permalink for Solution 4.117.1">🔗</a></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.116<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Linear Path Tracking Coat Collection Goal Delivery<div class="autopermalink" data-description="Figure 4.116"><a href="#fig-coat-regression" title="Copy heading and permalink for Figure 4.116" aria-label="Copy heading and permalink for Figure 4.116">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Solution 4.114.1"><a href="#exercise-coat-campaign-2" title="Copy heading and permalink for Solution 4.114.1" aria-label="Copy heading and permalink for Solution 4.114.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Checkpoint 4.117"><a href="#ex-coat-campaign" title="Copy heading and permalink for Checkpoint 4.117" aria-label="Copy heading and permalink for Checkpoint 4.117">🔗</a></div>
+<div class="autopermalink" data-description="Checkpoint 4.114"><a href="#exercise-coat-campaign" title="Copy heading and permalink for Checkpoint 4.114" aria-label="Copy heading and permalink for Checkpoint 4.114">🔗</a></div>
 </article></details><div class="autopermalink" data-description="Section: Scatter Plots and Regression Lines"><a href="#sec-Regression" title="Copy heading and permalink for Section: Scatter Plots and Regression Lines" aria-label="Copy heading and permalink for Section: Scatter Plots and Regression Lines">🔗</a></div>
 </section>
 </div>

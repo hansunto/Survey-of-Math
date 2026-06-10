@@ -4,8 +4,8 @@
       <p> When two data items are collected for every person or object in a sample, the data
 items can be visually displayed using a scatter plot.
       </p>
-      </introduction>
-      <definition xml:id="def-Scatter-plot">
+    </introduction>
+    <definition xml:id="def-Scatter-plot">
           <title>Scatter Plot</title>
         <statement>
           <p>
@@ -14,7 +14,7 @@ items can be visually displayed using a scatter plot.
             with its position determined by the values of the two variables.
           </p>
         </statement>
-      </definition>
+    </definition>
 
 <example xml:id="example-scatter-plot">
     <statement>
@@ -89,6 +89,7 @@ items can be visually displayed using a scatter plot.
         </p>
     </solution>
 </example>
+
 
 <exercise xml:id="exercise-generic-scatter-plot">
     <statement>
@@ -166,7 +167,7 @@ items can be visually displayed using a scatter plot.
             As we look from left to right along the horizontal axis, the data points show a clear upward pattern. This tells us that as variable <m>x</m> increases, variable <m>y</m> generally increases as well. Because the points follow a relatively straight, rising path, the variables appear to have a strong, positive linear <bold>correlation</bold>.
         </p>
     </solution>
-</exercise>
+</exercise> 
 
 <note>
   <p>
@@ -179,395 +180,308 @@ items can be visually displayed using a scatter plot.
 </p>
 </note>
 
-<p> Regression in statistics is a modeling technique used to estimate the relationship 
-    between a dependent variable (the outcome) and one or more independent variables 
-    (the predictors). 
-</p>
-<p>
-    It allows you to understand how changes in the predictors are associated with 
-    the outcome, which is highly useful for forecasting, making predictions, 
-    and identifying trends. 
-</p>
+<definition xml:id="def-Correlation-Coefficient">
+  <title>Correlation Coefficient</title>
+  <statement>
+    <p>
+    <term>correlation coefficient</term>: A measure used to describe the strength and direction
+of a relationship between variables whose data points lie on or near a line is called
+the correlation coefficient, designated by <m>r</m>. A correlation coefficient, <m>r</m>, is a number
+between -1 and 1, inclusive.
+    </p>
+  </statement>
+</definition>
 
-<exercise xml:id="exercise-ice-cream-prediction">
-    <title>Summer Heatwaves and Ice Cream Sales</title>
-    
+<exercise xml:id="exercise-correlation-coefficient-scenarios">
+    <title>Classifying Correlation Types and Strengths</title>
     <statement>
         <p>
-            A beachside shop owner wants to examine the relationship between the daily afternoon temperature 
-            (<m>X</m>, measured in degrees Fahrenheit) and the number of ice cream cones sold daily 
-            (<m>Y</m>). The data collected over a five-day period is presented below.
+            The linear correlation coefficient (<m>r</m>) details both the direction (positive or negative) and strength (perfect, strong, weak, or zero) of the linear relationship between two variables. Match each of the following real-world study results with its correct statistical description:
         </p>
-
-        <!-- Data Table Section -->
-        <table xml:id="table-ice-cream-data">
-            <title>Daily Temperature vs. Ice Cream Sales</title>
-            <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
-                <row header="yes" bottom="medium">
-                    <cell>Day</cell>
-                    <cell>Temperature (<m>X</m> in <m>^\circ\text{F}</m>)</cell>
-                    <cell>Ice Cream Cones Sold (<m>Y</m>)</cell>
-                </row>
-                <row><cell>1</cell><cell>70</cell><cell>100</cell></row>
-                <row><cell>2</cell><cell>75</cell><cell>150</cell></row>
-                <row><cell>3</cell><cell>80</cell><cell>190</cell></row>
-                <row><cell>4</cell><cell>85</cell><cell>260</cell></row>
-                <row><cell>5</cell><cell>90</cell><cell>300</cell></row>
-            </tabular>
-        </table>
-<p>
-Using the simple linear regression model calculated from the observed data table above, 
-predict the total number of ice cream cones sold if the afternoon temperature reaches
-<m>100^\circ\text{F}</m>.
-</p>
+        <p>
+            <ol marker="1">
+                <li><p>A study on employee training hours and production errors yields <m>r = -0.85</m>.</p></li>
+                <li><p>An analysis of weekly grocery spending and family hair length yields <m>r = 0.02</m>.</p></li>
+                <li><p>A dataset comparing daily steps taken and body fat percentage yields <m>r = -0.25</m>.</p></li>
+                <li><p>An observation of local temperature and outdoor swimming pool attendance yields <m>r = 0.88</m>.</p></li>
+                <li><p>A report correlating a person's age with their vocabulary size yields <m>r = 0.31</m>.</p></li>
+            </ol>
+        </p>
     </statement>
 
-    <!-- Multiple Choice Structure -->
-    <choices>
-        <choice>
-            <statement><p>340 cones</p></statement>
-            <feedback>
-                <p>Incorrect. This value underestimates the strong upward trend observed as the temperature steps up to 
-                  100 degrees.</p>
-            </feedback>
-        </choice>
-        <choice correct="yes">
-            <statement><p>404 cones</p></statement>
-            <feedback>
-                <p>Correct! Observe the data points and plug directly into the line: <m>404</m>.</p>
-            </feedback>
-        </choice>
-        <choice>
-            <statement><p>450 cones</p></statement>
-            <feedback>
-                <p>Incorrect. While sales are rising fast, this estimate is slightly higher than 
-                  what the mathematical trend line predicts.</p>
-            </feedback>
-        </choice>
-        <choice>
-            <statement><p>512 cones</p></statement>
-            <feedback>
-                <p>Incorrect. This value assumes exponential growth rather than a steady 
-                  simple linear progression rate.</p>
-            </feedback>
-        </choice>
-    </choices>
-    
     <solution>
-<p>
-To predict the number of ice cream cones sold at 100°F, we first need to graph the data points from the table 
-and calculate the line of best fit using linear regression. 
-</p>
-    <p>      
-        <!-- Visual Scatter Plot Section with Regression Line & Labels -->
-        <figure xml:id="figure-ice-cream-scatter">
-            <caption>Scatter Plot of Temperature vs. Ice Cream Cones Sold</caption>
-            <image xml:id="plot-ice-cream">
-                <description>A scatter plot showing an upward trend of daily sales as temperature rises, 
-                  with a red regression line and labeled data points.</description>
+        <p>
+            Here is the correct classification for each scenario using standard interpretation boundaries for the correlation coefficient:
+        </p>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <alert>Scenario 1 (<m>r = -0.85</m>): Strong Negative Correlation.</alert> The value is negative, meaning errors drop as training increases. Because <m>|-0.85|</m> is close to <m>1.0</m>, the data points form a tightly clustered downward trend line.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <alert>Scenario 2 (<m>r = 0.02</m>): No Correlation.</alert> The value is approximately <m>0</m>. Changes in grocery spending show a completely random distribution when plotted against hair length, indicating no linear link.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <alert>Scenario 3 (<m>r = -0.25</m>): Weak Negative Correlation.</alert> The negative sign shows an inverse direction (more steps link to lower body fat). However, being close to <m>0</m> means the data forms a highly dispersed, scattered downward cloud.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <alert>Scenario 4 (<m>r = 0.88</m>): Strong Positive Correlation.</alert> The positive sign indicates both variables rise together. The high value shows the data pairs cluster tightly along an upward-sloping trend line.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <alert>Scenario 5 (<m>r = 0.31</m>): Weak Positive Correlation.</alert> The relationship is positive (older age links to larger vocabulary), but the low decimal value indicates a loosely scattered upward trend with significant variance.
+                    </p>
+                </li>
+            </ul>
+        </p>
+
+        <!-- Multi-Plot Grid Visual Anchors -->
+        <figure xml:id="figure-five-correlation-types">
+            <title>Grid Visualization of the Five Correlation Profiles</title>
+            <image xml:id="plot-five-correlations">
+                <description>A multi-panel layout showing strong positive, weak positive, 
+                  no correlation, weak negative, and strong negative scatter plots side by side.
+                </description>
                 <latex-image>
                     \begin{tikzpicture}
+                        % 1. Strong Positive (Row 1, Left)
                         \begin{axis}[
-                            xlabel={Temperature ($^\circ$F)},
-                            ylabel={Cones Sold},
-                            xmin=65, xmax=105,
-                            ymin=50, ymax=450,
-                            xtick={70,75,80,85,90,95,100},
-                            ytick={100,150,200,250,300,350,400},
-                            grid=both,
-                            grid style={line width=.1pt, color=gray!10},
-                            major grid style={line width=.2pt, color=gray!50},
-                            legend pos=north west
+                            title={Strong Positive (r = 0.88)},
+                            xmin=0, xmax=10, ymin=0, ymax=10,
+                            width=4.8cm, height=4.8cm,
+                            xtick=\empty, ytick=\empty,
+                            at={(0cm,0cm)}
                         ]
-                        
-                        <!-- 1. The Red Linear Regression Line Plot -->
-                        \addplot[
-                            domain=65:105,
-                            color=red,
-                            thick,
-                            samples=2
-                        ] {-616 + 10.2*x};
-                        \addlegendentry{Regression Line}
-
-                        <!-- 2. Scatter Plot Points with Text Labels (Day 1, Day 2, etc.) -->
-                        \addplot[
-                            only marks,
-                            mark=*,
-                            color=blue,
-                            mark size=3pt,
-                            nodes near coords,
-                            point meta=explicit symbolic,
-                            every node near coord/.style={anchor=south east, font=\footnotesize, color=black}
-                        ] coordinates {
-                            (70,100) [Day 1]
-                            (75,150) [Day 2]
-                            (80,190) [Day 3]
-                            (85,260) [Day 4]
-                            (90,300) [Day 5]
+                        \addplot[domain=0:10, color=red, thick, samples=2] {1 + 0.8*x};
+                        \addplot[only marks, mark=*, color=blue!70, mark size=1.5pt] coordinates {
+                            (1,1.5) (2,3.1) (3,2.8) (4,4.5) (5,4.8) (6,6.2) (7,6.1) (8,7.9) (9,8.4)
                         };
-                        \addlegendentry{Observed Data Points}
+                        \end{axis}
 
+                        % 2. Weak Positive (Row 1, Center)
+                        \begin{axis}[
+                            title={Weak Positive (r = 0.31)},
+                            xmin=0, xmax=10, ymin=0, ymax=10,
+                            width=4.8cm, height=4.8cm,
+                            xtick=\empty, ytick=\empty,
+                            at={(5.2cm,0cm)}
+                        ]
+                        \addplot[domain=0:10, color=red, thick, samples=2] {3.5 + 0.3*x};
+                        \addplot[only marks, mark=*, color=blue!70, mark size=1.5pt] coordinates {
+                            (1,5.2) (2,1.8) (3,6.1) (4,3.2) (5,7.5) (6,4.1) (7,8.2) (8,4.9) (9,7.1)
+                        };
+                        \end{axis}
+
+                        % 3. No Correlation (Row 1, Right)
+                        \begin{axis}[
+                            title={No Correlation (r = 0.02)},
+                            xmin=0, xmax=10, ymin=0, ymax=10,
+                            width=4.8cm, height=4.8cm,
+                            xtick=\empty, ytick=\empty,
+                            at={(10.4cm,0cm)}
+                        ]
+                        \addplot[domain=0:10, color=red, thick, samples=2] {5};
+                        \addplot[only marks, mark=*, color=blue!70, mark size=1.5pt] coordinates {
+                            (1,8.1) (2,2.5) (3,7.2) (4,1.5) (5,9.1) (6,4.8) (7,2.1) (8,7.9) (9,5.3)
+                        };
+                        \end{axis}
+
+                        % 4. Weak Negative (Row 2, Center-Left)
+                        \begin{axis}[
+                            title={Weak Negative (r = -0.25)},
+                            xmin=0, xmax=10, ymin=0, ymax=10,
+                            width=4.8cm, height=4.8cm,
+                            xtick=\empty, ytick=\empty,
+                            at={(2.6cm,-5.2cm)}
+                        ]
+                        \addplot[domain=0:10, color=red, thick, samples=2] {6.5 - 0.3*x};
+                        \addplot[only marks, mark=*, color=blue!70, mark size=1.5pt] coordinates {
+                            (1,8.2) (2,4.1) (3,7.5) (4,3.2) (5,5.1) (6,1.8) (7,6.2) (8,2.5) (9,4.9)
+                        };
+                        \end{axis}
+
+                        % 5. Strong Negative (Row 2, Center-Right)
+                        \begin{axis}[
+                            title={Strong Negative (r = -0.85)},
+                            xmin=0, xmax=10, ymin=0, ymax=10,
+                            width=4.8cm, height=4.8cm,
+                            xtick=\empty, ytick=\empty,
+                            at={(7.8cm,-5.2cm)}
+                        ]
+                        \addplot[domain=0:10, color=red, thick, samples=2] {9 - 0.8*x};
+                        \addplot[only marks, mark=*, color=blue!70, mark size=1.5pt] coordinates {
+                            (1,8.5) (2,7.1) (3,6.2) (4,6.1) (5,4.8) (6,4.5) (7,2.8) (8,3.1) (9,1.5)
+                        };
                         \end{axis}
                     \end{tikzpicture}
                 </latex-image>
             </image>
         </figure>
-    </p>
     </solution>
 </exercise>
 
-<exercise xml:id="exercise-car-mileage-prediction">
-    <title>Car Mileage and Resale Value</title>
+<example xml:id="example-stress-illness-correlation">
+    <title>Stress and Illness Analysis</title>
     <statement>
         <p>
-        A used car dealership wants to examine the relationship between a specific sedan's 
-        odometer mileage (<m>X</m>, measured in thousands of miles) and its current market 
-        resale value (<m>Y</m>, measured in thousands of dollars). The data collected from 
-        a sample of five vehicles is presented below.
+            In a 1971 study involving <m>232</m> subjects, researchers found a relationship between the subjects' level of stress and how often they became ill. The correlation coefficient in this study was <m>r = 0.22</m>. What does this indicate about the relationship between stress and illness?
         </p>
-
-        <!-- Data Table Section -->
-        <table xml:id="table-car-mileage-data">
-            <title>Vehicle Mileage vs. Resale Value</title>
-            <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
-                <row header="yes" bottom="medium">
-                    <cell>Vehicle</cell>
-                    <cell>Mileage (<m>X</m> in thousands of miles)</cell>
-                    <cell>Resale Value (<m>Y</m> in thousands of dollars)</cell>
-                </row>
-                <row><cell>1</cell><cell>10</cell><cell>35</cell></row>
-                <row><cell>2</cell><cell>20</cell><cell>29</cell></row>
-                <row><cell>3</cell><cell>30</cell><cell>26</cell></row>
-                <row><cell>4</cell><cell>40</cell><cell>20</cell></row>
-                <row><cell>5</cell><cell>50</cell><cell>14</cell></row>
-            </tabular>
-        </table>
-
         <p>
-        Using the simple linear regression model calculated from the observed data table 
-        above, predict the total market resale value of a sedan if its odometer reaches 
-        <m>60</m> thousand miles (i.e., <m>X = 60</m>).
+            Stress and illness have a <fillin characters="8" /> and <fillin characters="8" /> relationship.
         </p>
     </statement>
-
-    <!-- Multiple Choice Structure -->
     <choices>
         <choice>
-            <statement><p>$15.5 thousand dollars</p></statement>
+            <statement><p>strong; positive</p></statement>
             <feedback>
-                <p>Incorrect. This value fails to capture the continuous decline in value, overestimating how much the car is worth at 60 thousand miles.</p>
+                <p>Incorrect. An r-value of 0.22 is much closer to 0 than to 1, indicating a relationship that is not strong.</p>
             </feedback>
         </choice>
         <choice correct="yes">
-            <statement><p>$9.5 thousand dollars</p></statement>
+            <statement><p>weak; positive</p></statement>
             <feedback>
-                <p>Correct! Observe the downward trend in the data points and plug the value directly into the line equation to find <m>9.5</m>.</p>
+                <p>Correct! The value is positive (above 0), meaning higher stress relates to more frequent illness. The value is weak (close to 0.00), meaning the trend has significant variation.</p>
             </feedback>
         </choice>
         <choice>
-            <statement><p>$5.0 thousand dollars</p></statement>
+            <statement><p>weak; negative</p></statement>
             <feedback>
-                <p>Incorrect. While the vehicle loses value consistently, it has not depreciated this drastically according to the linear model.</p>
+                <p>Incorrect. A negative correlation would require an r-value below zero (e.g., -0.22), which would imply that more stress leads to less illness.</p>
             </feedback>
         </choice>
         <choice>
-            <statement><p>$2.1 thousand dollars</p></statement>
+            <statement><p>strong; negative</p></statement>
             <feedback>
-                <p>Incorrect. This underestimation assumes an exponential drop-off rather than a steady simple linear progression rate.</p>
+                <p>Incorrect. The value is neither negative nor large enough to indicate a strong linear bond.</p>
             </feedback>
         </choice>
     </choices>
-<solution>
-  <p>
-  To predict the resale value of the vehicle at 60 thousand miles, we first graph 
-  the data points from the table and calculate the line of best fit using linear 
-  regression.
-  </p>
-<p>
-    <!-- Visual Scatter Plot Section with Regression Line & Labels -->
-    <figure xml:id="figure-car-mileage-scatter">
-        <caption>Scatter Plot of Mileage vs. Resale Value</caption>
-        <image xml:id="plot-car-mileage">
-            <description>A scatter plot showing a downward trend of resale value as mileage increases, 
-              with a red regression line and labeled data points.</description>
-            <latex-image>
-                \begin{tikzpicture}
-                    \begin{axis}[
-                        xlabel={Mileage (thousands of miles)},
-                        ylabel={Resale Value (thousands of dollars)},
-                        xmin=0, xmax=70,
-                        ymin=0, ymax=40,
-                        xtick={0,10,20,30,40,50,60,70},
-                        ytick={0,5,10,15,20,25,30,35,40},
-                        grid=both,
-                        grid style={line width=.1pt, color=gray!10},
-                        major grid style={line width=.2pt, color=gray!50},
-                        legend pos=north east
-                    ]
-                    
-                    % The Red Linear Regression Line Plot
-                    \addplot[
-                        domain=0:70,
-                        color=red,
-                        thick,
-                        samples=2
-                    ] {36 - 0.44*x};
-                    \addlegendentry{Regression Line}
-
-                    % Scatter Plot Points with Text Labels (Vehicle 1, Vehicle 2, etc.)
-                    \addplot[
-                        only marks,
-                        mark=*,
-                        color=blue,
-                        mark size=3pt,
-                        nodes near coords,
-                        point meta=explicit symbolic,
-                        every node near coord/.style={anchor=south east, font=\footnotesize, color=black}
-                    ] coordinates {
-                        (10, 35) [Vehicle 1]
-                        (20, 29) [Vehicle 2]
-                        (30, 26) [Vehicle 3]
-                        (40, 20) [Vehicle 4]
-                        (50, 14) [Vehicle 5]
-                    };
-                    \addlegendentry{Observed Data Points}
-
-                    \end{axis}
-                \end{tikzpicture}
-            </latex-image>
-        </image>
-    </figure>
-</p>
-</solution>
-</exercise>
-
-<exercise xml:id="exercise-shoe-size-prediction">
-    <title>Shoe Size and Exam Scores</title>
-    <statement>
-        <p>
-            A statistics professor wants to examine the relationship between a student's shoe size (<m>X</m>) and their score on the final exam (<m>Y</m>, measured as a percentage). The data collected from a random sample of five students is presented below.
-        </p>
-
-        <!-- Data Table Section -->
-        <table xml:id="table-shoe-size-data">
-            <title>Student Shoe Size vs. Exam Score</title>
-            <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
-                <row header="yes" bottom="medium">
-                    <cell>Student</cell>
-                    <cell>Shoe Size (<m>X</m>)</cell>
-                    <cell>Exam Score (<m>Y</m> in %)</cell>
-                </row>
-                <row><cell>1</cell><cell>6</cell><cell>85</cell></row>
-                <row><cell>2</cell><cell>8</cell><cell>62</cell></row>
-                <row><cell>3</cell><cell>9</cell><cell>94</cell></row>
-                <row><cell>4</cell><cell>11</cell><cell>73</cell></row>
-                <row><cell>5</cell><cell>12</cell><cell>81</cell></row>
-            </tabular>
-        </table>
-
-        <p>
-            Using the simple linear regression model calculated from the observed data table above, 
-            predict the expected final exam score of a student who wears a shoe size of <m>10</m> 
-            (i.e., <m>X = 10</m>).
-        </p>
-    </statement>
-
-    <!-- Multiple Choice Structure -->
-    <choices>
-        <choice>
-            <statement><p>65%</p></statement>
-            <feedback>
-                <p>Incorrect. While some individual students score near this range, this value deviates from the baseline sample average predicted by a zero-correlation model.</p>
-            </feedback>
-        </choice>
-        <choice correct="yes">
-            <statement><p>79%</p></statement>
-            <feedback>
-                <p>Correct! Because there is no linear relationship between shoe size and exam scores, the slope is approximately 0, meaning the best prediction for any shoe size is simply the mean of the observed scores (<m>\bar{Y} = 79</m>).</p>
-            </feedback>
-        </choice>
-        <choice>
-            <statement><p>95%</p></statement>
-            <feedback>
-                <p>Incorrect. This prediction assumes a positive correlation where larger shoe sizes guarantee higher test scores, which is not supported by the data pattern.</p>
-            </feedback>
-        </choice>
-        <choice>
-            <statement><p>50%</p></statement>
-            <feedback>
-                <p>Incorrect. This assumes an artificial downward trend that does not match the random distribution of the data sample.</p>
-            </feedback>
-        </choice>
-    </choices>
-
     <solution>
         <p>
-            To predict the exam score for a student with a shoe size of 10, we graph the data points 
-            from the table and calculate the line of best fit using linear regression.
+            The value <m>r = 0.22</m> provides two key pieces of information about the linear trend:
         </p>
         <p>
-        <figure xml:id="figure-shoe-size-scatter">
-          <caption>Scatter Plot of Shoe Size vs. Exam Score</caption>
-<image xml:id="plot-shoe-size" width="80%">
-<shortdescription> A scatter plot showing a random distribution of exam scores across 
-  different shoe sizes, featuring a flat horizontal regression line and labeled data 
-  points.
-</shortdescription>
-  <latex-image>
-    \begin{tikzpicture}
-      \begin{axis}[
-          xlabel={Shoe Size ($X$)},
-          ylabel={Exam Score (\%)},
-          xmin=5, xmax=13,
-          ymin=60, ymax=100,
-          xtick={6,7,8,9,10,11,12},
-          ytick={60,70,80,90,100},
-          grid=both,
-          grid style={line width=.1pt, color=gray!10},
-          major grid style={line width=.2pt, color=gray!50},
-          legend pos=north east
-      ]
-      
-      % The Red Linear Regression Line Plot
-      \addplot[
-          domain=5:13,
-          color=red,
-          thick,
-          samples=2
-      ] {79};
-     
+            <ul>
+                <li>
+                    <p>
+                        <alert>Direction:</alert> The value is positive (<m>r \gt 0</m>). This means the two variables move in the same direction: as a person's recorded stress levels increase, their frequency of falling ill also tends to increase.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <alert>Strength:</alert> The absolute value is low (<m>|0.22| \lt 0.30</m>). This means that while a pattern exists, the data points are highly scattered around a line of best fit, making it a weak predictable link.
+                    </p>
+                </li>
+            </ul>
+        </p>
+        <p>
+            Therefore, stress and illness have a <alert>weak</alert> and <alert>positive</alert> relationship.
+        </p>
+        
+        <figure xml:id="figure-stress-illness-visual">
+            <title>Conceptual Visualization of r = 0.22</title>
+            <image xml:id="plot-stress-illness">
+                <description>A scatter plot displaying a highly dispersed, loosely upward-sloping cloud of data points representing a weak positive correlation.</description>
+                <latex-image>
+                    \begin{tikzpicture}
+                        \begin{axis}[
+                            xlabel={Stress Level Index},
+                            ylabel={Illness Frequency Index},
+                            xmin=0, xmax=10,
+                            ymin=0, ymax=10,
+                            xtick={2,4,6,8},
+                            ytick={2,4,6,8},
+                            grid=both,
+                            grid style={line width=.1pt, color=gray!10},
+                            major grid style={line width=.2pt, color=gray!50},
+                            legend pos=north west,
+                            height=6cm,
+                            width=10cm
+                        ]
+                        \addplot[
+                            domain=0:10,
+                            color=red,
+                            thick,
+                            samples=2
+                        ] {3.5 + 0.22*x};
+                        \addlegendentry{Regression Trend Line}
 
-      % Scatter Plot Points with Text Labels (Student 1, Student 2, etc.)
-      \addplot[
-          only marks,
-          mark=*,
-          color=blue,
-          mark size=3pt,
-          nodes near coords,
-          point meta=explicit symbolic,
-          every node near coord/.style={anchor=south east, font=\footnotesize, color=black}
-      ] coordinates {
-          (6, 85) [Student 1]
-          (8, 62) [Student 2]
-          (9, 94) [Student 3]
-          (11, 73) [Student 4]
-          (12, 81) [Student 5]
-      };
-     
+                        \addplot[
+                            only marks,
+                            mark=*,
+                            color=blue!70,
+                            mark size=2pt
+                        ] coordinates {
+                            (1.2,2.1) (1.8,4.5) (2.1,1.5) (2.5,5.2) (3.1,3.2)
+                            (3.8,6.1) (4.2,2.8) (4.5,4.9) (5.1,7.2) (5.6,3.8)
+                            (6.2,5.5) (6.7,8.1) (7.1,4.2) (7.8,6.8) (8.3,5.1)
+                            (8.9,8.5) (9.2,6.2) (9.5,7.9) (2.9,2.4) (7.3,7.5)
+                        };
+                        \addlegendentry{Loose Data Spread}
+                        \end{axis}
+                    \end{tikzpicture}
+                </latex-image>
+            </image>
+        </figure>
+    </solution>
+</example>
 
-      \end{axis}
-    \end{tikzpicture}
-  </latex-image>
-</image>
-</figure>
-</p>
-</solution>
-</exercise>
-
-<p>
-    Depending on the nature of your data and the relationship you are trying to analyze, 
-    there are several standard regression models:
-</p>
+<example xml:id="example-literacy-child-mortality">
+    <title>Real-World Analysis: Literacy and Child Mortality</title>
+    <statement>
+        <p>
+            The scatter plot below shows the relationship between the percentage of adult females in a country who are literate (<m>X</m>) and the mortality rate of children under five per thousand (<m>Y</m>), alongside its linear regression line.
+        </p>
+        <!-- Converted Figure block using an external static PNG asset -->
+        <figure xml:id="figure-literacy-mortality-scatter">
+            <caption>Scatter Plot of Female Literacy vs. Under-Five Mortality</caption>
+            <image source="img-literacy-mortality.png" width="85%">
+                <description>A scatter plot showing a clear downward trend where under-five child mortality decreases as the percentage of adult female literacy increases.</description>
+                <asst depth="0" width="0" height="0" source="img-literacy-mortality.png" />
+            </image>
+        </figure>
+        <p>
+            Use the provided chart to determine whether each of the following statements is <alert>True</alert> or <alert>False</alert>:
+            <ol marker="1">
+                <li><p>There is a perfect negative correlation between the percentage of adult females who are literate and under-five mortality.</p></li>
+                <li><p>As the percentage of adult females who are literate increases, under-five mortality tends to decrease.</p></li>
+                <li><p>There is no correlation between the percentage of adult females who are literate and under-five mortality.</p></li>
+            </ol>
+        </p>
+    </statement>
+    <solution>
+        <p>
+            By evaluating the direction and spatial dispersion of the data clusters on the graph, we find the following solutions:
+        </p>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <alert>Statement 1 is False.</alert> A <term>perfect negative correlation</term> (<m>r = -1.0</m>) requires every observed country node to land exactly on the blue trajectory pathway line. Because data nodes are spread out in a loose cloud formation above and below the trendline, the pairing represents a strong, imperfect negative correlation.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <alert>Statement 2 is True.</alert> The simple linear regression model features a distinct downward slope tracking from left to right. This confirms that as female literacy coordinates increase along the horizontal axis, the corresponding under-five mortality index shows a consistent, predictable decline.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <alert>Statement 3 is False.</alert> A condition of <term>no correlation</term> (<m>r = 0</m>) generates a completely unstructured cloud of circular nodes accompanied by a flat, zero-slope horizontal regression bar. This graph shows a clear linear pattern, proving a strong statistical relationship between the two metrics.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </solution>
+</example>
 
 <assemblage xml:id="assemblage-linear-regression">
     <title>Simple Linear Regression</title>
@@ -576,42 +490,17 @@ and calculate the line of best fit using linear regression.
             between a single independent variable and a continuous dependent variable by 
             fitting a linear equation to observed data. It plots a straight line of best fit. 
             The equation of the line is typically expressed as a linear function of the form 
-            <m>y = mx + b</m>, where <m>m</m> represents the slope of the line and <m>b</m> 
+            <me>Y = mx + b</me>, where <m>m</m> represents the slope of the line and <m>b</m> 
             represents the y-intercept.
     </p>
 </assemblage>
 
-<example xml:id="ex-ice-cream">
-      <statement>
-        <p>
-          Think of ice cream sales based on the outside temperature:
-          <ul>
-            <li>
-              <p>Temperature (<m>x</m>): The independent variable.</p>
-            </li>
-            <li>
-              <p>Ice Cream Sales (<m>y</m>): The dependent variable.</p>
-            </li>
-          </ul>
-        </p>
-        <p>
-          As temperature (<m>x</m>) goes up, ice cream sales (<m>y</m>) go up. 
-          A simple linear regression draws a straight line through your past data 
-          to help you predict exactly how many ice creams you will sell on a hot 90°F 
-          day versus a cool 60°F day.
-        </p>
-      </statement>
-      <solution xml:id="sol-ice-cream-prediction">
-        <p>
-          By establishing the linear equation from historical data, the business can accurately input the predicted weather temperature (<m>x</m>) to yield an expected inventory target (<m>y</m>).
-        </p>
-      </solution>
- </example>
-
-  <exercise xml:id="ex-widget-package">
+<example xml:id="example-widget-package">
     <statement>
       <p>
-        The relationship between the number of widgets in a package and the length of the package, in inches, is given in the table below.
+        A linear model calculated from the dataset below yields a slope of 0.25 and 
+        a y-intercept of 8.25. The table details the relationship between the number 
+        of widgets in a package and the total length of the package, measured in inches.
       </p>
 
       <table xml:id="table-widget-data">
@@ -644,12 +533,13 @@ and calculate the line of best fit using linear regression.
         <ol marker="a)">
           <li>
             <p>
-              What is the slope of the line of best fit (linear regression)? (Widgets on <m>x</m>-axis, Length on <m>y</m>-axis)
+              Form the equation of the regression line and interpret the slope and y-intercept in
+the context of the problem.
             </p>
           </li>
           <li>
             <p>
-              What is the value of the y-intercept of the linear regression?
+              Using the regression line, predict the length of a package that contains 7 widgets.
             </p>
           </li>
         </ol>
@@ -657,31 +547,33 @@ and calculate the line of best fit using linear regression.
     </statement>
 
     <solution>
-      <p>
-        <term>Part a) Slope Calculation:</term>
-        The formula for the slope (<m>m</m>) of a line passing through coordinates <m>(x_1, y_1)</m> and <m>(x_2, y_2)</m> is:
-        <me>m = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}</me>
-      </p>
-      <p>
-        Using sequential points from the data table like <m>(3, 9.00)</m> and <m>(4, 9.25)</m>:
-        <me>m = \frac{9.25 - 9.00}{4 - 3} = \frac{0.25}{1} = 0.25</me>
-        Because the data is perfectly linear, the slope of the line of best fit is exactly <term>0.25</term>.
-      </p>
-
-      <p>
-        <term>Part b) Y-Intercept Calculation:</term>
-        The slope-intercept form of a linear equation is given by:
-        <me>y = mx + b</me>
-      </p>
-      <p>
-        Substituting our known slope <m>m = 0.25</m> and the first data coordinate point <m>(3, 9.00)</m> allows us to solve for <m>b</m>:
-        <md>
-          <mrow>9.00 \amp = 0.25(3) + b</mrow>
-          <mrow>9.00 \amp = 0.75 + b</mrow>
-          <mrow>b \amp = 9.00 - 0.75 = 8.25</mrow>
-        </md>
-        Thus, the value of the y-intercept is <term>8.25</term>, which corresponds to a complete formula of <m>y = 0.25x + 8.25</m>.
-      </p>
+        <p>
+            <ol marker="a">
+                <li>
+                    <p>
+                        Using the slope (<m>m = 0.25</m>) and the <m>y</m>_-intercept (<m>b = 8.25</m>), the simple linear regression equation is:
+                        <me>Y = 8.25 + 0.25X</me>
+                    </p>
+                    <p>
+                        <alert>Interpretation of the Slope:</alert> For each additional widget added to the package (<m>\Delta X = 1</m>), the total length of the package increases by exactly <alert>0.25 inches</alert>.
+                    </p>
+                    <p>
+                        <alert>Interpretation of the y-Intercept:</alert> When there are zero widgets in the package (<m>X = 0</m>), the baseline length of the packaging material itself is <alert>8.25 inches</alert>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        To predict the total packaging length for a shipment containing <m>7</m> widgets, substitute <m>X = 7</m> into our linear regression model:
+                        <md>
+                            <mrow>Y \amp= 8.25 + 0.25(7)</mrow>
+                            <mrow>Y \amp= 8.25 + 1.75</mrow>
+                            <mrow>Y \amp= 10.00 \text{ inches}</mrow>
+                        </md>
+                        A package holding 7 widgets is predicted to be exactly <alert>10.00 inches</alert> long.
+                    </p>
+                </li>
+            </ol>
+        </p>
 
       <!-- Fully Accessible Figure Integration -->
       <figure xml:id="fig-widget-regression">
@@ -708,66 +600,29 @@ and calculate the line of best fit using linear regression.
         </image>
       </figure>
     </solution>
-  </exercise>
-
-    <p>
-      Standard least-squares linear regression is a statistical method used to find 
-      the best-fitting straight line through a set of data points. It is the most 
-      common technique for modeling the relationship between a dependent variable 
-      (<m>y</m>) and one or more independent variables (<m>x</m>).
-    </p>
-    <p>
-    The least-squares method is a mathematical approach that minimizes the sum of 
-    the squares of the residuals (the differences between observed and predicted 
-    values). This method ensures that the line of best fit is as close as possible 
-    to all data points, providing the most accurate representation of the relationship 
-    between the variables.
-    </p>
-  <assemblage xml:id="asm-least-squares-regression">
-    <title>Standard Least-Squares Linear Regression</title>
-    <p>
-      <term>The Linear Equation</term>
-      The definition models the data using the equation of a straight line:
-      <me>y = mx + b</me>
-        where <m>m</m> is the slope and <m>b</m> is the y-intercept. 
-    </p>
-
-    <p>
-      <term>Formulas for Coefficients</term>
-      The parameters <m>m</m> and <m>b</m> are calculated directly using the following least-squares formulas:
-      <me>m = \frac{n\sum(xy) - \sum x \sum y}{n\sum(x^2) - (\sum x)^2}</me>
-      <me>b = \frac{\sum y - m\sum x}{n}</me>
-    
-    <ul>
-        <li>
-          <p><m>\sum x</m> is the sum of all <m>x</m>-variables.</p>
-        </li>
-        <li>
-          <p><m>\sum y</m> is the sum of all <m>y</m>-variables.</p>
-        </li>
-        <li>
-          <p><m>\sum(xy)</m> is the sum of the product of each paired <m>x</m> and <m>y</m> value.</p>
-        </li>
-        <li>
-          <p><m>\sum(x^2)</m> is the sum of the squares of all <m>x</m>-variables.</p>
-        </li>
-        <li>
-          <p><m>n</m> is the total number of data points.</p>
-        </li>
-        </ul>
-        </p>
-  </assemblage>
-    <p>
-        This method provides a powerful tool for understanding and predicting relationships 
-        in data, making it a fundamental technique in statistics and data analysis.
-    </p>
+</example>
 
   <example xml:id="example-fat-calories-regression">
     <statement>
       <p>
-        The table below shows the relationship between total fat grams and the total calories in a selection of fast food sandwiches. Find the linear regression equation that models this data. Round all values to the nearest integer.
+        A linear model calculated from a dataset yields a slope of 13.3 and a y-intercept 
+        of 142.6 when modeling the relationship between total fat grams (<m>x</m>) and 
+        total calories (<m>y</m>) in a selection of fast food sandwiches.
       </p>
-
+      <p>
+        <ol marker="a">
+          <li> 
+            <p>Form the linear regression equation that models this data, 
+              rounding all baseline parameters to the nearest integer, and 
+              interpret the slope and y-intercept in the context of the problem.</p>
+          </li>
+          <li>
+            <p>Using the regression model, predict the total number of calories in a menu 
+              item that contains 25 grams of fat. Round your final prediction to the nearest 
+              whole integer.</p>
+          </li>
+            </ol>
+        </p>
       <table xml:id="table-sandwich-nutrition">
         <caption>Fast Food Sandwich Nutritional Data</caption>
         <tabular top="minor" bottom="minor">
@@ -788,53 +643,33 @@ and calculate the line of best fit using linear regression.
       </table>
     </statement>
 
-    <!-- Accessible Multiple Choice Structure -->
-    <choices>
-      <choice>
-        <statement><p><m>y = 14x + 99</m></p></statement>
-      </choice>
-      <choice>
-        <statement><p><m>y = 14x + 98</m></p></statement>
-      </choice>
-      <choice correct="yes">
-        <statement><p><m>y = 13x + 143</m></p></statement>
-        <feedback><p>Correct! The calculated slope rounds to 13 and the y-intercept rounds to 143.</p></feedback>
-      </choice>
-      <choice>
-        <statement><p><m>y = 13x + 142</m></p></statement>
-      </choice>
-    </choices>
-
     <solution>
       <p>
-        To find the line of best fit <m>y = mx + b</m>, we apply the standard least-squares linear regression formulas for the slope (<m>m</m>) and the y-intercept (<m>b</m>):
-        <me>m = \frac{n\sum(xy) - \sum x \sum y}{n\sum(x^2) - (\sum x)^2}</me>
-        <me>b = \frac{\sum y - m\sum x}{n}</me>
-      </p>
-      <p>
-        Using the <m>n = 7</m> data points from the table, we sum the component variables:
-        <ul>
-          <li><p><m>\sum x = 170</m></p></li>
-          <li><p><m>\sum y = 3260</m></p></li>
-          <li><p><m>\sum (x^2) = 4752</m></p></li>
-          <li><p><m>\sum (xy) = 87830</m></p></li>
-        </ul>
-      </p>
-      <p>
-        Substituting these values into our slope equation yields:
-        <me>m = \frac{7(87830) - (170)(3260)}{7(4752) - (170)^2} = \frac{614810 - 554200}{33264 - 28900} = \frac{60610}{4364} \approx 13.305</me>
-        Rounding to the nearest integer gives a slope of <term>13</term>.
-      </p>
-      <p>
-        Next, we calculate the precise y-intercept using the unrounded slope value:
-        <me>b = \frac{3260 - (13.30492)(170)}{7} \approx 142.595</me>
-        Rounding to the nearest integer gives a y-intercept of <term>143</term>.
-      </p>
-      <p>
-        Therefore, the final linear regression model is:
-        <me>y = 13x + 143</me>
-      </p>
-
+            <ol marker="a">
+                <li>
+                    <p>
+                        Rounding the y-intercept (<m>142.6 \approx 143</m>) and the slope (<m>13.3 \approx 13</m>), the linear regression equation is:
+                        <me>Y = 143 + 13X</me>
+                    </p>
+                    <p>
+                        <alert>Slope Interpretation:</alert> For each additional 1 gram of fat in a sandwich, the energy content is predicted to increase by approximately <alert>13 calories</alert>.
+                    </p>
+                    <p>
+                        <alert>y-Intercept Interpretation:</alert> If a sandwich contains 0 grams of fat, its predicted baseline energy value from non-fat ingredients is <alert>143 calories</alert>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Substitute <m>X = 25</m> into the unrounded regression line equation to find the precise calorie projection:
+                        <md>
+                            <mrow>Y \amp= 142.6 + 13.3(25)</mrow>
+                            <mrow>Y \amp= 475.1 \approx 475 \text{ calories}</mrow>
+                        </md>
+                        An item with 25 grams of fat is estimated to contain <alert>475 calories</alert>.
+                    </p>
+                </li>
+            </ol>
+          </p>
       <figure xml:id="fig-sandwich-regression">
         <caption>Linear Fit of Fat Content to Total Calories</caption>
         <image width="60%">
@@ -863,10 +698,13 @@ and calculate the line of best fit using linear regression.
     </solution>
   </example>
 
-  <example xml:id="example-eclipse-temperature">
+  <exercise xml:id="exercise-eclipse-temperature">
     <statement>
       <p>
-        During a solar eclipse, the temperature begins to drop as the Moon comes between the Earth and the Sun. The cooling temperatures, up through totality, of the eclipse are shown in the table below. Using a linear regression equation, predict the temperature at the 4 minute mark during the cooling, to the nearest degree.
+        During a solar eclipse, the temperature begins to drop as the Moon comes between 
+        the Earth and the Sun. The cooling temperatures, up through totality, of the eclipse
+         are shown in the table below. Using a linear regression equation with the slope -4.4 and y-intercept 75.1, 
+         predict the temperature at the 4 minute mark during the cooling, to the nearest degree.
       </p>
 
       <table xml:id="table-eclipse-data">
@@ -891,49 +729,18 @@ and calculate the line of best fit using linear regression.
       </p>
     </statement>
 
-    <!-- Accessible Multiple Choice Options -->
-    <choices>
-      <choice>
-        <statement><p>60<m>^\circ</m></p></statement>
-      </choice>
-      <choice>
-        <statement><p>59<m>^\circ</m></p></statement>
-      </choice>
-      <choice correct="yes">
-        <statement><p>58<m>^\circ</m></p></statement>
-        <feedback>
-          <p>Correct! The regression equation outputs 57.5<m>^\circ</m>F at 4 minutes, which rounds to 58<m>^\circ</m>.</p>
-        </feedback>
-      </choice>
-      <choice>
-        <statement><p>57<m>^\circ</m></p></statement>
-      </choice>
-    </choices>
-
     <solution>
       <p>
         <term>Step 1: Calculate the Regression Equation</term>
-        Using the standard least-squares formulas with <m>n = 4</m> data coordinates, we find the required summary metrics:
-        <ul>
-          <li><p><m>\sum x = 6</m></p></li>
-          <li><p><m>\sum y = 274</m></p></li>
-          <li><p><m>\sum(x^2) = 14</m></p></li>
-          <li><p><m>\sum(xy) = 389</m></p></li>
-        </ul>
-      </p>
-      <p>
-        Substitute these totals into the slope (<m>m</m>) and y-intercept (<m>b</m>) formulas:
-        <me>m = \frac{4(389) - (6)(274)}{4(14) - (6)^2} = \frac{1556 - 1644}{56 - 36} = \frac{-88}{20} = -4.4</me>
-        <me>b = \frac{274 - (-4.4)(6)}{4} = \frac{274 + 26.4}{4} = \frac{300.4}{4} = 75.1</me>
-        This yields the linear modeling equation: <m>y = -4.4x + 75.1</m>.
+         <m>Y = -4.4x + 75.1</m>.
       </p>
 
       <p>
         <term>Step 2: Evaluate at 4 Minutes</term>
         Substitute <m>x = 4</m> directly into our regression model to find the expected cooling value:
         <md>
-          <mrow>y \amp = -4.4(4) + 75.1</mrow>
-          <mrow>y \amp = -17.6 + 75.1 = 57.5</mrow>
+          <mrow>Y \amp = -4.4(4) + 75.1</mrow>
+          <mrow>Y \amp = -17.6 + 75.1 = 57.5</mrow>
         </md>
         Rounding <m>57.5^\circ\text{F}</m> to the nearest whole integer gives our target choice of <term>58<m>^\circ</m></term>.
       </p>
@@ -964,12 +771,15 @@ and calculate the line of best fit using linear regression.
         </image>
       </figure>
     </solution>
-  </example>
+  </exercise>
 
-  <exercise xml:id="ex-coat-campaign">
+  <exercise xml:id="exercise-coat-campaign">
     <statement>
       <p>
-        A morning radio talk show is running a <q>Winter Coat Campaign</q> to collect and deliver coats to local shelters. They are storing the coats until they reach their goal of 2100 coats. The table below shows the number of coats in storage at the end of each day of the campaign.
+        A morning radio talk show is running a <q>Winter Coat Campaign</q> 
+        to collect and deliver coats to local shelters. They are storing the coats until 
+        they reach their goal of 2100 coats. The table below shows the number of coats in 
+        storage at the end of each day of the campaign.
       </p>
 
       <table xml:id="table-coat-data">
@@ -991,25 +801,21 @@ and calculate the line of best fit using linear regression.
       </table>
 
       <p>
-        Find the linear regression equation rounded to the nearest hundredths, and predict the day the campaign will meet its goal.
+        Find the linear regression equation with the slope 98.86 and y-intercept 737.33 
+        rounded to the nearest hundredths, 
+        and predict the day the campaign will meet its goal.
       </p>
     </statement>
 
     <solution>
       <p>
-        <term>Part a) Linear Regression Equation:</term>
-        By applying the least-squares formulas for a data pool where <m>n = 6</m>, we get the summary metrics: <m>\sum x = 21</m>, <m>\sum y = 6500</m>, <m>\sum(x^2) = 91</m>, and <m>\sum(xy) = 24810</m>.
-      </p>
-      <p>
-        Evaluating our slope and intercept formulas returns:
-        <me>m = \frac{6(24810) - (21)(6500)}{6(91) - (21)^2} = \frac{148860 - 136500}{546 - 441} = \frac{12360}{105} \approx 98.86</me>
-        <me>b = \frac{6500 - (117.714)(21)}{6} \approx 737.33</me>
-        Thus, the linear modeling line of best fit is <me>y = 98.86x + 737.33</me>
+        <term>Part a) Linear Regression Equation:</term> 
+        Thus, the linear modeling line of best fit is <me>Y = 98.86x + 737.33</me>
       </p>
 
       <p>
         <term>Part b) Goal Prediction:</term>
-        To compute the target milestone, substitute <m>y = 2100</m> into the verified equation:
+        To compute the target milestone, substitute <m>Y = 2100</m> into the verified equation:
         <md>
           <mrow>2100 \amp = 98.86x + 737.33</mrow>
           <mrow>1362.67 \amp = 98.86x</mrow>
@@ -1022,7 +828,12 @@ and calculate the line of best fit using linear regression.
         <caption>Linear Path Tracking Coat Collection Goal Delivery</caption>
         <image width="60%">
           <description>
-            A scatter plot mapping the progress of a winter coat collection drive on a Cartesian grid. The horizontal axis outlines the Day of the Campaign from 0 to 15, and the vertical axis measures the Number of Coats Stored from 600 to 2300. Six blue data markers crawl steadily upward from day 1 to day 6. A solid red trendline launches from a y-intercept of 737.33 and scales upward, crossing a dotted horizontal threshold lines at y equals 2100 on Day 14, where a green X marks the goal resolution.
+            A scatter plot mapping the progress of a winter coat collection drive on a Cartesian grid. 
+            The horizontal axis outlines the Day of the Campaign from 0 to 15, and the vertical 
+            axis measures the Number of Coats Stored from 600 to 2300. Six blue data markers 
+            crawl steadily upward from day 1 to day 6. A solid red trendline launches from a 
+            y-intercept of 737.33 and scales upward, crossing a dotted horizontal threshold 
+            lines at y equals 2100 on Day 14, where a green X marks the goal resolution.
           </description>
           <latex-image>
             <![CDATA[

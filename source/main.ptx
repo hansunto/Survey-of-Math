@@ -73,10 +73,21 @@
       <title>Introduction to Statistics</title>
       <introduction>
       <p>
-        
+      Statistics is the branch of mathematics that deals with collecting, analyzing, interpreting, presenting, and organizing data. It provides tools and techniques for making sense of data and drawing meaningful conclusions from it. In this handout, we will explore some fundamental concepts in statistics, including measures of central tendency, measures of variability, and basic probability.
+      </p>
+      <p>
+        In this chapter, we will cover the following topics:
+        <ul>
+          <li>Data Graphs: Visual representations of data to identify patterns and trends.</li>
+          <li>Center and Spread: Measures of central tendency (mean, median, mode) and measures of variability (range, variance, standard deviation).</li>
+          <li>Empirical Rule: A rule that describes the distribution of data in a normal distribution.</li>
+          <li>Z-scores: Standardized scores that indicate how many standard deviations a data point is from the mean.</li>
+          <li>Regression: A statistical method for modeling the relationship between a dependent variable and one or more independent variables.</li>
+        </ul>
       </p>
 
       </introduction>  
+
       <xi:include href="./notes/data_graph.ptx" />
       <xi:include href="./notes/Center-Spread.ptx" />
       <xi:include href="./notes/empirical-rule.ptx" />
@@ -100,6 +111,7 @@
       <xi:include href="./handouts/handout-voting.ptx" />
       <xi:include href="./handouts/handout-apportion.ptx" />
       <xi:include href="./handouts/handout-finance.ptx"/>
+      <xi:include href="./handouts/handout-statistics.ptx" />
       <!-- <xi:include href="./notes/finance.ptx"/> -->
       <!--<xi:include href="./notes/unit01.ptx"/>
       <xi:include href="./notes/week02.ptx"/>-->

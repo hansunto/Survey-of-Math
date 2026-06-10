@@ -1,5 +1,5 @@
 <section xml:id="sec-Regression">
-    <title>Scatter Plot and Regression Lines</title>
+    <title>Scatter Plots and Regression Lines</title>
     <introduction>
       <p> When two data items are collected for every person or object in a sample, the data
 items can be visually displayed using a scatter plot.
@@ -168,6 +168,7 @@ items can be visually displayed using a scatter plot.
     </solution>
 </exercise>
 
+<note>
   <p>
     A scatter plot can be used to determine whether two quantities are related. 
     If there is a clear relationship, the quantities are said to be <term>correlated</term>. 
@@ -176,10 +177,7 @@ items can be visually displayed using a scatter plot.
     between education and prejudice, we cannot conclude that increased education causes a person's 
     level of prejudice to decrease.
 </p>
-
-
-    
-
+</note>
 
 <p> Regression in statistics is a modeling technique used to estimate the relationship 
     between a dependent variable (the outcome) and one or more independent variables 
@@ -190,6 +188,382 @@ items can be visually displayed using a scatter plot.
     the outcome, which is highly useful for forecasting, making predictions, 
     and identifying trends. 
 </p>
+
+<exercise xml:id="exercise-ice-cream-prediction">
+    <title>Summer Heatwaves and Ice Cream Sales</title>
+    
+    <statement>
+        <p>
+            A beachside shop owner wants to examine the relationship between the daily afternoon temperature 
+            (<m>X</m>, measured in degrees Fahrenheit) and the number of ice cream cones sold daily 
+            (<m>Y</m>). The data collected over a five-day period is presented below.
+        </p>
+
+        <!-- Data Table Section -->
+        <table xml:id="table-ice-cream-data">
+            <title>Daily Temperature vs. Ice Cream Sales</title>
+            <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+                <row header="yes" bottom="medium">
+                    <cell>Day</cell>
+                    <cell>Temperature (<m>X</m> in <m>^\circ\text{F}</m>)</cell>
+                    <cell>Ice Cream Cones Sold (<m>Y</m>)</cell>
+                </row>
+                <row><cell>1</cell><cell>70</cell><cell>100</cell></row>
+                <row><cell>2</cell><cell>75</cell><cell>150</cell></row>
+                <row><cell>3</cell><cell>80</cell><cell>190</cell></row>
+                <row><cell>4</cell><cell>85</cell><cell>260</cell></row>
+                <row><cell>5</cell><cell>90</cell><cell>300</cell></row>
+            </tabular>
+        </table>
+<p>
+Using the simple linear regression model calculated from the observed data table above, 
+predict the total number of ice cream cones sold if the afternoon temperature reaches
+<m>100^\circ\text{F}</m>.
+</p>
+    </statement>
+
+    <!-- Multiple Choice Structure -->
+    <choices>
+        <choice>
+            <statement><p>340 cones</p></statement>
+            <feedback>
+                <p>Incorrect. This value underestimates the strong upward trend observed as the temperature steps up to 
+                  100 degrees.</p>
+            </feedback>
+        </choice>
+        <choice correct="yes">
+            <statement><p>404 cones</p></statement>
+            <feedback>
+                <p>Correct! Observe the data points and plug directly into the line: <m>404</m>.</p>
+            </feedback>
+        </choice>
+        <choice>
+            <statement><p>450 cones</p></statement>
+            <feedback>
+                <p>Incorrect. While sales are rising fast, this estimate is slightly higher than 
+                  what the mathematical trend line predicts.</p>
+            </feedback>
+        </choice>
+        <choice>
+            <statement><p>512 cones</p></statement>
+            <feedback>
+                <p>Incorrect. This value assumes exponential growth rather than a steady 
+                  simple linear progression rate.</p>
+            </feedback>
+        </choice>
+    </choices>
+    
+    <solution>
+<p>
+To predict the number of ice cream cones sold at 100°F, we first need to graph the data points from the table 
+and calculate the line of best fit using linear regression. 
+</p>
+    <p>      
+        <!-- Visual Scatter Plot Section with Regression Line & Labels -->
+        <figure xml:id="figure-ice-cream-scatter">
+            <caption>Scatter Plot of Temperature vs. Ice Cream Cones Sold</caption>
+            <image xml:id="plot-ice-cream">
+                <description>A scatter plot showing an upward trend of daily sales as temperature rises, 
+                  with a red regression line and labeled data points.</description>
+                <latex-image>
+                    \begin{tikzpicture}
+                        \begin{axis}[
+                            xlabel={Temperature ($^\circ$F)},
+                            ylabel={Cones Sold},
+                            xmin=65, xmax=105,
+                            ymin=50, ymax=450,
+                            xtick={70,75,80,85,90,95,100},
+                            ytick={100,150,200,250,300,350,400},
+                            grid=both,
+                            grid style={line width=.1pt, color=gray!10},
+                            major grid style={line width=.2pt, color=gray!50},
+                            legend pos=north west
+                        ]
+                        
+                        <!-- 1. The Red Linear Regression Line Plot -->
+                        \addplot[
+                            domain=65:105,
+                            color=red,
+                            thick,
+                            samples=2
+                        ] {-616 + 10.2*x};
+                        \addlegendentry{Regression Line}
+
+                        <!-- 2. Scatter Plot Points with Text Labels (Day 1, Day 2, etc.) -->
+                        \addplot[
+                            only marks,
+                            mark=*,
+                            color=blue,
+                            mark size=3pt,
+                            nodes near coords,
+                            point meta=explicit symbolic,
+                            every node near coord/.style={anchor=south east, font=\footnotesize, color=black}
+                        ] coordinates {
+                            (70,100) [Day 1]
+                            (75,150) [Day 2]
+                            (80,190) [Day 3]
+                            (85,260) [Day 4]
+                            (90,300) [Day 5]
+                        };
+                        \addlegendentry{Observed Data Points}
+
+                        \end{axis}
+                    \end{tikzpicture}
+                </latex-image>
+            </image>
+        </figure>
+    </p>
+    </solution>
+</exercise>
+
+<exercise xml:id="exercise-car-mileage-prediction">
+    <title>Car Mileage and Resale Value</title>
+    <statement>
+        <p>
+        A used car dealership wants to examine the relationship between a specific sedan's 
+        odometer mileage (<m>X</m>, measured in thousands of miles) and its current market 
+        resale value (<m>Y</m>, measured in thousands of dollars). The data collected from 
+        a sample of five vehicles is presented below.
+        </p>
+
+        <!-- Data Table Section -->
+        <table xml:id="table-car-mileage-data">
+            <title>Vehicle Mileage vs. Resale Value</title>
+            <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+                <row header="yes" bottom="medium">
+                    <cell>Vehicle</cell>
+                    <cell>Mileage (<m>X</m> in thousands of miles)</cell>
+                    <cell>Resale Value (<m>Y</m> in thousands of dollars)</cell>
+                </row>
+                <row><cell>1</cell><cell>10</cell><cell>35</cell></row>
+                <row><cell>2</cell><cell>20</cell><cell>29</cell></row>
+                <row><cell>3</cell><cell>30</cell><cell>26</cell></row>
+                <row><cell>4</cell><cell>40</cell><cell>20</cell></row>
+                <row><cell>5</cell><cell>50</cell><cell>14</cell></row>
+            </tabular>
+        </table>
+
+        <p>
+        Using the simple linear regression model calculated from the observed data table 
+        above, predict the total market resale value of a sedan if its odometer reaches 
+        <m>60</m> thousand miles (i.e., <m>X = 60</m>).
+        </p>
+    </statement>
+
+    <!-- Multiple Choice Structure -->
+    <choices>
+        <choice>
+            <statement><p>$15.5 thousand dollars</p></statement>
+            <feedback>
+                <p>Incorrect. This value fails to capture the continuous decline in value, overestimating how much the car is worth at 60 thousand miles.</p>
+            </feedback>
+        </choice>
+        <choice correct="yes">
+            <statement><p>$9.5 thousand dollars</p></statement>
+            <feedback>
+                <p>Correct! Observe the downward trend in the data points and plug the value directly into the line equation to find <m>9.5</m>.</p>
+            </feedback>
+        </choice>
+        <choice>
+            <statement><p>$5.0 thousand dollars</p></statement>
+            <feedback>
+                <p>Incorrect. While the vehicle loses value consistently, it has not depreciated this drastically according to the linear model.</p>
+            </feedback>
+        </choice>
+        <choice>
+            <statement><p>$2.1 thousand dollars</p></statement>
+            <feedback>
+                <p>Incorrect. This underestimation assumes an exponential drop-off rather than a steady simple linear progression rate.</p>
+            </feedback>
+        </choice>
+    </choices>
+<solution>
+  <p>
+  To predict the resale value of the vehicle at 60 thousand miles, we first graph 
+  the data points from the table and calculate the line of best fit using linear 
+  regression.
+  </p>
+<p>
+    <!-- Visual Scatter Plot Section with Regression Line & Labels -->
+    <figure xml:id="figure-car-mileage-scatter">
+        <caption>Scatter Plot of Mileage vs. Resale Value</caption>
+        <image xml:id="plot-car-mileage">
+            <description>A scatter plot showing a downward trend of resale value as mileage increases, 
+              with a red regression line and labeled data points.</description>
+            <latex-image>
+                \begin{tikzpicture}
+                    \begin{axis}[
+                        xlabel={Mileage (thousands of miles)},
+                        ylabel={Resale Value (thousands of dollars)},
+                        xmin=0, xmax=70,
+                        ymin=0, ymax=40,
+                        xtick={0,10,20,30,40,50,60,70},
+                        ytick={0,5,10,15,20,25,30,35,40},
+                        grid=both,
+                        grid style={line width=.1pt, color=gray!10},
+                        major grid style={line width=.2pt, color=gray!50},
+                        legend pos=north east
+                    ]
+                    
+                    % The Red Linear Regression Line Plot
+                    \addplot[
+                        domain=0:70,
+                        color=red,
+                        thick,
+                        samples=2
+                    ] {36 - 0.44*x};
+                    \addlegendentry{Regression Line}
+
+                    % Scatter Plot Points with Text Labels (Vehicle 1, Vehicle 2, etc.)
+                    \addplot[
+                        only marks,
+                        mark=*,
+                        color=blue,
+                        mark size=3pt,
+                        nodes near coords,
+                        point meta=explicit symbolic,
+                        every node near coord/.style={anchor=south east, font=\footnotesize, color=black}
+                    ] coordinates {
+                        (10, 35) [Vehicle 1]
+                        (20, 29) [Vehicle 2]
+                        (30, 26) [Vehicle 3]
+                        (40, 20) [Vehicle 4]
+                        (50, 14) [Vehicle 5]
+                    };
+                    \addlegendentry{Observed Data Points}
+
+                    \end{axis}
+                \end{tikzpicture}
+            </latex-image>
+        </image>
+    </figure>
+</p>
+</solution>
+</exercise>
+
+<exercise xml:id="exercise-shoe-size-prediction">
+    <title>Shoe Size and Exam Scores</title>
+    <statement>
+        <p>
+            A statistics professor wants to examine the relationship between a student's shoe size (<m>X</m>) and their score on the final exam (<m>Y</m>, measured as a percentage). The data collected from a random sample of five students is presented below.
+        </p>
+
+        <!-- Data Table Section -->
+        <table xml:id="table-shoe-size-data">
+            <title>Student Shoe Size vs. Exam Score</title>
+            <tabular halign="center" top="minor" bottom="minor" left="minor" right="minor">
+                <row header="yes" bottom="medium">
+                    <cell>Student</cell>
+                    <cell>Shoe Size (<m>X</m>)</cell>
+                    <cell>Exam Score (<m>Y</m> in %)</cell>
+                </row>
+                <row><cell>1</cell><cell>6</cell><cell>85</cell></row>
+                <row><cell>2</cell><cell>8</cell><cell>62</cell></row>
+                <row><cell>3</cell><cell>9</cell><cell>94</cell></row>
+                <row><cell>4</cell><cell>11</cell><cell>73</cell></row>
+                <row><cell>5</cell><cell>12</cell><cell>81</cell></row>
+            </tabular>
+        </table>
+
+        <p>
+            Using the simple linear regression model calculated from the observed data table above, 
+            predict the expected final exam score of a student who wears a shoe size of <m>10</m> 
+            (i.e., <m>X = 10</m>).
+        </p>
+    </statement>
+
+    <!-- Multiple Choice Structure -->
+    <choices>
+        <choice>
+            <statement><p>65%</p></statement>
+            <feedback>
+                <p>Incorrect. While some individual students score near this range, this value deviates from the baseline sample average predicted by a zero-correlation model.</p>
+            </feedback>
+        </choice>
+        <choice correct="yes">
+            <statement><p>79%</p></statement>
+            <feedback>
+                <p>Correct! Because there is no linear relationship between shoe size and exam scores, the slope is approximately 0, meaning the best prediction for any shoe size is simply the mean of the observed scores (<m>\bar{Y} = 79</m>).</p>
+            </feedback>
+        </choice>
+        <choice>
+            <statement><p>95%</p></statement>
+            <feedback>
+                <p>Incorrect. This prediction assumes a positive correlation where larger shoe sizes guarantee higher test scores, which is not supported by the data pattern.</p>
+            </feedback>
+        </choice>
+        <choice>
+            <statement><p>50%</p></statement>
+            <feedback>
+                <p>Incorrect. This assumes an artificial downward trend that does not match the random distribution of the data sample.</p>
+            </feedback>
+        </choice>
+    </choices>
+
+    <solution>
+        <p>
+            To predict the exam score for a student with a shoe size of 10, we graph the data points 
+            from the table and calculate the line of best fit using linear regression.
+        </p>
+        <p>
+        <figure xml:id="figure-shoe-size-scatter">
+          <caption>Scatter Plot of Shoe Size vs. Exam Score</caption>
+<image xml:id="plot-shoe-size" width="80%">
+<shortdescription> A scatter plot showing a random distribution of exam scores across 
+  different shoe sizes, featuring a flat horizontal regression line and labeled data 
+  points.
+</shortdescription>
+  <latex-image>
+    \begin{tikzpicture}
+      \begin{axis}[
+          xlabel={Shoe Size ($X$)},
+          ylabel={Exam Score (\%)},
+          xmin=5, xmax=13,
+          ymin=60, ymax=100,
+          xtick={6,7,8,9,10,11,12},
+          ytick={60,70,80,90,100},
+          grid=both,
+          grid style={line width=.1pt, color=gray!10},
+          major grid style={line width=.2pt, color=gray!50},
+          legend pos=north east
+      ]
+      
+      % The Red Linear Regression Line Plot
+      \addplot[
+          domain=5:13,
+          color=red,
+          thick,
+          samples=2
+      ] {79};
+     
+
+      % Scatter Plot Points with Text Labels (Student 1, Student 2, etc.)
+      \addplot[
+          only marks,
+          mark=*,
+          color=blue,
+          mark size=3pt,
+          nodes near coords,
+          point meta=explicit symbolic,
+          every node near coord/.style={anchor=south east, font=\footnotesize, color=black}
+      ] coordinates {
+          (6, 85) [Student 1]
+          (8, 62) [Student 2]
+          (9, 94) [Student 3]
+          (11, 73) [Student 4]
+          (12, 81) [Student 5]
+      };
+     
+
+      \end{axis}
+    \end{tikzpicture}
+  </latex-image>
+</image>
+</figure>
+</p>
+</solution>
+</exercise>
+
 <p>
     Depending on the nature of your data and the relationship you are trying to analyze, 
     there are several standard regression models:
@@ -200,16 +574,10 @@ items can be visually displayed using a scatter plot.
     <p>
             <alert>Simple linear regression</alert> is a statistical method that models the relationship 
             between a single independent variable and a continuous dependent variable by 
-            fitting a linear equation to observed data. It plots a straight line of best fit. The equation of the line is typically 
-            expressed as:
-            <me> y = mx + b </me>
-            where:
-            <ul>
-                <li><m>y</m> is the dependent variable (the outcome).</li>
-                <li><m>x</m> is the independent variable (the predictor).</li>
-                <li><m>m</m> is the slope of    the line, representing the change in <m>y</m> for a one-unit change in <m>x</m>.</li>
-                <li><m>b</m> is the y-intercept, representing the value of <m>y</m> when <m>x</m> is zero.</li>
-            </ul>
+            fitting a linear equation to observed data. It plots a straight line of best fit. 
+            The equation of the line is typically expressed as a linear function of the form 
+            <m>y = mx + b</m>, where <m>m</m> represents the slope of the line and <m>b</m> 
+            represents the y-intercept.
     </p>
 </assemblage>
 

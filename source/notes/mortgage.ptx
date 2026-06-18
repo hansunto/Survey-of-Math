@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="notes-Mortgages">
-<title>Borrowing Money: Mortgage </title>  
+<title>2.4 Borrowing Money: Mortgage </title>  
 
 <assemblage xml:id="assemblage-mortgage">
   <title></title>
@@ -41,6 +41,10 @@ Mortgages can have a fixed interest rate or a variable interest rate.
   <p>
   where:
   <dl>
+    <li>
+      <title><m>PMT</m></title>
+      <p> is regular Payment Amount (usually a monthly payment)</p>
+    </li>
     <li>
       <title><m>P</m></title>
       <p>is the principal amount (loan balance)</p>

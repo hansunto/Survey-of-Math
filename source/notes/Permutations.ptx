@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-permutations">
-  <title>Permutations</title>
+  <title>3.5 Permutations</title>
 
   <definition xml:id="def-permutation">
     <title>Permutation</title>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="sec-events-not-or">
-  <title>Events Involving NOT and OR</title>
+  <title>3.2 Events Involving NOT and OR</title>
 
   <p>
     A survey asked 500 Americans to rate their health. Of the surveyed, 270 rated their health as good/excellent. This means that <m>500 - 270 = 230</m> people surveyed did not rate their health as good/excellent.

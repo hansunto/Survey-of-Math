@@ -2,7 +2,7 @@
 
 <!-- This file contains the content for the "Combinations" section of the Probability chapter. It is included in the main course file (main.ptx) using an XInclude directive. -->
 <section xml:id="sec-combinations">
-  <title>Combinations</title>
+  <title>3.6 Combinations</title>
 
   <definition xml:id="def-combination">
     <title>Combination</title>

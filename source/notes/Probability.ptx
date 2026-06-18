@@ -3,7 +3,7 @@
  It is included in the main course file (main.ptx) using an XInclude directive. -->
 
 <section xml:id="sec-probability-fcp-npr-ncr">
-  <title>Probability with the FCP, nPr and nCr</title>
+  <title>3.7 Probability with the FCP, nPr and nCr</title>
 <subsection xml:id="subsec-nPr-Probability">
     <title>Probability with Fundamental Counting Principle and permutations, nPr</title>
     <introduction>

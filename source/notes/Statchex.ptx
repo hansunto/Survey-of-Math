@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-stat-ch-ex">
-  <title>Chapter Exercises</title>
+  <title>4.6 Chapter Exercises</title>
 
 <exercises>
+  <title>Statistics Practice Problem</title>
   <!-- Exercise Mean, Median, Mode -->
 <exercise xml:id="ex-mean-median-mode">
     <statement>

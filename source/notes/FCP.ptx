@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="notes-fcp">
-  <title>The Fundamental Counting Principle</title>
+  <title>3.3 The Fundamental Counting Principle</title>
 
    <introduction>
     <p>
@@ -187,7 +187,7 @@ happen. </p>
   </example>
 
 <exercises xml:id="exercises-FCP">
-  
+  <title>Exercises for Practice</title>
   <exercise xml:id="exercise-six-question-test">
     <title>Six-question multiple-choice test</title>
     <statement>

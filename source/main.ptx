@@ -105,7 +105,8 @@
       <introduction>
         <p>
           These notes are intended strictly for a quick review of each chapter. 
-          They do not substitute for attending lectures or reading the assigned textbook.
+          They do not substitute for attending lectures or reading the assigned textbook. 
+          Special thanks to Professor Jason Hardin for sharing his MyOpenMath question bank.
         </p>
       </introduction>
       <xi:include href="./handouts/handout-voting.ptx" />

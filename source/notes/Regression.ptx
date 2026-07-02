@@ -192,7 +192,7 @@ between -1 and 1, inclusive.
   </statement>
 </definition>
 
-<exercise xml:id="exercise-correlation-coefficient-scenarios">
+<example xml:id="example-correlation-coefficient-scenarios">
     <title>Classifying Correlation Types and Strengths</title>
     <statement>
         <p>
@@ -326,7 +326,7 @@ between -1 and 1, inclusive.
             </image>
         </figure>
     </solution>
-</exercise>
+</example>
 
 <example xml:id="example-stress-illness-correlation">
     <title>Stress and Illness Analysis</title>

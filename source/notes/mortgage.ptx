@@ -3,6 +3,12 @@
 <section xml:id="notes-Mortgages">
 <title>2.4 Borrowing Money: Mortgage </title>  
 
+<p> This section introduces fixed-installment loans featuring 
+  constant interest rates. The standard amortization formula explored here applies broadly to 
+  any fixed-rate financing, including auto loans, student loans, and home improvement loans. 
+  Mortgages follow this exact same mathematical structure, differing only by their extended 
+  repayment timelines, which typically span 15, 30, or 40 years.</p>
+
 <assemblage xml:id="assemblage-mortgage">
   <title></title>
 <p> 

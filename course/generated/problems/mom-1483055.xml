@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1483055">
+<statement>
+<p>
+Answer the following questions. Use the <m>\displaystyle\ _{{n}}{P}_{{r}}</m> button on your calculator!</p>
+<p>
+You are the coach for a little league baseball team. There are <m>\displaystyle{13}</m> players on the team. You need to choose a batting order having <m>\displaystyle{9}</m> players. How many different batting orders can you make?</p>
+<p>
+<fillin characters="20"/></p>
+<p>
+A TV network needs to fill up five different time slots and has <m>\displaystyle{10}</m> classic sitcoms available. In how many ways can they fill these available time slots?</p>
+<p>
+<fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>259459200</li><li>30240</li></ul></p>
+</answer>
+
+</myopenmath>

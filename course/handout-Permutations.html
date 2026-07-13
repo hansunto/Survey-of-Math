@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>11. Activity Permutations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "textmacros",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[tex]/textmacros",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="MA-105 (Survey of Math)">
+<meta property="book:author" content="Professor Hansun To, Ph. D.">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.11';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.8b6d53d5a91823a0.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.2901d6466316ff22.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">MA-105 (Survey of Math)</span> <span class="subtitle">Worcester State University</span></a></h1>
+<p class="byline">Professor Hansun To, Ph. D.</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="handout-FCP.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="activities.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="handouts.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\usepackage{textcomp}
+\usepackage{newunicodechar}
+\newunicodechar{′}{\textprime}
+\newunicodechar{″}{\textdoubleprime}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Voting-Apportionment.html" class="internal"><span class="codenumber">1</span> <span class="title">Voting and Apportionment</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-Voting.html" class="internal"><span class="title">1.1 Voting methods</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-apportionment.html" class="internal"><span class="title">1.2 Apportionment</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-voting-ch-ex.html" class="internal"><span class="title">1.3 Chapter Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-voting-ch-ex.html#sec-voting-ch-ex-2" class="internal"><span class="title">Voting and Apportionment Practice Problems</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Personal-Finance.html" class="internal"><span class="codenumber">2</span> <span class="title">Personal Finance</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-simple-interest.html" class="internal"><span class="title">2.1 Understanding Interest: Simple Interest</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-simple-interest.html#practice-simple-interest" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-compound-interest.html" class="internal"><span class="title">2.2 Saving Money: Compound Interest</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-compound-interest.html#practice-compound-interest" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-Annuities.html" class="internal"><span class="title">2.3 Saving Money: Annuities</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-Annuities.html#practice-annuity" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-Mortgages.html" class="internal"><span class="title">2.4 Borrowing Money: Mortgage</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Identify-Formulas.html" class="internal"><span class="title">2.5 Identify Formulas to use: Simple, Compound, Annuity, Loans</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Identify-Formulas.html#exercises-finance-answers" class="internal"><span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-fin-ch-ex.html" class="internal"><span class="title">2.6 Chapter Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-fin-ch-ex.html#sec-fin-ch-ex-2" class="internal"><span class="title">Personal Finance Practice Problem</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Probability.html" class="internal"><span class="codenumber">3</span> <span class="title">Probability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Probability-3.html" class="internal"><span class="title">3.1 Fundamentals of Probability</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-events-not-or.html" class="internal"><span class="title">3.2 Events Involving NOT and OR</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="notes-fcp.html" class="internal"><span class="title">3.3 The Fundamental Counting Principle</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="notes-fcp.html#exercises-FCP" class="internal"><span class="title">Exercises for Practice</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-factorials.html" class="internal"><span class="title">3.4 Factorials</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-permutations.html" class="internal"><span class="title">3.5 Permutations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-combinations.html" class="internal"><span class="title">3.6 Combinations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-probability-fcp-npr-ncr.html" class="internal"><span class="title">3.7 Probability with the FCP, nPr and nCr</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-probability-fcp-npr-ncr.html#subsec-nPr-Probability" class="internal"><span class="title">Probability with Fundamental Counting Principle and permutations, nPr</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-probability-fcp-npr-ncr.html#subsec-nCr-Probability" class="internal"><span class="title">Probability with Combinations, nCr</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-prob-ch-ex.html" class="internal"><span class="title">3.8 Chapter Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-prob-ch-ex.html#sec-prob-ch-ex-2" class="internal"><span class="title">Probability Practice Problem</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Intro-Statistics.html" class="internal"><span class="codenumber">4</span> <span class="title">Introduction to Statistics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-Visualizing-Data-Through-Graphs.html" class="internal"><span class="title">4.1 Visualizing Data Through Graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-measures-of-center-spread.html" class="internal"><span class="title">4.2 Measures of Center and Spread</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-measures-of-center-spread.html#subsec-effect-of-outliers" class="internal"><span class="title">Effect of Outliers</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-measures-of-center-spread.html#sec-measures-of-center-spread-34" class="internal"><span class="title">Practice Questions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-measures-of-center-spread.html#subsec-faq" class="internal"><span class="title">Frequently Asked Questions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="notes-empirical-rule.html" class="internal"><span class="title">4.3 The Empirical Rule</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-z-scores.html" class="internal"><span class="title">4.4 Z-Scores</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-z-scores.html#exercises-z-scores" class="internal"><span class="title">Practice Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Regression.html" class="internal"><span class="title">4.5 Scatter Plots and Regression Lines</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-stat-ch-ex.html" class="internal"><span class="title">4.6 Chapter Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-stat-ch-ex.html#sec-stat-ch-ex-2" class="internal"><span class="title">Statistics Practice Problem</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Hands-On-Sessions.html" class="internal"><span class="codenumber">5</span> <span class="title">Practical Application &amp; Hands-On Sessions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handout-voting-methods.html" class="internal"><span class="title">Voting Methods Handout</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handout-apportionment.html" class="internal"><span class="title">Apportionment Handout</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handout-finance.html" class="internal"><span class="title">Personal Finance Handout</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handout-Statistics.html" class="internal"><span class="title">Statistics Handout</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="activities.html" class="internal"><span class="codenumber">6</span> <span class="title">MyOpenMath Interactive Activities</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-01-intro-activity.html" class="internal"><span class="title">01. Activity Voting Methods</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-02-intro-activity.html" class="internal"><span class="title">02. Activity Apportionment Methods</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-03-intro-activity.html" class="internal"><span class="title">03. Activity Simple Interest</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-04-intro-activity.html" class="internal"><span class="title">04. Activity Compound Interest</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-05-intro-activity.html" class="internal"><span class="title">05. Activity Annuities</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-06-intro-activity.html" class="internal"><span class="title">06. Activity Loans</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="activity-07-intro-activity.html" class="internal"><span class="title">07. Activity Mortgages</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handout-intro-probability.html" class="internal"><span class="title">08. Activity Introduction to Probability</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handout-not-or-probability.html" class="internal"><span class="title">09. Activity Probability Events: Not, Or</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="handout-FCP.html" class="internal"><span class="title">10. Activity The Fundamental Counting Principle</span></a></div></li>
+<li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="handout-Permutations.html" class="internal"><span class="title">11. Activity Permutations</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="handouts.html" class="internal"><span class="codenumber">7</span> <span class="title">Handouts</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="homework.html" class="internal"><span class="codenumber">8</span> <span class="title">Homework</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="course-documents.html" class="internal"><span class="codenumber">9</span> <span class="title">Course Documents</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ma-150-syllabus.html" class="internal"><span class="title">MA-105-BL: Survey of Math</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#sec-150-course-info" class="internal"><span class="title">Course Information</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#sec-105-grading" class="internal"><span class="title">Assignments and Grading</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#subsec-105-Course_Policies" class="internal"><span class="title">Course Policies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#subsec-105-StudentLearningOutcomes" class="internal"><span class="title">Student Learning Outcomes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#subsec-105-LASC" class="internal"><span class="title">LASC</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ma-150-syllabus.html#subsec-105-TentativeSchedule" class="internal"><span class="title">Course Schedule</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="worksheet" id="handout-Permutations" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h2 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">11. Activity Permutations</span><div class="print-links"><a href="?printpreview=handout-Permutations" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h2>
+<section class="onepage" id="handout-Permutations-2">
+<div class="para" id="handout-Permutations-2-1">Let’s now consider a slightly different counting problem.<div class="autopermalink" data-description="Paragraph"><a href="#handout-Permutations-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-word-rearrangement" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.37</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-word-rearrangement-1-1">How many different ways can the letters of the word <span class="process-math">\(\text{MATH}\)</span> be rearranged to form a four-letter code word? (E.g., <span class="process-math">\(\text{MATH}\text{,}\)</span> <span class="process-math">\(\text{AMTH}\text{,}\)</span> <span class="process-math">\(\text{HTAM}\text{,}\)</span> etc.)<div class="autopermalink" data-description="Paragraph"><a href="#ex-word-rearrangement-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-word-rearrangement-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-word-rearrangement-2-1">
+<div class="para">We can use a blank diagram to help us answer this question! We start with one with four blanks, one for each of the positions in the code word:</div>
+<div class="displaymath process-math" id="ex-word-rearrangement-2-1-1">
+\begin{equation*}
+\underline{\quad} \ \underline{\quad} \ \underline{\quad} \ \underline{\quad}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-word-rearrangement-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-word-rearrangement-2-2">
+<div class="para">There are <span class="process-math">\(4\)</span> choices for the first letter of the code word; it can be <span class="process-math">\(\text{M}\)</span> <span class="process-math">\(\text{A}\text{,}\)</span> <span class="process-math">\(\text{T}\text{,}\)</span> or <span class="process-math">\(\text{H}\text{.}\)</span> Thus, we have:</div>
+<div class="displaymath process-math" id="ex-word-rearrangement-2-2-6">
+\begin{equation*}
+\underline{4} \ \underline{\quad} \ \underline{\quad} \ \underline{\quad}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-word-rearrangement-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-word-rearrangement-2-3">
+<div class="para">Once the first letter is chosen, there are only <span class="process-math">\(3\)</span> choices for the second letter of the code word. For example, if <span class="process-math">\(\text{M}\)</span> is chosen as the first letter, then the options for the second are <span class="process-math">\(\text{A}\text{,}\)</span> <span class="process-math">\(\text{T}\text{,}\)</span> and <span class="process-math">\(\text{H}\text{,}\)</span> since <span class="process-math">\(\text{M}\)</span> cannot be used a second time. Or, if <span class="process-math">\(\text{A}\)</span> is chosen as the first letter, then the options for the second are <span class="process-math">\(\text{M}\text{,}\)</span> <span class="process-math">\(\text{T}\text{,}\)</span> and <span class="process-math">\(\text{H}\text{.}\)</span> The key is that regardless of the choice for the first letter, there will always be <span class="process-math">\(3\)</span> options to choose from for the second letter. So:</div>
+<div class="displaymath process-math" id="ex-word-rearrangement-2-3-12">
+\begin{equation*}
+\underline{4} \ \underline{3} \ \underline{\quad} \ \underline{\quad}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-word-rearrangement-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-word-rearrangement-2-4">
+<div class="para">Using a similar logic, once the first two letters are chosen there are only <span class="process-math">\(2\)</span> options remaining for the third letter. For example, if <span class="process-math">\(\text{M}\)</span> is chosen first and <span class="process-math">\(\text{A}\)</span> chosen second, then the options for the third letter are only <span class="process-math">\(\text{T}\)</span> and <span class="process-math">\(\text{H}\text{.}\)</span> Thus:</div>
+<div class="displaymath process-math" id="ex-word-rearrangement-2-4-6">
+\begin{equation*}
+\underline{4} \ \underline{3} \ \underline{2} \ \underline{\quad}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-word-rearrangement-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-word-rearrangement-2-5">
+<div class="para">Finally, there is only <span class="process-math">\(1\)</span> choice for the final letter, since all of the other letters have been used at this point. This means our completed blank diagram looks like:</div>
+<div class="displaymath process-math" id="ex-word-rearrangement-2-5-2">
+\begin{equation*}
+\underline{4} \ \underline{3} \ \underline{2} \ \underline{1}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-word-rearrangement-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex-word-rearrangement-2-6">
+<div class="para">So by the Fundamental Counting Principle, the number of code words is:</div>
+<div class="displaymath process-math" id="ex-word-rearrangement-2-6-1">
+\begin{equation*}
+4 \times 3 \times 2 \times 1 = 24
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-word-rearrangement-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.37.1"><a href="#ex-word-rearrangement-2" title="Copy heading and permalink for Solution 6.37.1" aria-label="Copy heading and permalink for Solution 6.37.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 6.37"><a href="#ex-word-rearrangement" title="Copy heading and permalink for Example 6.37" aria-label="Copy heading and permalink for Example 6.37">🔗</a></div>
+</article></details>
+<div class="para logical" id="handout-Permutations-2-3">
+<div class="para">This is a simple example of what is called a <dfn class="terminology">permutation</dfn>. A permutation is an ordered arrangement of items that occurs when:</div>
+<ul class="disc" id="handout-Permutations-2-3-2">
+<li id="handout-Permutations-2-3-2-1">
+<div class="para" id="handout-Permutations-2-3-2-1-1">No item is used more than once, and<div class="autopermalink" data-description="Paragraph"><a href="#handout-Permutations-2-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handout-Permutations-2-3-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handout-Permutations-2-3-2-2">
+<div class="para" id="handout-Permutations-2-3-2-2-1">The order of arrangement makes a difference (e.g., <span class="process-math">\(\text{MA}\)</span> is different than <span class="process-math">\(\text{AM}\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#handout-Permutations-2-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handout-Permutations-2-3-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#handout-Permutations-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="handout-Permutations-2-4">
+<div class="para">The product that we saw in the preceding example is called a <dfn class="terminology">factorial</dfn> and is denoted <span class="process-math">\(n!\text{.}\)</span> In general, <span class="process-math">\(n!\)</span> is read as “<span class="process-math">\(n\)</span> factorial.” For example:</div>
+<div class="displaymath process-math" id="handout-Permutations-2-4-5">
+\begin{equation*}
+4! = 4 \times 3 \times 2 \times 1 = 24
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#handout-Permutations-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="def-factorial-permutations"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.38</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="def-factorial-permutations-1-1">
+<div class="para"> When a situation involves rearranging all of the objects in a given set, then the number of permutations is given by:</div>
+<div class="displaymath process-math" id="def-factorial-permutations-1-1-3">
+\begin{equation*}
+n! = n \times (n-1) \times (n-2) \times \dots \times 3 \times 2 \times 1
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(n\)</span> is the total number of objects.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-factorial-permutations-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 6.38"><a href="#def-factorial-permutations" title="Copy heading and permalink for Definition 6.38" aria-label="Copy heading and permalink for Definition 6.38">🔗</a></div>
+</article>
+<article class="note remark-like" id="note-calculator-factorial"><h3 class="heading">
+<span class="type">Note</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.39</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="note-calculator-factorial-1">Scientific calculators have a button which will compute factorials automatically. If you have the TI-30XIIS calculator, you can access this by hitting the <kbd class="kbdkey">PRB</kbd> button and arrowing over to the <span class="process-math">\(!\)</span> symbol.<div class="autopermalink" data-description="Paragraph"><a href="#note-calculator-factorial-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Note 6.39"><a href="#note-calculator-factorial" title="Copy heading and permalink for Note 6.39" aria-label="Copy heading and permalink for Note 6.39">🔗</a></div>
+</article>
+<details id="ex-door-prizes" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.40</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-door-prizes-1-1">How many ways can five different door prizes be distributed among five people?<div class="autopermalink" data-description="Paragraph"><a href="#ex-door-prizes-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-door-prizes-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-door-prizes-2-1">
+<div class="para">Here we want to rearrange the five people in order so that the first gets the first prize, the second gets the second prize, and so on. We must rearrange all five of the people since there are five prizes, so the number of ways to do this is:</div>
+<div class="displaymath process-math" id="ex-door-prizes-2-1-1">
+\begin{equation*}
+5! = 5 \times 4 \times 3 \times 2 \times 1 = 120
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-door-prizes-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.40.1"><a href="#ex-door-prizes-2" title="Copy heading and permalink for Solution 6.40.1" aria-label="Copy heading and permalink for Solution 6.40.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 6.40"><a href="#ex-door-prizes" title="Copy heading and permalink for Example 6.40" aria-label="Copy heading and permalink for Example 6.40">🔗</a></div>
+</article></details></section><section class="onepage" id="handout-Permutations-3">
+<article class="exercise exercise-like" id="handout-Permutations-3-1"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div id="momhandout-Permutations-3-1-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momhandout-Permutations-3-1-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1483053&amp;frame_id=momhandout-Permutations-3-1-1"></iframe></div>
+<div class="autopermalink" data-description="Worksheet Exercise 1"><a href="#handout-Permutations-3-1" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+</article></section><section class="onepage" id="handout-Permutations-4">
+<div class="para" id="handout-Permutations-4-1">Sometimes there are scenarios where we want to determine the number of ways to rearrange only a subset of a set of objects. The next two examples present two such scenarios.<div class="autopermalink" data-description="Paragraph"><a href="#handout-Permutations-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="ex-gift-certificates" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.41</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-gift-certificates-1-1">A charity benefit is attended by <span class="process-math">\(25\)</span> people and three gift certificates are given away as door prizes: one gift certificate is in the amount of <span class="process-math">\(\$100\text{,}\)</span> the second is worth <span class="process-math">\(\$25\text{,}\)</span> and the third is worth <span class="process-math">\(\$10\text{.}\)</span> Assuming that no person receives more than one prize, how many different ways can the three gift certificates be awarded?<div class="autopermalink" data-description="Paragraph"><a href="#ex-gift-certificates-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-gift-certificates-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-gift-certificates-2-1">
+<div class="para">Since the three gift certificates are worth different amounts, the order in which they are awarded makes a difference. There are <span class="process-math">\(25\)</span> possible winners for the <span class="process-math">\(\$100\)</span> gift certificate. Once that has been awarded, there are <span class="process-math">\(24\)</span> possible winners for the <span class="process-math">\(\$25\)</span> gift certificate since the first winner is not eligible. Finally, after the first two have been awarded there are <span class="process-math">\(23\)</span> possible winners for the <span class="process-math">\(\$10\)</span> gift certificate since the first two winners are ineligible. The total number of ways the three gift certificates can be awarded is:</div>
+<div class="displaymath process-math" id="ex-gift-certificates-2-1-7">
+\begin{equation*}
+25 \times 24 \times 23 = 13,800
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-gift-certificates-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.41.1"><a href="#ex-gift-certificates-2" title="Copy heading and permalink for Solution 6.41.1" aria-label="Copy heading and permalink for Solution 6.41.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 6.41"><a href="#ex-gift-certificates" title="Copy heading and permalink for Example 6.41" aria-label="Copy heading and permalink for Example 6.41">🔗</a></div>
+</article></details>
+<details id="ex-olympic-sprinters" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.42</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-olympic-sprinters-1-1">Eight sprinters have made it to the Olympic finals in the 100-meter race. In how many different ways can the gold, silver, and bronze medals be awarded?<div class="autopermalink" data-description="Paragraph"><a href="#ex-olympic-sprinters-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-olympic-sprinters-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-olympic-sprinters-2-1">
+<div class="para">Like the previous example, the order in which the medals are awarded makes a difference since they are different. There are <span class="process-math">\(8\)</span> possible gold medalists, then <span class="process-math">\(7\)</span> possible silver medalists (the runner who wins gold cannot win silver), and finally <span class="process-math">\(6\)</span> possible bronze medalists (the gold and silver medalists cannot win bronze). This means the number of ways the medals can be awarded is:</div>
+<div class="displaymath process-math" id="ex-olympic-sprinters-2-1-4">
+\begin{equation*}
+8 \times 7 \times 6 = 336
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-olympic-sprinters-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.42.1"><a href="#ex-olympic-sprinters-2" title="Copy heading and permalink for Solution 6.42.1" aria-label="Copy heading and permalink for Solution 6.42.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 6.42"><a href="#ex-olympic-sprinters" title="Copy heading and permalink for Example 6.42" aria-label="Copy heading and permalink for Example 6.42">🔗</a></div>
+</article></details>
+<div class="para logical" id="handout-Permutations-4-4">
+<div class="para">The two examples above are similar in that:</div>
+<ul class="disc" id="handout-Permutations-4-4-1">
+<li id="handout-Permutations-4-4-1-1">
+<div class="para" id="handout-Permutations-4-4-1-1-1">They had a total group of people (<span class="process-math">\(25\)</span> and <span class="process-math">\(8\text{,}\)</span> respectively) and wanted to order a strictly smaller number of them (in both cases, <span class="process-math">\(3\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#handout-Permutations-4-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handout-Permutations-4-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handout-Permutations-4-4-1-2">
+<div class="para" id="handout-Permutations-4-4-1-2-1">The order of selection was important (e.g., first place, second place, third place).<div class="autopermalink" data-description="Paragraph"><a href="#handout-Permutations-4-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handout-Permutations-4-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="handout-Permutations-4-4-1-3">
+<div class="para" id="handout-Permutations-4-4-1-3-1">Awards were done without replacement; whoever was chosen first could not be chosen again.<div class="autopermalink" data-description="Paragraph"><a href="#handout-Permutations-4-4-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#handout-Permutations-4-4-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">These examples demonstrate permutations where only a select number of items are chosen to be rearranged.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#handout-Permutations-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="handout-Permutations-4-5">
+<div class="para">Here is the general scenario. Suppose we have <span class="process-math">\(n\)</span> total objects and want to choose <span class="process-math">\(r\)</span> of them without replacement when order matters (this is what was done in the preceding examples!). The number of ways this can be done is denoted <span class="process-math">\(_nP_r\)</span> and is given by the formula:</div>
+<div class="displaymath process-math" id="handout-Permutations-4-5-4">
+\begin{equation*}
+_nP_r = \frac{n!}{(n-r)!}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#handout-Permutations-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="note remark-like" id="note-calculator-npr"><h3 class="heading">
+<span class="type">Note</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.43</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="note-calculator-npr-1">Your calculator should have a key to calculate this for you! If you are using the TI-30XIIS, the key is located in the <kbd class="kbdkey">PRB</kbd> menu along with the factorial key!<div class="autopermalink" data-description="Paragraph"><a href="#note-calculator-npr-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Note 6.43"><a href="#note-calculator-npr" title="Copy heading and permalink for Note 6.43" aria-label="Copy heading and permalink for Note 6.43">🔗</a></div>
+</article></section><section class="onepage" id="handout-Permutations-5">
+<details id="ex-painting-arrangements" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.44</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-painting-arrangements-1-1">Bo has nine paintings and has room to display only four of them at a time on his wall. How many different ways could Bo do this?<div class="autopermalink" data-description="Paragraph"><a href="#ex-painting-arrangements-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-painting-arrangements-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-painting-arrangements-2-1">
+<div class="para">In this example, we have a total of <span class="process-math">\(9\)</span> paintings to choose from and need to choose <span class="process-math">\(4\)</span> of them. The order of selection matters since they are being arranged on a wall, and none can be used more than once. This is a permutation! Using a calculator to find <span class="process-math">\(_9P_4\text{,}\)</span> the number of ways for Bo to arrange four paintings is:</div>
+<div class="displaymath process-math" id="ex-painting-arrangements-2-1-4">
+\begin{equation*}
+_9P_4 = \frac{9!}{(9-4)!} = \frac{9!}{5!} = 9 \times 8 \times 7 \times 6 = 3,024
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-painting-arrangements-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.44.1"><a href="#ex-painting-arrangements-2" title="Copy heading and permalink for Solution 6.44.1" aria-label="Copy heading and permalink for Solution 6.44.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 6.44"><a href="#ex-painting-arrangements" title="Copy heading and permalink for Example 6.44" aria-label="Copy heading and permalink for Example 6.44">🔗</a></div>
+</article></details>
+<details id="ex-executive-committee" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.45</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="ex-executive-committee-1-1">How many ways can a four-person executive committee (president, vice-president, secretary, treasurer) be selected from a 16-member board of directors of a non-profit organization?<div class="autopermalink" data-description="Paragraph"><a href="#ex-executive-committee-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex-executive-committee-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex-executive-committee-2-1">
+<div class="para">In this example, we have a total of <span class="process-math">\(16\)</span> people to choose from and need to choose <span class="process-math">\(4\)</span> of them. The order of selection matters (e.g., being president is different than being secretary), and no one can serve in multiple roles. This is a permutation! Using a calculator to find <span class="process-math">\(_{16}P_4\text{,}\)</span> the number of ways to form such a committee is:</div>
+<div class="displaymath process-math" id="ex-executive-committee-2-1-4">
+\begin{equation*}
+_{16}P_4 = \frac{16!}{(16-4)!} = \frac{16!}{12!} = 16 \times 15 \times 14 \times 13 = 43,680
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-executive-committee-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.45.1"><a href="#ex-executive-committee-2" title="Copy heading and permalink for Solution 6.45.1" aria-label="Copy heading and permalink for Solution 6.45.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 6.45"><a href="#ex-executive-committee" title="Copy heading and permalink for Example 6.45" aria-label="Copy heading and permalink for Example 6.45">🔗</a></div>
+</article></details></section><section class="onepage" id="handout-Permutations-6">
+<article class="exercise exercise-like" id="handout-Permutations-6-1"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div id="momhandout-Permutations-6-1-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momhandout-Permutations-6-1-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1483055&amp;frame_id=momhandout-Permutations-6-1-1"></iframe></div>
+<div class="autopermalink" data-description="Worksheet Exercise 2"><a href="#handout-Permutations-6-1" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="handout-Permutations-6-2"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div id="momhandout-Permutations-6-2-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momhandout-Permutations-6-2-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=1483057&amp;frame_id=momhandout-Permutations-6-2-1"></iframe></div>
+<div class="autopermalink" data-description="Worksheet Exercise 3"><a href="#handout-Permutations-6-2" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
+</article></section><div class="autopermalink" data-description="Worksheet: 11. Activity Permutations"><a href="#handout-Permutations" title="Copy heading and permalink for Worksheet: 11. Activity Permutations" aria-label="Copy heading and permalink for Worksheet: 11. Activity Permutations">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="handout-FCP.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="handouts.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

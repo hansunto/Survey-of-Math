@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1478374">
+<statement>
+<p>
+You draw a random card from a deck of playing cards.</p>
+<p>
+What is the probability it is not a queen?</p>
+<p>
+<fillin characters="20"/>    </p>
+<p>
+What is the probability that it is not a face card?</p>
+<p>
+<fillin characters="20"/>   
+</p>
+</statement>
+<answer>
+<p><ul><li><m>\displaystyle\frac{{12}}{{13}}</m></li><li><m>\displaystyle\frac{{10}}{{13}}</m></li></ul></p>
+</answer>
+
+</myopenmath>

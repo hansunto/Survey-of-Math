@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="handout-FCP" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>10. Activity The Fundamental Counting Principle</title>
+  <page>
+<p>
+  All of the probability problems we encountered in the previous unit had a relatively small sample space.
+  Many situations involve very large sample spaces which cannot be written down, e.g., the number of <m>8</m>-character passwords for a computer.
+  For these types of situations, we need an efficient way to count certain types of items.
+  We will ultimately use three primary counting tools: the Fundamental Counting Principle, Permutations, and Combinations.
+  We discuss the first two of these in this activity.
+</p>
+
+<p>
+  Let's begin with a real-life situation.
+  Suppose you are at a restaurant, and the menu has three choices for an appetizer (soup, salad, or breadsticks) and five choices for a main course (hamburger, sandwich, quiche, fajita, or pizza).
+  You are allowed to choose exactly one appetizer and one main course for your meal.
+  How many different options do you have?
+</p>
+
+<p>
+  There are different approaches to solving this problem.
+  One possible approach is to list all possible meals.
+  Here is an attempt to do so:
+  <ul>
+    <li><p>Soup + hamburger</p></li>
+    <li><p>Soup + fajita</p></li>
+    <li><p>Salad + pizza</p></li>
+    <li><p>Salad + hamburger</p></li>
+    <li><p>Breadsticks + sandwich</p></li>
+    <li><p>Breadsticks + quiche</p></li>
+    <li><p>Salad + fajita</p></li>
+    <li><p>Salad + quiche</p></li>
+    <li><p>Salad + sandwich</p></li>
+    <li><p>Soup + sandwich</p></li>
+    <li><p>Soup + pizza</p></li>
+    <li><p>Soup + quiche</p></li>
+    <li><p>Breadsticks + pizza</p></li>
+    <li><p>Breadsticks + hamburger</p></li>
+  </ul>
+  This list suggests there are <m>14</m> different options, but does this list include all of them?
+  This is an issue with this particular approach; in order to know the number of meals possible, we must ensure that all options have been accounted for in our list.
+  In this case, I intentionally left one out; the astute reader will notice Breadsticks + fajita does not appear in the above list.
+</p>
+<p>
+  Another approach is to make a table with rows for each appetizer and columns for each main course.
+</p>
+</page>
+
+<page>
+<table xml:id="table-menu-options">
+  <caption>Menu pairing options for appetizers and main courses.</caption>
+  <tabular bottom="minor" top="minor" left="minor" right="minor">
+    <row header="yes">
+      <cell></cell>
+      <cell>Hamburger</cell>
+      <cell>Sandwich</cell>
+      <cell>Quiche</cell>
+      <cell>Fajita</cell>
+      <cell>Pizza</cell>
+    </row>
+    <row>
+      <cell>Soup</cell>
+      <cell>1</cell>
+      <cell>2</cell>
+      <cell>3</cell>
+      <cell>4</cell>
+      <cell>5</cell>
+    </row>
+    <row>
+      <cell>Salad</cell>
+      <cell>6</cell>
+      <cell>7</cell>
+      <cell>8</cell>
+      <cell>9</cell>
+      <cell>10</cell>
+    </row>
+    <row>
+      <cell>Breadsticks</cell>
+      <cell>11</cell>
+      <cell>12</cell>
+      <cell>13</cell>
+      <cell>14</cell>
+      <cell>15</cell>
+    </row>
+  </tabular>
+</table>
+
+<p>
+  This tabular approach ensures we have all the options included!
+  Counting the number of cells in the table shows there are <m>15</m> options at the restaurant.
+  Moreover, from this approach we can see exactly how to calculate the total number of options based on the number of appetizers and the number of main courses: since there are <m>3</m> rows (corresponding to the appetizers) and <m>5</m> columns (corresponding to the main courses), we can see the number of options is <m>3 \times 5 = 15</m>.
+  This demonstrates what we will refer to as the Fundamental Counting Principle.
+</p>
+
+<definition xml:id="def-fundamental-counting-principle">
+  <statement>
+    <p>
+      <idx><h>Fundamental Counting Principle</h></idx>
+      If we are asked to choose one item from each of two separate categories where there are <m>m</m> items in the first category and <m>n</m> items in the second category, then the total number of available choices is:
+      <me>m \times n</me>
+    </p>
+  </statement>
+</definition>
+
+<example xml:id="ex-reading-list-combinations">
+  <statement>
+    <p>
+      There are <m>8</m> novels and <m>5</m> volumes of poetry on a reading list for a college English course.
+      How many different ways can a student select one novel and one volume of poetry to read for the course?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      There are two categories here: novels and volumes of poetry.
+      By the Fundamental Counting Principle, the number of ways to choose one item from each of the two categories is:
+      <me>8 \times 5 = 40</me>
+    </p>
+  </solution>
+</example>
+
+    <exercise>
+        <myopenmath problem="1483044"/>
+    </exercise>
+</page>
+  
+<page>
+
+    <exercise>
+        <myopenmath problem="1483045"/>
+    </exercise>
+</page>
+
+<page>
+    <p>
+  The Fundamental Counting Principle can be extended when there are more than two categories by applying it repeatedly.
+  Here are some examples of this.
+</p>
+
+<example xml:id="ex-pizza-combinations">
+  <statement>
+    <p>
+      A pizza shop has a special promotion which allows you to buy a one-topping pizza at half price!
+      They offer three different sizes, four different crusts, and twelve different topping options.
+      How many different pizzas can be purchased under this promotion?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      There are three different categories here (size, crust, topping) from which we need to choose one option each.
+      By the Fundamental Counting Principle, the total number of pizzas which can be purchased is:
+      <me>3 \times 4 \times 12 = 144</me>
+    </p>
+  </solution>
+</example>
+
+<example xml:id="ex-true-false-quiz">
+  <statement>
+    <p>
+      A quiz consists of five true-or-false questions.
+      In how many ways can a student answer the quiz?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      In this scenario the categories are the questions on the quiz; we need to choose an answer for each of the five questions.
+      Each question has <m>2</m> possible answers, either <q>True</q> or <q>False</q>.
+      This means we have <m>2</m> possible choices in each of the five categories, so the total number of ways to answer the quiz is:
+      <me>2 \times 2 \times 2 \times 2 \times 2 = 32</me>
+      Note this can be written as <m>2^5 = 32</m>.
+      This can be a useful way to write this answer!
+    </p>
+  </solution>
+</example>
+
+<example xml:id="ex-telephone-counting">
+  <statement>
+    <p>
+      A telephone number consists of a <m>3</m>-digit area code followed by a <m>7</m>-digit local phone number.
+      Area codes and local phone numbers cannot begin with a <m>0</m> or <m>1</m>.
+      How many different phone numbers are possible?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      One way to think about a problem like this is to use what can be called a <q>blank diagram</q>.
+      A blank diagram will show a blank space for each item that needs to be chosen, and then we can fill in each blank with the number of choices we have for that item.
+      For this particular scenario, a blank diagram might look like this, modeled after how we traditionally write phone numbers:
+      <me>(\underline{\quad} \ \underline{\quad} \ \underline{\quad}) \ \underline{\quad} \ \underline{\quad} \ \underline{\quad} - \underline{\quad} \ \underline{\quad} \ \underline{\quad} \ \underline{\quad}</me>
+    </p>
+    <p>
+      We start on the left side and fill in one blank at a time with the number of options we have for that position.
+      The left-most number is the first digit in the area code.
+      We are told this cannot be <m>0</m> or <m>1</m>, which means it can be any of the digits <m>2, 3, 4, 5, 6, 7, 8,</m> or <m>9</m>.
+      There are <m>8</m> possible options here, so we fill in the first blank with an <m>8</m>:
+      <me>(\underline{8} \ \underline{\quad} \ \underline{\quad}) \ \underline{\quad} \ \underline{\quad} \ \underline{\quad} - \underline{\quad} \ \underline{\quad} \ \underline{\quad} \ \underline{\quad}</me>
+    </p>
+    <p>
+      The next number can be any digit; we have no restriction on the second digit of the area code.
+      So we can fill in the second blank with the total number of options for that digit (the digits <m>0</m> through <m>9</m>, which gives <m>10</m> choices):
+      <me>(\underline{8} \ \underline{10} \ \underline{\quad}) \ \underline{\quad} \ \underline{\quad} \ \underline{\quad} - \underline{\quad} \ \underline{\quad} \ \underline{\quad} \ \underline{\quad}</me>
+    </p>
+    <p>
+      Similarly, there are <m>10</m> options for the third digit of the area code:
+      <me>(\underline{8} \ \underline{10} \ \underline{10}) \ \underline{\quad} \ \underline{\quad} \ \underline{\quad} - \underline{\quad} \ \underline{\quad} \ \underline{\quad} \ \underline{\quad}</me>
+    </p>
+    <p>
+      Like with the area code, the first digit of the local phone number cannot be <m>0</m> or <m>1</m>, so we have <m>8</m> possible choices.
+      The remaining digits have no restriction, so they can be any of the <m>10</m> possible digits:
+      <me>(\underline{8} \ \underline{10} \ \underline{10}) \ \underline{8} \ \underline{10} \ \underline{10} - \underline{10} \ \underline{10} \ \underline{10} \ \underline{10}</me>
+    </p>
+    <p>
+      Once we have filled in all the blanks, we can multiply the number of options together to form the total number of possible phone numbers:
+      <me>8 \times 10 \times 10 \times 8 \times 10 \times 10 \times 10 \times 10 \times 10 \times 10 = 6,400,000,000</me>
+    </p>
+  </solution>
+</example>
+
+</page>
+
+<page>
+    <exercise>
+        <myopenmath problem="1483049"/>
+    </exercise>
+
+    <exercise>
+        <myopenmath problem="1483050"/>
+    </exercise>
+</page>
+
+
+</worksheet>

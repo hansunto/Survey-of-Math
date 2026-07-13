@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1478183">
+<statement>
+<p>
+A single die is rolled twice. Find the probability of rolling the following.</p>
+<p>
+(a)  One even and one odd number.</p>
+<p>
+<fillin characters="20"/>   </p>
+<p>
+(b)  Two numbers whose sum is exactly <m>\displaystyle{9}</m>.</p>
+<p>
+<fillin characters="20"/>   </p>
+<p>
+(c)  Two numbers whose sum exceeds <m>\displaystyle{11}</m>.</p>
+<p>
+<fillin characters="20"/>   </p>
+<p>
+(d)  Two numbers which are the same.</p>
+<p>
+<fillin characters="20"/>   
+
+</p>
+</statement>
+<answer>
+<p><ul><li><m>\displaystyle\frac{{1}}{{2}}</m></li><li><m>\displaystyle\frac{{1}}{{9}}</m></li><li><m>\displaystyle\frac{{1}}{{36}}</m></li><li><m>\displaystyle\frac{{1}}{{6}}</m></li></ul></p>
+</answer>
+
+</myopenmath>

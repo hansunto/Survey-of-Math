@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1478372">
+<statement>
+<p>
+Suppose <m>\displaystyle{E}</m> is an event and <m>\displaystyle{P}{\left({E}\right)}=\frac{{3}}{{10}}</m>. What is <m>\displaystyle{P}{\left(\text{not }\ {E}\right)}</m>?</p>
+<p>
+<fillin characters="20"/>   
+</p>
+</statement>
+<answer>
+<p><ul><li><m>\displaystyle\frac{{7}}{{10}}</m></li></ul></p>
+</answer>
+
+</myopenmath>

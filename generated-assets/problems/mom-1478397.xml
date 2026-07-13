@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1478397">
+<statement>
+<p>
+Using the table above, find the probability that a randomly choosen person:</p>
+<p>
+(a)  does not have a red car and did not get a speeding ticket.</p>
+<p>
+<fillin characters="20"/>   </p>
+<p>
+(b) does not have a red can or did not get a speeding ticket.</p>
+<p>
+<fillin characters="20"/>   
+</p>
+</statement>
+<answer>
+<p><ul><li><m>\displaystyle\frac{{470}}{{665}}</m></li><li><m>\displaystyle\frac{{650}}{{665}}</m></li></ul></p>
+</answer>
+
+</myopenmath>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="handout-intro-probability" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>08. Activity Introduction to Probability</title>
+  <page>
+    <introduction>
+
+        The probability of a specified event is the chance or likelihood that it will occur. 
+        There are several ways of viewing probability. 
+        One would be experimental in nature, where we repeatedly conduct an experiment. 
+        Suppose we flipped a coin over and over and over again and it came up heads about half of the time; 
+       <p>
+  The probability of a specified event is the chance or likelihood that it will occur.
+  There are several ways of viewing probability.
+  One would be experimental in nature, where we repeatedly conduct an experiment.
+  Suppose we flipped a coin over and over and over again and it came up heads about half of the time; 
+  we would expect that in the future whenever we flipped the coin it would turn up heads about half of 
+  the time. When a weather reporter says <q>there is a 10% chance of rain tomorrow,</q> they are basing 
+  that on prior evidence; that out of all days with similar weather patterns, it has rained on 1 out of 
+  10 of those days.
+</p>
+<p>
+  In this course we will mostly be concerned with theoretical probability, which is defined as follows:
+  Suppose there is a situation with equally likely possible outcomes and that <m>m</m> of those outcomes 
+  correspond to a particular event; then the probability of that event is defined as the fraction 
+  <me>\frac{m}{n}</me> where <m>n</m> is the total number of outcomes.
+  We discuss the terminology a bit more below.
+</p>
+    </introduction>
+
+    <exercise>
+        <myopenmath problem="1478115" />
+    </exercise>
+    </page>
+    
+<page>
+    <exercise>
+        <myopenmath problem="1478123" />
+    </exercise>
+
+    <exercise>
+        <myopenmath problem="1478136" />
+    </exercise>
+
+</page>
+
+<page>
+    <p>
+  If you roll a die, pick a card from a deck of playing cards, or randomly select a person and observe their hair color, we are executing an experiment or procedure in which the outcome is uncertain.
+  In probability, we look at the likelihood of different outcomes.
+  We begin with some terminology.
+</p>
+
+<definition xml:id="def-probability-terms">
+  <statement>
+    <p>
+      <idx><h>experiment</h></idx>
+      An <term>experiment</term> is an occurrence in which the outcome is uncertain.
+    </p>
+    <p>
+      <idx><h>outcome</h></idx>
+      The result of an experiment is called an <term>outcome</term>.
+    </p>
+    <p>
+      <idx><h>event</h></idx>
+      An <term>event</term> is any particular outcome or group of outcomes.
+    </p>
+    <p>
+      <idx><h>sample space</h></idx>
+      The <term>sample space</term> is the set of all possible outcomes from an experiment.
+    </p>
+  </statement>
+</definition>
+
+<p>
+  Here is a simple example of an experiment.
+</p>
+
+<example xml:id="ex-rolling-die">
+  <statement>
+    <p>
+      Suppose we roll a standard 6-sided die.
+      The sample space is the set of all possible outcomes:
+      <me>S = \{1, 2, 3, 4, 5, 6\}</me>
+    </p>
+    <p>
+      Some events for this experiment include:
+      <ul>
+        <li>
+          <p>Rolling a 3: <m>E = \{3\}</m></p>
+        </li>
+        <li>
+          <p>Rolling an even number: <m>E = \{2, 4, 6\}</m></p>
+        </li>
+        <li>
+          <p>Rolling a number greater than 4: <m>E = \{5, 6\}</m></p>
+        </li>
+        <li>
+          <p>Rolling a number greater than 6: <m>E = \emptyset</m> (the empty set!)</p>
+        </li>
+      </ul>
+    </p>
+  </statement>
+</example>
+
+<p>
+  Given that all outcomes of an experiment are equally likely, we can compute the probability of an event using this formula:
+  <me>P(E) = \frac{\text{number of outcomes in } E}{\text{total number of outcomes in } S}</me>
+  Important note: this fraction for <m>P(E)</m> will sometimes be a reduced fraction, but not always; if it is not reduced, then we always want to reduce it!
+</p>
+
+<p>
+  We return to our die-rolling example.
+</p>
+</page>
+
+<page>
+<example xml:id="ex-die-rolling-probabilities">
+  <statement>
+    <p>
+      If we roll a 6-sided die, find the probabilities of the following events:
+      <ol marker="a">
+        <li> <p> Rolling a 3</p>  </li>
+        <li> <p> Rolling an even number</p> </li>
+        <li> <p> Rolling a number greater than 3</p> </li>
+        <li> <p> Rolling a number greater than 6</p> </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Since the sample space is <m>S = \{1, 2, 3, 4, 5, 6\}</m>, we have <m>n = 6</m> total possible outcomes.
+      To find the probability of each event, we need to determine the number of outcomes in each event and form the fraction with this number over <m>6</m>.
+    </p>
+    <p>
+      <ol marker="a">
+        <li>
+          <p>
+            The event <m>E = \{3\}</m> has only one outcome, so <m>m = 1</m>.
+            Thus, <me>P(\text{rolling a 3}) = \frac{1}{6}</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            The event <m>E = \{2, 4, 6\}</m> has <m>3</m> outcomes, so <m>m = 3</m>.
+            Thus, <me>P(\text{rolling an even number}) = \frac{3}{6} = \frac{1}{2}</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            The event <m>E = \{4, 5, 6\}</m> has three outcomes, so <m>m = 3</m>.
+            Thus, <me>P(\text{rolling a number } \gt 3) = \frac{3}{6} = \frac{1}{2}</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            The event here has no elements since it is impossible to roll a number greater than <m>6</m>.
+            So <m>m = 0</m> and <me>P(\text{rolling a number } \gt 6) = \frac{0}{6} = 0</me>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</example>
+
+    <exercise>
+        <myopenmath problem="1478156" />
+    </exercise>
+</page>
+
+<page>
+    <p>
+  We now consider a few additional examples of experiments and probabilities of events.
+  Many probability problems are concerned with playing cards.
+  In case you are not familiar, here is everything you need to know about this!
+  A standard deck of playing cards consists of:
+  <ul>
+    <li>
+      <p><m>52</m> total cards</p>
+    </li>
+    <li>
+      <p>
+        <m>4</m> suits: hearts, diamonds, spades, and clubs.
+        As the names suggest, hearts and diamonds are red, while spades and clubs are black.
+      </p>
+    </li>
+    <li>
+      <p>
+        <m>13</m> cards of each suit: Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King.
+      </p>
+    </li>
+  </ul>
+  The Jack, Queen, and King are collectively called <term>face cards</term> since they each have a face on them.
+</p>
+
+<figure xml:id="fig-playing-cards">
+  <caption>A standard deck of 52 playing cards.</caption>
+  <image source="cards.png" width="90%"/>
+</figure>
+
+<exercise xml:id="exercise-playing-card-probabilities">
+  <statement>
+    <p>
+      You are dealt one card from a standard deck of playing cards.
+      Find the probability of being dealt each of the following:
+      <ol marker="a">
+        <li>
+          <p>An ace</p>
+        </li>
+        <li>
+          <p>A spade</p>
+        </li>
+        <li>
+          <p>An even heart</p>
+        </li>
+        <li>
+          <p>A face card</p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Since there are <m>52</m> possible cards to be dealt, the total number of outcomes in the sample space is <m>n = 52</m>.
+    </p>
+    <p>
+      <ol marker="a">
+        <li>
+          <p>
+            There are four possible aces in the deck (one of each suit), so <m>m = 4</m>.
+            Thus, <me>P(\text{Ace}) = \frac{4}{52} = \frac{1}{13}</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            There are <m>13</m> spades in the deck, so <m>m = 13</m>.
+            Thus, <me>P(\text{Spade}) = \frac{13}{52} = \frac{1}{4}</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            There are <m>5</m> even hearts; namely, the 2, 4, 6, 8, and 10 of hearts.
+            So <m>m = 5</m> and <me>P(\text{Even Heart}) = \frac{5}{52}</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            There are <m>12</m> face cards—the Jack, Queen, and King in each of the four suits—so <m>m = 12</m>.
+            Thus, <me>P(\text{Face Card}) = \frac{12}{52} = \frac{3}{13}</me>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</exercise>
+
+</page>
+
+<page>
+    <exercise>
+        <myopenmath problem="1478168"/>
+    </exercise>
+</page>
+
+<page>
+  <p>
+    Tree diagram for three coin tosses as referred to in <xref ref="fig-coin-toss-tree-clean" />.
+  </p>
+
+  <exercise>
+    <statement>
+      <myopenmath problem="1478177"/>
+    </statement>
+  </exercise>
+</page>
+
+<page>
+
+    <exercise>
+  <statement>
+    <p>
+      The sample space is shown in <xref ref="table-dice-sample-space"/>.
+    </p>
+    <myopenmath problem="1478183"/>
+  </statement>
+</exercise>
+
+    
+</page>
+  </worksheet>

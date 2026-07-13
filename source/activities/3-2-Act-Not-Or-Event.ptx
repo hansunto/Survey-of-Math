@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="handout-not-or-probability" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>09. Activity Probability Events: Not, Or</title>
+  <page>
+   <p>
+  Given an experiment with a sample space <m>S</m>, we know how to calculate the probability that an event <m>E</m> will happen:
+  <me>P(E) = \frac{\text{number of outcomes in } E}{\text{total number of outcomes in } S}</me>
+  For example, if we roll a standard 6-sided die, the probability of rolling a 3 is <m>\frac{1}{6}</m> since there is only one way to roll a 3 and six total outcomes from the roll.
+</p>
+
+<p>
+  Now let us examine the probability that an event does <term>NOT</term> happen.
+  Suppose we want to find the probability that we do <term>NOT</term> roll a 3.
+  There are five outcomes in which we do not roll a 3 (namely, 1, 2, 4, 5, and 6), so the probability is <m>\frac{5}{6}</m>.
+  Notice that:
+  <me>\frac{1}{6} + \frac{5}{6} = 1</me>
+  This is not a coincidence.
+  Consider a generic situation with <m>n</m> possible outcomes and an event <m>E</m> that corresponds to <m>m</m> of these outcomes.
+  Then the remaining <m>n - m</m> outcomes correspond to <m>E</m> not happening, thus:
+  <me>P(\text{not } E) = \frac{n - m}{n} = \frac{n}{n} - \frac{m}{n} = 1 - P(E)</me>
+</p>
+
+<definition xml:id="def-complement-event">
+  <statement>
+    <p>
+      The <term>complement</term> of an event <m>E</m> is the event <q><m>E</m> does not happen.</q>
+      This is sometimes denoted by <m>E^c</m> (or <m>E'</m>, <m>\overline{E}</m>).
+    </p>
+    <p>
+      The probability of the complement of <m>E</m> is calculated using the formula:
+      <me>P(E^c) = 1 - P(E)</me>
+    </p>
+  </statement>
+</definition>
+
+<example xml:id="ex-complement-heart-card">
+  <statement>
+    <p>
+      You draw a random card from a deck of playing cards.
+      What is the probability that it is not a heart?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      There are 13 hearts in a deck of 52 cards, so the probability of drawing a heart is:
+      <me>P(\text{Heart}) = \frac{13}{52} = \frac{1}{4}</me>
+      Using the complement formula above, the probability that the card is not a heart is:
+      <me>P(\text{not Heart}) = 1 - P(\text{Heart}) = 1 - \frac{1}{4} = \frac{3}{4}</me>
+    </p>
+  </solution>
+</example>
+  </page>
+
+  <page>
+    <exercise>
+        <myopenmath problem="1478372" />
+    </exercise> 
+    
+    <exercise>
+        <myopenmath problem="1478374" />
+    </exercise>
+    </page>
+
+    <page> 
+      <p>
+  Our previous examples have looked at a single event occurring.
+  Now we will look at the probability of one of two events occurring; that is, we will consider the probability of <m>A</m> or <m>B</m> occurring, where <m>A</m> and <m>B</m> are two different events associated with the experiment being performed.
+  Let us consider an example to demonstrate how to deal with such events.
+</p>
+
+<example xml:id="ex-coin-and-die-or">
+  <statement>
+    <p>
+      Suppose we flipped a coin and rolled a die, and wanted to know the probability of getting a head on the coin <term>or</term> a 6 on the die.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      There are <m>12</m> possible outcomes for this experiment:
+      <me>S = \{(H,1), (H,2), (H,3), (H,4), (H,5), (H,6), (T,1), (T,2), (T,3), (T,4), (T,5), (T,6)\}</me>
+      By simply counting, we can see that <m>7</m> of the outcomes have a head on the coin or a 6 on the die or both; we use <q>or</q> inclusively here.
+      These outcomes are <m>(H,1), (H,2), (H,3), (H,4), (H,5), (H,6),</m> and <m>(T,6)</m>, so the probability is <m>\frac{7}{12}</m>.
+    </p>
+    <p>
+      How could we have found this from the individual probabilities?
+      As we would expect, <m>6</m> of these outcomes have a head, and <m>2</m> of these outcomes have a 6 on the die.
+      If we add these individual counts, we get <m>\frac{6}{12} + \frac{2}{12} = \frac{8}{12}</m>, which is not the correct probability.
+    </p>
+    <p>
+      Looking at the outcomes we can see why: the outcome <m>(H,6)</m> would have been counted twice, since it contains both a head and a 6.
+      The probability of getting both a head and rolling a 6 is <m>\frac{1}{12}</m>.
+      If we subtract out this double count, we have the correct probability:
+      <me>\frac{6}{12} + \frac{2}{12} - \frac{1}{12} = \frac{7}{12}</me>
+    </p>
+  </solution>
+</example>
+
+<p>
+  The above example demonstrates how to compute the probability of an <q>or</q> event.
+  We state the formula formally now.
+</p>
+
+<definition xml:id="def-probability-or-rule">
+  <statement>
+    <p>
+      If <m>A</m> and <m>B</m> are two events, then the probability of <term><m>A</m> or <m>B</m></term> (also written as <m>A \cup B</m>) is given by:
+      <me>P(A \text{ or } B) = P(A) + P(B) - P(A \text{ and } B)</me>
+    </p>
+  </statement>
+</definition>
+
+<p>
+  We consider another example involving cards.
+</p>
+
+<example xml:id="ex-card-probabilities-or">
+  <statement>
+    <p>
+      Suppose we draw one card from a standard deck.
+      <ol marker="a">
+        <li>
+          <p>What is the probability that we get a Queen or a King?</p>
+        </li>
+        <li>
+          <p>What is the probability that we get a red card or a King?</p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We know there are <m>52</m> possible cards, so <m>n = 52</m>.
+    </p>
+    <p>
+      <ol marker="a">
+        <li>
+          <p>
+            There are <m>4</m> Queens and <m>4</m> Kings in the deck, so <m>P(\text{Queen}) = \frac{4}{52}</m> and <m>P(\text{King}) = \frac{4}{52}</m>.
+            There are no cards which are both a Queen and a King, so <m>P(\text{Queen and King}) = \frac{0}{52} = 0</m>.
+            Thus,
+            <me>P(\text{Queen or King}) = \frac{4}{52} + \frac{4}{52} - 0 = \frac{8}{52} = \frac{2}{13}</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            There are <m>26</m> red cards and <m>4</m> Kings in the deck, so <m>P(\text{Red}) = \frac{26}{52}</m> and <m>P(\text{King}) = \frac{4}{52}</m>.
+            There are <m>2</m> cards which are both red and a King (the King of Hearts and King of Diamonds), so <m>P(\text{Red and King}) = \frac{2}{52}</m>.
+            Thus,
+            <me>P(\text{Red or King}) = \frac{26}{52} + \frac{4}{52} - \frac{2}{52} = \frac{28}{52} = \frac{7}{13}</me>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</example>
+
+<note xml:id="note-reducing-fractions">
+  <p>
+    Note that it was advantageous in the previous example to wait until the final calculation to reduce the fractions.
+    This allows us to easily add fractions with a common denominator—in this case, <m>52</m>—and reduce the answer once.
+  </p>
+</note>
+
+  <exercise>
+        <myopenmath problem="1478376" />
+    </exercise> 
+    
+    <exercise>
+        <myopenmath problem="1478377" />
+    </exercise>
+</page>
+
+<page>
+  <p>
+  We consider one additional example with information presented using a table.
+  The table below shows the number of survey subjects who have received and not received a speeding ticket in the last year, and the color of their car.
+</p>
+
+<table xml:id="table-speeding-tickets">
+  <caption>Survey results by car color and speeding tickets.</caption>
+  <tabular bottom="minor" top="minor" left="minor" right="minor">
+    <row header="yes">
+      <cell></cell>
+      <cell>Speeding ticket</cell>
+      <cell>No speeding ticket</cell>
+      <cell>Total</cell>
+    </row>
+    <row>
+      <cell>Red car</cell>
+      <cell>15</cell>
+      <cell>135</cell>
+      <cell>150</cell>
+    </row>
+    <row>
+      <cell>Not red car</cell>
+      <cell>45</cell>
+      <cell>470</cell>
+      <cell>515</cell>
+    </row>
+    <row>
+      <cell>Total</cell>
+      <cell>60</cell>
+      <cell>605</cell>
+      <cell>665</cell>
+    </row>
+  </tabular>
+</table>
+
+<example xml:id="ex-speeding-ticket-probabilities">
+  <statement>
+    <p>
+      Find the probability that a randomly chosen person:
+      <ol marker="a)">
+        <li>
+          <p>has a red car <term>and</term> got a speeding ticket</p>
+        </li>
+        <li>
+          <p>has a red car <term>or</term> got a speeding ticket</p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      The total number of people surveyed is <m>n = 665</m>.
+    </p>
+    <p>
+      <ol marker="a)">
+        <li>
+          <p>
+            From the table, we can see that <m>15</m> of the people surveyed had a red car and got a speeding ticket, so <m>m = 15</m>.
+            Thus,
+            <me>P(\text{Red Car and Ticket}) = \frac{15}{665} = \frac{3}{133}</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            From the table, we can see that <m>150</m> people have a red car, <m>60</m> people got a speeding ticket, and <m>15</m> people have a red car and got a speeding ticket.
+            Using the addition rule to account for the double count, we find the number of favorable outcomes is <m>150 + 60 - 15 = 195</m>.
+            Thus,
+            <me>P(\text{Red Car or Ticket}) = \frac{150}{665} + \frac{60}{665} - \frac{15}{665} = \frac{195}{665} = \frac{39}{133}</me>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</example>
+
+  <exercise>
+      <myopenmath problem="1478397" />
+    </exercise>
+</page>
+
+</worksheet> 
+
+
+

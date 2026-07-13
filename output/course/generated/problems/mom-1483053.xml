@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1483053">
+<statement>
+<p>
+Answer the following questions. Feel free to use the factorial key on your calculator to find the answers.</p>
+<p>
+In how many different ways can a police department arrange <m>\displaystyle{8}</m> suspects in a police lineup if each lineup contains all eight people?</p>
+<p>
+<fillin characters="20"/></p>
+<p>
+Twelve friends want to sit together at a movie theater. Conveniently, one of the rows has exactly <m>\displaystyle{12}</m> seats. How many different seating arrangements are possible?</p>
+<p>
+<fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>40320</li><li>479001600</li></ul></p>
+</answer>
+
+</myopenmath>

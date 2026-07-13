@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1478377">
+<statement>
+<p>
+Suppose we draw one card from a standard deck.</p>
+<p>
+(a) What is the probability that we get a spade or a heart?</p>
+<p>
+<fillin characters="20"/>   </p>
+<p>
+(b) What is the probability that we get a spade or a face card?</p>
+<p>
+<fillin characters="20"/>   
+</p>
+</statement>
+<answer>
+<p><ul><li><m>\displaystyle\frac{{1}}{{2}}</m></li><li><m>\displaystyle\frac{{11}}{{26}}</m></li></ul></p>
+</answer>
+
+</myopenmath>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1478168">
+<statement>
+<p>
+You are dealt one card from a standard deck of <m>\displaystyle{52}</m> playing cards. Find the probability of being dealt the following.</p>
+<p>
+(a)  A black card</p>
+<p>
+<fillin characters="20"/>   </p>
+<p>
+(b)  An odd diamond  (Note: We are only considering the number cards 2 through 10 as being odd; do NOT count the Ace.)</p>
+<p>
+<fillin characters="20"/>   </p>
+<p>
+(c)  The <m>\displaystyle{5}</m> of spades</p>
+<p>
+<fillin characters="20"/>   </p>
+<p>
+(d)  A red face card</p>
+<p>
+<fillin characters="20"/>   
+
+</p>
+</statement>
+<answer>
+<p><ul><li><m>\displaystyle\frac{{1}}{{2}}</m></li><li><m>\displaystyle\frac{{1}}{{13}}</m></li><li><m>\displaystyle\frac{{1}}{{52}}</m></li><li><m>\displaystyle\frac{{3}}{{26}}</m></li></ul></p>
+</answer>
+
+</myopenmath>

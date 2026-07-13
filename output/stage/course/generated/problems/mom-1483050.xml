@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1483050">
+<statement>
+<p>
+A company puts a code on each product they sell. The code is made up of three digits followed by two letters (<m>\displaystyle{a}</m> through <m>\displaystyle{z}</m>, not case specific). For example, <m>\displaystyle{123}{a}{z}</m>, <m>\displaystyle{788}{c}{d}</m>, and <m>\displaystyle{010}{j}{k}</m> are all possible product codes. How many different codes are possible?</p>
+<p>
+<fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>676000</li></ul></p>
+</answer>
+
+</myopenmath>

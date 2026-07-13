@@ -3862,6 +3862,501 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
+  "id": "handout-intro-probability",
+  "level": "1",
+  "url": "handout-intro-probability.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "08. Activity Introduction to Probability",
+  "body": " 08. Activity Introduction to Probability   The probability of a specified event is the chance or likelihood that it will occur. There are several ways of viewing probability. One would be experimental in nature, where we repeatedly conduct an experiment. Suppose we flipped a coin over and over and over again and it came up heads about half of the time; The probability of a specified event is the chance or likelihood that it will occur. There are several ways of viewing probability. One would be experimental in nature, where we repeatedly conduct an experiment. Suppose we flipped a coin over and over and over again and it came up heads about half of the time; we would expect that in the future whenever we flipped the coin it would turn up heads about half of the time. When a weather reporter says there is a 10% chance of rain tomorrow, they are basing that on prior evidence; that out of all days with similar weather patterns, it has rained on 1 out of 10 of those days.  In this course we will mostly be concerned with theoretical probability, which is defined as follows: Suppose there is a situation with equally likely possible outcomes and that of those outcomes correspond to a particular event; then the probability of that event is defined as the fraction where is the total number of outcomes. We discuss the terminology a bit more below.                If you roll a die, pick a card from a deck of playing cards, or randomly select a person and observe their hair color, we are executing an experiment or procedure in which the outcome is uncertain. In probability, we look at the likelihood of different outcomes. We begin with some terminology.     experiment An experiment is an occurrence in which the outcome is uncertain.   outcome The result of an experiment is called an outcome .   event An event is any particular outcome or group of outcomes.   sample space The sample space is the set of all possible outcomes from an experiment.    Here is a simple example of an experiment.    Suppose we roll a standard 6-sided die. The sample space is the set of all possible outcomes:   Some events for this experiment include:   Rolling a 3:    Rolling an even number:    Rolling a number greater than 4:    Rolling a number greater than 6: (the empty set!)       Given that all outcomes of an experiment are equally likely, we can compute the probability of an event using this formula: Important note: this fraction for will sometimes be a reduced fraction, but not always; if it is not reduced, then we always want to reduce it!  We return to our die-rolling example.      If we roll a 6-sided die, find the probabilities of the following events:   Rolling a 3    Rolling an even number    Rolling a number greater than 3    Rolling a number greater than 6       Since the sample space is , we have total possible outcomes. To find the probability of each event, we need to determine the number of outcomes in each event and form the fraction with this number over .     The event has only one outcome, so . Thus,     The event has outcomes, so . Thus,     The event has three outcomes, so . Thus,     The event here has no elements since it is impossible to roll a number greater than . So and             We now consider a few additional examples of experiments and probabilities of events. Many probability problems are concerned with playing cards. In case you are not familiar, here is everything you need to know about this! A standard deck of playing cards consists of:   total cards     suits: hearts, diamonds, spades, and clubs. As the names suggest, hearts and diamonds are red, while spades and clubs are black.     cards of each suit: Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King.   The Jack, Queen, and King are collectively called face cards since they each have a face on them.   A standard deck of 52 playing cards.      You are dealt one card from a standard deck of playing cards. Find the probability of being dealt each of the following:   An ace    A spade    An even heart    A face card       Since there are possible cards to be dealt, the total number of outcomes in the sample space is .     There are four possible aces in the deck (one of each suit), so . Thus,     There are spades in the deck, so . Thus,     There are even hearts; namely, the 2, 4, 6, 8, and 10 of hearts. So and     There are face cards—the Jack, Queen, and King in each of the four suits—so . Thus,               Tree diagram for three coin tosses as referred to in .           The sample space is shown in .      "
+},
+{
+  "id": "handout-intro-probability-2-2",
+  "level": "2",
+  "url": "handout-intro-probability.html#handout-intro-probability-2-2",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-intro-probability-3-1",
+  "level": "2",
+  "url": "handout-intro-probability.html#handout-intro-probability-3-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-intro-probability-3-2",
+  "level": "2",
+  "url": "handout-intro-probability.html#handout-intro-probability-3-2",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "def-probability-terms",
+  "level": "2",
+  "url": "handout-intro-probability.html#def-probability-terms",
+  "type": "Definition",
+  "number": "6.19",
+  "title": "",
+  "body": "   experiment An experiment is an occurrence in which the outcome is uncertain.   outcome The result of an experiment is called an outcome .   event An event is any particular outcome or group of outcomes.   sample space The sample space is the set of all possible outcomes from an experiment.   "
+},
+{
+  "id": "ex-rolling-die",
+  "level": "2",
+  "url": "handout-intro-probability.html#ex-rolling-die",
+  "type": "Example",
+  "number": "6.20",
+  "title": "",
+  "body": "  Suppose we roll a standard 6-sided die. The sample space is the set of all possible outcomes:   Some events for this experiment include:   Rolling a 3:    Rolling an even number:    Rolling a number greater than 4:    Rolling a number greater than 6: (the empty set!)      "
+},
+{
+  "id": "ex-die-rolling-probabilities",
+  "level": "2",
+  "url": "handout-intro-probability.html#ex-die-rolling-probabilities",
+  "type": "Example",
+  "number": "6.21",
+  "title": "",
+  "body": "  If we roll a 6-sided die, find the probabilities of the following events:   Rolling a 3    Rolling an even number    Rolling a number greater than 3    Rolling a number greater than 6       Since the sample space is , we have total possible outcomes. To find the probability of each event, we need to determine the number of outcomes in each event and form the fraction with this number over .     The event has only one outcome, so . Thus,     The event has outcomes, so . Thus,     The event has three outcomes, so . Thus,     The event here has no elements since it is impossible to roll a number greater than . So and       "
+},
+{
+  "id": "handout-intro-probability-5-2",
+  "level": "2",
+  "url": "handout-intro-probability.html#handout-intro-probability-5-2",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-intro-probability-6-1",
+  "level": "2",
+  "url": "handout-intro-probability.html#handout-intro-probability-6-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "face cards "
+},
+{
+  "id": "fig-playing-cards",
+  "level": "2",
+  "url": "handout-intro-probability.html#fig-playing-cards",
+  "type": "Figure",
+  "number": "6.22",
+  "title": "",
+  "body": " A standard deck of 52 playing cards.   "
+},
+{
+  "id": "exercise-playing-card-probabilities",
+  "level": "2",
+  "url": "handout-intro-probability.html#exercise-playing-card-probabilities",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  You are dealt one card from a standard deck of playing cards. Find the probability of being dealt each of the following:   An ace    A spade    An even heart    A face card       Since there are possible cards to be dealt, the total number of outcomes in the sample space is .     There are four possible aces in the deck (one of each suit), so . Thus,     There are spades in the deck, so . Thus,     There are even hearts; namely, the 2, 4, 6, 8, and 10 of hearts. So and     There are face cards—the Jack, Queen, and King in each of the four suits—so . Thus,       "
+},
+{
+  "id": "handout-intro-probability-7-1",
+  "level": "2",
+  "url": "handout-intro-probability.html#handout-intro-probability-7-1",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-intro-probability-8-2",
+  "level": "2",
+  "url": "handout-intro-probability.html#handout-intro-probability-8-2",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "handout-intro-probability-9-1",
+  "level": "2",
+  "url": "handout-intro-probability.html#handout-intro-probability-9-1",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "",
+  "body": "  The sample space is shown in .    "
+},
+{
+  "id": "handout-not-or-probability",
+  "level": "1",
+  "url": "handout-not-or-probability.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "09. Activity Probability Events: Not, Or",
+  "body": " 09. Activity Probability Events: Not, Or   Given an experiment with a sample space , we know how to calculate the probability that an event will happen: For example, if we roll a standard 6-sided die, the probability of rolling a 3 is since there is only one way to roll a 3 and six total outcomes from the roll.  Now let us examine the probability that an event does NOT happen. Suppose we want to find the probability that we do NOT roll a 3. There are five outcomes in which we do not roll a 3 (namely, 1, 2, 4, 5, and 6), so the probability is . Notice that: This is not a coincidence. Consider a generic situation with possible outcomes and an event that corresponds to of these outcomes. Then the remaining outcomes correspond to not happening, thus:     The complement of an event is the event does not happen. This is sometimes denoted by (or , ).  The probability of the complement of is calculated using the formula:       You draw a random card from a deck of playing cards. What is the probability that it is not a heart?    There are 13 hearts in a deck of 52 cards, so the probability of drawing a heart is: Using the complement formula above, the probability that the card is not a heart is:               Our previous examples have looked at a single event occurring. Now we will look at the probability of one of two events occurring; that is, we will consider the probability of or occurring, where and are two different events associated with the experiment being performed. Let us consider an example to demonstrate how to deal with such events.    Suppose we flipped a coin and rolled a die, and wanted to know the probability of getting a head on the coin or a 6 on the die.    There are possible outcomes for this experiment: By simply counting, we can see that of the outcomes have a head on the coin or a 6 on the die or both; we use or inclusively here. These outcomes are and , so the probability is .  How could we have found this from the individual probabilities? As we would expect, of these outcomes have a head, and of these outcomes have a 6 on the die. If we add these individual counts, we get , which is not the correct probability.  Looking at the outcomes we can see why: the outcome would have been counted twice, since it contains both a head and a 6. The probability of getting both a head and rolling a 6 is . If we subtract out this double count, we have the correct probability:     The above example demonstrates how to compute the probability of an or event. We state the formula formally now.    If and are two events, then the probability of or (also written as ) is given by:     We consider another example involving cards.    Suppose we draw one card from a standard deck.   What is the probability that we get a Queen or a King?    What is the probability that we get a red card or a King?       We know there are possible cards, so .     There are Queens and Kings in the deck, so and . There are no cards which are both a Queen and a King, so . Thus,     There are red cards and Kings in the deck, so and . There are cards which are both red and a King (the King of Hearts and King of Diamonds), so . Thus,         Note that it was advantageous in the previous example to wait until the final calculation to reduce the fractions. This allows us to easily add fractions with a common denominator—in this case, —and reduce the answer once.           We consider one additional example with information presented using a table. The table below shows the number of survey subjects who have received and not received a speeding ticket in the last year, and the color of their car.   Survey results by car color and speeding tickets.     Speeding ticket  No speeding ticket  Total    Red car  15  135  150    Not red car  45  470  515    Total  60  605  665       Find the probability that a randomly chosen person:   has a red car and got a speeding ticket    has a red car or got a speeding ticket       The total number of people surveyed is .     From the table, we can see that of the people surveyed had a red car and got a speeding ticket, so . Thus,     From the table, we can see that people have a red car, people got a speeding ticket, and people have a red car and got a speeding ticket. Using the addition rule to account for the double count, we find the number of favorable outcomes is . Thus,            "
+},
+{
+  "id": "handout-not-or-probability-2-2",
+  "level": "2",
+  "url": "handout-not-or-probability.html#handout-not-or-probability-2-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "NOT NOT "
+},
+{
+  "id": "def-complement-event",
+  "level": "2",
+  "url": "handout-not-or-probability.html#def-complement-event",
+  "type": "Definition",
+  "number": "6.23",
+  "title": "",
+  "body": "  The complement of an event is the event does not happen. This is sometimes denoted by (or , ).  The probability of the complement of is calculated using the formula:    "
+},
+{
+  "id": "ex-complement-heart-card",
+  "level": "2",
+  "url": "handout-not-or-probability.html#ex-complement-heart-card",
+  "type": "Example",
+  "number": "6.24",
+  "title": "",
+  "body": "  You draw a random card from a deck of playing cards. What is the probability that it is not a heart?    There are 13 hearts in a deck of 52 cards, so the probability of drawing a heart is: Using the complement formula above, the probability that the card is not a heart is:    "
+},
+{
+  "id": "handout-not-or-probability-3-1",
+  "level": "2",
+  "url": "handout-not-or-probability.html#handout-not-or-probability-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-not-or-probability-3-2",
+  "level": "2",
+  "url": "handout-not-or-probability.html#handout-not-or-probability-3-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "ex-coin-and-die-or",
+  "level": "2",
+  "url": "handout-not-or-probability.html#ex-coin-and-die-or",
+  "type": "Example",
+  "number": "6.25",
+  "title": "",
+  "body": "  Suppose we flipped a coin and rolled a die, and wanted to know the probability of getting a head on the coin or a 6 on the die.    There are possible outcomes for this experiment: By simply counting, we can see that of the outcomes have a head on the coin or a 6 on the die or both; we use or inclusively here. These outcomes are and , so the probability is .  How could we have found this from the individual probabilities? As we would expect, of these outcomes have a head, and of these outcomes have a 6 on the die. If we add these individual counts, we get , which is not the correct probability.  Looking at the outcomes we can see why: the outcome would have been counted twice, since it contains both a head and a 6. The probability of getting both a head and rolling a 6 is . If we subtract out this double count, we have the correct probability:    "
+},
+{
+  "id": "def-probability-or-rule",
+  "level": "2",
+  "url": "handout-not-or-probability.html#def-probability-or-rule",
+  "type": "Definition",
+  "number": "6.26",
+  "title": "",
+  "body": "  If and are two events, then the probability of or (also written as ) is given by:    "
+},
+{
+  "id": "ex-card-probabilities-or",
+  "level": "2",
+  "url": "handout-not-or-probability.html#ex-card-probabilities-or",
+  "type": "Example",
+  "number": "6.27",
+  "title": "",
+  "body": "  Suppose we draw one card from a standard deck.   What is the probability that we get a Queen or a King?    What is the probability that we get a red card or a King?       We know there are possible cards, so .     There are Queens and Kings in the deck, so and . There are no cards which are both a Queen and a King, so . Thus,     There are red cards and Kings in the deck, so and . There are cards which are both red and a King (the King of Hearts and King of Diamonds), so . Thus,       "
+},
+{
+  "id": "note-reducing-fractions",
+  "level": "2",
+  "url": "handout-not-or-probability.html#note-reducing-fractions",
+  "type": "Note",
+  "number": "6.28",
+  "title": "",
+  "body": " Note that it was advantageous in the previous example to wait until the final calculation to reduce the fractions. This allows us to easily add fractions with a common denominator—in this case, —and reduce the answer once.  "
+},
+{
+  "id": "handout-not-or-probability-4-8",
+  "level": "2",
+  "url": "handout-not-or-probability.html#handout-not-or-probability-4-8",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-not-or-probability-4-9",
+  "level": "2",
+  "url": "handout-not-or-probability.html#handout-not-or-probability-4-9",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "table-speeding-tickets",
+  "level": "2",
+  "url": "handout-not-or-probability.html#table-speeding-tickets",
+  "type": "Table",
+  "number": "6.29",
+  "title": "",
+  "body": " Survey results by car color and speeding tickets.     Speeding ticket  No speeding ticket  Total    Red car  15  135  150    Not red car  45  470  515    Total  60  605  665    "
+},
+{
+  "id": "ex-speeding-ticket-probabilities",
+  "level": "2",
+  "url": "handout-not-or-probability.html#ex-speeding-ticket-probabilities",
+  "type": "Example",
+  "number": "6.30",
+  "title": "",
+  "body": "  Find the probability that a randomly chosen person:   has a red car and got a speeding ticket    has a red car or got a speeding ticket       The total number of people surveyed is .     From the table, we can see that of the people surveyed had a red car and got a speeding ticket, so . Thus,     From the table, we can see that people have a red car, people got a speeding ticket, and people have a red car and got a speeding ticket. Using the addition rule to account for the double count, we find the number of favorable outcomes is . Thus,       "
+},
+{
+  "id": "handout-not-or-probability-5-4",
+  "level": "2",
+  "url": "handout-not-or-probability.html#handout-not-or-probability-5-4",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-FCP",
+  "level": "1",
+  "url": "handout-FCP.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "10. Activity The Fundamental Counting Principle",
+  "body": " 10. Activity The Fundamental Counting Principle   All of the probability problems we encountered in the previous unit had a relatively small sample space. Many situations involve very large sample spaces which cannot be written down, e.g., the number of -character passwords for a computer. For these types of situations, we need an efficient way to count certain types of items. We will ultimately use three primary counting tools: the Fundamental Counting Principle, Permutations, and Combinations. We discuss the first two of these in this activity.  Let's begin with a real-life situation. Suppose you are at a restaurant, and the menu has three choices for an appetizer (soup, salad, or breadsticks) and five choices for a main course (hamburger, sandwich, quiche, fajita, or pizza). You are allowed to choose exactly one appetizer and one main course for your meal. How many different options do you have?  There are different approaches to solving this problem. One possible approach is to list all possible meals. Here is an attempt to do so:  Soup + hamburger  Soup + fajita  Salad + pizza  Salad + hamburger  Breadsticks + sandwich  Breadsticks + quiche  Salad + fajita  Salad + quiche  Salad + sandwich  Soup + sandwich  Soup + pizza  Soup + quiche  Breadsticks + pizza  Breadsticks + hamburger  This list suggests there are different options, but does this list include all of them? This is an issue with this particular approach; in order to know the number of meals possible, we must ensure that all options have been accounted for in our list. In this case, I intentionally left one out; the astute reader will notice Breadsticks + fajita does not appear in the above list.  Another approach is to make a table with rows for each appetizer and columns for each main course.     Menu pairing options for appetizers and main courses.     Hamburger  Sandwich  Quiche  Fajita  Pizza    Soup  1  2  3  4  5    Salad  6  7  8  9  10    Breadsticks  11  12  13  14  15     This tabular approach ensures we have all the options included! Counting the number of cells in the table shows there are options at the restaurant. Moreover, from this approach we can see exactly how to calculate the total number of options based on the number of appetizers and the number of main courses: since there are rows (corresponding to the appetizers) and columns (corresponding to the main courses), we can see the number of options is . This demonstrates what we will refer to as the Fundamental Counting Principle.     Fundamental Counting Principle If we are asked to choose one item from each of two separate categories where there are items in the first category and items in the second category, then the total number of available choices is:       There are novels and volumes of poetry on a reading list for a college English course. How many different ways can a student select one novel and one volume of poetry to read for the course?    There are two categories here: novels and volumes of poetry. By the Fundamental Counting Principle, the number of ways to choose one item from each of the two categories is:               The Fundamental Counting Principle can be extended when there are more than two categories by applying it repeatedly. Here are some examples of this.    A pizza shop has a special promotion which allows you to buy a one-topping pizza at half price! They offer three different sizes, four different crusts, and twelve different topping options. How many different pizzas can be purchased under this promotion?    There are three different categories here (size, crust, topping) from which we need to choose one option each. By the Fundamental Counting Principle, the total number of pizzas which can be purchased is:       A quiz consists of five true-or-false questions. In how many ways can a student answer the quiz?    In this scenario the categories are the questions on the quiz; we need to choose an answer for each of the five questions. Each question has possible answers, either True or False . This means we have possible choices in each of the five categories, so the total number of ways to answer the quiz is: Note this can be written as . This can be a useful way to write this answer!      A telephone number consists of a -digit area code followed by a -digit local phone number. Area codes and local phone numbers cannot begin with a or . How many different phone numbers are possible?    One way to think about a problem like this is to use what can be called a blank diagram . A blank diagram will show a blank space for each item that needs to be chosen, and then we can fill in each blank with the number of choices we have for that item. For this particular scenario, a blank diagram might look like this, modeled after how we traditionally write phone numbers:   We start on the left side and fill in one blank at a time with the number of options we have for that position. The left-most number is the first digit in the area code. We are told this cannot be or , which means it can be any of the digits or . There are possible options here, so we fill in the first blank with an :   The next number can be any digit; we have no restriction on the second digit of the area code. So we can fill in the second blank with the total number of options for that digit (the digits through , which gives choices):   Similarly, there are options for the third digit of the area code:   Like with the area code, the first digit of the local phone number cannot be or , so we have possible choices. The remaining digits have no restriction, so they can be any of the possible digits:   Once we have filled in all the blanks, we can multiply the number of options together to form the total number of possible phone numbers:              "
+},
+{
+  "id": "table-menu-options",
+  "level": "2",
+  "url": "handout-FCP.html#table-menu-options",
+  "type": "Table",
+  "number": "6.31",
+  "title": "",
+  "body": " Menu pairing options for appetizers and main courses.     Hamburger  Sandwich  Quiche  Fajita  Pizza    Soup  1  2  3  4  5    Salad  6  7  8  9  10    Breadsticks  11  12  13  14  15    "
+},
+{
+  "id": "def-fundamental-counting-principle",
+  "level": "2",
+  "url": "handout-FCP.html#def-fundamental-counting-principle",
+  "type": "Definition",
+  "number": "6.32",
+  "title": "",
+  "body": "   Fundamental Counting Principle If we are asked to choose one item from each of two separate categories where there are items in the first category and items in the second category, then the total number of available choices is:    "
+},
+{
+  "id": "ex-reading-list-combinations",
+  "level": "2",
+  "url": "handout-FCP.html#ex-reading-list-combinations",
+  "type": "Example",
+  "number": "6.33",
+  "title": "",
+  "body": "  There are novels and volumes of poetry on a reading list for a college English course. How many different ways can a student select one novel and one volume of poetry to read for the course?    There are two categories here: novels and volumes of poetry. By the Fundamental Counting Principle, the number of ways to choose one item from each of the two categories is:    "
+},
+{
+  "id": "handout-FCP-3-5",
+  "level": "2",
+  "url": "handout-FCP.html#handout-FCP-3-5",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-FCP-4-1",
+  "level": "2",
+  "url": "handout-FCP.html#handout-FCP-4-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "ex-pizza-combinations",
+  "level": "2",
+  "url": "handout-FCP.html#ex-pizza-combinations",
+  "type": "Example",
+  "number": "6.34",
+  "title": "",
+  "body": "  A pizza shop has a special promotion which allows you to buy a one-topping pizza at half price! They offer three different sizes, four different crusts, and twelve different topping options. How many different pizzas can be purchased under this promotion?    There are three different categories here (size, crust, topping) from which we need to choose one option each. By the Fundamental Counting Principle, the total number of pizzas which can be purchased is:    "
+},
+{
+  "id": "ex-true-false-quiz",
+  "level": "2",
+  "url": "handout-FCP.html#ex-true-false-quiz",
+  "type": "Example",
+  "number": "6.35",
+  "title": "",
+  "body": "  A quiz consists of five true-or-false questions. In how many ways can a student answer the quiz?    In this scenario the categories are the questions on the quiz; we need to choose an answer for each of the five questions. Each question has possible answers, either True or False . This means we have possible choices in each of the five categories, so the total number of ways to answer the quiz is: Note this can be written as . This can be a useful way to write this answer!   "
+},
+{
+  "id": "ex-telephone-counting",
+  "level": "2",
+  "url": "handout-FCP.html#ex-telephone-counting",
+  "type": "Example",
+  "number": "6.36",
+  "title": "",
+  "body": "  A telephone number consists of a -digit area code followed by a -digit local phone number. Area codes and local phone numbers cannot begin with a or . How many different phone numbers are possible?    One way to think about a problem like this is to use what can be called a blank diagram . A blank diagram will show a blank space for each item that needs to be chosen, and then we can fill in each blank with the number of choices we have for that item. For this particular scenario, a blank diagram might look like this, modeled after how we traditionally write phone numbers:   We start on the left side and fill in one blank at a time with the number of options we have for that position. The left-most number is the first digit in the area code. We are told this cannot be or , which means it can be any of the digits or . There are possible options here, so we fill in the first blank with an :   The next number can be any digit; we have no restriction on the second digit of the area code. So we can fill in the second blank with the total number of options for that digit (the digits through , which gives choices):   Similarly, there are options for the third digit of the area code:   Like with the area code, the first digit of the local phone number cannot be or , so we have possible choices. The remaining digits have no restriction, so they can be any of the possible digits:   Once we have filled in all the blanks, we can multiply the number of options together to form the total number of possible phone numbers:    "
+},
+{
+  "id": "handout-FCP-6-1",
+  "level": "2",
+  "url": "handout-FCP.html#handout-FCP-6-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-FCP-6-2",
+  "level": "2",
+  "url": "handout-FCP.html#handout-FCP-6-2",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Permutations",
+  "level": "1",
+  "url": "handout-Permutations.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "11. Activity Permutations",
+  "body": " 11. Activity Permutations   Let's now consider a slightly different counting problem.    How many different ways can the letters of the word be rearranged to form a four-letter code word? (E.g., , , , etc.)    We can use a blank diagram to help us answer this question! We start with one with four blanks, one for each of the positions in the code word:   There are choices for the first letter of the code word; it can be  , , or . Thus, we have:   Once the first letter is chosen, there are only choices for the second letter of the code word. For example, if is chosen as the first letter, then the options for the second are , , and , since cannot be used a second time. Or, if is chosen as the first letter, then the options for the second are , , and . The key is that regardless of the choice for the first letter, there will always be options to choose from for the second letter. So:   Using a similar logic, once the first two letters are chosen there are only options remaining for the third letter. For example, if is chosen first and chosen second, then the options for the third letter are only and . Thus:   Finally, there is only choice for the final letter, since all of the other letters have been used at this point. This means our completed blank diagram looks like:   So by the Fundamental Counting Principle, the number of code words is:     This is a simple example of what is called a permutation . A permutation is an ordered arrangement of items that occurs when:   No item is used more than once, and    The order of arrangement makes a difference (e.g., is different than ).     The product that we saw in the preceding example is called a factorial and is denoted . In general, is read as factorial. For example:      factorial  permutation When a situation involves rearranging all of the objects in a given set, then the number of permutations is given by: where is the total number of objects.     Scientific calculators have a button which will compute factorials automatically. If you have the TI-30XIIS calculator, you can access this by hitting the PRB button and arrowing over to the symbol.     How many ways can five different door prizes be distributed among five people?    Here we want to rearrange the five people in order so that the first gets the first prize, the second gets the second prize, and so on. We must rearrange all five of the people since there are five prizes, so the number of ways to do this is:            Sometimes there are scenarios where we want to determine the number of ways to rearrange only a subset of a set of objects. The next two examples present two such scenarios.    A charity benefit is attended by people and three gift certificates are given away as door prizes: one gift certificate is in the amount of , the second is worth , and the third is worth . Assuming that no person receives more than one prize, how many different ways can the three gift certificates be awarded?    Since the three gift certificates are worth different amounts, the order in which they are awarded makes a difference. There are possible winners for the gift certificate. Once that has been awarded, there are possible winners for the gift certificate since the first winner is not eligible. Finally, after the first two have been awarded there are possible winners for the gift certificate since the first two winners are ineligible. The total number of ways the three gift certificates can be awarded is:       Eight sprinters have made it to the Olympic finals in the 100-meter race. In how many different ways can the gold, silver, and bronze medals be awarded?    Like the previous example, the order in which the medals are awarded makes a difference since they are different. There are possible gold medalists, then possible silver medalists (the runner who wins gold cannot win silver), and finally possible bronze medalists (the gold and silver medalists cannot win bronze). This means the number of ways the medals can be awarded is:     The two examples above are similar in that:   They had a total group of people ( and , respectively) and wanted to order a strictly smaller number of them (in both cases, ).    The order of selection was important (e.g., first place, second place, third place).    Awards were done without replacement; whoever was chosen first could not be chosen again.   These examples demonstrate permutations where only a select number of items are chosen to be rearranged.  Here is the general scenario. Suppose we have total objects and want to choose of them without replacement when order matters (this is what was done in the preceding examples!). The number of ways this can be done is denoted and is given by the formula:    Your calculator should have a key to calculate this for you! If you are using the TI-30XIIS, the key is located in the PRB menu along with the factorial key!       Bo has nine paintings and has room to display only four of them at a time on his wall. How many different ways could Bo do this?    In this example, we have a total of paintings to choose from and need to choose of them. The order of selection matters since they are being arranged on a wall, and none can be used more than once. This is a permutation! Using a calculator to find , the number of ways for Bo to arrange four paintings is:       How many ways can a four-person executive committee (president, vice-president, secretary, treasurer) be selected from a 16-member board of directors of a non-profit organization?    In this example, we have a total of people to choose from and need to choose of them. The order of selection matters (e.g., being president is different than being secretary), and no one can serve in multiple roles. This is a permutation! Using a calculator to find , the number of ways to form such a committee is:              "
+},
+{
+  "id": "ex-word-rearrangement",
+  "level": "2",
+  "url": "handout-Permutations.html#ex-word-rearrangement",
+  "type": "Example",
+  "number": "6.37",
+  "title": "",
+  "body": "  How many different ways can the letters of the word be rearranged to form a four-letter code word? (E.g., , , , etc.)    We can use a blank diagram to help us answer this question! We start with one with four blanks, one for each of the positions in the code word:   There are choices for the first letter of the code word; it can be  , , or . Thus, we have:   Once the first letter is chosen, there are only choices for the second letter of the code word. For example, if is chosen as the first letter, then the options for the second are , , and , since cannot be used a second time. Or, if is chosen as the first letter, then the options for the second are , , and . The key is that regardless of the choice for the first letter, there will always be options to choose from for the second letter. So:   Using a similar logic, once the first two letters are chosen there are only options remaining for the third letter. For example, if is chosen first and chosen second, then the options for the third letter are only and . Thus:   Finally, there is only choice for the final letter, since all of the other letters have been used at this point. This means our completed blank diagram looks like:   So by the Fundamental Counting Principle, the number of code words is:    "
+},
+{
+  "id": "handout-Permutations-2-3",
+  "level": "2",
+  "url": "handout-Permutations.html#handout-Permutations-2-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "permutation "
+},
+{
+  "id": "handout-Permutations-2-4",
+  "level": "2",
+  "url": "handout-Permutations.html#handout-Permutations-2-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "factorial "
+},
+{
+  "id": "def-factorial-permutations",
+  "level": "2",
+  "url": "handout-Permutations.html#def-factorial-permutations",
+  "type": "Definition",
+  "number": "6.38",
+  "title": "",
+  "body": "   factorial  permutation When a situation involves rearranging all of the objects in a given set, then the number of permutations is given by: where is the total number of objects.   "
+},
+{
+  "id": "note-calculator-factorial",
+  "level": "2",
+  "url": "handout-Permutations.html#note-calculator-factorial",
+  "type": "Note",
+  "number": "6.39",
+  "title": "",
+  "body": " Scientific calculators have a button which will compute factorials automatically. If you have the TI-30XIIS calculator, you can access this by hitting the PRB button and arrowing over to the symbol.  "
+},
+{
+  "id": "ex-door-prizes",
+  "level": "2",
+  "url": "handout-Permutations.html#ex-door-prizes",
+  "type": "Example",
+  "number": "6.40",
+  "title": "",
+  "body": "  How many ways can five different door prizes be distributed among five people?    Here we want to rearrange the five people in order so that the first gets the first prize, the second gets the second prize, and so on. We must rearrange all five of the people since there are five prizes, so the number of ways to do this is:    "
+},
+{
+  "id": "handout-Permutations-3-1",
+  "level": "2",
+  "url": "handout-Permutations.html#handout-Permutations-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "ex-gift-certificates",
+  "level": "2",
+  "url": "handout-Permutations.html#ex-gift-certificates",
+  "type": "Example",
+  "number": "6.41",
+  "title": "",
+  "body": "  A charity benefit is attended by people and three gift certificates are given away as door prizes: one gift certificate is in the amount of , the second is worth , and the third is worth . Assuming that no person receives more than one prize, how many different ways can the three gift certificates be awarded?    Since the three gift certificates are worth different amounts, the order in which they are awarded makes a difference. There are possible winners for the gift certificate. Once that has been awarded, there are possible winners for the gift certificate since the first winner is not eligible. Finally, after the first two have been awarded there are possible winners for the gift certificate since the first two winners are ineligible. The total number of ways the three gift certificates can be awarded is:    "
+},
+{
+  "id": "ex-olympic-sprinters",
+  "level": "2",
+  "url": "handout-Permutations.html#ex-olympic-sprinters",
+  "type": "Example",
+  "number": "6.42",
+  "title": "",
+  "body": "  Eight sprinters have made it to the Olympic finals in the 100-meter race. In how many different ways can the gold, silver, and bronze medals be awarded?    Like the previous example, the order in which the medals are awarded makes a difference since they are different. There are possible gold medalists, then possible silver medalists (the runner who wins gold cannot win silver), and finally possible bronze medalists (the gold and silver medalists cannot win bronze). This means the number of ways the medals can be awarded is:    "
+},
+{
+  "id": "note-calculator-npr",
+  "level": "2",
+  "url": "handout-Permutations.html#note-calculator-npr",
+  "type": "Note",
+  "number": "6.43",
+  "title": "",
+  "body": " Your calculator should have a key to calculate this for you! If you are using the TI-30XIIS, the key is located in the PRB menu along with the factorial key!  "
+},
+{
+  "id": "ex-painting-arrangements",
+  "level": "2",
+  "url": "handout-Permutations.html#ex-painting-arrangements",
+  "type": "Example",
+  "number": "6.44",
+  "title": "",
+  "body": "  Bo has nine paintings and has room to display only four of them at a time on his wall. How many different ways could Bo do this?    In this example, we have a total of paintings to choose from and need to choose of them. The order of selection matters since they are being arranged on a wall, and none can be used more than once. This is a permutation! Using a calculator to find , the number of ways for Bo to arrange four paintings is:    "
+},
+{
+  "id": "ex-executive-committee",
+  "level": "2",
+  "url": "handout-Permutations.html#ex-executive-committee",
+  "type": "Example",
+  "number": "6.45",
+  "title": "",
+  "body": "  How many ways can a four-person executive committee (president, vice-president, secretary, treasurer) be selected from a 16-member board of directors of a non-profit organization?    In this example, we have a total of people to choose from and need to choose of them. The order of selection matters (e.g., being president is different than being secretary), and no one can serve in multiple roles. This is a permutation! Using a calculator to find , the number of ways to form such a committee is:    "
+},
+{
+  "id": "handout-Permutations-6-1",
+  "level": "2",
+  "url": "handout-Permutations.html#handout-Permutations-6-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Permutations-6-2",
+  "level": "2",
+  "url": "handout-Permutations.html#handout-Permutations-6-2",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  "
+},
+{
   "id": "handouts",
   "level": "1",
   "url": "handouts.html",

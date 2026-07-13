@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1478123">
+<statement>
+<p>
+Suppose an experiment has <m>\displaystyle{21}</m> equally-likely outcomes and <m>\displaystyle{8}</m> of them correspond to some event. According to the formula above, what is the probability of this event? Enter your answer as a fraction.</p>
+<p>
+<fillin characters="20"/>   
+</p>
+</statement>
+<answer>
+<p><ul><li><m>\displaystyle\frac{{8}}{{21}}</m></li></ul></p>
+</answer>
+
+</myopenmath>

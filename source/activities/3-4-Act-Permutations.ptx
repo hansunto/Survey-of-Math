@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="handout-Permutations" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>11. Activity Permutations</title>
+  <page>
+<p>
+  Let's now consider a slightly different counting problem.
+</p>
+
+<example xml:id="ex-word-rearrangement">
+  <statement>
+    <p>
+      How many different ways can the letters of the word <m>\text{MATH}</m> be rearranged to form a four-letter code word?
+      (E.g., <m>\text{MATH}</m>, <m>\text{AMTH}</m>, <m>\text{HTAM}</m>, etc.)
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We can use a blank diagram to help us answer this question!
+      We start with one with four blanks, one for each of the positions in the code word:
+      <me>\underline{\quad} \ \underline{\quad} \ \underline{\quad} \ \underline{\quad}</me>
+    </p>
+    <p>
+      There are <m>4</m> choices for the first letter of the code word; 
+      it can be <m>\text{M}</m> <m>\text{A}</m>, <m>\text{T}</m>, or <m>\text{H}</m>.
+      Thus, we have:
+      <me>\underline{4} \ \underline{\quad} \ \underline{\quad} \ \underline{\quad}</me>
+    </p>
+    <p>
+      Once the first letter is chosen, there are only <m>3</m> choices for the second letter of the code word.
+      For example, if <m>\text{M}</m> is chosen as the first letter, then the options for the second are <m>\text{A}</m>, <m>\text{T}</m>, and <m>\text{H}</m>, since <m>\text{M}</m> cannot be used a second time.
+      Or, if <m>\text{A}</m> is chosen as the first letter, then the options for the second are <m>\text{M}</m>, <m>\text{T}</m>, and <m>\text{H}</m>.
+      The key is that regardless of the choice for the first letter, there will always be <m>3</m> options to choose from for the second letter.
+      So:
+      <me>\underline{4} \ \underline{3} \ \underline{\quad} \ \underline{\quad}</me>
+    </p>
+    <p>
+      Using a similar logic, once the first two letters are chosen there are only <m>2</m> options remaining for the third letter.
+      For example, if <m>\text{M}</m> is chosen first and <m>\text{A}</m> chosen second, then the options for the third letter are only <m>\text{T}</m> and <m>\text{H}</m>.
+      Thus:
+      <me>\underline{4} \ \underline{3} \ \underline{2} \ \underline{\quad}</me>
+    </p>
+    <p>
+      Finally, there is only <m>1</m> choice for the final letter, since all of the other letters have been used at this point.
+      This means our completed blank diagram looks like:
+      <me>\underline{4} \ \underline{3} \ \underline{2} \ \underline{1}</me>
+    </p>
+    <p>
+      So by the Fundamental Counting Principle, the number of code words is:
+      <me>4 \times 3 \times 2 \times 1 = 24</me>
+    </p>
+  </solution>
+</example>
+
+<p>
+  This is a simple example of what is called a <term>permutation</term>.
+  A permutation is an ordered arrangement of items that occurs when:
+  <ul>
+    <li>
+      <p>No item is used more than once, and</p>
+    </li>
+    <li>
+      <p>The order of arrangement makes a difference (e.g., <m>\text{MA}</m> is different than <m>\text{AM}</m>).</p>
+    </li>
+  </ul>
+</p>
+
+<p>
+  The product that we saw in the preceding example is called a <term>factorial</term> and is denoted <m>n!</m>.
+  In general, <m>n!</m> is read as <q><m>n</m> factorial.</q>
+  For example:
+  <me>4! = 4 \times 3 \times 2 \times 1 = 24</me>
+</p>
+
+<definition xml:id="def-factorial-permutations">
+  <statement>
+    <p>
+      <idx><h>factorial</h></idx>
+      <idx><h>permutation</h></idx>
+      When a situation involves rearranging all of the objects in a given set, then the number of permutations is given by:
+      <me>n! = n \times (n-1) \times (n-2) \times \dots \times 3 \times 2 \times 1</me>
+      where <m>n</m> is the total number of objects.
+    </p>
+  </statement>
+</definition>
+
+<note xml:id="note-calculator-factorial">
+  <p>
+    Scientific calculators have a button which will compute factorials automatically.
+    If you have the TI-30XIIS calculator, you can access this by hitting the <kbd>PRB</kbd> button and arrowing over to the <m>!</m> symbol.
+  </p>
+</note>
+
+<example xml:id="ex-door-prizes">
+  <statement>
+    <p>
+      How many ways can five different door prizes be distributed among five people?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Here we want to rearrange the five people in order so that the first gets the first prize, the second gets the second prize, and so on.
+      We must rearrange all five of the people since there are five prizes, so the number of ways to do this is:
+      <me>5! = 5 \times 4 \times 3 \times 2 \times 1 = 120</me>
+    </p>
+  </solution>
+</example>
+
+  </page>
+
+<page>
+    <exercise>
+        <myopenmath problem="1483053"/>
+    </exercise>
+</page>
+
+<page>
+    <p>
+  Sometimes there are scenarios where we want to determine the number of ways to rearrange only a subset of a set of objects.
+  The next two examples present two such scenarios.
+</p>
+
+<example xml:id="ex-gift-certificates">
+  <statement>
+    <p>
+      A charity benefit is attended by <m>25</m> people and three gift certificates are given away as door prizes: one gift certificate is in the amount of <m>\$100</m>, the second is worth <m>\$25</m>, and the third is worth <m>\$10</m>.
+      Assuming that no person receives more than one prize, how many different ways can the three gift certificates be awarded?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Since the three gift certificates are worth different amounts, the order in which they are awarded makes a difference.
+      There are <m>25</m> possible winners for the <m>\$100</m> gift certificate.
+      Once that has been awarded, there are <m>24</m> possible winners for the <m>\$25</m> gift certificate since the first winner is not eligible.
+      Finally, after the first two have been awarded there are <m>23</m> possible winners for the <m>\$10</m> gift certificate since the first two winners are ineligible.
+      The total number of ways the three gift certificates can be awarded is:
+      <me>25 \times 24 \times 23 = 13,800</me>
+    </p>
+  </solution>
+</example>
+
+<example xml:id="ex-olympic-sprinters">
+  <statement>
+    <p>
+      Eight sprinters have made it to the Olympic finals in the 100-meter race.
+      In how many different ways can the gold, silver, and bronze medals be awarded?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Like the previous example, the order in which the medals are awarded makes a difference since they are different.
+      There are <m>8</m> possible gold medalists, then <m>7</m> possible silver medalists (the runner who wins gold cannot win silver), and finally <m>6</m> possible bronze medalists (the gold and silver medalists cannot win bronze).
+      This means the number of ways the medals can be awarded is:
+      <me>8 \times 7 \times 6 = 336</me>
+    </p>
+  </solution>
+</example>
+
+<p>
+  The two examples above are similar in that:
+  <ul>
+    <li>
+      <p>They had a total group of people (<m>25</m> and <m>8</m>, respectively) and wanted to order a strictly smaller number of them (in both cases, <m>3</m>).</p>
+    </li>
+    <li>
+      <p>The order of selection was important (e.g., first place, second place, third place).</p>
+    </li>
+    <li>
+      <p>Awards were done without replacement; whoever was chosen first could not be chosen again.</p>
+    </li>
+  </ul>
+  These examples demonstrate permutations where only a select number of items are chosen to be rearranged.
+</p>
+
+<p>
+  Here is the general scenario.
+  Suppose we have <m>n</m> total objects and want to choose <m>r</m> of them without replacement when order matters (this is what was done in the preceding examples!).
+  The number of ways this can be done is denoted <m>_nP_r</m> and is given by the formula:
+  <me>_nP_r = \frac{n!}{(n-r)!}</me>
+</p>
+
+<note xml:id="note-calculator-npr">
+  <p>
+    Your calculator should have a key to calculate this for you!
+    If you are using the TI-30XIIS, the key is located in the <kbd>PRB</kbd> menu along with the factorial key!
+  </p>
+</note>
+</page>
+    
+<page>
+<example xml:id="ex-painting-arrangements">
+  <statement>
+    <p>
+      Bo has nine paintings and has room to display only four of them at a time on his wall.
+      How many different ways could Bo do this?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      In this example, we have a total of <m>9</m> paintings to choose from and need to choose <m>4</m> of them.
+      The order of selection matters since they are being arranged on a wall, and none can be used more than once.
+      This is a permutation!
+      Using a calculator to find <m>_9P_4</m>, the number of ways for Bo to arrange four paintings is:
+      <me>_9P_4 = \frac{9!}{(9-4)!} = \frac{9!}{5!} = 9 \times 8 \times 7 \times 6 = 3,024</me>
+    </p>
+  </solution>
+</example>
+
+<example xml:id="ex-executive-committee">
+  <statement>
+    <p>
+      How many ways can a four-person executive committee (president, vice-president, secretary, treasurer) be selected from a 16-member board of directors of a non-profit organization?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      In this example, we have a total of <m>16</m> people to choose from and need to choose <m>4</m> of them.
+      The order of selection matters (e.g., being president is different than being secretary), and no one can serve in multiple roles.
+      This is a permutation!
+      Using a calculator to find <m>_{16}P_4</m>, the number of ways to form such a committee is:
+      <me>_{16}P_4 = \frac{16!}{(16-4)!} = \frac{16!}{12!} = 16 \times 15 \times 14 \times 13 = 43,680</me>
+    </p>
+  </solution>
+</example>
+
+</page>
+
+<page>
+    <exercise>
+        <myopenmath problem="1483055"/>
+    </exercise>
+    <exercise>
+        <myopenmath problem="1483057"/>
+    </exercise>
+</page>
+
+ </worksheet> 

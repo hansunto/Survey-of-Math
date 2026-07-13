@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1483049">
+<statement>
+<p>
+Answer the following questions using the Fundamental Couting Principle.</p>
+<p>
+At a particular restaurant you have eight choices for an appetizer, eleven choices for a main course, and five choices for a desert. If you are allowed to choose exactly one item from each category, how many different meal options do you have?</p>
+<p>
+<fillin characters="20"/></p>
+<p>
+You are purchasing a new car. You can choose from <m>\displaystyle{9}</m> different colors, with or without air conditioning, electric or gas powered, and with or without a satellite radio. How many different car selections are possible?</p>
+<p>
+<fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>440</li><li>72</li></ul></p>
+</answer>
+
+</myopenmath>

@@ -3,11 +3,11 @@
 <statement>
 <p>
 In this course we will be primarily concerned with which of the following?</p>
-<p><ol style="list-style-type:upper-alpha"><li>Experimental probability</li> 
-<li>Theoretical probability</li> 
+<p><ol style="list-style-type:upper-alpha"><li>Distributive probability</li> 
 <li>Descriptive probability</li> 
-<li>Distributive probability</li> 
+<li>Theoretical probability</li> 
 <li>Inferential probability</li> 
+<li>Experimental probability</li> 
 <li>Subjective probability</li> 
 <li>None of the above</li> 
 </ol></p>
@@ -15,7 +15,7 @@ In this course we will be primarily concerned with which of the following?</p>
 
 </statement>
 <answer>
-<p><ul><li>B: Theoretical probability</li></ul></p>
+<p><ul><li>C: Theoretical probability</li></ul></p>
 </answer>
 
 </myopenmath>

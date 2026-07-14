@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="handout-Combinations" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>12. Activity Combinations</title>
+  <page>
+<p>
+  Consider the following scenario, which is a slight modification of an example we considered in the previous section.
+  A charity benefit is attended by <m>25</m> people and three gift certificates are given away as door prizes.
+  Each gift certificate is <m>\$100</m>.
+  Assuming that no person receives more than one prize, how many different ways can the three gift certificates be awarded?
+</p>
+
+<p>
+  In the previous example, the three gift certificates were for different amounts and therefore the order the three winners were selected in made a difference.
+  Here, the order in which the three winners are chosen does <term>NOT</term> matter!
+  We only care about which three individuals get the gift certificates since they are the same amount!
+  Essentially, we want the number of ways to choose a group of <m>3</m> people from the <m>25</m> attendees.
+</p>
+
+<p>
+  This is an example of what is called a <term>combination</term>.
+  Suppose we have <m>n</m> total objects and want to choose <m>r</m> of them without replacement when order does not matter.
+  The number of ways this can be done is denoted <m>_nC_r</m> and is given by the formula:
+  <me>_nC_r = \frac{n!}{r!(n-r)!}</me>
+</p>
+
+<note xml:id="note-calculator-ncr">
+  <p>
+    Your calculator will have a key to calculate the number of combinations directly.
+    If you have the TI-30XIIS, it can be found under the <kbd>PRB</kbd> menu along with the factorial (<m>!</m>) and permutation (<m>_nP_r</m>) functions.
+  </p>
+</note>
+
+<p>
+  To return to the example at the top of this section, we can find the number of ways to award the three gift certificates by using the combination function on a calculator:
+  <me>_{25}C_{3} = \frac{25!}{3!(25-3)!} = \frac{25!}{3! \times 22!} = \frac{25 \times 24 \times 23}{3 \times 2 \times 1} = 2,300</me>
+</p>
+
+<exercise>
+    <myopenmath problem="1483064"/>
+</exercise>
+  </page>
+
+  <page>
+    <p>
+  One key aspect of counting is to be able to distinguish between a permutation and a combination.
+  The main point to consider is whether or not the order in which the items are selected matters.
+  If the order matters, then we need to use permutations; if the order does not matter, we need to use combinations.
+</p>
+
+<example xml:id="ex-permutation-vs-combination">
+  <statement>
+    <p>
+      A class has <m>30</m> total students.
+      <ol marker="a">
+        <li>
+          <p>The class must choose a president, vice president, secretary, and treasurer for the year. In how many ways can this be done?</p>
+        </li>
+        <li>
+          <p>The class must also choose four students to represent the class in the student council. In how many ways can this be done?</p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <ol marker="a">
+        <li>
+          <p>
+            We need to choose four students, and the order makes a difference here because the roles of the students will be different (e.g., being president is different than being treasurer).
+            This is a permutation, so the number of ways this can be done is:
+            <me>_{30}P_{4} = \frac{30!}{(30-4)!} = 30 \times 29 \times 28 \times 27 = 657,720</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            In this case, the order in which the students are chosen does not matter; all four chosen students will serve the same role (namely, being a member of the student council).
+            This is a combination, so the number of ways this can be done is:
+            <me>_{30}C_{4} = \frac{30!}{4!(30-4)!} = \frac{30 \times 29 \times 28 \times 27}{4 \times 3 \times 2 \times 1} = 27,405</me>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</example>
+
+<exercise>
+    <myopenmath problem="1483067"/>
+</exercise>
+  </page>
+
+<page>
+<exercise>
+    <myopenmath problem="1483066"/>
+</exercise>
+  </page>
+
+  <page>
+    <p>
+  Sometimes combinations must be combined with the Fundamental Counting Principle to solve a problem!
+  Here is an example of this!
+</p>
+
+<example xml:id="ex-senate-committees">
+  <statement>
+    <p>
+      The US Senate of a particular Congress consisted of <m>48</m> Democrats, <m>50</m> Republicans, and <m>2</m> Independents.
+      How many committees can be formed if each committee must have exactly <m>3</m> Democrats and <m>3</m> Republicans?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      To answer this question, we need to break the problem down into three steps:
+      <ol>
+        <li>
+          <p>Determine the number of ways to choose the Democrats from the possible Democrats.</p>
+        </li>
+        <li>
+          <p>Determine the number of ways to choose the Republicans from the possible Republicans.</p>
+        </li>
+        <li>
+          <p>Use the numbers determined in the first two steps to count the total number of possible committees.</p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      For steps 1 and 2, note that the order in which we choose the Democrats and Republicans does not matter; all we care about is the set of people chosen from each party.
+      Since the order does not matter, the number of ways to choose <m>3</m> Democrats from the total of <m>48</m> Democrats is:
+      <me>_{48}C_{3} = \frac{48!}{3!(48-3)!} = 17,296</me>
+      and the number of ways to choose <m>3</m> Republicans from the possible <m>50</m> Republicans is:
+      <me>_{50}C_{3} = \frac{50!}{3!(50-3)!} = 19,600</me>
+    </p>
+    <p>
+      Since we need to choose both the Democrats and the Republicans, we need to use the Fundamental Counting Principle to find the total number of possible committees.
+      Thus, the number of committees is:
+      <me>_{48}C_{3} \times _{50}C_{3} = 17,296 \times 19,600 = 339,001,600</me>
+      Therefore, there are <m>339,001,600</m> possible committees that can be formed.
+    </p>
+  </solution>
+</example>
+
+<exercise>
+    <myopenmath problem="1483069"/>
+</exercise>
+  </page>
+
+</worksheet>

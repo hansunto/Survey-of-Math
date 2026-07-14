@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1486856">
+<statement>
+<p>
+A 5-digit PIN number is selected at random. What is the probability that there are no repeated digits?</p>
+<p>
+Enter your answer as a fraction, though it need not be reduced.</p>
+<p>
+<fillin characters="20"/>   
+</p>
+</statement>
+<answer>
+<p><ul><li><m>\displaystyle\frac{{30240}}{{100000}}</m></li></ul></p>
+</answer>
+
+</myopenmath>

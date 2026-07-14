@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="handout-Prob" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>13. Activity Probability with FCP, nPr, nCr</title>
+  <page>
+    <p>
+  We will turn our attention to combining the ideas of the past several units.
+  Let us begin by recalling some of the main topics we have discussed:
+  <ul>
+    <li>
+      <p>The probability of an event <m>E</m> is given by the formula:</p>
+      <me>P(E) = \frac{\text{number of outcomes in } E}{\text{total number of outcomes in } S}</me>
+    </li>
+    <li>
+      <p>
+        <term>Fundamental Counting Principle</term>: When asked to choose items from different categories, we multiply together the number of options for each choice to determine the total number of possibilities.
+      </p>
+    </li>
+    <li>
+      <p>
+        <term>Permutations</term> are arrangements with no repetition and where the order matters.
+        If all <m>n</m> items need to be rearranged, the number of ways to do this is <m>n!</m>.
+        If only <m>r</m> of the <m>n</m> items need to be rearranged, the number of ways to do this is <m>_nP_r</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        <term>Combinations</term> are selections with no repetition where the order does <term>NOT</term> matter.
+        The number of combinations involving <m>r</m> out of <m>n</m> items is <m>_nC_r</m>.
+      </p>
+    </li>
+  </ul>
+  We can use permutations and combinations to help us answer more complex probability questions.
+</p>
+
+<example xml:id="ex-performer-prob">
+  <statement>
+    <p>
+      Seven performers (A, B, C, D, E, F, and G) are to appear at a fundraiser.
+      The order of performance is determined by random selection.
+      Find the probability that:
+      <ol marker="a">
+        <li>
+          <p>E will perform second and B will perform last.</p>
+        </li>
+        <li>
+          <p>F or G will perform last.</p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      First, note that since we are concerned with the order the performers will appear in, this example involves permutations.
+      There are <m>7</m> performers and all will appear, so the total number of performance orders in the sample space is:
+      <me>n = 7! = 5,040</me>
+    </p>
+    <p>
+      <ol marker="a">
+        <li>
+          <p>
+            We want to determine the number of performance orders in which E performs second and B performs last.
+            This means there is only <m>1</m> choice for the second performer (E) and only <m>1</m> choice for the last performer (B):
+            <me>\underline{\quad} \ \underline{\ 1\ } \ \underline{\quad} \ \underline{\quad} \ \underline{\quad} \ \underline{\quad} \ \underline{\ 1\ }</me>
+            There are no restrictions on the remaining performers, so we can proceed by counting the number of possibilities for each remaining position.
+            There are <m>5</m> choices for the first performer (A, C, D, F, or G), then <m>4</m> choices for the third performer, <m>3</m> choices for the fourth performer, <m>2</m> choices for the fifth performer, and finally only <m>1</m> choice for the sixth performer:
+            <me>\underline{\ 5\ } \ \underline{\ 1\ } \ \underline{\ 4\ } \ \underline{\ 3\ } \ \underline{\ 2\ } \ \underline{\ 1\ } \ \underline{\ 1\ }</me>
+            Thus, the number of favorable performance orders is:
+            <me>m = 5 \times 1 \times 4 \times 3 \times 2 \times 1 \times 1 = 120</me>
+            Putting this all together, the probability of a randomly selected performance order with E second and B last is:
+            <me>P(\text{E second and B last}) = \frac{120}{5,040} = \frac{1}{42}</me>
+          </p>
+        </li>
+        <li>
+          <p>
+            We want to determine the number of performance orders in which F or G performs last.
+            This means there are <m>2</m> choices (F or G) for the final performer and no restrictions on the remaining ones:
+            <me>\underline{\ 6\ } \ \underline{\ 5\ } \ \underline{\ 4\ } \ \underline{\ 3\ } \ \underline{\ 2\ } \ \underline{\ 1\ } \ \underline{\ 2\ }</me>
+            So, there would be <m>6</m> choices for the first performer (any of the remaining performers), <m>5</m> choices for the second performer, and so on.
+            The number of such performance orders is:
+            <me>m = 6 \times 5 \times 4 \times 3 \times 2 \times 1 \times 2 = 1,440</me>
+            Thus, the probability is:
+            <me>P(\text{F or G last}) = \frac{1,440}{5,040} = \frac{2}{7}</me>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</example>
+
+<exercise>
+    <myopenmath problem="1486855"/>
+</exercise>
+
+  </page>
+
+  <page>
+    <p> Here is an example involving permutations. </p>
+    <example xml:id="ex-pin-no-repeats">
+  <statement>
+    <p>
+      A 4-digit PIN is selected at random.
+      What is the probability that there are no repeated digits?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      There are <m>10</m> possible values for each digit of the PIN (namely: <m>0, 1, 2, 3, 4, 5, 6, 7, 8, 9</m>).
+      Since repetition is allowed for a standard PIN, by the Fundamental Counting Principle there are total possible PINs of:
+      <me>n = 10 \times 10 \times 10 \times 10 = 10^4 = 10,000</me>
+    </p>
+    <p>
+      To have no repeated digits, all four digits must be different, which means selecting <m>4</m> digits out of <m>10</m> without replacement where order matters.
+      The number of ways this can be done is a permutation:
+      <me>m = _{10}P_{4} = \frac{10!}{(10-4)!} = 10 \times 9 \times 8 \times 7 = 5,040</me>
+    </p>
+    <p>
+      The probability of no repeated digits is the number of 4-digit PINs with no repeated digits divided by the total number of 4-digit PINs.
+      Thus,
+      <me>P(\text{no repeated digits}) = \frac{_{10}P_{4}}{10,000} = \frac{5,040}{10,000} = \frac{63}{125} = 0.504</me>
+    </p>
+  </solution>
+</example>
+
+<exercise>
+    <myopenmath problem="1486856"/>
+</exercise>
+  </page>
+
+  <page>
+    <p>
+  Next, we look at some examples involving combinations.
+</p>
+
+<example xml:id="ex-probability-two-aces">
+  <statement>
+    <p>
+      Find the probability of randomly drawing five cards from a deck and getting exactly two Aces.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We first find the total number of ways to draw <m>5</m> cards from a standard <m>52</m>-card deck.
+      Since the order in which the cards are drawn does not matter, this is a combination:
+      <me>n = _{52}C_{5} = \frac{52!}{5!(52-5)!} = 2,598,960</me>
+    </p>
+    <p>
+      Next, we need to find the number of <m>5</m>-card hands which have exactly two Aces.
+      Note that such a hand also includes three cards which are not Aces.
+      We need to select the Aces and non-Aces separately.
+      There are <m>4</m> Aces in the deck, so the number of ways to choose the two Aces is:
+      <me>_{4}C_{2} = 6</me>
+      There are <m>48</m> non-Aces in the deck, so the number of ways to choose the three non-Aces is:
+      <me>_{48}C_{3} = 17,296</me>
+    </p>
+    <p>
+      Since we must choose one of the sets of Aces and one of the sets of non-Aces in succession, the Fundamental Counting Principle tells us the total number of hands with exactly two Aces is:
+      <me>m = _{4}C_{2} \times _{48}C_{3} = 6 \times 17,296 = 103,776</me>
+    </p>
+    <p>
+      Putting all of this together, the probability of getting a hand with exactly two Aces is:
+      <me>P(\text{exactly 2 Aces}) = \frac{_{4}C_{2} \times _{48}C_{3}}{_{52}C_{5}} = \frac{103,776}{2,598,960} = \frac{216}{5,4145} \approx 0.0399</me>
+    </p>
+  </solution>
+</example>
+
+<example xml:id="ex-probability-committee">
+  <statement>
+    <p>
+      A parent-teacher committee consisting of four people is to be selected from fifteen parents and five teachers.
+      Find the probability of selecting two parents and two teachers.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We first find the total number of ways to select a committee of four people from the total group of <m>20</m> people (<m>15 + 5 = 20</m>).
+      Since the order in which the people are selected does not matter, this is a combination:
+      <me>n = _{20}C_{4} = \frac{20!}{4!(20-4)!} = 4,845</me>
+    </p>
+    <p>
+      Next, we need to find the number of four-person committees consisting of exactly two parents and two teachers.
+      We first select the two parents from among the <m>15</m> possible parents, and this can be done in:
+      <me>_{15}C_{2} = 105 \text{ ways}</me>
+      We then select the two teachers from among the <m>5</m> possible teachers, and this can be done in:
+      <me>_{5}C_{2} = 10 \text{ ways}</me>
+    </p>
+    <p>
+      We must choose both a pair of parents and a pair of teachers in succession, so by the Fundamental Counting Principle the number of committees consisting of two parents and two teachers is:
+      <me>m = _{15}C_{2} \times _{5}C_{2} = 105 \times 10 = 1,050</me>
+    </p>
+    <p>
+      Therefore, the probability of selecting a committee with two parents and two teachers is:
+      <me>P(\text{2 parents and 2 teachers}) = \frac{_{15}C_{2} \times _{5}C_{2}}{_{20}C_{4}} = \frac{1,050}{4,845} = \frac{70}{323} \approx 0.2167</me>
+    </p>
+  </solution>
+</example>
+
+<exercise>
+    <myopenmath problem="1486858"/>
+</exercise>
+
+<exercise>
+    <myopenmath problem="1486859"/>
+</exercise>
+  </page>
+
+
+</worksheet>

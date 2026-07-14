@@ -4123,6 +4123,186 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
+  "id": "handout-Combinations",
+  "level": "1",
+  "url": "handout-Combinations.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "12. Activity Combinations",
+  "body": " 12. Activity Combinations   Consider the following scenario, which is a slight modification of an example we considered in the previous section. A charity benefit is attended by people and three gift certificates are given away as door prizes. Each gift certificate is . Assuming that no person receives more than one prize, how many different ways can the three gift certificates be awarded?  In the previous example, the three gift certificates were for different amounts and therefore the order the three winners were selected in made a difference. Here, the order in which the three winners are chosen does NOT matter! We only care about which three individuals get the gift certificates since they are the same amount! Essentially, we want the number of ways to choose a group of people from the attendees.  This is an example of what is called a combination . Suppose we have total objects and want to choose of them without replacement when order does not matter. The number of ways this can be done is denoted and is given by the formula:    Your calculator will have a key to calculate the number of combinations directly. If you have the TI-30XIIS, it can be found under the PRB menu along with the factorial ( ) and permutation ( ) functions.   To return to the example at the top of this section, we can find the number of ways to award the three gift certificates by using the combination function on a calculator:        One key aspect of counting is to be able to distinguish between a permutation and a combination. The main point to consider is whether or not the order in which the items are selected matters. If the order matters, then we need to use permutations; if the order does not matter, we need to use combinations.    A class has total students.   The class must choose a president, vice president, secretary, and treasurer for the year. In how many ways can this be done?    The class must also choose four students to represent the class in the student council. In how many ways can this be done?          We need to choose four students, and the order makes a difference here because the roles of the students will be different (e.g., being president is different than being treasurer). This is a permutation, so the number of ways this can be done is:     In this case, the order in which the students are chosen does not matter; all four chosen students will serve the same role (namely, being a member of the student council). This is a combination, so the number of ways this can be done is:                  Sometimes combinations must be combined with the Fundamental Counting Principle to solve a problem! Here is an example of this!    The US Senate of a particular Congress consisted of Democrats, Republicans, and Independents. How many committees can be formed if each committee must have exactly Democrats and Republicans?    To answer this question, we need to break the problem down into three steps:   Determine the number of ways to choose the Democrats from the possible Democrats.    Determine the number of ways to choose the Republicans from the possible Republicans.    Use the numbers determined in the first two steps to count the total number of possible committees.     For steps 1 and 2, note that the order in which we choose the Democrats and Republicans does not matter; all we care about is the set of people chosen from each party. Since the order does not matter, the number of ways to choose Democrats from the total of Democrats is: and the number of ways to choose Republicans from the possible Republicans is:   Since we need to choose both the Democrats and the Republicans, we need to use the Fundamental Counting Principle to find the total number of possible committees. Thus, the number of committees is: Therefore, there are possible committees that can be formed.        "
+},
+{
+  "id": "handout-Combinations-2-2",
+  "level": "2",
+  "url": "handout-Combinations.html#handout-Combinations-2-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "NOT "
+},
+{
+  "id": "handout-Combinations-2-3",
+  "level": "2",
+  "url": "handout-Combinations.html#handout-Combinations-2-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "combination "
+},
+{
+  "id": "note-calculator-ncr",
+  "level": "2",
+  "url": "handout-Combinations.html#note-calculator-ncr",
+  "type": "Note",
+  "number": "5.46",
+  "title": "",
+  "body": " Your calculator will have a key to calculate the number of combinations directly. If you have the TI-30XIIS, it can be found under the PRB menu along with the factorial ( ) and permutation ( ) functions.  "
+},
+{
+  "id": "handout-Combinations-2-6",
+  "level": "2",
+  "url": "handout-Combinations.html#handout-Combinations-2-6",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "ex-permutation-vs-combination",
+  "level": "2",
+  "url": "handout-Combinations.html#ex-permutation-vs-combination",
+  "type": "Example",
+  "number": "5.47",
+  "title": "",
+  "body": "  A class has total students.   The class must choose a president, vice president, secretary, and treasurer for the year. In how many ways can this be done?    The class must also choose four students to represent the class in the student council. In how many ways can this be done?          We need to choose four students, and the order makes a difference here because the roles of the students will be different (e.g., being president is different than being treasurer). This is a permutation, so the number of ways this can be done is:     In this case, the order in which the students are chosen does not matter; all four chosen students will serve the same role (namely, being a member of the student council). This is a combination, so the number of ways this can be done is:       "
+},
+{
+  "id": "handout-Combinations-3-3",
+  "level": "2",
+  "url": "handout-Combinations.html#handout-Combinations-3-3",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Combinations-4-1",
+  "level": "2",
+  "url": "handout-Combinations.html#handout-Combinations-4-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "ex-senate-committees",
+  "level": "2",
+  "url": "handout-Combinations.html#ex-senate-committees",
+  "type": "Example",
+  "number": "5.48",
+  "title": "",
+  "body": "  The US Senate of a particular Congress consisted of Democrats, Republicans, and Independents. How many committees can be formed if each committee must have exactly Democrats and Republicans?    To answer this question, we need to break the problem down into three steps:   Determine the number of ways to choose the Democrats from the possible Democrats.    Determine the number of ways to choose the Republicans from the possible Republicans.    Use the numbers determined in the first two steps to count the total number of possible committees.     For steps 1 and 2, note that the order in which we choose the Democrats and Republicans does not matter; all we care about is the set of people chosen from each party. Since the order does not matter, the number of ways to choose Democrats from the total of Democrats is: and the number of ways to choose Republicans from the possible Republicans is:   Since we need to choose both the Democrats and the Republicans, we need to use the Fundamental Counting Principle to find the total number of possible committees. Thus, the number of committees is: Therefore, there are possible committees that can be formed.   "
+},
+{
+  "id": "handout-Combinations-5-3",
+  "level": "2",
+  "url": "handout-Combinations.html#handout-Combinations-5-3",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Prob",
+  "level": "1",
+  "url": "handout-Prob.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "13. Activity Probability with FCP, nPr, nCr",
+  "body": " 13. Activity Probability with FCP, nPr, nCr   We will turn our attention to combining the ideas of the past several units. Let us begin by recalling some of the main topics we have discussed:   The probability of an event is given by the formula:      Fundamental Counting Principle : When asked to choose items from different categories, we multiply together the number of options for each choice to determine the total number of possibilities.     Permutations are arrangements with no repetition and where the order matters. If all items need to be rearranged, the number of ways to do this is . If only of the items need to be rearranged, the number of ways to do this is .     Combinations are selections with no repetition where the order does NOT matter. The number of combinations involving out of items is .   We can use permutations and combinations to help us answer more complex probability questions.    Seven performers (A, B, C, D, E, F, and G) are to appear at a fundraiser. The order of performance is determined by random selection. Find the probability that:   E will perform second and B will perform last.    F or G will perform last.       First, note that since we are concerned with the order the performers will appear in, this example involves permutations. There are performers and all will appear, so the total number of performance orders in the sample space is:      We want to determine the number of performance orders in which E performs second and B performs last. This means there is only choice for the second performer (E) and only choice for the last performer (B): There are no restrictions on the remaining performers, so we can proceed by counting the number of possibilities for each remaining position. There are choices for the first performer (A, C, D, F, or G), then choices for the third performer, choices for the fourth performer, choices for the fifth performer, and finally only choice for the sixth performer: Thus, the number of favorable performance orders is: Putting this all together, the probability of a randomly selected performance order with E second and B last is:     We want to determine the number of performance orders in which F or G performs last. This means there are choices (F or G) for the final performer and no restrictions on the remaining ones: So, there would be choices for the first performer (any of the remaining performers), choices for the second performer, and so on. The number of such performance orders is: Thus, the probability is:             Here is an example involving permutations.    A 4-digit PIN is selected at random. What is the probability that there are no repeated digits?    There are possible values for each digit of the PIN (namely: ). Since repetition is allowed for a standard PIN, by the Fundamental Counting Principle there are total possible PINs of:   To have no repeated digits, all four digits must be different, which means selecting digits out of without replacement where order matters. The number of ways this can be done is a permutation:   The probability of no repeated digits is the number of 4-digit PINs with no repeated digits divided by the total number of 4-digit PINs. Thus,          Next, we look at some examples involving combinations.    Find the probability of randomly drawing five cards from a deck and getting exactly two Aces.    We first find the total number of ways to draw cards from a standard -card deck. Since the order in which the cards are drawn does not matter, this is a combination:   Next, we need to find the number of -card hands which have exactly two Aces. Note that such a hand also includes three cards which are not Aces. We need to select the Aces and non-Aces separately. There are Aces in the deck, so the number of ways to choose the two Aces is: There are non-Aces in the deck, so the number of ways to choose the three non-Aces is:   Since we must choose one of the sets of Aces and one of the sets of non-Aces in succession, the Fundamental Counting Principle tells us the total number of hands with exactly two Aces is:   Putting all of this together, the probability of getting a hand with exactly two Aces is:       A parent-teacher committee consisting of four people is to be selected from fifteen parents and five teachers. Find the probability of selecting two parents and two teachers.    We first find the total number of ways to select a committee of four people from the total group of people ( ). Since the order in which the people are selected does not matter, this is a combination:   Next, we need to find the number of four-person committees consisting of exactly two parents and two teachers. We first select the two parents from among the possible parents, and this can be done in: We then select the two teachers from among the possible teachers, and this can be done in:   We must choose both a pair of parents and a pair of teachers in succession, so by the Fundamental Counting Principle the number of committees consisting of two parents and two teachers is:   Therefore, the probability of selecting a committee with two parents and two teachers is:            "
+},
+{
+  "id": "handout-Prob-2-1",
+  "level": "2",
+  "url": "handout-Prob.html#handout-Prob-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Fundamental Counting Principle Permutations Combinations NOT "
+},
+{
+  "id": "ex-performer-prob",
+  "level": "2",
+  "url": "handout-Prob.html#ex-performer-prob",
+  "type": "Example",
+  "number": "5.49",
+  "title": "",
+  "body": "  Seven performers (A, B, C, D, E, F, and G) are to appear at a fundraiser. The order of performance is determined by random selection. Find the probability that:   E will perform second and B will perform last.    F or G will perform last.       First, note that since we are concerned with the order the performers will appear in, this example involves permutations. There are performers and all will appear, so the total number of performance orders in the sample space is:      We want to determine the number of performance orders in which E performs second and B performs last. This means there is only choice for the second performer (E) and only choice for the last performer (B): There are no restrictions on the remaining performers, so we can proceed by counting the number of possibilities for each remaining position. There are choices for the first performer (A, C, D, F, or G), then choices for the third performer, choices for the fourth performer, choices for the fifth performer, and finally only choice for the sixth performer: Thus, the number of favorable performance orders is: Putting this all together, the probability of a randomly selected performance order with E second and B last is:     We want to determine the number of performance orders in which F or G performs last. This means there are choices (F or G) for the final performer and no restrictions on the remaining ones: So, there would be choices for the first performer (any of the remaining performers), choices for the second performer, and so on. The number of such performance orders is: Thus, the probability is:       "
+},
+{
+  "id": "handout-Prob-2-3",
+  "level": "2",
+  "url": "handout-Prob.html#handout-Prob-2-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "ex-pin-no-repeats",
+  "level": "2",
+  "url": "handout-Prob.html#ex-pin-no-repeats",
+  "type": "Example",
+  "number": "5.50",
+  "title": "",
+  "body": "  A 4-digit PIN is selected at random. What is the probability that there are no repeated digits?    There are possible values for each digit of the PIN (namely: ). Since repetition is allowed for a standard PIN, by the Fundamental Counting Principle there are total possible PINs of:   To have no repeated digits, all four digits must be different, which means selecting digits out of without replacement where order matters. The number of ways this can be done is a permutation:   The probability of no repeated digits is the number of 4-digit PINs with no repeated digits divided by the total number of 4-digit PINs. Thus,    "
+},
+{
+  "id": "handout-Prob-3-3",
+  "level": "2",
+  "url": "handout-Prob.html#handout-Prob-3-3",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "ex-probability-two-aces",
+  "level": "2",
+  "url": "handout-Prob.html#ex-probability-two-aces",
+  "type": "Example",
+  "number": "5.51",
+  "title": "",
+  "body": "  Find the probability of randomly drawing five cards from a deck and getting exactly two Aces.    We first find the total number of ways to draw cards from a standard -card deck. Since the order in which the cards are drawn does not matter, this is a combination:   Next, we need to find the number of -card hands which have exactly two Aces. Note that such a hand also includes three cards which are not Aces. We need to select the Aces and non-Aces separately. There are Aces in the deck, so the number of ways to choose the two Aces is: There are non-Aces in the deck, so the number of ways to choose the three non-Aces is:   Since we must choose one of the sets of Aces and one of the sets of non-Aces in succession, the Fundamental Counting Principle tells us the total number of hands with exactly two Aces is:   Putting all of this together, the probability of getting a hand with exactly two Aces is:    "
+},
+{
+  "id": "ex-probability-committee",
+  "level": "2",
+  "url": "handout-Prob.html#ex-probability-committee",
+  "type": "Example",
+  "number": "5.52",
+  "title": "",
+  "body": "  A parent-teacher committee consisting of four people is to be selected from fifteen parents and five teachers. Find the probability of selecting two parents and two teachers.    We first find the total number of ways to select a committee of four people from the total group of people ( ). Since the order in which the people are selected does not matter, this is a combination:   Next, we need to find the number of four-person committees consisting of exactly two parents and two teachers. We first select the two parents from among the possible parents, and this can be done in: We then select the two teachers from among the possible teachers, and this can be done in:   We must choose both a pair of parents and a pair of teachers in succession, so by the Fundamental Counting Principle the number of committees consisting of two parents and two teachers is:   Therefore, the probability of selecting a committee with two parents and two teachers is:    "
+},
+{
+  "id": "handout-Prob-4-4",
+  "level": "2",
+  "url": "handout-Prob.html#handout-Prob-4-4",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Prob-4-5",
+  "level": "2",
+  "url": "handout-Prob.html#handout-Prob-4-5",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  "
+},
+{
   "id": "handout-voting-methods",
   "level": "1",
   "url": "handout-voting-methods.html",

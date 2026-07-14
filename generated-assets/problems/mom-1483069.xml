@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1483069">
+<statement>
+<p>
+The Senate Appropriations Committee consists of <m>\displaystyle{29}</m> total members, including <m>\displaystyle{15}</m> Republicans and <m>\displaystyle{14}</m> Democrats. The Defense Subcommittee must consist of <m>\displaystyle{19}</m> of these committee members, and it is decided that <m>\displaystyle{10}</m> should be Republicans and <m>\displaystyle{9}</m> should be
+Democrats. </p>
+<p>
+In how many ways can the <m>\displaystyle{10}</m> Republicans be chosen?</p>
+<p>
+<fillin characters="20"/></p>
+<p>
+In how many ways can the <m>\displaystyle{9}</m> Democrats be chosen?</p>
+<p>
+<fillin characters="20"/></p>
+<p>
+How many different ways can the Defense Subcommittee members be chosen from among the Appropriations Committee members?</p>
+<p>
+<fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>3003</li><li>2002</li><li>6012006</li></ul></p>
+</answer>
+
+</myopenmath>

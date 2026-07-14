@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1486858">
+<statement>
+<p>
+Find the probability of randomly drawing five cards from a deck and getting exactly three Aces and two Kings.</p>
+<p>
+Give your answer as a fraction, though it need not be reduced.</p>
+<p>
+<fillin characters="20"/>   
+</p>
+</statement>
+<answer>
+<p><ul><li><m>\displaystyle\frac{{24}}{{2598960}}</m></li></ul></p>
+</answer>
+
+</myopenmath>

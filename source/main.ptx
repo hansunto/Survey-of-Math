@@ -118,6 +118,9 @@
       <xi:include href="./activities/3-2-Act-Not-Or-Event.ptx"/>
       <xi:include href="./activities/3-3-Act-FCP.ptx" />
       <xi:include href="./activities/3-4-Act-Permutations.ptx" />
+      <xi:include href="./activities/3-5-Act-Combinations.ptx" />
+      <xi:include href="./activities/3-6-Act-Probability.ptx"/>
+
 
       
 

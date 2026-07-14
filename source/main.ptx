@@ -67,7 +67,7 @@
   <xi:include href="./notes/Probability.ptx" />
   <xi:include href="./notes/Probchex.ptx" />
 
-   </chapter>
+    </chapter>
 
    <chapter xml:id="ch-Intro-Statistics">
       <title>Introduction to Statistics</title>
@@ -94,30 +94,7 @@
       <xi:include href="./notes/zscores.ptx" />
       <xi:include href="./notes/Regression.ptx" />
       <xi:include href="./notes/Statchex.ptx" />
-    </chapter>    
-
-
-
-
-   <chapter xml:id="Hands-On-Sessions">
-      <title>Practical Application &amp; Hands-On Sessions</title>
-
-      <introduction>
-        <p>
-          These notes are intended strictly for a quick review of each chapter. 
-          They do not substitute for attending lectures or reading the assigned textbook. 
-                  </p>
-      </introduction>
-      <xi:include href="./handouts/handout-voting.ptx" />
-      <xi:include href="./handouts/handout-apportion.ptx" />
-      <xi:include href="./handouts/handout-finance.ptx"/>
-      <xi:include href="./handouts/handout-statistics.ptx" />
-      <!-- <xi:include href="./notes/finance.ptx"/> -->
-      <!--<xi:include href="./notes/unit01.ptx"/>
-      <xi:include href="./notes/week02.ptx"/>-->
-      <!-- etc. -->
-
-    </chapter>
+   </chapter>    
 
     <chapter xml:id="activities">
       <title>MyOpenMath Interactive Activities</title>
@@ -145,17 +122,37 @@
       
 
 
-
       <!--<xi:include href="./activities/01-intro-activity.ptx"/>-->
 
       <!-- Add more xi:include files here to include them in the main course -->
     </chapter>
 
-    <chapter xml:id="handouts">
-      <title>Handouts</title>
+   <chapter xml:id="Hands-On-Sessions">
+      <title>Practical Application &amp; Hands-On Sessions</title>
+
+      <introduction>
+        <p>
+          These notes are intended strictly for a quick review of each chapter. 
+          They do not substitute for attending lectures or reading the assigned textbook. 
+                  </p>
+      </introduction>
+      <xi:include href="./handouts/handout-voting.ptx" />
+      <xi:include href="./handouts/handout-apportion.ptx" />
+      <xi:include href="./handouts/handout-finance.ptx"/>
+      <xi:include href="handouts/handout-probability.ptx" />
+      <xi:include href="./handouts/handout-statistics.ptx" />
+      <!-- <xi:include href="./notes/finance.ptx"/> -->
+      <!--<xi:include href="./notes/unit01.ptx"/>
+      <xi:include href="./notes/week02.ptx"/>-->
+      <!-- etc. -->
+
+    </chapter>
+
+   <!-- <chapter xml:id="handouts">-->
+    <!-- <title>Handouts</title> -->
       <!-- Include handouts -->
       <!--<xi:include href="./handouts/handout-filename.ptx"/>-->
-    </chapter>
+   <!-- </chapter> -->
 
     <chapter xml:id="homework">
       <title>Homework</title>
@@ -168,12 +165,13 @@
     <!-- Include additional chapters for other categories -->
   
 
-  <chapter xml:id="course-documents">
-      <title>Course Documents</title>
+  <!--<chapter xml:id="course-documents">-->
+   <!-- <title>Course Documents</title>-->
 
       <!-- Course syllabus -->
-      <xi:include href="./syllabus/MA105BL.ptx" />
+      <!-- <xi:include href="./syllabus/MA105BL.ptx" />-->
       <!-- Other documents could go here, like a schedule, project description, etc. -->
-  </chapter>
-    </book>
-  </pretext>
+  <!--</chapter>-->
+    
+</book>
+</pretext>

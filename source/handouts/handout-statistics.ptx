@@ -1,41 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet xml:id="handout-Statistics" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Statistics Handout</title>
-    <introduction>
-         <p>
-          This handout provides an overview of different voting methods, including the plurality method, plurality-with-elimination method, Borda count method, and pairwise comparison method. 
-          It also includes exercises to practice applying these methods to election scenarios.
-        </p>
-         <p>
-          The handout is designed to help students understand the strengths and weaknesses of each voting method and how they can lead to different outcomes in elections. 
-          By working through the exercises, students will gain a deeper understanding of how these methods work and their implications for democratic decision-making.
-        </p>    
-          <p>
+  <title>5. Statistics Handout</title>
+
+<introduction>
+  <p>
+    This handout provides an overview of different data distributions through graphs, 
+    including z-scores and empirical methods.
+  </p>
+  <p>
+    The handout is designed to help students understand the strengths and weaknesses of the mean, 
+    median, and mode, and how they can lead to different outcomes in data analysis.
+    By working through the exercises, students will gain a deeper understanding of bell curves, 
+    normal distributions, and linear regression.
+  </p>
+   <p>
       <ul>
-        <li>
-          <title> Data through Graphs</title>
+        <li> <title> Data through Graphs</title>
             An introduction to interpreting and creating various types of graphs, such as bar graphs, histograms, pie charts, and scatter plots, to visualize data effectively.
         </li>
-        <li>
-          <title>Measures of Center and Spread </title>
+        <li> <title> Measures of Center and Spread </title>
            mean, median, mode, range, variance, and standard deviation are all measures that help us understand the central tendency and variability of a dataset.
         </li>
-        <li>
-          <title>The Empirical Rule</title>
+        <li> <title>The Empirical Rule</title>
           A rule that describes the distribution of data in a normal distribution, stating that approximately 68% of the data falls within one standard deviation of the mean, 95% within two standard deviations, and 99.7% within three standard deviations.
         </li>
-        <li>
-          <title>z-scores</title>
+        <li> <title>z-scores</title>
           Standardized scores that indicate how many standard deviations a data point is from the mean.
         </li>
-        <li>
-          <title>Regression</title>
+        <li> <title>Regression</title>
           A statistical method for modeling the relationship between a dependent variable and one or more independent variables, often used for prediction and understanding the strength of relationships between variables.
         </li>
       </ul>
     </p>
-      </introduction>
+</introduction>
 
   <p><strong>Exercises and Workspaces: Real-World Applications</strong></p>
 

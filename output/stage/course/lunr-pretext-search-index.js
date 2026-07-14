@@ -2935,240 +2935,6 @@ var ptx_lunr_docs = [
   "body": "  A store is doing inventory for one week to determine the popularity of a new product. The table below shows the number of items sold each day. Find the linear regression equation that models this data with the slope 8.66 and y-intercept 14.57, rounding coefficients to the nearest integer. Then, predict the number of items sold on the 10th day if the pattern of growth continues.   Weekly Product Inventory Tracking      Day Number ( )  Number Sold ( )   1 24  2 32  3 41  4 50  5 60  6 68  7 77       Step 1: Calculate the Regression Equation The linear regression equation is given by , where is the slope and is the y-intercept. Substituting the provided values, we have: Rounding the coefficients to the nearest integer gives us the simplified regression equation:    Step 2: Predict for Day 10 To estimate item performance on the tenth day, we evaluate our regression equation at : Rounding to the nearest whole item integer yields a final estimate of 105 items sold.   Linear Regression Mapping Weekly Product Growth   A scatter plot displaying a week of product sales velocity on a Cartesian plane. The horizontal axis charts the Day Number from 0 to 12, while the vertical axis registers the Number of Items Sold from 0 to 120. Seven blue coordinate markings move cleanly in an upward trajectory from day 1 to day 7. A straight red line begins at a baseline y-intercept of 14 and projects smoothly upward through the points, where a green marker target highlights the exact projection point for Day 10 at coordinate location (10, 103).      "
 },
 {
-  "id": "handout-voting-methods",
-  "level": "1",
-  "url": "handout-voting-methods.html",
-  "type": "Worksheet",
-  "number": "",
-  "title": "Voting Methods Handout",
-  "body": " Voting Methods Handout  This handout outlines the core procedural rules, calculation steps, and the four primary preference-ballot voting methods:      The Plurality Method Selecting the candidate who receives the most first-place votes, regardless of whether they achieve a strict majority.   The Plurality-with-Elimination Method An iterative process where the candidate with the fewest first-place votes is eliminated, and their ballots are redistributed, continuing until a candidate achieves a true majority.   The Borda Count Method A point-based system where points are assigned to each ranking position on a ballot, and the candidate with the highest total points across all ballots wins.   The Pairwise Comparison Method A head-to-head match-up approach where every candidate is compared one-on-one against every other candidate to see who wins the most direct duels, identifying a Condorcet candidate if one exists.     Exercises and Workspaces      Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the plurality method?    Number of Votes  52  45  13  9  4    First choice  D  F  J  F  H    Second choice  F  J  F  J  J    Third choice  H  H  H  D  D    Fourth choice  J  D  D  H  F      First-choice totals are D = 52, F = 54, J = 13, and H = 4. The winner by the plurality method is F .         Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the plurality-with-elimination method?    Number of Votes  52  45  13  9  4    First choice  D  F  J  F  H    Second choice  F  J  F  J  J    Third choice  H  H  H  D  D    Fourth choice  J  D  D  H  F      Eliminate H first (4 votes), which transfers to J, giving J 17 votes. Then eliminate J; all 17 J ballots transfer to F. Final totals are D = 52 and F = 71, so the plurality-with-elimination winner is F .         Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the Borda count method?    Number of Votes  52  45  13  9  4    First choice  D  F  J  F  H    Second choice  F  J  F  J  J    Third choice  H  H  H  D  D    Fourth choice  J  D  D  H  F      Using Borda scores 3-2-1-0, the totals are D = 169, F = 292, J = 155, and H = 122. The Borda count winner is F .         Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the pairwise comparison method? Is there a Condorcet winner?    Number of Votes  52  45  13  9  4    First choice  D  F  J  F  H    Second choice  F  J  F  J  J    Third choice  H  H  H  D  D    Fourth choice  J  D  D  H  F      In head-to-head matchups, F beats D, F beats J, and F beats H. Candidate F wins every pairwise comparison and is the Condorcet winner.         Four professors are running for president of the League of Innovation: Doug (D), Francis (F), Gallagher (G), and Smith (S). The votes of the members in the League of Innovation are summarized in the preference table below.    Number of Votes  30  22  18  10  2    First Choice  F  G  S  D  G    Second Choice  D  D  G  S  S    Third Choice  G  S  D  G  D    Fourth Choice  S  F  F  F  F     How many members voted in this election?  Using the plurality method, who becomes the new president?  Using the plurality-with-elimination method, who becomes the new president?  Using the Borda count method, who becomes the new president?  Using the pairwise comparison method, who becomes the new president?     Total votes = 82. Plurality totals are F = 30, G = 24, S = 18, and D = 10, so F wins by plurality.  For plurality-with-elimination, D is eliminated first and its 10 votes transfer to S, then G is eliminated and its votes transfer to S, giving S the win.  Using Borda scores 3-2-1-0, the totals are D = 154, G = 148, S = 100, and F = 90. The Borda winner is D .  In pairwise comparison, G beats D, G beats F, and G beats S, so the pairwise winner is G .     "
-},
-{
-  "id": "ws-ex-plurality",
-  "level": "2",
-  "url": "handout-voting-methods.html#ws-ex-plurality",
-  "type": "Worksheet Exercise",
-  "number": "1",
-  "title": "",
-  "body": "  Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the plurality method?    Number of Votes  52  45  13  9  4    First choice  D  F  J  F  H    Second choice  F  J  F  J  J    Third choice  H  H  H  D  D    Fourth choice  J  D  D  H  F      First-choice totals are D = 52, F = 54, J = 13, and H = 4. The winner by the plurality method is F .   "
-},
-{
-  "id": "ws-ex-elimination",
-  "level": "2",
-  "url": "handout-voting-methods.html#ws-ex-elimination",
-  "type": "Worksheet Exercise",
-  "number": "2",
-  "title": "",
-  "body": "  Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the plurality-with-elimination method?    Number of Votes  52  45  13  9  4    First choice  D  F  J  F  H    Second choice  F  J  F  J  J    Third choice  H  H  H  D  D    Fourth choice  J  D  D  H  F      Eliminate H first (4 votes), which transfers to J, giving J 17 votes. Then eliminate J; all 17 J ballots transfer to F. Final totals are D = 52 and F = 71, so the plurality-with-elimination winner is F .   "
-},
-{
-  "id": "ws-ex-borda",
-  "level": "2",
-  "url": "handout-voting-methods.html#ws-ex-borda",
-  "type": "Worksheet Exercise",
-  "number": "3",
-  "title": "",
-  "body": "  Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the Borda count method?    Number of Votes  52  45  13  9  4    First choice  D  F  J  F  H    Second choice  F  J  F  J  J    Third choice  H  H  H  D  D    Fourth choice  J  D  D  H  F      Using Borda scores 3-2-1-0, the totals are D = 169, F = 292, J = 155, and H = 122. The Borda count winner is F .   "
-},
-{
-  "id": "ws-ex-pairwise",
-  "level": "2",
-  "url": "handout-voting-methods.html#ws-ex-pairwise",
-  "type": "Worksheet Exercise",
-  "number": "4",
-  "title": "",
-  "body": "  Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the pairwise comparison method? Is there a Condorcet winner?    Number of Votes  52  45  13  9  4    First choice  D  F  J  F  H    Second choice  F  J  F  J  J    Third choice  H  H  H  D  D    Fourth choice  J  D  D  H  F      In head-to-head matchups, F beats D, F beats J, and F beats H. Candidate F wins every pairwise comparison and is the Condorcet winner.   "
-},
-{
-  "id": "ws-ex-professors-election",
-  "level": "2",
-  "url": "handout-voting-methods.html#ws-ex-professors-election",
-  "type": "Worksheet Exercise",
-  "number": "5",
-  "title": "",
-  "body": "  Four professors are running for president of the League of Innovation: Doug (D), Francis (F), Gallagher (G), and Smith (S). The votes of the members in the League of Innovation are summarized in the preference table below.    Number of Votes  30  22  18  10  2    First Choice  F  G  S  D  G    Second Choice  D  D  G  S  S    Third Choice  G  S  D  G  D    Fourth Choice  S  F  F  F  F     How many members voted in this election?  Using the plurality method, who becomes the new president?  Using the plurality-with-elimination method, who becomes the new president?  Using the Borda count method, who becomes the new president?  Using the pairwise comparison method, who becomes the new president?     Total votes = 82. Plurality totals are F = 30, G = 24, S = 18, and D = 10, so F wins by plurality.  For plurality-with-elimination, D is eliminated first and its 10 votes transfer to S, then G is eliminated and its votes transfer to S, giving S the win.  Using Borda scores 3-2-1-0, the totals are D = 154, G = 148, S = 100, and F = 90. The Borda winner is D .  In pairwise comparison, G beats D, G beats F, and G beats S, so the pairwise winner is G .   "
-},
-{
-  "id": "handout-apportionment",
-  "level": "1",
-  "url": "handout-apportionment.html",
-  "type": "Worksheet",
-  "number": "",
-  "title": "Apportionment Handout",
-  "body": " Apportionment Handout   This handout covers the core metrics and sequential steps for the major historic apportionment methods:    Calculating the Standard Divisor, Standard Quotas, Lower Quotas, and Upper Quotas.   Hamilton's Method Assigning initial seats using the Lower Quota, then distributing surplus seats based on the largest fractional remainders.   Jefferson's Method Finding a Modified Divisor that alters the quotas so that the sum of the Lower Quotas exactly matches the total seats.   Adams's Method Finding a Modified Divisor that alters the quotas so that the sum of the Upper Quotas exactly matches the total seats.     Exercises and Workspaces      A hospital has a nursing staff of 250 nurses working in four shifts:  Shift A: 7:00 A.M. to 1:00 P.M.   Shift B: 1:00 P.M. to 7:00 P.M.   Shift C: 7:00 P.M. to 1:00 A.M.   Shift D: 1:00 A.M. to 7:00 A.M.   The number of nurses apportioned to each shift is based on the average number of patients per shift, given in the table below. Use Hamilton's method to apportion the 250 nurses among the shifts at the hospital.   Average Number of Patients per Shift        Shift  A  B  C  D    Average Patients  453  650  547  350      To complete the apportionment using Hamilton's method, we follow these sequential calculation steps:      Find the Total Population: Sum the average number of patients across all shifts.      Calculate the Standard Divisor ( ): Divide the total population by the total number of items (250 nurses) to be allocated.      Find Standard and Lower Quotas: Divide each shift's patient count by the Standard Divisor ( ). The Lower Quota is found by rounding down to the nearest whole integer.  Shift A:  (Lower Quota = 56)  Shift B:  (Lower Quota = 81)  Shift C:  (Lower Quota = 68)  Shift D:  (Lower Quota = 43)       Distribute Surplus Items: Summing the lower quotas gives nurses. Since we must allocate 250 nurses, there is a surplus of nurses. Hamilton's method gives these surplus spots to the shifts with the largest fractional remainder parts:  Shift D has the largest remainder ( ) and receives nurse.  Shift A has the second-largest remainder ( ) and receives nurse.       The complete apportionment layout is summarized below:   Hamilton's Method Apportionment Results (Transposed)         Metric \/ Step  Shift A  Shift B  Shift C  Shift D  Total    Patients  453  650  547  350  2000    Standard Quota  56.625  81.250  68.375  43.750  -    Lower Quota  56  81  68  43  248    Surplus Added  +1  0  0  +1  +2    Final Apportionment  57  81  68  44  250           A hospital has a nursing staff of 250 nurses working in four shifts. The number of nurses apportioned to each shift is based on the average number of patients per shift, given in the table below. Use Jefferson's method to apportion the 250 nurses among the shifts at the hospital.   Average Number of Patients per Shift        Shift  A  B  C  D    Average Patients  453  650  547  350      To complete the apportionment using Jefferson's method, we apply a modified divisor so that the sum of the lower quotas exactly equals the required total.      Find Total Population and Standard Divisor ( ):        Test the Standard Divisor: Dividing each population by and rounding down gives lower quotas of and . The sum of these initial lower quotas is . This falls short of the nurses needed.     Determine a Modified Divisor ( ): Because our initial sum is too small, Jefferson's method requires us to choose a smaller divisor to increase the individual quotas. Testing a modified divisor of shifts the lower quotas upward to exactly equal .     The complete apportionment computations under Jefferson's method are detailed below:   Jefferson's Method Apportionment Results (Modified Divisor: 7.93)          Metric \/ Step  Shift A  Shift B  Shift C  Shift D  Total     Patients  453  650  547  350  2000     Standard Quota (d = 8)  56.625  81.250  68.375  43.750  —     Initial Lower Quota  56  81  68  43  248     Modified Quota (dm = 7.93)  57.125  81.967  68.979  44.136  —     Final Apportionment  57  81  68  44  250           A hospital has a nursing staff of 250 nurses working in four shifts. The number of nurses apportioned to each shift is based on the average number of patients per shift, given in the table below. Use Adams's method to apportion the 250 nurses among the shifts at the hospital.   Average Number of Patients per Shift        Shift  A  B  C  D    Average Patients  453  650  547  350      To complete the apportionment using Adams's method, we apply a modified divisor so that the sum of the upper quotas (rounded up) exactly equals the required total.      Find Total Population and Standard Divisor ( ):        Test the Standard Divisor: Dividing each population by and rounding up to the next highest integer gives upper quotas of and . The sum of these initial upper quotas is . This exceeds the target of nurses.     Determine a Modified Divisor ( ): Because our initial sum is too large, Adams's method requires us to choose a larger divisor to decrease the individual quotas. Testing a modified divisor of shifts the upper quotas downward to exactly equal .     The complete apportionment calculations under Adams's method are organized in the accessible data layout below:   Adams's Method Apportionment Results (Modified Divisor: 8.07)         Metric \/ Step  Shift A  Shift B  Shift C  Shift D  Total    Patients  453  650  547  350  2000    Standard Quota ( )  56.625  81.250  68.375  43.750  —    Initial Upper Quota  57  82  69  44  252    Modified Quota ( )  56.134  80.545  67.782  43.371  —    Final Apportionment  57  81  68  44  250           The police department in a large city has 180 new officers to be apportioned among 6 high-crime precincts. The total number of recorded crimes for each respective precinct is documented in the data profile below.   Recorded Crimes by Police Precinct          Precinct  A  B  C  D  E  F    Crimes  446  526  835  227  338  456        Use Hamilton's method to apportion the new officers among the precincts.     1. Identify Metrics: Total crimes population equals . The Standard Divisor is:    2. Distribute Remainders: Summing the lower whole quotas gives allocations, leaving a surplus of seats. Hamilton's method awards these seats to the largest fractional remainders: Precinct B ( ) and Precinct E ( ).   Hamilton's Method Apportionment Results       Metric \/ Step  A  B  C  D  E  F  Total    Crimes  446  526  835  227  338  456  2828    Standard Quota  28.388  33.479  53.147  14.448  21.513  29.024  —    Lower Quota  28  33  53  14  21  29  178    Surplus Added  0  +1  0  0  +1  0  +2    Final Apportionment  28  34  53  14  22  29  180         Use Jefferson's method to apportion the new officers among the precincts.    Because the initial lower quota sum ( ) is too small, Jefferson's method requires modifying the divisor downward to raise the quotas. Choosing a smaller modified divisor of shifts the lower whole quotas up to hit the targeted total allocation sum of exactly .   Jefferson's Method Apportionment Results (Modified Divisor: 15.46)       Metric \/ Step  A  B  C  D  E  F  Total    Crimes  446  526  835  227  338  456  2828    Modified Quota  28.849  34.023  54.010  14.683  21.863  29.495  —    Final Apportionment  28  34  54  14  21  29  180         Use Adams's method to apportion the new officers among the precincts.    Testing the standard upper quotas (rounding fractions up) gives a sum of , which exceeds the 180 seats. Adams's method resolves this by increasing the divisor. Choosing a larger modified divisor of pushes the quotas downward so that their rounded-up total sums exactly to .   Adams's Method Apportionment Results (Modified Divisor: 15.94)       Metric \/ Step  A  B  C  D  E  F  Total    Crimes  446  526  835  227  338  456  2828    Modified Quota  27.980  32.999  52.384  14.241  21.205  28.607  —    Final Apportionment  28  33  53  15  22  29  180        "
-},
-{
-  "id": "handout-apportionment-4-1",
-  "level": "2",
-  "url": "handout-apportionment.html#handout-apportionment-4-1",
-  "type": "Worksheet Exercise",
-  "number": "1",
-  "title": "",
-  "body": "  A hospital has a nursing staff of 250 nurses working in four shifts:  Shift A: 7:00 A.M. to 1:00 P.M.   Shift B: 1:00 P.M. to 7:00 P.M.   Shift C: 7:00 P.M. to 1:00 A.M.   Shift D: 1:00 A.M. to 7:00 A.M.   The number of nurses apportioned to each shift is based on the average number of patients per shift, given in the table below. Use Hamilton's method to apportion the 250 nurses among the shifts at the hospital.   Average Number of Patients per Shift        Shift  A  B  C  D    Average Patients  453  650  547  350      To complete the apportionment using Hamilton's method, we follow these sequential calculation steps:      Find the Total Population: Sum the average number of patients across all shifts.      Calculate the Standard Divisor ( ): Divide the total population by the total number of items (250 nurses) to be allocated.      Find Standard and Lower Quotas: Divide each shift's patient count by the Standard Divisor ( ). The Lower Quota is found by rounding down to the nearest whole integer.  Shift A:  (Lower Quota = 56)  Shift B:  (Lower Quota = 81)  Shift C:  (Lower Quota = 68)  Shift D:  (Lower Quota = 43)       Distribute Surplus Items: Summing the lower quotas gives nurses. Since we must allocate 250 nurses, there is a surplus of nurses. Hamilton's method gives these surplus spots to the shifts with the largest fractional remainder parts:  Shift D has the largest remainder ( ) and receives nurse.  Shift A has the second-largest remainder ( ) and receives nurse.       The complete apportionment layout is summarized below:   Hamilton's Method Apportionment Results (Transposed)         Metric \/ Step  Shift A  Shift B  Shift C  Shift D  Total    Patients  453  650  547  350  2000    Standard Quota  56.625  81.250  68.375  43.750  -    Lower Quota  56  81  68  43  248    Surplus Added  +1  0  0  +1  +2    Final Apportionment  57  81  68  44  250     "
-},
-{
-  "id": "handout-apportionment-5-1",
-  "level": "2",
-  "url": "handout-apportionment.html#handout-apportionment-5-1",
-  "type": "Worksheet Exercise",
-  "number": "2",
-  "title": "",
-  "body": "  A hospital has a nursing staff of 250 nurses working in four shifts. The number of nurses apportioned to each shift is based on the average number of patients per shift, given in the table below. Use Jefferson's method to apportion the 250 nurses among the shifts at the hospital.   Average Number of Patients per Shift        Shift  A  B  C  D    Average Patients  453  650  547  350      To complete the apportionment using Jefferson's method, we apply a modified divisor so that the sum of the lower quotas exactly equals the required total.      Find Total Population and Standard Divisor ( ):        Test the Standard Divisor: Dividing each population by and rounding down gives lower quotas of and . The sum of these initial lower quotas is . This falls short of the nurses needed.     Determine a Modified Divisor ( ): Because our initial sum is too small, Jefferson's method requires us to choose a smaller divisor to increase the individual quotas. Testing a modified divisor of shifts the lower quotas upward to exactly equal .     The complete apportionment computations under Jefferson's method are detailed below:   Jefferson's Method Apportionment Results (Modified Divisor: 7.93)          Metric \/ Step  Shift A  Shift B  Shift C  Shift D  Total     Patients  453  650  547  350  2000     Standard Quota (d = 8)  56.625  81.250  68.375  43.750  —     Initial Lower Quota  56  81  68  43  248     Modified Quota (dm = 7.93)  57.125  81.967  68.979  44.136  —     Final Apportionment  57  81  68  44  250     "
-},
-{
-  "id": "handout-apportionment-6-1",
-  "level": "2",
-  "url": "handout-apportionment.html#handout-apportionment-6-1",
-  "type": "Worksheet Exercise",
-  "number": "3",
-  "title": "",
-  "body": "  A hospital has a nursing staff of 250 nurses working in four shifts. The number of nurses apportioned to each shift is based on the average number of patients per shift, given in the table below. Use Adams's method to apportion the 250 nurses among the shifts at the hospital.   Average Number of Patients per Shift        Shift  A  B  C  D    Average Patients  453  650  547  350      To complete the apportionment using Adams's method, we apply a modified divisor so that the sum of the upper quotas (rounded up) exactly equals the required total.      Find Total Population and Standard Divisor ( ):        Test the Standard Divisor: Dividing each population by and rounding up to the next highest integer gives upper quotas of and . The sum of these initial upper quotas is . This exceeds the target of nurses.     Determine a Modified Divisor ( ): Because our initial sum is too large, Adams's method requires us to choose a larger divisor to decrease the individual quotas. Testing a modified divisor of shifts the upper quotas downward to exactly equal .     The complete apportionment calculations under Adams's method are organized in the accessible data layout below:   Adams's Method Apportionment Results (Modified Divisor: 8.07)         Metric \/ Step  Shift A  Shift B  Shift C  Shift D  Total    Patients  453  650  547  350  2000    Standard Quota ( )  56.625  81.250  68.375  43.750  —    Initial Upper Quota  57  82  69  44  252    Modified Quota ( )  56.134  80.545  67.782  43.371  —    Final Apportionment  57  81  68  44  250     "
-},
-{
-  "id": "handout-apportionment-7-1",
-  "level": "2",
-  "url": "handout-apportionment.html#handout-apportionment-7-1",
-  "type": "Worksheet Exercise",
-  "number": "4",
-  "title": "",
-  "body": "  The police department in a large city has 180 new officers to be apportioned among 6 high-crime precincts. The total number of recorded crimes for each respective precinct is documented in the data profile below.   Recorded Crimes by Police Precinct          Precinct  A  B  C  D  E  F    Crimes  446  526  835  227  338  456        Use Hamilton's method to apportion the new officers among the precincts.     1. Identify Metrics: Total crimes population equals . The Standard Divisor is:    2. Distribute Remainders: Summing the lower whole quotas gives allocations, leaving a surplus of seats. Hamilton's method awards these seats to the largest fractional remainders: Precinct B ( ) and Precinct E ( ).   Hamilton's Method Apportionment Results       Metric \/ Step  A  B  C  D  E  F  Total    Crimes  446  526  835  227  338  456  2828    Standard Quota  28.388  33.479  53.147  14.448  21.513  29.024  —    Lower Quota  28  33  53  14  21  29  178    Surplus Added  0  +1  0  0  +1  0  +2    Final Apportionment  28  34  53  14  22  29  180         Use Jefferson's method to apportion the new officers among the precincts.    Because the initial lower quota sum ( ) is too small, Jefferson's method requires modifying the divisor downward to raise the quotas. Choosing a smaller modified divisor of shifts the lower whole quotas up to hit the targeted total allocation sum of exactly .   Jefferson's Method Apportionment Results (Modified Divisor: 15.46)       Metric \/ Step  A  B  C  D  E  F  Total    Crimes  446  526  835  227  338  456  2828    Modified Quota  28.849  34.023  54.010  14.683  21.863  29.495  —    Final Apportionment  28  34  54  14  21  29  180         Use Adams's method to apportion the new officers among the precincts.    Testing the standard upper quotas (rounding fractions up) gives a sum of , which exceeds the 180 seats. Adams's method resolves this by increasing the divisor. Choosing a larger modified divisor of pushes the quotas downward so that their rounded-up total sums exactly to .   Adams's Method Apportionment Results (Modified Divisor: 15.94)       Metric \/ Step  A  B  C  D  E  F  Total    Crimes  446  526  835  227  338  456  2828    Modified Quota  27.980  32.999  52.384  14.241  21.205  28.607  —    Final Apportionment  28  33  53  15  22  29  180      "
-},
-{
-  "id": "handout-finance",
-  "level": "1",
-  "url": "handout-finance.html",
-  "type": "Worksheet",
-  "number": "",
-  "title": "Personal Finance Handout",
-  "body": " Personal Finance Handout   This handout covers essential mathematical principles for evaluating individual savings, annuities, and debt management strategies:     Basic Interest Calculations Computing and comparing simple interest and compound interest models over various compounding periods.   Savings and Annuities Analyzing regular deposit schedules, future value growth patterns, and long-term retirement accounts.   Loans and Spendings Evaluating fixed-rate installment loans, calculating monthly amortization values, and managing large debts including home mortgages.     Exercises and Workspaces      In order to pay for baseball uniforms, a school takes out a simple interest loan for $20,000 for 7 months at a rate of 12%. Find the future value of the loan.    To find the future value of a loan using a simple interest model, we extract our known variables and evaluate using the linear simple interest equation.   Identify Given Variables:   Principal ( ):   Annual Interest Rate ( ):   Time ( ):      Step-by-Step Calculation:     Calculate Accumulated Interest ( ): Multiply Principal by Rate by Time.   The total accumulated interest generated over the 7 months is .     Calculate Future Value ( ): Sum the initial principal amount and the newly accumulated interest.       The final future value of the loan at maturity is .         What is the amount of the deposit needed if your financial goal is to save $24,000 in 3 years with a rate of 7.5% compounded semiannually ?    To find the initial deposit (present value) required to meet a future financial goal with compound interest, we rearrange the compound interest formula to solve for the principal .   Identify Given Variables:   Future Value Goal ( ):   Annual Interest Rate ( ):   Compounding Periods per Year ( ):  (semiannually)  Time ( ):      Step-by-Step Calculation:     State the Present Value Formula:       Substitute the Values: Find the interest rate per period ( ) and total number of compounding periods ( ).        Evaluate the Denominator:        Calculate the Final Principal Amount: Divide the future goal by the compounding factor and round to the nearest cent.      The initial deposit amount needed to meet your financial goal is .         Your sister has her first child and you decide to open an annuity for your baby nephew. You deposit $30 at the end of each month into an annuity that returns 2.5% annual interest.      How much will your nephew have in his annuity when he goes off to college (18 years from now)?    To find the future value of regular monthly contributions, we evaluate using the future value formula for an ordinary annuity.   Identify Given Variables:   Monthly Payment ( ):   Annual Interest Rate ( ):   Compounding Periods per Year ( ):  (monthly)  Time ( ):      Step-by-Step Calculation:     State the Annuity Future Value Formula:       Calculate Intermediate Terms: Find the monthly interest rate and the total number of deposits.       Substitute and Evaluate:           When your nephew leaves for college, the account will have accumulated .       How much interest was earned?    To determine total interest earned, we calculate your total out-of-pocket contributions over the 18 years and subtract that value from the accumulated future value.   Step-by-Step Calculation:     Calculate Total Out-of-Pocket Deposits: Multiply the monthly payment by the total number of compound periods over 18 years.  The sum of all out-of-pocket deposits is .     Calculate Total Interest Earned: Subtract total out-of-pocket deposits from the accumulated future value found in Task 1.       The total interest earned by the annuity is .          The purchase cost of a Camry is $32,500. This vehicle can be financed by providing a $3,000 down payment and committing to monthly installment payments of $680.25 per month for 60 months.      Determine the amount financed.    The amount financed is the remaining vehicle balance that must be covered by a loan after subtracting the initial down payment from the base purchase price.      The base amount financed through the loan is .       Determine the total installment charge (total installment price).    The total installment price represents the absolute total cost of buying the car over time, found by adding the down payment to the sum of all monthly payments.   Step-by-Step Calculation:     Calculate Total Monthly Deferred Payments: Multiply the monthly commitment by the total number of payments. The sum of all monthly installments across 60 months is .     Calculate Total Out-of-Pocket Cost: Combine the monthly payments with the initial down payment.       The total installment cost for purchasing the vehicle is .       Determine the finance charge.    The finance charge represents the total interest paid for borrowing money, calculated by finding the difference between the total installment price and the original cash purchase cost.      The absolute cost of borrowing (total interest expense) is .          A new fax machine costs Worcester State University $2,670. They are to pay it off in 18 months at a 9% simple interest rate .      What will each monthly payment be?    To find the monthly installment value, we first compute the total future value of the loan (principal plus interest) and then divide it equally by the total number of payments.   Identify Given Variables:   Principal ( ):   Annual Interest Rate ( ):   Loan Term ( ):      Step-by-Step Calculation:     Calculate Total Accumulated Interest ( ):    The total interest accrued on the equipment purchase is .     Calculate Total Future Value Balance ( ): Combine the principal cost and interest.  The total amount to be repaid over the loan lifespan is .     Calculate Periodic Installment Payment ( ): Divide total future value by the 18 months.       Rounding to the nearest cent, each sequential monthly payment will be .       How much interest will they pay on the loan?    The absolute cost of credit (total interest expense) was calculated directly in step 1 using the simple interest formula:      Worcester State University will pay a total interest amount of over the lifespan of the financing agreement.          Congratulations! You purchase a sprawling home for $1,000,000. You make a 15% down payment and agree to a 4.5% interest rate for a 30-year fixed-rate mortgage. You are also required to pay 3 points at closing.      What is the amount of your loan?    The loan amount is determined by finding the cash value of the down payment and subtracting it from the total purchase price of the home.   Step-by-Step Calculation:     Calculate the Down Payment: Multiply the purchase price by the down payment percentage. The upfront cash down payment is .     Calculate the Principal Mortgage Amount ( ): Subtract the down payment from the total home cost.      The total principal amount of your mortgage loan is .       You paid 3 points at the closing. How much did you pay?    In real estate finance, 1 point is equal to 1% of the total amount borrowed (the mortgage loan principal), not the purchase price of the home.      The total amount paid for 3 points at closing is .       What is your monthly mortgage payment?    To determine the regular monthly installment cost, we apply the standard fixed-rate loan amortization formula.   Identify Given Variables:   Mortgage Loan Principal ( ):   Annual Interest Rate ( ):   Compounding Periods per Year ( ):  (monthly)  Total Time ( ):      Step-by-Step Calculation:     State the Installment Formula:       Evaluate the Numerator: Find the periodic monthly rate.      Evaluate the Denominator: Calculate the monthly compounding base over the lifetime total of 360 payments ( ).        Solve for PMT: Divide the numerator by the denominator.      Your base monthly mortgage payment is .       How much are you charged over the course of the mortgage loan, in interest?    The total interest expense is determined by adding up all monthly payments made over 30 years and subtracting the original amount borrowed.   Step-by-Step Calculation:     Calculate Total Lifetime Payments: Multiply the monthly payment by 360 total months. The aggregate amount paid back to the lender over 30 years is .     Subtract the Initial Principal Balance:        The total interest charged over the standard lifespan of the loan is .      "
-},
-{
-  "id": "handout-finance-4-1",
-  "level": "2",
-  "url": "handout-finance.html#handout-finance-4-1",
-  "type": "Worksheet Exercise",
-  "number": "1",
-  "title": "",
-  "body": "  In order to pay for baseball uniforms, a school takes out a simple interest loan for $20,000 for 7 months at a rate of 12%. Find the future value of the loan.    To find the future value of a loan using a simple interest model, we extract our known variables and evaluate using the linear simple interest equation.   Identify Given Variables:   Principal ( ):   Annual Interest Rate ( ):   Time ( ):      Step-by-Step Calculation:     Calculate Accumulated Interest ( ): Multiply Principal by Rate by Time.   The total accumulated interest generated over the 7 months is .     Calculate Future Value ( ): Sum the initial principal amount and the newly accumulated interest.       The final future value of the loan at maturity is .   "
-},
-{
-  "id": "handout-finance-5-1",
-  "level": "2",
-  "url": "handout-finance.html#handout-finance-5-1",
-  "type": "Worksheet Exercise",
-  "number": "2",
-  "title": "",
-  "body": "  What is the amount of the deposit needed if your financial goal is to save $24,000 in 3 years with a rate of 7.5% compounded semiannually ?    To find the initial deposit (present value) required to meet a future financial goal with compound interest, we rearrange the compound interest formula to solve for the principal .   Identify Given Variables:   Future Value Goal ( ):   Annual Interest Rate ( ):   Compounding Periods per Year ( ):  (semiannually)  Time ( ):      Step-by-Step Calculation:     State the Present Value Formula:       Substitute the Values: Find the interest rate per period ( ) and total number of compounding periods ( ).        Evaluate the Denominator:        Calculate the Final Principal Amount: Divide the future goal by the compounding factor and round to the nearest cent.      The initial deposit amount needed to meet your financial goal is .   "
-},
-{
-  "id": "handout-finance-6-1",
-  "level": "2",
-  "url": "handout-finance.html#handout-finance-6-1",
-  "type": "Worksheet Exercise",
-  "number": "3",
-  "title": "",
-  "body": "  Your sister has her first child and you decide to open an annuity for your baby nephew. You deposit $30 at the end of each month into an annuity that returns 2.5% annual interest.      How much will your nephew have in his annuity when he goes off to college (18 years from now)?    To find the future value of regular monthly contributions, we evaluate using the future value formula for an ordinary annuity.   Identify Given Variables:   Monthly Payment ( ):   Annual Interest Rate ( ):   Compounding Periods per Year ( ):  (monthly)  Time ( ):      Step-by-Step Calculation:     State the Annuity Future Value Formula:       Calculate Intermediate Terms: Find the monthly interest rate and the total number of deposits.       Substitute and Evaluate:           When your nephew leaves for college, the account will have accumulated .       How much interest was earned?    To determine total interest earned, we calculate your total out-of-pocket contributions over the 18 years and subtract that value from the accumulated future value.   Step-by-Step Calculation:     Calculate Total Out-of-Pocket Deposits: Multiply the monthly payment by the total number of compound periods over 18 years.  The sum of all out-of-pocket deposits is .     Calculate Total Interest Earned: Subtract total out-of-pocket deposits from the accumulated future value found in Task 1.       The total interest earned by the annuity is .    "
-},
-{
-  "id": "handout-finance-7-1",
-  "level": "2",
-  "url": "handout-finance.html#handout-finance-7-1",
-  "type": "Worksheet Exercise",
-  "number": "4",
-  "title": "",
-  "body": "  The purchase cost of a Camry is $32,500. This vehicle can be financed by providing a $3,000 down payment and committing to monthly installment payments of $680.25 per month for 60 months.      Determine the amount financed.    The amount financed is the remaining vehicle balance that must be covered by a loan after subtracting the initial down payment from the base purchase price.      The base amount financed through the loan is .       Determine the total installment charge (total installment price).    The total installment price represents the absolute total cost of buying the car over time, found by adding the down payment to the sum of all monthly payments.   Step-by-Step Calculation:     Calculate Total Monthly Deferred Payments: Multiply the monthly commitment by the total number of payments. The sum of all monthly installments across 60 months is .     Calculate Total Out-of-Pocket Cost: Combine the monthly payments with the initial down payment.       The total installment cost for purchasing the vehicle is .       Determine the finance charge.    The finance charge represents the total interest paid for borrowing money, calculated by finding the difference between the total installment price and the original cash purchase cost.      The absolute cost of borrowing (total interest expense) is .    "
-},
-{
-  "id": "handout-finance-8-1",
-  "level": "2",
-  "url": "handout-finance.html#handout-finance-8-1",
-  "type": "Worksheet Exercise",
-  "number": "5",
-  "title": "",
-  "body": "  A new fax machine costs Worcester State University $2,670. They are to pay it off in 18 months at a 9% simple interest rate .      What will each monthly payment be?    To find the monthly installment value, we first compute the total future value of the loan (principal plus interest) and then divide it equally by the total number of payments.   Identify Given Variables:   Principal ( ):   Annual Interest Rate ( ):   Loan Term ( ):      Step-by-Step Calculation:     Calculate Total Accumulated Interest ( ):    The total interest accrued on the equipment purchase is .     Calculate Total Future Value Balance ( ): Combine the principal cost and interest.  The total amount to be repaid over the loan lifespan is .     Calculate Periodic Installment Payment ( ): Divide total future value by the 18 months.       Rounding to the nearest cent, each sequential monthly payment will be .       How much interest will they pay on the loan?    The absolute cost of credit (total interest expense) was calculated directly in step 1 using the simple interest formula:      Worcester State University will pay a total interest amount of over the lifespan of the financing agreement.    "
-},
-{
-  "id": "handout-finance-9-1",
-  "level": "2",
-  "url": "handout-finance.html#handout-finance-9-1",
-  "type": "Worksheet Exercise",
-  "number": "6",
-  "title": "",
-  "body": "  Congratulations! You purchase a sprawling home for $1,000,000. You make a 15% down payment and agree to a 4.5% interest rate for a 30-year fixed-rate mortgage. You are also required to pay 3 points at closing.      What is the amount of your loan?    The loan amount is determined by finding the cash value of the down payment and subtracting it from the total purchase price of the home.   Step-by-Step Calculation:     Calculate the Down Payment: Multiply the purchase price by the down payment percentage. The upfront cash down payment is .     Calculate the Principal Mortgage Amount ( ): Subtract the down payment from the total home cost.      The total principal amount of your mortgage loan is .       You paid 3 points at the closing. How much did you pay?    In real estate finance, 1 point is equal to 1% of the total amount borrowed (the mortgage loan principal), not the purchase price of the home.      The total amount paid for 3 points at closing is .       What is your monthly mortgage payment?    To determine the regular monthly installment cost, we apply the standard fixed-rate loan amortization formula.   Identify Given Variables:   Mortgage Loan Principal ( ):   Annual Interest Rate ( ):   Compounding Periods per Year ( ):  (monthly)  Total Time ( ):      Step-by-Step Calculation:     State the Installment Formula:       Evaluate the Numerator: Find the periodic monthly rate.      Evaluate the Denominator: Calculate the monthly compounding base over the lifetime total of 360 payments ( ).        Solve for PMT: Divide the numerator by the denominator.      Your base monthly mortgage payment is .       How much are you charged over the course of the mortgage loan, in interest?    The total interest expense is determined by adding up all monthly payments made over 30 years and subtracting the original amount borrowed.   Step-by-Step Calculation:     Calculate Total Lifetime Payments: Multiply the monthly payment by 360 total months. The aggregate amount paid back to the lender over 30 years is .     Subtract the Initial Principal Balance:        The total interest charged over the standard lifespan of the loan is .    "
-},
-{
-  "id": "handout-Statistics",
-  "level": "1",
-  "url": "handout-Statistics.html",
-  "type": "Worksheet",
-  "number": "",
-  "title": "Statistics Handout",
-  "body": " Statistics Handout   This handout provides an overview of different voting methods, including the plurality method, plurality-with-elimination method, Borda count method, and pairwise comparison method. It also includes exercises to practice applying these methods to election scenarios.  The handout is designed to help students understand the strengths and weaknesses of each voting method and how they can lead to different outcomes in elections. By working through the exercises, students will gain a deeper understanding of how these methods work and their implications for democratic decision-making.     Data through Graphs An introduction to interpreting and creating various types of graphs, such as bar graphs, histograms, pie charts, and scatter plots, to visualize data effectively.   Measures of Center and Spread mean, median, mode, range, variance, and standard deviation are all measures that help us understand the central tendency and variability of a dataset.   The Empirical Rule A rule that describes the distribution of data in a normal distribution, stating that approximately 68% of the data falls within one standard deviation of the mean, 95% within two standard deviations, and 99.7% within three standard deviations.   z-scores Standardized scores that indicate how many standard deviations a data point is from the mean.   Regression A statistical method for modeling the relationship between a dependent variable and one or more independent variables, often used for prediction and understanding the strength of relationships between variables.     Exercises and Workspaces: Real-World Applications     Data Representation: Daily Text Messages Sent   The following dataset represents the number of text messages sent by high school students during a single day:  40, 20, 20, 50, 30, 30, 60, 20, 30, 40, 30, 10, 40, 50, 40, 30, 30, 40, 40, 50, 60, 20, 50, 60, 10    Complete a frequency table for the text message counts.  Construct a bar graph of the data.  Construct a line graph of the data.  Construct a pie chart of the data.  Construct a histogram of the data using 10-point class intervals.        (a) Frequency Table: Sorting and counting each distinct message count yields the following frequency distribution:   Frequency Distribution of Daily Text Messages    Texts Sent  Frequency (Students)   10 2  20 4  30 6  40 6  50 4  60 3      (b) Bar Graph: We represent each distinct count value on the horizontal axis and its corresponding frequency on the vertical axis using separated columns:   Bar Graph of Daily Texts Sent   A vertical bar chart showing text message totals on the horizontal axis and student frequency counts on the vertical axis.       (c) Line Graph: Using coordinates, data markers are mapped out across consecutive value junctions and tied together using path lines:   Line Graph of Daily Texts Sent   A line graph mapping distinct text count marks to the final number of tracking students.       (d) Pie Chart: Proportional distributions are evaluated based on a complete baseline of students using degree equations:    10 Texts: 8.00 percent (28.8 degrees)  20 Texts: 16.00 percent (57.6 degrees)  30 Texts: 24.00 percent (86.4 degrees)  40 Texts: 24.00 percent (86.4 degrees)  50 Texts: 16.00 percent (57.6 degrees)  60 Texts: 12.00 percent (43.2 degrees)     Pie Chart of Text Message Distributions   A pie chart dividing the student text distribution into categorical value sectors.       (e) Histogram: Grouping values into 10-point bins maps the dataset across continuous quantitative intervals, which forces columns to display directly side-by-side:    [5, 15): 2 students (values of 10)  [15, 25): 4 students (values of 20)  [25, 35): 6 students (values of 30)  [35, 45): 6 students (values of 40)  [45, 55): 4 students (values of 50)  [55, 65]: 3 students (values of 60)     Histogram of Text Message Distributions   A histogram displaying the continuous interval distribution of text message frequencies.           Employee Commute Times   A small company tracks the daily one-way commute times (measured in minutes) for a random sample of employees. The collected data values are listed below:  25, 40, 15, 30, 25, 20, 45, 25, 60  Calculate the following four summary metrics for this data set:  The arithmetic mean commute time.  The median commute time.  The mode of the dataset.  The total range of the commute times.        (a) Mean: To find the mean, sum all the data points together and divide by the total number of observations ( ):       (b) Median: To determine the median, first arrange the data points in ascending numerical order:  15, 20, 25, 25, 25 , 30, 40, 45, 60  Since there is an odd number of scores ( ), the median is the exact middle element located at position . The fifth value is minutes.    (c) Mode: The mode is the specific data value that shows up most frequently in the sample. In this ordered list, the value appears three times, while every other number appears only once. Therefore, the mode is minutes.    (d) Range: The range is the absolute difference between the absolute highest value (maximum) and the lowest value (minimum) in the dataset:       Dot Plot of Employee Commute Times   A simple dot plot showing employee commute times on the horizontal axis with repeated stacked dots showing the high frequency at 25 minutes.           Female Height Distribution   Adult female heights in North America are approximately normally distributed with a mean of inches and a standard deviation of inches.  Use the Empirical Rule (68-95-99.7 Rule) to answer the following questions:  Approximately what percentage of women have heights between 61.5 inches and 68.5 inches?  Approximately 95 percent of women have heights between what two values?  Approximately what percentage of women have heights greater than 72 inches?  Approximately what percentage of women have heights between 58 inches and 65 inches?       1. Heights between 61.5 and 68.5 inches: The values 61.5 and 68.5 are found by subtracting and adding one standard deviation to the mean: and . This range represents exactly 1 standard deviation from the mean ( ) standard deviations. According to the Empirical Rule, approximately 68 percent of the distribution falls within this range.   2. Range covering 95 percent of women: The Empirical Rule states that approximately 95 percent of data falls within 2 standard deviations of the (mean sd). Calculating these boundaries:  Therefore, 95 percent of women have heights between 58 inches and 72 inches .   3. Percentage greater than 72 inches: A height of 72 inches sits exactly 2 standard deviations above the mean. Since 95 percent of women fall within 2 standard deviations (between 58 and 72 inches), the remaining 5 percent falls outside this span. Because the normal curve is perfectly symmetrical, half of that remainder is in the lower tail and half is in the upper tail. Dividing this gives  2.5 percent .   4. Percentage between 58 and 65 inches: The value of 58 inches is exactly 2 standard deviations below the mean, while 65 inches is the mean itself. Since 95 percent of the data falls symmetrically within 2 standard deviations of the mean, the section from the lower boundary up to the center mean point represents exactly half of that cluster. Calculating this gives  47.5 percent .   Normal Distribution Curve for Female Heights   A bell-shaped normal distribution curve centered at 65 inches, showing standard deviation marking lines at 54.5, 58, 61.5, 65, 68.5, 72, and 75.5 inches.           Calculating Z-Scores-1   On a standardized certification exam, the mean score is with a standard deviation of . Determine the z-score for an examinee who scored an .     This student scored standard deviations above the population average.     Calculating Z-Scores-2   A track-and-field sprint group has a mean race completion time of seconds with a standard deviation of seconds. What is the z-score for a runner who completes the race in seconds?     The runner's time is standard deviations faster (below) than the group average.     Comparing Z-Scores-3   An industrial lighting brand has a mean runtime life of hours with a standard deviation of hours. Find the specific operational lifespan that corresponds to a z-score of .              Negative Correlation: Car Mileage and Resale Value   A used car dealership wants to examine the relationship between a specific sedan's odometer mileage ( , measured in thousands of miles) and its current market resale value ( , measured in thousands of dollars). The data collected from a sample of five vehicles is presented below.    Vehicle Mileage vs. Resale Value    Vehicle  Mileage ( in thousands of miles)  Resale Value ( in thousands of dollars)   1 10 35  2 20 29  3 30 26  4 40 20  5 50 14    Using the simple linear regression model calculated from the observed data table above, predict the total market resale value of a sedan if its odometer reaches thousand miles (i.e., ).      $15.5 thousand dollars   Incorrect. This value fails to capture the continuous decline in value, overestimating how much the car is worth at 60 thousand miles.     $9.5 thousand dollars   Correct! Observe the downward trend in the data points and plug the value directly into the line equation to find .     $5.0 thousand dollars   Incorrect. While the vehicle loses value consistently, it has not depreciated this drastically according to the linear model.     $2.1 thousand dollars   Incorrect. This underestimation assumes an exponential drop-off rather than a steady simple linear progression rate.      To predict the resale value of the vehicle at 60 thousand miles, we first graph the data points from the table and calculate the line of best fit using linear regression.     Scatter Plot of Mileage vs. Resale Value   A scatter plot showing a downward trend of resale value as mileage increases, with a red regression line and labeled data points.         "
-},
-{
-  "id": "exercise-text-message-counts",
-  "level": "2",
-  "url": "handout-Statistics.html#exercise-text-message-counts",
-  "type": "Worksheet Exercise",
-  "number": "1",
-  "title": "Data Representation: Daily Text Messages Sent.",
-  "body": " Data Representation: Daily Text Messages Sent   The following dataset represents the number of text messages sent by high school students during a single day:  40, 20, 20, 50, 30, 30, 60, 20, 30, 40, 30, 10, 40, 50, 40, 30, 30, 40, 40, 50, 60, 20, 50, 60, 10    Complete a frequency table for the text message counts.  Construct a bar graph of the data.  Construct a line graph of the data.  Construct a pie chart of the data.  Construct a histogram of the data using 10-point class intervals.        (a) Frequency Table: Sorting and counting each distinct message count yields the following frequency distribution:   Frequency Distribution of Daily Text Messages    Texts Sent  Frequency (Students)   10 2  20 4  30 6  40 6  50 4  60 3      (b) Bar Graph: We represent each distinct count value on the horizontal axis and its corresponding frequency on the vertical axis using separated columns:   Bar Graph of Daily Texts Sent   A vertical bar chart showing text message totals on the horizontal axis and student frequency counts on the vertical axis.       (c) Line Graph: Using coordinates, data markers are mapped out across consecutive value junctions and tied together using path lines:   Line Graph of Daily Texts Sent   A line graph mapping distinct text count marks to the final number of tracking students.       (d) Pie Chart: Proportional distributions are evaluated based on a complete baseline of students using degree equations:    10 Texts: 8.00 percent (28.8 degrees)  20 Texts: 16.00 percent (57.6 degrees)  30 Texts: 24.00 percent (86.4 degrees)  40 Texts: 24.00 percent (86.4 degrees)  50 Texts: 16.00 percent (57.6 degrees)  60 Texts: 12.00 percent (43.2 degrees)     Pie Chart of Text Message Distributions   A pie chart dividing the student text distribution into categorical value sectors.       (e) Histogram: Grouping values into 10-point bins maps the dataset across continuous quantitative intervals, which forces columns to display directly side-by-side:    [5, 15): 2 students (values of 10)  [15, 25): 4 students (values of 20)  [25, 35): 6 students (values of 30)  [35, 45): 6 students (values of 40)  [45, 55): 4 students (values of 50)  [55, 65]: 3 students (values of 60)     Histogram of Text Message Distributions   A histogram displaying the continuous interval distribution of text message frequencies.      "
-},
-{
-  "id": "exercise-central-tendency-quiz",
-  "level": "2",
-  "url": "handout-Statistics.html#exercise-central-tendency-quiz",
-  "type": "Worksheet Exercise",
-  "number": "2",
-  "title": "Employee Commute Times.",
-  "body": " Employee Commute Times   A small company tracks the daily one-way commute times (measured in minutes) for a random sample of employees. The collected data values are listed below:  25, 40, 15, 30, 25, 20, 45, 25, 60  Calculate the following four summary metrics for this data set:  The arithmetic mean commute time.  The median commute time.  The mode of the dataset.  The total range of the commute times.        (a) Mean: To find the mean, sum all the data points together and divide by the total number of observations ( ):       (b) Median: To determine the median, first arrange the data points in ascending numerical order:  15, 20, 25, 25, 25 , 30, 40, 45, 60  Since there is an odd number of scores ( ), the median is the exact middle element located at position . The fifth value is minutes.    (c) Mode: The mode is the specific data value that shows up most frequently in the sample. In this ordered list, the value appears three times, while every other number appears only once. Therefore, the mode is minutes.    (d) Range: The range is the absolute difference between the absolute highest value (maximum) and the lowest value (minimum) in the dataset:       Dot Plot of Employee Commute Times   A simple dot plot showing employee commute times on the horizontal axis with repeated stacked dots showing the high frequency at 25 minutes.      "
-},
-{
-  "id": "exercise-female-height-empirical-rule",
-  "level": "2",
-  "url": "handout-Statistics.html#exercise-female-height-empirical-rule",
-  "type": "Worksheet Exercise",
-  "number": "3",
-  "title": "Female Height Distribution.",
-  "body": " Female Height Distribution   Adult female heights in North America are approximately normally distributed with a mean of inches and a standard deviation of inches.  Use the Empirical Rule (68-95-99.7 Rule) to answer the following questions:  Approximately what percentage of women have heights between 61.5 inches and 68.5 inches?  Approximately 95 percent of women have heights between what two values?  Approximately what percentage of women have heights greater than 72 inches?  Approximately what percentage of women have heights between 58 inches and 65 inches?       1. Heights between 61.5 and 68.5 inches: The values 61.5 and 68.5 are found by subtracting and adding one standard deviation to the mean: and . This range represents exactly 1 standard deviation from the mean ( ) standard deviations. According to the Empirical Rule, approximately 68 percent of the distribution falls within this range.   2. Range covering 95 percent of women: The Empirical Rule states that approximately 95 percent of data falls within 2 standard deviations of the (mean sd). Calculating these boundaries:  Therefore, 95 percent of women have heights between 58 inches and 72 inches .   3. Percentage greater than 72 inches: A height of 72 inches sits exactly 2 standard deviations above the mean. Since 95 percent of women fall within 2 standard deviations (between 58 and 72 inches), the remaining 5 percent falls outside this span. Because the normal curve is perfectly symmetrical, half of that remainder is in the lower tail and half is in the upper tail. Dividing this gives  2.5 percent .   4. Percentage between 58 and 65 inches: The value of 58 inches is exactly 2 standard deviations below the mean, while 65 inches is the mean itself. Since 95 percent of the data falls symmetrically within 2 standard deviations of the mean, the section from the lower boundary up to the center mean point represents exactly half of that cluster. Calculating this gives  47.5 percent .   Normal Distribution Curve for Female Heights   A bell-shaped normal distribution curve centered at 65 inches, showing standard deviation marking lines at 54.5, 58, 61.5, 65, 68.5, 72, and 75.5 inches.      "
-},
-{
-  "id": "handout-Statistics-7-1",
-  "level": "2",
-  "url": "handout-Statistics.html#handout-Statistics-7-1",
-  "type": "Worksheet Exercise",
-  "number": "4",
-  "title": "Calculating Z-Scores-1.",
-  "body": " Calculating Z-Scores-1   On a standardized certification exam, the mean score is with a standard deviation of . Determine the z-score for an examinee who scored an .     This student scored standard deviations above the population average.   "
-},
-{
-  "id": "handout-Statistics-7-2",
-  "level": "2",
-  "url": "handout-Statistics.html#handout-Statistics-7-2",
-  "type": "Worksheet Exercise",
-  "number": "5",
-  "title": "Calculating Z-Scores-2.",
-  "body": " Calculating Z-Scores-2   A track-and-field sprint group has a mean race completion time of seconds with a standard deviation of seconds. What is the z-score for a runner who completes the race in seconds?     The runner's time is standard deviations faster (below) than the group average.   "
-},
-{
-  "id": "handout-Statistics-7-3",
-  "level": "2",
-  "url": "handout-Statistics.html#handout-Statistics-7-3",
-  "type": "Worksheet Exercise",
-  "number": "6",
-  "title": "Comparing Z-Scores-3.",
-  "body": " Comparing Z-Scores-3   An industrial lighting brand has a mean runtime life of hours with a standard deviation of hours. Find the specific operational lifespan that corresponds to a z-score of .         "
-},
-{
-  "id": "exercise-car-mileage-prediction",
-  "level": "2",
-  "url": "handout-Statistics.html#exercise-car-mileage-prediction",
-  "type": "Worksheet Exercise",
-  "number": "7",
-  "title": "Negative Correlation: Car Mileage and Resale Value.",
-  "body": " Negative Correlation: Car Mileage and Resale Value   A used car dealership wants to examine the relationship between a specific sedan's odometer mileage ( , measured in thousands of miles) and its current market resale value ( , measured in thousands of dollars). The data collected from a sample of five vehicles is presented below.    Vehicle Mileage vs. Resale Value    Vehicle  Mileage ( in thousands of miles)  Resale Value ( in thousands of dollars)   1 10 35  2 20 29  3 30 26  4 40 20  5 50 14    Using the simple linear regression model calculated from the observed data table above, predict the total market resale value of a sedan if its odometer reaches thousand miles (i.e., ).      $15.5 thousand dollars   Incorrect. This value fails to capture the continuous decline in value, overestimating how much the car is worth at 60 thousand miles.     $9.5 thousand dollars   Correct! Observe the downward trend in the data points and plug the value directly into the line equation to find .     $5.0 thousand dollars   Incorrect. While the vehicle loses value consistently, it has not depreciated this drastically according to the linear model.     $2.1 thousand dollars   Incorrect. This underestimation assumes an exponential drop-off rather than a steady simple linear progression rate.      To predict the resale value of the vehicle at 60 thousand miles, we first graph the data points from the table and calculate the line of best fit using linear regression.     Scatter Plot of Mileage vs. Resale Value   A scatter plot showing a downward trend of resale value as mileage increases, with a red regression line and labeled data points.       "
-},
-{
   "id": "activity-01-intro-activity",
   "level": "1",
   "url": "activity-01-intro-activity.html",
@@ -3326,7 +3092,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-03-intro-activity.html#activity-03-intro-activity-3-2",
   "type": "Example",
-  "number": "6.1",
+  "number": "5.1",
   "title": "",
   "body": "  Suppose your city is building a new park, and issues bonds to raise the money to build it. You obtain a bond that pays interest annually that matures in years. How much interest will you earn?    Each year you would earn interest: . So, over the course of five years, you would earn a total of . When the bond matures, you would receive back the you originally paid, leaving you with a total of .   "
 },
@@ -3335,7 +3101,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-03-intro-activity.html#activity-03-intro-activity-3-4",
   "type": "Note",
-  "number": "6.2",
+  "number": "5.2",
   "title": "",
   "body": " You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!  "
 },
@@ -3344,7 +3110,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-03-intro-activity.html#activity-03-intro-activity-3-6",
   "type": "Example",
-  "number": "6.3",
+  "number": "5.3",
   "title": "",
   "body": "  A student took out a simple interest loan for for years at a rate of to purchase a used car. What is the interest on the loan?    We are given the following: , , and . Using the simple interest formula, the amount of interest on the loan is:    "
 },
@@ -3380,7 +3146,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-03-intro-activity.html#activity-03-intro-activity-5-3",
   "type": "Note",
-  "number": "6.4",
+  "number": "5.4",
   "title": "",
   "body": " You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!  "
 },
@@ -3389,7 +3155,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-03-intro-activity.html#activity-03-intro-activity-5-5",
   "type": "Example",
-  "number": "6.5",
+  "number": "5.5",
   "title": "",
   "body": "  A loan of has been made at for months. Find the loan’s future value.    We are given the following: and .  For , note that we are given a time in months, not years! For the simple interest formula to be used correctly, we must give this value in years. Since there are months in a year, we can always convert from months to years by dividing the number of months by . In this case, we have:   Now, using the formula above we find a future value of:    "
 },
@@ -3425,7 +3191,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-03-intro-activity.html#activity-03-intro-activity-7-2",
   "type": "Example",
-  "number": "6.6",
+  "number": "5.6",
   "title": "",
   "body": "  You borrow from a friend and promise to pay back in months. What simple interest rate will you pay?    We are given the following: , , and years.  We are looking to find the value of (hence, the \"?\"). We substitute the given values into the simple interest formula and solve for :    Divide both sides by : Subtract from both sides: Divide by :   Since , we convert this to a percent to get a simple interest rate of .   "
 },
@@ -3461,7 +3227,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-04-intro-activity.html#activity-04-intro-activity-4-3",
   "type": "Note",
-  "number": "6.7",
+  "number": "5.7",
   "title": "",
   "body": " You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!  "
 },
@@ -3515,7 +3281,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-04-intro-activity.html#activity-04-intro-activity-6-1",
   "type": "Example",
-  "number": "6.8",
+  "number": "5.8",
   "title": "",
   "body": "  A certificate of deposit (CD) is a savings instrument that many banks offer. It usually gives a higher interest rate, but you cannot access your investment for a specified amount of time. Suppose you deposit in a CD paying interest compounded monthly. How much will you have in the account after years? How much interest was earned?    We are given the following values:  (the initial deposit)  (the interest rate as a decimal)  (interest is compounded monthly)  (we're looking for the amount after 20 years)    We are asked to find the value in the account in the future (i.e., the future value), so we use the future value formula for compound interest:     To find the amount of interest earned, we observe that everything in the account other than the initial deposit must be interest! Since we deposited and ended up with , the amount of interest earned must be:   Note that we did NOT use the formula here to compute the amount of interest earned. This formula applies only to situations which use simple interest. If we used it here, we would not have calculated the correct amount of interest.   "
 },
@@ -3533,7 +3299,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-04-intro-activity.html#activity-04-intro-activity-7-1",
   "type": "Example",
-  "number": "6.9",
+  "number": "5.9",
   "title": "",
   "body": "  A new mother knows she will need for her child’s education in years. If the account earns compounded quarterly, how much should the mother deposit now to reach her goal? How much interest is earned?    We are given the following values:  (the amount we want in 18 years)  (the interest rate as a decimal)  (interest is compounded quarterly)  (we're given the timeframe of 18 years)    We are asked to find the amount that needs to be deposited today (i.e., the present value), so we use the present value formula for compound interest:     To find the amount of interest earned, we observe that everything in the account other than the initial deposit must be interest! Since we deposited and ended up with , the amount of interest earned must be:   Again, note we did NOT use the formula to compute the amount of interest earned. This formula should be used only in situations in which simple interest is being used.   "
 },
@@ -3551,7 +3317,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-04-intro-activity.html#activity-04-intro-activity-8-2",
   "type": "Note",
-  "number": "6.10",
+  "number": "5.10",
   "title": "",
   "body": " You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!  "
 },
@@ -3560,7 +3326,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-04-intro-activity.html#activity-04-intro-activity-8-4",
   "type": "Example",
-  "number": "6.11",
+  "number": "5.11",
   "title": "",
   "body": "  Sue deposits in an account that pays interest compounded monthly. Find the account’s effective annual yield.    We are given and (monthly compounding). Using the formula we see that:   This means that if we were to deposit in an account using a simple interest rate of , we would have the same balance after one year as the account with monthly compounding at .   "
 },
@@ -3614,7 +3380,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-05-intro-activity.html#activity-05-intro-activity-4-2",
   "type": "Note",
-  "number": "6.12",
+  "number": "5.12",
   "title": "",
   "body": " You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!  "
 },
@@ -3632,7 +3398,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-05-intro-activity.html#activity-05-intro-activity-5-3",
   "type": "Note",
-  "number": "6.13",
+  "number": "5.13",
   "title": "",
   "body": " You do NOT need to memorize this formula! It will be provided for you on all quizzes and exams!  "
 },
@@ -3677,7 +3443,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-05-intro-activity.html#activity-05-intro-activity-7-1",
   "type": "Example",
-  "number": "6.14",
+  "number": "5.14",
   "title": "",
   "body": "  You want to have in your account when you retire in years. Your retirement account earns interest compounded weekly. How much do you need to deposit each week to meet your retirement goal? How much of the is from interest?    We are given the following values:  (the amount we want in 40 years)  (the interest rate as a decimal)  (interest is compounded weekly)  (we're given the timeframe of 40 years)    We are asked to find the amount of the regular deposits, so we use the deposit formula for an annuity:     To find the amount of interest earned, we observe that everything in the account other than the regular deposits must be interest! We first find the total amount deposited over the course of the annuity. Since we deposited each week ( per year) for years, the total amount deposited is:   Since we deposited and ended up with , the amount of interest earned must be:   Note we did NOT use the formula here to compute the amount of interest earned. This formula applies only to situations which use simple interest. If we used it here, we would not have calculated the correct amount of interest.   "
 },
@@ -3740,7 +3506,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-06-intro-activity.html#activity-06-intro-activity-4-2",
   "type": "Note",
-  "number": "6.15",
+  "number": "5.15",
   "title": "",
   "body": " You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!  "
 },
@@ -3758,7 +3524,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-06-intro-activity.html#activity-06-intro-activity-6-1",
   "type": "Example",
-  "number": "6.16",
+  "number": "5.16",
   "title": "",
   "body": "  You decide to borrow for a new car. You take out an installment loan for years at interest which requires regular monthly payments. How much will the monthly payment be? How much interest will you pay in total?    We are given the following values:  (the amount borrowed)  (the interest rate as a decimal)  (interest is compounded monthly)  (the loan is taken out for 3 years)    We are asked to find the amount of the monthly payment, so we use the formula for an installment loan:     To find the amount of interest paid, we first calculate the total amount paid over the course of the loan. We know that of this went to pay off the amount borrowed, and the rest must be interest. Since we paid each month ( per year) for years, the total amount paid is:   Since of this is the amount borrowed, the amount of interest you will pay will be:    "
 },
@@ -3803,7 +3569,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-07-intro-activity.html#activity-07-intro-activity-2-6",
   "type": "Note",
-  "number": "6.17",
+  "number": "5.17",
   "title": "",
   "body": " You do NOT need to memorize these formulas! They will be provided for you on all quizzes and exams!  "
 },
@@ -3848,7 +3614,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "activity-07-intro-activity.html#activity-07-intro-activity-6-1",
   "type": "Example",
-  "number": "6.18",
+  "number": "5.18",
   "title": "",
   "body": "  Amanda and Fred are buying a house on a -year mortgage. They can only afford to pay per month for a mortgage. If they have an interest rate of , what is the maximum price of a mortgage they can afford?    We are given the following values:  (their max payment amount)  (the interest rate as a decimal)  (interest is compounded monthly)  (the mortgage will be for 30 years)    We are asked to find the maximum amount of a loan we can afford, so we use the installment loan formula solved for :     Based on this calculation, if Amanda and Fred can only afford an monthly payment for a mortgage, then they should be sure not to take out a mortgage larger than around .   "
 },
@@ -3902,7 +3668,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-intro-probability.html#def-probability-terms",
   "type": "Definition",
-  "number": "6.19",
+  "number": "5.19",
   "title": "",
   "body": "   experiment An experiment is an occurrence in which the outcome is uncertain.   outcome The result of an experiment is called an outcome .   event An event is any particular outcome or group of outcomes.   sample space The sample space is the set of all possible outcomes from an experiment.   "
 },
@@ -3911,7 +3677,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-intro-probability.html#ex-rolling-die",
   "type": "Example",
-  "number": "6.20",
+  "number": "5.20",
   "title": "",
   "body": "  Suppose we roll a standard 6-sided die. The sample space is the set of all possible outcomes:   Some events for this experiment include:   Rolling a 3:    Rolling an even number:    Rolling a number greater than 4:    Rolling a number greater than 6: (the empty set!)      "
 },
@@ -3920,7 +3686,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-intro-probability.html#ex-die-rolling-probabilities",
   "type": "Example",
-  "number": "6.21",
+  "number": "5.21",
   "title": "",
   "body": "  If we roll a 6-sided die, find the probabilities of the following events:   Rolling a 3    Rolling an even number    Rolling a number greater than 3    Rolling a number greater than 6       Since the sample space is , we have total possible outcomes. To find the probability of each event, we need to determine the number of outcomes in each event and form the fraction with this number over .     The event has only one outcome, so . Thus,     The event has outcomes, so . Thus,     The event has three outcomes, so . Thus,     The event here has no elements since it is impossible to roll a number greater than . So and       "
 },
@@ -3947,7 +3713,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-intro-probability.html#fig-playing-cards",
   "type": "Figure",
-  "number": "6.22",
+  "number": "5.22",
   "title": "",
   "body": " A standard deck of 52 playing cards.   "
 },
@@ -4010,7 +3776,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-not-or-probability.html#def-complement-event",
   "type": "Definition",
-  "number": "6.23",
+  "number": "5.23",
   "title": "",
   "body": "  The complement of an event is the event does not happen. This is sometimes denoted by (or , ).  The probability of the complement of is calculated using the formula:    "
 },
@@ -4019,7 +3785,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-not-or-probability.html#ex-complement-heart-card",
   "type": "Example",
-  "number": "6.24",
+  "number": "5.24",
   "title": "",
   "body": "  You draw a random card from a deck of playing cards. What is the probability that it is not a heart?    There are 13 hearts in a deck of 52 cards, so the probability of drawing a heart is: Using the complement formula above, the probability that the card is not a heart is:    "
 },
@@ -4046,7 +3812,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-not-or-probability.html#ex-coin-and-die-or",
   "type": "Example",
-  "number": "6.25",
+  "number": "5.25",
   "title": "",
   "body": "  Suppose we flipped a coin and rolled a die, and wanted to know the probability of getting a head on the coin or a 6 on the die.    There are possible outcomes for this experiment: By simply counting, we can see that of the outcomes have a head on the coin or a 6 on the die or both; we use or inclusively here. These outcomes are and , so the probability is .  How could we have found this from the individual probabilities? As we would expect, of these outcomes have a head, and of these outcomes have a 6 on the die. If we add these individual counts, we get , which is not the correct probability.  Looking at the outcomes we can see why: the outcome would have been counted twice, since it contains both a head and a 6. The probability of getting both a head and rolling a 6 is . If we subtract out this double count, we have the correct probability:    "
 },
@@ -4055,7 +3821,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-not-or-probability.html#def-probability-or-rule",
   "type": "Definition",
-  "number": "6.26",
+  "number": "5.26",
   "title": "",
   "body": "  If and are two events, then the probability of or (also written as ) is given by:    "
 },
@@ -4064,7 +3830,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-not-or-probability.html#ex-card-probabilities-or",
   "type": "Example",
-  "number": "6.27",
+  "number": "5.27",
   "title": "",
   "body": "  Suppose we draw one card from a standard deck.   What is the probability that we get a Queen or a King?    What is the probability that we get a red card or a King?       We know there are possible cards, so .     There are Queens and Kings in the deck, so and . There are no cards which are both a Queen and a King, so . Thus,     There are red cards and Kings in the deck, so and . There are cards which are both red and a King (the King of Hearts and King of Diamonds), so . Thus,       "
 },
@@ -4073,7 +3839,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-not-or-probability.html#note-reducing-fractions",
   "type": "Note",
-  "number": "6.28",
+  "number": "5.28",
   "title": "",
   "body": " Note that it was advantageous in the previous example to wait until the final calculation to reduce the fractions. This allows us to easily add fractions with a common denominator—in this case, —and reduce the answer once.  "
 },
@@ -4100,7 +3866,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-not-or-probability.html#table-speeding-tickets",
   "type": "Table",
-  "number": "6.29",
+  "number": "5.29",
   "title": "",
   "body": " Survey results by car color and speeding tickets.     Speeding ticket  No speeding ticket  Total    Red car  15  135  150    Not red car  45  470  515    Total  60  605  665    "
 },
@@ -4109,7 +3875,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-not-or-probability.html#ex-speeding-ticket-probabilities",
   "type": "Example",
-  "number": "6.30",
+  "number": "5.30",
   "title": "",
   "body": "  Find the probability that a randomly chosen person:   has a red car and got a speeding ticket    has a red car or got a speeding ticket       The total number of people surveyed is .     From the table, we can see that of the people surveyed had a red car and got a speeding ticket, so . Thus,     From the table, we can see that people have a red car, people got a speeding ticket, and people have a red car and got a speeding ticket. Using the addition rule to account for the double count, we find the number of favorable outcomes is . Thus,       "
 },
@@ -4136,7 +3902,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-FCP.html#table-menu-options",
   "type": "Table",
-  "number": "6.31",
+  "number": "5.31",
   "title": "",
   "body": " Menu pairing options for appetizers and main courses.     Hamburger  Sandwich  Quiche  Fajita  Pizza    Soup  1  2  3  4  5    Salad  6  7  8  9  10    Breadsticks  11  12  13  14  15    "
 },
@@ -4145,7 +3911,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-FCP.html#def-fundamental-counting-principle",
   "type": "Definition",
-  "number": "6.32",
+  "number": "5.32",
   "title": "",
   "body": "   Fundamental Counting Principle If we are asked to choose one item from each of two separate categories where there are items in the first category and items in the second category, then the total number of available choices is:    "
 },
@@ -4154,7 +3920,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-FCP.html#ex-reading-list-combinations",
   "type": "Example",
-  "number": "6.33",
+  "number": "5.33",
   "title": "",
   "body": "  There are novels and volumes of poetry on a reading list for a college English course. How many different ways can a student select one novel and one volume of poetry to read for the course?    There are two categories here: novels and volumes of poetry. By the Fundamental Counting Principle, the number of ways to choose one item from each of the two categories is:    "
 },
@@ -4181,7 +3947,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-FCP.html#ex-pizza-combinations",
   "type": "Example",
-  "number": "6.34",
+  "number": "5.34",
   "title": "",
   "body": "  A pizza shop has a special promotion which allows you to buy a one-topping pizza at half price! They offer three different sizes, four different crusts, and twelve different topping options. How many different pizzas can be purchased under this promotion?    There are three different categories here (size, crust, topping) from which we need to choose one option each. By the Fundamental Counting Principle, the total number of pizzas which can be purchased is:    "
 },
@@ -4190,7 +3956,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-FCP.html#ex-true-false-quiz",
   "type": "Example",
-  "number": "6.35",
+  "number": "5.35",
   "title": "",
   "body": "  A quiz consists of five true-or-false questions. In how many ways can a student answer the quiz?    In this scenario the categories are the questions on the quiz; we need to choose an answer for each of the five questions. Each question has possible answers, either True or False . This means we have possible choices in each of the five categories, so the total number of ways to answer the quiz is: Note this can be written as . This can be a useful way to write this answer!   "
 },
@@ -4199,7 +3965,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-FCP.html#ex-telephone-counting",
   "type": "Example",
-  "number": "6.36",
+  "number": "5.36",
   "title": "",
   "body": "  A telephone number consists of a -digit area code followed by a -digit local phone number. Area codes and local phone numbers cannot begin with a or . How many different phone numbers are possible?    One way to think about a problem like this is to use what can be called a blank diagram . A blank diagram will show a blank space for each item that needs to be chosen, and then we can fill in each blank with the number of choices we have for that item. For this particular scenario, a blank diagram might look like this, modeled after how we traditionally write phone numbers:   We start on the left side and fill in one blank at a time with the number of options we have for that position. The left-most number is the first digit in the area code. We are told this cannot be or , which means it can be any of the digits or . There are possible options here, so we fill in the first blank with an :   The next number can be any digit; we have no restriction on the second digit of the area code. So we can fill in the second blank with the total number of options for that digit (the digits through , which gives choices):   Similarly, there are options for the third digit of the area code:   Like with the area code, the first digit of the local phone number cannot be or , so we have possible choices. The remaining digits have no restriction, so they can be any of the possible digits:   Once we have filled in all the blanks, we can multiply the number of options together to form the total number of possible phone numbers:    "
 },
@@ -4235,7 +4001,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-Permutations.html#ex-word-rearrangement",
   "type": "Example",
-  "number": "6.37",
+  "number": "5.37",
   "title": "",
   "body": "  How many different ways can the letters of the word be rearranged to form a four-letter code word? (E.g., , , , etc.)    We can use a blank diagram to help us answer this question! We start with one with four blanks, one for each of the positions in the code word:   There are choices for the first letter of the code word; it can be  , , or . Thus, we have:   Once the first letter is chosen, there are only choices for the second letter of the code word. For example, if is chosen as the first letter, then the options for the second are , , and , since cannot be used a second time. Or, if is chosen as the first letter, then the options for the second are , , and . The key is that regardless of the choice for the first letter, there will always be options to choose from for the second letter. So:   Using a similar logic, once the first two letters are chosen there are only options remaining for the third letter. For example, if is chosen first and chosen second, then the options for the third letter are only and . Thus:   Finally, there is only choice for the final letter, since all of the other letters have been used at this point. This means our completed blank diagram looks like:   So by the Fundamental Counting Principle, the number of code words is:    "
 },
@@ -4262,7 +4028,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-Permutations.html#def-factorial-permutations",
   "type": "Definition",
-  "number": "6.38",
+  "number": "5.38",
   "title": "",
   "body": "   factorial  permutation When a situation involves rearranging all of the objects in a given set, then the number of permutations is given by: where is the total number of objects.   "
 },
@@ -4271,7 +4037,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-Permutations.html#note-calculator-factorial",
   "type": "Note",
-  "number": "6.39",
+  "number": "5.39",
   "title": "",
   "body": " Scientific calculators have a button which will compute factorials automatically. If you have the TI-30XIIS calculator, you can access this by hitting the PRB button and arrowing over to the symbol.  "
 },
@@ -4280,7 +4046,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-Permutations.html#ex-door-prizes",
   "type": "Example",
-  "number": "6.40",
+  "number": "5.40",
   "title": "",
   "body": "  How many ways can five different door prizes be distributed among five people?    Here we want to rearrange the five people in order so that the first gets the first prize, the second gets the second prize, and so on. We must rearrange all five of the people since there are five prizes, so the number of ways to do this is:    "
 },
@@ -4298,7 +4064,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-Permutations.html#ex-gift-certificates",
   "type": "Example",
-  "number": "6.41",
+  "number": "5.41",
   "title": "",
   "body": "  A charity benefit is attended by people and three gift certificates are given away as door prizes: one gift certificate is in the amount of , the second is worth , and the third is worth . Assuming that no person receives more than one prize, how many different ways can the three gift certificates be awarded?    Since the three gift certificates are worth different amounts, the order in which they are awarded makes a difference. There are possible winners for the gift certificate. Once that has been awarded, there are possible winners for the gift certificate since the first winner is not eligible. Finally, after the first two have been awarded there are possible winners for the gift certificate since the first two winners are ineligible. The total number of ways the three gift certificates can be awarded is:    "
 },
@@ -4307,7 +4073,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-Permutations.html#ex-olympic-sprinters",
   "type": "Example",
-  "number": "6.42",
+  "number": "5.42",
   "title": "",
   "body": "  Eight sprinters have made it to the Olympic finals in the 100-meter race. In how many different ways can the gold, silver, and bronze medals be awarded?    Like the previous example, the order in which the medals are awarded makes a difference since they are different. There are possible gold medalists, then possible silver medalists (the runner who wins gold cannot win silver), and finally possible bronze medalists (the gold and silver medalists cannot win bronze). This means the number of ways the medals can be awarded is:    "
 },
@@ -4316,7 +4082,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-Permutations.html#note-calculator-npr",
   "type": "Note",
-  "number": "6.43",
+  "number": "5.43",
   "title": "",
   "body": " Your calculator should have a key to calculate this for you! If you are using the TI-30XIIS, the key is located in the PRB menu along with the factorial key!  "
 },
@@ -4325,7 +4091,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-Permutations.html#ex-painting-arrangements",
   "type": "Example",
-  "number": "6.44",
+  "number": "5.44",
   "title": "",
   "body": "  Bo has nine paintings and has room to display only four of them at a time on his wall. How many different ways could Bo do this?    In this example, we have a total of paintings to choose from and need to choose of them. The order of selection matters since they are being arranged on a wall, and none can be used more than once. This is a permutation! Using a calculator to find , the number of ways for Bo to arrange four paintings is:    "
 },
@@ -4334,7 +4100,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "handout-Permutations.html#ex-executive-committee",
   "type": "Example",
-  "number": "6.45",
+  "number": "5.45",
   "title": "",
   "body": "  How many ways can a four-person executive committee (president, vice-president, secretary, treasurer) be selected from a 16-member board of directors of a non-profit organization?    In this example, we have a total of people to choose from and need to choose of them. The order of selection matters (e.g., being president is different than being secretary), and no one can serve in multiple roles. This is a permutation! Using a calculator to find , the number of ways to form such a committee is:    "
 },
@@ -4357,49 +4123,328 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
-  "id": "handouts",
+  "id": "handout-voting-methods",
   "level": "1",
-  "url": "handouts.html",
-  "type": "Chapter",
+  "url": "handout-voting-methods.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "1. Voting Methods Handout",
+  "body": " 1. Voting Methods Handout  This handout outlines the core procedural rules, calculation steps, and the four primary preference-ballot voting methods:      The Plurality Method Selecting the candidate who receives the most first-place votes, regardless of whether they achieve a strict majority.   The Plurality-with-Elimination Method An iterative process where the candidate with the fewest first-place votes is eliminated, and their ballots are redistributed, continuing until a candidate achieves a true majority.   The Borda Count Method A point-based system where points are assigned to each ranking position on a ballot, and the candidate with the highest total points across all ballots wins.   The Pairwise Comparison Method A head-to-head match-up approach where every candidate is compared one-on-one against every other candidate to see who wins the most direct duels, identifying a Condorcet candidate if one exists.     Exercises and Workspaces      Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the plurality method?    Number of Votes  52  45  13  9  4    First choice  D  F  J  F  H    Second choice  F  J  F  J  J    Third choice  H  H  H  D  D    Fourth choice  J  D  D  H  F      First-choice totals are D = 52, F = 54, J = 13, and H = 4. The winner by the plurality method is F .         Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the plurality-with-elimination method?    Number of Votes  52  45  13  9  4    First choice  D  F  J  F  H    Second choice  F  J  F  J  J    Third choice  H  H  H  D  D    Fourth choice  J  D  D  H  F      Eliminate H first (4 votes), which transfers to J, giving J 17 votes. Then eliminate J; all 17 J ballots transfer to F. Final totals are D = 52 and F = 71, so the plurality-with-elimination winner is F .         Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the Borda count method?    Number of Votes  52  45  13  9  4    First choice  D  F  J  F  H    Second choice  F  J  F  J  J    Third choice  H  H  H  D  D    Fourth choice  J  D  D  H  F      Using Borda scores 3-2-1-0, the totals are D = 169, F = 292, J = 155, and H = 122. The Borda count winner is F .         Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the pairwise comparison method? Is there a Condorcet winner?    Number of Votes  52  45  13  9  4    First choice  D  F  J  F  H    Second choice  F  J  F  J  J    Third choice  H  H  H  D  D    Fourth choice  J  D  D  H  F      In head-to-head matchups, F beats D, F beats J, and F beats H. Candidate F wins every pairwise comparison and is the Condorcet winner.         Four professors are running for president of the League of Innovation: Doug (D), Francis (F), Gallagher (G), and Smith (S). The votes of the members in the League of Innovation are summarized in the preference table below.    Number of Votes  30  22  18  10  2    First Choice  F  G  S  D  G    Second Choice  D  D  G  S  S    Third Choice  G  S  D  G  D    Fourth Choice  S  F  F  F  F     How many members voted in this election?  Using the plurality method, who becomes the new president?  Using the plurality-with-elimination method, who becomes the new president?  Using the Borda count method, who becomes the new president?  Using the pairwise comparison method, who becomes the new president?     Total votes = 82. Plurality totals are F = 30, G = 24, S = 18, and D = 10, so F wins by plurality.  For plurality-with-elimination, D is eliminated first and its 10 votes transfer to S, then G is eliminated and its votes transfer to S, giving S the win.  Using Borda scores 3-2-1-0, the totals are D = 154, G = 148, S = 100, and F = 90. The Borda winner is D .  In pairwise comparison, G beats D, G beats F, and G beats S, so the pairwise winner is G .     "
+},
+{
+  "id": "ws-ex-plurality",
+  "level": "2",
+  "url": "handout-voting-methods.html#ws-ex-plurality",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the plurality method?    Number of Votes  52  45  13  9  4    First choice  D  F  J  F  H    Second choice  F  J  F  J  J    Third choice  H  H  H  D  D    Fourth choice  J  D  D  H  F      First-choice totals are D = 52, F = 54, J = 13, and H = 4. The winner by the plurality method is F .   "
+},
+{
+  "id": "ws-ex-elimination",
+  "level": "2",
+  "url": "handout-voting-methods.html#ws-ex-elimination",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the plurality-with-elimination method?    Number of Votes  52  45  13  9  4    First choice  D  F  J  F  H    Second choice  F  J  F  J  J    Third choice  H  H  H  D  D    Fourth choice  J  D  D  H  F      Eliminate H first (4 votes), which transfers to J, giving J 17 votes. Then eliminate J; all 17 J ballots transfer to F. Final totals are D = 52 and F = 71, so the plurality-with-elimination winner is F .   "
+},
+{
+  "id": "ws-ex-borda",
+  "level": "2",
+  "url": "handout-voting-methods.html#ws-ex-borda",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the Borda count method?    Number of Votes  52  45  13  9  4    First choice  D  F  J  F  H    Second choice  F  J  F  J  J    Third choice  H  H  H  D  D    Fourth choice  J  D  D  H  F      Using Borda scores 3-2-1-0, the totals are D = 169, F = 292, J = 155, and H = 122. The Borda count winner is F .   "
+},
+{
+  "id": "ws-ex-pairwise",
+  "level": "2",
+  "url": "handout-voting-methods.html#ws-ex-pairwise",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Four students are running for president of their residence hall: Debra (D), Farah (F), Jorge (J), and Hillary (H). The votes of their fellow students are summarized in the following preferences table. Who is declared the president using the pairwise comparison method? Is there a Condorcet winner?    Number of Votes  52  45  13  9  4    First choice  D  F  J  F  H    Second choice  F  J  F  J  J    Third choice  H  H  H  D  D    Fourth choice  J  D  D  H  F      In head-to-head matchups, F beats D, F beats J, and F beats H. Candidate F wins every pairwise comparison and is the Condorcet winner.   "
+},
+{
+  "id": "ws-ex-professors-election",
+  "level": "2",
+  "url": "handout-voting-methods.html#ws-ex-professors-election",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Four professors are running for president of the League of Innovation: Doug (D), Francis (F), Gallagher (G), and Smith (S). The votes of the members in the League of Innovation are summarized in the preference table below.    Number of Votes  30  22  18  10  2    First Choice  F  G  S  D  G    Second Choice  D  D  G  S  S    Third Choice  G  S  D  G  D    Fourth Choice  S  F  F  F  F     How many members voted in this election?  Using the plurality method, who becomes the new president?  Using the plurality-with-elimination method, who becomes the new president?  Using the Borda count method, who becomes the new president?  Using the pairwise comparison method, who becomes the new president?     Total votes = 82. Plurality totals are F = 30, G = 24, S = 18, and D = 10, so F wins by plurality.  For plurality-with-elimination, D is eliminated first and its 10 votes transfer to S, then G is eliminated and its votes transfer to S, giving S the win.  Using Borda scores 3-2-1-0, the totals are D = 154, G = 148, S = 100, and F = 90. The Borda winner is D .  In pairwise comparison, G beats D, G beats F, and G beats S, so the pairwise winner is G .   "
+},
+{
+  "id": "handout-apportionment",
+  "level": "1",
+  "url": "handout-apportionment.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "2. Apportionment Handout",
+  "body": " 2. Apportionment Handout   This handout covers the core metrics and sequential steps for the major historic apportionment methods:    Calculating the Standard Divisor, Standard Quotas, Lower Quotas, and Upper Quotas.   Hamilton's Method Assigning initial seats using the Lower Quota, then distributing surplus seats based on the largest fractional remainders.   Jefferson's Method Finding a Modified Divisor that alters the quotas so that the sum of the Lower Quotas exactly matches the total seats.   Adams's Method Finding a Modified Divisor that alters the quotas so that the sum of the Upper Quotas exactly matches the total seats.     Exercises and Workspaces      A hospital has a nursing staff of 250 nurses working in four shifts:  Shift A: 7:00 A.M. to 1:00 P.M.   Shift B: 1:00 P.M. to 7:00 P.M.   Shift C: 7:00 P.M. to 1:00 A.M.   Shift D: 1:00 A.M. to 7:00 A.M.   The number of nurses apportioned to each shift is based on the average number of patients per shift, given in the table below. Use Hamilton's method to apportion the 250 nurses among the shifts at the hospital.   Average Number of Patients per Shift        Shift  A  B  C  D    Average Patients  453  650  547  350      To complete the apportionment using Hamilton's method, we follow these sequential calculation steps:      Find the Total Population: Sum the average number of patients across all shifts.      Calculate the Standard Divisor ( ): Divide the total population by the total number of items (250 nurses) to be allocated.      Find Standard and Lower Quotas: Divide each shift's patient count by the Standard Divisor ( ). The Lower Quota is found by rounding down to the nearest whole integer.  Shift A:  (Lower Quota = 56)  Shift B:  (Lower Quota = 81)  Shift C:  (Lower Quota = 68)  Shift D:  (Lower Quota = 43)       Distribute Surplus Items: Summing the lower quotas gives nurses. Since we must allocate 250 nurses, there is a surplus of nurses. Hamilton's method gives these surplus spots to the shifts with the largest fractional remainder parts:  Shift D has the largest remainder ( ) and receives nurse.  Shift A has the second-largest remainder ( ) and receives nurse.       The complete apportionment layout is summarized below:   Hamilton's Method Apportionment Results (Transposed)         Metric \/ Step  Shift A  Shift B  Shift C  Shift D  Total    Patients  453  650  547  350  2000    Standard Quota  56.625  81.250  68.375  43.750  -    Lower Quota  56  81  68  43  248    Surplus Added  +1  0  0  +1  +2    Final Apportionment  57  81  68  44  250           A hospital has a nursing staff of 250 nurses working in four shifts. The number of nurses apportioned to each shift is based on the average number of patients per shift, given in the table below. Use Jefferson's method to apportion the 250 nurses among the shifts at the hospital.   Average Number of Patients per Shift        Shift  A  B  C  D    Average Patients  453  650  547  350      To complete the apportionment using Jefferson's method, we apply a modified divisor so that the sum of the lower quotas exactly equals the required total.      Find Total Population and Standard Divisor ( ):        Test the Standard Divisor: Dividing each population by and rounding down gives lower quotas of and . The sum of these initial lower quotas is . This falls short of the nurses needed.     Determine a Modified Divisor ( ): Because our initial sum is too small, Jefferson's method requires us to choose a smaller divisor to increase the individual quotas. Testing a modified divisor of shifts the lower quotas upward to exactly equal .     The complete apportionment computations under Jefferson's method are detailed below:   Jefferson's Method Apportionment Results (Modified Divisor: 7.93)          Metric \/ Step  Shift A  Shift B  Shift C  Shift D  Total     Patients  453  650  547  350  2000     Standard Quota (d = 8)  56.625  81.250  68.375  43.750  —     Initial Lower Quota  56  81  68  43  248     Modified Quota (dm = 7.93)  57.125  81.967  68.979  44.136  —     Final Apportionment  57  81  68  44  250           A hospital has a nursing staff of 250 nurses working in four shifts. The number of nurses apportioned to each shift is based on the average number of patients per shift, given in the table below. Use Adams's method to apportion the 250 nurses among the shifts at the hospital.   Average Number of Patients per Shift        Shift  A  B  C  D    Average Patients  453  650  547  350      To complete the apportionment using Adams's method, we apply a modified divisor so that the sum of the upper quotas (rounded up) exactly equals the required total.      Find Total Population and Standard Divisor ( ):        Test the Standard Divisor: Dividing each population by and rounding up to the next highest integer gives upper quotas of and . The sum of these initial upper quotas is . This exceeds the target of nurses.     Determine a Modified Divisor ( ): Because our initial sum is too large, Adams's method requires us to choose a larger divisor to decrease the individual quotas. Testing a modified divisor of shifts the upper quotas downward to exactly equal .     The complete apportionment calculations under Adams's method are organized in the accessible data layout below:   Adams's Method Apportionment Results (Modified Divisor: 8.07)         Metric \/ Step  Shift A  Shift B  Shift C  Shift D  Total    Patients  453  650  547  350  2000    Standard Quota ( )  56.625  81.250  68.375  43.750  —    Initial Upper Quota  57  82  69  44  252    Modified Quota ( )  56.134  80.545  67.782  43.371  —    Final Apportionment  57  81  68  44  250           The police department in a large city has 180 new officers to be apportioned among 6 high-crime precincts. The total number of recorded crimes for each respective precinct is documented in the data profile below.   Recorded Crimes by Police Precinct          Precinct  A  B  C  D  E  F    Crimes  446  526  835  227  338  456        Use Hamilton's method to apportion the new officers among the precincts.     1. Identify Metrics: Total crimes population equals . The Standard Divisor is:    2. Distribute Remainders: Summing the lower whole quotas gives allocations, leaving a surplus of seats. Hamilton's method awards these seats to the largest fractional remainders: Precinct B ( ) and Precinct E ( ).   Hamilton's Method Apportionment Results       Metric \/ Step  A  B  C  D  E  F  Total    Crimes  446  526  835  227  338  456  2828    Standard Quota  28.388  33.479  53.147  14.448  21.513  29.024  —    Lower Quota  28  33  53  14  21  29  178    Surplus Added  0  +1  0  0  +1  0  +2    Final Apportionment  28  34  53  14  22  29  180         Use Jefferson's method to apportion the new officers among the precincts.    Because the initial lower quota sum ( ) is too small, Jefferson's method requires modifying the divisor downward to raise the quotas. Choosing a smaller modified divisor of shifts the lower whole quotas up to hit the targeted total allocation sum of exactly .   Jefferson's Method Apportionment Results (Modified Divisor: 15.46)       Metric \/ Step  A  B  C  D  E  F  Total    Crimes  446  526  835  227  338  456  2828    Modified Quota  28.849  34.023  54.010  14.683  21.863  29.495  —    Final Apportionment  28  34  54  14  21  29  180         Use Adams's method to apportion the new officers among the precincts.    Testing the standard upper quotas (rounding fractions up) gives a sum of , which exceeds the 180 seats. Adams's method resolves this by increasing the divisor. Choosing a larger modified divisor of pushes the quotas downward so that their rounded-up total sums exactly to .   Adams's Method Apportionment Results (Modified Divisor: 15.94)       Metric \/ Step  A  B  C  D  E  F  Total    Crimes  446  526  835  227  338  456  2828    Modified Quota  27.980  32.999  52.384  14.241  21.205  28.607  —    Final Apportionment  28  33  53  15  22  29  180        "
+},
+{
+  "id": "handout-apportionment-4-1",
+  "level": "2",
+  "url": "handout-apportionment.html#handout-apportionment-4-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  A hospital has a nursing staff of 250 nurses working in four shifts:  Shift A: 7:00 A.M. to 1:00 P.M.   Shift B: 1:00 P.M. to 7:00 P.M.   Shift C: 7:00 P.M. to 1:00 A.M.   Shift D: 1:00 A.M. to 7:00 A.M.   The number of nurses apportioned to each shift is based on the average number of patients per shift, given in the table below. Use Hamilton's method to apportion the 250 nurses among the shifts at the hospital.   Average Number of Patients per Shift        Shift  A  B  C  D    Average Patients  453  650  547  350      To complete the apportionment using Hamilton's method, we follow these sequential calculation steps:      Find the Total Population: Sum the average number of patients across all shifts.      Calculate the Standard Divisor ( ): Divide the total population by the total number of items (250 nurses) to be allocated.      Find Standard and Lower Quotas: Divide each shift's patient count by the Standard Divisor ( ). The Lower Quota is found by rounding down to the nearest whole integer.  Shift A:  (Lower Quota = 56)  Shift B:  (Lower Quota = 81)  Shift C:  (Lower Quota = 68)  Shift D:  (Lower Quota = 43)       Distribute Surplus Items: Summing the lower quotas gives nurses. Since we must allocate 250 nurses, there is a surplus of nurses. Hamilton's method gives these surplus spots to the shifts with the largest fractional remainder parts:  Shift D has the largest remainder ( ) and receives nurse.  Shift A has the second-largest remainder ( ) and receives nurse.       The complete apportionment layout is summarized below:   Hamilton's Method Apportionment Results (Transposed)         Metric \/ Step  Shift A  Shift B  Shift C  Shift D  Total    Patients  453  650  547  350  2000    Standard Quota  56.625  81.250  68.375  43.750  -    Lower Quota  56  81  68  43  248    Surplus Added  +1  0  0  +1  +2    Final Apportionment  57  81  68  44  250     "
+},
+{
+  "id": "handout-apportionment-5-1",
+  "level": "2",
+  "url": "handout-apportionment.html#handout-apportionment-5-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  A hospital has a nursing staff of 250 nurses working in four shifts. The number of nurses apportioned to each shift is based on the average number of patients per shift, given in the table below. Use Jefferson's method to apportion the 250 nurses among the shifts at the hospital.   Average Number of Patients per Shift        Shift  A  B  C  D    Average Patients  453  650  547  350      To complete the apportionment using Jefferson's method, we apply a modified divisor so that the sum of the lower quotas exactly equals the required total.      Find Total Population and Standard Divisor ( ):        Test the Standard Divisor: Dividing each population by and rounding down gives lower quotas of and . The sum of these initial lower quotas is . This falls short of the nurses needed.     Determine a Modified Divisor ( ): Because our initial sum is too small, Jefferson's method requires us to choose a smaller divisor to increase the individual quotas. Testing a modified divisor of shifts the lower quotas upward to exactly equal .     The complete apportionment computations under Jefferson's method are detailed below:   Jefferson's Method Apportionment Results (Modified Divisor: 7.93)          Metric \/ Step  Shift A  Shift B  Shift C  Shift D  Total     Patients  453  650  547  350  2000     Standard Quota (d = 8)  56.625  81.250  68.375  43.750  —     Initial Lower Quota  56  81  68  43  248     Modified Quota (dm = 7.93)  57.125  81.967  68.979  44.136  —     Final Apportionment  57  81  68  44  250     "
+},
+{
+  "id": "handout-apportionment-6-1",
+  "level": "2",
+  "url": "handout-apportionment.html#handout-apportionment-6-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  A hospital has a nursing staff of 250 nurses working in four shifts. The number of nurses apportioned to each shift is based on the average number of patients per shift, given in the table below. Use Adams's method to apportion the 250 nurses among the shifts at the hospital.   Average Number of Patients per Shift        Shift  A  B  C  D    Average Patients  453  650  547  350      To complete the apportionment using Adams's method, we apply a modified divisor so that the sum of the upper quotas (rounded up) exactly equals the required total.      Find Total Population and Standard Divisor ( ):        Test the Standard Divisor: Dividing each population by and rounding up to the next highest integer gives upper quotas of and . The sum of these initial upper quotas is . This exceeds the target of nurses.     Determine a Modified Divisor ( ): Because our initial sum is too large, Adams's method requires us to choose a larger divisor to decrease the individual quotas. Testing a modified divisor of shifts the upper quotas downward to exactly equal .     The complete apportionment calculations under Adams's method are organized in the accessible data layout below:   Adams's Method Apportionment Results (Modified Divisor: 8.07)         Metric \/ Step  Shift A  Shift B  Shift C  Shift D  Total    Patients  453  650  547  350  2000    Standard Quota ( )  56.625  81.250  68.375  43.750  —    Initial Upper Quota  57  82  69  44  252    Modified Quota ( )  56.134  80.545  67.782  43.371  —    Final Apportionment  57  81  68  44  250     "
+},
+{
+  "id": "handout-apportionment-7-1",
+  "level": "2",
+  "url": "handout-apportionment.html#handout-apportionment-7-1",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  The police department in a large city has 180 new officers to be apportioned among 6 high-crime precincts. The total number of recorded crimes for each respective precinct is documented in the data profile below.   Recorded Crimes by Police Precinct          Precinct  A  B  C  D  E  F    Crimes  446  526  835  227  338  456        Use Hamilton's method to apportion the new officers among the precincts.     1. Identify Metrics: Total crimes population equals . The Standard Divisor is:    2. Distribute Remainders: Summing the lower whole quotas gives allocations, leaving a surplus of seats. Hamilton's method awards these seats to the largest fractional remainders: Precinct B ( ) and Precinct E ( ).   Hamilton's Method Apportionment Results       Metric \/ Step  A  B  C  D  E  F  Total    Crimes  446  526  835  227  338  456  2828    Standard Quota  28.388  33.479  53.147  14.448  21.513  29.024  —    Lower Quota  28  33  53  14  21  29  178    Surplus Added  0  +1  0  0  +1  0  +2    Final Apportionment  28  34  53  14  22  29  180         Use Jefferson's method to apportion the new officers among the precincts.    Because the initial lower quota sum ( ) is too small, Jefferson's method requires modifying the divisor downward to raise the quotas. Choosing a smaller modified divisor of shifts the lower whole quotas up to hit the targeted total allocation sum of exactly .   Jefferson's Method Apportionment Results (Modified Divisor: 15.46)       Metric \/ Step  A  B  C  D  E  F  Total    Crimes  446  526  835  227  338  456  2828    Modified Quota  28.849  34.023  54.010  14.683  21.863  29.495  —    Final Apportionment  28  34  54  14  21  29  180         Use Adams's method to apportion the new officers among the precincts.    Testing the standard upper quotas (rounding fractions up) gives a sum of , which exceeds the 180 seats. Adams's method resolves this by increasing the divisor. Choosing a larger modified divisor of pushes the quotas downward so that their rounded-up total sums exactly to .   Adams's Method Apportionment Results (Modified Divisor: 15.94)       Metric \/ Step  A  B  C  D  E  F  Total    Crimes  446  526  835  227  338  456  2828    Modified Quota  27.980  32.999  52.384  14.241  21.205  28.607  —    Final Apportionment  28  33  53  15  22  29  180      "
+},
+{
+  "id": "handout-finance",
+  "level": "1",
+  "url": "handout-finance.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "3. Personal Finance Handout",
+  "body": " 3. Personal Finance Handout   This handout covers essential mathematical principles for evaluating individual savings, annuities, and debt management strategies:     Basic Interest Calculations Computing and comparing simple interest and compound interest models over various compounding periods.   Savings and Annuities Analyzing regular deposit schedules, future value growth patterns, and long-term retirement accounts.   Loans and Spendings Evaluating fixed-rate installment loans, calculating monthly amortization values, and managing large debts including home mortgages.     Exercises and Workspaces      In order to pay for baseball uniforms, a school takes out a simple interest loan for $20,000 for 7 months at a rate of 12%. Find the future value of the loan.    To find the future value of a loan using a simple interest model, we extract our known variables and evaluate using the linear simple interest equation.   Identify Given Variables:   Principal ( ):   Annual Interest Rate ( ):   Time ( ):      Step-by-Step Calculation:     Calculate Accumulated Interest ( ): Multiply Principal by Rate by Time.   The total accumulated interest generated over the 7 months is .     Calculate Future Value ( ): Sum the initial principal amount and the newly accumulated interest.       The final future value of the loan at maturity is .         What is the amount of the deposit needed if your financial goal is to save $24,000 in 3 years with a rate of 7.5% compounded semiannually ?    To find the initial deposit (present value) required to meet a future financial goal with compound interest, we rearrange the compound interest formula to solve for the principal .   Identify Given Variables:   Future Value Goal ( ):   Annual Interest Rate ( ):   Compounding Periods per Year ( ):  (semiannually)  Time ( ):      Step-by-Step Calculation:     State the Present Value Formula:       Substitute the Values: Find the interest rate per period ( ) and total number of compounding periods ( ).        Evaluate the Denominator:        Calculate the Final Principal Amount: Divide the future goal by the compounding factor and round to the nearest cent.      The initial deposit amount needed to meet your financial goal is .         Your sister has her first child and you decide to open an annuity for your baby nephew. You deposit $30 at the end of each month into an annuity that returns 2.5% annual interest.      How much will your nephew have in his annuity when he goes off to college (18 years from now)?    To find the future value of regular monthly contributions, we evaluate using the future value formula for an ordinary annuity.   Identify Given Variables:   Monthly Payment ( ):   Annual Interest Rate ( ):   Compounding Periods per Year ( ):  (monthly)  Time ( ):      Step-by-Step Calculation:     State the Annuity Future Value Formula:       Calculate Intermediate Terms: Find the monthly interest rate and the total number of deposits.       Substitute and Evaluate:           When your nephew leaves for college, the account will have accumulated .       How much interest was earned?    To determine total interest earned, we calculate your total out-of-pocket contributions over the 18 years and subtract that value from the accumulated future value.   Step-by-Step Calculation:     Calculate Total Out-of-Pocket Deposits: Multiply the monthly payment by the total number of compound periods over 18 years.  The sum of all out-of-pocket deposits is .     Calculate Total Interest Earned: Subtract total out-of-pocket deposits from the accumulated future value found in Task 1.       The total interest earned by the annuity is .          The purchase cost of a Camry is $32,500. This vehicle can be financed by providing a $3,000 down payment and committing to monthly installment payments of $680.25 per month for 60 months.      Determine the amount financed.    The amount financed is the remaining vehicle balance that must be covered by a loan after subtracting the initial down payment from the base purchase price.      The base amount financed through the loan is .       Determine the total installment charge (total installment price).    The total installment price represents the absolute total cost of buying the car over time, found by adding the down payment to the sum of all monthly payments.   Step-by-Step Calculation:     Calculate Total Monthly Deferred Payments: Multiply the monthly commitment by the total number of payments. The sum of all monthly installments across 60 months is .     Calculate Total Out-of-Pocket Cost: Combine the monthly payments with the initial down payment.       The total installment cost for purchasing the vehicle is .       Determine the finance charge.    The finance charge represents the total interest paid for borrowing money, calculated by finding the difference between the total installment price and the original cash purchase cost.      The absolute cost of borrowing (total interest expense) is .          A new fax machine costs Worcester State University $2,670. They are to pay it off in 18 months at a 9% simple interest rate .      What will each monthly payment be?    To find the monthly installment value, we first compute the total future value of the loan (principal plus interest) and then divide it equally by the total number of payments.   Identify Given Variables:   Principal ( ):   Annual Interest Rate ( ):   Loan Term ( ):      Step-by-Step Calculation:     Calculate Total Accumulated Interest ( ):    The total interest accrued on the equipment purchase is .     Calculate Total Future Value Balance ( ): Combine the principal cost and interest.  The total amount to be repaid over the loan lifespan is .     Calculate Periodic Installment Payment ( ): Divide total future value by the 18 months.       Rounding to the nearest cent, each sequential monthly payment will be .       How much interest will they pay on the loan?    The absolute cost of credit (total interest expense) was calculated directly in step 1 using the simple interest formula:      Worcester State University will pay a total interest amount of over the lifespan of the financing agreement.          Congratulations! You purchase a sprawling home for $1,000,000. You make a 15% down payment and agree to a 4.5% interest rate for a 30-year fixed-rate mortgage. You are also required to pay 3 points at closing.      What is the amount of your loan?    The loan amount is determined by finding the cash value of the down payment and subtracting it from the total purchase price of the home.   Step-by-Step Calculation:     Calculate the Down Payment: Multiply the purchase price by the down payment percentage. The upfront cash down payment is .     Calculate the Principal Mortgage Amount ( ): Subtract the down payment from the total home cost.      The total principal amount of your mortgage loan is .       You paid 3 points at the closing. How much did you pay?    In real estate finance, 1 point is equal to 1% of the total amount borrowed (the mortgage loan principal), not the purchase price of the home.      The total amount paid for 3 points at closing is .       What is your monthly mortgage payment?    To determine the regular monthly installment cost, we apply the standard fixed-rate loan amortization formula.   Identify Given Variables:   Mortgage Loan Principal ( ):   Annual Interest Rate ( ):   Compounding Periods per Year ( ):  (monthly)  Total Time ( ):      Step-by-Step Calculation:     State the Installment Formula:       Evaluate the Numerator: Find the periodic monthly rate.      Evaluate the Denominator: Calculate the monthly compounding base over the lifetime total of 360 payments ( ).        Solve for PMT: Divide the numerator by the denominator.      Your base monthly mortgage payment is .       How much are you charged over the course of the mortgage loan, in interest?    The total interest expense is determined by adding up all monthly payments made over 30 years and subtracting the original amount borrowed.   Step-by-Step Calculation:     Calculate Total Lifetime Payments: Multiply the monthly payment by 360 total months. The aggregate amount paid back to the lender over 30 years is .     Subtract the Initial Principal Balance:        The total interest charged over the standard lifespan of the loan is .      "
+},
+{
+  "id": "handout-finance-4-1",
+  "level": "2",
+  "url": "handout-finance.html#handout-finance-4-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  In order to pay for baseball uniforms, a school takes out a simple interest loan for $20,000 for 7 months at a rate of 12%. Find the future value of the loan.    To find the future value of a loan using a simple interest model, we extract our known variables and evaluate using the linear simple interest equation.   Identify Given Variables:   Principal ( ):   Annual Interest Rate ( ):   Time ( ):      Step-by-Step Calculation:     Calculate Accumulated Interest ( ): Multiply Principal by Rate by Time.   The total accumulated interest generated over the 7 months is .     Calculate Future Value ( ): Sum the initial principal amount and the newly accumulated interest.       The final future value of the loan at maturity is .   "
+},
+{
+  "id": "handout-finance-5-1",
+  "level": "2",
+  "url": "handout-finance.html#handout-finance-5-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  What is the amount of the deposit needed if your financial goal is to save $24,000 in 3 years with a rate of 7.5% compounded semiannually ?    To find the initial deposit (present value) required to meet a future financial goal with compound interest, we rearrange the compound interest formula to solve for the principal .   Identify Given Variables:   Future Value Goal ( ):   Annual Interest Rate ( ):   Compounding Periods per Year ( ):  (semiannually)  Time ( ):      Step-by-Step Calculation:     State the Present Value Formula:       Substitute the Values: Find the interest rate per period ( ) and total number of compounding periods ( ).        Evaluate the Denominator:        Calculate the Final Principal Amount: Divide the future goal by the compounding factor and round to the nearest cent.      The initial deposit amount needed to meet your financial goal is .   "
+},
+{
+  "id": "handout-finance-6-1",
+  "level": "2",
+  "url": "handout-finance.html#handout-finance-6-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Your sister has her first child and you decide to open an annuity for your baby nephew. You deposit $30 at the end of each month into an annuity that returns 2.5% annual interest.      How much will your nephew have in his annuity when he goes off to college (18 years from now)?    To find the future value of regular monthly contributions, we evaluate using the future value formula for an ordinary annuity.   Identify Given Variables:   Monthly Payment ( ):   Annual Interest Rate ( ):   Compounding Periods per Year ( ):  (monthly)  Time ( ):      Step-by-Step Calculation:     State the Annuity Future Value Formula:       Calculate Intermediate Terms: Find the monthly interest rate and the total number of deposits.       Substitute and Evaluate:           When your nephew leaves for college, the account will have accumulated .       How much interest was earned?    To determine total interest earned, we calculate your total out-of-pocket contributions over the 18 years and subtract that value from the accumulated future value.   Step-by-Step Calculation:     Calculate Total Out-of-Pocket Deposits: Multiply the monthly payment by the total number of compound periods over 18 years.  The sum of all out-of-pocket deposits is .     Calculate Total Interest Earned: Subtract total out-of-pocket deposits from the accumulated future value found in Task 1.       The total interest earned by the annuity is .    "
+},
+{
+  "id": "handout-finance-7-1",
+  "level": "2",
+  "url": "handout-finance.html#handout-finance-7-1",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  The purchase cost of a Camry is $32,500. This vehicle can be financed by providing a $3,000 down payment and committing to monthly installment payments of $680.25 per month for 60 months.      Determine the amount financed.    The amount financed is the remaining vehicle balance that must be covered by a loan after subtracting the initial down payment from the base purchase price.      The base amount financed through the loan is .       Determine the total installment charge (total installment price).    The total installment price represents the absolute total cost of buying the car over time, found by adding the down payment to the sum of all monthly payments.   Step-by-Step Calculation:     Calculate Total Monthly Deferred Payments: Multiply the monthly commitment by the total number of payments. The sum of all monthly installments across 60 months is .     Calculate Total Out-of-Pocket Cost: Combine the monthly payments with the initial down payment.       The total installment cost for purchasing the vehicle is .       Determine the finance charge.    The finance charge represents the total interest paid for borrowing money, calculated by finding the difference between the total installment price and the original cash purchase cost.      The absolute cost of borrowing (total interest expense) is .    "
+},
+{
+  "id": "handout-finance-8-1",
+  "level": "2",
+  "url": "handout-finance.html#handout-finance-8-1",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  A new fax machine costs Worcester State University $2,670. They are to pay it off in 18 months at a 9% simple interest rate .      What will each monthly payment be?    To find the monthly installment value, we first compute the total future value of the loan (principal plus interest) and then divide it equally by the total number of payments.   Identify Given Variables:   Principal ( ):   Annual Interest Rate ( ):   Loan Term ( ):      Step-by-Step Calculation:     Calculate Total Accumulated Interest ( ):    The total interest accrued on the equipment purchase is .     Calculate Total Future Value Balance ( ): Combine the principal cost and interest.  The total amount to be repaid over the loan lifespan is .     Calculate Periodic Installment Payment ( ): Divide total future value by the 18 months.       Rounding to the nearest cent, each sequential monthly payment will be .       How much interest will they pay on the loan?    The absolute cost of credit (total interest expense) was calculated directly in step 1 using the simple interest formula:      Worcester State University will pay a total interest amount of over the lifespan of the financing agreement.    "
+},
+{
+  "id": "handout-finance-9-1",
+  "level": "2",
+  "url": "handout-finance.html#handout-finance-9-1",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  Congratulations! You purchase a sprawling home for $1,000,000. You make a 15% down payment and agree to a 4.5% interest rate for a 30-year fixed-rate mortgage. You are also required to pay 3 points at closing.      What is the amount of your loan?    The loan amount is determined by finding the cash value of the down payment and subtracting it from the total purchase price of the home.   Step-by-Step Calculation:     Calculate the Down Payment: Multiply the purchase price by the down payment percentage. The upfront cash down payment is .     Calculate the Principal Mortgage Amount ( ): Subtract the down payment from the total home cost.      The total principal amount of your mortgage loan is .       You paid 3 points at the closing. How much did you pay?    In real estate finance, 1 point is equal to 1% of the total amount borrowed (the mortgage loan principal), not the purchase price of the home.      The total amount paid for 3 points at closing is .       What is your monthly mortgage payment?    To determine the regular monthly installment cost, we apply the standard fixed-rate loan amortization formula.   Identify Given Variables:   Mortgage Loan Principal ( ):   Annual Interest Rate ( ):   Compounding Periods per Year ( ):  (monthly)  Total Time ( ):      Step-by-Step Calculation:     State the Installment Formula:       Evaluate the Numerator: Find the periodic monthly rate.      Evaluate the Denominator: Calculate the monthly compounding base over the lifetime total of 360 payments ( ).        Solve for PMT: Divide the numerator by the denominator.      Your base monthly mortgage payment is .       How much are you charged over the course of the mortgage loan, in interest?    The total interest expense is determined by adding up all monthly payments made over 30 years and subtracting the original amount borrowed.   Step-by-Step Calculation:     Calculate Total Lifetime Payments: Multiply the monthly payment by 360 total months. The aggregate amount paid back to the lender over 30 years is .     Subtract the Initial Principal Balance:        The total interest charged over the standard lifespan of the loan is .    "
+},
+{
+  "id": "handout-Probability",
+  "level": "1",
+  "url": "handout-Probability.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "4. Probability Handout",
+  "body": " 4. Probability Handout   This handout bridges fundamental counting formulas with theoretical probability to help you solve real-world problems involving large sample spaces. By mastering factorials, permutations, and combinations, you will build an efficient toolkit for evaluating complex, multi-stage probability scenarios.  The core objectives are organized into the following conceptual blocks:    Fundamentals of Probability  An introduction to theoretical probability, defining sample spaces, tracking experiments, and computing basic event fractions.    Events Involving NOT and OR  Analyzing compound events using the complement rule for negations and the general addition rule to account for overlapping outcomes.    Counting Principles, Permutations, and Combinations  Using the Fundamental Counting Principle and factorials ( ) to calculate expansive outcome paths without manual listing.  Applying permutations ( ) for ordered subsets and combinations ( ) for unordered groupings or committees selected without replacement.    Probability with the FCP, nPr, and nCr  Combining counting models with classical probability structures to solve high-density problems like lotteries, secure passwords, and multi-stage selections.     Exercises and Workspaces: Real-World Applications      A class is collecting data on eye color and gender. They organize the data they collected into the table shown. Numbers in the table represent the number of students in the class that belong to each of the categories.   Eye color and gender distribution.     Brown  Blue  Green  Total    Male  22  18  10  50    Female  18  20  12  50    Total  40  38  22  100     Find the probability that a randomly selected student from this class:  Does not have brown eyes.  Is female or has blue eyes.      First, compute the totals: Total students = . Total Brown = . Total Female = . Total Blue = . Female and Blue = .   Using the complement rule:     Using the addition rule:             Two dice are rolled. What is the probability that the sum of the faces on the two dice is 7?    When rolling two standard six-sided dice, the total number of outcomes in the sample space is .  The outcomes that result in a sum of 7 are: There are favorable outcomes, so the probability is:        There are fifteen balloons: 3 blue, 4 red, 2 green, 3 yellow, and 3 orange. How many distinct ways can the balloons be arranged?    This is a permutation problem involving non-distinct objects. The total number of balloons is . The repeating counts are blue, red, green, yellow, and orange.  The number of distinct arrangements is given by:        Find the number of distinct ways to arrange the letters in the word Pinocchio .    Count the total number of letters in Pinocchio , which is . Identify the repeating letters:  i appears 2 times  o appears 2 times  c appears 2 times  The letters P, n, and h appear 1 time each.  The number of distinct arrangements is:        How many ways are there to form a 3-member committee from the 18 members of the club?    Since a standard committee has no specific titles or ranking positions, the order of selection does not matter. This is a combination problem ( ) where we choose out of members.        How many ways are there to form a 3-officer committee (President, Vice-President, and Secretary) from the 18 members of the club?    Because each committee seat represents a distinct, ranked official position, the order of selection matters. This is a permutation problem ( ) where we arrange out of members.          A group consists of 8 men and 9 women. Three people are selected to attend a conference.  In how many ways can the 3 people be selected from the group?  In how many ways can the 3 people be selected from the men only?  Find the probability that the selected group will consist of all men.      Order does not matter for selection to attend a conference, so we use combinations.   The total group size is people. Choosing 3:     Choosing 3 people out of the 8 men only:     The probability is the number of all-male selections over total possible selections:           Refer back to the chocolate selection problem (16 chocolates total: 4 nuts, 7 caramel, 8 cream filled). Answer the following additional tracking questions based on your selections without replacement:   If four chocolates are selected, what is the probability of not selecting a cream-filled or caramel chocolate?    How many ways can one choose a nut-filled chocolate followed by a caramel chocolate?       Let us evaluate based on the structural subset pools:   The total number of chocolates that are either cream-filled or caramel depends on potential overlaps. Assuming a disjoint selection setting where remaining pools are cleanly isolated: The number of chocolates that are neither cream nor caramel is chocolate. Since you cannot select 4 chocolates sequentially without replacement from a remaining pool of only 1 item, this specific probability path is impossible:     We use the Fundamental Counting Principle for sequential independent category slots. There are choices for the nut-filled chocolate first. There are choices for the caramel chocolate second.         "
+},
+{
+  "id": "ex-eye-color-table",
+  "level": "2",
+  "url": "handout-Probability.html#ex-eye-color-table",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  A class is collecting data on eye color and gender. They organize the data they collected into the table shown. Numbers in the table represent the number of students in the class that belong to each of the categories.   Eye color and gender distribution.     Brown  Blue  Green  Total    Male  22  18  10  50    Female  18  20  12  50    Total  40  38  22  100     Find the probability that a randomly selected student from this class:  Does not have brown eyes.  Is female or has blue eyes.      First, compute the totals: Total students = . Total Brown = . Total Female = . Total Blue = . Female and Blue = .   Using the complement rule:     Using the addition rule:       "
+},
+{
+  "id": "ex-two-dice-sum-7",
+  "level": "2",
+  "url": "handout-Probability.html#ex-two-dice-sum-7",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Two dice are rolled. What is the probability that the sum of the faces on the two dice is 7?    When rolling two standard six-sided dice, the total number of outcomes in the sample space is .  The outcomes that result in a sum of 7 are: There are favorable outcomes, so the probability is:    "
+},
+{
+  "id": "ex-distinct-balloons",
+  "level": "2",
+  "url": "handout-Probability.html#ex-distinct-balloons",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  There are fifteen balloons: 3 blue, 4 red, 2 green, 3 yellow, and 3 orange. How many distinct ways can the balloons be arranged?    This is a permutation problem involving non-distinct objects. The total number of balloons is . The repeating counts are blue, red, green, yellow, and orange.  The number of distinct arrangements is given by:    "
+},
+{
+  "id": "ex-pinocchio-letters",
+  "level": "2",
+  "url": "handout-Probability.html#ex-pinocchio-letters",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Find the number of distinct ways to arrange the letters in the word Pinocchio .    Count the total number of letters in Pinocchio , which is . Identify the repeating letters:  i appears 2 times  o appears 2 times  c appears 2 times  The letters P, n, and h appear 1 time each.  The number of distinct arrangements is:    "
+},
+{
+  "id": "ex-unordered-committee",
+  "level": "2",
+  "url": "handout-Probability.html#ex-unordered-committee",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  How many ways are there to form a 3-member committee from the 18 members of the club?    Since a standard committee has no specific titles or ranking positions, the order of selection does not matter. This is a combination problem ( ) where we choose out of members.    "
+},
+{
+  "id": "ex-ordered-committee",
+  "level": "2",
+  "url": "handout-Probability.html#ex-ordered-committee",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  How many ways are there to form a 3-officer committee (President, Vice-President, and Secretary) from the 18 members of the club?    Because each committee seat represents a distinct, ranked official position, the order of selection matters. This is a permutation problem ( ) where we arrange out of members.    "
+},
+{
+  "id": "ex-conference-selection",
+  "level": "2",
+  "url": "handout-Probability.html#ex-conference-selection",
+  "type": "Worksheet Exercise",
   "number": "7",
-  "title": "Handouts",
-  "body": " Handouts    "
+  "title": "",
+  "body": "  A group consists of 8 men and 9 women. Three people are selected to attend a conference.  In how many ways can the 3 people be selected from the group?  In how many ways can the 3 people be selected from the men only?  Find the probability that the selected group will consist of all men.      Order does not matter for selection to attend a conference, so we use combinations.   The total group size is people. Choosing 3:     Choosing 3 people out of the 8 men only:     The probability is the number of all-male selections over total possible selections:       "
+},
+{
+  "id": "ex-chocolate-probability-parts-bc",
+  "level": "2",
+  "url": "handout-Probability.html#ex-chocolate-probability-parts-bc",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "",
+  "body": "  Refer back to the chocolate selection problem (16 chocolates total: 4 nuts, 7 caramel, 8 cream filled). Answer the following additional tracking questions based on your selections without replacement:   If four chocolates are selected, what is the probability of not selecting a cream-filled or caramel chocolate?    How many ways can one choose a nut-filled chocolate followed by a caramel chocolate?       Let us evaluate based on the structural subset pools:   The total number of chocolates that are either cream-filled or caramel depends on potential overlaps. Assuming a disjoint selection setting where remaining pools are cleanly isolated: The number of chocolates that are neither cream nor caramel is chocolate. Since you cannot select 4 chocolates sequentially without replacement from a remaining pool of only 1 item, this specific probability path is impossible:     We use the Fundamental Counting Principle for sequential independent category slots. There are choices for the nut-filled chocolate first. There are choices for the caramel chocolate second.       "
+},
+{
+  "id": "handout-Statistics",
+  "level": "1",
+  "url": "handout-Statistics.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "5. Statistics Handout",
+  "body": " 5. Statistics Handout   This handout provides an overview of different data distributions through graphs, including z-scores and empirical methods.  The handout is designed to help students understand the strengths and weaknesses of the mean, median, and mode, and how they can lead to different outcomes in data analysis. By working through the exercises, students will gain a deeper understanding of bell curves, normal distributions, and linear regression.     Data through Graphs An introduction to interpreting and creating various types of graphs, such as bar graphs, histograms, pie charts, and scatter plots, to visualize data effectively.   Measures of Center and Spread mean, median, mode, range, variance, and standard deviation are all measures that help us understand the central tendency and variability of a dataset.   The Empirical Rule A rule that describes the distribution of data in a normal distribution, stating that approximately 68% of the data falls within one standard deviation of the mean, 95% within two standard deviations, and 99.7% within three standard deviations.   z-scores Standardized scores that indicate how many standard deviations a data point is from the mean.   Regression A statistical method for modeling the relationship between a dependent variable and one or more independent variables, often used for prediction and understanding the strength of relationships between variables.     Exercises and Workspaces: Real-World Applications     Data Representation: Daily Text Messages Sent   The following dataset represents the number of text messages sent by high school students during a single day:  40, 20, 20, 50, 30, 30, 60, 20, 30, 40, 30, 10, 40, 50, 40, 30, 30, 40, 40, 50, 60, 20, 50, 60, 10    Complete a frequency table for the text message counts.  Construct a bar graph of the data.  Construct a line graph of the data.  Construct a pie chart of the data.  Construct a histogram of the data using 10-point class intervals.        (a) Frequency Table: Sorting and counting each distinct message count yields the following frequency distribution:   Frequency Distribution of Daily Text Messages    Texts Sent  Frequency (Students)   10 2  20 4  30 6  40 6  50 4  60 3      (b) Bar Graph: We represent each distinct count value on the horizontal axis and its corresponding frequency on the vertical axis using separated columns:   Bar Graph of Daily Texts Sent   A vertical bar chart showing text message totals on the horizontal axis and student frequency counts on the vertical axis.       (c) Line Graph: Using coordinates, data markers are mapped out across consecutive value junctions and tied together using path lines:   Line Graph of Daily Texts Sent   A line graph mapping distinct text count marks to the final number of tracking students.       (d) Pie Chart: Proportional distributions are evaluated based on a complete baseline of students using degree equations:    10 Texts: 8.00 percent (28.8 degrees)  20 Texts: 16.00 percent (57.6 degrees)  30 Texts: 24.00 percent (86.4 degrees)  40 Texts: 24.00 percent (86.4 degrees)  50 Texts: 16.00 percent (57.6 degrees)  60 Texts: 12.00 percent (43.2 degrees)     Pie Chart of Text Message Distributions   A pie chart dividing the student text distribution into categorical value sectors.       (e) Histogram: Grouping values into 10-point bins maps the dataset across continuous quantitative intervals, which forces columns to display directly side-by-side:    [5, 15): 2 students (values of 10)  [15, 25): 4 students (values of 20)  [25, 35): 6 students (values of 30)  [35, 45): 6 students (values of 40)  [45, 55): 4 students (values of 50)  [55, 65]: 3 students (values of 60)     Histogram of Text Message Distributions   A histogram displaying the continuous interval distribution of text message frequencies.           Employee Commute Times   A small company tracks the daily one-way commute times (measured in minutes) for a random sample of employees. The collected data values are listed below:  25, 40, 15, 30, 25, 20, 45, 25, 60  Calculate the following four summary metrics for this data set:  The arithmetic mean commute time.  The median commute time.  The mode of the dataset.  The total range of the commute times.        (a) Mean: To find the mean, sum all the data points together and divide by the total number of observations ( ):       (b) Median: To determine the median, first arrange the data points in ascending numerical order:  15, 20, 25, 25, 25 , 30, 40, 45, 60  Since there is an odd number of scores ( ), the median is the exact middle element located at position . The fifth value is minutes.    (c) Mode: The mode is the specific data value that shows up most frequently in the sample. In this ordered list, the value appears three times, while every other number appears only once. Therefore, the mode is minutes.    (d) Range: The range is the absolute difference between the absolute highest value (maximum) and the lowest value (minimum) in the dataset:       Dot Plot of Employee Commute Times   A simple dot plot showing employee commute times on the horizontal axis with repeated stacked dots showing the high frequency at 25 minutes.           Female Height Distribution   Adult female heights in North America are approximately normally distributed with a mean of inches and a standard deviation of inches.  Use the Empirical Rule (68-95-99.7 Rule) to answer the following questions:  Approximately what percentage of women have heights between 61.5 inches and 68.5 inches?  Approximately 95 percent of women have heights between what two values?  Approximately what percentage of women have heights greater than 72 inches?  Approximately what percentage of women have heights between 58 inches and 65 inches?       1. Heights between 61.5 and 68.5 inches: The values 61.5 and 68.5 are found by subtracting and adding one standard deviation to the mean: and . This range represents exactly 1 standard deviation from the mean ( ) standard deviations. According to the Empirical Rule, approximately 68 percent of the distribution falls within this range.   2. Range covering 95 percent of women: The Empirical Rule states that approximately 95 percent of data falls within 2 standard deviations of the (mean sd). Calculating these boundaries:  Therefore, 95 percent of women have heights between 58 inches and 72 inches .   3. Percentage greater than 72 inches: A height of 72 inches sits exactly 2 standard deviations above the mean. Since 95 percent of women fall within 2 standard deviations (between 58 and 72 inches), the remaining 5 percent falls outside this span. Because the normal curve is perfectly symmetrical, half of that remainder is in the lower tail and half is in the upper tail. Dividing this gives  2.5 percent .   4. Percentage between 58 and 65 inches: The value of 58 inches is exactly 2 standard deviations below the mean, while 65 inches is the mean itself. Since 95 percent of the data falls symmetrically within 2 standard deviations of the mean, the section from the lower boundary up to the center mean point represents exactly half of that cluster. Calculating this gives  47.5 percent .   Normal Distribution Curve for Female Heights   A bell-shaped normal distribution curve centered at 65 inches, showing standard deviation marking lines at 54.5, 58, 61.5, 65, 68.5, 72, and 75.5 inches.           Calculating Z-Scores-1   On a standardized certification exam, the mean score is with a standard deviation of . Determine the z-score for an examinee who scored an .     This student scored standard deviations above the population average.     Calculating Z-Scores-2   A track-and-field sprint group has a mean race completion time of seconds with a standard deviation of seconds. What is the z-score for a runner who completes the race in seconds?     The runner's time is standard deviations faster (below) than the group average.     Comparing Z-Scores-3   An industrial lighting brand has a mean runtime life of hours with a standard deviation of hours. Find the specific operational lifespan that corresponds to a z-score of .              Negative Correlation: Car Mileage and Resale Value   A used car dealership wants to examine the relationship between a specific sedan's odometer mileage ( , measured in thousands of miles) and its current market resale value ( , measured in thousands of dollars). The data collected from a sample of five vehicles is presented below.    Vehicle Mileage vs. Resale Value    Vehicle  Mileage ( in thousands of miles)  Resale Value ( in thousands of dollars)   1 10 35  2 20 29  3 30 26  4 40 20  5 50 14    Using the simple linear regression model calculated from the observed data table above, predict the total market resale value of a sedan if its odometer reaches thousand miles (i.e., ).      $15.5 thousand dollars   Incorrect. This value fails to capture the continuous decline in value, overestimating how much the car is worth at 60 thousand miles.     $9.5 thousand dollars   Correct! Observe the downward trend in the data points and plug the value directly into the line equation to find .     $5.0 thousand dollars   Incorrect. While the vehicle loses value consistently, it has not depreciated this drastically according to the linear model.     $2.1 thousand dollars   Incorrect. This underestimation assumes an exponential drop-off rather than a steady simple linear progression rate.      To predict the resale value of the vehicle at 60 thousand miles, we first graph the data points from the table and calculate the line of best fit using linear regression.     Scatter Plot of Mileage vs. Resale Value   A scatter plot showing a downward trend of resale value as mileage increases, with a red regression line and labeled data points.         "
+},
+{
+  "id": "exercise-text-message-counts",
+  "level": "2",
+  "url": "handout-Statistics.html#exercise-text-message-counts",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Data Representation: Daily Text Messages Sent.",
+  "body": " Data Representation: Daily Text Messages Sent   The following dataset represents the number of text messages sent by high school students during a single day:  40, 20, 20, 50, 30, 30, 60, 20, 30, 40, 30, 10, 40, 50, 40, 30, 30, 40, 40, 50, 60, 20, 50, 60, 10    Complete a frequency table for the text message counts.  Construct a bar graph of the data.  Construct a line graph of the data.  Construct a pie chart of the data.  Construct a histogram of the data using 10-point class intervals.        (a) Frequency Table: Sorting and counting each distinct message count yields the following frequency distribution:   Frequency Distribution of Daily Text Messages    Texts Sent  Frequency (Students)   10 2  20 4  30 6  40 6  50 4  60 3      (b) Bar Graph: We represent each distinct count value on the horizontal axis and its corresponding frequency on the vertical axis using separated columns:   Bar Graph of Daily Texts Sent   A vertical bar chart showing text message totals on the horizontal axis and student frequency counts on the vertical axis.       (c) Line Graph: Using coordinates, data markers are mapped out across consecutive value junctions and tied together using path lines:   Line Graph of Daily Texts Sent   A line graph mapping distinct text count marks to the final number of tracking students.       (d) Pie Chart: Proportional distributions are evaluated based on a complete baseline of students using degree equations:    10 Texts: 8.00 percent (28.8 degrees)  20 Texts: 16.00 percent (57.6 degrees)  30 Texts: 24.00 percent (86.4 degrees)  40 Texts: 24.00 percent (86.4 degrees)  50 Texts: 16.00 percent (57.6 degrees)  60 Texts: 12.00 percent (43.2 degrees)     Pie Chart of Text Message Distributions   A pie chart dividing the student text distribution into categorical value sectors.       (e) Histogram: Grouping values into 10-point bins maps the dataset across continuous quantitative intervals, which forces columns to display directly side-by-side:    [5, 15): 2 students (values of 10)  [15, 25): 4 students (values of 20)  [25, 35): 6 students (values of 30)  [35, 45): 6 students (values of 40)  [45, 55): 4 students (values of 50)  [55, 65]: 3 students (values of 60)     Histogram of Text Message Distributions   A histogram displaying the continuous interval distribution of text message frequencies.      "
+},
+{
+  "id": "exercise-central-tendency-quiz",
+  "level": "2",
+  "url": "handout-Statistics.html#exercise-central-tendency-quiz",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Employee Commute Times.",
+  "body": " Employee Commute Times   A small company tracks the daily one-way commute times (measured in minutes) for a random sample of employees. The collected data values are listed below:  25, 40, 15, 30, 25, 20, 45, 25, 60  Calculate the following four summary metrics for this data set:  The arithmetic mean commute time.  The median commute time.  The mode of the dataset.  The total range of the commute times.        (a) Mean: To find the mean, sum all the data points together and divide by the total number of observations ( ):       (b) Median: To determine the median, first arrange the data points in ascending numerical order:  15, 20, 25, 25, 25 , 30, 40, 45, 60  Since there is an odd number of scores ( ), the median is the exact middle element located at position . The fifth value is minutes.    (c) Mode: The mode is the specific data value that shows up most frequently in the sample. In this ordered list, the value appears three times, while every other number appears only once. Therefore, the mode is minutes.    (d) Range: The range is the absolute difference between the absolute highest value (maximum) and the lowest value (minimum) in the dataset:       Dot Plot of Employee Commute Times   A simple dot plot showing employee commute times on the horizontal axis with repeated stacked dots showing the high frequency at 25 minutes.      "
+},
+{
+  "id": "exercise-female-height-empirical-rule",
+  "level": "2",
+  "url": "handout-Statistics.html#exercise-female-height-empirical-rule",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Female Height Distribution.",
+  "body": " Female Height Distribution   Adult female heights in North America are approximately normally distributed with a mean of inches and a standard deviation of inches.  Use the Empirical Rule (68-95-99.7 Rule) to answer the following questions:  Approximately what percentage of women have heights between 61.5 inches and 68.5 inches?  Approximately 95 percent of women have heights between what two values?  Approximately what percentage of women have heights greater than 72 inches?  Approximately what percentage of women have heights between 58 inches and 65 inches?       1. Heights between 61.5 and 68.5 inches: The values 61.5 and 68.5 are found by subtracting and adding one standard deviation to the mean: and . This range represents exactly 1 standard deviation from the mean ( ) standard deviations. According to the Empirical Rule, approximately 68 percent of the distribution falls within this range.   2. Range covering 95 percent of women: The Empirical Rule states that approximately 95 percent of data falls within 2 standard deviations of the (mean sd). Calculating these boundaries:  Therefore, 95 percent of women have heights between 58 inches and 72 inches .   3. Percentage greater than 72 inches: A height of 72 inches sits exactly 2 standard deviations above the mean. Since 95 percent of women fall within 2 standard deviations (between 58 and 72 inches), the remaining 5 percent falls outside this span. Because the normal curve is perfectly symmetrical, half of that remainder is in the lower tail and half is in the upper tail. Dividing this gives  2.5 percent .   4. Percentage between 58 and 65 inches: The value of 58 inches is exactly 2 standard deviations below the mean, while 65 inches is the mean itself. Since 95 percent of the data falls symmetrically within 2 standard deviations of the mean, the section from the lower boundary up to the center mean point represents exactly half of that cluster. Calculating this gives  47.5 percent .   Normal Distribution Curve for Female Heights   A bell-shaped normal distribution curve centered at 65 inches, showing standard deviation marking lines at 54.5, 58, 61.5, 65, 68.5, 72, and 75.5 inches.      "
+},
+{
+  "id": "handout-Statistics-7-1",
+  "level": "2",
+  "url": "handout-Statistics.html#handout-Statistics-7-1",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Calculating Z-Scores-1.",
+  "body": " Calculating Z-Scores-1   On a standardized certification exam, the mean score is with a standard deviation of . Determine the z-score for an examinee who scored an .     This student scored standard deviations above the population average.   "
+},
+{
+  "id": "handout-Statistics-7-2",
+  "level": "2",
+  "url": "handout-Statistics.html#handout-Statistics-7-2",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Calculating Z-Scores-2.",
+  "body": " Calculating Z-Scores-2   A track-and-field sprint group has a mean race completion time of seconds with a standard deviation of seconds. What is the z-score for a runner who completes the race in seconds?     The runner's time is standard deviations faster (below) than the group average.   "
+},
+{
+  "id": "handout-Statistics-7-3",
+  "level": "2",
+  "url": "handout-Statistics.html#handout-Statistics-7-3",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "Comparing Z-Scores-3.",
+  "body": " Comparing Z-Scores-3   An industrial lighting brand has a mean runtime life of hours with a standard deviation of hours. Find the specific operational lifespan that corresponds to a z-score of .         "
+},
+{
+  "id": "exercise-car-mileage-prediction",
+  "level": "2",
+  "url": "handout-Statistics.html#exercise-car-mileage-prediction",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "Negative Correlation: Car Mileage and Resale Value.",
+  "body": " Negative Correlation: Car Mileage and Resale Value   A used car dealership wants to examine the relationship between a specific sedan's odometer mileage ( , measured in thousands of miles) and its current market resale value ( , measured in thousands of dollars). The data collected from a sample of five vehicles is presented below.    Vehicle Mileage vs. Resale Value    Vehicle  Mileage ( in thousands of miles)  Resale Value ( in thousands of dollars)   1 10 35  2 20 29  3 30 26  4 40 20  5 50 14    Using the simple linear regression model calculated from the observed data table above, predict the total market resale value of a sedan if its odometer reaches thousand miles (i.e., ).      $15.5 thousand dollars   Incorrect. This value fails to capture the continuous decline in value, overestimating how much the car is worth at 60 thousand miles.     $9.5 thousand dollars   Correct! Observe the downward trend in the data points and plug the value directly into the line equation to find .     $5.0 thousand dollars   Incorrect. While the vehicle loses value consistently, it has not depreciated this drastically according to the linear model.     $2.1 thousand dollars   Incorrect. This underestimation assumes an exponential drop-off rather than a steady simple linear progression rate.      To predict the resale value of the vehicle at 60 thousand miles, we first graph the data points from the table and calculate the line of best fit using linear regression.     Scatter Plot of Mileage vs. Resale Value   A scatter plot showing a downward trend of resale value as mileage increases, with a red regression line and labeled data points.       "
 },
 {
   "id": "homework",
   "level": "1",
   "url": "homework.html",
   "type": "Chapter",
-  "number": "8",
+  "number": "7",
   "title": "Homework",
   "body": " Homework    "
-},
-{
-  "id": "ma-150-syllabus",
-  "level": "1",
-  "url": "ma-150-syllabus.html",
-  "type": "Section",
-  "number": "",
-  "title": "MA-105-BL: Survey of Math",
-  "body": " MA-105-BL: Survey of Math   Worcester State University, DGCE, Summer 2026     Course Information     Instructor  Dr. Hansun To, Professor of Mathematics, hto1@worcester.edu .    Meeting Information  This is a Hybrid Course , combining online and in-person learning to provide a flexible and tailored experience. You'll have the opportunity to learn at your own pace using MyOpenMath, participate in Zoom discussions as needed, and attend in-person sessions for exams.   In-person attendance is required for the following sessions:    Two midterm exams (1 hour and 30 minutes):     (In person) Thursday, June 4th, from 03:30 PM to 05:00 PM     (Online) Thursday, June 25th. (The exam will be available on Thursday, June 25th, at 08:00 AM. Please submit your work by 06:30 PM, including any necessary show work attachments.)      Final exam (three hours):     (In person) Thursday, July 2nd, from 03:30 PM to 05:30 PM      All in-person exams will be held in Sullivan room S-136 . Please plan accordingly to ensure your attendance at these mandatory sessions.    Prerequisite  Math placement exam code 3 or higher, or a weighted high school GPA of 2.7 or higher within the past 3 years      Responsibility for Learning  Every student is responsible for their own learning. The instructor will make every effort to support you; however, if you need any help it is your responsibility to reach out with questions    Course Content   In this course we will learn to improve the level of quantitative awareness of students using familiar situations that provide a sense of purpose for studying mathematics. The objective is not to make mathematicians of the students, but to help them deal as comfortably as possible with an environment that increasingly makes use of quantitative reasoning. Topics will include voting and apportionment methods, personal finance, set theory, and probability theory.     Required Materials  A calculator is required for this course. There is no required textbook; notes will be provided in class (or in pdf format) and other materials will be freely available on the MyOpenMath platform.    Calculators  A scientific, non-graphing calculator capable of computing logarithmic and trigonometric values is required, though its use will be limited to only a handful of sections. I recommend the TI-30X IIS , which you can usually find for around Graphing calculators, phones, tablets and any unauthorized devices are never allowed!    MyOpenMath  MyOpenMath (MOM) is a free, open source, online course management system designed for mathematics which we will use extensively in this course. It is available at https:\/\/www.myopenmath.com\/ . You will need to create an account and register for our course on MyOpenMath to get started; we will do this as a group during the first class meeting. All course documents and materials will be posted on MyOpenMath; and all homework will be completed through MyOpenMath.      Assignments and Grading   Homework  Practice is a primary component of the mathematical learning process. For this reason, homework sets will be assigned on MyOpenMath after most class meetings. Assignments will always be due on Wednesdays by 11:59pm. This means you will often have two homework sets due on Wednesday, one which opened on the previous Monday and the other which opened on the previous Wednesday. While the number of problems in each homework set will vary, your score will be considered as a percentage and each set will be weighted equally when computing your homework grade. The problems on the homework sets are sometimes meant to deepen or extend the understanding you have gained from the class lecture and discussion; you should expect to find some of the exercises difficult.  The online homework is set up so you can try most problems two times, then the correct answer will be shown (there may be some questions in which you have only one try, this will be indicated in the homework set). If you miss a problem and want to improve your score, you can click the ``Try a similar problem'' link, which will give you a new question of the same type. You can keep on working on versions of a question until you get it correct. You must earn at least 50% on an assignment for your score to count towards your grade; any set in which you earn less than 50% will be counted as a 0. Assignments will remain available in \"Practice\" mode after their due date to provide additional practice of concepts; new versions of problems can be generated and answered, but scores will not be saved. Be aware, opening an online homework assignment in \"Practice\" mode will disqualify you from being able to redeem a LatePass on that assignment! If you are having trouble on a problem, you may use the \"Message Instructor\" link, which will allow you to send me a message through MyOpenMath; the specific problem you are working on will be automatically included in the message. I can then reply to the message with some guidance. These messages are internal to MyOpenMath and not email, so my reply will go to your messages when you login to MyOpenMath. I will check my messages on MyOpenMath at least once per day. Some problems may have a link to a video solution of a similar problem.  To account for any unexpected emergencies or technical issues that may occur, we will utilize the LatePass feature in MyOpenMath. A LatePass can be redeemed for an automatic 48-hour extension on any online homework set which has NOT been viewed in \"Practice\" mode. To use a LatePass, click the \"Use LatePass\" button next to the appropriate assignment on MyOpenMath and the platform will automatically extend the due date for that assignment to 48 hours after the original due date. Each student will be given 8 LatePasses to use as they wish throughout the semester. Note a maximum of two LatePasses can be used on any single assignment. If circumstances require a more substantial extension, contact your instructor as soon as possible to discuss this possibility.     Exams  There will be four exams in this course, one of which will be a cumulative final exam. Tentative dates are June 4, June 25, May 6, and July 2.     Grade Allocation  Your course grade will be determined by the following distribution. You must get at least a 50% on the final exam in order to pass the class .    Assignment  Percentage    MyOpenMath Online Homework  10%    MyOpenMath Online Interactive Activities  10%    MyOpenMath Online Quizzes  10%    Exam 1  20%    Exam 2 (online)  20%    Final Exam  30%      Grading Scale  Letter grades will be assigned as follows. Grades will not be curved.    Letter Grade  Percent Needed    A  93%    A-  90%    B+  87%    B  83%    B-  80%    C+  77%    C  73%    C-  70%    D+  67%    D  63%    D-  60%    E  Below 60%       Course Policies   Email  I try to respond to emails and MyOpenMath messages within 24 hours. You are encouraged to email\/message regarding the homework; however, emails sent within 24 hours of a due date may not get a response before the deadline. So do not wait until the last minute to attempt the assignments!    Studying  To succeed in this course, you will need to do more than simply attend class. Mathematics is a subject which is learned by doing, meaning it is important to work problems outside of class to fully understand the concepts we cover. The assigned homework is the minimum amount you should be completing; if you feel like you don't fully understand a concept, ask me to guide you to some additional practice problems. A general rule for studying (in all college courses) is for each hour of class per week you spend a minimum of two hours outside of class on homework, studying, reading the text, etc.   Since this is a hybrid course and it is three credit hours, you should plan to spend at least six hours per week working on course material for a regular semester. Since this is a 7-week summer course, that time is doubled to 12 hours per week.    Academic Integrity and AI Usage  The WSU Mathematics Department does not tolerate academic dishonesty! For an explanation of what is considered academic dishonesty at WSU, please see the policy included in the 2025-2026 Undergraduate Catalog . All instructors in the WSU Mathematics Department are required to report all incidents of academic dishonesty observed, detected, or otherwise determined to have occurred to the WSU Academic Central File. WSU requires some penalty be imposed for every reported violation of the academic honesty policy. All incidents of academic dishonesty in this course will result in (at least) a score of 0 on that assignment; additional penalties will be imposed at the instructor's discretion and\/or as required by the Mathematics Department Academic Honesty Policy .   Artificial Intelligence (AI) Policy: Artificial intelligence (AI) tools (ChatGPT and similar platforms) may be used for study support and practice only . Acceptable uses include reviewing concepts, generating practice problems, checking understanding of definitions, or exploring alternative explanations of course material. AI tools are not permitted on any graded assignments, quizzes, or examinations unless explicitly authorized by the instructor. This includes, but is not limited to, using AI to generate solutions, explanations, written work, computations, graphs, or code that is submitted for credit. All submitted work must reflect the student's own understanding and effort. Reliance on AI-generated responses in place of independent problem-solving undermines the learning objectives of this course and is not allowed. Students are responsible for ensuring that any work they submit complies with this policy. Use of AI in violation of this policy will be treated as a violation of the Academic Honesty Policy and may result in penalties including a score of zero on the assignment, quiz, or exam, and additional disciplinary action as required by university policy.    Instructor Rights   As the instructor of this course, I reserve the right to make changes to the above course policies at any time. All changes will be announced in class.      Student Learning Outcomes  Students will be able to:    Students will be able to communicate their mathematical reasoning.     Financial Management: Students will be able to calculate simple and compound interest, loan installments and mortgage payments.     Probability Theory: Students will be able to determine sample spaces for experiments, calculate probabilities with fundamental counting principles, permutations and combinations.     Voting Methods: Students will be able to discuss the pros and cons of several voting methods and how they can be manipulated by a knowledgeable individual.      LASC  This is a Quantitative Reasoning (QR) course in the Liberal Arts and Sciences Curriculum (LASC).  The course addresses the following LASC Quantitative Reasoning objectives:    Acquaint students with formal systems, procedures, and sequences of operations.    Strengthen students' understanding of variables and functions.    Apply mathematical techniques to the analysis and solution of real-life problems.    Emphasize the importance of accuracy, including precise language and careful definitions of mathematical concepts.    Understand both the underlying principles and practical applications of one or more fields of mathematics.    Develop an understanding of and facility with statistical analysis an analysis, including understanding of its applications and limitations.    and the following LASC overarching objectives:    Communicate effectively orally and in writing.    Understand and employ quantitative and qualitative reasoning.    Apply skills in critical thinking.    Understand the roles of science and technology in our modern world.    Become socially responsible agents in the world.    Make connections across courses and disciplines.    Develop as healthy individuals--physically, emotionally, socially, ethically, and intellectually.      Course Schedule  Here is a tentative schedule of topics. We will try to stay on schedule as much as possible. If class is canceled for any reason, then the schedule will be adjusted to accommodate this cancelation. This could include a rearrangement of topics, removing a \"review\" day, or skipping a topic entirely, depending on the timing of the cancelation. Any changes to this schedule will be announced in class and via email.   Course Schedule and Exam Dates        Unit  Topics  Due Dates    1  Voting methods, apportionment  Fri 5\/22    2  Simple interest, compound interest  Wed 5\/27    3  Annuities, installment loans (Quiz 1)   Wed 5\/27    4  Mortgages, credit cards  Wed 6\/3      In-Person Exam 1 Thu 6\/4 (3:30-5:00pm) (S-136)     5  Set basics, subsets  Wed 6\/10    6  Set operations, surveys (Quiz 2)   Wed 6\/10    7  Intro to probability, events involving “not”, “or”, “and”  Wed 6\/17    8  Counting, permutations, combinations (Quiz 3)  Wed 6\/17      Online Exam 2 (Thu 6\/25)     9  Probability with counting, odds, conditional  Fri 6\/26      In-Person FINAL EXAM Thu 7\/2 (3:30-6:30pm) (S-136)          "
-},
-{
-  "id": "sec-150-course-info-2",
-  "level": "2",
-  "url": "ma-150-syllabus.html#sec-150-course-info-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Hybrid Course "
-},
-{
-  "id": "subsec-105-TentativeSchedule-3",
-  "level": "2",
-  "url": "ma-150-syllabus.html#subsec-105-TentativeSchedule-3",
-  "type": "Table",
-  "number": "9.1",
-  "title": "Course Schedule and Exam Dates",
-  "body": " Course Schedule and Exam Dates        Unit  Topics  Due Dates    1  Voting methods, apportionment  Fri 5\/22    2  Simple interest, compound interest  Wed 5\/27    3  Annuities, installment loans (Quiz 1)   Wed 5\/27    4  Mortgages, credit cards  Wed 6\/3      In-Person Exam 1 Thu 6\/4 (3:30-5:00pm) (S-136)     5  Set basics, subsets  Wed 6\/10    6  Set operations, surveys (Quiz 2)   Wed 6\/10    7  Intro to probability, events involving “not”, “or”, “and”  Wed 6\/17    8  Counting, permutations, combinations (Quiz 3)  Wed 6\/17      Online Exam 2 (Thu 6\/25)     9  Probability with counting, odds, conditional  Fri 6\/26      In-Person FINAL EXAM Thu 7\/2 (3:30-6:30pm) (S-136)      "
 }
 ]
 

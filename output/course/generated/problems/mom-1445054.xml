@@ -3,13 +3,13 @@
 <statement>
 <p>
 Which of the following apportionment methods will we discuss in this course. Select all that apply!</p>
-<p><ol style="list-style-type:upper-alpha"><li>Pairwise comparison method</li> 
-<li>Jefferson's method</li> 
-<li>Borda count method</li> 
-<li>Adam's Method</li> 
-<li>Plurality method</li> 
-<li>Hamilton's method</li> 
+<p><ol style="list-style-type:upper-alpha"><li>Hamilton's method</li> 
 <li>Plurality with elimination method</li> 
+<li>Adam's Method</li> 
+<li>Pairwise comparison method</li> 
+<li>Borda count method</li> 
+<li>Plurality method</li> 
+<li>Jefferson's method</li> 
 </ol></p>
 
 

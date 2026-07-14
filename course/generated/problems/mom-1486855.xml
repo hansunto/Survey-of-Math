@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1486855">
+<statement>
+<p>
+Five performers (A, B, C, D, and E) are to appear at a fundraiser. The order of performance is determined by random selection. Find the probability that A or B will perform first.</p>
+<p>
+Enter your answer as a fraction, though it need not be reduced.</p>
+<p>
+<fillin characters="20"/>   
+</p>
+</statement>
+<answer>
+<p><ul><li><m>\displaystyle\frac{{48}}{{120}}</m></li></ul></p>
+</answer>
+
+</myopenmath>

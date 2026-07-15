@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="handout-Data" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>14. Activity Data and Graphs</title>
+  <page>
+  <p>
+    <term>Categorical data</term> (also called qualitative data) allows us to sort individual subjects or objects into distinct categories or groups. To organize and make sense of this information, we typically construct a two-column <term>frequency table</term>. The first column lists the available unique categories, while the parallel column records the corresponding <term>frequency</term>, which is the total count of observations within each classification.
+  </p>
+
+  <example xml:id="ex-shirt-colors">
+    <title>Shirt Color Frequency Table</title>
+    <statement>
+      <p>
+        A student organizes the colors of 12 shirts in a wardrobe into the following frequency table:
+      </p>
+      <tabular halign="center" top="minor" left="minor" bottom="minor" right="minor">
+        <row header="yes">
+          <cell>Color</cell>
+          <cell>Tally Method</cell>
+          <cell>Frequency</cell>
+        </row>
+        <row>
+          <cell>Black</cell>
+          <cell>I</cell>
+          <cell>1</cell>
+        </row>
+        <row>
+          <cell>Blue</cell>
+          <cell>IIIII</cell>
+          <cell>5</cell>
+        </row>
+        <row>
+          <cell>Pink</cell>
+          <cell>II</cell>
+          <cell>2</cell>
+        </row>
+        <row>
+          <cell>White</cell>
+          <cell>IIII</cell>
+          <cell>4</cell>
+        </row>
+      </tabular>
+      <p> Use the table above to answer the following questions. </p> 
+<ol label="a."> 
+  <li>  <p> Which shirt color is the most common in the wardrobe? </p>  </li> 
+  <li>  <p> How many more blue shirts are there than black shirts? </p>  </li> 
+  <li>  <p> What is the combined total of white and pink shirts? </p>  </li> 
+</ol>
+    </statement>
+    
+    <solution>
+      <ol label="a."> 
+        <li>
+          <p> Blue is the most common color, with a maximum frequency of 5. </p>
+        </li>
+        <li>
+          <p> There are 4 more blue shirts than black shirts, calculated as <m>5 - 1 = 4</m>. </p>
+        </li>
+        <li>
+          <p> The combined total is 6 shirts, calculated as <m>4 \text{ white} + 2 \text{ pink} = 6</m>. </p>
+        </li>
+      </ol>
+    </solution>
+  </example>
+</page>
+
+<page>
+  <exercise>
+    <myopenmath problem="1858785"/>
+  </exercise>
+  </page>
+
+  <page>
+    <p> Next, we will cover how to use data to create bar graphs, histograms, line graphs, 
+        and pie charts—visual tools designed to compare counts across independent categories.
+    </p>
+<exercise>
+    <myopenmath problem="600342"/>
+  </exercise>
+  </page>
+
+  <page>
+<exercise>
+    <myopenmath problem="6749"/>
+  </exercise>
+  </page>
+
+  <page>
+<exercise>
+    <myopenmath problem="6996"/>
+  </exercise>
+  </page>
+
+    <page>
+<exercise>
+    <myopenmath problem="1051"/>
+  </exercise>
+  </page>
+
+    <page>
+<exercise>
+    <myopenmath problem="1054"/>
+  </exercise>
+  </page>
+
+</worksheet>

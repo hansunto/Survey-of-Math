@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1858846">
+<statement>
+<p>
+The highway mileage (mpg) for a sample of 8 different models of a car company can be found below. Find the mean, median, and mode. Round to one decimal place as needed.</p>
+<p>
+19, 23, 26, 27, 29, 31, 33, 33</p>
+<p>
+Mean = <fillin characters="20"/></p>
+<p>
+Median = <fillin characters="20"/></p>
+<p>
+Mode = <fillin characters="20"/>
+
+</p>
+</statement>
+<answer>
+<p><ul><li>27.6</li><li>28</li><li>33</li><li/></ul></p>
+</answer>
+
+</myopenmath>

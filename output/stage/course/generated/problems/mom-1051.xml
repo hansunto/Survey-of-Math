@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1051">
+<statement>
+<p>
+The line graph below shows the number of times Maria drove her car each day of the week.</p><image width="33%" pi:generated="problems/images/mom-1051-1.png"/><p>
+How many times did Maria drive her car on day 4?</p>
+<p><fillin characters="20"/></p>
+
+
+</statement>
+<answer>
+<p><ul><li>6</li></ul></p>
+</answer>
+
+</myopenmath>

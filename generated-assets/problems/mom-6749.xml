@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="6749">
+<statement>
+<p>
+A group of adults were asked how many children they have in their families.  The bar graph below shows the number of adults who indicated each number of children.</p><image width="67%" pi:generated="problems/images/mom-6749-1.png"/><p>
+How many adults were questioned?</p>
+<p>
+<fillin characters="20"/></p>
+<p>
+What percentage of the adults questioned had 5 children?</p>
+<p>
+<fillin characters="20"/> <percent/>
+</p>
+</statement>
+<answer>
+<p><ul><li>15</li><li>6.6666666666667</li></ul></p>
+</answer>
+
+</myopenmath>

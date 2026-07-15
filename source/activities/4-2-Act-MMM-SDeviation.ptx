@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="handout-Mean-Median-Mode-SDeviation" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>15. Activity Mean, Median, Mode and Standard Deviation</title>
+  <page>
+<p>
+  Mastering data distributions is key to analyzing statistics effectively. By utilizing measures of center and spread, you can instantly summarize and compare different datasets.
+</p>
+
+<p>
+  <term>Measures of Center</term> help identify a typical value within a dataset. 
+</p>
+
+<ol>
+  <li>
+    <title>The Mean</title>
+    <p>
+      The mathematical average and central balance point of a dataset. It is calculated by dividing the sum of all values by the total count of observations.
+    </p>
+  </li>
+  <li>
+    <title>The Median</title>
+    <p>
+      The exact middle value in an ordered dataset. If the dataset contains an even number of values, the median is computed as the average of the two central numbers.
+    </p>
+  </li>
+  <li>
+    <title>The Mode</title>
+    <p>
+      The value that appears most frequently in a dataset. Depending on the data, a set can be bimodal (two modes), multimodal (multiple modes), or have no mode at all.
+    </p>
+  </li>
+</ol>
+
+<exercise>
+  <myopenmath problem="1858846"/>
+</exercise>
+  
+</page>
+  
+  <page>
+  <exercise> <myopenmath problem="19623"/>  </exercise>
+  <exercise> <myopenmath problem="16037"/> </exercise>
+  </page>
+
+<page>
+  <p>
+  Moving beyond the range, the second primary measure of variation is the <term>standard deviation</term>. While the range is calculated from only two values, the standard deviation depends on every single data point within the dataset. Essentially, it summarizes how far each individual score typically deviates from the mathematical mean.
+</p>
+
+<p>
+  When comparing datasets, the standard deviation provides valuable insight into consistency:
+</p>
+
+<list>
+  <item>
+    <p>
+      A <term>smaller standard deviation</term> indicates that the data values are highly concentrated around the center.
+    </p>
+  </item>
+  <item>
+    <p>
+      A <term>larger standard deviation</term> signals that the data points are highly dispersed and variable.
+    </p>
+  </item>
+</list>
+<exercise> <myopenmath problem="126060"/> </exercise>
+  
+</page>
+
+<page>
+  <exercise> <myopenmath problem="17426"/> </exercise>
+</page>
+
+<page>
+  <exercise> <myopenmath problem="1419420"/> </exercise>
+</page>
+</worksheet> 

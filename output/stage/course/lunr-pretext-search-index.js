@@ -4303,6 +4303,177 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
+  "id": "handout-Data",
+  "level": "1",
+  "url": "handout-Data.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "14. Activity Data and Graphs",
+  "body": " 14. Activity Data and Graphs    Categorical data (also called qualitative data) allows us to sort individual subjects or objects into distinct categories or groups. To organize and make sense of this information, we typically construct a two-column frequency table . The first column lists the available unique categories, while the parallel column records the corresponding frequency , which is the total count of observations within each classification.   Shirt Color Frequency Table   A student organizes the colors of 12 shirts in a wardrobe into the following frequency table:    Color  Tally Method  Frequency    Black  I  1    Blue  IIIII  5    Pink  II  2    White  IIII  4    Use the table above to answer the following questions.    Which shirt color is the most common in the wardrobe?    How many more blue shirts are there than black shirts?    What is the combined total of white and pink shirts?        Blue is the most common color, with a maximum frequency of 5.    There are 4 more blue shirts than black shirts, calculated as .    The combined total is 6 shirts, calculated as .             Next, we will cover how to use data to create bar graphs, histograms, line graphs, and pie charts—visual tools designed to compare counts across independent categories.                          "
+},
+{
+  "id": "handout-Data-2-1",
+  "level": "2",
+  "url": "handout-Data.html#handout-Data-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Categorical data frequency table frequency "
+},
+{
+  "id": "ex-shirt-colors",
+  "level": "2",
+  "url": "handout-Data.html#ex-shirt-colors",
+  "type": "Example",
+  "number": "5.53",
+  "title": "Shirt Color Frequency Table.",
+  "body": " Shirt Color Frequency Table   A student organizes the colors of 12 shirts in a wardrobe into the following frequency table:    Color  Tally Method  Frequency    Black  I  1    Blue  IIIII  5    Pink  II  2    White  IIII  4    Use the table above to answer the following questions.    Which shirt color is the most common in the wardrobe?    How many more blue shirts are there than black shirts?    What is the combined total of white and pink shirts?        Blue is the most common color, with a maximum frequency of 5.    There are 4 more blue shirts than black shirts, calculated as .    The combined total is 6 shirts, calculated as .     "
+},
+{
+  "id": "handout-Data-3-1",
+  "level": "2",
+  "url": "handout-Data.html#handout-Data-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Data-4-2",
+  "level": "2",
+  "url": "handout-Data.html#handout-Data-4-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Data-5-1",
+  "level": "2",
+  "url": "handout-Data.html#handout-Data-5-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Data-6-1",
+  "level": "2",
+  "url": "handout-Data.html#handout-Data-6-1",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Data-7-1",
+  "level": "2",
+  "url": "handout-Data.html#handout-Data-7-1",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Data-8-1",
+  "level": "2",
+  "url": "handout-Data.html#handout-Data-8-1",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Mean-Median-Mode-SDeviation",
+  "level": "1",
+  "url": "handout-Mean-Median-Mode-SDeviation.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "15. Activity Mean, Median, Mode and Standard Deviation",
+  "body": " 15. Activity Mean, Median, Mode and Standard Deviation   Mastering data distributions is key to analyzing statistics effectively. By utilizing measures of center and spread, you can instantly summarize and compare different datasets.   Measures of Center help identify a typical value within a dataset.    The Mean  The mathematical average and central balance point of a dataset. It is calculated by dividing the sum of all values by the total count of observations.    The Median  The exact middle value in an ordered dataset. If the dataset contains an even number of values, the median is computed as the average of the two central numbers.    The Mode  The value that appears most frequently in a dataset. Depending on the data, a set can be bimodal (two modes), multimodal (multiple modes), or have no mode at all.                 Moving beyond the range, the second primary measure of variation is the standard deviation . While the range is calculated from only two values, the standard deviation depends on every single data point within the dataset. Essentially, it summarizes how far each individual score typically deviates from the mathematical mean.  When comparing datasets, the standard deviation provides valuable insight into consistency:    A smaller standard deviation indicates that the data values are highly concentrated around the center.    A larger standard deviation signals that the data points are highly dispersed and variable.                  "
+},
+{
+  "id": "handout-Mean-Median-Mode-SDeviation-2-2",
+  "level": "2",
+  "url": "handout-Mean-Median-Mode-SDeviation.html#handout-Mean-Median-Mode-SDeviation-2-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Measures of Center "
+},
+{
+  "id": "handout-Mean-Median-Mode-SDeviation-2-4",
+  "level": "2",
+  "url": "handout-Mean-Median-Mode-SDeviation.html#handout-Mean-Median-Mode-SDeviation-2-4",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Mean-Median-Mode-SDeviation-3-1",
+  "level": "2",
+  "url": "handout-Mean-Median-Mode-SDeviation.html#handout-Mean-Median-Mode-SDeviation-3-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Mean-Median-Mode-SDeviation-3-2",
+  "level": "2",
+  "url": "handout-Mean-Median-Mode-SDeviation.html#handout-Mean-Median-Mode-SDeviation-3-2",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Mean-Median-Mode-SDeviation-4-1",
+  "level": "2",
+  "url": "handout-Mean-Median-Mode-SDeviation.html#handout-Mean-Median-Mode-SDeviation-4-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "standard deviation "
+},
+{
+  "id": "handout-Mean-Median-Mode-SDeviation-4-3",
+  "level": "2",
+  "url": "handout-Mean-Median-Mode-SDeviation.html#handout-Mean-Median-Mode-SDeviation-4-3",
+  "type": "List",
+  "number": "5.54",
+  "title": "",
+  "body": "  A smaller standard deviation indicates that the data values are highly concentrated around the center.    A larger standard deviation signals that the data points are highly dispersed and variable.   "
+},
+{
+  "id": "handout-Mean-Median-Mode-SDeviation-4-4",
+  "level": "2",
+  "url": "handout-Mean-Median-Mode-SDeviation.html#handout-Mean-Median-Mode-SDeviation-4-4",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Mean-Median-Mode-SDeviation-5-1",
+  "level": "2",
+  "url": "handout-Mean-Median-Mode-SDeviation.html#handout-Mean-Median-Mode-SDeviation-5-1",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Mean-Median-Mode-SDeviation-6-1",
+  "level": "2",
+  "url": "handout-Mean-Median-Mode-SDeviation.html#handout-Mean-Median-Mode-SDeviation-6-1",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  "
+},
+{
   "id": "handout-voting-methods",
   "level": "1",
   "url": "handout-voting-methods.html",

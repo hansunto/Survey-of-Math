@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1858785">
+<statement>
+<p>The following data represents the age of 30 lottery winners.</p>
+<tabular> <row><cell>23</cell><cell>28</cell><cell>34</cell><cell>37</cell><cell>38</cell><cell>38</cell></row><row><cell>42</cell><cell>43</cell><cell>44</cell><cell>44</cell><cell>50</cell><cell>50</cell></row><row><cell>51</cell><cell>52</cell><cell>52</cell><cell>52</cell><cell>56</cell><cell>57</cell></row><row><cell>57</cell><cell>57</cell><cell>60</cell><cell>62</cell><cell>63</cell><cell>68</cell></row><row><cell>70</cell><cell>73</cell><cell>75</cell><cell>75</cell><cell>75</cell><cell>81</cell></row></tabular>
+<p>Complete the frequency distribution for the data.</p>
+<tabular>  
+  
+    <row>
+      <cell>Age</cell>
+      <cell>Frequency</cell>
+    </row>
+  
+  
+    <row>
+      <cell>20-29</cell>
+      <cell><fillin characters="4"/></cell>
+    </row>
+    <row>
+      <cell>30-39</cell>
+      <cell><fillin characters="4"/></cell>
+    </row>
+    <row>
+      <cell>40-49</cell>
+      <cell><fillin characters="4"/></cell>
+    </row>
+    <row>
+      <cell>50-59</cell>
+      <cell><fillin characters="4"/></cell>
+    </row>
+    <row>
+      <cell>60-69</cell>
+      <cell><fillin characters="4"/></cell>
+    </row>
+    <row>
+      <cell>70-79</cell>
+      <cell><fillin characters="4"/></cell>
+    </row>
+    <row>
+      <cell>80-89</cell>
+      <cell><fillin characters="4"/></cell>
+    </row>
+  
+</tabular>
+</statement>
+<answer>
+<p><ul><li>2</li><li>4</li><li>4</li><li>10</li><li>4</li><li>5</li><li>1</li></ul></p>
+</answer>
+
+</myopenmath>

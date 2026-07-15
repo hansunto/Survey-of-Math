@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="17426">
+<statement>
+<p>
+Two classes were given identical quizzes.</p>
+<p>
+Class A had a mean score of 8.2 and a standard deviation of 0.3</p>
+<p>
+Class B had a mean score of 7.7 and a standard deviation of 0.6</p>
+<p>
+Which class scored better on average?  </p>
+<p><ol style="list-style-type:upper-alpha"><li>Class A</li> 
+<li>Class B</li> 
+</ol></p>
+<p>
+Which class had more consistent scores?  </p>
+<p><ol style="list-style-type:upper-alpha"><li>Class A</li> 
+<li>Class B</li> 
+</ol></p>
+
+
+</statement>
+<answer>
+<p><ul><li>A: Class A</li><li>A: Class A</li></ul></p>
+</answer>
+
+</myopenmath>

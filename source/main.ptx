@@ -14,7 +14,7 @@
     <xi:include href="./frontmatter.ptx" />
 
     <chapter xml:id="ch-Voting-Apportionment">
-      <title>Module 1. Voting and Apportionment</title>
+      <title>(Module 1.) Voting and Apportionment</title>
       <introduction>
         <p>
         Beyond just marking a ballot, these concepts shape how our voices are heard 
@@ -29,7 +29,7 @@
     </chapter>
 
     <chapter xml:id="ch-Personal-Finance">
-      <title>Module 2. Personal Finance</title>
+      <title>(Module 2.) Personal Finance</title>
       <introduction>
         <p>
           In an era of digital banking and shifting economies, understanding your personal finances is a superpower. 
@@ -46,7 +46,7 @@
     </chapter>
    
     <chapter xml:id="ch-Probability">
-      <title>Module 3. Probability </title>
+      <title>(Module 3.) Probability </title>
       <introduction>
     <p>
       Probability is the mathematical study of uncertainty. 
@@ -70,7 +70,7 @@
     </chapter>
 
    <chapter xml:id="ch-Intro-Statistics">
-      <title>Module 4. Introduction to Statistics</title>
+      <title>(Module 4.) Introduction to Statistics</title>
       <introduction>
       <p>
       Statistics is the branch of mathematics that deals with collecting, analyzing, interpreting, presenting, and organizing data. It provides tools and techniques for making sense of data and drawing meaningful conclusions from it. In this handout, we will explore some fundamental concepts in statistics, including measures of central tendency, measures of variability, and basic probability.
@@ -120,6 +120,8 @@
       <xi:include href="./activities/3-4-Act-Permutations.ptx" />
       <xi:include href="./activities/3-5-Act-Combinations.ptx" />
       <xi:include href="./activities/3-6-Act-Probability.ptx"/>
+      <xi:include href="./activities/4-1-Act-Data-and-Graphs.ptx" />
+      <xi:include href="./activities/4-2-Act-MMM-SDeviation.ptx" />
 
 
       

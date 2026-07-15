@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="126060">
+<statement>
+<tabular>   
+
+<row><cell>Which of the following does NOT reveal the variation (spread) of the data?  <em>Check all that apply.</em></cell></row>
+
+<row><cell><p><ol style="list-style-type:upper-alpha"><li>Mean</li> 
+<li>Standard Deviation</li> 
+<li>Mode</li> 
+<li>Range</li> 
+<li>Median</li> 
+</ol></p>
+</cell></row>
+
+</tabular>
+</statement>
+<answer>
+<p><ul><li><p>Mean</p>
+<p>Mode</p>
+<p>Median</p></li></ul></p>
+</answer>
+
+</myopenmath>

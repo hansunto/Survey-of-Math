@@ -4474,6 +4474,24 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
+  "id": "handout-Empirical-zscore",
+  "level": "1",
+  "url": "handout-Empirical-zscore.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "16. Activity The Empirical rule and z-scores",
+  "body": " 16. Activity The Empirical rule and z-scores    "
+},
+{
+  "id": "handout-Regression",
+  "level": "1",
+  "url": "handout-Regression.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "17. Scatter plots and Regrssion lines",
+  "body": " 17. Scatter plots and Regrssion lines    "
+},
+{
   "id": "handout-voting-methods",
   "level": "1",
   "url": "handout-voting-methods.html",

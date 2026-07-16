@@ -2,15 +2,15 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1551775">
 <statement>
 <p>Empirical Rule Problem</p>
-  <p>In geology, the density of granite is known to follow a normal distribution with a mean of 2.75 g/cm³ and a standard deviation of 0.025 g/cm³.</p>
+  <p>In geology, the density of granite is known to follow a normal distribution with a mean of 2.8 g/cm³ and a standard deviation of 0.075 g/cm³.</p>
   <p><ul style="list-style-type:lower-alpha;margin:0;">
-    <li><p>Using the <url href="https://www.geogebra.org/m/xttfsxzr">Empirical Rule Calculator</url>, determine the percentage of granite samples that have a density between 2.7 g/cm³ and 2.8 g/cm³.</p>
+    <li><p>Using the <url href="https://www.geogebra.org/m/xttfsxzr">Empirical Rule Calculator</url>, determine the percentage of granite samples that have a density between 2.65 g/cm³ and 2.95 g/cm³.</p>
 <p><fillin characters="5"/> <percent/></p>
 <p>(Round to 2 decimal places.)</p></li>
-    <li><p>Using the <url href="https://www.geogebra.org/m/xttfsxzr">Empirical Rule Calculator</url>, determine the percentage of granite samples that have a density less than 2.775 g/cm³</p>
+    <li><p>Using the <url href="https://www.geogebra.org/m/xttfsxzr">Empirical Rule Calculator</url>, determine the percentage of granite samples that have a density less than 2.875 g/cm³</p>
 <p><fillin characters="5"/> <percent/></p>
 <p>(Round to 2 decimal places.)</p></li>
-    <li><p>Using the <url href="https://www.geogebra.org/m/xttfsxzr">Empirical Rule Calculator</url>, determine the percentage of granite samples that have a density greater than 2.725 g/cm³</p>
+    <li><p>Using the <url href="https://www.geogebra.org/m/xttfsxzr">Empirical Rule Calculator</url>, determine the percentage of granite samples that have a density greater than 2.575 g/cm³</p>
 <p><fillin characters="5"/> <percent/></p>
 <p>(Round to 2 decimal places.)</p></li>
   </ul></p>
@@ -18,7 +18,7 @@
 
 </statement>
 <answer>
-<p><ul><li>95</li><li>84</li><li>84</li></ul></p>
+<p><ul><li>95</li><li>84</li><li>99.85</li></ul></p>
 </answer>
 
 </myopenmath>

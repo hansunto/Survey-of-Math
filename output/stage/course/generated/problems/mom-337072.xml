@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="337072">
+<statement>
+<p>
+Here is a scatter plot for a set of bivariate data.</p><image width="33%" pi:generated="problems/images/mom-337072-1.png"/><p>
+Is the Pearson correlation coefficient an appropriate measure of the strength of a linear relationship for this data set?
+yes</p>
+<p>
+no</p>
+</statement>
+<answer>
+<p><ul><li>A: yes</li></ul></p>
+</answer>
+
+</myopenmath>

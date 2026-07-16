@@ -4,25 +4,25 @@
 <p>
 Suppose that the scores on a statewide standardized test are normally distributed with a mean of 64 and a standard deviation of 2.  Estimate the percentage of scores that were</p>
 <p>
-(a) between 60 and 68.</p>
+(a) between 62 and 66.</p>
 <p>
 <fillin characters="2"/> <percent/></p>
 <p>
-(b) above 70.</p>
+(b) above 68.</p>
 <p>
 <fillin characters="2"/> <percent/></p>
 <p>
-(c) below 60.</p>
+(c) below 58.</p>
 <p>
 <fillin characters="2"/> <percent/></p>
 <p>
-(d) between 60 and 66.</p>
+(d) between 58 and 68.</p>
 <p>
 <fillin characters="2"/> <percent/>
 </p>
 </statement>
 <answer>
-<p><ul><li>95</li><li>0.15</li><li>2.5</li><li>81.5</li></ul></p>
+<p><ul><li>68</li><li>2.5</li><li>0.15</li><li>97.35</li></ul></p>
 </answer>
 
 </myopenmath>

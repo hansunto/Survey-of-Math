@@ -4552,7 +4552,43 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "17. Scatter plots and Regrssion lines",
-  "body": " 17. Scatter plots and Regrssion lines    "
+  "body": " 17. Scatter plots and Regrssion lines   When two numerical variables are collected for every person or object in a sample, their relationship can be visually displayed using a scatter plot . In a scatter plot, each point represents a single observation, with its horizontal and vertical positions determined by the values of the two variables. This visual layout allows researchers to determine whether the two quantities are related; if a clear pattern emerges, the variables are said to be correlated.   However, it is critical to remember that correlation does not imply causation. For instance, while a scatter plot might reveal a strong negative correlation between education levels and prejudice, we cannot conclude that increasing education directly causes a person's level of prejudice to decrease.              Simple linear regression is a statistical method used to model the relationship between a single independent variable and a continuous dependent variable. By fitting a straight line of best fit to the observed data, this technique allows you to visualize and predict trends.  The equation of this regression line is typically expressed as a linear function in the form , where represents the slope of the line and represents the y-intercept.   "
+},
+{
+  "id": "handout-Regression-2-1",
+  "level": "2",
+  "url": "handout-Regression.html#handout-Regression-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "scatter plot correlated. "
+},
+{
+  "id": "handout-Regression-3-1",
+  "level": "2",
+  "url": "handout-Regression.html#handout-Regression-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Regression-4-1",
+  "level": "2",
+  "url": "handout-Regression.html#handout-Regression-4-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Regression-5-1",
+  "level": "2",
+  "url": "handout-Regression.html#handout-Regression-5-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "linear regression "
 },
 {
   "id": "handout-voting-methods",

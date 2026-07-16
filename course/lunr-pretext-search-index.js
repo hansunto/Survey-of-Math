@@ -4480,7 +4480,25 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "16. Activity The Empirical rule and z-scores",
-  "body": " 16. Activity The Empirical rule and z-scores    "
+  "body": " 16. Activity The Empirical rule and z-scores   In data analysis, we evaluate how extreme a specific data point is by calculating exactly how many standard deviations it sits away from the center (mean).    The Normal Distribution A normal distribution is a perfectly symmetrical, bell-shaped curve where data points cluster predictably around the center:    Below Mean: Exactly 50% of the data lies below the mean.    Above Mean: Exactly 50% of the data lies above the mean.       The Empirical Rule (68-95-99.7 Rule) For normally distributed data, almost all observations fall within three standard deviations of the mean:    68% of data points fall within 1 standard deviation.    95% of data points fall within 2 standard deviations.    99.7% of data points fall within 3 standard deviations.       "
+},
+{
+  "id": "handout-Empirical-zscore-2-2-1-1",
+  "level": "2",
+  "url": "handout-Empirical-zscore.html#handout-Empirical-zscore-2-2-1-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "The Normal Distribution "
+},
+{
+  "id": "handout-Empirical-zscore-2-2-2-1",
+  "level": "2",
+  "url": "handout-Empirical-zscore.html#handout-Empirical-zscore-2-2-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "The Empirical Rule (68-95-99.7 Rule) "
 },
 {
   "id": "handout-Regression",

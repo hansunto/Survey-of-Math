@@ -1,46 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="23927">
 <statement>
-<tabular>   
+<p><strong>Creating and Analyzing Scatter Plots</strong></p>
+<p><em>Create Scatterplots for each of the tables of data below using your graphing calculator.  Determine which of the graphs most closely matches each table.  Then decide which table is Least Linear, Moderately Linear and Most Linear</em></p>
 
-<row><cell>Creating and Analyzing Scatter Plots</cell></row>
-<row><cell><em>Create Scatterplots for each of the tables of data below using your graphing calculator.  Determine which of the graphs most closely matches each table.  Then decide which table is Least Linear, Moderately Linear and Most Linear</em></cell></row>
+<p><strong>Table 1 - Matching Options:</strong> (a) B, (b) A, (c) C | <strong>Behavior Options:</strong> (a) Least Linear, (b) Moderately Linear, (c) Most Linear | <strong>Data:</strong> (500, 8069), (520, 8221), (540, 8796), (560, 8894), (580, 9349), (600, 9669) | <strong>Graph:</strong> A) <image width="20%" pi:generated="problems/images/mom-23927-1.png"/></p>
 
-<row><cell><tabular><row><cell>Matching Graph<p><ol style="list-style-type:upper-alpha"><li>B</li> 
-<li>A</li> 
-<li>C</li> 
-</ol></p>
-<p>Behavior</p>
-<p><ol style="list-style-type:upper-alpha"><li>Least Linear</li> 
-<li>Moderately Linear</li> 
-<li>Most Linear</li> 
-</ol></p>
-</cell><cell><tabular>     <row><cell>x</cell><cell>f(x)</cell></row><row><cell>500</cell><cell>8069</cell></row><row><cell>520</cell><cell>8221</cell></row><row><cell>540</cell><cell>8796</cell></row><row><cell>560</cell><cell>8894</cell></row><row><cell>580</cell><cell>9349</cell></row><row><cell>600</cell><cell>9669</cell></row></tabular></cell></row></tabular></cell><cell>A)  <image width="33%" pi:generated="problems/images/mom-23927-1.png"/>
-</cell></row>
-<row><cell><tabular><row><cell>Matching Graph<p><ol style="list-style-type:upper-alpha"><li>C</li> 
-<li>B</li> 
-<li>A</li> 
-</ol></p>
-<p>Behavior</p>
-<p><ol style="list-style-type:upper-alpha"><li>Moderately Linear</li> 
-<li>Most Linear</li> 
-<li>Least Linear</li> 
-</ol></p>
-</cell><cell><tabular>     <row><cell>x</cell><cell>f(x)</cell></row><row><cell>500</cell><cell>101</cell></row><row><cell>520</cell><cell>197</cell></row><row><cell>540</cell><cell>357</cell></row><row><cell>560</cell><cell>581</cell></row><row><cell>580</cell><cell>739</cell></row><row><cell>600</cell><cell>1221</cell></row></tabular></cell></row></tabular></cell><cell>B)  <image width="33%" pi:generated="problems/images/mom-23927-2.png"/>
-</cell></row>
-<row><cell><tabular><row><cell>Matching Graph<p><ol style="list-style-type:upper-alpha"><li>B</li> 
-<li>A</li> 
-<li>C</li> 
-</ol></p>
-<p>Behavior</p>
-<p><ol style="list-style-type:upper-alpha"><li>Moderately Linear</li> 
-<li>Most Linear</li> 
-<li>Least Linear</li> 
-</ol></p>
-</cell><cell><tabular>     <row><cell>x</cell><cell>f(x)</cell></row><row><cell>500</cell><cell>4069</cell></row><row><cell>520</cell><cell>2749</cell></row><row><cell>540</cell><cell>5486</cell></row><row><cell>560</cell><cell>3184</cell></row><row><cell>580</cell><cell>4709</cell></row><row><cell>600</cell><cell>4869</cell></row></tabular></cell></row></tabular></cell><cell>C)  <image width="33%" pi:generated="problems/images/mom-23927-3.png"/>
-</cell></row>
+<p><strong>Table 2 - Matching Options:</strong> (a) C, (b) B, (c) A | <strong>Behavior Options:</strong> (a) Moderately Linear, (b) Most Linear, (c) Least Linear | <strong>Data:</strong> (500, 101), (520, 197), (540, 357), (560, 581), (580, 739), (600, 1221) | <strong>Graph:</strong> B) <image width="20%" pi:generated="problems/images/mom-23927-2.png"/></p>
 
-</tabular>
+<p><strong>Table 3 - Matching Options:</strong> (a) B, (b) A, (c) C | <strong>Behavior Options:</strong> (a) Moderately Linear, (b) Most Linear, (c) Least Linear | <strong>Data:</strong> (500, 4069), (520, 2749), (540, 5486), (560, 3184), (580, 4709), (600, 4869) | <strong>Graph:</strong> C) <image width="20%" pi:generated="problems/images/mom-23927-3.png"/></p>
 </statement>
 <answer>
 <p><ul><li>B: A</li><li>C: Most Linear</li><li>B: B</li><li>A: Moderately Linear</li><li>C: C</li><li>C: Least Linear</li></ul></p>

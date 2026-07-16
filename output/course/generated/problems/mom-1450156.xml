@@ -4,10 +4,10 @@
 <p>
 In the simple interest formula <m>\displaystyle{I}={P}{r}{t}</m>, what unit must <m>\displaystyle{t}</m> be given in?</p>
 <p><ol style="list-style-type:upper-alpha"><li>Months</li> 
-<li>Decimals</li> 
-<li>Quarters</li> 
 <li>Years</li> 
+<li>Decimals</li> 
 <li>Days</li> 
+<li>Quarters</li> 
 <li>Weeks</li> 
 <li>Whatever unit is given in the problem</li> 
 <li>There is no particular unit</li> 
@@ -16,7 +16,7 @@ In the simple interest formula <m>\displaystyle{I}={P}{r}{t}</m>, what unit must
 
 </statement>
 <answer>
-<p><ul><li>D: Years</li></ul></p>
+<p><ul><li>B: Years</li></ul></p>
 </answer>
 
 </myopenmath>

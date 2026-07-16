@@ -3,18 +3,18 @@
 <statement>
 <p>
 What was the primary goal in the preceding example?</p>
-<p><ol style="list-style-type:upper-alpha"><li>To find the simple interest rate for a loan.</li> 
-<li>To find the amount deposited in a loan.</li> 
-<li>To find the future value of a loan.</li> 
-<li>To find the amount of time for which a loan was given.</li> 
+<p><ol style="list-style-type:upper-alpha"><li>To find the amount deposited in a loan.</li> 
 <li>To find the amount of interest accrued over the course of a loan.</li> 
+<li>To find the future value of a loan.</li> 
+<li>To find the simple interest rate for a loan.</li> 
+<li>To find the amount of time for which a loan was given.</li> 
 <li>None of the above.</li> 
 </ol></p>
 
 
 </statement>
 <answer>
-<p><ul><li>A: To find the simple interest rate for a loan.</li></ul></p>
+<p><ul><li>D: To find the simple interest rate for a loan.</li></ul></p>
 </answer>
 
 </myopenmath>

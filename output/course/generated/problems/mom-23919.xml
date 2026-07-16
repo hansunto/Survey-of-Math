@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="23919">
+<statement>
+<tabular>   
+
+<row><cell>Linear Functions and Applications</cell></row>
+<row><cell><em>Which of the following statements are true when creating an approximate linear model for a given data set?  Check all that apply.</em></cell></row>
+
+<row><cell><p><ol style="list-style-type:upper-alpha"><li>It can only be done if the data is perfectly linear.</li> 
+<li>It is called Finding the Line of Best Fit</li> 
+<li>It provides a way to make predictions on data points outside the given data set</li> 
+<li>It is called Linear Regression</li> 
+</ol></p>
+</cell></row>
+
+</tabular>
+</statement>
+<answer>
+<p><ul><li><p>It is called Linear Regression</p>
+<p>It is called Finding the Line of Best Fit</p>
+<p>It provides a way to make predictions on data points outside the given data set</p></li></ul></p>
+</answer>
+
+</myopenmath>

@@ -2,9 +2,9 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1546508">
 <statement>
 <p>The maintenance department at the main campus of a large state university receives daily requests to replace fluorecent lightbulbs. The distribution of the number
-  of daily requests is bell-shaped and has a mean of 56 and a standard deviation of 3.</p>
+  of daily requests is bell-shaped and has a mean of 40 and a standard deviation of 3.</p>
   <p>Using the 68-95-99.7 rule, what is the approximate percentage of lightbulb replacement requests
-  numbering between 56 and 62? </p>
+  numbering between 31 and 40? </p>
   <p>Answer = <fillin characters="20"/> <percent/></p>
   <p><em>(Type answer as a percent, do not enter the percent symbol)</em></p>
 <p>Below is the GeoGebra Empirical Rule Calculator. If this app is too small to view, you can open the
@@ -19,7 +19,7 @@ application here in a new window
 
 </statement>
 <answer>
-<p><ul><li>47.5</li></ul></p>
+<p><ul><li>49.9 or 49.85</li></ul></p>
 </answer>
 
 </myopenmath>

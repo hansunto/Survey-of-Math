@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="7056">
+<statement>
+<p>
+In a mid-size company, the distribution of the number
+of phone calls answered each day by each of the 12 receptionists is bell-shaped and has a mean of 38 and a standard deviation of 6.
+Using the empirical rule (as presented in the book), what is the approximate percentage of daily phone calls
+numbering between 32 and 44?</p>
+<p>
+Do not enter the percent symbol.</p>
+<p>
+ans = <fillin characters="20"/> <percent/>
+</p>
+</statement>
+<answer>
+<p><ul><li>68</li></ul></p>
+</answer>
+
+</myopenmath>

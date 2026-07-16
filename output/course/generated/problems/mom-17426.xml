@@ -4,9 +4,9 @@
 <p>
 Two classes were given identical quizzes.</p>
 <p>
-Class A had a mean score of 8.2 and a standard deviation of 0.3</p>
+Class A had a mean score of 8.5 and a standard deviation of 0.5</p>
 <p>
-Class B had a mean score of 7.7 and a standard deviation of 0.6</p>
+Class B had a mean score of 7.8 and a standard deviation of 0.3</p>
 <p>
 Which class scored better on average?  </p>
 <p><ol style="list-style-type:upper-alpha"><li>Class A</li> 
@@ -21,7 +21,7 @@ Which class had more consistent scores?  </p>
 
 </statement>
 <answer>
-<p><ul><li>A: Class A</li><li>A: Class A</li></ul></p>
+<p><ul><li>A: Class A</li><li>B: Class B</li></ul></p>
 </answer>
 
 </myopenmath>

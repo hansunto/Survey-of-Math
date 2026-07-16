@@ -6,21 +6,21 @@ Match each of the quantities on the left with the variable which represents it i
 <p>
 Note all answers must be correct to earn credit!</p>
 <p><ol style="list-style-type:upper-alpha">
-<li> Future value</li>
-<li> Interest rate</li>
-<li class="nowrap"> Time</li>
 <li class="nowrap"> Principle</li>
+<li class="nowrap"> Time</li>
+<li> Interest rate</li>
+<li> Future value</li>
 </ol></p>
 <p><ol style="list-style-type:lower-alpha">
 <li><m>\displaystyle{P}</m></li>
+<li><m>\displaystyle{t}</m></li>
 <li><m>\displaystyle{A}</m></li>
 <li><m>\displaystyle{r}</m></li>
-<li><m>\displaystyle{t}</m></li>
 </ol></p> 
 
 </statement>
 <answer>
-<p><ul><li>b c d a </li></ul></p>
+<p><ul><li>a b d c </li></ul></p>
 </answer>
 
 </myopenmath>

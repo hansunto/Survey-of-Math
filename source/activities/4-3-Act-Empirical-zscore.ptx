@@ -25,8 +25,57 @@
         </ul>
     </li>
     </ol>
+
+    <exercise>
+      <myopenmath problem="7056"/>
+    </exercise>
   </page>
 
-  
+  <page>
+     <exercise>
+      <myopenmath problem="1546508"/>
+    </exercise>
+  </page>
+
+  <page>
+     <exercise>
+      <myopenmath problem="1551775"/>
+    </exercise>
+  </page>
+
+  <page>
+    <p>
+  A z-score measures exactly how many standard deviations a specific data value lies 
+  above or below the mean, offering an exact way to evaluate how extreme a value is 
+  within a dataset. While the Empirical Rule provides quick approximations for data 
+  falling exactly one, two, or three standard deviations from the center, z-scores 
+  provide unlimited precision for values that fall anywhere in between these integers. 
+  By connecting these standardized values to probability density distributions, 
+  you can calculate the exact probability of a data point falling between two specified 
+  scores, or work backward to find a target z-score given a specific probability threshold.
+</p>
+
+<p>
+  To find this standardized value, use the z-score formula: 
+  <me>z = \frac{x - \text{mean}}{\text{standard deviation}}</me>. 
+  For example, with mean = 65 and standard deviation = 3, a score of 59 gives: 
+  <me>z = \frac{59 - 65}{3} = -2</me>. 
+  This means the value is 2 standard deviations below the mean.
+</p>
+
+  </page>
+
+  <page>
+     <exercise>
+      <myopenmath problem="60431"/>
+    </exercise>
+  </page>
+
+  <page>
+     <exercise>
+      <myopenmath problem="450663"/>
+    </exercise>
+  </page>
+
 
   </worksheet>

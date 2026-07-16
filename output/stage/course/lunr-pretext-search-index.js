@@ -4480,7 +4480,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "16. Activity The Empirical rule and z-scores",
-  "body": " 16. Activity The Empirical rule and z-scores   In data analysis, we evaluate how extreme a specific data point is by calculating exactly how many standard deviations it sits away from the center (mean).    The Normal Distribution A normal distribution is a perfectly symmetrical, bell-shaped curve where data points cluster predictably around the center:    Below Mean: Exactly 50% of the data lies below the mean.    Above Mean: Exactly 50% of the data lies above the mean.       The Empirical Rule (68-95-99.7 Rule) For normally distributed data, almost all observations fall within three standard deviations of the mean:    68% of data points fall within 1 standard deviation.    95% of data points fall within 2 standard deviations.    99.7% of data points fall within 3 standard deviations.       "
+  "body": " 16. Activity The Empirical rule and z-scores   In data analysis, we evaluate how extreme a specific data point is by calculating exactly how many standard deviations it sits away from the center (mean).    The Normal Distribution A normal distribution is a perfectly symmetrical, bell-shaped curve where data points cluster predictably around the center:    Below Mean: Exactly 50% of the data lies below the mean.    Above Mean: Exactly 50% of the data lies above the mean.       The Empirical Rule (68-95-99.7 Rule) For normally distributed data, almost all observations fall within three standard deviations of the mean:    68% of data points fall within 1 standard deviation.    95% of data points fall within 2 standard deviations.    99.7% of data points fall within 3 standard deviations.                     A z-score measures exactly how many standard deviations a specific data value lies above or below the mean, offering an exact way to evaluate how extreme a value is within a dataset. While the Empirical Rule provides quick approximations for data falling exactly one, two, or three standard deviations from the center, z-scores provide unlimited precision for values that fall anywhere in between these integers. By connecting these standardized values to probability density distributions, you can calculate the exact probability of a data point falling between two specified scores, or work backward to find a target z-score given a specific probability threshold.  To find this standardized value, use the z-score formula: . For example, with mean = 65 and standard deviation = 3, a score of 59 gives: . This means the value is 2 standard deviations below the mean.             "
 },
 {
   "id": "handout-Empirical-zscore-2-2-1-1",
@@ -4499,6 +4499,51 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "The Empirical Rule (68-95-99.7 Rule) "
+},
+{
+  "id": "handout-Empirical-zscore-2-3",
+  "level": "2",
+  "url": "handout-Empirical-zscore.html#handout-Empirical-zscore-2-3",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Empirical-zscore-3-1",
+  "level": "2",
+  "url": "handout-Empirical-zscore.html#handout-Empirical-zscore-3-1",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Empirical-zscore-4-1",
+  "level": "2",
+  "url": "handout-Empirical-zscore.html#handout-Empirical-zscore-4-1",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Empirical-zscore-6-1",
+  "level": "2",
+  "url": "handout-Empirical-zscore.html#handout-Empirical-zscore-6-1",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "handout-Empirical-zscore-7-1",
+  "level": "2",
+  "url": "handout-Empirical-zscore.html#handout-Empirical-zscore-7-1",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  "
 },
 {
   "id": "handout-Regression",

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="450663">
+<statement>
+<p>The graph of a normal curve with labels is shown below. Use it to answer the questions below.</p><image width="83%" pi:generated="problems/images/mom-450663-1.png"/>
+  <p>
+  (a)  What is the mean?</p>
+<p><m>\displaystyle\mu=</m><fillin characters="5"/>
+  </p>
+<p>
+  (b) What is the standard deviation?</p>
+<p><m>\displaystyle\sigma=</m><fillin characters="5"/>
+  </p>
+<p>
+  (c) What percent of the values of <m>\displaystyle{X}</m> should fall between 54 and 59?</p>
+<p><fillin characters="5"/><percent/>
+  </p>
+<p>
+  (d) Which value of <m>\displaystyle{X}</m> corresponds to a <m>\displaystyle{z}</m>-score of <m>\displaystyle-{2}</m> ?</p>
+<p><fillin characters="5"/></p>
+
+</statement>
+<answer>
+<p><ul><li>54</li><li>5</li><li>34</li><li>44</li></ul></p>
+</answer>
+
+</myopenmath>

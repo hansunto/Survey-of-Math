@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1478376">
+<statement>
+<p>
+Suppose we flipped a coin and rolled a die. What is the probability of getting a tail on the coin or an even number on the die?</p>
+<p>
+<fillin characters="20"/>   
+</p>
+</statement>
+<answer>
+<p><ul><li><m>\displaystyle\frac{{3}}{{4}}</m></li></ul></p>
+</answer>
+
+</myopenmath>

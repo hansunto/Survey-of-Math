@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1483067">
+<statement>
+<p>
+Answer the following questions. Note these are the same questions as in the previous exercise, where you determined whether they were permutations or combinations.</p>
+<p>
+(a)  In poker, a player is dealt five cards from a standard <m>\displaystyle{52}</m>-card deck. How many different poker hands are possible?</p>
+<p>
+<fillin characters="20"/></p>
+<p>
+(b)  You volunteer to pet-sit for a friend who has 7 animals. How many different pet combinations are possible if you only have the room to pet-set three animals?</p>
+<p>
+<fillin characters="20"/></p>
+<p>
+(c)  Ten swimmers compete in a race. In how many ways can the first place, second place, and third place medals be awarded?</p>
+<p>
+<fillin characters="20"/></p>
+<p>
+(d)  An election ballot asks voters to select three city commissioners from a group of six candidates. In how many ways can this be done?</p>
+<p>
+<fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>2598960</li><li>35</li><li>720</li><li>20</li></ul></p>
+</answer>
+
+</myopenmath>

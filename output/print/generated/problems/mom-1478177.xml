@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1478177">
+<statement>
+<p>
+A fair coin is tossed three times in succession. Find the probability of tossing the following:</p>
+<p>
+(a)  Exactly <m>\displaystyle{1}</m> tail</p>
+<p>
+<fillin characters="20"/>   </p>
+<p>
+(b)  Exactly <m>\displaystyle{2}</m> heads</p>
+<p>
+<fillin characters="20"/>   </p>
+<p>
+(c)  The same number of heads as tails</p>
+<p>
+<fillin characters="20"/>   </p>
+<p>
+(d)  At least <m>\displaystyle{1}</m> head and at least <m>\displaystyle{1}</m> tail</p>
+<p>
+<fillin characters="20"/>   
+</p>
+</statement>
+<answer>
+<p><ul><li><m>\displaystyle\frac{{3}}{{8}}</m></li><li><m>\displaystyle\frac{{3}}{{8}}</m></li><li><m>\displaystyle{0}</m></li><li><m>\displaystyle\frac{{3}}{{4}}</m></li></ul></p>
+</answer>
+
+</myopenmath>

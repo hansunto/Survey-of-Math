@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1483064">
+<statement>
+<p>
+A charity benefit is attended by <m>\displaystyle{20}</m> people and five gift certificates are given away as door prizes. Each gift certificate is <m>\displaystyle\${30}</m>. Assuming that no person receives more than one prize, how many different ways can the five gift certificates be awarded?</p>
+<p>
+<fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>15504</li></ul></p>
+</answer>
+
+</myopenmath>

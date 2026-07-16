@@ -3,19 +3,19 @@
 <statement>
 <p>
 The amount paid at the time of purchase is called what?</p>
-<p><ol style="list-style-type:upper-alpha"><li>Principal</li> 
+<p><ol style="list-style-type:upper-alpha"><li>Compounding amount</li> 
+<li>Loan amount</li> 
+<li>Down payment</li> 
+<li>Principal</li> 
 <li>Compounding period</li> 
 <li>Interest</li> 
-<li>Loan amount</li> 
-<li>Compounding amount</li> 
-<li>Down payment</li> 
 <li>None of the above</li> 
 </ol></p>
 
 
 </statement>
 <answer>
-<p><ul><li>F: Down payment</li></ul></p>
+<p><ul><li>C: Down payment</li></ul></p>
 </answer>
 
 </myopenmath>

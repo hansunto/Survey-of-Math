@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1459983">
+<statement>
+<p>
+You want to purchase a home with a <m>\displaystyle{15}</m>-year mortgage with <m>\displaystyle{6.5}\%</m> interest. You can afford to pay <m>\displaystyle\${2000}</m> each month. What is the maximum amount of a mortgage you can afford?</p>
+<p>
+Round to the nearest dollar.</p>
+<p>
+<dollar/><fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>229592</li></ul></p>
+</answer>
+
+</myopenmath>

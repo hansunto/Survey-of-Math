@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1483066">
+<statement>
+<p>
+For each scenario, determine whether the answer would be a permutation or combination. </p>
+<p>
+(a)  In poker, a player is dealt five cards from a standard <m>\displaystyle{52}</m>-card deck. How many different poker hands are possible?
+`
+</p>
+<p><ol style="list-style-type:upper-alpha"><li>Permutation</li> 
+<li>Combination</li> 
+</ol></p>
+<p>
+(b)  You volunteer to pet-sit for a friend who has 7 animals. How many different pet combinations are possible if you only have the room to pet-set three animals?</p>
+<p><ol style="list-style-type:upper-alpha"><li>Permutation</li> 
+<li>Combination</li> 
+</ol></p>
+<p>
+(c)  Ten swimmers compete in a race. In how many ways can the first place, second place, and third place medals be awarded?</p>
+<p><ol style="list-style-type:upper-alpha"><li>Permutation</li> 
+<li>Combination</li> 
+</ol></p>
+<p>
+(d)  An election ballot asks voters to select three city commissioners from a group of six candidates. In how many ways can this be done?</p>
+<p><ol style="list-style-type:upper-alpha"><li>Permutation</li> 
+<li>Combination</li> 
+</ol></p>
+
+
+</statement>
+<answer>
+<p><ul><li>B: Combination</li><li>B: Combination</li><li>A: Permutation</li><li>B: Combination</li></ul></p>
+</answer>
+
+</myopenmath>

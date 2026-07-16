@@ -1,56 +1,56 @@
 <?xml version='1.0' encoding='utf-8'?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1419420">
 <statement>
-<p class="seqsep" role="heading">Part 1 of 2</p>Kendra's first 9 quiz grades in a science class had a mean of 86 and a standard deviation of 7.<p>
-a) Suppose Kendra makes an 86 on the next quiz. Would the standard deviation of her 10 quiz scores be greater than, equal to, or less than 7? Justify your answer.</p>
+<p class="seqsep" role="heading">Part 1 of 2</p>Precious's first 11 quiz grades in a science class had a mean of 82 and a standard deviation of 3.<p>
+a) Suppose Precious makes an 82 on the next quiz. Would the standard deviation of her 12 quiz scores be greater than, equal to, or less than 3? Justify your answer.</p>
 <p>
-The standard deviation will be </p>
-<p><ol style="list-style-type:upper-alpha"><li>equal to</li> 
-<li>greater than</li> 
-<li>less than</li> 
-</ol></p>
- 7. <p>
-The quiz score of 86 is </p>
-<p><ol style="list-style-type:upper-alpha"><li>equal to</li> 
-<li>less than</li> 
-<li>greater than</li> 
-</ol></p>
- the mean and would deviate from the mean by <p><ol style="list-style-type:upper-alpha"><li>7</li> 
-<li>1</li> 
-<li>0</li> 
-</ol></p>
-. <p>
-This will </p>
-<p><ol style="list-style-type:upper-alpha"><li>not effect</li> 
-<li>decrease</li> 
-<li>increase</li> 
-</ol></p>
- the standard deviation.<p class="seqsep" role="heading">Part 2 of 2</p>
-b) Suppose that Kendra was unprepared for the next quiz and scored a 30.  What would the standard deviation of her 10 quiz scores be greater than, less than, or equal to 7?<p>
 The standard deviation will be </p>
 <p><ol style="list-style-type:upper-alpha"><li>greater than</li> 
 <li>less than</li> 
 <li>equal to</li> 
 </ol></p>
- 7. <p>
-The quiz score of 30 is </p>
+ 3. <p>
+The quiz score of 82 is </p>
 <p><ol style="list-style-type:upper-alpha"><li>equal to</li> 
-<li>very far from</li> 
-<li>very close to</li> 
+<li>less than</li> 
+<li>greater than</li> 
 </ol></p>
- the mean and would deviate from the mean by <p><ol style="list-style-type:upper-alpha"><li>much more than 7</li> 
-<li>much less than 7</li> 
+ the mean and would deviate from the mean by <p><ol style="list-style-type:upper-alpha"><li>0</li> 
+<li>1</li> 
+<li>3</li> 
 </ol></p>
 . <p>
 This will </p>
-<p><ol style="list-style-type:upper-alpha"><li>decrease</li> 
+<p><ol style="list-style-type:upper-alpha"><li>increase</li> 
 <li>not effect</li> 
-<li>increase</li> 
+<li>decrease</li> 
+</ol></p>
+ the standard deviation.<p class="seqsep" role="heading">Part 2 of 2</p>
+b) Suppose that Precious was unprepared for the next quiz and scored a 23.  What would the standard deviation of her 12 quiz scores be greater than, less than, or equal to 3?<p>
+The standard deviation will be </p>
+<p><ol style="list-style-type:upper-alpha"><li>greater than</li> 
+<li>less than</li> 
+<li>equal to</li> 
+</ol></p>
+ 3. <p>
+The quiz score of 23 is </p>
+<p><ol style="list-style-type:upper-alpha"><li>equal to</li> 
+<li>very close to</li> 
+<li>very far from</li> 
+</ol></p>
+ the mean and would deviate from the mean by <p><ol style="list-style-type:upper-alpha"><li>much more than 3</li> 
+<li>much less than 3</li> 
+</ol></p>
+. <p>
+This will </p>
+<p><ol style="list-style-type:upper-alpha"><li>increase</li> 
+<li>decrease</li> 
+<li>not effect</li> 
 </ol></p>
  the standard deviation.
 </statement>
 <answer>
-<p><ul><li>C: less than</li><li>A: equal to</li><li>C: 0</li><li>B: decrease</li><li>A: greater than</li><li>B: very far from</li><li>A: much more than 7</li><li>C: increase</li></ul></p>
+<p><ul><li>B: less than</li><li>A: equal to</li><li>A: 0</li><li>C: decrease</li><li>A: greater than</li><li>C: very far from</li><li>A: much more than 3</li><li>A: increase</li></ul></p>
 </answer>
 
 </myopenmath>

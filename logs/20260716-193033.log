@@ -1,0 +1,371 @@
+INFO    : Since no target was supplied, we will use "course".
+
+INFO    : Building target course
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : downloading MyOpenMath static problems from /workspaces/Survey-of-Math/source/main.ptx for placement in /workspaces/Survey-of-Math/generated-assets/problems
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/extract-mom.xsl
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/extract-mom.xsl
+INFO    : downloading MOM #1410996 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1410996.xml...
+INFO    : downloading MOM #1410999 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1410999.xml...
+INFO    : downloading MOM #1411004 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1411004.xml...
+INFO    : downloading MOM #1411007 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1411007.xml...
+INFO    : downloading MOM #1411010 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1411010.xml...
+INFO    : downloading MOM #1411014 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1411014.xml...
+INFO    : downloading MOM #1411035 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1411035.xml...
+INFO    : downloading MOM #1445055 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1445055.xml...
+INFO    : downloading MOM #1445054 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1445054.xml...
+INFO    : downloading MOM #1445060 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1445060.xml...
+INFO    : downloading MOM #1445078 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1445078.xml...
+INFO    : downloading MOM #1445079 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1445079.xml...
+INFO    : downloading MOM #1445082 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1445082.xml...
+INFO    : downloading MOM #1450155 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1450155.xml...
+INFO    : downloading MOM #1450156 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1450156.xml...
+INFO    : downloading MOM #1450157 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1450157.xml...
+INFO    : downloading MOM #1450159 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1450159.xml...
+INFO    : downloading MOM #1450163 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1450163.xml...
+INFO    : downloading MOM #1450164 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1450164.xml...
+INFO    : downloading MOM #1450165 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1450165.xml...
+INFO    : downloading MOM #1450167 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1450167.xml...
+INFO    : downloading MOM #1450171 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1450171.xml...
+INFO    : downloading MOM #1450170 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1450170.xml...
+INFO    : downloading MOM #1450173 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1450173.xml...
+INFO    : downloading MOM #1450176 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1450176.xml...
+INFO    : downloading MOM #1450178 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1450178.xml...
+INFO    : downloading MOM #1455393 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1455393.xml...
+INFO    : downloading MOM #1455379 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1455379.xml...
+INFO    : downloading MOM #1455397 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1455397.xml...
+INFO    : downloading MOM #1455403 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1455403.xml...
+INFO    : downloading MOM #1455406 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1455406.xml...
+INFO    : downloading MOM #1455416 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1455416.xml...
+INFO    : downloading MOM #1455417 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1455417.xml...
+INFO    : downloading MOM #1455429 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1455429.xml...
+INFO    : downloading MOM #1455445 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1455445.xml...
+INFO    : downloading MOM #1459946 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1459946.xml...
+INFO    : downloading MOM #1459948 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1459948.xml...
+INFO    : downloading MOM #1459957 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1459957.xml...
+INFO    : downloading MOM #1459979 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1459979.xml...
+INFO    : downloading MOM #1459983 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1459983.xml...
+INFO    : downloading MOM #1478115 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1478115.xml...
+INFO    : downloading MOM #1478123 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1478123.xml...
+INFO    : downloading MOM #1478136 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1478136.xml...
+INFO    : downloading MOM #1478156 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1478156.xml...
+INFO    : downloading MOM #1478168 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1478168.xml...
+INFO    : downloading MOM #1478177 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1478177.xml...
+INFO    : downloading MOM #1478183 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1478183.xml...
+INFO    : downloading MOM #1478372 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1478372.xml...
+INFO    : downloading MOM #1478374 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1478374.xml...
+INFO    : downloading MOM #1478376 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1478376.xml...
+INFO    : downloading MOM #1478377 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1478377.xml...
+INFO    : downloading MOM #1478397 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1478397.xml...
+INFO    : downloading MOM #1483044 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1483044.xml...
+INFO    : downloading MOM #1483045 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1483045.xml...
+INFO    : downloading MOM #1483049 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1483049.xml...
+INFO    : downloading MOM #1483050 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1483050.xml...
+INFO    : downloading MOM #1483053 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1483053.xml...
+INFO    : downloading MOM #1483055 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1483055.xml...
+INFO    : downloading MOM #1483057 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1483057.xml...
+INFO    : downloading MOM #1483064 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1483064.xml...
+INFO    : downloading MOM #1483067 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1483067.xml...
+INFO    : downloading MOM #1483066 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1483066.xml...
+INFO    : downloading MOM #1483069 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1483069.xml...
+INFO    : downloading MOM #1486855 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1486855.xml...
+INFO    : downloading MOM #1486856 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1486856.xml...
+INFO    : downloading MOM #1486858 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1486858.xml...
+INFO    : downloading MOM #1486859 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1486859.xml...
+INFO    : downloading MOM #1858785 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1858785.xml...
+INFO    : downloading MOM #600342 to /workspaces/Survey-of-Math/generated-assets/problems/mom-600342.xml...
+INFO    : downloading MOM #6749 to /workspaces/Survey-of-Math/generated-assets/problems/mom-6749.xml...
+INFO    : downloading MOM #6996 to /workspaces/Survey-of-Math/generated-assets/problems/mom-6996.xml...
+INFO    : downloading MOM #1051 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1051.xml...
+INFO    : downloading MOM #1054 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1054.xml...
+INFO    : downloading MOM #1858846 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1858846.xml...
+INFO    : downloading MOM #19623 to /workspaces/Survey-of-Math/generated-assets/problems/mom-19623.xml...
+INFO    : downloading MOM #16037 to /workspaces/Survey-of-Math/generated-assets/problems/mom-16037.xml...
+INFO    : downloading MOM #126060 to /workspaces/Survey-of-Math/generated-assets/problems/mom-126060.xml...
+INFO    : downloading MOM #17426 to /workspaces/Survey-of-Math/generated-assets/problems/mom-17426.xml...
+INFO    : downloading MOM #1419420 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1419420.xml...
+INFO    : downloading MOM #7056 to /workspaces/Survey-of-Math/generated-assets/problems/mom-7056.xml...
+INFO    : downloading MOM #1546508 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1546508.xml...
+INFO    : downloading MOM #1551775 to /workspaces/Survey-of-Math/generated-assets/problems/mom-1551775.xml...
+INFO    : downloading MOM #60431 to /workspaces/Survey-of-Math/generated-assets/problems/mom-60431.xml...
+INFO    : downloading MOM #450663 to /workspaces/Survey-of-Math/generated-assets/problems/mom-450663.xml...
+INFO    : downloading MOM #23927 to /workspaces/Survey-of-Math/generated-assets/problems/mom-23927.xml...
+INFO    : downloading MOM #337072 to /workspaces/Survey-of-Math/generated-assets/problems/mom-337072.xml...
+INFO    : downloading MOM #23919 to /workspaces/Survey-of-Math/generated-assets/problems/mom-23919.xml...
+INFO    : downloading MOM #904695 to /workspaces/Survey-of-Math/generated-assets/problems/mom-904695.xml...
+INFO    : MyOpenMath static problem download complete
+WARNING : Now generating latex images
+INFO    : converting latex-image pictures from /workspaces/Survey-of-Math/source/main.ptx to svg graphics for placement in /workspaces/Survey-of-Math/generated-assets/latex-image
+INFO    : extracting latex-image pictures from /workspaces/Survey-of-Math/source/main.ptx
+INFO    : string parameters passed to extraction stylesheet: {'cli.version': '2.38', 'publisher': '/workspaces/Survey-of-Math/publication/publication.ptx'}
+INFO    : discovering source file's directory name: /workspaces/Survey-of-Math/source
+INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/Survey-of-Math/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/Survey-of-Math/assets
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/extract-latex-image.xsl
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/extract-latex-image.xsl
+INFO    : converting plot-ice-cream.tex to plot-ice-cream.pdf
+INFO    : cropping plot-ice-cream.pdf to cropped-plot-ice-cream.pdf
+INFO    : renaming cropped-plot-ice-cream.pdf to plot-ice-cream.pdf
+INFO    : converting plot-ice-cream.pdf to plot-ice-cream.svg
+INFO    : converting fig-birth-tree-2.tex to fig-birth-tree-2.pdf
+INFO    : cropping fig-birth-tree-2.pdf to cropped-fig-birth-tree-2.pdf
+INFO    : renaming cropped-fig-birth-tree-2.pdf to fig-birth-tree-2.pdf
+INFO    : converting fig-birth-tree-2.pdf to fig-birth-tree-2.svg
+INFO    : converting fig-coin-toss-tree-clean-2.tex to fig-coin-toss-tree-clean-2.pdf
+INFO    : cropping fig-coin-toss-tree-clean-2.pdf to cropped-fig-coin-toss-tree-clean-2.pdf
+INFO    : renaming cropped-fig-coin-toss-tree-clean-2.pdf to fig-coin-toss-tree-clean-2.pdf
+INFO    : converting fig-coin-toss-tree-clean-2.pdf to fig-coin-toss-tree-clean-2.svg
+INFO    : converting img-iq-curve.tex to img-iq-curve.pdf
+INFO    : cropping img-iq-curve.pdf to cropped-img-iq-curve.pdf
+INFO    : renaming cropped-img-iq-curve.pdf to img-iq-curve.pdf
+INFO    : converting img-iq-curve.pdf to img-iq-curve.svg
+INFO    : converting img-car-color-pie-chart.tex to img-car-color-pie-chart.pdf
+INFO    : cropping img-car-color-pie-chart.pdf to cropped-img-car-color-pie-chart.pdf
+INFO    : renaming cropped-img-car-color-pie-chart.pdf to img-car-color-pie-chart.pdf
+INFO    : converting img-car-color-pie-chart.pdf to img-car-color-pie-chart.svg
+INFO    : converting img-male-height-curve.tex to img-male-height-curve.pdf
+INFO    : cropping img-male-height-curve.pdf to cropped-img-male-height-curve.pdf
+INFO    : renaming cropped-img-male-height-curve.pdf to img-male-height-curve.pdf
+INFO    : converting img-male-height-curve.pdf to img-male-height-curve.svg
+INFO    : converting img-messages-line-chart.tex to img-messages-line-chart.pdf
+INFO    : cropping img-messages-line-chart.pdf to cropped-img-messages-line-chart.pdf
+INFO    : renaming cropped-img-messages-line-chart.pdf to img-messages-line-chart.pdf
+INFO    : converting img-messages-line-chart.pdf to img-messages-line-chart.svg
+INFO    : converting fig-tikz-ski-zscore-2.tex to fig-tikz-ski-zscore-2.pdf
+INFO    : cropping fig-tikz-ski-zscore-2.pdf to cropped-fig-tikz-ski-zscore-2.pdf
+INFO    : renaming cropped-fig-tikz-ski-zscore-2.pdf to fig-tikz-ski-zscore-2.pdf
+INFO    : converting fig-tikz-ski-zscore-2.pdf to fig-tikz-ski-zscore-2.svg
+INFO    : converting img-bar-chart.tex to img-bar-chart.pdf
+INFO    : cropping img-bar-chart.pdf to cropped-img-bar-chart.pdf
+INFO    : renaming cropped-img-bar-chart.pdf to img-bar-chart.pdf
+INFO    : converting img-bar-chart.pdf to img-bar-chart.svg
+INFO    : converting img-scores-pie-chart.tex to img-scores-pie-chart.pdf
+INFO    : cropping img-scores-pie-chart.pdf to cropped-img-scores-pie-chart.pdf
+INFO    : renaming cropped-img-scores-pie-chart.pdf to img-scores-pie-chart.pdf
+INFO    : converting img-scores-pie-chart.pdf to img-scores-pie-chart.svg
+INFO    : converting img-women-height-tail.tex to img-women-height-tail.pdf
+INFO    : cropping img-women-height-tail.pdf to cropped-img-women-height-tail.pdf
+INFO    : renaming cropped-img-women-height-tail.pdf to img-women-height-tail.pdf
+INFO    : converting img-women-height-tail.pdf to img-women-height-tail.svg
+INFO    : converting fig-tikz-cow-zscore-2.tex to fig-tikz-cow-zscore-2.pdf
+INFO    : cropping fig-tikz-cow-zscore-2.pdf to cropped-fig-tikz-cow-zscore-2.pdf
+INFO    : renaming cropped-fig-tikz-cow-zscore-2.pdf to fig-tikz-cow-zscore-2.pdf
+INFO    : converting fig-tikz-cow-zscore-2.pdf to fig-tikz-cow-zscore-2.svg
+INFO    : converting img-score-histogram.tex to img-score-histogram.pdf
+INFO    : cropping img-score-histogram.pdf to cropped-img-score-histogram.pdf
+INFO    : renaming cropped-img-score-histogram.pdf to img-score-histogram.pdf
+INFO    : converting img-score-histogram.pdf to img-score-histogram.svg
+INFO    : converting img-stock-line-graph.tex to img-stock-line-graph.pdf
+INFO    : cropping img-stock-line-graph.pdf to cropped-img-stock-line-graph.pdf
+INFO    : renaming cropped-img-stock-line-graph.pdf to img-stock-line-graph.pdf
+INFO    : converting img-stock-line-graph.pdf to img-stock-line-graph.svg
+INFO    : converting fig-coat-regression-2.tex to fig-coat-regression-2.pdf
+INFO    : cropping fig-coat-regression-2.pdf to cropped-fig-coat-regression-2.pdf
+INFO    : renaming cropped-fig-coat-regression-2.pdf to fig-coat-regression-2.pdf
+INFO    : converting fig-coat-regression-2.pdf to fig-coat-regression-2.svg
+INFO    : converting img-empirical-rule.tex to img-empirical-rule.pdf
+INFO    : cropping img-empirical-rule.pdf to cropped-img-empirical-rule.pdf
+INFO    : renaming cropped-img-empirical-rule.pdf to img-empirical-rule.pdf
+INFO    : converting img-empirical-rule.pdf to img-empirical-rule.svg
+INFO    : converting fig-tikz-test-zscore-2.tex to fig-tikz-test-zscore-2.pdf
+INFO    : cropping fig-tikz-test-zscore-2.pdf to cropped-fig-tikz-test-zscore-2.pdf
+INFO    : renaming cropped-fig-tikz-test-zscore-2.pdf to fig-tikz-test-zscore-2.pdf
+INFO    : converting fig-tikz-test-zscore-2.pdf to fig-tikz-test-zscore-2.svg
+INFO    : converting img-scores-bar-chart.tex to img-scores-bar-chart.pdf
+INFO    : cropping img-scores-bar-chart.pdf to cropped-img-scores-bar-chart.pdf
+INFO    : renaming cropped-img-scores-bar-chart.pdf to img-scores-bar-chart.pdf
+INFO    : converting img-scores-bar-chart.pdf to img-scores-bar-chart.svg
+INFO    : converting img-ice-cream-pie.tex to img-ice-cream-pie.pdf
+INFO    : cropping img-ice-cream-pie.pdf to cropped-img-ice-cream-pie.pdf
+INFO    : renaming cropped-img-ice-cream-pie.pdf to img-ice-cream-pie.pdf
+INFO    : converting img-ice-cream-pie.pdf to img-ice-cream-pie.svg
+INFO    : converting plot-car-mileage.tex to plot-car-mileage.pdf
+INFO    : cropping plot-car-mileage.pdf to cropped-plot-car-mileage.pdf
+INFO    : renaming cropped-plot-car-mileage.pdf to plot-car-mileage.pdf
+INFO    : converting plot-car-mileage.pdf to plot-car-mileage.svg
+INFO    : converting img-messages-histogram-chart.tex to img-messages-histogram-chart.pdf
+INFO    : cropping img-messages-histogram-chart.pdf to cropped-img-messages-histogram-chart.pdf
+INFO    : renaming cropped-img-messages-histogram-chart.pdf to img-messages-histogram-chart.pdf
+INFO    : converting img-messages-histogram-chart.pdf to img-messages-histogram-chart.svg
+INFO    : converting img-scores-histogram-chart.tex to img-scores-histogram-chart.pdf
+INFO    : cropping img-scores-histogram-chart.pdf to cropped-img-scores-histogram-chart.pdf
+INFO    : renaming cropped-img-scores-histogram-chart.pdf to img-scores-histogram-chart.pdf
+INFO    : converting img-scores-histogram-chart.pdf to img-scores-histogram-chart.svg
+INFO    : converting img-female-height-curve.tex to img-female-height-curve.pdf
+INFO    : cropping img-female-height-curve.pdf to cropped-img-female-height-curve.pdf
+INFO    : renaming cropped-img-female-height-curve.pdf to img-female-height-curve.pdf
+INFO    : converting img-female-height-curve.pdf to img-female-height-curve.svg
+INFO    : converting img-kori-budget-chart.tex to img-kori-budget-chart.pdf
+INFO    : cropping img-kori-budget-chart.pdf to cropped-img-kori-budget-chart.pdf
+INFO    : renaming cropped-img-kori-budget-chart.pdf to img-kori-budget-chart.pdf
+INFO    : converting img-kori-budget-chart.pdf to img-kori-budget-chart.svg
+INFO    : converting img-messages-bar-chart.tex to img-messages-bar-chart.pdf
+INFO    : cropping img-messages-bar-chart.pdf to cropped-img-messages-bar-chart.pdf
+INFO    : renaming cropped-img-messages-bar-chart.pdf to img-messages-bar-chart.pdf
+INFO    : converting img-messages-bar-chart.pdf to img-messages-bar-chart.svg
+INFO    : converting img-relationship-scatter.tex to img-relationship-scatter.pdf
+INFO    : cropping img-relationship-scatter.pdf to cropped-img-relationship-scatter.pdf
+INFO    : renaming cropped-img-relationship-scatter.pdf to img-relationship-scatter.pdf
+INFO    : converting img-relationship-scatter.pdf to img-relationship-scatter.svg
+INFO    : converting img-messages-pie-chart.tex to img-messages-pie-chart.pdf
+INFO    : cropping img-messages-pie-chart.pdf to cropped-img-messages-pie-chart.pdf
+INFO    : renaming cropped-img-messages-pie-chart.pdf to img-messages-pie-chart.pdf
+INFO    : converting img-messages-pie-chart.pdf to img-messages-pie-chart.svg
+INFO    : converting img-car-color-touching-chart.tex to img-car-color-touching-chart.pdf
+INFO    : cropping img-car-color-touching-chart.pdf to cropped-img-car-color-touching-chart.pdf
+INFO    : renaming cropped-img-car-color-touching-chart.pdf to img-car-color-touching-chart.pdf
+INFO    : converting img-car-color-touching-chart.pdf to img-car-color-touching-chart.svg
+INFO    : converting fig-tikz-icecream-zscore-2.tex to fig-tikz-icecream-zscore-2.pdf
+INFO    : cropping fig-tikz-icecream-zscore-2.pdf to cropped-fig-tikz-icecream-zscore-2.pdf
+INFO    : renaming cropped-fig-tikz-icecream-zscore-2.pdf to fig-tikz-icecream-zscore-2.pdf
+INFO    : converting fig-tikz-icecream-zscore-2.pdf to fig-tikz-icecream-zscore-2.svg
+INFO    : converting img-scores-line-chart.tex to img-scores-line-chart.pdf
+INFO    : cropping img-scores-line-chart.pdf to cropped-img-scores-line-chart.pdf
+INFO    : renaming cropped-img-scores-line-chart.pdf to img-scores-line-chart.pdf
+INFO    : converting img-scores-line-chart.pdf to img-scores-line-chart.svg
+INFO    : converting plot-commute-dots.tex to plot-commute-dots.pdf
+INFO    : cropping plot-commute-dots.pdf to cropped-plot-commute-dots.pdf
+INFO    : renaming cropped-plot-commute-dots.pdf to plot-commute-dots.pdf
+INFO    : converting plot-commute-dots.pdf to plot-commute-dots.svg
+INFO    : converting plot-five-correlations.tex to plot-five-correlations.pdf
+INFO    : cropping plot-five-correlations.pdf to cropped-plot-five-correlations.pdf
+INFO    : renaming cropped-plot-five-correlations.pdf to plot-five-correlations.pdf
+INFO    : converting plot-five-correlations.pdf to plot-five-correlations.svg
+INFO    : converting img-tree-coin-die.tex to img-tree-coin-die.pdf
+INFO    : cropping img-tree-coin-die.pdf to cropped-img-tree-coin-die.pdf
+INFO    : renaming cropped-img-tree-coin-die.pdf to img-tree-coin-die.pdf
+INFO    : converting img-tree-coin-die.pdf to img-tree-coin-die.svg
+INFO    : converting fig-sandwich-regression-2.tex to fig-sandwich-regression-2.pdf
+INFO    : cropping fig-sandwich-regression-2.pdf to cropped-fig-sandwich-regression-2.pdf
+INFO    : renaming cropped-fig-sandwich-regression-2.pdf to fig-sandwich-regression-2.pdf
+INFO    : converting fig-sandwich-regression-2.pdf to fig-sandwich-regression-2.svg
+INFO    : converting img-budget-pie.tex to img-budget-pie.pdf
+INFO    : cropping img-budget-pie.pdf to cropped-img-budget-pie.pdf
+INFO    : renaming cropped-img-budget-pie.pdf to img-budget-pie.pdf
+INFO    : converting img-budget-pie.pdf to img-budget-pie.svg
+INFO    : converting img-bell-curve-half.tex to img-bell-curve-half.pdf
+INFO    : cropping img-bell-curve-half.pdf to cropped-img-bell-curve-half.pdf
+INFO    : renaming cropped-img-bell-curve-half.pdf to img-bell-curve-half.pdf
+INFO    : converting img-bell-curve-half.pdf to img-bell-curve-half.svg
+INFO    : converting fig-widget-regression-2.tex to fig-widget-regression-2.pdf
+INFO    : cropping fig-widget-regression-2.pdf to cropped-fig-widget-regression-2.pdf
+INFO    : renaming cropped-fig-widget-regression-2.pdf to fig-widget-regression-2.pdf
+INFO    : converting fig-widget-regression-2.pdf to fig-widget-regression-2.svg
+INFO    : converting fig-sales-regression-2.tex to fig-sales-regression-2.pdf
+INFO    : cropping fig-sales-regression-2.pdf to cropped-fig-sales-regression-2.pdf
+INFO    : renaming cropped-fig-sales-regression-2.pdf to fig-sales-regression-2.pdf
+INFO    : converting fig-sales-regression-2.pdf to fig-sales-regression-2.svg
+INFO    : converting fig-eclipse-regression-2.tex to fig-eclipse-regression-2.pdf
+INFO    : cropping fig-eclipse-regression-2.pdf to cropped-fig-eclipse-regression-2.pdf
+INFO    : renaming cropped-fig-eclipse-regression-2.pdf to fig-eclipse-regression-2.pdf
+INFO    : converting fig-eclipse-regression-2.pdf to fig-eclipse-regression-2.svg
+INFO    : converting img-car-color-bar-chart.tex to img-car-color-bar-chart.pdf
+INFO    : cropping img-car-color-bar-chart.pdf to cropped-img-car-color-bar-chart.pdf
+INFO    : renaming cropped-img-car-color-bar-chart.pdf to img-car-color-bar-chart.pdf
+INFO    : converting img-car-color-bar-chart.pdf to img-car-color-bar-chart.svg
+INFO    : converting fig-empirical-bell-curve-2.tex to fig-empirical-bell-curve-2.pdf
+INFO    : cropping fig-empirical-bell-curve-2.pdf to cropped-fig-empirical-bell-curve-2.pdf
+INFO    : renaming cropped-fig-empirical-bell-curve-2.pdf to fig-empirical-bell-curve-2.pdf
+INFO    : converting fig-empirical-bell-curve-2.pdf to fig-empirical-bell-curve-2.svg
+INFO    : converting plot-stress-illness.tex to plot-stress-illness.pdf
+INFO    : cropping plot-stress-illness.pdf to cropped-plot-stress-illness.pdf
+INFO    : renaming cropped-plot-stress-illness.pdf to plot-stress-illness.pdf
+INFO    : converting plot-stress-illness.pdf to plot-stress-illness.svg
+INFO    : converting img-workout-histogram.tex to img-workout-histogram.pdf
+INFO    : cropping img-workout-histogram.pdf to cropped-img-workout-histogram.pdf
+INFO    : renaming cropped-img-workout-histogram.pdf to img-workout-histogram.pdf
+INFO    : converting img-workout-histogram.pdf to img-workout-histogram.svg
+INFO    : converting img-bellcurve.tex to img-bellcurve.pdf
+INFO    : cropping img-bellcurve.pdf to cropped-img-bellcurve.pdf
+INFO    : renaming cropped-img-bellcurve.pdf to img-bellcurve.pdf
+INFO    : converting img-bellcurve.pdf to img-bellcurve.svg
+INFO    : converting img-nutrition-weight-chart-fixed.tex to img-nutrition-weight-chart-fixed.pdf
+INFO    : cropping img-nutrition-weight-chart-fixed.pdf to cropped-img-nutrition-weight-chart-fixed.pdf
+INFO    : renaming cropped-img-nutrition-weight-chart-fixed.pdf to img-nutrition-weight-chart-fixed.pdf
+INFO    : converting img-nutrition-weight-chart-fixed.pdf to img-nutrition-weight-chart-fixed.svg
+INFO    : converting img-touchdown-bar-chart.tex to img-touchdown-bar-chart.pdf
+INFO    : cropping img-touchdown-bar-chart.pdf to cropped-img-touchdown-bar-chart.pdf
+INFO    : renaming cropped-img-touchdown-bar-chart.pdf to img-touchdown-bar-chart.pdf
+INFO    : converting img-touchdown-bar-chart.pdf to img-touchdown-bar-chart.svg
+INFO    : converting img-scatter-plot.tex to img-scatter-plot.pdf
+INFO    : cropping img-scatter-plot.pdf to cropped-img-scatter-plot.pdf
+INFO    : renaming cropped-img-scatter-plot.pdf to img-scatter-plot.pdf
+INFO    : converting img-scatter-plot.pdf to img-scatter-plot.svg
+INFO    : converting fig-tikz-decimal-zscore-2.tex to fig-tikz-decimal-zscore-2.pdf
+INFO    : cropping fig-tikz-decimal-zscore-2.pdf to cropped-fig-tikz-decimal-zscore-2.pdf
+INFO    : renaming cropped-fig-tikz-decimal-zscore-2.pdf to fig-tikz-decimal-zscore-2.pdf
+INFO    : converting fig-tikz-decimal-zscore-2.pdf to fig-tikz-decimal-zscore-2.svg
+INFO    : converting img-patient-temp-line.tex to img-patient-temp-line.pdf
+INFO    : cropping img-patient-temp-line.pdf to cropped-img-patient-temp-line.pdf
+INFO    : renaming cropped-img-patient-temp-line.pdf to img-patient-temp-line.pdf
+INFO    : converting img-patient-temp-line.pdf to img-patient-temp-line.svg
+INFO    : converting img-car-color-line-chart.tex to img-car-color-line-chart.pdf
+INFO    : cropping img-car-color-line-chart.pdf to cropped-img-car-color-line-chart.pdf
+INFO    : renaming cropped-img-car-color-line-chart.pdf to img-car-color-line-chart.pdf
+INFO    : converting img-car-color-line-chart.pdf to img-car-color-line-chart.svg
+INFO    : converting img-cafeteria-fruit.tex to img-cafeteria-fruit.pdf
+INFO    : cropping img-cafeteria-fruit.pdf to cropped-img-cafeteria-fruit.pdf
+INFO    : renaming cropped-img-cafeteria-fruit.pdf to img-cafeteria-fruit.pdf
+INFO    : converting img-cafeteria-fruit.pdf to img-cafeteria-fruit.svg
+INFO    : Removing temporary directory /tmp/ptx-prg4epvq
+INFO    : Removing temporary directory /tmp/ptx-zy35_j6m
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /workspaces/Survey-of-Math/output/course.
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 8.1.14
+INFO    : Downloading Runestone Services, version 8.1.14
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-denver
+INFO    : converting /workspaces/Survey-of-Math/source/main.ptx to HTML in /tmp/ptx-4p5qa3ir
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+WARNING : * PTX:WARNING: In a section containing subsections, any content that is not inside a subsection needs to be inside an <introduction> and/or  <conclusion>.
+INFO    : *              located within: "sec-measures-of-center-spread" (xml:id), "4.2 Measures of Center and Spread" (title)
+INFO    : * PTX:INFO:   checking all deprecated elements.
+WARNING : * PTX:DEPRECATE: (2019-06-28) the "table" element requires a "title", an existing "caption" is being ignored (8 times)
+INFO    : *              located within: "table-widget-data" (xml:id)
+INFO    : *              located within: "table-sandwich-nutrition" (xml:id)
+INFO    : *              located within: "table-eclipse-data" (xml:id)
+INFO    : *              located within: "table-coat-data" (xml:id)
+INFO    : *              located within: "table-sales-data" (xml:id)
+INFO    : *              located within: "table-speeding-tickets" (xml:id)
+INFO    : *              located within: "table-menu-options" (xml:id)
+INFO    : *              located within: "table-eye-color-data" (xml:id)
+INFO    : * --------------
+WARNING : * PTX:DEPRECATE: (2022-04-25) a "@label" attribute (on a "ul" or "ol" element) has been deprecated and should be replaced by the functionally equivalent "@marker".  We will attempt to honor your request (14 times)
+INFO    : *              located within: "Probability of Performers" (title)
+INFO    : *              located within: "Probability of Club Committee Selection" (title)
+INFO    : *              located within: "Probability of Defective Transistors" (title)
+INFO    : *              located within: "Probability of Marbles Without Replacement" (title)
+INFO    : *              located within: "example-iq-empirical-rule" (xml:id), "Applying the Empirical Rule to IQ Scores" (title)
+INFO    : *              located within: "activity-02-intro-activity" (xml:id), "02. Activity Apportionment Methods" (title)
+INFO    : *              located within: "ex-shirt-colors" (xml:id), "Shirt Color Frequency Table" (title)
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "notes-Voting") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located within: "activity-01-intro-activity" (xml:id), "01. Activity Voting Methods" (title)
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "section-apportionment") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "notes-simple-interest") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located within: "activity-03-intro-activity" (xml:id), "03. Activity Simple Interest" (title)
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "notes-compound-interest") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located within: "activity-04-intro-activity" (xml:id), "04. Activity Compound Interest" (title)
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "notes-Annuities") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located within: "activity-05-intro-activity" (xml:id), "05. Activity Annuities" (title)
+WARNING : * PTX:WARNING:    An <xref> wants to build text using a number to identify the target, but the target (which has @xml:id "notes-Mortgages") does not have a number. You could try 'text="title"' or 'text="custom"' on the "xref".
+INFO    : *              located within: "activity-06-intro-activity" (xml:id), "06. Activity Loans" (title)
+INFO    : *              located within: "activity-07-intro-activity" (xml:id), "07. Activity Mortgages" (title)
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /tmp/ptx-4p5qa3ir
+INFO    : Removing temporary directory /tmp/ptx-a9kprooq
+INFO    : 
+Finished build for target course. Run `pretext view course` to see the results.
+
+INFO    : 
+Success!  Built requested target(s) without errors.
+
+INFO    : 

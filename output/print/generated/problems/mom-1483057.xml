@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1483057">
+<statement>
+<p>
+You need to make a <m>\displaystyle{5}</m>-character password using the letters <m>\displaystyle{A}</m> through <m>\displaystyle{Z}</m>.</p>
+<p>
+How many passwords are possible if repeated letters are allowed?</p>
+<p>
+<fillin characters="20"/></p>
+<p>
+How many passwords are possible if repeated letters are NOT allowed?</p>
+<p>
+<fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>11881376</li><li>7893600</li></ul></p>
+</answer>
+
+</myopenmath>

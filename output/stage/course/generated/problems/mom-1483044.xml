@@ -3,12 +3,12 @@
 <statement>
 <p>
 Which of the following counting techniques will we discuss in class. Select ALL that apply!</p>
-<p><ol style="list-style-type:upper-alpha"><li>Permutations</li> 
-<li>Conditional Counting Principle</li> 
-<li>Inclusion-Exclusion Principle</li> 
-<li>Combinations</li> 
+<p><ol style="list-style-type:upper-alpha"><li>Pigeonhole Principle</li> 
 <li>Fundamental Counting Principle</li> 
-<li>Pigeonhole Principle</li> 
+<li>Combinations</li> 
+<li>Conditional Counting Principle</li> 
+<li>Permutations</li> 
+<li>Inclusion-Exclusion Principle</li> 
 </ol></p>
 
 

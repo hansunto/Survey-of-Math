@@ -7,13 +7,13 @@ How many adults were questioned?</p>
 <p>
 <fillin characters="20"/></p>
 <p>
-What percentage of the adults questioned had 1 children?</p>
+What percentage of the adults questioned had 2 children?</p>
 <p>
 <fillin characters="20"/> <percent/>
 </p>
 </statement>
 <answer>
-<p><ul><li>16</li><li>50</li></ul></p>
+<p><ul><li>13</li><li>30.769230769231</li></ul></p>
 </answer>
 
 </myopenmath>

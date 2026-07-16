@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1459948">
+<statement>
+<p>
+Suppose you purchase a home which costs <m>\displaystyle\${500},{000}</m> and requires a <m>\displaystyle\${50},{000}</m> down payment. What is the amount of the mortgage required for this home?</p>
+<p>
+<dollar/><fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>450000</li></ul></p>
+</answer>
+
+</myopenmath>

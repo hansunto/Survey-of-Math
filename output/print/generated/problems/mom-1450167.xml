@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1450167">
+<statement>
+<p>
+Answer the following questions about the <m>\displaystyle\${1000}</m> loan in the example above. </p>
+<p>
+a)  How much total interest was earned with the account using simple interest?</p>
+<p>
+<dollar/> <fillin characters="20"/></p>
+<p>
+b)  When using compound interest, how much interest was earned in month <m>\displaystyle{6}</m>?</p>
+<p>
+<dollar/> <fillin characters="20"/></p>
+<p>
+c) When using compound interest, what was the ending account balance after <m>\displaystyle{9}</m> months?</p>
+<p>
+<dollar/> <fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>30</li><li>2.53</li><li>1022.73</li></ul></p>
+</answer>
+
+</myopenmath>

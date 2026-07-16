@@ -11,36 +11,30 @@
       symmetrical, bell-shaped curve where data points cluster predictably around 
       the center:</p> 
       <ul>
-      <li> <p> Below Mean: Exactly 50% of the data lies below the mean. </p> </li>
-      <li> <p> Above Mean: Exactly 50% of the data lies above the mean. </p> </li>
+        <li> <p> Below Mean: Exactly 50% of the data lies below the mean. </p> </li>
+        <li> <p> Above Mean: Exactly 50% of the data lies above the mean. </p> </li>
       </ul>
     </li> 
-      <li> <p> <term> The Empirical Rule (68-95-99.7 Rule) </term> For normally distributed 
+    <li> <p> <term> The Empirical Rule (68-95-99.7 Rule) </term> For normally distributed 
         data, almost all observations fall within three standard deviations of 
         the mean: </p>
         <ul>
-        <li> <p> 68% of data points fall within 1 standard deviation. </p> </li>
-        <li> <p> 95% of data points fall within 2 standard deviations. </p> </li>
-        <li> <p> 99.7% of data points fall within 3 standard deviations. </p> </li>
+          <li> <p> 68% of data points fall within 1 standard deviation. </p> </li>
+          <li> <p> 95% of data points fall within 2 standard deviations. </p> </li>
+          <li> <p> 99.7% of data points fall within 3 standard deviations. </p> </li>
         </ul>
     </li>
-    </ol>
+  </ol>
 
-    <exercise>
-      <myopenmath problem="7056"/>
-    </exercise>
+    <exercise>  <myopenmath problem="7056"/> </exercise>
   </page>
 
   <page>
-     <exercise>
-      <myopenmath problem="1546508"/>
-    </exercise>
+     <exercise> <myopenmath problem="1546508"/> </exercise>
   </page>
 
   <page>
-     <exercise>
-      <myopenmath problem="1551775"/>
-    </exercise>
+     <exercise> <myopenmath problem="1551775"/> </exercise>
   </page>
 
   <page>

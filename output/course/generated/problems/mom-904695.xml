@@ -6,16 +6,16 @@ Analyze the residuals of a linear regression model and select the best response.
 </p>
 <p>
 <em>Criteria is simple evaluation of possible indications of an exponential model vs. linear model)</em>  </p>
-<p><em>Note: this question will not generate a new version of the question or graph.</em></p><image width="72%" pi:generated="problems/images/mom-904695-1.PNG"/><p><ol style="list-style-type:upper-alpha"><li>yes, the residual plot shows a curve</li> 
-<li>no, the residual plot does not show a curve</li> 
-<li>yes, the residual plot does not show a curve</li> 
+<p><em>Note: this question will not generate a new version of the question or graph.</em></p><image width="72%" pi:generated="problems/images/mom-904695-1.PNG"/><p><ol style="list-style-type:upper-alpha"><li>no, the residual plot does not show a curve</li> 
+<li>yes, the residual plot shows a curve</li> 
 <li>no, the residual plot shows a curve</li> 
+<li>yes, the residual plot does not show a curve</li> 
 </ol></p>
 
 
 </statement>
 <answer>
-<p><ul><li>C: yes, the residual plot does not show a curve</li></ul></p>
+<p><ul><li>D: yes, the residual plot does not show a curve</li></ul></p>
 </answer>
 
 </myopenmath>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1450173">
+<statement>
+<p>
+You deposit <m>\displaystyle\${1000}</m> in a savings account with an interest rate of <m>\displaystyle{2.95}\%</m>. The interest is compounded quarterly. </p>
+<p>
+How much money will be in the account after <m>\displaystyle{10}</m> years? Round your answer to the nearest cent.</p>
+<p>
+<dollar/> <fillin characters="20"/></p>
+<p>
+How much of this is due to interest?</p>
+<p>
+<dollar/> <fillin characters="20"/>
+</p>
+</statement>
+<answer>
+<p><ul><li>1341.67</li><li>341.67</li></ul></p>
+</answer>
+
+</myopenmath>

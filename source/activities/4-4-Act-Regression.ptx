@@ -18,19 +18,14 @@
   education levels and prejudice, we cannot conclude that increasing education directly 
   causes a person's level of prejudice to decrease.
 </p>
-
   </page>
 
   <page>
-     <exercise>
-      <myopenmath problem="23927"/>
-    </exercise>
+     <exercise> <myopenmath problem="23927"/> </exercise>
   </page>
 
   <page>
-     <exercise>
-      <myopenmath problem="337072"/>
-    </exercise>
+     <exercise> <myopenmath problem="337072"/> </exercise>
   </page>
 
 <page>
@@ -47,16 +42,11 @@
   <m>b</m> represents the y-intercept.
 </p>
 
-<exercise>
-  <myopenmath problem="23919"/>
-</exercise>
+<exercise>  <myopenmath problem="23919"/> </exercise>
 </page>
 
 <page>
-  <myopenmath problem="904695"/>
+  <exercise>  <myopenmath problem="904695"/> </exercise>
 </page>
-
-
-
   
   </worksheet>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1450163">
+<statement>
+<p>
+A simple interest loan is taken out for <m>\displaystyle{6}</m> months. What value of <m>\displaystyle{t}</m> should be used in the simple interest formula?</p>
+<p>
+<m>\displaystyle{t}=</m> <fillin characters="20"/>   
+</p>
+</statement>
+<answer>
+<p><ul><li>0.5</li></ul></p>
+</answer>
+
+</myopenmath>

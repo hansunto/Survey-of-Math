@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1411035">
+<statement>
+<p>
+Answer the following questions based on the material in this assignment. All parts must be correct to receive credit!</p>
+<p>
+Which voting method is used by the International Olympic Committee to select host nations?</p>
+<p><ol style="list-style-type:upper-alpha"><li>Plurality</li> 
+<li>Plurality with elimination</li> 
+<li>Borda count</li> 
+<li>Pairwise comparison</li> 
+</ol></p>
+<p>
+Which voting method is used by the Board of Trustees for the Wikimedia Foundation that runs Wikipedia?</p>
+<p><ol style="list-style-type:upper-alpha"><li>Plurality</li> 
+<li>Plurality with elimination</li> 
+<li>Borda count</li> 
+<li>Pairwise comparison</li> 
+</ol></p>
+<p>
+Which voting method can sometimes chose a more broadly acceptable candidate over one with majority support?</p>
+<p><ol style="list-style-type:upper-alpha"><li>Plurality</li> 
+<li>Plurality with elimination</li> 
+<li>Borda count</li> 
+<li>Pairwise comparison</li> 
+</ol></p>
+
+
+</statement>
+<answer>
+<p><ul><li>B: Plurality with elimination</li><li>D: Pairwise comparison</li><li>C: Borda count</li></ul></p>
+</answer>
+
+</myopenmath>

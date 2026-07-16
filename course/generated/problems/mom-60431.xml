@@ -2,27 +2,27 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="60431">
 <statement>
 <p>
-Suppose that the scores on a statewide standardized test are normally distributed with a mean of 64 and a standard deviation of 2.  Estimate the percentage of scores that were</p>
+Suppose that the scores on a statewide standardized test are normally distributed with a mean of 69 and a standard deviation of 5.  Estimate the percentage of scores that were</p>
 <p>
-(a) between 62 and 66.</p>
-<p>
-<fillin characters="2"/> <percent/></p>
-<p>
-(b) above 68.</p>
+(a) between 59 and 79.</p>
 <p>
 <fillin characters="2"/> <percent/></p>
 <p>
-(c) below 58.</p>
+(b) above 84.</p>
 <p>
 <fillin characters="2"/> <percent/></p>
 <p>
-(d) between 58 and 68.</p>
+(c) below 59.</p>
+<p>
+<fillin characters="2"/> <percent/></p>
+<p>
+(d) between 59 and 84.</p>
 <p>
 <fillin characters="2"/> <percent/>
 </p>
 </statement>
 <answer>
-<p><ul><li>68</li><li>2.5</li><li>0.15</li><li>97.35</li></ul></p>
+<p><ul><li>95</li><li>0.15</li><li>2.5</li><li>97.35</li></ul></p>
 </answer>
 
 </myopenmath>

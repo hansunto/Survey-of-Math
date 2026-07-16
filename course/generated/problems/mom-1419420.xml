@@ -1,56 +1,56 @@
 <?xml version='1.0' encoding='utf-8'?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1419420">
 <statement>
-<p class="seqsep" role="heading">Part 1 of 2</p>Nakala's first 9 quiz grades in a science class had a mean of 80 and a standard deviation of 6.<p>
-a) Suppose Nakala makes an 80 on the next quiz. Would the standard deviation of her 10 quiz scores be greater than, equal to, or less than 6? Justify your answer.</p>
+<p class="seqsep" role="heading">Part 1 of 2</p>LaTosha's first 10 quiz grades in a science class had a mean of 81 and a standard deviation of 4.<p>
+a) Suppose LaTosha makes an 81 on the next quiz. Would the standard deviation of her 11 quiz scores be greater than, equal to, or less than 4? Justify your answer.</p>
 <p>
 The standard deviation will be </p>
-<p><ol style="list-style-type:upper-alpha"><li>equal to</li> 
-<li>less than</li> 
-<li>greater than</li> 
-</ol></p>
- 6. <p>
-The quiz score of 80 is </p>
 <p><ol style="list-style-type:upper-alpha"><li>less than</li> 
 <li>greater than</li> 
 <li>equal to</li> 
 </ol></p>
+ 4. <p>
+The quiz score of 81 is </p>
+<p><ol style="list-style-type:upper-alpha"><li>greater than</li> 
+<li>less than</li> 
+<li>equal to</li> 
+</ol></p>
  the mean and would deviate from the mean by <p><ol style="list-style-type:upper-alpha"><li>0</li> 
-<li>6</li> 
+<li>4</li> 
 <li>1</li> 
 </ol></p>
 . <p>
 This will </p>
 <p><ol style="list-style-type:upper-alpha"><li>decrease</li> 
-<li>increase</li> 
 <li>not effect</li> 
+<li>increase</li> 
 </ol></p>
  the standard deviation.<p class="seqsep" role="heading">Part 2 of 2</p>
-b) Suppose that Nakala was unprepared for the next quiz and scored a 21.  What would the standard deviation of her 10 quiz scores be greater than, less than, or equal to 6?<p>
+b) Suppose that LaTosha was unprepared for the next quiz and scored a 32.  What would the standard deviation of her 11 quiz scores be greater than, less than, or equal to 4?<p>
 The standard deviation will be </p>
-<p><ol style="list-style-type:upper-alpha"><li>greater than</li> 
-<li>equal to</li> 
+<p><ol style="list-style-type:upper-alpha"><li>equal to</li> 
 <li>less than</li> 
+<li>greater than</li> 
 </ol></p>
- 6. <p>
-The quiz score of 21 is </p>
+ 4. <p>
+The quiz score of 32 is </p>
 <p><ol style="list-style-type:upper-alpha"><li>very far from</li> 
-<li>equal to</li> 
 <li>very close to</li> 
+<li>equal to</li> 
 </ol></p>
- the mean and would deviate from the mean by <p><ol style="list-style-type:upper-alpha"><li>much more than 6</li> 
-<li>much less than 6</li> 
+ the mean and would deviate from the mean by <p><ol style="list-style-type:upper-alpha"><li>much more than 4</li> 
+<li>much less than 4</li> 
 </ol></p>
 . <p>
 This will </p>
 <p><ol style="list-style-type:upper-alpha"><li>not effect</li> 
-<li>increase</li> 
 <li>decrease</li> 
+<li>increase</li> 
 </ol></p>
  the standard deviation.
 </statement>
 <answer>
-<p><ul><li>B: less than</li><li>C: equal to</li><li>A: 0</li><li>A: decrease</li><li>A: greater than</li><li>A: very far from</li><li>A: much more than 6</li><li>B: increase</li></ul></p>
+<p><ul><li>A: less than</li><li>C: equal to</li><li>A: 0</li><li>A: decrease</li><li>C: greater than</li><li>A: very far from</li><li>A: much more than 4</li><li>C: increase</li></ul></p>
 </answer>
 
 </myopenmath>

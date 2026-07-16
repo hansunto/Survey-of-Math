@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="23927">
+<statement>
+<tabular>   
+
+<row><cell>Creating and Analyzing Scatter Plots</cell></row>
+<row><cell><em>Create Scatterplots for each of the tables of data below using your graphing calculator.  Determine which of the graphs most closely matches each table.  Then decide which table is Least Linear, Moderately Linear and Most Linear</em></cell></row>
+
+<row><cell><tabular><row><cell>Matching Graph<p><ol style="list-style-type:upper-alpha"><li>C</li> 
+<li>B</li> 
+<li>A</li> 
+</ol></p>
+<p>Behavior</p>
+<p><ol style="list-style-type:upper-alpha"><li>Moderately Linear</li> 
+<li>Most Linear</li> 
+<li>Least Linear</li> 
+</ol></p>
+</cell><cell><tabular>     <row><cell>x</cell><cell>f(x)</cell></row><row><cell>430</cell><cell>11233</cell></row><row><cell>440</cell><cell>11378</cell></row><row><cell>450</cell><cell>11929</cell></row><row><cell>460</cell><cell>11953</cell></row><row><cell>470</cell><cell>12273</cell></row><row><cell>480</cell><cell>12533</cell></row></tabular></cell></row></tabular></cell><cell>A)  <image width="33%" pi:generated="problems/images/mom-23927-1.png"/>
+</cell></row>
+<row><cell><tabular><row><cell>Matching Graph<p><ol style="list-style-type:upper-alpha"><li>A</li> 
+<li>C</li> 
+<li>B</li> 
+</ol></p>
+<p>Behavior</p>
+<p><ol style="list-style-type:upper-alpha"><li>Moderately Linear</li> 
+<li>Least Linear</li> 
+<li>Most Linear</li> 
+</ol></p>
+</cell><cell><tabular>     <row><cell>x</cell><cell>f(x)</cell></row><row><cell>430</cell><cell>61</cell></row><row><cell>440</cell><cell>85</cell></row><row><cell>450</cell><cell>125</cell></row><row><cell>460</cell><cell>181</cell></row><row><cell>470</cell><cell>202</cell></row><row><cell>480</cell><cell>341</cell></row></tabular></cell></row></tabular></cell><cell>B)  <image width="33%" pi:generated="problems/images/mom-23927-2.png"/>
+</cell></row>
+<row><cell><tabular><row><cell>Matching Graph<p><ol style="list-style-type:upper-alpha"><li>C</li> 
+<li>A</li> 
+<li>B</li> 
+</ol></p>
+<p>Behavior</p>
+<p><ol style="list-style-type:upper-alpha"><li>Most Linear</li> 
+<li>Moderately Linear</li> 
+<li>Least Linear</li> 
+</ol></p>
+</cell><cell><tabular>     <row><cell>x</cell><cell>f(x)</cell></row><row><cell>430</cell><cell>5643</cell></row><row><cell>440</cell><cell>4041</cell></row><row><cell>450</cell><cell>7379</cell></row><row><cell>460</cell><cell>3921</cell></row><row><cell>470</cell><cell>6163</cell></row><row><cell>480</cell><cell>6293</cell></row></tabular></cell></row></tabular></cell><cell>C)  <image width="33%" pi:generated="problems/images/mom-23927-3.png"/>
+</cell></row>
+
+</tabular>
+</statement>
+<answer>
+<p><ul><li>C: A</li><li>B: Most Linear</li><li>C: B</li><li>A: Moderately Linear</li><li>A: C</li><li>C: Least Linear</li></ul></p>
+</answer>
+
+</myopenmath>

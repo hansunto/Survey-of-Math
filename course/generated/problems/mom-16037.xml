@@ -2,13 +2,13 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="16037">
 <statement>
 <p>
-If you have the following test scores:  <m>\displaystyle{84}</m>, <m>\displaystyle{66}</m>, <m>\displaystyle{78}</m>, <m>\displaystyle{78}</m>, <m>\displaystyle{66}</m>, and <m>\displaystyle{84}</m>, what is your mean test score?</p>
+If you have the following test scores:  <m>\displaystyle{90}</m>, <m>\displaystyle{72}</m>, <m>\displaystyle{72}</m>, <m>\displaystyle{72}</m>, <m>\displaystyle{66}</m>, and <m>\displaystyle{78}</m>, what is your mean test score?</p>
 <p>
 <fillin characters="20"/>
 </p>
 </statement>
 <answer>
-<p><ul><li>76</li></ul></p>
+<p><ul><li>75</li></ul></p>
 </answer>
 
 </myopenmath>

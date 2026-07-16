@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<worksheet xml:id="handout-Empirical-zscore" xmlns:xi="http://www.w3.org/2001/XInclude">
+<worksheet xml:id="handout-Empirical-zscore" output="course" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>16. Activity The Empirical rule and z-scores</title>
   <page>
 <p> In data analysis, we evaluate how extreme a specific data point is by calculating 

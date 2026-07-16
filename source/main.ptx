@@ -122,11 +122,9 @@
       <xi:include href="./activities/3-6-Act-Probability.ptx"/>
       <xi:include href="./activities/4-1-Act-Data-and-Graphs.ptx" />
       <xi:include href="./activities/4-2-Act-MMM-SDeviation.ptx" />
-
-
+      <xi:include href="./activities/4-3-Act-Empirical-zscore.ptx" />
+      <xi:include href="./activities/4-4-Act-Regression.ptx" />
       
-
-
       <!--<xi:include href="./activities/01-intro-activity.ptx"/>-->
 
       <!-- Add more xi:include files here to include them in the main course -->

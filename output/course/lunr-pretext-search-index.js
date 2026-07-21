@@ -4927,7 +4927,7 @@ var ptx_lunr_docs = [
   "id": "homework",
   "level": "1",
   "url": "homework.html",
-  "type": "Chapter",
+  "type": "Module",
   "number": "7",
   "title": "Homework",
   "body": " Homework    "

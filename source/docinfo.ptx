@@ -34,4 +34,5 @@
   <!-- Specify the default type of cross reference: -->
   <!-- <cross-references text="type-global" /> -->
 
+  <rename element="chapter">Module </rename>
 </docinfo>

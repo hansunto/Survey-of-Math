@@ -165,6 +165,16 @@
 
     </chapter>
 
+  <chapter xml:id="prerequisite">
+   <title>Appendix: rates, fractoins and percentes </title>
+
+   <xi:include href="./notes/rates.ptx" />
+   <xi:include href="./notes/fraction.ptx" />
+   <xi:include href="./notes/discount.ptx" />
+   <xi:include href="./notes/percent-decrease.ptx" />
+
+  </chapter>
+
     <!-- Include additional chapters for other categories -->
   
 

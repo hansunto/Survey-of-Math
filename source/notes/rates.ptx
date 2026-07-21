@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-rates">
+    <title>A.1 Rates</title>
+    <definition>
+  <title>Rate</title>
+  <statement>
+    <p>A <term>rate</term> is a fraction used to compare two quantities that are not in the same units.</p>
+  </statement>
+</definition>
+
+  <example>
+    <statement>
+      <p>How much gasoline should Katie have used after driving 223 miles in her new car that boasts 29 mpg (miles per gallon)?</p>
+    </statement>
+    <solution>
+      <p>Divide the total miles driven by the miles per gallon rate:</p>
+      <p><me>\frac{223 \text{ miles}}{29 \text{ mpg}} \approx 7.69 \text{ gallons}</me></p>
+    </solution>
+  </example>
+  
+  <exercise>
+    <statement>
+      <p>If your car can go 433 miles on a full tank, find the miles per gallon your car gets if the tank holds 17.2 gallons?</p>
+    </statement>
+    <solution>
+      <p>Divide the total miles by the total number of gallons:</p>
+      <p><me>\frac{433 \text{ miles}}{17.2 \text{ gallons}} \approx 25.17 \text{ mpg}</me></p>
+    </solution>
+  </exercise>
+
+<definition>
+  <title>Unit Rate</title>
+  <statement>
+    <p>A <term>unit rate</term> is a rate comparing two measured quantities, one of which is a single unit written in the denominator of the fraction.</p>
+  </statement>
+</definition>
+
+<example>
+    <statement>
+      <p>Find the unit rate for the Pine bark of wood mulch of $3.77 for 3 cubic feet at the local garden center. (price/amount)</p>
+    </statement>
+    <solution>
+      <p>Divide the total price by the total cubic feet:</p>
+      <p><me>\frac{\$3.77}{3 \text{ ft}^3} \approx \$1.26 \text{ per cubic foot}</me></p>
+    </solution>
+</example>
+
+  <exercise>
+    <statement>
+      <p>Find the unit rate for the Aromatic cedar of wood mulch of $3.98 for 2 cubic feet at the local garden center. (price/amount)</p>
+    </statement>
+    <solution>
+      <p>Divide the total price by the total cubic feet:</p>
+      <p><me>\frac{\$3.98}{2 \text{ ft}^3} = \$1.99 \text{ per cubic foot}</me></p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>If a 4-lb bag of sugar costs $2.99, what is the unit cost for a pound of sugar?</p>
+    </statement>
+    <solution>
+      <p>Divide the total cost by the total weight:</p>
+      <p><me>\frac{\$2.99}{4 \text{ lb}} \approx \$0.75 \text{ per pound (or } 75 \text{ cents/lb)}</me></p>
+    </solution>
+  </exercise>    
+</section>

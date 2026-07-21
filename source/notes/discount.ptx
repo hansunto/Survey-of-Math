@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-discount">
+    <title>A.3 Using percentages:tax, discount amount</title>
+<definition>
+  <title>Sales Tax</title>
+  <statement>
+    <p>A common application of percent involves <strong>sales tax</strong> collected by states, counties, and cities on sales of items to customers.</p>
+    <p><me>\text{Sales tax amount} = \text{tax rate} \times \text{item's cost}</me></p>
+  </statement>
+</definition>
+
+  <example>
+    <statement>
+      <p>Suppose that the local sales tax rate is <m>7.5\%</m> and you purchase a bicycle for <m>\$394</m>. How much tax is paid and what is the bicycle's total cost?</p>
+    </statement>
+    <solution>
+      <p>1. Find the sales tax amount by converting the percent to a decimal (<m>7.5\% = 0.075</m>):</p>
+      <p><me>\text{Tax} = 0.075 \times \$394 = \$29.55</me></p>
+      <p>2. Add the tax amount to the original price to find the total cost:</p>
+      <p><me>\text{Total Cost} = \$394 + \$29.55 = \$423.55</me></p>
+    </solution>
+  </example>
+
+  <exercise>
+    <statement>
+      <p>Suppose your lunch bill is <m>\$9.84</m>. Approximately how much would a <m>15\%</m> tip be? A <m>20\%</m> tip?</p>
+    </statement>
+    <solution>
+      <p>Convert percentages to decimals to find the approximate values:</p>
+      <p>
+        <ul>
+          <li><strong>15% Tip:</strong> <me>0.15 \times \$9.84 \approx \$1.48</me></li>
+          <li><strong>20% Tip:</strong> <me>0.20 \times \$9.84 \approx \$1.97</me></li>
+        </ul>
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>Find the total price of a new 32-inch OLED TV that sells for <m>\$219.99</m> under the following scenarios:</p>
+      <p>
+        <ol>
+          <li>If purchased in Georgia, where the sales tax is <m>4\%</m>.</li>
+          <li>If purchased in Kentucky, where the sales tax is <m>6\%</m>.</li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ul>
+          <li>
+            <strong>Georgia (4%):</strong> 
+            <me>\text{Tax} = 0.04 \times \$219.99 \approx \$8.80</me>
+            <me>\text{Total} = \$219.99 + \$8.80 = \$228.79</me>
+          </li>
+          <li>
+            <strong>Kentucky (6%):</strong> 
+            <me>\text{Tax} = 0.06 \times \$219.99 \approx \$13.20</me>
+            <me>\text{Total} = \$219.99 + \$13.20 = \$233.19</me>
+          </li>
+        </ul>
+      </p>
+    </solution>
+  </exercise>
+
+<definition>
+  <title>Discount</title>
+  <statement>
+    <p><strong>Discount</strong> is another application of percent. The discount rate is a percent of the original price, implying the following formula:</p>
+    <p><me>\text{Discount amount} = \text{discount rate} \times \text{original price}</me></p>
+  </statement>
+</definition>
+
+  <example>
+    <title>Percents and sale price</title>
+    <statement>
+      <p>A computer with an original price of <m>\$1,460</m> is on sale at <m>15\%</m> off. What is the discount amount and what is the computer's sale price?</p>
+    </statement>
+    <solution>
+      <p>1. Find the discount amount:</p>
+      <p><me>\text{Discount} = 0.15 \times \$1,460 = \$219.00</me></p>
+      <p>2. Subtract the discount from the original price to find the sale price:</p>
+      <p><me>\text{Sale Price} = \$1,460 - \$219.00 = \$1,241.00</me></p>
+    </solution>
+  </example>
+
+  <exercise>
+    <statement>
+      <p>An online company is advertising a Presto Pizza Oven on sale for <m>45\%</m> off the original price of <m>\$69.99</m>. What is the sale price for the oven?</p>
+    </statement>
+    <solution>
+      <p>1. Find the discount amount:</p>
+      <p><me>\text{Discount} = 0.45 \times \$69.99 \approx \$31.50</me></p>
+      <p>2. Calculate the sale price:</p>
+      <p><me>\text{Sale Price} = \$69.99 - \$31.50 = \$38.49</me></p>
+      <p><em>Alternative method:</em> Pay <m>55\%</m> (<m>100\% - 45\%</m>) of the original price: <me>0.55 \times \$69.99 \approx \$38.49</me></p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>A shirt is on sale for <m>40\%</m> off and you have an additional <m>20\%</m> off coupon. True or False: The shirt is now <m>60\%</m> off the original price.</p>
+    </statement>
+    <solution>
+      <p><strong>False.</strong> Discounts are applied sequentially, not added together.</p>
+      <p>If a shirt costs <m>\$100</m>, a <m>40\%</m> discount drops it to <m>\$60</m>. The additional <m>20\%</m> coupon is then applied to the sale price of <m>\$60</m>:</p>
+      <p><me>\text{Coupon savings} = 0.20 \times \$60 = \$12</me></p>
+      <p><me>\text{Final Price} = \$60 - \$12 = \$48</me></p>
+      <p>Since you pay <m>\$48</m> on a <m>\$100</m> shirt, the actual total discount is <m>52\%</m>, not <m>60\%</m>.</p>
+    </solution>
+  </exercise>
+
+  <exercises>
+  <exercise>
+    <statement>
+      <p>Suppose a local sales tax rate is <m>4.5\%</m> and you purchase a car for <m>\$28,500</m>. How much sales tax is paid? How much is the total cost of the car?</p>
+    </statement>
+    <solution>
+      <p>1. Find the sales tax paid:</p>
+      <p><me>\text{Tax} = 0.045 \times \$28,500 = \$1,282.50</me></p>
+      <p>2. Calculate the total cost:</p>
+      <p><me>\text{Total Cost} = \$28,500 + \$1,282.50 = \$29,782.50</me></p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>A local store is having a sale. All waterproof shoes are <m>40\%</m> off. If a pair of rain boots normally costs <m>\$13.72</m> plus <m>7\%</m> sales tax, how much will it cost to buy the rain boots during the sale? (Discounts are applied before sales tax is added.)</p>
+    </statement>
+    <solution>
+      <p>1. Apply the <m>40\%</m> discount first to find the sale price:</p>
+      <p><me>\text{Discount Amount} = 0.40 \times \$13.72 \approx \$5.49</me></p>
+      <p><me>\text{Sale Price} = \$13.72 - \$5.49 = \$8.23</me></p>
+      <p>2. Calculate the <m>7\%</m> sales tax on the discounted price:</p>
+      <p><me>\text{Sales Tax} = 0.07 \times \$8.23 \approx \$0.58</me></p>
+      <p>3. Find the final total cost:</p>
+      <p><me>\text{Total Cost} = \$8.23 + \$0.58 = \$8.81</me></p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>You went shopping for clothes during a sale that states everything is <m>60\%</m> off original prices. The original prices are: <m>\$55.00</m> for each pair of pants, <m>\$35.00</m> for each shirt, and <m>\$49.00</m> for each sweater. You want 2 pairs of pants, 3 shirts, and one sweater. What is the discounted amount? How much do you pay for the clothes with a <m>6.25\%</m> sales tax?</p>
+    </statement>
+    <solution>
+      <p>1. Find the total subtotal at original retail prices:</p>
+      <p><me>\text{Pants: } 2 \times \$55.00 = \$110.00</me></p>
+      <p><me>\text{Shirts: } 3 \times \$35.00 = \$105.00</me></p>
+      <p><me>\text{Sweater: } 1 \times \$49.00 = \$49.00</me></p>
+      <p><me>\text{Original Total} = \$110.00 + \$105.00 + \$49.00 = \$264.00</me></p>
+      <p>2. Calculate the total discounted amount saved (<m>60\%</m>):</p>
+      <p><me>\text{Discounted Amount} = 0.60 \times \$264.00 = \$158.40</me></p>
+      <p>3. Determine the actual clothing sale price before tax:</p>
+      <p><me>\text{Sale Price} = \$264.00 - \$158.40 = \$105.60</me></p>
+      <p>4. Add the <m>6.25\%</m> sales tax to the sale price:</p>
+      <p><me>\text{Sales Tax} = 0.0625 \times \$105.60 = \$6.60</me></p>
+      <p><me>\text{Total Paid} = \$105.60 + \$6.60 = \$112.20</me></p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>Suppose you go to a restaurant and want to give your waitress a <m>15\%</m> tip. The check total was <m>\$65.00</m>. What is the tip? How much would the total come to?</p>
+    </statement>
+    <solution>
+      <p>1. Find the tip amount:</p>
+      <p><me>\text{Tip} = 0.15 \times \$65.00 = \$9.75</me></p>
+      <p>2. Compute the final total bill:</p>
+      <p><me>\text{Total Bill} = \$65.00 + \$9.75 = \$74.75</me></p>
+    </solution>
+  </exercise>
+</exercises>
+
+</section>

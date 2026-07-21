@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-percentage">
+    <title>A.2 Percentages</title>
+
+<definition>
+  <title>Proportion and Percent</title>
+  <statement>
+    <p>A <term>proportion</term> is a fraction of a whole. Percents are the result of expressing numbers as a part of 100. The word <term>percent</term> means per hundred (<em>cent</em>).</p>
+    <p>For example, 57 out of every 100 single-family houses have 3-bedrooms. Then <me>\frac{57}{100}=57\%</me> of the houses have 3-bedrooms. For this example, it is done by moving the decimal point two places to the left. As you know <m>57=57.0</m>; now you move the decimal point to the left two places. So, you get <m>0.57</m>.</p>
+  </statement>
+</definition>
+
+  <example>
+    <statement>
+      <p>Express <m>\frac{5}{8}</m> as a percent.</p>
+    </statement>
+    <solution>
+      <p>Follow the steps to change a fraction to a percent:</p>
+      <p>1. Divide the numerator by the denominator: <me>\frac{5}{8} = 0.625</me></p>
+      <p>2. Multiply the quotient by 100: <me>0.625 \times 100 = 62.5</me></p>
+      <p>3. Add a percent sign: <me>62.5\%</me></p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>Express <m>0.47</m> as a percent.</p>
+    </statement>
+    <solution>
+      <p>Follow the steps to express a decimal as a percent:</p>
+      <p>1. Move the decimal point two places to the right: <me>0.47 \rightarrow 47</me></p>
+      <p>2. Add a percent sign: <me>47\%</me></p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>Express <m>19\%</m> as a decimal.</p>
+    </statement>
+    <solution>
+      <p>Follow the steps to express a percent as a decimal:</p>
+      <p>1. Move the decimal point two places to the left: <me>19\% \rightarrow 0.19</me></p>
+      <p>2. Remove the percent sign.</p>
+    </solution>
+  </example>
+
+<definition>
+  <title>The Percent Formula</title>
+  <statement>
+    <p>To compare the number <m>A</m> to the number <m>B</m> using a percent <m>P</m>, the following formula is used:</p>
+    <p><me>A = P \cdot B</me></p>
+    <p>Where <m>A</m> represents the part ("is"), <m>P</m> represents the percent, and <m>B</m> represents the base whole ("of").</p>
+  </statement>
+</definition>
+
+  <example>
+    <statement>
+      <p>312 is <m>65\%</m> of what number?</p>
+    </statement>
+    <solution>
+      <p>Identify the known components for the percent formula <m>A = P \cdot B</m>:</p>
+      <p><m>A = 312</m> and <m>P = 65\% = 0.65</m>.</p>
+      <p>Substitute these values into the formula to solve for <m>B</m>:</p>
+      <p><me>312 = 0.65 \cdot B</me></p>
+      <p><me>B = \frac{312}{0.65} = 480</me></p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>Each year, approximately 8,000 Americans suffer spinal cord injuries. U.S. News and World Report show that <m>22\%</m> of these injuries are due to falls. Approximately how many spinal cord injuries are due to falls each year?</p>
+    </statement>
+    <solution>
+      <p>Identify the known components: the base whole <m>B = 8000</m> and the percent <m>P = 22\% = 0.22</m>.</p>
+      <p>Use the formula to find the part <m>A</m>:</p>
+      <p><me>A = 0.22 \cdot 8000 = 1760</me></p>
+      <p>Approximately 1,760 spinal cord injuries are due to falls each year.</p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>If the drink portion of a bill costs <m>\$18</m> and the total bill was <m>\$30</m>, what percentage of the total was the cost of the drink?</p>
+    </statement>
+    <solution>
+      <p>Identify the known components: the part <m>A = 18</m> and the base whole <m>B = 30</m>.</p>
+      <p>Set up the formula to solve for the percentage <m>P</m>:</p>
+      <p><me>18 = P \cdot 30</me></p>
+      <p><me>P = \frac{18}{30} = 0.6</me></p>
+      <p>Convert the decimal to a percentage: <me>0.6 \times 100 = 60\%</me></p>
+    </solution>
+  </example>
+
+  <exercises>
+  <exercise>
+    <statement>
+      <p>Change each fraction to a percentage. Round your answer to the nearest hundredth if needed.</p>
+      <p>
+        <ol cols="3">
+          <li><m>\frac{20}{45}</m></li>
+          <li><m>\frac{1}{5}</m></li>
+          <li><m>\frac{61}{212}</m></li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ul>
+          <li><strong>(a)</strong> Divide 20 by 45 and multiply by 100: <me>\frac{20}{45} \approx 0.4444 \rightarrow 44.44\%</me></li>
+          <li><strong>(b)</strong> Divide 1 by 5 and multiply by 100: <me>\frac{1}{5} = 0.2 \rightarrow 20\%</me></li>
+          <li><strong>(c)</strong> Divide 61 by 212 and multiply by 100: <me>\frac{61}{212} \approx 0.2877 \rightarrow 28.77\%</me></li>
+        </ul>
+      </p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>Suppose <m>12\%</m> of students chose to study French their freshman year, and that meant that there were 21 such students. How many students chose <strong>not</strong> to take French their freshman year?</p>
+    </statement>
+    <solution>
+      <p>First, find the total number of students (<m>B</m>) where 21 is <m>12\%</m> of the total:</p>
+      <p><me>21 = 0.12 \cdot B</me></p>
+      <p><me>B = \frac{21}{0.12} = 175 \text{ total students}</me></p>
+      <p>Next, subtract the students taking French from the total to find those who did not choose French:</p>
+      <p><me>175 - 21 = 154</me></p>
+      <p>There were 154 students who chose not to take French.</p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>Which of the following is equal to <m>95\%</m>?</p>
+      <p>
+        <ol cols="3">
+          <li><m>\frac{19}{20}</m></li>
+          <li><m>\frac{18}{20}</m></li>
+          <li><m>\frac{18}{25}</m></li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>Convert each option into a percentage to verify:</p>
+      <p>
+        <ul>
+          <li><strong>(a)</strong> <m>\frac{19}{20} = 0.95 = 95\%</m> (Correct)</li>
+          <li><strong>(b)</strong> <m>\frac{18}{20} = 0.90 = 90\%</m></li>
+          <li><strong>(c)</strong> <m>\frac{18}{25} = 0.72 = 72\%</m></li>
+        </ul>
+      </p>
+      <p>The correct option is <strong>(a)</strong>.</p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>Thirty-four is <m>20\%</m> of what number?</p>
+    </statement>
+    <solution>
+      <p>Set up the percent formula where <m>A = 34</m> and <m>P = 20\% = 0.20</m>:</p>
+      <p><me>34 = 0.20 \cdot B</me></p>
+      <p><me>B = \frac{34}{0.20} = 170</me></p>
+    </solution>
+  </exercise>
+</exercises>
+
+</section>

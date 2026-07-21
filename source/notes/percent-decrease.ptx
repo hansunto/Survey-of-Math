@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec-percent-decrease">
+    <title>A.4 Percent decrease, Percent increase</title>
+    <definition>
+  <title>Percent Increase and Decrease</title>
+  <statement>
+    <p>Percents are used for comparing changes such as increases or decreases in sales, population, prices, and production. If a quantity changes, its <term>percent increase</term> or its <term>percent decrease</term> can be formed as:</p>
+    <p><me>\frac{\text{amount of increase}}{\text{original amount}} \quad \text{or} \quad \frac{\text{amount of decrease}}{\text{original amount}}</me></p>
+    <p>Find the percent increase (or decrease) and then express the fraction as a percent.</p>
+  </statement>
+</definition>
+
+  <example>
+    <title>Percent decrease</title>
+    <statement>
+      <p>A jacket regularly sells for <m>\$135.00</m>. The sale price is <m>\$60.75</m>. Find the percent decrease of the sale price from the regular price.</p>
+    </statement>
+    <solution>
+      <p>1. Find the amount of decrease by subtracting the sale price from the regular price:</p>
+      <p><me>\text{Amount of decrease} = \$135.00 - \$60.75 = \$74.25</me></p>
+      <p>2. Divide the decrease by the original regular price:</p>
+      <p><me>\frac{\$74.25}{\$135.00} = 0.55</me></p>
+      <p>3. Convert the decimal to a percentage:</p>
+      <p><me>0.55 \times 100 = 55\%</me></p>
+      <p>The sale price represents a <strong>55% decrease</strong> from the regular price.</p>
+    </solution>
+  </example>
+
+  <example>
+    <title>Percents of percents</title>
+    <statement>
+      <p>John Tesh, while he was still co-anchoring <q>Entertainment Tonight,</q> reported that the PBS series <q>The Civil War</q> had an audience of <m>13\%</m> versus the usual <m>4\%</m> PBS audience, <q>an increase of more than 300%.</q> Did Tesh report the percent increase correctly?</p>
+    </statement>
+    <solution>
+      <p>1. Find the raw amount of increase in the audience percentage points:</p>
+      <p><me>\text{Amount of increase} = 13\% - 4\% = 9\%</me></p>
+      <p>2. Divide this increase by the original baseline audience share (<m>4\%</m>):</p>
+      <p><me>\frac{9}{4} = 2.25</me></p>
+      <p>3. Convert this relative increase into a percentage:</p>
+      <p><me>2.25 \times 100 = 225\%</me></p>
+      <p><strong>No, Tesh did not report it correctly.</strong> The true percent increase was <strong>225%</strong>. While <m>13\%</m> is more than 3 times (300% of) the original <m>4\%</m>, the relative change/increase itself is only 225%.</p>
+    </solution>
+  </example>
+
+  <exercise>
+    <statement>
+      <p>Find the percent change if 14 is increased to 70.</p>
+    </statement>
+    <solution>
+      <p>1. Find the amount of increase:</p>
+      <p><me>\text{Amount of increase} = 70 - 14 = 56</me></p>
+      <p>2. Divide the increase by the original value (14):</p>
+      <p><me>\frac{56}{14} = 4</me></p>
+      <p>3. Express the result as a percentage:</p>
+      <p><me>4 \times 100 = 400\%</me></p>
+      <p>The percent change is a <strong>400% increase</strong>.</p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>A television regularly sells for <m>\$940</m>. The sale price is <m>\$611</m>. Find the percent decrease of the sale price from the regular price.</p>
+    </statement>
+    <solution>
+      <p>1. Calculate the amount of decrease:</p>
+      <p><me>\text{Amount of decrease} = \$940 - \$611 = \$329</me></p>
+      <p>2. Divide by the original regular price:</p>
+      <p><me>\frac{\$329}{\$940} = 0.35</me></p>
+      <p>3. Convert to a percentage:</p>
+      <p><me>0.35 \times 100 = 35\%</me></p>
+      <p>The television has a <strong>35% decrease</strong> in price.</p>
+    </solution>
+  </exercise>
+
+  <exercise>
+    <statement>
+      <p>If a laptop computer regularly costs <m>\$879</m> and is on sale for <m>\$599</m>, what percentage discount is being given? Round to the nearest hundredth if needed.</p>
+    </statement>
+    <solution>
+      <p>1. Find the total markdown discount amount:</p>
+      <p><me>\text{Discount amount} = \$879 - \$599 = \$280</me></p>
+      <p>2. Divide the markdown by the original baseline cost:</p>
+      <p><me>\frac{\$280}{\$879} \approx 0.318544</me></p>
+      <p>3. Convert to a percentage and round to the nearest hundredth:</p>
+      <p><me>0.318544 \times 100 \approx 31.85\%</me></p>
+      <p>The percentage discount being given is approximately <strong>31.85%</strong>.</p>
+    </solution>
+  </exercise>
+
+  <exercises>
+  <!-- Problem 1: Sense or Nonsense -->
+  <exercise>
+    <statement>
+      <p>Determine whether each statement makes sense or not, and explain your reasoning.</p>
+      <p>
+        <ol>
+          <li>I have <m>\$100</m> and my restaurant bill comes to <m>\$80</m>, which is not enough to leave a <m>20\%</m> tip.</li>
+          <li>I found the percent decrease in a jacket's price to be <m>120\%</m>.</li>
+          <li>My rent increased from <m>20\%</m> to <m>30\%</m> of my income, so the percent increase is <m>10\%</m>.</li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ul>
+          <li>
+            <strong>(a) Does not make sense.</strong> 
+            A <m>20\%</m> tip on an <m>\$80</m> bill is calculated as:
+            <me>0.20 \times \$80 = \$16</me>
+            The total cost of the meal with the tip added is:
+            <me>\$80 + \$16 = \$96</me>
+            Since <m>\$96 \lt \$100</m>, you have more than enough money to cover it.
+          </li>
+          <li>
+            <strong>(b) Does not make sense.</strong> 
+            A percent decrease represents how much value an item loses relative to its starting point. A <m>100\%</m> decrease means the item is completely free (<m>\$0</m>). A decrease of <m>120\%</m> would mean the retail store is paying you money to take the jacket away, which is impossible in standard retail settings.
+          </li>
+          <li>
+            <strong>(c) Does not make sense.</strong> 
+            The raw difference between the values is <m>10</m> percentage points, but the <em>percent increase</em> must be calculated relative to the original baseline amount (<m>20\%</m>):
+            <me>\text{Percent Increase} = \frac{\text{Change}}{\text{Original}} = \frac{30 - 20}{20} = \frac{10}{20} = 0.50 \rightarrow 50\%</me>
+            Your rent contribution actually experienced a <strong>50% increase</strong>.
+          </li>
+        </ul>
+      </p>
+    </solution>
+  </exercise>
+
+  <!-- Problem 2: Car Purchase Review -->
+  <exercise>
+    <statement>
+      <p>Suppose a local sales tax rate is <m>4.5\%</m> and you purchase a car for <m>\$28,500</m>.</p>
+      <p>
+        <ol>
+          <li>How much sales tax is paid?</li>
+          <li>How much is the total cost of the car?</li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            Find the sales tax paid by converting the rate to a decimal (<m>4.5\% = 0.045</m>):
+            <me>\text{Sales Tax} = 0.045 \times \$28,500 = \$1,282.50</me>
+          </li>
+          <li>
+            Add the sales tax to the base purchase price to find the total final invoice cost:
+            <me>\text{Total Cost} = \$28,500 + \$1,282.50 = \$29,782.50</me>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </exercise>
+
+  <!-- Problem 3: Hybrid vs SUV Fuel Efficiency -->
+  <exercise>
+    <statement>
+      <p>Suppose that you drive 15,000 miles per year and gas averages <m>\$3.99</m> per gallon. What will you save in annual fuel expenses by owning a hybrid car averaging 45 miles per gallon rather than an SUV averaging 28 miles per gallon?</p>
+    </statement>
+    <solution>
+      <p>1. Calculate the total annual fuel costs for the SUV:</p>
+      <p><me>\text{Gallons used} = \frac{15,000 \text{ miles}}{28 \text{ mpg}} \approx 535.71 \text{ gallons}</me></p>
+      <p><me>\text{SUV Fuel Cost} = 535.71 \text{ gallons} \times \$3.99 \approx \$2,137.50</me></p>
+      
+      <p>2. Calculate the total annual fuel costs for the hybrid car:</p>
+      <p><me>\text{Gallons used} = \frac{15,000 \text{ miles}}{45 \text{ mpg}} = 333.33 \text{ gallons}</me></p>
+      <p><me>\text{Hybrid Fuel Cost} = 333.33 \text{ gallons} \times \$3.99 = \$1,330.00</me></p>
+      
+      <p>3. Subtract to find the net financial savings:</p>
+      <p><me>\text{Annual Savings} = \$2,137.50 - \$1,330.00 = \$807.50</me></p>
+      <p>You can expect to save <strong><m>\$807.50</m></strong> every year.</p>
+    </solution>
+  </exercise>
+
+  <!-- Problem 4: Realtor Commission -->
+  <exercise>
+    <statement>
+      <p>If you are selling your house with a local Realtor who requires a <m>6\%</m> commission fee, what can you expect to pay the Realtor if your house sells for <m>\$339,000</m>?</p>
+    </statement>
+    <solution>
+      <p>Convert the percentage commission fee to a decimal multiplier (<m>6\% = 0.06</m>) and multiply by the total closing sale valuation:</p>
+      <p><me>\text{Commission Fee} = 0.06 \times \$339,000 = \$20,340.00</me></p>
+      <p>You can expect to pay the agent a fee of <strong><m>\$20,340.00</m></strong>.</p>
+    </solution>
+  </exercise>
+
+  <!-- Problem 5: Wireless Printer Purchase -->
+  <exercise>
+    <statement>
+      <p>A new wireless printer costs <m>\$99.99</m> in the store. What would your total cost be if sales tax is <m>9.5\%</m>?</p>
+    </statement>
+    <solution>
+      <p>1. Find the total isolated sales tax surcharged (<m>9.5\% = 0.095</m>):</p>
+      <p><me>\text{Sales Tax} = 0.095 \times \$99.99 \approx \$9.50</me></p>
+      <p>2. Add the tax onto the shelf value to find the out-of-pocket register payment:</p>
+      <p><me>\text{Total Cost} = \$99.99 + \$9.50 = \$109.49</me></p>
+    </solution>
+  </exercise>
+</exercises>
+
+</section> 
+    
+    

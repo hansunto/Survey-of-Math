@@ -4931,6 +4931,420 @@ var ptx_lunr_docs = [
   "number": "7",
   "title": "Homework",
   "body": " Homework    "
+},
+{
+  "id": "sec-rates",
+  "level": "1",
+  "url": "sec-rates.html",
+  "type": "Section",
+  "number": "",
+  "title": "A.1 Rates",
+  "body": " A.1 Rates   Rate   A rate is a fraction used to compare two quantities that are not in the same units.      How much gasoline should Katie have used after driving 223 miles in her new car that boasts 29 mpg (miles per gallon)?    Divide the total miles driven by the miles per gallon rate:       If your car can go 433 miles on a full tank, find the miles per gallon your car gets if the tank holds 17.2 gallons?    Divide the total miles by the total number of gallons:      Unit Rate   A unit rate is a rate comparing two measured quantities, one of which is a single unit written in the denominator of the fraction.      Find the unit rate for the Pine bark of wood mulch of $3.77 for 3 cubic feet at the local garden center. (price\/amount)    Divide the total price by the total cubic feet:       Find the unit rate for the Aromatic cedar of wood mulch of $\\$3.98$ for 2 cubic feet at the local garden center. (price\/amount)    Divide the total price by the total cubic feet:       If a 4-lb bag of sugar costs $\\$2.99$, what is the unit cost for a pound of sugar?    Divide the total cost by the total weight:     "
+},
+{
+  "id": "sec-rates-2",
+  "level": "2",
+  "url": "sec-rates.html#sec-rates-2",
+  "type": "Definition",
+  "number": "8.1",
+  "title": "Rate.",
+  "body": " Rate   A rate is a fraction used to compare two quantities that are not in the same units.   "
+},
+{
+  "id": "sec-rates-3",
+  "level": "2",
+  "url": "sec-rates.html#sec-rates-3",
+  "type": "Example",
+  "number": "8.2",
+  "title": "",
+  "body": "  How much gasoline should Katie have used after driving 223 miles in her new car that boasts 29 mpg (miles per gallon)?    Divide the total miles driven by the miles per gallon rate:    "
+},
+{
+  "id": "sec-rates-4",
+  "level": "2",
+  "url": "sec-rates.html#sec-rates-4",
+  "type": "Checkpoint",
+  "number": "8.3",
+  "title": "",
+  "body": "  If your car can go 433 miles on a full tank, find the miles per gallon your car gets if the tank holds 17.2 gallons?    Divide the total miles by the total number of gallons:    "
+},
+{
+  "id": "sec-rates-5",
+  "level": "2",
+  "url": "sec-rates.html#sec-rates-5",
+  "type": "Definition",
+  "number": "8.4",
+  "title": "Unit Rate.",
+  "body": " Unit Rate   A unit rate is a rate comparing two measured quantities, one of which is a single unit written in the denominator of the fraction.   "
+},
+{
+  "id": "sec-rates-6",
+  "level": "2",
+  "url": "sec-rates.html#sec-rates-6",
+  "type": "Example",
+  "number": "8.5",
+  "title": "",
+  "body": "  Find the unit rate for the Pine bark of wood mulch of $3.77 for 3 cubic feet at the local garden center. (price\/amount)    Divide the total price by the total cubic feet:    "
+},
+{
+  "id": "sec-rates-7",
+  "level": "2",
+  "url": "sec-rates.html#sec-rates-7",
+  "type": "Checkpoint",
+  "number": "8.6",
+  "title": "",
+  "body": "  Find the unit rate for the Aromatic cedar of wood mulch of $\\$3.98$ for 2 cubic feet at the local garden center. (price\/amount)    Divide the total price by the total cubic feet:    "
+},
+{
+  "id": "sec-rates-8",
+  "level": "2",
+  "url": "sec-rates.html#sec-rates-8",
+  "type": "Checkpoint",
+  "number": "8.7",
+  "title": "",
+  "body": "  If a 4-lb bag of sugar costs $\\$2.99$, what is the unit cost for a pound of sugar?    Divide the total cost by the total weight:    "
+},
+{
+  "id": "sec-percentage",
+  "level": "1",
+  "url": "sec-percentage.html",
+  "type": "Section",
+  "number": "",
+  "title": "A.2 Percentages",
+  "body": " A.2 Percentages   Proportion and Percent   A proportion is a fraction of a whole. Percents are the result of expressing numbers as a part of 100. The word percent means per hundred ( cent ).  For example, 57 out of every 100 single-family houses have 3-bedrooms. Then of the houses have 3-bedrooms. For this example, it is done by moving the decimal point two places to the left. As you know ; now you move the decimal point to the left two places. So, you get .      Express as a percent.    Follow the steps to change a fraction to a percent:  1. Divide the numerator by the denominator:  2. Multiply the quotient by 100:  3. Add a percent sign:      Express as a percent.    Follow the steps to express a decimal as a percent:  1. Move the decimal point two places to the right:  2. Add a percent sign:      Express as a decimal.    Follow the steps to express a percent as a decimal:  1. Move the decimal point two places to the left:  2. Remove the percent sign.     The Percent Formula   To compare the number to the number using a percent , the following formula is used:   Where represents the part (\"is\"), represents the percent, and represents the base whole (\"of\").      312 is of what number?    Identify the known components for the percent formula :  and .  Substitute these values into the formula to solve for :        Each year, approximately 8,000 Americans suffer spinal cord injuries. U.S. News and World Report show that of these injuries are due to falls. Approximately how many spinal cord injuries are due to falls each year?    Identify the known components: the base whole and the percent .  Use the formula to find the part :   Approximately 1,760 spinal cord injuries are due to falls each year.      If the drink portion of a bill costs and the total bill was , what percentage of the total was the cost of the drink?    Identify the known components: the part and the base whole .  Set up the formula to solve for the percentage :    Convert the decimal to a percentage:       Change each fraction to a percentage. Round your answer to the nearest hundredth if needed.             (a) Divide 20 by 45 and multiply by 100:  (b) Divide 1 by 5 and multiply by 100:  (c) Divide 61 by 212 and multiply by 100:        Suppose of students chose to study French their freshman year, and that meant that there were 21 such students. How many students chose not to take French their freshman year?    First, find the total number of students ( ) where 21 is of the total:    Next, subtract the students taking French from the total to find those who did not choose French:   There were 154 students who chose not to take French.      Which of the following is equal to ?           Convert each option into a percentage to verify:    (a)  (Correct)  (b)   (c)     The correct option is (a) .      Thirty-four is of what number?    Set up the percent formula where and :       "
+},
+{
+  "id": "sec-percentage-2",
+  "level": "2",
+  "url": "sec-percentage.html#sec-percentage-2",
+  "type": "Definition",
+  "number": "8.8",
+  "title": "Proportion and Percent.",
+  "body": " Proportion and Percent   A proportion is a fraction of a whole. Percents are the result of expressing numbers as a part of 100. The word percent means per hundred ( cent ).  For example, 57 out of every 100 single-family houses have 3-bedrooms. Then of the houses have 3-bedrooms. For this example, it is done by moving the decimal point two places to the left. As you know ; now you move the decimal point to the left two places. So, you get .   "
+},
+{
+  "id": "sec-percentage-3",
+  "level": "2",
+  "url": "sec-percentage.html#sec-percentage-3",
+  "type": "Example",
+  "number": "8.9",
+  "title": "",
+  "body": "  Express as a percent.    Follow the steps to change a fraction to a percent:  1. Divide the numerator by the denominator:  2. Multiply the quotient by 100:  3. Add a percent sign:   "
+},
+{
+  "id": "sec-percentage-4",
+  "level": "2",
+  "url": "sec-percentage.html#sec-percentage-4",
+  "type": "Example",
+  "number": "8.10",
+  "title": "",
+  "body": "  Express as a percent.    Follow the steps to express a decimal as a percent:  1. Move the decimal point two places to the right:  2. Add a percent sign:   "
+},
+{
+  "id": "sec-percentage-5",
+  "level": "2",
+  "url": "sec-percentage.html#sec-percentage-5",
+  "type": "Example",
+  "number": "8.11",
+  "title": "",
+  "body": "  Express as a decimal.    Follow the steps to express a percent as a decimal:  1. Move the decimal point two places to the left:  2. Remove the percent sign.   "
+},
+{
+  "id": "sec-percentage-6",
+  "level": "2",
+  "url": "sec-percentage.html#sec-percentage-6",
+  "type": "Definition",
+  "number": "8.12",
+  "title": "The Percent Formula.",
+  "body": " The Percent Formula   To compare the number to the number using a percent , the following formula is used:   Where represents the part (\"is\"), represents the percent, and represents the base whole (\"of\").   "
+},
+{
+  "id": "sec-percentage-7",
+  "level": "2",
+  "url": "sec-percentage.html#sec-percentage-7",
+  "type": "Example",
+  "number": "8.13",
+  "title": "",
+  "body": "  312 is of what number?    Identify the known components for the percent formula :  and .  Substitute these values into the formula to solve for :     "
+},
+{
+  "id": "sec-percentage-8",
+  "level": "2",
+  "url": "sec-percentage.html#sec-percentage-8",
+  "type": "Example",
+  "number": "8.14",
+  "title": "",
+  "body": "  Each year, approximately 8,000 Americans suffer spinal cord injuries. U.S. News and World Report show that of these injuries are due to falls. Approximately how many spinal cord injuries are due to falls each year?    Identify the known components: the base whole and the percent .  Use the formula to find the part :   Approximately 1,760 spinal cord injuries are due to falls each year.   "
+},
+{
+  "id": "sec-percentage-9",
+  "level": "2",
+  "url": "sec-percentage.html#sec-percentage-9",
+  "type": "Example",
+  "number": "8.15",
+  "title": "",
+  "body": "  If the drink portion of a bill costs and the total bill was , what percentage of the total was the cost of the drink?    Identify the known components: the part and the base whole .  Set up the formula to solve for the percentage :    Convert the decimal to a percentage:   "
+},
+{
+  "id": "sec-percentage-10-1",
+  "level": "2",
+  "url": "sec-percentage.html#sec-percentage-10-1",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Change each fraction to a percentage. Round your answer to the nearest hundredth if needed.             (a) Divide 20 by 45 and multiply by 100:  (b) Divide 1 by 5 and multiply by 100:  (c) Divide 61 by 212 and multiply by 100:     "
+},
+{
+  "id": "sec-percentage-10-2",
+  "level": "2",
+  "url": "sec-percentage.html#sec-percentage-10-2",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Suppose of students chose to study French their freshman year, and that meant that there were 21 such students. How many students chose not to take French their freshman year?    First, find the total number of students ( ) where 21 is of the total:    Next, subtract the students taking French from the total to find those who did not choose French:   There were 154 students who chose not to take French.   "
+},
+{
+  "id": "sec-percentage-10-3",
+  "level": "2",
+  "url": "sec-percentage.html#sec-percentage-10-3",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Which of the following is equal to ?           Convert each option into a percentage to verify:    (a)  (Correct)  (b)   (c)     The correct option is (a) .   "
+},
+{
+  "id": "sec-percentage-10-4",
+  "level": "2",
+  "url": "sec-percentage.html#sec-percentage-10-4",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Thirty-four is of what number?    Set up the percent formula where and :     "
+},
+{
+  "id": "sec-discount",
+  "level": "1",
+  "url": "sec-discount.html",
+  "type": "Section",
+  "number": "",
+  "title": "A.3 Using percentages:tax, discount amount",
+  "body": " A.3 Using percentages:tax, discount amount   Sales Tax   A common application of percent involves sales tax collected by states, counties, and cities on sales of items to customers.       Suppose that the local sales tax rate is and you purchase a bicycle for . How much tax is paid and what is the bicycle's total cost?    1. Find the sales tax amount by converting the percent to a decimal ( ):   2. Add the tax amount to the original price to find the total cost:       Suppose your lunch bill is . Approximately how much would a tip be? A tip?    Convert percentages to decimals to find the approximate values:    15% Tip:   20% Tip:         Find the total price of a new 32-inch OLED TV that sells for under the following scenarios:    If purchased in Georgia, where the sales tax is .  If purchased in Kentucky, where the sales tax is .         Georgia (4%):      Kentucky (6%):          Discount   Discount is another application of percent. The discount rate is a percent of the original price, implying the following formula:      Percents and sale price   A computer with an original price of is on sale at off. What is the discount amount and what is the computer's sale price?    1. Find the discount amount:   2. Subtract the discount from the original price to find the sale price:       An online company is advertising a Presto Pizza Oven on sale for off the original price of . What is the sale price for the oven?    1. Find the discount amount:   2. Calculate the sale price:   Alternative method: Pay ( ) of the original price:      A shirt is on sale for off and you have an additional off coupon. True or False: The shirt is now off the original price.    False. Discounts are applied sequentially, not added together.  If a shirt costs , a discount drops it to . The additional coupon is then applied to the sale price of :    Since you pay on a shirt, the actual total discount is , not .       Suppose a local sales tax rate is and you purchase a car for . How much sales tax is paid? How much is the total cost of the car?    1. Find the sales tax paid:   2. Calculate the total cost:       A local store is having a sale. All waterproof shoes are off. If a pair of rain boots normally costs plus sales tax, how much will it cost to buy the rain boots during the sale? (Discounts are applied before sales tax is added.)    1. Apply the discount first to find the sale price:    2. Calculate the sales tax on the discounted price:   3. Find the final total cost:       You went shopping for clothes during a sale that states everything is off original prices. The original prices are: for each pair of pants, for each shirt, and for each sweater. You want 2 pairs of pants, 3 shirts, and one sweater. What is the discounted amount? How much do you pay for the clothes with a sales tax?    1. Find the total subtotal at original retail prices:      2. Calculate the total discounted amount saved ( ):   3. Determine the actual clothing sale price before tax:   4. Add the sales tax to the sale price:        Suppose you go to a restaurant and want to give your waitress a tip. The check total was . What is the tip? How much would the total come to?    1. Find the tip amount:   2. Compute the final total bill:      "
+},
+{
+  "id": "sec-discount-2",
+  "level": "2",
+  "url": "sec-discount.html#sec-discount-2",
+  "type": "Definition",
+  "number": "8.16",
+  "title": "Sales Tax.",
+  "body": " Sales Tax   A common application of percent involves sales tax collected by states, counties, and cities on sales of items to customers.    "
+},
+{
+  "id": "sec-discount-3",
+  "level": "2",
+  "url": "sec-discount.html#sec-discount-3",
+  "type": "Example",
+  "number": "8.17",
+  "title": "",
+  "body": "  Suppose that the local sales tax rate is and you purchase a bicycle for . How much tax is paid and what is the bicycle's total cost?    1. Find the sales tax amount by converting the percent to a decimal ( ):   2. Add the tax amount to the original price to find the total cost:    "
+},
+{
+  "id": "sec-discount-4",
+  "level": "2",
+  "url": "sec-discount.html#sec-discount-4",
+  "type": "Checkpoint",
+  "number": "8.18",
+  "title": "",
+  "body": "  Suppose your lunch bill is . Approximately how much would a tip be? A tip?    Convert percentages to decimals to find the approximate values:    15% Tip:   20% Tip:      "
+},
+{
+  "id": "sec-discount-5",
+  "level": "2",
+  "url": "sec-discount.html#sec-discount-5",
+  "type": "Checkpoint",
+  "number": "8.19",
+  "title": "",
+  "body": "  Find the total price of a new 32-inch OLED TV that sells for under the following scenarios:    If purchased in Georgia, where the sales tax is .  If purchased in Kentucky, where the sales tax is .         Georgia (4%):      Kentucky (6%):        "
+},
+{
+  "id": "sec-discount-6",
+  "level": "2",
+  "url": "sec-discount.html#sec-discount-6",
+  "type": "Definition",
+  "number": "8.20",
+  "title": "Discount.",
+  "body": " Discount   Discount is another application of percent. The discount rate is a percent of the original price, implying the following formula:    "
+},
+{
+  "id": "sec-discount-7",
+  "level": "2",
+  "url": "sec-discount.html#sec-discount-7",
+  "type": "Example",
+  "number": "8.21",
+  "title": "Percents and sale price.",
+  "body": " Percents and sale price   A computer with an original price of is on sale at off. What is the discount amount and what is the computer's sale price?    1. Find the discount amount:   2. Subtract the discount from the original price to find the sale price:    "
+},
+{
+  "id": "sec-discount-8",
+  "level": "2",
+  "url": "sec-discount.html#sec-discount-8",
+  "type": "Checkpoint",
+  "number": "8.22",
+  "title": "",
+  "body": "  An online company is advertising a Presto Pizza Oven on sale for off the original price of . What is the sale price for the oven?    1. Find the discount amount:   2. Calculate the sale price:   Alternative method: Pay ( ) of the original price:   "
+},
+{
+  "id": "sec-discount-9",
+  "level": "2",
+  "url": "sec-discount.html#sec-discount-9",
+  "type": "Checkpoint",
+  "number": "8.23",
+  "title": "",
+  "body": "  A shirt is on sale for off and you have an additional off coupon. True or False: The shirt is now off the original price.    False. Discounts are applied sequentially, not added together.  If a shirt costs , a discount drops it to . The additional coupon is then applied to the sale price of :    Since you pay on a shirt, the actual total discount is , not .   "
+},
+{
+  "id": "sec-discount-10-1",
+  "level": "2",
+  "url": "sec-discount.html#sec-discount-10-1",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Suppose a local sales tax rate is and you purchase a car for . How much sales tax is paid? How much is the total cost of the car?    1. Find the sales tax paid:   2. Calculate the total cost:    "
+},
+{
+  "id": "sec-discount-10-2",
+  "level": "2",
+  "url": "sec-discount.html#sec-discount-10-2",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  A local store is having a sale. All waterproof shoes are off. If a pair of rain boots normally costs plus sales tax, how much will it cost to buy the rain boots during the sale? (Discounts are applied before sales tax is added.)    1. Apply the discount first to find the sale price:    2. Calculate the sales tax on the discounted price:   3. Find the final total cost:    "
+},
+{
+  "id": "sec-discount-10-3",
+  "level": "2",
+  "url": "sec-discount.html#sec-discount-10-3",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  You went shopping for clothes during a sale that states everything is off original prices. The original prices are: for each pair of pants, for each shirt, and for each sweater. You want 2 pairs of pants, 3 shirts, and one sweater. What is the discounted amount? How much do you pay for the clothes with a sales tax?    1. Find the total subtotal at original retail prices:      2. Calculate the total discounted amount saved ( ):   3. Determine the actual clothing sale price before tax:   4. Add the sales tax to the sale price:     "
+},
+{
+  "id": "sec-discount-10-4",
+  "level": "2",
+  "url": "sec-discount.html#sec-discount-10-4",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Suppose you go to a restaurant and want to give your waitress a tip. The check total was . What is the tip? How much would the total come to?    1. Find the tip amount:   2. Compute the final total bill:    "
+},
+{
+  "id": "sec-percent-decrease",
+  "level": "1",
+  "url": "sec-percent-decrease.html",
+  "type": "Section",
+  "number": "",
+  "title": "A.4 Percent decrease, Percent increase",
+  "body": " A.4 Percent decrease, Percent increase   Percent Increase and Decrease   Percents are used for comparing changes such as increases or decreases in sales, population, prices, and production. If a quantity changes, its percent increase or its percent decrease can be formed as:   Find the percent increase (or decrease) and then express the fraction as a percent.     Percent decrease   A jacket regularly sells for . The sale price is . Find the percent decrease of the sale price from the regular price.    1. Find the amount of decrease by subtracting the sale price from the regular price:   2. Divide the decrease by the original regular price:   3. Convert the decimal to a percentage:   The sale price represents a 55% decrease from the regular price.     Percents of percents   John Tesh, while he was still co-anchoring Entertainment Tonight, reported that the PBS series The Civil War had an audience of versus the usual PBS audience, an increase of more than 300%. Did Tesh report the percent increase correctly?    1. Find the raw amount of increase in the audience percentage points:   2. Divide this increase by the original baseline audience share ( ):   3. Convert this relative increase into a percentage:   No, Tesh did not report it correctly. The true percent increase was 225% . While is more than 3 times (300% of) the original , the relative change\/increase itself is only 225%.      Find the percent change if 14 is increased to 70.    1. Find the amount of increase:   2. Divide the increase by the original value (14):   3. Express the result as a percentage:   The percent change is a 400% increase .      A television regularly sells for . The sale price is . Find the percent decrease of the sale price from the regular price.    1. Calculate the amount of decrease:   2. Divide by the original regular price:   3. Convert to a percentage:   The television has a 35% decrease in price.      If a laptop computer regularly costs and is on sale for , what percentage discount is being given? Round to the nearest hundredth if needed.    1. Find the total markdown discount amount:   2. Divide the markdown by the original baseline cost:   3. Convert to a percentage and round to the nearest hundredth:   The percentage discount being given is approximately 31.85% .        Determine whether each statement makes sense or not, and explain your reasoning.    I have and my restaurant bill comes to , which is not enough to leave a tip.  I found the percent decrease in a jacket's price to be .  My rent increased from to of my income, so the percent increase is .         (a) Does not make sense. A tip on an bill is calculated as: The total cost of the meal with the tip added is: Since , you have more than enough money to cover it.   (b) Does not make sense. A percent decrease represents how much value an item loses relative to its starting point. A decrease means the item is completely free ( ). A decrease of would mean the retail store is paying you money to take the jacket away, which is impossible in standard retail settings.   (c) Does not make sense. The raw difference between the values is percentage points, but the percent increase must be calculated relative to the original baseline amount ( ): Your rent contribution actually experienced a 50% increase .         Suppose a local sales tax rate is and you purchase a car for .    How much sales tax is paid?  How much is the total cost of the car?        Find the sales tax paid by converting the rate to a decimal ( ):   Add the sales tax to the base purchase price to find the total final invoice cost:          Suppose that you drive 15,000 miles per year and gas averages per gallon. What will you save in annual fuel expenses by owning a hybrid car averaging 45 miles per gallon rather than an SUV averaging 28 miles per gallon?    1. Calculate the total annual fuel costs for the SUV:    2. Calculate the total annual fuel costs for the hybrid car:    3. Subtract to find the net financial savings:   You can expect to save every year.       If you are selling your house with a local Realtor who requires a commission fee, what can you expect to pay the Realtor if your house sells for ?    Convert the percentage commission fee to a decimal multiplier ( ) and multiply by the total closing sale valuation:   You can expect to pay the agent a fee of .       A new wireless printer costs in the store. What would your total cost be if sales tax is ?    1. Find the total isolated sales tax surcharged ( ):   2. Add the tax onto the shelf value to find the out-of-pocket register payment:      "
+},
+{
+  "id": "sec-percent-decrease-2",
+  "level": "2",
+  "url": "sec-percent-decrease.html#sec-percent-decrease-2",
+  "type": "Definition",
+  "number": "8.24",
+  "title": "Percent Increase and Decrease.",
+  "body": " Percent Increase and Decrease   Percents are used for comparing changes such as increases or decreases in sales, population, prices, and production. If a quantity changes, its percent increase or its percent decrease can be formed as:   Find the percent increase (or decrease) and then express the fraction as a percent.   "
+},
+{
+  "id": "sec-percent-decrease-3",
+  "level": "2",
+  "url": "sec-percent-decrease.html#sec-percent-decrease-3",
+  "type": "Example",
+  "number": "8.25",
+  "title": "Percent decrease.",
+  "body": " Percent decrease   A jacket regularly sells for . The sale price is . Find the percent decrease of the sale price from the regular price.    1. Find the amount of decrease by subtracting the sale price from the regular price:   2. Divide the decrease by the original regular price:   3. Convert the decimal to a percentage:   The sale price represents a 55% decrease from the regular price.   "
+},
+{
+  "id": "sec-percent-decrease-4",
+  "level": "2",
+  "url": "sec-percent-decrease.html#sec-percent-decrease-4",
+  "type": "Example",
+  "number": "8.26",
+  "title": "Percents of percents.",
+  "body": " Percents of percents   John Tesh, while he was still co-anchoring Entertainment Tonight, reported that the PBS series The Civil War had an audience of versus the usual PBS audience, an increase of more than 300%. Did Tesh report the percent increase correctly?    1. Find the raw amount of increase in the audience percentage points:   2. Divide this increase by the original baseline audience share ( ):   3. Convert this relative increase into a percentage:   No, Tesh did not report it correctly. The true percent increase was 225% . While is more than 3 times (300% of) the original , the relative change\/increase itself is only 225%.   "
+},
+{
+  "id": "sec-percent-decrease-5",
+  "level": "2",
+  "url": "sec-percent-decrease.html#sec-percent-decrease-5",
+  "type": "Checkpoint",
+  "number": "8.27",
+  "title": "",
+  "body": "  Find the percent change if 14 is increased to 70.    1. Find the amount of increase:   2. Divide the increase by the original value (14):   3. Express the result as a percentage:   The percent change is a 400% increase .   "
+},
+{
+  "id": "sec-percent-decrease-6",
+  "level": "2",
+  "url": "sec-percent-decrease.html#sec-percent-decrease-6",
+  "type": "Checkpoint",
+  "number": "8.28",
+  "title": "",
+  "body": "  A television regularly sells for . The sale price is . Find the percent decrease of the sale price from the regular price.    1. Calculate the amount of decrease:   2. Divide by the original regular price:   3. Convert to a percentage:   The television has a 35% decrease in price.   "
+},
+{
+  "id": "sec-percent-decrease-7",
+  "level": "2",
+  "url": "sec-percent-decrease.html#sec-percent-decrease-7",
+  "type": "Checkpoint",
+  "number": "8.29",
+  "title": "",
+  "body": "  If a laptop computer regularly costs and is on sale for , what percentage discount is being given? Round to the nearest hundredth if needed.    1. Find the total markdown discount amount:   2. Divide the markdown by the original baseline cost:   3. Convert to a percentage and round to the nearest hundredth:   The percentage discount being given is approximately 31.85% .   "
+},
+{
+  "id": "sec-percent-decrease-8-1",
+  "level": "2",
+  "url": "sec-percent-decrease.html#sec-percent-decrease-8-1",
+  "type": "Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Determine whether each statement makes sense or not, and explain your reasoning.    I have and my restaurant bill comes to , which is not enough to leave a tip.  I found the percent decrease in a jacket's price to be .  My rent increased from to of my income, so the percent increase is .         (a) Does not make sense. A tip on an bill is calculated as: The total cost of the meal with the tip added is: Since , you have more than enough money to cover it.   (b) Does not make sense. A percent decrease represents how much value an item loses relative to its starting point. A decrease means the item is completely free ( ). A decrease of would mean the retail store is paying you money to take the jacket away, which is impossible in standard retail settings.   (c) Does not make sense. The raw difference between the values is percentage points, but the percent increase must be calculated relative to the original baseline amount ( ): Your rent contribution actually experienced a 50% increase .     "
+},
+{
+  "id": "sec-percent-decrease-8-2",
+  "level": "2",
+  "url": "sec-percent-decrease.html#sec-percent-decrease-8-2",
+  "type": "Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Suppose a local sales tax rate is and you purchase a car for .    How much sales tax is paid?  How much is the total cost of the car?        Find the sales tax paid by converting the rate to a decimal ( ):   Add the sales tax to the base purchase price to find the total final invoice cost:      "
+},
+{
+  "id": "sec-percent-decrease-8-3",
+  "level": "2",
+  "url": "sec-percent-decrease.html#sec-percent-decrease-8-3",
+  "type": "Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Suppose that you drive 15,000 miles per year and gas averages per gallon. What will you save in annual fuel expenses by owning a hybrid car averaging 45 miles per gallon rather than an SUV averaging 28 miles per gallon?    1. Calculate the total annual fuel costs for the SUV:    2. Calculate the total annual fuel costs for the hybrid car:    3. Subtract to find the net financial savings:   You can expect to save every year.   "
+},
+{
+  "id": "sec-percent-decrease-8-4",
+  "level": "2",
+  "url": "sec-percent-decrease.html#sec-percent-decrease-8-4",
+  "type": "Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  If you are selling your house with a local Realtor who requires a commission fee, what can you expect to pay the Realtor if your house sells for ?    Convert the percentage commission fee to a decimal multiplier ( ) and multiply by the total closing sale valuation:   You can expect to pay the agent a fee of .   "
+},
+{
+  "id": "sec-percent-decrease-8-5",
+  "level": "2",
+  "url": "sec-percent-decrease.html#sec-percent-decrease-8-5",
+  "type": "Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  A new wireless printer costs in the store. What would your total cost be if sales tax is ?    1. Find the total isolated sales tax surcharged ( ):   2. Add the tax onto the shelf value to find the out-of-pocket register payment:    "
 }
 ]
 

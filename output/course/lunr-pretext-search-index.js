@@ -4939,7 +4939,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "",
   "title": "A.1 Rates",
-  "body": " A.1 Rates   Rate   A rate is a fraction used to compare two quantities that are not in the same units.      How much gasoline should Katie have used after driving 223 miles in her new car that boasts 29 mpg (miles per gallon)?    Divide the total miles driven by the miles per gallon rate:       If your car can go 433 miles on a full tank, find the miles per gallon your car gets if the tank holds 17.2 gallons?    Divide the total miles by the total number of gallons:      Unit Rate   A unit rate is a rate comparing two measured quantities, one of which is a single unit written in the denominator of the fraction.      Find the unit rate for the Pine bark of wood mulch of $3.77 for 3 cubic feet at the local garden center. (price\/amount)    Divide the total price by the total cubic feet:       Find the unit rate for the Aromatic cedar of wood mulch of $\\$3.98$ for 2 cubic feet at the local garden center. (price\/amount)    Divide the total price by the total cubic feet:       If a 4-lb bag of sugar costs $\\$2.99$, what is the unit cost for a pound of sugar?    Divide the total cost by the total weight:     "
+  "body": " A.1 Rates   Rate   A rate is a fraction used to compare two quantities that are not in the same units.      How much gasoline should Katie have used after driving 223 miles in her new car that boasts 29 mpg (miles per gallon)?    Divide the total miles driven by the miles per gallon rate:       If your car can go 433 miles on a full tank, find the miles per gallon your car gets if the tank holds 17.2 gallons?    Divide the total miles by the total number of gallons:      Unit Rate   A unit rate is a rate comparing two measured quantities, one of which is a single unit written in the denominator of the fraction.      Find the unit rate for the Pine bark of wood mulch of $3.77 for 3 cubic feet at the local garden center. (price\/amount)    Divide the total price by the total cubic feet:       Find the unit rate for the Aromatic cedar of wood mulch of $3.98 for 2 cubic feet at the local garden center. (price\/amount)    Divide the total price by the total cubic feet:       If a 4-lb bag of sugar costs $2.99, what is the unit cost for a pound of sugar?    Divide the total cost by the total weight:     "
 },
 {
   "id": "sec-rates-2",
@@ -4993,7 +4993,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "8.6",
   "title": "",
-  "body": "  Find the unit rate for the Aromatic cedar of wood mulch of $\\$3.98$ for 2 cubic feet at the local garden center. (price\/amount)    Divide the total price by the total cubic feet:    "
+  "body": "  Find the unit rate for the Aromatic cedar of wood mulch of $3.98 for 2 cubic feet at the local garden center. (price\/amount)    Divide the total price by the total cubic feet:    "
 },
 {
   "id": "sec-rates-8",
@@ -5002,7 +5002,7 @@ var ptx_lunr_docs = [
   "type": "Checkpoint",
   "number": "8.7",
   "title": "",
-  "body": "  If a 4-lb bag of sugar costs $\\$2.99$, what is the unit cost for a pound of sugar?    Divide the total cost by the total weight:    "
+  "body": "  If a 4-lb bag of sugar costs $2.99, what is the unit cost for a pound of sugar?    Divide the total cost by the total weight:    "
 },
 {
   "id": "sec-percentage",
@@ -5345,6 +5345,15 @@ var ptx_lunr_docs = [
   "number": "5",
   "title": "",
   "body": "  A new wireless printer costs in the store. What would your total cost be if sales tax is ?    1. Find the total isolated sales tax surcharged ( ):   2. Add the tax onto the shelf value to find the out-of-pocket register payment:    "
+},
+{
+  "id": "GenEdSLO",
+  "level": "1",
+  "url": "GenEdSLO.html",
+  "type": "Section",
+  "number": "",
+  "title": "LASC and GenEd Student Learning Outcomes (SLO’s)",
+  "body": " LASC and GenEd Student Learning Outcomes (SLO's)     Justify their mathematical reasoning and use correct mathematical notation and terminology.  Apply mathematical techniques to the analysis and solution of real-world problems.  Demonnumerical literacy by accurately performing mathematical procedures and articulating the underlying concepts that govern numerical operations and relationships.     "
 }
 ]
 

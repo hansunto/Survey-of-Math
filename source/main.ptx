@@ -178,13 +178,15 @@
     <!-- Include additional chapters for other categories -->
   
 
-  <!--<chapter xml:id="course-documents">-->
-   <!-- <title>Course Documents</title>-->
+  <chapter xml:id="course-documents">
+  <title>Course Documents</title>
+    <!-- MA or QR LASC Student Learning Outcomes (SLO's)  -->
+    <xi:include href="./syllabus/GenEdSLO.ptx" />
 
       <!-- Course syllabus -->
       <!-- <xi:include href="./syllabus/MA105BL.ptx" />-->
       <!-- Other documents could go here, like a schedule, project description, etc. -->
-  <!--</chapter>-->
+  </chapter>
     
 </book>
 </pretext>

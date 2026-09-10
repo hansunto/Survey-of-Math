@@ -161,13 +161,13 @@
             <strong>Pairwise Comparison:</strong>
             <ul>
               <li>P vs R: P=33, R=49. (R wins)</li>
-              <li>P vs S: P=63, S=19. (P wins)</li>
+              <li>P vs S: P=33, S=49. (S wins)</li>
               <li>P vs T: P=35, T=47. (T wins)</li>
               <li>R vs S: R=64, S=18. (R wins)</li>
-              <li>R vs T: R=52, T=30. (R wins)</li>
+              <li>R vs T: R=34, T=48. (T wins)</li>
               <li>S vs T: S=35, T=47. (T wins)</li>
             </ul>
-            R has 3 wins, T has 2 wins, P has 1 win. Winner: <strong>Roads (R)</strong>.
+            R has 2 wins, T has 3 wins, S has 1 win, P has 0 win. Winner: <strong>Trash Removal (T)</strong>.
           </p>
         </li>
       </ol>
@@ -475,8 +475,8 @@
       <ol>
         <li><p>Find the standard divisor.</p></li>
         <li><p>Find the standard quota for each precinct.</p></li>
-        <li><p>Find the modified quota for the fourth precinct using Jefferson's method with a modified divisor of 350.</p></li>
-        <li><p>Find the apportionment for the second precinct using Adams's method with a modified divisor of 380.</p></li>
+        <li><p>Find the modified quota for the fourth precinct using Jefferson's method with a modified divisor of 347.</p></li>
+        <li><p>Find the apportionment for the second precinct using Adams's method with a modified divisor of 390.</p></li>
       </ol>
     </p>
   </statement>
@@ -566,23 +566,23 @@
         </row>
         <row>
           <cell>Mod. Quota</cell>
-          <cell>8.91</cell>
-          <cell>5.38</cell>
-          <cell>7.93</cell>
-          <cell>9.07</cell>
+          <cell>8.98</cell>
+          <cell>5.42</cell>
+          <cell>8</cell>
+          <cell>9.14</cell>
           <cell>-</cell>
         </row>
         <row>
           <cell>Jefferson Apport.</cell>
           <cell>8</cell>
           <cell>5</cell>
-          <cell>7</cell>
+          <cell>8</cell>
           <cell>9</cell>
-          <cell>29</cell>
+          <cell>30</cell>
         </row>
       </tabular>
     </table>
-    <p>The modified quota for the fourth precinct is <strong>9.07</strong>.</p>
+    <p>The modified quota for the fourth precinct is <strong>9.14</strong>.</p>
 
     <p>
       <strong>Part (d): Adams's Method (Modified Divisor <m>d = 380</m>)</strong>
@@ -600,19 +600,19 @@
         </row>
         <row>
           <cell>Mod. Quota</cell>
-          <cell>8.20</cell>
-          <cell>4.96</cell>
-          <cell>7.31</cell>
-          <cell>8.35</cell>
+          <cell>7.99</cell>
+          <cell>4.82</cell>
+          <cell>7.11</cell>
+          <cell>8.13</cell>
           <cell>-</cell>
         </row>
         <row>
           <cell>Adams Apport.</cell>
-          <cell>9</cell>
+          <cell>8</cell>
           <cell>5</cell>
           <cell>8</cell>
           <cell>9</cell>
-          <cell>31</cell>
+          <cell>30</cell>
         </row>
       </tabular>
     </table>

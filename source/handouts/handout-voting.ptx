@@ -199,7 +199,8 @@
               </statement>
               <solution>
                 <p>
-                  Using Borda scores 3-2-1-0, the totals are D = 169, F = 292, J = 155, and H = 122. The Borda count winner is <term>F</term>.
+                  Using Borda scores 4-3-2-1, the totals are D = 292, F = 415, J = 278, and H = 245. 
+                  The Borda count winner is <term>F</term>.
                 </p>
               </solution>
             </exercise>
@@ -328,7 +329,8 @@
                 For plurality-with-elimination, D is eliminated first and its 10 votes transfer to S, then G is eliminated and its votes transfer to S, giving <term>S</term> the win.
               </p>
               <p>
-                Using Borda scores 3-2-1-0, the totals are D = 154, G = 148, S = 100, and F = 90. The Borda winner is <term>D</term>.
+                Using Borda scores 4-3-2-1, the totals are D = 236, G = 230, S = 182, and F = 172. 
+                The Borda winner is <term>D</term>.
               </p>
               <p>
                 In pairwise comparison, G beats D, G beats F, and G beats S, so the pairwise winner is <term>G</term>.

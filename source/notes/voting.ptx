@@ -915,16 +915,16 @@
             For the <term>Pairwise Comparison Method</term>, we compare every possible pair. There are 100 total votes, so 51 are needed to win a matchup:
             <ul>
                 <li><p>P vs. S: P has 52; S has 48. (P gets 1 pt)</p></li>
-                <li><p>P vs. C: P has 63; C has 37. (P gets 1 pt)</p></li>
+                <li><p>P vs. C: P has 48; C has 52. (C gets 1 pt)</p></li>
                 <li><p>P vs. B: P has 70; B has 30. (P gets 1 pt)</p></li>
-                <li><p>S vs. C: S has 81; C has 19. (S gets 1 pt)</p></li>
+                <li><p>S vs. C: S has 71; C has 29. (S gets 1 pt)</p></li>
                 <li><p>S vs. B: S has 60; B has 40. (S gets 1 pt)</p></li>
-                <li><p>C vs. B: C has 60; B has 40. (C gets 1 pt)</p></li>
+                <li><p>C vs. B: C has 37; B has 63. (B gets 1 pt)</p></li>
             </ul>
         </p>
         <p>
-            <strong>Total Points:</strong> Paula = 3, Sylvia = 2, Craig = 1, Brian = 0.
-            Paula is the winner; no tie-breaker is required.
+            <strong>Total Points:</strong> Paula = 2, Sylvia = 2, Craig = 1, Brian = 1.
+            Tie-breaker. Between Paula and Sylvia, Paula is the winner. 
         </p>
       </li>
     </ol>

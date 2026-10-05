@@ -141,7 +141,9 @@
               </statement>
               <solution>
                 <p>
-                  Eliminate H first (4 votes), which transfers to J, giving J 17 votes. Then eliminate J; all 17 J ballots transfer to F. Final totals are D = 52 and F = 71, so the plurality-with-elimination winner is <term>F</term>.
+                  Eliminate H first (4 votes), which transfers to J, giving J 17 votes. 
+                  Then eliminate J; all 17 J ballots transfer to F. 
+                  Final totals are D = 56 and F = 67, so the plurality-with-elimination winner is <term>F</term>.
                 </p>
               </solution>
             </exercise>

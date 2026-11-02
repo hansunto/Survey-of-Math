@@ -1,0 +1,11 @@
+INFO    : Staging deployment according to strategy pelican_default
+INFO    : Staging `course` at `/workspaces/Survey-of-Math/output/stage/course`.
+INFO    : Staging generated site at `/workspaces/Survey-of-Math/output/stage`.
+INFO    : XSL conversion of /workspaces/Survey-of-Math/source/main.ptx by /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/codespace/.ptx/2.38.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Deployment is now staged at `/workspaces/Survey-of-Math/output/stage`.
+INFO    : Preparing to deploy from active `main` git branch.
+
+INFO    : Changes to project source since last commit detected.
+INFO    : Committing these changes to local Git repository.
+

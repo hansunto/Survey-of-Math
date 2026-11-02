@@ -40,7 +40,7 @@ typically follow this bell-shaped trajectory when plotted in mass quantities.
                 ylabel={Probability Density}, 
                 height=6cm, width=10cm, 
                 xtick={45,60,75,90,105},
-                xticklabels={45\\(-3sd), 60\\(-2sd), 75\\(M), 90\\(+1sd), 105\\(+2sd)},
+                xticklabels={45\\(-2sd), 60\\(-1sd), 75\\(M), 90\\(+1sd), 105\\(+2sd)},
                 xticklabel style={align=center, font=\small},
                 grid=none
             ]
